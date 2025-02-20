@@ -1,0 +1,33 @@
+{
+    "name": "reedware/openapi-spec",
+    "authors": [
+        {
+            "name": "Tyler Reed",
+            "email": "tylernathanreed@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "OpenApi\\Spec\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./zero"
+        }
+    ],
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.20",
+        "laravel/sail": "^1.41",
+        "phpstan/phpstan": "^2.1",
+        "reedware/openapi-cli": "^0.0.1"
+    },
+    "scripts": {
+        "test:static": "phpstan analyze"
+    }
+}
