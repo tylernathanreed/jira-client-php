@@ -2,14 +2,12 @@
 
 namespace App\Commands;
 
-use App\Schema\Property;
 use App\Schema\Schema;
 use DateTimeImmutable;
 use Illuminate\Console\GeneratorCommand;
 use InvalidArgumentException;
 use Jira\Client\Attributes\MapName;
 use Override;
-use RuntimeException;
 use Symfony\Component\Console\Input\InputOption;
 
 class MakeSchemaCommand extends GeneratorCommand

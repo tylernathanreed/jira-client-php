@@ -119,7 +119,7 @@ final class Property implements Stringable
 
     public function hasSimpleType(): bool
     {
-        return in_array($this->type, ['boolean', 'integer', 'number'])
+        return in_array($this->type, ['bool', 'int', 'float'])
             || (
                 $this->type === 'string' &&
                 ! $this->isEnum()

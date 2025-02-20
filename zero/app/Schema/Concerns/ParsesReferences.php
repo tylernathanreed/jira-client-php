@@ -15,6 +15,13 @@ trait ParsesReferences
             return [ucfirst(basename($ref)), true];
         }
 
-        return [$ref, false];
+        $type = match ($ref) {
+            'number' => 'float',
+            'integer' => 'int',
+            'boolean' => 'bool',
+            default => $ref,
+        };
+
+        return [$type, false];
     }
 }
