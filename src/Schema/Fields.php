@@ -22,7 +22,7 @@ final readonly class Fields extends PolymorphicDto
         return 'type';
     }
 
-    /** @return array<string,class-string<Dto>> */
+    /** @inheritDoc */
     public static function discriminatorMap(): array
     {
         return [

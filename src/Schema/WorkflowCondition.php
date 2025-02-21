@@ -12,7 +12,7 @@ final readonly class WorkflowCondition extends PolymorphicDto
         return 'nodeType';
     }
 
-    /** @return array<string,class-string<Dto>> */
+    /** @inheritDoc */
     public static function discriminatorMap(): array
     {
         return [

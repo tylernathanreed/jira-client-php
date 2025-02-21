@@ -32,7 +32,7 @@ class DummyPolymorphismReplacer extends Replacer
                 return '{$schema->discriminatorKey}';
             }
 
-            /** @return array<string,class-string<Dto>> */
+            /** @inheritDoc */
             public static function discriminatorMap(): array
             {
                 return [
