@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowMetadataAndIssueTypeRestModelDoc
+/** The workflow metadata and issue type IDs which use this workflow. */
 final readonly class WorkflowMetadataAndIssueTypeRestModel extends Dto
 {
     public function __construct(

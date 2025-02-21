@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DashboardDetailsDoc
+/** Details of a dashboard. */
 final readonly class DashboardDetails extends Dto
 {
     public function __construct(

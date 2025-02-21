@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlQueryToSanitizeDoc
+/**
+ * The JQL query to sanitize for the account ID.
+ * If the account ID is null, sanitizing is performed for an anonymous user.
+ */
 final readonly class JqlQueryToSanitize extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UpdateIssueSecurityLevelDetailsDoc
+/** Details of issue security scheme level. */
 final readonly class UpdateIssueSecurityLevelDetails extends Dto
 {
     public function __construct(

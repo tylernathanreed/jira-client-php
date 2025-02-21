@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PublishedWorkflowIdDoc
+/** Properties that identify a published workflow. */
 final readonly class PublishedWorkflowId extends Dto
 {
     public function __construct(

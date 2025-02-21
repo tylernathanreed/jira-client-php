@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssuesMetaBeanDoc
+/** Meta data describing the `issues` context variable. */
 final readonly class IssuesMetaBean extends Dto
 {
     public function __construct(

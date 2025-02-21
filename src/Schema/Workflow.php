@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// WorkflowDoc
+/** Details about a workflow. */
 final readonly class Workflow extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueArchivalSyncRequestDoc
+/** List of Issue Ids Or Keys that are to be archived or unarchived */
 final readonly class IssueArchivalSyncRequest extends Dto
 {
     public function __construct(

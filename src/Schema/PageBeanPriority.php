@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanPriorityDoc
+/** A page of items. */
 final readonly class PageBeanPriority extends Dto
 {
     public function __construct(

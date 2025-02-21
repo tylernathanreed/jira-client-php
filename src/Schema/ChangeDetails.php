@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ChangeDetailsDoc
+/** A change item. */
 final readonly class ChangeDetails extends Dto
 {
     public function __construct(

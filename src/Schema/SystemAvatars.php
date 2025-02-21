@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SystemAvatarsDoc
+/** List of system avatars. */
 final readonly class SystemAvatars extends Dto
 {
     public function __construct(

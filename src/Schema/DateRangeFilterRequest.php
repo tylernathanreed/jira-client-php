@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DateRangeFilterRequestDoc
+/** List issues archived within a specified date range. */
 final readonly class DateRangeFilterRequest extends Dto
 {
     public function __construct(

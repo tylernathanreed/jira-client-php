@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Attributes\MapName;
 use Jira\Client\Dto;
 
-// ConnectCustomFieldValueDoc
+/** A list of custom field details. */
 final readonly class ConnectCustomFieldValue extends Dto
 {
     public function __construct(

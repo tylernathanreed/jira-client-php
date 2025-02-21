@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldReplacementDoc
+/** Details about the replacement for a deleted version. */
 final readonly class CustomFieldReplacement extends Dto
 {
     public function __construct(

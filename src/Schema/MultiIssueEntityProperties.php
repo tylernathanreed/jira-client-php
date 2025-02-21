@@ -4,7 +4,12 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// MultiIssueEntityPropertiesDoc
+/**
+ * A list of issues and their respective properties to set or update.
+ * See "Entity properties" for more information.
+ * 
+ * @link https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
+ */
 final readonly class MultiIssueEntityProperties extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\PolymorphicDto;
 
-// WorkflowConditionDoc
+/** The workflow transition rule conditions tree. */
 final readonly class WorkflowCondition extends PolymorphicDto
 {
     public static function discriminator(): string

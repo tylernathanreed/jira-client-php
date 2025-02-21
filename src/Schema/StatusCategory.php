@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// StatusCategoryDoc
+/** A status category. */
 final readonly class StatusCategory extends Dto
 {
     public function __construct(

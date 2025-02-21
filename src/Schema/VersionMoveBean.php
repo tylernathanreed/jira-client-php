@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// VersionMoveBeanDoc
 final readonly class VersionMoveBean extends Dto
 {
     public function __construct(

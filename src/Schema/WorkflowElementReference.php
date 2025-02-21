@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowElementReferenceDoc
+/**
+ * A reference to the location of the error.
+ * This will be null if the error does not refer to a specific element.
+ */
 final readonly class WorkflowElementReference extends Dto
 {
     public function __construct(

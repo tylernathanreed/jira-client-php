@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreatePermissionRequestDoc
 final readonly class CreatePermissionRequest extends Dto
 {
     public function __construct(

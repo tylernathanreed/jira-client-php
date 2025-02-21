@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RequiredMappingByIssueTypeDoc
+/** The list of required status mappings by issue type. */
 final readonly class RequiredMappingByIssueType extends Dto
 {
     public function __construct(

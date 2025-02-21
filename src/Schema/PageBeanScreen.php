@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanScreenDoc
+/** A page of items. */
 final readonly class PageBeanScreen extends Dto
 {
     public function __construct(

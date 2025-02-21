@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowReferenceStatusDoc
+/** The statuses referenced in the workflow. */
 final readonly class WorkflowReferenceStatus extends Dto
 {
     public function __construct(

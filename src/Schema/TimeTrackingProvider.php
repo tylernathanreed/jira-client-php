@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// TimeTrackingProviderDoc
+/** Details about the time tracking provider. */
 final readonly class TimeTrackingProvider extends Dto
 {
     public function __construct(

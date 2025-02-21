@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UpdatePrioritiesInSchemeRequestBeanDoc
+/** Update priorities in a scheme */
 final readonly class UpdatePrioritiesInSchemeRequestBean extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueReadOnlyDoc
+/** The default text for a read only custom field. */
 final readonly class CustomFieldContextDefaultValueReadOnly extends Dto
 {
     public function __construct(

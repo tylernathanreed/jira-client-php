@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Attributes\MapName;
 use Jira\Client\Dto;
 
-// FilterSubscriptionsListDoc
+/** A paginated list of subscriptions to a filter. */
 final readonly class FilterSubscriptionsList extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RemoteObjectDoc
+/** The linked item. */
 final readonly class RemoteObject extends Dto
 {
     public function __construct(

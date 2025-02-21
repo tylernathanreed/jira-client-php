@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowOperationsDoc
+/** Operations allowed on a workflow */
 final readonly class WorkflowOperations extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectIssueCreateMetadataDoc
+/** Details of the issue creation metadata for a project. */
 final readonly class ProjectIssueCreateMetadata extends Dto
 {
     public function __construct(

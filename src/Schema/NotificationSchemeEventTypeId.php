@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// NotificationSchemeEventTypeIdDoc
+/** The ID of an event that is being mapped to notifications. */
 final readonly class NotificationSchemeEventTypeId extends Dto
 {
     public function __construct(

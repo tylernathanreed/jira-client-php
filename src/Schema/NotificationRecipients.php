@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// NotificationRecipientsDoc
+/** Details of the users and groups to receive the notification. */
 final readonly class NotificationRecipients extends Dto
 {
     public function __construct(

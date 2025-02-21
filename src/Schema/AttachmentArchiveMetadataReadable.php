@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AttachmentArchiveMetadataReadableDoc
+/** Metadata for an archive (for example a zip) and its contents. */
 final readonly class AttachmentArchiveMetadataReadable extends Dto
 {
     public function __construct(

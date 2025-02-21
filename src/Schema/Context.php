@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ContextDoc
+/** A context. */
 final readonly class Context extends Dto
 {
     public function __construct(

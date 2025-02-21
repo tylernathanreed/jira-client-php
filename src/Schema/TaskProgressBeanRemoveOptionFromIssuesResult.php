@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// TaskProgressBeanRemoveOptionFromIssuesResultDoc
+/** Details about a task. */
 final readonly class TaskProgressBeanRemoveOptionFromIssuesResult extends Dto
 {
     public function __construct(

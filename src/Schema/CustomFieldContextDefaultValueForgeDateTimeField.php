@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueForgeDateTimeFieldDoc
+/** The default value for a Forge date time custom field. */
 final readonly class CustomFieldContextDefaultValueForgeDateTimeField extends Dto
 {
     public function __construct(

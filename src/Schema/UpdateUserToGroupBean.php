@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UpdateUserToGroupBeanDoc
 final readonly class UpdateUserToGroupBean extends Dto
 {
     public function __construct(

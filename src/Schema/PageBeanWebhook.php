@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanWebhookDoc
+/** A page of items. */
 final readonly class PageBeanWebhook extends Dto
 {
     public function __construct(

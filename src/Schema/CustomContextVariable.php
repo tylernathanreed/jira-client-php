@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\PolymorphicDto;
 
-// CustomContextVariableDoc
 final readonly class CustomContextVariable extends PolymorphicDto
 {
     public function __construct(

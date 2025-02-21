@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ApplicationPropertyDoc
+/** Details of an application property. */
 final readonly class ApplicationProperty extends Dto
 {
     public function __construct(

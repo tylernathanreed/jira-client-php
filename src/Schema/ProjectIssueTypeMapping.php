@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectIssueTypeMappingDoc
+/** The project and issue type mapping. */
 final readonly class ProjectIssueTypeMapping extends Dto
 {
     public function __construct(

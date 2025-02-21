@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WebhookDoc
+/** A webhook. */
 final readonly class Webhook extends Dto
 {
     public function __construct(

@@ -5,7 +5,10 @@ namespace Jira\Client\Schema;
 use Jira\Client\Attributes\MapName;
 use Jira\Client\Dto;
 
-// UserListDoc
+/**
+ * A paginated list of users sharing the filter.
+ * This includes users that are members of the groups or can browse the projects that the filter is shared with.
+ */
 final readonly class UserList extends Dto
 {
     public function __construct(

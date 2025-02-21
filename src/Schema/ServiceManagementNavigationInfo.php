@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ServiceManagementNavigationInfoDoc
 final readonly class ServiceManagementNavigationInfo extends Dto
 {
     public function __construct(

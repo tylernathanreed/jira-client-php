@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreatedIssueDoc
+/** Details about a created issue or subtask. */
 final readonly class CreatedIssue extends Dto
 {
     public function __construct(

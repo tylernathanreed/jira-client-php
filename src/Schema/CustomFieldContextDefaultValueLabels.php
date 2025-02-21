@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueLabelsDoc
+/** Default value for a labels custom field. */
 final readonly class CustomFieldContextDefaultValueLabels extends Dto
 {
     public function __construct(

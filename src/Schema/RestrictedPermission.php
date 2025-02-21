@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RestrictedPermissionDoc
+/** Details of the permission. */
 final readonly class RestrictedPermission extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RemoteIssueLinkIdentifiesDoc
+/** Details of the identifiers for a created or updated remote issue link. */
 final readonly class RemoteIssueLinkIdentifies extends Dto
 {
     public function __construct(

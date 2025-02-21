@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanBulkContextualConfigurationDoc
+/** A page of items. */
 final readonly class PageBeanBulkContextualConfiguration extends Dto
 {
     public function __construct(

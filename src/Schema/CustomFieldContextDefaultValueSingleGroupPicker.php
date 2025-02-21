@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueSingleGroupPickerDoc
+/** The default value for a group picker custom field. */
 final readonly class CustomFieldContextDefaultValueSingleGroupPicker extends Dto
 {
     public function __construct(

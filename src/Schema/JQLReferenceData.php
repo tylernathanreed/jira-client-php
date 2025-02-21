@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JQLReferenceDataDoc
+/** Lists of JQL reference data. */
 final readonly class JQLReferenceData extends Dto
 {
     public function __construct(

@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PrioritySchemeChangesWithoutMappingsDoc
 final readonly class PrioritySchemeChangesWithoutMappings extends Dto
 {
     public function __construct(

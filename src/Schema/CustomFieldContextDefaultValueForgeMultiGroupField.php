@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueForgeMultiGroupFieldDoc
+/** The default value for a Forge collection of groups custom field. */
 final readonly class CustomFieldContextDefaultValueForgeMultiGroupField extends Dto
 {
     public function __construct(

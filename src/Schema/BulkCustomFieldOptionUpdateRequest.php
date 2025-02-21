@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkCustomFieldOptionUpdateRequestDoc
+/** Details of the options to update for a custom field. */
 final readonly class BulkCustomFieldOptionUpdateRequest extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlQueryClauseTimePredicateDoc
+/** A time predicate for a temporal JQL clause. */
 final readonly class JqlQueryClauseTimePredicate extends Dto
 {
     public function __construct(

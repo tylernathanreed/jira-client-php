@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// OrderOfIssueTypesDoc
+/** An ordered list of issue type IDs and information about where to move them. */
 final readonly class OrderOfIssueTypes extends Dto
 {
     public function __construct(

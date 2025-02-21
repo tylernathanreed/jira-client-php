@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// WorklogDoc
+/** Details of a worklog. */
 final readonly class Worklog extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueTypeSchemeIDDoc
+/** The ID of an issue type scheme. */
 final readonly class IssueTypeSchemeID extends Dto
 {
     public function __construct(

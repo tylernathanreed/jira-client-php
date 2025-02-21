@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkspaceDataPolicyDoc
+/** Details about data policy. */
 final readonly class WorkspaceDataPolicy extends Dto
 {
     public function __construct(

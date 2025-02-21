@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectIssueTypesHierarchyLevelDoc
+/** Details of an issue type hierarchy level. */
 final readonly class ProjectIssueTypesHierarchyLevel extends Dto
 {
     public function __construct(

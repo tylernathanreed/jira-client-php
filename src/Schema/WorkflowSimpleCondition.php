@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowSimpleConditionDoc
+/**
+ * A workflow transition rule condition.
+ * This object returns `nodeType` as `simple`.
+ */
 final readonly class WorkflowSimpleCondition extends Dto
 {
     public function __construct(

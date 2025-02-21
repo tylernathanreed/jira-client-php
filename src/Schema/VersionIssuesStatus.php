@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// VersionIssuesStatusDoc
+/** Counts of the number of issues in various statuses. */
 final readonly class VersionIssuesStatus extends Dto
 {
     public function __construct(

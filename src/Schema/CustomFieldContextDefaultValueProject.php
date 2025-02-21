@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueProjectDoc
+/** The default value for a project custom field. */
 final readonly class CustomFieldContextDefaultValueProject extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PermittedProjectsDoc
+/** A list of projects in which a user is granted permissions. */
 final readonly class PermittedProjects extends Dto
 {
     public function __construct(

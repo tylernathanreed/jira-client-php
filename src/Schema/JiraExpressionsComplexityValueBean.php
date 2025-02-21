@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JiraExpressionsComplexityValueBeanDoc
 final readonly class JiraExpressionsComplexityValueBean extends Dto
 {
     public function __construct(

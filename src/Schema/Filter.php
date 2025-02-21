@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// FilterDoc
+/** Details about a filter. */
 final readonly class Filter extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldCreatedContextOptionsListDoc
+/** A list of custom field options for a context. */
 final readonly class CustomFieldCreatedContextOptionsList extends Dto
 {
     public function __construct(

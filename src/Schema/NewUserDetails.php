@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// NewUserDetailsDoc
+/** The user details. */
 final readonly class NewUserDetails extends Dto
 {
     public function __construct(

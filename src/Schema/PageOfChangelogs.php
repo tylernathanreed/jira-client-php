@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageOfChangelogsDoc
+/** A page of changelogs. */
 final readonly class PageOfChangelogs extends Dto
 {
     public function __construct(

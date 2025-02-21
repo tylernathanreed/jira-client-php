@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// VisibilityDoc
+/** The group or role to which this item is visible. */
 final readonly class Visibility extends Dto
 {
     public function __construct(

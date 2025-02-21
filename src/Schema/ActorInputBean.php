@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ActorInputBeanDoc
 final readonly class ActorInputBean extends Dto
 {
     public function __construct(

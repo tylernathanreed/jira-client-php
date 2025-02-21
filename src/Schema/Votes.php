@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// VotesDoc
+/** The details of votes on an issue. */
 final readonly class Votes extends Dto
 {
     public function __construct(

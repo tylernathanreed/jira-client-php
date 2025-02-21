@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectCategoryDoc
+/** A project category. */
 final readonly class ProjectCategory extends Dto
 {
     public function __construct(

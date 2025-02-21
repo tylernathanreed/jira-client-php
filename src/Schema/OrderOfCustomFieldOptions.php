@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// OrderOfCustomFieldOptionsDoc
+/** An ordered list of custom field option IDs and information on where to move them. */
 final readonly class OrderOfCustomFieldOptions extends Dto
 {
     public function __construct(

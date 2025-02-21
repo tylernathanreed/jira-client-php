@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// LicenseDoc
+/** Details about a license for the Jira instance. */
 final readonly class License extends Dto
 {
     public function __construct(

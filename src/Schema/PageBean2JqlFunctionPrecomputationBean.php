@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBean2JqlFunctionPrecomputationBeanDoc
+/** A page of items. */
 final readonly class PageBean2JqlFunctionPrecomputationBean extends Dto
 {
     public function __construct(

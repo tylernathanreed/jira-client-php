@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueFieldOptionDoc
+/** Details of the options for a select list issue field. */
 final readonly class IssueFieldOption extends Dto
 {
     public function __construct(

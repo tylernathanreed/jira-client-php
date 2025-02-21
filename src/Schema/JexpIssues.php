@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JexpIssuesDoc
+/** The JQL specifying the issues available in the evaluated Jira expression under the `issues` context variable. */
 final readonly class JexpIssues extends Dto
 {
     public function __construct(

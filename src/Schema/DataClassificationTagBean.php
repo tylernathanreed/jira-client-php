@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DataClassificationTagBeanDoc
+/** The data classification. */
 final readonly class DataClassificationTagBean extends Dto
 {
     public function __construct(

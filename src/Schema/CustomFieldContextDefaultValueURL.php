@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueURLDoc
+/** The default value for a URL custom field. */
 final readonly class CustomFieldContextDefaultValueURL extends Dto
 {
     public function __construct(

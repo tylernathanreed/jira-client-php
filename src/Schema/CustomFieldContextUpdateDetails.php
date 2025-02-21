@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextUpdateDetailsDoc
+/** Details of a custom field context. */
 final readonly class CustomFieldContextUpdateDetails extends Dto
 {
     public function __construct(

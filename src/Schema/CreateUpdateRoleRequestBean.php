@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreateUpdateRoleRequestBeanDoc
 final readonly class CreateUpdateRoleRequestBean extends Dto
 {
     public function __construct(

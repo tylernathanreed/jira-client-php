@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// MultipartFileDoc
 final readonly class MultipartFile extends Dto
 {
     public function __construct(

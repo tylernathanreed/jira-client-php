@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectTypeDoc
+/** Details about a project type. */
 final readonly class ProjectType extends Dto
 {
     public function __construct(

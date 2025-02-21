@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JQLPersonalDataMigrationRequestDoc
+/** The JQL queries to be converted. */
 final readonly class JQLPersonalDataMigrationRequest extends Dto
 {
     public function __construct(

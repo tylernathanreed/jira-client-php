@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RequiredMappingByWorkflowsDoc
+/** The list of required status mappings by workflow. */
 final readonly class RequiredMappingByWorkflows extends Dto
 {
     public function __construct(

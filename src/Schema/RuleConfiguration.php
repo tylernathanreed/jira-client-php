@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RuleConfigurationDoc
+/** A rule configuration. */
 final readonly class RuleConfiguration extends Dto
 {
     public function __construct(

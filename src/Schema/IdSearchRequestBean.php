@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IdSearchRequestBeanDoc
 final readonly class IdSearchRequestBean extends Dto
 {
     public function __construct(

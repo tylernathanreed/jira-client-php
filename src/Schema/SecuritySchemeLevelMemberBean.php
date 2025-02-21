@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SecuritySchemeLevelMemberBeanDoc
 final readonly class SecuritySchemeLevelMemberBean extends Dto
 {
     public function __construct(

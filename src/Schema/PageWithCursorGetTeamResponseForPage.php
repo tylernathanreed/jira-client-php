@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageWithCursorGetTeamResponseForPageDoc
 final readonly class PageWithCursorGetTeamResponseForPage extends Dto
 {
     public function __construct(

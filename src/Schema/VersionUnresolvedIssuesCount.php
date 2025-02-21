@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// VersionUnresolvedIssuesCountDoc
+/** Count of a version's unresolved issues. */
 final readonly class VersionUnresolvedIssuesCount extends Dto
 {
     public function __construct(

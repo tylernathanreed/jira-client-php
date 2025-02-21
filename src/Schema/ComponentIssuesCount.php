@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ComponentIssuesCountDoc
+/** Count of issues assigned to a component. */
 final readonly class ComponentIssuesCount extends Dto
 {
     public function __construct(

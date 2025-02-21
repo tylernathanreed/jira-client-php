@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// TransitionsDoc
+/** List of issue transitions. */
 final readonly class Transitions extends Dto
 {
     public function __construct(

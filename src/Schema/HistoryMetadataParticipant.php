@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// HistoryMetadataParticipantDoc
+/** Details of user or system associated with a issue history metadata item. */
 final readonly class HistoryMetadataParticipant extends Dto
 {
     public function __construct(

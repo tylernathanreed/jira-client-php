@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectFeatureStateDoc
+/** Details of the feature state. */
 final readonly class ProjectFeatureState extends Dto
 {
     public function __construct(

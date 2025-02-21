@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueFieldOptionScopeBeanDoc
 final readonly class IssueFieldOptionScopeBean extends Dto
 {
     public function __construct(

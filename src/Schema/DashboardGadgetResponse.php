@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DashboardGadgetResponseDoc
+/** The list of gadgets on the dashboard. */
 final readonly class DashboardGadgetResponse extends Dto
 {
     public function __construct(

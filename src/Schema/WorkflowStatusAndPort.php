@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowStatusAndPortDoc
+/** The status reference and port that a transition is connected to. */
 final readonly class WorkflowStatusAndPort extends Dto
 {
     public function __construct(

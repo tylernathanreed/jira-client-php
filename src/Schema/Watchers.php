@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WatchersDoc
+/** The details of watchers on an issue. */
 final readonly class Watchers extends Dto
 {
     public function __construct(

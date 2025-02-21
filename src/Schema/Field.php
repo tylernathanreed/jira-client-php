@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FieldDoc
+/** Details of a field. */
 final readonly class Field extends Dto
 {
     public function __construct(

@@ -18,9 +18,9 @@ class SchemaGenerator extends Generator
 {
     /** @inheritDoc */
     protected $replacers = [
+        DummyClassDocReplacer::class,
         DummyClassReplacer::class,
         DummyParentReplacer::class,
-        DummyClassDocReplacer::class,
         DummyPropertiesReplacer::class,
         DummyPolymorphismReplacer::class,
         DummyUnionReplacer::class,

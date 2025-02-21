@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueForgeUserFieldDoc
+/** Defaults for a Forge user custom field. */
 final readonly class CustomFieldContextDefaultValueForgeUserField extends Dto
 {
     public function __construct(

@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ResolutionJsonBeanDoc
 final readonly class ResolutionJsonBean extends Dto
 {
     public function __construct(

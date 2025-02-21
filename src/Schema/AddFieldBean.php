@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AddFieldBeanDoc
 final readonly class AddFieldBean extends Dto
 {
     public function __construct(

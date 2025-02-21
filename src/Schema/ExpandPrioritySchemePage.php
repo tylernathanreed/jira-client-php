@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ExpandPrioritySchemePageDoc
 final readonly class ExpandPrioritySchemePage extends Dto
 {
     public function __construct(

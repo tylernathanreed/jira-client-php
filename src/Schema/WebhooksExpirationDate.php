@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WebhooksExpirationDateDoc
+/** The date the refreshed webhooks expire. */
 final readonly class WebhooksExpirationDate extends Dto
 {
     public function __construct(

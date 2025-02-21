@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FoundUsersAndGroupsDoc
+/** List of users and groups found in a search. */
 final readonly class FoundUsersAndGroups extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// NotificationRecipientsRestrictionsDoc
+/** Details of the group membership or permissions needed to receive the notification. */
 final readonly class NotificationRecipientsRestrictions extends Dto
 {
     public function __construct(

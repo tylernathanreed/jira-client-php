@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreateExclusionRulesRequestDoc
 final readonly class CreateExclusionRulesRequest extends Dto
 {
     public function __construct(

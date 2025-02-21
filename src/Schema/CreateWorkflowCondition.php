@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreateWorkflowConditionDoc
+/** A workflow transition condition. */
 final readonly class CreateWorkflowCondition extends Dto
 {
     public function __construct(

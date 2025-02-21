@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ConvertedJQLQueriesDoc
+/** The converted JQL queries. */
 final readonly class ConvertedJQLQueries extends Dto
 {
     public function __construct(

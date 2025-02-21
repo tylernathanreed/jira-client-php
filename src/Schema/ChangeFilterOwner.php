@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ChangeFilterOwnerDoc
+/** The account ID of the new owner. */
 final readonly class ChangeFilterOwner extends Dto
 {
     public function __construct(

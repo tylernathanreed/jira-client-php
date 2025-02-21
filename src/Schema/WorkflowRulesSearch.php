@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowRulesSearchDoc
+/** Details of the workflow and its transition rules. */
 final readonly class WorkflowRulesSearch extends Dto
 {
     public function __construct(

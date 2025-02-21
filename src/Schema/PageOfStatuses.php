@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageOfStatusesDoc
 final readonly class PageOfStatuses extends Dto
 {
     public function __construct(

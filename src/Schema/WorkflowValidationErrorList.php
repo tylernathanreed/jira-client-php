@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowValidationErrorListDoc
 final readonly class WorkflowValidationErrorList extends Dto
 {
     public function __construct(

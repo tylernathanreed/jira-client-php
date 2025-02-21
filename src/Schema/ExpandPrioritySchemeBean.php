@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ExpandPrioritySchemeBeanDoc
+/** A priority scheme with less fields to be used in for an API expand response. */
 final readonly class ExpandPrioritySchemeBean extends Dto
 {
     public function __construct(

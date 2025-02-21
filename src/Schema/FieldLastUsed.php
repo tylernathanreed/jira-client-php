@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// FieldLastUsedDoc
+/** Information about the most recent use of a field. */
 final readonly class FieldLastUsed extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectRoleUserDoc
+/** Details of the user associated with the role. */
 final readonly class ProjectRoleUser extends Dto
 {
     public function __construct(

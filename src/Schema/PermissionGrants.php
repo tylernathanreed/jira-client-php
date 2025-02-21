@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PermissionGrantsDoc
+/** List of permission grants. */
 final readonly class PermissionGrants extends Dto
 {
     public function __construct(

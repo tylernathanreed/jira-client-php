@@ -4,7 +4,12 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueEntityPropertiesForMultiUpdateDoc
+/**
+ * An issue ID with entity property values.
+ * See "Entity properties" for more information.
+ * 
+ * @link https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
+ */
 final readonly class IssueEntityPropertiesForMultiUpdate extends Dto
 {
     public function __construct(

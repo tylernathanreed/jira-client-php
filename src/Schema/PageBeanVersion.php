@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanVersionDoc
+/** A page of items. */
 final readonly class PageBeanVersion extends Dto
 {
     public function __construct(

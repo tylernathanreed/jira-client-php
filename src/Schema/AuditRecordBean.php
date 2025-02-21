@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// AuditRecordBeanDoc
+/** An audit record. */
 final readonly class AuditRecordBean extends Dto
 {
     public function __construct(

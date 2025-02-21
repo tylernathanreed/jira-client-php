@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JExpEvaluateMetaDataBeanDoc
+/**
+ * Contains information about the expression evaluation.
+ * This bean will be replacing `JiraExpressionEvaluationMetaDataBean` bean as part of new `evaluate` endpoint
+ */
 final readonly class JExpEvaluateMetaDataBean extends Dto
 {
     public function __construct(

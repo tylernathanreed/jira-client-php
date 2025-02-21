@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PriorityWithSequenceDoc
+/** An issue priority with sequence information. */
 final readonly class PriorityWithSequence extends Dto
 {
     public function __construct(

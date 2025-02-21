@@ -5,7 +5,10 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// ChangelogDoc
+/**
+ * A log of changes made to issue fields.
+ * Changelogs related to workflow associations are currently being deprecated.
+ */
 final readonly class Changelog extends Dto
 {
     public function __construct(

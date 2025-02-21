@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ScreenSchemeIdDoc
+/** The ID of a screen scheme. */
 final readonly class ScreenSchemeId extends Dto
 {
     public function __construct(

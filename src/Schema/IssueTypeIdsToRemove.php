@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueTypeIdsToRemoveDoc
+/** The list of issue type IDs to be removed from the field configuration scheme. */
 final readonly class IssueTypeIdsToRemove extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueCascadingOptionDoc
+/** The default value for a cascading select custom field. */
 final readonly class CustomFieldContextDefaultValueCascadingOption extends Dto
 {
     public function __construct(

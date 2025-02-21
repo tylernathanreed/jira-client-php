@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SanitizedJqlQueryDoc
+/** Details of the sanitized JQL query. */
 final readonly class SanitizedJqlQuery extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UpdateDefaultScreenSchemeDoc
+/** The ID of a screen scheme. */
 final readonly class UpdateDefaultScreenScheme extends Dto
 {
     public function __construct(

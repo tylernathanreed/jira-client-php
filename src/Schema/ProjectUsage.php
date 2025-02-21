@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectUsageDoc
+/** The project. */
 final readonly class ProjectUsage extends Dto
 {
     public function __construct(

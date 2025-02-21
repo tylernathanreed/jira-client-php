@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanFilterDetailsDoc
+/** A page of items. */
 final readonly class PageBeanFilterDetails extends Dto
 {
     public function __construct(

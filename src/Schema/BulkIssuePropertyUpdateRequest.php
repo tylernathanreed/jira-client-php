@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkIssuePropertyUpdateRequestDoc
+/** Bulk issue property update request details. */
 final readonly class BulkIssuePropertyUpdateRequest extends Dto
 {
     public function __construct(

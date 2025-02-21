@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// GetDateFieldResponseDoc
 final readonly class GetDateFieldResponse extends Dto
 {
     public function __construct(

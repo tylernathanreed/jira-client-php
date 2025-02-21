@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueLimitReportResponseBeanDoc
 final readonly class IssueLimitReportResponseBean extends Dto
 {
     public function __construct(

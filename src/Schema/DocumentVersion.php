@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DocumentVersionDoc
+/** The current version details of this workflow scheme. */
 final readonly class DocumentVersion extends Dto
 {
     public function __construct(

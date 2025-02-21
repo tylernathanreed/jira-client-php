@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreateWorkflowTransitionScreenDetailsDoc
+/** The details of a transition screen. */
 final readonly class CreateWorkflowTransitionScreenDetails extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FilterSubscriptionDoc
+/** Details of a user or group subscribing to a filter. */
 final readonly class FilterSubscription extends Dto
 {
     public function __construct(

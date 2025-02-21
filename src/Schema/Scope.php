@@ -4,7 +4,12 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ScopeDoc
+/**
+ * The projects the item is associated with.
+ * Indicated for items associated with "next-gen projects".
+ * 
+ * @link https://confluence.atlassian.com/x/loMyO
+ */
 final readonly class Scope extends Dto
 {
     public function __construct(

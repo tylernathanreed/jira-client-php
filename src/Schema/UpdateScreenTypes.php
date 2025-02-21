@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UpdateScreenTypesDoc
+/** The IDs of the screens for the screen types of the screen scheme. */
 final readonly class UpdateScreenTypes extends Dto
 {
     public function __construct(

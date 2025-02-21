@@ -5,7 +5,6 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// BulkOperationProgressDoc
 final readonly class BulkOperationProgress extends Dto
 {
     public function __construct(

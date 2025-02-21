@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanIssueTypeSchemeDoc
+/** A page of items. */
 final readonly class PageBeanIssueTypeScheme extends Dto
 {
     public function __construct(

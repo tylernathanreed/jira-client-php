@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JiraExpressionEvaluateContextBeanDoc
 final readonly class JiraExpressionEvaluateContextBean extends Dto
 {
     public function __construct(

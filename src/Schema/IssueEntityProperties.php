@@ -4,7 +4,12 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueEntityPropertiesDoc
+/**
+ * Lists of issues and entity properties.
+ * See "Entity properties" for more information.
+ * 
+ * @link https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
+ */
 final readonly class IssueEntityProperties extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ColumnItemDoc
+/** Details of an issue navigator column item. */
 final readonly class ColumnItem extends Dto
 {
     public function __construct(

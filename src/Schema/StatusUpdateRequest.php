@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// StatusUpdateRequestDoc
+/** The list of statuses that will be updated. */
 final readonly class StatusUpdateRequest extends Dto
 {
     public function __construct(

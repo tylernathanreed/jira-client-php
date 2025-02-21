@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JsonNodeDoc
 final readonly class JsonNode extends Dto
 {
     public function __construct(

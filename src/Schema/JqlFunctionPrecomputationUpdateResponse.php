@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlFunctionPrecomputationUpdateResponseDoc
+/** Result of updating JQL Function precomputations. */
 final readonly class JqlFunctionPrecomputationUpdateResponse extends Dto
 {
     public function __construct(

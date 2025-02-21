@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AutoCompleteSuggestionsDoc
+/** The results from a JQL query. */
 final readonly class AutoCompleteSuggestions extends Dto
 {
     public function __construct(

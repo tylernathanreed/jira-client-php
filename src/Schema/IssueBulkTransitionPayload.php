@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueBulkTransitionPayloadDoc
+/** Issue Bulk Transition Payload */
 final readonly class IssueBulkTransitionPayload extends Dto
 {
     public function __construct(

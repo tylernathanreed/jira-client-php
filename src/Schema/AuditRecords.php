@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AuditRecordsDoc
+/** Container for a list of audit records. */
 final readonly class AuditRecords extends Dto
 {
     public function __construct(

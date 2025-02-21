@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectIdsDoc
+/** A list of project IDs. */
 final readonly class ProjectIds extends Dto
 {
     public function __construct(

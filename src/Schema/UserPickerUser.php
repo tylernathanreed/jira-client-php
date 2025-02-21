@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UserPickerUserDoc
+/** A user found in a search. */
 final readonly class UserPickerUser extends Dto
 {
     public function __construct(

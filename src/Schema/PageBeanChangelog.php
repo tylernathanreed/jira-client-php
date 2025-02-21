@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanChangelogDoc
+/** A page of items. */
 final readonly class PageBeanChangelog extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanWorkflowDoc
+/** A page of items. */
 final readonly class PageBeanWorkflow extends Dto
 {
     public function __construct(

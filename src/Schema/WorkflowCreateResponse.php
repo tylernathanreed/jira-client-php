@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowCreateResponseDoc
+/** Details of the created workflows and statuses. */
 final readonly class WorkflowCreateResponse extends Dto
 {
     public function __construct(

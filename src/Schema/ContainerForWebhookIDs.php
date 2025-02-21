@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ContainerForWebhookIDsDoc
+/** Container for a list of webhook IDs. */
 final readonly class ContainerForWebhookIDs extends Dto
 {
     public function __construct(

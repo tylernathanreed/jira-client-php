@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UpdateDefaultProjectClassificationBeanDoc
+/** The request for updating the default project classification level. */
 final readonly class UpdateDefaultProjectClassificationBean extends Dto
 {
     public function __construct(

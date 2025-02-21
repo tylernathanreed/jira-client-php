@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FieldUpdateOperationDoc
+/** Details of an operation to perform on a field. */
 final readonly class FieldUpdateOperation extends Dto
 {
     public function __construct(

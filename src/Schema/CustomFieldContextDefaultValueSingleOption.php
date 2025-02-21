@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueSingleOptionDoc
+/** The default value for a single select custom field. */
 final readonly class CustomFieldContextDefaultValueSingleOption extends Dto
 {
     public function __construct(

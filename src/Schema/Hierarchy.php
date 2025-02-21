@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// HierarchyDoc
+/** The project issue type hierarchy. */
 final readonly class Hierarchy extends Dto
 {
     public function __construct(

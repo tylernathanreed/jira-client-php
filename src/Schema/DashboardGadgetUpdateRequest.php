@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DashboardGadgetUpdateRequestDoc
+/** The details of the gadget to update. */
 final readonly class DashboardGadgetUpdateRequest extends Dto
 {
     public function __construct(

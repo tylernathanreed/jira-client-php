@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectAndIssueTypePairDoc
+/** A project and issueType ID pair that identifies a status mapping. */
 final readonly class ProjectAndIssueTypePair extends Dto
 {
     public function __construct(

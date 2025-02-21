@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// StatusCreateDoc
+/** Details of the status being created. */
 final readonly class StatusCreate extends Dto
 {
     public function __construct(

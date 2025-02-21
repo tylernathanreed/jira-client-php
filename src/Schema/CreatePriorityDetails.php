@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreatePriorityDetailsDoc
+/** Details of an issue priority. */
 final readonly class CreatePriorityDetails extends Dto
 {
     public function __construct(

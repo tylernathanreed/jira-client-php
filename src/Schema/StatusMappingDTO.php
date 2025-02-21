@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// StatusMappingDTODoc
+/** The mapping of old to new status ID for a specific project and issue type. */
 final readonly class StatusMappingDTO extends Dto
 {
     public function __construct(

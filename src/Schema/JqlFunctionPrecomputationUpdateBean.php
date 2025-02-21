@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlFunctionPrecomputationUpdateBeanDoc
+/** Precomputation id and its new value. */
 final readonly class JqlFunctionPrecomputationUpdateBean extends Dto
 {
     public function __construct(

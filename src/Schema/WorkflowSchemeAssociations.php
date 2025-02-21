@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowSchemeAssociationsDoc
+/** A workflow scheme along with a list of projects that use it. */
 final readonly class WorkflowSchemeAssociations extends Dto
 {
     public function __construct(

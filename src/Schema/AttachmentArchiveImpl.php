@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AttachmentArchiveImplDoc
 final readonly class AttachmentArchiveImpl extends Dto
 {
     public function __construct(

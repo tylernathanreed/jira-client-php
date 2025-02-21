@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// GetCustomFieldResponseDoc
 final readonly class GetCustomFieldResponse extends Dto
 {
     public function __construct(

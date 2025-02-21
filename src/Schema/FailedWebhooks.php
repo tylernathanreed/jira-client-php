@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FailedWebhooksDoc
+/** A page of failed webhooks. */
 final readonly class FailedWebhooks extends Dto
 {
     public function __construct(

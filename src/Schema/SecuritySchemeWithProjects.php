@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SecuritySchemeWithProjectsDoc
+/** Details about an issue security scheme. */
 final readonly class SecuritySchemeWithProjects extends Dto
 {
     public function __construct(

@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// GetPlanResponseDoc
 final readonly class GetPlanResponse extends Dto
 {
     public function __construct(

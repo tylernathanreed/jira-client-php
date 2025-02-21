@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AttachmentSettingsDoc
+/** Details of the instance's attachment settings. */
 final readonly class AttachmentSettings extends Dto
 {
     public function __construct(

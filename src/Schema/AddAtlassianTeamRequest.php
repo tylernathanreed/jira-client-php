@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AddAtlassianTeamRequestDoc
 final readonly class AddAtlassianTeamRequest extends Dto
 {
     public function __construct(

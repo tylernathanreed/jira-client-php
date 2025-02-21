@@ -5,7 +5,6 @@ namespace Jira\Client\Schema;
 use Jira\Client\Attributes\MapName;
 use Jira\Client\Dto;
 
-// SimpleListWrapperGroupNameDoc
 final readonly class SimpleListWrapperGroupName extends Dto
 {
     public function __construct(

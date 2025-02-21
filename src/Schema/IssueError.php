@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueErrorDoc
+/** Describes the error that occurred when retrieving data for a particular issue. */
 final readonly class IssueError extends Dto
 {
     public function __construct(

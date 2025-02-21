@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// OperationMessageDoc
 final readonly class OperationMessage extends Dto
 {
     public function __construct(

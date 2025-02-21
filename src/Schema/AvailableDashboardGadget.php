@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AvailableDashboardGadgetDoc
+/** The details of the available dashboard gadget. */
 final readonly class AvailableDashboardGadget extends Dto
 {
     public function __construct(

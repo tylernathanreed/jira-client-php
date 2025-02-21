@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// StatusScopeDoc
+/** The scope of the status. */
 final readonly class StatusScope extends Dto
 {
     public function __construct(

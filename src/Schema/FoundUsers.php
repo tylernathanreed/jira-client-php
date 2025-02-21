@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FoundUsersDoc
+/** The list of users found in a search, including header text (Showing X of Y matching users) and total of matched users. */
 final readonly class FoundUsers extends Dto
 {
     public function __construct(

@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreateCrossProjectReleaseRequestDoc
 final readonly class CreateCrossProjectReleaseRequest extends Dto
 {
     public function __construct(

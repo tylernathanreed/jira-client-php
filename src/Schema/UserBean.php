@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UserBeanDoc
 final readonly class UserBean extends Dto
 {
     public function __construct(

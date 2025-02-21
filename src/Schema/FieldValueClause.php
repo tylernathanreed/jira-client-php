@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FieldValueClauseDoc
+/**
+ * A clause that asserts the current value of a field.
+ * For example, `summary ~ test`.
+ */
 final readonly class FieldValueClause extends Dto
 {
     public function __construct(

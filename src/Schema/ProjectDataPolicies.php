@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectDataPoliciesDoc
+/** Details about data policies for a list of projects. */
 final readonly class ProjectDataPolicies extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkCustomFieldOptionCreateRequestDoc
+/** Details of the options to create for a custom field. */
 final readonly class BulkCustomFieldOptionCreateRequest extends Dto
 {
     public function __construct(

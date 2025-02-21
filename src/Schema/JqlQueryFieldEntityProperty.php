@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlQueryFieldEntityPropertyDoc
+/** Details of an entity property. */
 final readonly class JqlQueryFieldEntityProperty extends Dto
 {
     public function __construct(

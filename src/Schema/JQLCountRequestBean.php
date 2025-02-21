@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JQLCountRequestBeanDoc
 final readonly class JQLCountRequestBean extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CreateUiModificationDetailsDoc
+/** The details of a UI modification. */
 final readonly class CreateUiModificationDetails extends Dto
 {
     public function __construct(

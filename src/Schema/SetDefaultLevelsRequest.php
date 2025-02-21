@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SetDefaultLevelsRequestDoc
+/** Details of new default levels. */
 final readonly class SetDefaultLevelsRequest extends Dto
 {
     public function __construct(

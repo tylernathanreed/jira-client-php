@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DefaultWorkflowDoc
+/** Details about the default workflow. */
 final readonly class DefaultWorkflow extends Dto
 {
     public function __construct(

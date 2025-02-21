@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FoundGroupDoc
+/** A group found in a search. */
 final readonly class FoundGroup extends Dto
 {
     public function __construct(

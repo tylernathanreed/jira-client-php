@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RemoveOptionFromIssuesResultDoc
 final readonly class RemoveOptionFromIssuesResult extends Dto
 {
     public function __construct(

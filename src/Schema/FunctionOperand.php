@@ -4,7 +4,12 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FunctionOperandDoc
+/**
+ * An operand that is a function.
+ * See "Advanced searching - functions reference" for more information about JQL functions.
+ * 
+ * @link https://confluence.atlassian.com/x/dwiiLQ
+ */
 final readonly class FunctionOperand extends Dto
 {
     public function __construct(

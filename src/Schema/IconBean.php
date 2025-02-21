@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IconBeanDoc
+/** An icon. */
 final readonly class IconBean extends Dto
 {
     public function __construct(

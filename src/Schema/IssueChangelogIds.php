@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueChangelogIdsDoc
+/** A list of changelog IDs. */
 final readonly class IssueChangelogIds extends Dto
 {
     public function __construct(

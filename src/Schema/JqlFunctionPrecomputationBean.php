@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// JqlFunctionPrecomputationBeanDoc
+/** Jql function precomputation. */
 final readonly class JqlFunctionPrecomputationBean extends Dto
 {
     public function __construct(

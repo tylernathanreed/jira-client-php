@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PaginatedResponseIssueTypeIssueCreateMetadataDoc
 final readonly class PaginatedResponseIssueTypeIssueCreateMetadata extends Dto
 {
     public function __construct(

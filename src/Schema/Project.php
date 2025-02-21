@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// ProjectDoc
+/** Details about a project. */
 final readonly class Project extends Dto
 {
     public function __construct(

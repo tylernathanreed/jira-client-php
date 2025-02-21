@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UserKeyDoc
+/** List of user account IDs. */
 final readonly class UserKey extends Dto
 {
     public function __construct(

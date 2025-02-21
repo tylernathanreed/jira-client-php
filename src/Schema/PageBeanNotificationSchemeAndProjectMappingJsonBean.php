@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanNotificationSchemeAndProjectMappingJsonBeanDoc
+/** A page of items. */
 final readonly class PageBeanNotificationSchemeAndProjectMappingJsonBean extends Dto
 {
     public function __construct(

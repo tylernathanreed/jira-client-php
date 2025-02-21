@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueTypeScreenSchemeDetailsDoc
+/** The details of an issue type screen scheme. */
 final readonly class IssueTypeScreenSchemeDetails extends Dto
 {
     public function __construct(

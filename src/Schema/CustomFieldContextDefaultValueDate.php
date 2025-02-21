@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueDateDoc
+/** The default value for a Date custom field. */
 final readonly class CustomFieldContextDefaultValueDate extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AttachmentArchiveItemReadableDoc
+/** Metadata for an item in an attachment archive. */
 final readonly class AttachmentArchiveItemReadable extends Dto
 {
     public function __construct(

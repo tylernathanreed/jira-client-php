@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanUiModificationDetailsDoc
+/** A page of items. */
 final readonly class PageBeanUiModificationDetails extends Dto
 {
     public function __construct(

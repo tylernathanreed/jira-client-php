@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ConnectCustomFieldValuesDoc
+/** Details of updates for a custom field. */
 final readonly class ConnectCustomFieldValues extends Dto
 {
     public function __construct(

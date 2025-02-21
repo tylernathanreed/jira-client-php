@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SecuritySchemeIdDoc
+/** The ID of the issue security scheme. */
 final readonly class SecuritySchemeId extends Dto
 {
     public function __construct(

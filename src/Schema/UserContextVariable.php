@@ -4,7 +4,11 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UserContextVariableDoc
+/**
+ * A "user" specified as an Atlassian account ID.
+ * 
+ * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#user
+ */
 final readonly class UserContextVariable extends Dto
 {
     public function __construct(

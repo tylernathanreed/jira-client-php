@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanResolutionJsonBeanDoc
+/** A page of items. */
 final readonly class PageBeanResolutionJsonBean extends Dto
 {
     public function __construct(

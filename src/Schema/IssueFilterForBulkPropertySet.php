@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueFilterForBulkPropertySetDoc
+/** Bulk operation filter details. */
 final readonly class IssueFilterForBulkPropertySet extends Dto
 {
     public function __construct(

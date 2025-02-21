@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SuggestedMappingsRequestBeanDoc
+/** Details of changes to a priority scheme that require suggested priority mappings. */
 final readonly class SuggestedMappingsRequestBean extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RegisteredWebhookDoc
+/** ID of a registered webhook or error messages explaining why a webhook wasn't registered. */
 final readonly class RegisteredWebhook extends Dto
 {
     public function __construct(

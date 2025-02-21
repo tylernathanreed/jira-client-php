@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanWorkflowTransitionRulesDoc
+/** A page of items. */
 final readonly class PageBeanWorkflowTransitionRules extends Dto
 {
     public function __construct(

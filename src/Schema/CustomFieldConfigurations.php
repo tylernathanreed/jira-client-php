@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldConfigurationsDoc
+/** Details of configurations for a custom field. */
 final readonly class CustomFieldConfigurations extends Dto
 {
     public function __construct(

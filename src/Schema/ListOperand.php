@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ListOperandDoc
+/** An operand that is a list of values. */
 final readonly class ListOperand extends Dto
 {
     public function __construct(

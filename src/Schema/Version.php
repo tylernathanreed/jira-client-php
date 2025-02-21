@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// VersionDoc
+/** Details about a project version. */
 final readonly class Version extends Dto
 {
     public function __construct(

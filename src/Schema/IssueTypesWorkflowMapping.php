@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueTypesWorkflowMappingDoc
+/** Details about the mapping between issue types and a workflow. */
 final readonly class IssueTypesWorkflowMapping extends Dto
 {
     public function __construct(

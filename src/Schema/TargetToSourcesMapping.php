@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// TargetToSourcesMappingDoc
+/** An object representing the mapping of issues and data related to destination entities, like fields and statuses, that are required during a bulk move. */
 final readonly class TargetToSourcesMapping extends Dto
 {
     public function __construct(

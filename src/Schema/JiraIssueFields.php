@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JiraIssueFieldsDoc
 final readonly class JiraIssueFields extends Dto
 {
     public function __construct(

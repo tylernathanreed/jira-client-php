@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowStatusUpdateDoc
+/** Details of the status being updated. */
 final readonly class WorkflowStatusUpdate extends Dto
 {
     public function __construct(

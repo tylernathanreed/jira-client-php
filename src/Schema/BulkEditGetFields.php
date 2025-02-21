@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkEditGetFieldsDoc
+/** Bulk Edit Get Fields Response. */
 final readonly class BulkEditGetFields extends Dto
 {
     public function __construct(

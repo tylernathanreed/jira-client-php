@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IdOrKeyBeanDoc
 final readonly class IdOrKeyBean extends Dto
 {
     public function __construct(

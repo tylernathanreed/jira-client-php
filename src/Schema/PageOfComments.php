@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageOfCommentsDoc
+/** A page of comments. */
 final readonly class PageOfComments extends Dto
 {
     public function __construct(

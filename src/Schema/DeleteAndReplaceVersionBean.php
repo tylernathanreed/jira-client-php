@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DeleteAndReplaceVersionBeanDoc
 final readonly class DeleteAndReplaceVersionBean extends Dto
 {
     public function __construct(

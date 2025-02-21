@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ActorsMapDoc
 final readonly class ActorsMap extends Dto
 {
     public function __construct(

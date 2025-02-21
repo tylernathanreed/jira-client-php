@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueLinkTypesDoc
+/** A list of issue link type beans. */
 final readonly class IssueLinkTypes extends Dto
 {
     public function __construct(

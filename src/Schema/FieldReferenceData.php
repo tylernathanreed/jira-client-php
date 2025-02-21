@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FieldReferenceDataDoc
+/** Details of a field that can be used in advanced searches. */
 final readonly class FieldReferenceData extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// OperationsDoc
+/** Details of the operations that can be performed on the issue. */
 final readonly class Operations extends Dto
 {
     public function __construct(

@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ResourceDoc
 final readonly class Resource extends Dto
 {
     public function __construct(

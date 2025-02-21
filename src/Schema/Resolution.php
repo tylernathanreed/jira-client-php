@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ResolutionDoc
+/** Details of an issue resolution. */
 final readonly class Resolution extends Dto
 {
     public function __construct(

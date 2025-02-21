@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AvailableWorkflowConnectRuleDoc
+/** The Connect provided ecosystem rules available. */
 final readonly class AvailableWorkflowConnectRule extends Dto
 {
     public function __construct(

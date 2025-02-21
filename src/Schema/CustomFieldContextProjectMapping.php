@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextProjectMappingDoc
+/** Details of a context to project association. */
 final readonly class CustomFieldContextProjectMapping extends Dto
 {
     public function __construct(

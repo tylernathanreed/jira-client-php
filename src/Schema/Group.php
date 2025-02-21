@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// GroupDoc
 final readonly class Group extends Dto
 {
     public function __construct(

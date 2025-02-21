@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UserFilterDoc
+/** Filter for a User Picker (single) custom field. */
 final readonly class UserFilter extends Dto
 {
     public function __construct(

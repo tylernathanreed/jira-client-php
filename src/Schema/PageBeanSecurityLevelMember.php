@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanSecurityLevelMemberDoc
+/** A page of items. */
 final readonly class PageBeanSecurityLevelMember extends Dto
 {
     public function __construct(

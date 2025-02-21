@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JQLQueryWithUnknownUsersDoc
+/** JQL queries that contained users that could not be found */
 final readonly class JQLQueryWithUnknownUsers extends Dto
 {
     public function __construct(

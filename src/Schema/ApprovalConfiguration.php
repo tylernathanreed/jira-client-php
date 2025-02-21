@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ApprovalConfigurationDoc
+/**
+ * The approval configuration of a status within a workflow.
+ * Applies only to Jira Service Management approvals.
+ */
 final readonly class ApprovalConfiguration extends Dto
 {
     public function __construct(

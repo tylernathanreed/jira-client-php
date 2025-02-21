@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SimplifiedHierarchyLevelDoc
 final readonly class SimplifiedHierarchyLevel extends Dto
 {
     public function __construct(

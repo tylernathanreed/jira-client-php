@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UnrestrictedUserEmailDoc
 final readonly class UnrestrictedUserEmail extends Dto
 {
     public function __construct(

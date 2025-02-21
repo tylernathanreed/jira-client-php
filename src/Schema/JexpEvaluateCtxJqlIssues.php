@@ -4,7 +4,11 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JexpEvaluateCtxJqlIssuesDoc
+/**
+ * The JQL specifying the issues available in the evaluated Jira expression under the `issues` context variable.
+ * Not all issues returned by the JQL query are loaded, only those described by the `nextPageToken` and `maxResults` properties.
+ * This bean will be replacing JexpJqlIssues bean as part of new `evaluate` endpoint
+ */
 final readonly class JexpEvaluateCtxJqlIssues extends Dto
 {
     public function __construct(

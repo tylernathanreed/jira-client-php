@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectLandingPageInfoDoc
 final readonly class ProjectLandingPageInfo extends Dto
 {
     public function __construct(

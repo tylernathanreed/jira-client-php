@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SearchAutoCompleteFilterDoc
+/** Details of how to filter and list search auto complete information. */
 final readonly class SearchAutoCompleteFilter extends Dto
 {
     public function __construct(

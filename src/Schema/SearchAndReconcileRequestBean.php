@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SearchAndReconcileRequestBeanDoc
 final readonly class SearchAndReconcileRequestBean extends Dto
 {
     public function __construct(

@@ -4,7 +4,13 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JiraExpressionValidationErrorDoc
+/**
+ * Details about syntax and type errors.
+ * The error details apply to the entire expression, unless the object includes:
+ * 
+ *  - `line` and `column`
+ *  - `expression`
+ */
 final readonly class JiraExpressionValidationError extends Dto
 {
     public function __construct(

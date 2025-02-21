@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// NotificationSchemeEventDetailsDoc
+/** Details of a notification scheme event. */
 final readonly class NotificationSchemeEventDetails extends Dto
 {
     public function __construct(

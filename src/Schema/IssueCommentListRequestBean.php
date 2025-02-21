@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueCommentListRequestBeanDoc
 final readonly class IssueCommentListRequestBean extends Dto
 {
     public function __construct(

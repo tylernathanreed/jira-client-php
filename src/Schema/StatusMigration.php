@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// StatusMigrationDoc
+/** The mapping of old to new status ID. */
 final readonly class StatusMigration extends Dto
 {
     public function __construct(

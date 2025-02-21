@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowCompoundConditionDoc
+/**
+ * A compound workflow transition rule condition.
+ * This object returns `nodeType` as `compound`.
+ */
 final readonly class WorkflowCompoundCondition extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// LicenseMetricDoc
+/** A metric that provides insight into the active licence details */
 final readonly class LicenseMetric extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// DataClassificationLevelsBeanDoc
+/** The data classification. */
 final readonly class DataClassificationLevelsBean extends Dto
 {
     public function __construct(

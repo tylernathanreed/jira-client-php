@@ -4,7 +4,12 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueContextVariableDoc
+/**
+ * An "issue" specified by ID or key.
+ * All the fields of the issue object are available in the Jira expression.
+ * 
+ * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#issue
+ */
 final readonly class IssueContextVariable extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowLayoutDoc
+/** The starting point for the statuses in the workflow. */
 final readonly class WorkflowLayout extends Dto
 {
     public function __construct(

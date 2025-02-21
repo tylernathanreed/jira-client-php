@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RemoteIssueLinkRequestDoc
+/** Details of a remote issue link. */
 final readonly class RemoteIssueLinkRequest extends Dto
 {
     public function __construct(

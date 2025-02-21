@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowUpdateValidateRequestBeanDoc
 final readonly class WorkflowUpdateValidateRequestBean extends Dto
 {
     public function __construct(

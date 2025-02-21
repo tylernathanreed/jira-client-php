@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageOfWorklogsDoc
+/** Paginated list of worklog details */
 final readonly class PageOfWorklogs extends Dto
 {
     public function __construct(

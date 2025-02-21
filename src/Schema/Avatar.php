@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AvatarDoc
+/** Details of an avatar. */
 final readonly class Avatar extends Dto
 {
     public function __construct(

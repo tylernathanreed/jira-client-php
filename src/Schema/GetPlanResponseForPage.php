@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// GetPlanResponseForPageDoc
 final readonly class GetPlanResponseForPage extends Dto
 {
     public function __construct(

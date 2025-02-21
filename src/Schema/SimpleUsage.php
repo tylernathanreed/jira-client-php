@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SimpleUsageDoc
+/** Represents a usage of an entity by a project ID and related issue type IDs. */
 final readonly class SimpleUsage extends Dto
 {
     public function __construct(

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Attributes\MapName;
 use Jira\Client\Dto;
 
-// DashboardGadgetPositionDoc
+/** Details of a gadget position. */
 final readonly class DashboardGadgetPosition extends Dto
 {
     public function __construct(

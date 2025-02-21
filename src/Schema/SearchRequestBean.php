@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SearchRequestBeanDoc
 final readonly class SearchRequestBean extends Dto
 {
     public function __construct(

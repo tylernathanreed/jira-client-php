@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkTransitionSubmitInputDoc
 final readonly class BulkTransitionSubmitInput extends Dto
 {
     public function __construct(

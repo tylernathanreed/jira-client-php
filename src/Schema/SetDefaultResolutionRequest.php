@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SetDefaultResolutionRequestDoc
+/** The new default issue resolution. */
 final readonly class SetDefaultResolutionRequest extends Dto
 {
     public function __construct(

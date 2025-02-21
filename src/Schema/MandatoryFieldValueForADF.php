@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// MandatoryFieldValueForADFDoc
+/** An object notation input */
 final readonly class MandatoryFieldValueForADF extends Dto
 {
     public function __construct(

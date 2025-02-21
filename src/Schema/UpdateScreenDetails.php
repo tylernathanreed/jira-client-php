@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UpdateScreenDetailsDoc
+/** Details of a screen. */
 final readonly class UpdateScreenDetails extends Dto
 {
     public function __construct(

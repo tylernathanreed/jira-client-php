@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanCustomFieldContextDoc
+/** A page of items. */
 final readonly class PageBeanCustomFieldContext extends Dto
 {
     public function __construct(

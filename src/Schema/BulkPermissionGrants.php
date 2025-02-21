@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkPermissionGrantsDoc
+/** Details of global and project permissions granted to the user. */
 final readonly class BulkPermissionGrants extends Dto
 {
     public function __construct(

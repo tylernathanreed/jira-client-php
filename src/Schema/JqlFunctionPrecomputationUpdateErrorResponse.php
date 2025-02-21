@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlFunctionPrecomputationUpdateErrorResponseDoc
+/** Error response returned updating JQL Function precomputations fails. */
 final readonly class JqlFunctionPrecomputationUpdateErrorResponse extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowTransitionPropertyDoc
+/** Details about the server Jira is running on. */
 final readonly class WorkflowTransitionProperty extends Dto
 {
     public function __construct(

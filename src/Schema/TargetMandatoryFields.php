@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// TargetMandatoryFieldsDoc
+/** Field mapping for mandatory fields in target */
 final readonly class TargetMandatoryFields extends Dto
 {
     public function __construct(

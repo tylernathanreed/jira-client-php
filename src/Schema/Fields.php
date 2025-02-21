@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\PolymorphicDto;
 
-// FieldsDoc
+/** Can contain multiple field values of following types depending on `type` key */
 final readonly class Fields extends PolymorphicDto
 {
     public function __construct(

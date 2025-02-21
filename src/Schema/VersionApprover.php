@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// VersionApproverDoc
+/** Contains details about a version approver. */
 final readonly class VersionApprover extends Dto
 {
     public function __construct(

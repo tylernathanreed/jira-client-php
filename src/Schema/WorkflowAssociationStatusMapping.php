@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowAssociationStatusMappingDoc
+/** The list of status mappings. */
 final readonly class WorkflowAssociationStatusMapping extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FieldConfigurationToIssueTypeMappingDoc
+/** The field configuration to issue type mapping. */
 final readonly class FieldConfigurationToIssueTypeMapping extends Dto
 {
     public function __construct(

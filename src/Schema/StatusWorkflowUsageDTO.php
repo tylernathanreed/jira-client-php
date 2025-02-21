@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// StatusWorkflowUsageDTODoc
+/** Workflows using the status. */
 final readonly class StatusWorkflowUsageDTO extends Dto
 {
     public function __construct(

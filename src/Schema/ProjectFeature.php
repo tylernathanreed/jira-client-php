@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectFeatureDoc
+/** Details of a project feature. */
 final readonly class ProjectFeature extends Dto
 {
     public function __construct(

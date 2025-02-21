@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// CommentDoc
+/** A comment. */
 final readonly class Comment extends Dto
 {
     public function __construct(

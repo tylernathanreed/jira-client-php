@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectIdentifiersDoc
+/** Identifiers for a project. */
 final readonly class ProjectIdentifiers extends Dto
 {
     public function __construct(

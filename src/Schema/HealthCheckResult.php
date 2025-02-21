@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// HealthCheckResultDoc
+/**
+ * Jira instance health check results.
+ * Deprecated and no longer returned.
+ */
 final readonly class HealthCheckResult extends Dto
 {
     public function __construct(

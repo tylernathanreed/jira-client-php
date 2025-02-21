@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkIssueResultsDoc
+/** The list of requested issues & fields. */
 final readonly class BulkIssueResults extends Dto
 {
     public function __construct(

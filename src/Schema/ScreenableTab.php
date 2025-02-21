@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ScreenableTabDoc
+/** A screen tab. */
 final readonly class ScreenableTab extends Dto
 {
     public function __construct(

@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PaginatedResponseCommentDoc
 final readonly class PaginatedResponseComment extends Dto
 {
     public function __construct(

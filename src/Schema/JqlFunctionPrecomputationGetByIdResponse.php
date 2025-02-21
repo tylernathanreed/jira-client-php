@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlFunctionPrecomputationGetByIdResponseDoc
+/** Get precomputations by ID response. */
 final readonly class JqlFunctionPrecomputationGetByIdResponse extends Dto
 {
     public function __construct(

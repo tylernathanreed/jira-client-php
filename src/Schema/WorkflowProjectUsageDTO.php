@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowProjectUsageDTODoc
+/** Projects using the workflow. */
 final readonly class WorkflowProjectUsageDTO extends Dto
 {
     public function __construct(

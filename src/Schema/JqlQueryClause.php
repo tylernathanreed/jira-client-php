@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlQueryClauseDoc
+/** A JQL query clause. */
 final readonly class JqlQueryClause extends Dto
 {
     /** @return list<class-string<Dto>> */

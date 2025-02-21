@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ChangedValueBeanDoc
+/** Details of names changed in the record event. */
 final readonly class ChangedValueBean extends Dto
 {
     public function __construct(

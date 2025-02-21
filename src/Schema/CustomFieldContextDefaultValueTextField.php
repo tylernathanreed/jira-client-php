@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueTextFieldDoc
+/** The default text for a text custom field. */
 final readonly class CustomFieldContextDefaultValueTextField extends Dto
 {
     public function __construct(

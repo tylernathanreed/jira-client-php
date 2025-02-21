@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ScreenSchemeDoc
+/** A screen scheme. */
 final readonly class ScreenScheme extends Dto
 {
     public function __construct(

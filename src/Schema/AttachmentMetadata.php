@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// AttachmentMetadataDoc
+/** Metadata for an issue attachment. */
 final readonly class AttachmentMetadata extends Dto
 {
     public function __construct(

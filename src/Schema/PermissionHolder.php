@@ -4,7 +4,12 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PermissionHolderDoc
+/**
+ * Details of a user, group, field, or project role that holds a permission.
+ * See "Holder object" in *Get all permission schemes* for more information.
+ * 
+ * @link ../api-group-permission-schemes/#holder-object
+ */
 final readonly class PermissionHolder extends Dto
 {
     public function __construct(

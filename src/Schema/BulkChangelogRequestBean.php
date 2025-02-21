@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkChangelogRequestBeanDoc
+/** Request bean for bulk changelog retrieval */
 final readonly class BulkChangelogRequestBean extends Dto
 {
     public function __construct(

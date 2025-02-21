@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JiraExpressionsAnalysisDoc
+/** Details about the analysed Jira expression. */
 final readonly class JiraExpressionsAnalysis extends Dto
 {
     public function __construct(

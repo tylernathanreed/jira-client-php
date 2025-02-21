@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// RichTextDoc
 final readonly class RichText extends Dto
 {
     public function __construct(

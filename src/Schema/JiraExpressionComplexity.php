@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JiraExpressionComplexityDoc
+/** Details about the complexity of the analysed Jira expression. */
 final readonly class JiraExpressionComplexity extends Dto
 {
     public function __construct(

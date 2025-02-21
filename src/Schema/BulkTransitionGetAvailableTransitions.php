@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkTransitionGetAvailableTransitionsDoc
+/** Bulk Transition Get Available Transitions Response. */
 final readonly class BulkTransitionGetAvailableTransitions extends Dto
 {
     public function __construct(

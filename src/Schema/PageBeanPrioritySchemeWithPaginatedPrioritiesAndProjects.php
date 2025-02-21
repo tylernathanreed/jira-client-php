@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanPrioritySchemeWithPaginatedPrioritiesAndProjectsDoc
+/** A page of items. */
 final readonly class PageBeanPrioritySchemeWithPaginatedPrioritiesAndProjects extends Dto
 {
     public function __construct(

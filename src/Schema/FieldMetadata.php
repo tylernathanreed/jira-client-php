@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// FieldMetadataDoc
+/** The metadata describing an issue field. */
 final readonly class FieldMetadata extends Dto
 {
     public function __construct(

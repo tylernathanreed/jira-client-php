@@ -4,7 +4,12 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlQueryFieldDoc
+/**
+ * A field used in a JQL query.
+ * See "Advanced searching - fields reference" for more information about fields in JQL queries.
+ * 
+ * @link https://confluence.atlassian.com/x/dAiiLQ
+ */
 final readonly class JqlQueryField extends Dto
 {
     public function __construct(

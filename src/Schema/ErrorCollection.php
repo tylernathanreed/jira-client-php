@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ErrorCollectionDoc
+/** Error messages from an operation. */
 final readonly class ErrorCollection extends Dto
 {
     public function __construct(

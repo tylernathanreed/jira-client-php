@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JqlQueryOrderByClauseElementDoc
+/** An element of the order-by JQL clause. */
 final readonly class JqlQueryOrderByClauseElement extends Dto
 {
     public function __construct(

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// ServerInformationDoc
+/** Details about the Jira instance. */
 final readonly class ServerInformation extends Dto
 {
     public function __construct(

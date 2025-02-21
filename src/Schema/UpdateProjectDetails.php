@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UpdateProjectDetailsDoc
+/** Details about the project. */
 final readonly class UpdateProjectDetails extends Dto
 {
     public function __construct(

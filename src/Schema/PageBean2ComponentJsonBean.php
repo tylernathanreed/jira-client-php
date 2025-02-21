@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBean2ComponentJsonBeanDoc
+/** A page of items. */
 final readonly class PageBean2ComponentJsonBean extends Dto
 {
     public function __construct(

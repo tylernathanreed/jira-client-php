@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueUpdateDoc
+/** Default values to update. */
 final readonly class CustomFieldContextDefaultValueUpdate extends Dto
 {
     public function __construct(

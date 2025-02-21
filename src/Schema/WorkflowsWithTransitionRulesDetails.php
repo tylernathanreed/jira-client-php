@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowsWithTransitionRulesDetailsDoc
+/** Details of workflows and their transition rules to delete. */
 final readonly class WorkflowsWithTransitionRulesDetails extends Dto
 {
     public function __construct(

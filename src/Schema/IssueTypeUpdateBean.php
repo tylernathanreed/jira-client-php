@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// IssueTypeUpdateBeanDoc
 final readonly class IssueTypeUpdateBean extends Dto
 {
     public function __construct(

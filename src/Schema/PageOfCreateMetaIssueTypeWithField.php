@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageOfCreateMetaIssueTypeWithFieldDoc
+/** A page of CreateMetaIssueType with Field. */
 final readonly class PageOfCreateMetaIssueTypeWithField extends Dto
 {
     public function __construct(

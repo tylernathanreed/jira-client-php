@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// UserMigrationBeanDoc
 final readonly class UserMigrationBean extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowSchemeReadRequestDoc
+/** The workflow scheme read request body. */
 final readonly class WorkflowSchemeReadRequest extends Dto
 {
     public function __construct(

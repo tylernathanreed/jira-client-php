@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowTransitionLinksDoc
+/** The statuses the transition can start from, and the mapping of ports between the statuses. */
 final readonly class WorkflowTransitionLinks extends Dto
 {
     public function __construct(

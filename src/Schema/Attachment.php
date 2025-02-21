@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-// AttachmentDoc
+/** Details about an attachment. */
 final readonly class Attachment extends Dto
 {
     public function __construct(

@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// WorkflowTransitionsDoc
+/**
+ * The transitions of the workflow.
+ * Note that a transition can have either the deprecated `to`/`from` fields or the `toStatusReference`/`links` fields, but never both nor a combination.
+ */
 final readonly class WorkflowTransitions extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// SharePermissionDoc
+/** Details of a share permission for the filter. */
 final readonly class SharePermission extends Dto
 {
     public function __construct(

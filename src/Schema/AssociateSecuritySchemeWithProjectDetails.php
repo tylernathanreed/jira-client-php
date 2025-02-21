@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// AssociateSecuritySchemeWithProjectDetailsDoc
+/** Issue security scheme, project, and remapping details. */
 final readonly class AssociateSecuritySchemeWithProjectDetails extends Dto
 {
     public function __construct(

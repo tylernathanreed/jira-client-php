@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldOptionCreateDoc
+/** Details of a custom field option to create. */
 final readonly class CustomFieldOptionCreate extends Dto
 {
     public function __construct(

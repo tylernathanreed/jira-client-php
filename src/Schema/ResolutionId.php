@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ResolutionIdDoc
+/** The ID of an issue resolution. */
 final readonly class ResolutionId extends Dto
 {
     public function __construct(

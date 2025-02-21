@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// StatusesPerWorkflowDoc
+/** The statuses associated with each workflow. */
 final readonly class StatusesPerWorkflow extends Dto
 {
     public function __construct(

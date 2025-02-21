@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ConfigurationDoc
+/** Details about the configuration of Jira. */
 final readonly class Configuration extends Dto
 {
     public function __construct(

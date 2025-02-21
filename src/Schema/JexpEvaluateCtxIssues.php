@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// JexpEvaluateCtxIssuesDoc
+/**
+ * The JQL specifying the issues available in the evaluated Jira expression under the `issues` context variable.
+ * This bean will be replacing `JexpIssues` bean as part of new `evaluate` endpoint
+ */
 final readonly class JexpEvaluateCtxIssues extends Dto
 {
     public function __construct(

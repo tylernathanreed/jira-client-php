@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// PageBeanCommentDoc
+/** A page of items. */
 final readonly class PageBeanComment extends Dto
 {
     public function __construct(

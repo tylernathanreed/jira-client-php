@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// CustomFieldContextDefaultValueMultiUserPickerDoc
+/** The default value for a User Picker (multiple) custom field. */
 final readonly class CustomFieldContextDefaultValueMultiUserPicker extends Dto
 {
     public function __construct(

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ChangedWorklogDoc
+/** Details of a changed worklog. */
 final readonly class ChangedWorklog extends Dto
 {
     public function __construct(

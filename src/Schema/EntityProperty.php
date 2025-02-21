@@ -4,7 +4,11 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// EntityPropertyDoc
+/**
+ * An entity property, for more information see "Entity properties".
+ * 
+ * @link https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
+ */
 final readonly class EntityProperty extends Dto
 {
     public function __construct(

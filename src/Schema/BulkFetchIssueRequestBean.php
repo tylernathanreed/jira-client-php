@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// BulkFetchIssueRequestBeanDoc
 final readonly class BulkFetchIssueRequestBean extends Dto
 {
     public function __construct(

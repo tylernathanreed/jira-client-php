@@ -4,7 +4,10 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// TransitionUpdateDTODoc
+/**
+ * The transition update data.
+ * Note that a transition can have either the deprecated `to`/`from` fields or the `toStatusReference`/`links` fields, but never both nor a combination.
+ */
 final readonly class TransitionUpdateDTO extends Dto
 {
     public function __construct(

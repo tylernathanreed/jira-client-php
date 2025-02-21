@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// VersionRelatedWorkDoc
+/** Associated related work to a version */
 final readonly class VersionRelatedWork extends Dto
 {
     public function __construct(

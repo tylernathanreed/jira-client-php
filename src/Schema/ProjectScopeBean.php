@@ -4,7 +4,6 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-// ProjectScopeBeanDoc
 final readonly class ProjectScopeBean extends Dto
 {
     public function __construct(
