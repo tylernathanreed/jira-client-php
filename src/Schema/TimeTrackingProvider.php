@@ -22,7 +22,7 @@ final readonly class TimeTrackingProvider extends Dto
 
         /**
          * The URL of the configuration page for the time tracking provider app.
-         * For example, */example/config/url*.
+         * For example, * /example/config/url*.
          * This property is only returned if the `adminPageKey` property is set in the module descriptor of the time tracking provider app.
          */
         public ?string $url = null,

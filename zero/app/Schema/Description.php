@@ -71,8 +71,8 @@ final class Description extends AbstractSchema
         [$description, $links] = $this->extractLinks($this->description);
 
         $description = preg_replace(
-            ['/\.?(\n+)/', '/\. /', '/ \*  /'],
-            ['$1', ".\n", ' - '],
+            ['/\.?(\n+)/', '/\. /', '/ \*  /', '/\*\//'],
+            ['$1', ".\n", ' - ', '* /'],
             $description
         );
 
