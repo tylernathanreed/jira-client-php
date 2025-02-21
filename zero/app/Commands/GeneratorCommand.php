@@ -28,9 +28,17 @@ abstract class GeneratorCommand extends Command
             return false;
         }
 
+        $generated = [];
+
         foreach ($names as $name) {
+            if (isset($generated[ucfirst($name)])) {
+                continue;
+            }
+
             try {
                 $path = $generator->generate($name, $this->option('force'));
+
+                $generated[ucfirst($name)] = true;
             } catch (ClassGenerationException $e) {
                 $this->components->error($e->getMessage());
 

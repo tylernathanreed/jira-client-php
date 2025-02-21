@@ -7,7 +7,7 @@ use Jira\Client\Dto;
 /** A JQL query clause. */
 final readonly class JqlQueryClause extends Dto
 {
-    /** @return list<class-string<Dto>> */
+    /** @inheritDoc */
     public function unionTypes(): array
     {
         return [

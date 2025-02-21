@@ -28,7 +28,7 @@ class DummyUnionReplacer extends Replacer
 
         $stub = str_replace("    // DummyUnion\n", <<<DOC
 
-            /** @return list<class-string<Dto>> */
+            /** @inheritDoc */
             public function unionTypes(): array
             {
                 return [

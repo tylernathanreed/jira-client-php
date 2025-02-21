@@ -2,41 +2,32 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\PolymorphicDto;
+use Jira\Client\Dto;
 
-/** Can contain multiple field values of following types depending on `type` key */
-final readonly class Fields extends PolymorphicDto
+/** Key fields from the linked issue. */
+final readonly class Fields extends Dto
 {
     public function __construct(
-        /** If `true`, will try to retain original non-null issue field values on move. */
-        public ?bool $retain = true,
+        /** The assignee of the linked issue. */
+        public ?UserDetails $assignee = null,
 
-        public ?string $type = null,
+        /** The type of the linked issue. */
+        public ?IssueTypeDetails $issueType = null,
 
-        public ?object $value = null,
+        /** The type of the linked issue. */
+        public ?IssueTypeDetails $issuetype = null,
+
+        /** The priority of the linked issue. */
+        public ?Priority $priority = null,
+
+        /** The status of the linked issue. */
+        public ?StatusDetails $status = null,
+
+        /** The summary description of the linked issue. */
+        public ?string $summary = null,
+
+        /** The time tracking of the linked issue. */
+        public ?TimeTrackingDetails $timetracking = null,
     ) {
-    }
-
-    public static function discriminator(): string
-    {
-        return 'type';
-    }
-
-    /** @inheritDoc */
-    public static function discriminatorMap(): array
-    {
-        return [
-            'mandatoryField' => MandatoryFieldValue::class,
-            'mandatoryFieldForADF' => MandatoryFieldValueForADF::class,
-        ];
-    }
-
-    /** @return list<class-string<Dto>> */
-    public function unionTypes(): array
-    {
-        return [
-            MandatoryFieldValue::class,
-            MandatoryFieldValueForADF::class,
-        ];
     }
 }
