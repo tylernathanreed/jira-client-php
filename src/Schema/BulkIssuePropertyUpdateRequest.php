@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// BulkIssuePropertyUpdateRequestDoc
 final readonly class BulkIssuePropertyUpdateRequest extends Dto
 {
     public function __construct(
@@ -21,7 +22,7 @@ final readonly class BulkIssuePropertyUpdateRequest extends Dto
 
         /**
          * The value of the property.
-         * The value must be a valid, non-empty JSON blob.
+         * The value must be a "valid", non-empty JSON blob.
          * The maximum length is 32768 characters.
          * 
          * @link https://tools.ietf.org/html/rfc4627

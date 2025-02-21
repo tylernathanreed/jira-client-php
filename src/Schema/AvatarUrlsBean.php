@@ -5,6 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Attributes\MapName;
 use Jira\Client\Dto;
 
+// AvatarUrlsBeanDoc
 final readonly class AvatarUrlsBean extends Dto
 {
     public function __construct(

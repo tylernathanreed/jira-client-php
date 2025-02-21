@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// ArchivedIssuesFilterRequestDoc
 final readonly class ArchivedIssuesFilterRequest extends Dto
 {
     public function __construct(

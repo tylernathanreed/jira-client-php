@@ -2,6 +2,9 @@
 
 namespace App\Schema;
 
+use RuntimeException;
+use Throwable;
+
 /**
  * @phpstan-import-type TPropertyObject from Property
  * @phpstan-type TSchemaObject object{
@@ -15,35 +18,37 @@ namespace App\Schema;
  *     nullable?: bool,
  * }
  */
-final readonly class Schema
+final class Schema extends AbstractSchema
 {
     use Concerns\ParsesReferences;
 
     public function __construct(
-        public Description $description,
+        public readonly string $name,
+
+        public readonly Description $description,
 
         /** @var array<string,Property> */
-        public array $properties,
+        public readonly array $properties,
 
         /** @var array<string,true> */
-        public array $required,
+        public readonly array $required,
 
-        public ?string $discriminatorKey,
+        public readonly ?string $discriminatorKey,
 
         /** @var ?array<string,string> */
-        public ?array $discriminatorMap,
+        public readonly ?array $discriminatorMap,
 
-        public bool $nullable,
+        public readonly bool $nullable,
 
-        public string $type,
+        public readonly string $type,
 
         /** @var ?list<class-string<Dto>> */
-        public ?array $unionTypes,
+        public readonly ?array $unionTypes,
     ) {
     }
 
     /** @param TSchemaObject $schema */
-    public static function make(object $schema): static
+    public static function make(string $name, object $schema): static
     {
         [$key, $map] = static::discriminator($schema->discriminator ?? null);
 
@@ -52,6 +57,7 @@ final readonly class Schema
             : null;
 
         return new static(
+            name: $name,
             description: new Description($schema->description ?? null),
             required: $required = array_fill_keys($schema->required ?? [], true),
             properties: isset($schema->properties)
@@ -75,7 +81,17 @@ final readonly class Schema
         $source = (array) $properties;
 
         $properties = array_map(
-            fn ($property, $name, $i) => Property::make($name, $i, $required[$name] ?? false, $property),
+            function ($property, $name, $i) use ($required) {
+                try {
+                    return Property::make($name, $i, $required[$name] ?? false, $property);
+                } catch (Throwable $e) {
+                    throw new RuntimeException(sprintf(
+                        "Failed to generate property [%s] (%s).",
+                        $name,
+                        json_encode($property),
+                    ), previous: $e);
+                }
+            },
             $source,
             array_keys($source),
             range(0, count($source) - 1)

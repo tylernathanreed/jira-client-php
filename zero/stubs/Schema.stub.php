@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\DummyParent;
 // DummyIncludes
 
-// DummyComment
+// DummyClassDoc
 final readonly class DummyClass extends DummyParent
 {
     public function __construct(

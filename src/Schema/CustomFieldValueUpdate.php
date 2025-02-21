@@ -4,14 +4,14 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-/** A list of issue IDs and the value to update a custom field to. */
+// CustomFieldValueUpdateDoc
 final readonly class CustomFieldValueUpdate extends Dto
 {
     public function __construct(
         /**
          * The list of issue IDs.
          * 
-         * @var list<integer>
+         * @var list<int>
          */
         public array $issueIds,
 
@@ -36,5 +36,4 @@ final readonly class CustomFieldValueUpdate extends Dto
         public mixed $value,
     ) {
     }
-
 }

@@ -6,7 +6,7 @@ namespace App\Schema;
  * @phpstan-type TDocTag array{0:?string,1:string}
  * @phpstan-type TDocTags list<TDocTag>
  */
-final class Description
+final class Description extends AbstractSchema
 {
     public function __construct(
         public readonly ?string $description

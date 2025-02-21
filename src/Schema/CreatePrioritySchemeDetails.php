@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-/** Details of a new priority scheme */
+// CreatePrioritySchemeDetailsDoc
 final readonly class CreatePrioritySchemeDetails extends Dto
 {
     public function __construct(
@@ -20,7 +20,7 @@ final readonly class CreatePrioritySchemeDetails extends Dto
         /**
          * The IDs of priorities in the scheme.
          * 
-         * @var list<integer>
+         * @var list<int>
          */
         public array $priorityIds,
 
@@ -49,7 +49,7 @@ final readonly class CreatePrioritySchemeDetails extends Dto
         /**
          * The IDs of projects that will use the priority scheme.
          * 
-         * @var ?list<integer>
+         * @var ?list<int>
          */
         public ?array $projectIds = null,
     ) {

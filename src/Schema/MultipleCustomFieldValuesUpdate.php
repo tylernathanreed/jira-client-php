@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-/** A custom field and its new value with a list of issue to update. */
+// MultipleCustomFieldValuesUpdateDoc
 final readonly class MultipleCustomFieldValuesUpdate extends Dto
 {
     public function __construct(
@@ -17,7 +17,7 @@ final readonly class MultipleCustomFieldValuesUpdate extends Dto
         /**
          * The list of issue IDs.
          * 
-         * @var list<integer>
+         * @var list<int>
          */
         public array $issueIds,
 

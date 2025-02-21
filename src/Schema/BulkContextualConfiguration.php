@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// BulkContextualConfigurationDoc
 final readonly class BulkContextualConfiguration extends Dto
 {
     public function __construct(

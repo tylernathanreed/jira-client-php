@@ -2,8 +2,10 @@
 
 namespace Jira\Client\Schema;
 
+use DateTimeImmutable;
 use Jira\Client\Dto;
 
+// ChangelogDoc
 final readonly class Changelog extends Dto
 {
     public function __construct(
@@ -11,7 +13,7 @@ final readonly class Changelog extends Dto
         public ?UserDetails $author = null,
 
         /** The date on which the change took place. */
-        public ?string $created = null,
+        public ?DateTimeImmutable $created = null,
 
         /** The history metadata associated with the changed. */
         public ?HistoryMetadata $historyMetadata = null,

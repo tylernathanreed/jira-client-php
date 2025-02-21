@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// BulkFetchIssueRequestBeanDoc
 final readonly class BulkFetchIssueRequestBean extends Dto
 {
     public function __construct(
@@ -16,7 +17,7 @@ final readonly class BulkFetchIssueRequestBean extends Dto
         public array $issueIdsOrKeys,
 
         /**
-         * Use expand to include additional information about issues in the response.
+         * Use "expand" to include additional information about issues in the response.
          * Note that, unlike the majority of instances where `expand` is specified, `expand` is defined as a list of values.
          * The expand options are:
          * 
@@ -53,7 +54,7 @@ final readonly class BulkFetchIssueRequestBean extends Dto
          * Multiple `fields` parameters can be included in a request
          * 
          * Note: All navigable fields are returned by default.
-         * This differs from GET issue where the default is all fields.
+         * This differs from "GET issue" where the default is all fields.
          * 
          * @var ?list<string>
          */

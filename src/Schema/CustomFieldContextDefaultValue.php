@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\PolymorphicDto;
 
+// CustomFieldContextDefaultValueDoc
 final readonly class CustomFieldContextDefaultValue extends PolymorphicDto
 {
     public static function discriminator(): string

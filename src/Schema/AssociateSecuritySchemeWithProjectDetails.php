@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// AssociateSecuritySchemeWithProjectDetailsDoc
 final readonly class AssociateSecuritySchemeWithProjectDetails extends Dto
 {
     public function __construct(

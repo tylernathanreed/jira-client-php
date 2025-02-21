@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// AvailableWorkflowSystemRuleDoc
 final readonly class AvailableWorkflowSystemRule extends Dto
 {
     public function __construct(

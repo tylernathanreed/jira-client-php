@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-/** Details of an operation to perform on a field. */
+// FieldUpdateOperationDoc
 final readonly class FieldUpdateOperation extends Dto
 {
     public function __construct(
@@ -44,5 +44,4 @@ final readonly class FieldUpdateOperation extends Dto
         public mixed $set = null,
     ) {
     }
-
 }

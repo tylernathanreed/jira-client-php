@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// AddGroupBeanDoc
 final readonly class AddGroupBean extends Dto
 {
     public function __construct(

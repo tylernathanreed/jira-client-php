@@ -1,0 +1,16 @@
+<?php
+
+namespace Jira\Client\Schema;
+
+use Jira\Client\Dto;
+
+// WorkflowCreateValidateRequestDoc
+final readonly class WorkflowCreateValidateRequest extends Dto
+{
+    public function __construct(
+        public WorkflowCreateRequest $payload,
+
+        public ?ValidationOptionsForCreate $validationOptions = null,
+    ) {
+    }
+}

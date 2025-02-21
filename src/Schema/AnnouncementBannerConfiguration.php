@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// AnnouncementBannerConfigurationDoc
 final readonly class AnnouncementBannerConfiguration extends Dto
 {
     public function __construct(
@@ -24,7 +25,7 @@ final readonly class AnnouncementBannerConfiguration extends Dto
 
         /**
          * Visibility of the announcement banner.
-         *
+         * 
          * @var 'PUBLIC'|'PRIVATE'|null
          */
         public ?string $visibility = null,

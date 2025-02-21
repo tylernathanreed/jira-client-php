@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// AddAtlassianTeamRequestDoc
 final readonly class AddAtlassianTeamRequest extends Dto
 {
     public function __construct(
@@ -13,8 +14,8 @@ final readonly class AddAtlassianTeamRequest extends Dto
         /**
          * The planning style for the Atlassian team.
          * This must be "Scrum" or "Kanban".
-         *
-         * @var "Scrum"|"Kanban"
+         * 
+         * @var 'Scrum'|'Kanban'
          */
         public string $planningStyle,
 

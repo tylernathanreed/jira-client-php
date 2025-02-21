@@ -4,13 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-/**
- * A clause that asserts a previous value of a field.
- * For example, `status WAS "Resolved" BY currentUser() BEFORE "2019/02/02"`.
- * See "WAS" for more information about the WAS operator.
- * 
- * @link https://confluence.atlassian.com/x/dgiiLQ#Advancedsearching-operatorsreference-WASWAS
- */
+// FieldWasClauseDoc
 final readonly class FieldWasClause extends Dto
 {
     public function __construct(
@@ -33,5 +27,4 @@ final readonly class FieldWasClause extends Dto
         public array $predicates,
     ) {
     }
-
 }

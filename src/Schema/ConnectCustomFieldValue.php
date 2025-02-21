@@ -2,9 +2,10 @@
 
 namespace Jira\Client\Schema;
 
+use Jira\Client\Attributes\MapName;
 use Jira\Client\Dto;
 
-/** A list of custom field details. */
+// ConnectCustomFieldValueDoc
 final readonly class ConnectCustomFieldValue extends Dto
 {
     public function __construct(
@@ -13,7 +14,8 @@ final readonly class ConnectCustomFieldValue extends Dto
          * 
          * @var 'StringIssueField'|'NumberIssueField'|'RichTextIssueField'|'SingleSelectIssueField'|'MultiSelectIssueField'|'TextIssueField'
          */
-        public string $_type,
+        #[MapName('_type')]
+        public string $type,
 
         /** The custom field ID. */
         public int $fieldID,

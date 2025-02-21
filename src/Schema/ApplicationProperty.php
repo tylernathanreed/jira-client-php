@@ -4,10 +4,15 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// ApplicationPropertyDoc
 final readonly class ApplicationProperty extends Dto
 {
     public function __construct(
-        /** @var ?list<string> */
+        /**
+         * The allowed values, if applicable.
+         * 
+         * @var ?list<string>
+         */
         public ?array $allowedValues = null,
 
         /** The default value of the application property. */

@@ -2,13 +2,15 @@
 
 namespace Jira\Client\Schema;
 
+use DateTimeImmutable;
 use Jira\Client\Dto;
 
+// BulkOperationProgressDoc
 final readonly class BulkOperationProgress extends Dto
 {
     public function __construct(
         /** A timestamp of when the task was submitted. */
-        public ?string $created = null,
+        public ?DateTimeImmutable $created = null,
 
         /**
          * Map of issue IDs for which the operation failed and that the user has permission to view, to their one or more reasons for failure.
@@ -24,7 +26,7 @@ final readonly class BulkOperationProgress extends Dto
         /**
          * List of issue IDs for which the operation was successful and that the user has permission to view.
          * 
-         * @var ?list<integer>
+         * @var ?list<int>
          */
         public ?array $processedAccessibleIssues = null,
 
@@ -32,7 +34,7 @@ final readonly class BulkOperationProgress extends Dto
         public ?int $progressPercent = null,
 
         /** A timestamp of when the task was started. */
-        public ?string $started = null,
+        public ?DateTimeImmutable $started = null,
 
         /**
          * The status of the task.
@@ -50,7 +52,7 @@ final readonly class BulkOperationProgress extends Dto
         public ?int $totalIssueCount = null,
 
         /** A timestamp of when the task progress was last updated. */
-        public ?string $updated = null,
+        public ?DateTimeImmutable $updated = null,
     ) {
     }
 }

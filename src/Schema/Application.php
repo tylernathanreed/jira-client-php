@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// ApplicationDoc
 final readonly class Application extends Dto
 {
     public function __construct(

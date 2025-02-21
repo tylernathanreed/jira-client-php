@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Dto;
 
-/** The response for status request for a running/completed export task. */
+// ExportArchivedIssuesTaskProgressResponseDoc
 final readonly class ExportArchivedIssuesTaskProgressResponse extends Dto
 {
     public function __construct(
@@ -22,5 +22,4 @@ final readonly class ExportArchivedIssuesTaskProgressResponse extends Dto
         public ?string $taskId = null,
     ) {
     }
-
 }

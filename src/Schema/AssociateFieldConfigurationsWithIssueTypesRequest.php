@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// AssociateFieldConfigurationsWithIssueTypesRequestDoc
 final readonly class AssociateFieldConfigurationsWithIssueTypesRequest extends Dto
 {
     public function __construct(

@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// ApplicationRoleDoc
 final readonly class ApplicationRole extends Dto
 {
     public function __construct(
@@ -18,7 +19,7 @@ final readonly class ApplicationRole extends Dto
         /**
          * The groups that are granted default access for this application role.
          * 
-         * @var ?list<>
+         * @var ?list<GroupName>
          */
         public ?array $defaultGroupsDetails = null,
 
@@ -28,7 +29,7 @@ final readonly class ApplicationRole extends Dto
         /**
          * The groups associated with the application role.
          * 
-         * @var ?list<>
+         * @var ?list<GroupName>
          */
         public ?array $groupDetails = null,
 
@@ -64,7 +65,7 @@ final readonly class ApplicationRole extends Dto
         public ?int $userCount = null,
 
         /**
-         * The type of users being counted against your license.
+         * The "type of users" being counted against your license.
          * 
          * @link https://confluence.atlassian.com/x/lRW3Ng
          */

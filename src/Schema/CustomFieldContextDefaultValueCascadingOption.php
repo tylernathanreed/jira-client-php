@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-/** The default value for a cascading select custom field. */
+// CustomFieldContextDefaultValueCascadingOptionDoc
 final readonly class CustomFieldContextDefaultValueCascadingOption extends Dto
 {
     public function __construct(
@@ -20,5 +20,4 @@ final readonly class CustomFieldContextDefaultValueCascadingOption extends Dto
         public ?string $cascadingOptionId = null,
     ) {
     }
-
 }

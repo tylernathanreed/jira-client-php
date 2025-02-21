@@ -4,6 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
+// CustomFieldDefinitionJsonBeanDoc
 final readonly class CustomFieldDefinitionJsonBean extends Dto
 {
     public function __construct(
@@ -88,5 +89,4 @@ final readonly class CustomFieldDefinitionJsonBean extends Dto
         public ?string $searcherKey = null,
     ) {
     }
-
 }

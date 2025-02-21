@@ -2,8 +2,10 @@
 
 namespace Jira\Client\Schema;
 
+use DateTimeImmutable;
 use Jira\Client\Dto;
 
+// AttachmentMetadataDoc
 final readonly class AttachmentMetadata extends Dto
 {
     public function __construct(
@@ -14,7 +16,7 @@ final readonly class AttachmentMetadata extends Dto
         public ?string $content = null,
 
         /** The datetime the attachment was created. */
-        public ?string $created = null,
+        public ?DateTimeImmutable $created = null,
 
         /** The name of the attachment file. */
         public ?string $filename = null,

@@ -4,13 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-/**
- * This object is used as follows:
- * 
- *  - In the " issueLink" resource it defines and reports on the type of link between the issues.
- * Find a list of issue link types with "Get issue link types"
- *  - In the " issueLinkType" resource it defines and reports on issue link types.
- */
+// IssueLinkTypeDoc
 final readonly class IssueLinkType extends Dto
 {
     public function __construct(

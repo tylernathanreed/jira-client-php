@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Dto;
 
-/** The default value for a multiple version picker custom field. */
+// CustomFieldContextDefaultValueMultipleVersionPickerDoc
 final readonly class CustomFieldContextDefaultValueMultipleVersionPicker extends Dto
 {
     public function __construct(
@@ -25,5 +25,4 @@ final readonly class CustomFieldContextDefaultValueMultipleVersionPicker extends
         public ?string $versionOrder = null,
     ) {
     }
-
 }

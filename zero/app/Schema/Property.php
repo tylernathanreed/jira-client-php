@@ -26,7 +26,7 @@ use Stringable;
  *     '$ref'?: string,
  * }
  */
-final class Property implements Stringable
+final class Property extends AbstractSchema implements Stringable
 {
     use Concerns\ParsesReferences;
 
@@ -43,7 +43,7 @@ final class Property implements Stringable
         public readonly ?string $format = null,
         public readonly ?string $listableType = null,
         public readonly ?string $associativeType = null,
-        public readonly ?int $default = null,
+        public readonly int|string|null $default = null,
         public readonly bool $required = false,
         public readonly bool $readOnly = false,
         public readonly bool $writeOnly = false,
@@ -105,11 +105,15 @@ final class Property implements Stringable
             return null;
         }
 
-        if (! isset($type->items)) {
+        if (isset($type->items->type)) {
+            return 'list<' . $type->items->type . '>';
+        }
+
+        if (isset($type->type)) {
             return $type->type;
         }
 
-        return 'list<' . $type->items->type . '>';
+        return null;
     }
 
     public function hasType(): bool
@@ -267,7 +271,7 @@ final class Property implements Stringable
             '{phpType}' => $this->getNativeType(),
             '{name}' => $this->getSafeName(),
             '{default}' => $this->default
-                ? " = {$this->default}"
+                ? ' = ' . (is_string($this->default) ? "'{$this->default}'" : $this->default)
                 : ($this->required ? '' : ' = null'),
         ]);
     }
