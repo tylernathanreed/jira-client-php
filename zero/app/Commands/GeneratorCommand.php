@@ -14,7 +14,7 @@ abstract class GeneratorCommand extends Command
 {
     abstract public function generator(): Generator;
 
-    public function handle(): bool
+    public function handle(): ?bool
     {
         $generator = $this->generator();
 
@@ -57,7 +57,7 @@ abstract class GeneratorCommand extends Command
             $this->components->info(sprintf('%s [%s] created successfully.', static::type(), $path));
         }
 
-        return true;
+        return null;
     }
 
     protected function type(): string
