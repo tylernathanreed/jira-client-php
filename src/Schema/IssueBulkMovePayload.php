@@ -13,7 +13,7 @@ final readonly class IssueBulkMovePayload extends Dto
          * 
          * If `true`, dispatches a bulk notification email to users about the updates.
          */
-        public ?bool $sendBulkNotification = 1,
+        public ?bool $sendBulkNotification = true,
 
         /**
          * An object representing the mapping of issues and data related to destination entities, like fields and statuses, that are required during a bulk move

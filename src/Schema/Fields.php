@@ -9,7 +9,7 @@ final readonly class Fields extends PolymorphicDto
 {
     public function __construct(
         /** If `true`, will try to retain original non-null issue field values on move. */
-        public ?bool $retain = 1,
+        public ?bool $retain = true,
 
         public ?string $type = null,
 

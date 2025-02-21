@@ -17,7 +17,7 @@ final readonly class MandatoryFieldValue extends Dto
         public array $value,
 
         /** If `true`, will try to retain original non-null issue field values on move. */
-        public ?bool $retain = 1,
+        public ?bool $retain = true,
 
         /**
          * Will treat as `MandatoryFieldValue` if type is `raw` or `empty`

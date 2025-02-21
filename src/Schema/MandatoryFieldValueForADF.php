@@ -25,7 +25,7 @@ final readonly class MandatoryFieldValueForADF extends Dto
         public string $type = 'raw',
 
         /** If `true`, will try to retain original non-null issue field values on move. */
-        public ?bool $retain = 1,
+        public ?bool $retain = true,
     ) {
     }
 }

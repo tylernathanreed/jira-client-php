@@ -23,7 +23,7 @@ final readonly class IssueBulkTransitionPayload extends Dto
          * 
          * If `true`, dispatches a bulk notification email to users about the updates.
          */
-        public ?bool $sendBulkNotification = 1,
+        public ?bool $sendBulkNotification = true,
     ) {
     }
 }
