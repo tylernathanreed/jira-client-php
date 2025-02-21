@@ -10,10 +10,10 @@ final readonly class DashboardGadgetPosition extends Dto
 {
     public function __construct(
         #[MapName('The column position of the gadget.')]
-        public int $theColumnPositionOfTheGadget.,
+        public int $theColumnPositionOfTheGadget,
 
         #[MapName('The row position of the gadget.')]
-        public int $theRowPositionOfTheGadget.,
+        public int $theRowPositionOfTheGadget,
     ) {
     }
 }

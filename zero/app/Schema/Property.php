@@ -166,7 +166,9 @@ final class Property extends AbstractSchema implements Stringable
 
     protected function resolveSafeName(): string
     {
-        $words = explode(' ', str_replace(['-', '_'], ' ', $this->name));
+        $sanitized = preg_replace('/[^A-Za-z0-9_\- ]/', '', $this->name);
+
+        $words = explode(' ', str_replace(['-', '_'], ' ', $sanitized));
 
         $studlyWords = array_map('ucfirst', $words);
 
