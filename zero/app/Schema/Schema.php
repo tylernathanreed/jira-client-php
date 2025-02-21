@@ -102,6 +102,12 @@ final class Schema extends AbstractSchema
                 return $c;
             }
 
+            if ($b->required && $a->required) {
+                if (($c = ! is_null($a->default) <=> ! is_null($b->default)) !== 0) {
+                    return $c;
+                }
+            }
+
             return $a->index <=> $b->index;
         });
 
