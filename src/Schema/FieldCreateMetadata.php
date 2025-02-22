@@ -33,7 +33,7 @@ final readonly class FieldCreateMetadata extends Dto
         /**
          * The list of values allowed in the field.
          * 
-         * @var ?list<>
+         * @var ?list<mixed>
          */
         public ?array $allowedValues = null,
 

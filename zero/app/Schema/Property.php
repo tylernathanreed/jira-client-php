@@ -82,7 +82,7 @@ final class Property extends AbstractSchema implements Stringable
             type: $nativeType,
             typeIsRef: $isTypeRef,
             format: $schema->format ?? null,
-            listableType: $nativeListableType,
+            listableType: $nativeListableType ?? 'mixed',
             associativeType: $associativeType,
             default: $schema->default ?? null,
             readOnly: $schema->readOnly ?? false,
