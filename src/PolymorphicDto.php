@@ -43,6 +43,13 @@ abstract readonly class PolymorphicDto extends Dto
             ));
         }
 
+        if (! is_string($discriminator)) {
+            throw new InvalidArgumentException(sprintf(
+                'Discriminator for [%s] is not a string.',
+                static::class,
+            ));
+        }
+
         return static::discriminate($discriminator);
     }
 }
