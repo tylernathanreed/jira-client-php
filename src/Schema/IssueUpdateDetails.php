@@ -36,7 +36,7 @@ final readonly class IssueUpdateDetails extends Dto
          * A Map containing the field field name and a list of operations to perform on the issue screen field.
          * Note that fields included in here cannot be included in `fields`.
          * 
-         * @var array<string,array>
+         * @var array<string,FieldUpdateOperation>
          */
         public ?array $update = null,
     ) {

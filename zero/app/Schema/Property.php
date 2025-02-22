@@ -102,7 +102,11 @@ final class Property extends AbstractSchema implements Stringable
         }
 
         if (isset($type->{'$ref'})) {
-            return null;
+            return static::ref($type->{'$ref'})[0];
+        }
+
+        if (isset($type->items->{'$ref'})) {
+            return static::ref($type->items->{'$ref'})[0];
         }
 
         if (isset($type->items->type)) {
