@@ -17,6 +17,7 @@ final readonly class SecurityScheme extends Dto
         /** The ID of the issue security scheme. */
         public ?int $id = null,
 
+        /** @var ?list<SecurityLevel> */
         public ?array $levels = null,
 
         /** The name of the issue security scheme. */

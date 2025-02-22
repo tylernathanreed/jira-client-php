@@ -7,6 +7,7 @@ use Jira\Client\Dto;
 final readonly class MultipartFile extends Dto
 {
     public function __construct(
+        /** @var ?list<string> */
         public ?array $bytes = null,
 
         public ?string $contentType = null,

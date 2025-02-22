@@ -9,6 +9,7 @@ final readonly class PaginatedResponseFieldCreateMetadata extends Dto
     public function __construct(
         public ?int $maxResults = null,
 
+        /** @var ?list<FieldCreateMetadata> */
         public ?array $results = null,
 
         public ?int $startAt = null,

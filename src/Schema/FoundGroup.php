@@ -17,6 +17,7 @@ final readonly class FoundGroup extends Dto
         /** The group name with the matched query string highlighted with the HTML bold tag. */
         public ?string $html = null,
 
+        /** @var ?list<GroupLabel> */
         public ?array $labels = null,
 
         /**

@@ -8,6 +8,7 @@ use Jira\Client\Dto;
 final readonly class IssueArchivalSyncRequest extends Dto
 {
     public function __construct(
+        /** @var ?list<string> */
         public ?array $issueIdsOrKeys = null,
     ) {
     }

@@ -10,6 +10,7 @@ final readonly class NotificationSchemeEvent extends Dto
     public function __construct(
         public ?NotificationEvent $event = null,
 
+        /** @var ?list<EventNotification> */
         public ?array $notifications = null,
     ) {
     }

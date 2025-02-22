@@ -13,6 +13,7 @@ final readonly class ComponentJsonBean extends Dto
 
         public ?string $id = null,
 
+        /** @var array<string,string> */
         public ?array $metadata = null,
 
         public ?string $name = null,

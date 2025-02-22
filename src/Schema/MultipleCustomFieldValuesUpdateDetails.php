@@ -8,6 +8,7 @@ use Jira\Client\Dto;
 final readonly class MultipleCustomFieldValuesUpdateDetails extends Dto
 {
     public function __construct(
+        /** @var ?list<MultipleCustomFieldValuesUpdate> */
         public ?array $updates = null,
     ) {
     }

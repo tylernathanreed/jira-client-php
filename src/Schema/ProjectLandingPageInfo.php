@@ -7,6 +7,7 @@ use Jira\Client\Dto;
 final readonly class ProjectLandingPageInfo extends Dto
 {
     public function __construct(
+        /** @var array<string,string> */
         public ?array $attributes = null,
 
         public ?int $boardId = null,

@@ -10,6 +10,7 @@ final readonly class SimpleListWrapperGroupName extends Dto
     public function __construct(
         public ?ListWrapperCallbackGroupName $callback = null,
 
+        /** @var ?list<GroupName> */
         public ?array $items = null,
 
         #[MapName('max-results')]

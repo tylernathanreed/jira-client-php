@@ -8,6 +8,7 @@ use Jira\Client\Dto;
 final readonly class IssueMatches extends Dto
 {
     public function __construct(
+        /** @var list<IssueMatchesForJQL> */
         public array $matches,
     ) {
     }

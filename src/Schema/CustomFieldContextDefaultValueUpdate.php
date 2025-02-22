@@ -8,6 +8,7 @@ use Jira\Client\Dto;
 final readonly class CustomFieldContextDefaultValueUpdate extends Dto
 {
     public function __construct(
+        /** @var ?list<CustomFieldContextDefaultValue> */
         public ?array $defaultValues = null,
     ) {
     }

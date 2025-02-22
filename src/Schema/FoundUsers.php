@@ -14,6 +14,7 @@ final readonly class FoundUsers extends Dto
         /** The total number of users found in the search. */
         public ?int $total = null,
 
+        /** @var ?list<UserPickerUser> */
         public ?array $users = null,
     ) {
     }

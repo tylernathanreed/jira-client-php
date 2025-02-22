@@ -11,6 +11,7 @@ use Jira\Client\Dto;
 final readonly class ValidationOptionsForCreate extends Dto
 {
     public function __construct(
+        /** @var ?list<string> */
         public ?array $levels = null,
     ) {
     }

@@ -8,6 +8,7 @@ use Jira\Client\Dto;
 final readonly class JqlFunctionPrecomputationUpdateRequestBean extends Dto
 {
     public function __construct(
+        /** @var ?list<JqlFunctionPrecomputationUpdateBean> */
         public ?array $values = null,
     ) {
     }

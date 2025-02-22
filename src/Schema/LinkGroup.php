@@ -8,12 +8,14 @@ use Jira\Client\Dto;
 final readonly class LinkGroup extends Dto
 {
     public function __construct(
+        /** @var ?list<LinkGroup> */
         public ?array $groups = null,
 
         public ?SimpleLink $header = null,
 
         public ?string $id = null,
 
+        /** @var ?list<SimpleLink> */
         public ?array $links = null,
 
         public ?string $styleClass = null,

@@ -10,6 +10,7 @@ final readonly class SimpleListWrapperApplicationRole extends Dto
     public function __construct(
         public ?ListWrapperCallbackApplicationRole $callback = null,
 
+        /** @var ?list<ApplicationRole> */
         public ?array $items = null,
 
         #[MapName('max-results')]

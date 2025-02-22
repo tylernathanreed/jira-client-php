@@ -8,6 +8,7 @@ use Jira\Client\Dto;
 final readonly class JqlFunctionPrecomputationGetByIdRequest extends Dto
 {
     public function __construct(
+        /** @var ?list<string> */
         public ?array $precomputationIDs = null,
     ) {
     }

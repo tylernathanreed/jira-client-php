@@ -209,23 +209,6 @@ final class Property extends AbstractSchema implements Stringable
         return $this->compute('docType', fn () => $this->resolveDocType());
     }
 
-    public function getDefaultString(): string
-    {
-        if (is_null($this->default)) {
-            return 'null';
-        }
-
-        if (is_string($this->default)) {
-            return "'{$this->default}'";
-        }
-
-        if (is_bool($this->default) || $this->type === 'bool') {
-            return $this->default ? 'true' : 'false';
-        }
-
-        return (string) $this->default;
-    }
-
     protected function resolveDocType(): ?string
     {
         if (! $this->hasType() || $this->hasSimpleType() || $this->hasRefType()) {
@@ -252,6 +235,23 @@ final class Property extends AbstractSchema implements Stringable
     public function hasDocType(): bool
     {
         return ! is_null($this->getDocType());
+    }
+
+    public function getDefaultString(): string
+    {
+        if (is_null($this->default)) {
+            return 'null';
+        }
+
+        if (is_string($this->default)) {
+            return "'{$this->default}'";
+        }
+
+        if (is_bool($this->default) || $this->type === 'bool') {
+            return $this->default ? 'true' : 'false';
+        }
+
+        return (string) $this->default;
     }
 
     public function getDoc(): ?string

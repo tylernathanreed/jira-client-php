@@ -8,6 +8,7 @@ use Jira\Client\Dto;
 final readonly class PageOfCreateMetaIssueTypes extends Dto
 {
     public function __construct(
+        /** @var ?list<IssueTypeIssueCreateMetadata> */
         public ?array $createMetaIssueType = null,
 
         /**

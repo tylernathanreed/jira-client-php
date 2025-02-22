@@ -18,6 +18,7 @@ final readonly class PageOfCreateMetaIssueTypeWithField extends Dto
         /** The maximum number of items to return per page. */
         public ?int $maxResults = null,
 
+        /** @var ?list<FieldCreateMetadata> */
         public ?array $results = null,
 
         /** The index of the first item returned. */

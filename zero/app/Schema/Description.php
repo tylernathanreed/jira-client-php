@@ -16,7 +16,7 @@ final class Description extends AbstractSchema
     /** @param TDocTags $tags */
     public function render(int $indent = 0, array $tags = []): ?string
     {
-        if (empty($this->description)) {
+        if (empty($this->description) && empty($tags)) {
             return null;
         }
 

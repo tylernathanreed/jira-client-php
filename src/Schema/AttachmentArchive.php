@@ -7,6 +7,7 @@ use Jira\Client\Dto;
 final readonly class AttachmentArchive extends Dto
 {
     public function __construct(
+        /** @var ?list<AttachmentArchiveEntry> */
         public ?array $entries = null,
 
         public ?bool $moreAvailable = null,

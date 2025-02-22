@@ -17,6 +17,7 @@ final readonly class PageWithCursorGetPlanResponseForPage extends Dto
 
         public ?int $total = null,
 
+        /** @var ?list<GetPlanResponseForPage> */
         public ?array $values = null,
     ) {
     }

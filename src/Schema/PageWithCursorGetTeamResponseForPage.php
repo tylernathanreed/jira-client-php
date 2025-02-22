@@ -17,6 +17,7 @@ final readonly class PageWithCursorGetTeamResponseForPage extends Dto
 
         public ?int $total = null,
 
+        /** @var ?list<GetTeamResponseForPage> */
         public ?array $values = null,
     ) {
     }

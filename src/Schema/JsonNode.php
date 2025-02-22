@@ -17,6 +17,7 @@ final readonly class JsonNode extends Dto
 
         public ?bool $binary = null,
 
+        /** @var ?list<string> */
         public ?array $binaryValue = null,
 
         public ?bool $boolean = null,
@@ -55,6 +56,7 @@ final readonly class JsonNode extends Dto
 
         public ?bool $number = null,
 
+        /** @var 'INT'|'LONG'|'BIG_INTEGER'|'FLOAT'|'DOUBLE'|'BIG_DECIMAL'|null */
         public ?string $numberType = null,
 
         public ?float $numberValue = null,
