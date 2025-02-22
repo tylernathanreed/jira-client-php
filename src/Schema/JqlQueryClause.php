@@ -2,10 +2,10 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Jira\Client\UnionDto;
 
 /** A JQL query clause. */
-final readonly class JqlQueryClause extends Dto
+final readonly class JqlQueryClause extends UnionDto
 {
     /** @inheritDoc */
     public function unionTypes(): array
