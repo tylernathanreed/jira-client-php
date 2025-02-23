@@ -3,30 +3,16 @@
 namespace App\Schema;
 
 use Closure;
-use Jira\Client\Attributes\MapName;
 use RuntimeException;
-use Stringable;
 
 /**
- * @phpstan-type TPropertyObject object{
- *     description?: ?string,
- *     example?: mixed,
- *     type?: ?string,
- *     format?: string,
- *     items?: object{'$ref':string},
- *     allOf?: array{0:object{'$ref':string}}
- *     additionalProperties?: object{items?:object{type:string},type?:string,description?:string}
- *     readOnly?: bool,
- *     writeOnly?: bool,
- *     minItems?: int,
- *     maxItems?: int,
- *     uniqueItems?: bool,
- *     enum?: list<string>
- *     default?: int,
- *     '$ref'?: string,
+ * @phpstan-type TParameterObject object{
+ *     name:string,
+ *     description?:string,
+ *     in:string,
  * }
  */
-final class Property extends AbstractSchema implements Stringable
+final class Parameter extends AbstractSchema
 {
     use Concerns\ParsesReferences;
     use Concerns\ResolvesSafeNames;
@@ -36,9 +22,8 @@ final class Property extends AbstractSchema implements Stringable
 
     public function __construct(
         public readonly string $name,
-        public readonly int $index,
         public readonly Description $description,
-        public readonly mixed $example = null,
+        public readonly string $location,
         public readonly ?string $type = null,
         public readonly ?bool $typeIsRef = null,
         public readonly ?string $format = null,
@@ -46,52 +31,39 @@ final class Property extends AbstractSchema implements Stringable
         public readonly ?string $associativeType = null,
         public readonly int|string|null $default = null,
         public readonly bool $required = false,
-        public readonly bool $readOnly = false,
-        public readonly bool $writeOnly = false,
-        public readonly ?int $minItems = null,
-        public readonly ?int $maxItems = null,
-        public readonly bool $uniqueItems = false,
 
         /** @var ?list<string> */
         public readonly ?array $enum = null,
     ) {
     }
 
-    /** @var TPropertyObject $schema */
-    public static function make(string $name, int $index, bool $required, object $schema): static
+    /** @param TParameterObject $parameter */
+    public static function make(object $parameter): static
     {
-        $type = $schema->{'$ref'}
-            ?? $schema->allOf[0]->{'$ref'}
-            ?? $schema->additionalProperties?->{'$ref'}
-            ?? $schema->type
+        $type = $parameter->schema->{'$ref'}
+            ?? $parameter->schema->allOf[0]->{'$ref'}
+            ?? $parameter->schema->additionalProperties?->{'$ref'}
+            ?? $parameter->schema->type
             ?? null;
 
         [$nativeType, $isTypeRef] = static::ref($type);
 
-        $listableType = $schema->items?->type ?? $schema->items?->{'$ref'} ?? null;
+        $listableType = $parameter->schema->items?->type ?? $parameter->schema->items?->{'$ref'} ?? null;
 
         [$nativeListableType, $isListableTypeRef] = static::ref($listableType);
 
-        $associativeType = static::associativeType($schema->additionalProperties ?? null);
+        $associativeType = static::associativeType($parameter->schema->additionalProperties ?? null);
 
         return new static(
-            name: $name,
-            index: $index,
-            required: $required,
-            description: new Description($schema->description ?? $schema->additionalProperties?->description ?? null),
-            example: $schema->example ?? null,
+            name: $parameter->name,
+            description: new Description($parameter->description ?? null),
+            location: $parameter->in,
             type: $nativeType,
             typeIsRef: $isTypeRef,
-            format: $schema->format ?? null,
+            format: $parameter->format ?? null,
             listableType: $nativeListableType ?? 'mixed',
             associativeType: $associativeType,
-            default: $schema->default ?? null,
-            readOnly: $schema->readOnly ?? false,
-            writeOnly: $schema->writeOnly ?? false,
-            minItems: $schema->minItems ?? null,
-            maxItems: $schema->maxItems ?? null,
-            uniqueItems: $schema->uniqueItems ?? false,
-            enum: $schema->enum ?? null,
+            default: $parameter->schema->default ?? null,
         );
     }
 
@@ -129,10 +101,10 @@ final class Property extends AbstractSchema implements Stringable
     public function hasSimpleType(): bool
     {
         return in_array($this->type, ['bool', 'int', 'float'])
-            || (
-                $this->type === 'string' &&
-                ! $this->isEnum()
-            )
+        || (
+            $this->type === 'string' &&
+            ! $this->isEnum()
+        )
             || (
                 $this->type === 'object' &&
                 ! $this->isAssociativeArray()
@@ -164,21 +136,6 @@ final class Property extends AbstractSchema implements Stringable
         return $this->type === 'string' && $this->format === 'date-time';
     }
 
-    public function getSafeName(): string
-    {
-        return $this->compute('safeName', fn () => static::resolveSafeName($this->name));
-    }
-
-    public function getOriginalName(): string
-    {
-        return $this->name;
-    }
-
-    public function requiresNameMapping(): bool
-    {
-        return $this->getSafeName() != $this->getOriginalName();
-    }
-
     public function getNativeType(): string
     {
         return match ($this->type) {
@@ -194,7 +151,7 @@ final class Property extends AbstractSchema implements Stringable
 
     public function getDocType(): ?string
     {
-        return $this->compute('docType', fn () => $this->resolveDocType());
+        return $this->compute('docType', fn() => $this->resolveDocType());
     }
 
     protected function resolveDocType(): ?string
@@ -216,13 +173,13 @@ final class Property extends AbstractSchema implements Stringable
         }
 
         throw new RuntimeException(
-            'Unable to generate doc type for property: ' . json_encode($this)
+            'Unable to generate doc type for parameter: ' . json_encode($this)
         );
     }
 
-    public function hasDocType(): bool
+    public function getSafeName(): string
     {
-        return ! is_null($this->getDocType());
+        return $this->compute('safeName', fn() => static::resolveSafeName($this->name));
     }
 
     public function getDefaultString(): string
@@ -244,35 +201,18 @@ final class Property extends AbstractSchema implements Stringable
 
     public function getDoc(): ?string
     {
-        $tags = [];
-
-        if ($docType = $this->getDocType()) {
-            $tags[] = ['var', $docType];
-        }
-
-        if ($this->example) {
-            $example = is_string($this->example)
-                ? "'{$this->example}'"
-                : preg_replace(
-                    pattern: ["/\n/", '/array \( */', '/ +/', '/, ?\)/'],
-                    replacement: ['', '[', ' ', ']'],
-                    subject: var_export(json_decode(json_encode($this->example), true), true)
-                );
-
-            $tags[] = ['example', $example];
-        }
-
-        return $this->description->render(
-            indent: 8,
-            tags: $tags,
-        );
+        return strtr('{docType} ${name} {description}', [
+            '{docType}' => $this->getDocType() ?: $this->getNativeType(),
+            '{name}' => $this->getSafeName(),
+            '{description}' => $this->description->description,
+        ]);
     }
 
     public function getDefinition(): string
     {
         $indent = str_repeat(' ', 8);
 
-        return strtr('{indent}public {nullable}{phpType} ${name}{default},', [
+        return strtr('{indent}{nullable}{phpType} ${name}{default},', [
             '{indent}' => $indent,
             '{nullable}' => $this->required || is_null($this->type) ? '' : '?',
             '{phpType}' => $this->getNativeType(),
@@ -281,41 +221,6 @@ final class Property extends AbstractSchema implements Stringable
                 ? " = {$this->getDefaultString()}"
                 : ($this->required ? '' : ' = null'),
         ]);
-    }
-
-    public function getAttributes(): string
-    {
-        $indent = str_repeat(' ', 8);
-
-        $attributes = [];
-
-        if ($this->requiresNameMapping()) {
-            $attributes[MapName::class] = [$this->getOriginalName()];
-        }
-
-        $content = '';
-
-        foreach ($attributes as $attribute => $arguments) {
-            $name = class_basename($attribute);
-
-            $argString = '';
-
-            foreach ($arguments as $argument) {
-                $argString .= "'{$argument}', ";
-            }
-
-            if (! empty($argString)) {
-                $argString = '(' . rtrim($argString, ', ') . ')';
-            }
-
-            $content .= "{$indent}#[{$name}{$argString}]\n";
-        }
-
-        if (! empty($content)) {
-            $content = "{$content}";
-        }
-
-        return $content;
     }
 
     /**
@@ -331,10 +236,5 @@ final class Property extends AbstractSchema implements Stringable
         }
 
         return $this->computed[$key] = $callback();
-    }
-    
-    public function __toString(): string
-    {
-        return $this->getDoc() . $this->getAttributes() . $this->getDefinition();
     }
 }

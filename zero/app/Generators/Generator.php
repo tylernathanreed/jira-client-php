@@ -164,7 +164,7 @@ abstract class Generator
     protected function makeDirectory(string $path): string
     {
         if (! is_dir(dirname($path))) {
-            mkdir(dirname($path), 0777, true, true);
+            mkdir(dirname($path), 0777, true);
         }
 
         return $path;

@@ -17,8 +17,6 @@ class DummyPropertiesReplacer extends Replacer
 
         $content = implode("\n\n", $properties);
 
-        $stub = str_replace('{{ DummyProperties }}', $content, $stub);
-
-        return $stub;
+        return str_replace('{{ DummyProperties }}', $content, $stub);
     }
 }
