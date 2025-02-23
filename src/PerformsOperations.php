@@ -8,19 +8,7 @@ use Jira\Client\Operations;
 trait PerformsOperations
 {
     use Operations\AnnouncementBanner;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
-use Operations\IssueCustomFieldConfigurationApps;
+    use Operations\Avatars;
+    use Operations\IssueBulkOperations;
+    use Operations\IssueCustomFieldConfigurationApps;
 }

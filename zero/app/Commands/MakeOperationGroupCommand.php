@@ -38,16 +38,16 @@ class MakeOperationGroupCommand extends GeneratorCommand
 
         $stub = file_get_contents($filepath);
 
-        if (! preg_match('/(?P<imports>(?:^    use [^;{]+;$\n?)+)/m', $stub, $match)) {
+        if (! preg_match('/(?P<imports>(?:^ +use [^;{]+;$\n?)+)/m', $stub, $match)) {
             return;
         }
 
         $traits = array_map(
-            fn($filepath) => 'use Operations\\' . basename($filepath, '.php') . ';',
+            fn($filepath) => '    use Operations\\' . basename($filepath, '.php') . ';',
             glob(realpath(__DIR__ . '/../../../') . '/src/Operations/*.php')
         );
 
-        $stub = str_replace(trim($match['imports']), implode("\n", $traits), $stub);
+        $stub = str_replace(rtrim($match['imports']), implode("\n", $traits), $stub);
 
         file_put_contents($filepath, $stub);
 

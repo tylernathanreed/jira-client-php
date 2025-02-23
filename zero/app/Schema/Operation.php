@@ -119,11 +119,23 @@ final class Operation extends AbstractSchema implements Stringable
             $queryParam = 'compact(\'' . implode('\', \'', $queryNames) . '\')';
         }
 
+        $pathNames = [];
+        foreach ($this->parameters as $param) {
+            if ($param->location === 'path') {
+                $pathNames[] = $param->getSafeName();
+            }
+        }
+
+        if (! empty($pathNames)) {
+            $pathParam = 'compact(\'' . implode('\', \'', $pathNames) . '\')';
+        }
+    
         $arguments = array_filter([
             ['uri', "'{$this->uri}'"],
             ['method', "'{$this->method}'"],
             ['body', $bodyParam ?? null],
             ['query', $queryParam ?? null],
+            ['path', $pathParam ?? null],
             ['success', $this->successCode],
             ['schema', $schema],
         ], fn ($arg) => ! empty($arg[1]));

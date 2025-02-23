@@ -84,7 +84,7 @@ trait IssueCustomFieldConfigurationApps
      * @param int $maxResults The maximum number of items to return per page.
      */
     public function getCustomFieldConfiguration(
-        ?string $fieldIdOrKey = null,
+        string $fieldIdOrKey,
         ?array $id = null,
         ?array $fieldContextId = null,
         ?int $issueId = null,
@@ -97,6 +97,7 @@ trait IssueCustomFieldConfigurationApps
             uri: '/rest/api/3/app/field/{fieldIdOrKey}/context/configuration',
             method: 'get',
             query: compact('id', 'fieldContextId', 'issueId', 'projectKeyOrId', 'issueTypeId', 'startAt', 'maxResults'),
+            path: compact('fieldIdOrKey'),
             success: 200,
             schema: Schema\PageBeanContextualConfiguration::class,
         );
@@ -116,12 +117,13 @@ trait IssueCustomFieldConfigurationApps
      */
     public function updateCustomFieldConfiguration(
         Schema\CustomFieldConfigurations $request,
-        ?string $fieldIdOrKey = null,
+        string $fieldIdOrKey,
     ): true {
         return $this->call(
             uri: '/rest/api/3/app/field/{fieldIdOrKey}/context/configuration',
             method: 'put',
             body: $request,
+            path: compact('fieldIdOrKey'),
             success: 200,
             schema: true,
         );

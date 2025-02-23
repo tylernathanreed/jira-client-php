@@ -64,6 +64,7 @@ final class Parameter extends AbstractSchema
             listableType: $nativeListableType ?? 'mixed',
             associativeType: $associativeType,
             default: $parameter->schema->default ?? null,
+            required: ($parameter->required ?? false) || ($parameter->in === 'path'),
         );
     }
 
