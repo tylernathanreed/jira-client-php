@@ -202,19 +202,19 @@ trait IssueCustomFieldOptions
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $replaceWith The ID of the option that will replace the currently selected option.
-     * @param string $jql A JQL query that specifies the issues to be updated.
-     *                    For example, *project=10000*.
      * @param string $fieldId The ID of the custom field.
      * @param int $optionId The ID of the option to be deselected.
      * @param int $contextId The ID of the context.
+     * @param int $replaceWith The ID of the option that will replace the currently selected option.
+     * @param string $jql A JQL query that specifies the issues to be updated.
+     *                    For example, *project=10000*.
      */
     public function replaceCustomFieldOption(
-        ?int $replaceWith = null,
-        ?string $jql = null,
         string $fieldId,
         int $optionId,
         int $contextId,
+        ?int $replaceWith = null,
+        ?string $jql = null,
     ): Schema\TaskProgressBeanRemoveOptionFromIssuesResult {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}/option/{optionId}/issue',

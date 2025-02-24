@@ -102,21 +102,21 @@ trait Avatars
      * @param 'project'|'issuetype'|'priority' $type
      *        The avatar type.
      * @param string $entityId The ID of the item the avatar is associated with.
+     * @param int $size The length of each side of the crop region.
      * @param int $x The X coordinate of the top-left corner of the crop region.
      * @param int $y The Y coordinate of the top-left corner of the crop region.
-     * @param int $size The length of each side of the crop region.
      */
     public function storeAvatar(
         string $type,
         string $entityId,
+        int $size = 0,
         ?int $x = 0,
         ?int $y = 0,
-        int $size = 0,
     ): Schema\Avatar {
         return $this->call(
             uri: '/rest/api/3/universal_avatar/type/{type}/owner/{entityId}',
             method: 'post',
-            query: compact('x', 'y', 'size'),
+            query: compact('size', 'x', 'y'),
             path: compact('type', 'entityId'),
             success: 201,
             schema: Schema\Avatar::class,

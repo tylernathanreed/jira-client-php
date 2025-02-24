@@ -264,20 +264,20 @@ trait IssueFieldConfigurations
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
      * @param list<int> $projectId The list of project IDs.
      *                             To include multiple projects, separate IDs with ampersand: `projectId=10000&projectId=10001`.
+     * @param int $startAt The index of the first item to return in a page of results (page offset).
+     * @param int $maxResults The maximum number of items to return per page.
      */
     public function getFieldConfigurationSchemeProjectMapping(
+        array $projectId,
         ?int $startAt = 0,
         ?int $maxResults = 50,
-        array $projectId,
     ): Schema\PageBeanFieldConfigurationSchemeProjects {
         return $this->call(
             uri: '/rest/api/3/fieldconfigurationscheme/project',
             method: 'get',
-            query: compact('startAt', 'maxResults', 'projectId'),
+            query: compact('projectId', 'startAt', 'maxResults'),
             success: 200,
             schema: Schema\PageBeanFieldConfigurationSchemeProjects::class,
         );
