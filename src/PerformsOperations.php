@@ -12,4 +12,5 @@ trait PerformsOperations
     use Operations\ClassificationLevels;
     use Operations\IssueBulkOperations;
     use Operations\IssueCustomFieldConfigurationApps;
+    use Operations\ProjectComponents;
 }

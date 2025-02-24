@@ -209,11 +209,20 @@ final class Parameter extends AbstractSchema
 
     public function getDoc(): ?string
     {
-        return strtr('{docType} ${name} {description}', [
+        $definition = strtr('{docType} ${name}', [
             '{docType}' => $this->getDocType() ?: $this->getNativeType(),
             '{name}' => $this->getSafeName(),
-            '{description}' => $this->description->description,
         ]);
+
+        $indent = str_repeat(' ', strlen($definition) + strlen('@param ') + 1);
+
+        $description = str_replace(
+            ["     * \n", '     * '],
+            ['', '     * ' . $indent],
+            rtrim(ltrim($this->description->render(4), "/* \n"), " */\n")
+        );
+
+        return $definition . ' ' . $description;
     }
 
     public function getDefinition(): string
