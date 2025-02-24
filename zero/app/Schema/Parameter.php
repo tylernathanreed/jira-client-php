@@ -214,7 +214,9 @@ final class Parameter extends AbstractSchema
             '{name}' => $this->getSafeName(),
         ]);
 
-        $indent = str_repeat(' ', strlen($definition) + strlen('@param ') + 1);
+        $indent = $this->isEnum()
+            ? str_repeat(' ', strlen('@param '))
+            : str_repeat(' ', strlen($definition) + strlen('@param ') + 1);
 
         $description = str_replace(
             ["     * \n", '     * '],
@@ -222,7 +224,9 @@ final class Parameter extends AbstractSchema
             rtrim(ltrim($this->description->render(4), "/* \n"), " */\n")
         );
 
-        return $definition . ' ' . $description;
+        return $this->isEnum()
+            ? $definition . "\n     *        " . $description
+            : $definition . ' ' . $description;
     }
 
     public function getDefinition(): string
