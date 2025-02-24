@@ -38,7 +38,11 @@ final class Operation extends AbstractSchema implements Stringable
     {
         $op = $operation['operation'];
 
-        $successCode = min(...array_keys((array) $op->responses));
+        $responseCodes = array_keys((array) $op->responses);
+
+        $successCode = count($responseCodes) > 1
+            ? min(...$responseCodes)
+            : $responseCodes[0];
 
         $successSchema = static::ref(
             $op->responses->{$successCode}->content->{'application/json'}->schema->{'$ref'} ?? null
@@ -69,7 +73,27 @@ final class Operation extends AbstractSchema implements Stringable
      */
     protected static function makeParameters(array $parameters): array
     {
-        return array_map(fn ($param) => Parameter::make($param), $parameters);
+        $parameters = array_map(
+            fn ($param, $i) => Parameter::make($i, $param),
+            $parameters,
+            array_keys($parameters)
+        );
+
+        usort($parameters, function (Parameter $a, Parameter $b) {
+            if (($c = $b->required <=> $a->required) !== 0) {
+                return $c;
+            }
+
+            if ($b->required && $a->required) {
+                if (($c = ! is_null($a->default) <=> ! is_null($b->default)) !== 0) {
+                    return $c;
+                }
+            }
+
+            return $a->index <=> $b->index;
+        });
+
+        return $parameters;
     }
 
     public function getDoc(): ?string

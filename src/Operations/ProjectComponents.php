@@ -20,9 +20,10 @@ trait ProjectComponents
      * @param ?list<string> $projectIdsOrKeys The project IDs and/or project keys (case sensitive).
      * @param int $startAt The index of the first item to return in a page of results (page offset).
      * @param int $maxResults The maximum number of items to return per page.
-     * @param 'description'|'-description'|'+description'|'name'|'-name'|'+name'|null $orderBy "Order" the results by a field:
-     *                                                                                          - `description` Sorts by the component description
-     *                                                                                          - `name` Sorts by component name.
+     * @param 'description'|'-description'|'+description'|'name'|'-name'|'+name'|null $orderBy
+     *        "Order" the results by a field:
+     *         - `description` Sorts by the component description
+     *         - `name` Sorts by component name.
      * @param string $query Filter the results using a literal string.
      *                      Components with a matching `name` or `description` are returned (case insensitive).
      */
@@ -186,15 +187,17 @@ trait ProjectComponents
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
      * @param int $startAt The index of the first item to return in a page of results (page offset).
      * @param int $maxResults The maximum number of items to return per page.
-     * @param 'description'|'-description'|'+description'|'issueCount'|'-issueCount'|'+issueCount'|'lead'|'-lead'|'+lead'|'name'|'-name'|'+name'|null $orderBy "Order" the results by a field:
-     *                                                                                                                                                          - `description` Sorts by the component description
-     *                                                                                                                                                          - `issueCount` Sorts by the count of issues associated with the component
-     *                                                                                                                                                          - `lead` Sorts by the user key of the component's project lead
-     *                                                                                                                                                          - `name` Sorts by component name.
-     * @param 'jira'|'compass'|'auto'|null $componentSource The source of the components to return.
-     *                                                      Can be `jira` (default), `compass` or `auto`.
-     *                                                      When `auto` is specified, the API will return connected Compass components if the project is opted into Compass, otherwise it will return Jira components.
-     *                                                      Defaults to `jira`.
+     * @param 'description'|'-description'|'+description'|'issueCount'|'-issueCount'|'+issueCount'|'lead'|'-lead'|'+lead'|'name'|'-name'|'+name'|null $orderBy
+     *        "Order" the results by a field:
+     *         - `description` Sorts by the component description
+     *         - `issueCount` Sorts by the count of issues associated with the component
+     *         - `lead` Sorts by the user key of the component's project lead
+     *         - `name` Sorts by component name.
+     * @param 'jira'|'compass'|'auto'|null $componentSource
+     *        The source of the components to return.
+     *        Can be `jira` (default), `compass` or `auto`.
+     *        When `auto` is specified, the API will return connected Compass components if the project is opted into Compass, otherwise it will return Jira components.
+     *        Defaults to `jira`.
      * @param string $query Filter the results using a literal string.
      *                      Components with a matching `name` or `description` are returned (case insensitive).
      */
@@ -229,10 +232,11 @@ trait ProjectComponents
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
-     * @param 'jira'|'compass'|'auto'|null $componentSource The source of the components to return.
-     *                                                      Can be `jira` (default), `compass` or `auto`.
-     *                                                      When `auto` is specified, the API will return connected Compass components if the project is opted into Compass, otherwise it will return Jira components.
-     *                                                      Defaults to `jira`.
+     * @param 'jira'|'compass'|'auto'|null $componentSource
+     *        The source of the components to return.
+     *        Can be `jira` (default), `compass` or `auto`.
+     *        When `auto` is specified, the API will return connected Compass components if the project is opted into Compass, otherwise it will return Jira components.
+     *        Defaults to `jira`.
      */
     public function getProjectComponents(
         string $projectIdOrKey,

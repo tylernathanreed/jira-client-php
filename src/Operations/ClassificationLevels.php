@@ -14,7 +14,9 @@ trait ClassificationLevels
      * **"Permissions" required:** None.
      * 
      * @param ?list<'PUBLISHED'|'ARCHIVED'|'DRAFT'> $status Optional set of statuses to filter by.
-     * @param 'rank'|'-rank'|'+rank'|null $orderBy Ordering of the results by a given field. If not provided, values will not be sorted.
+     * @param 'rank'|'-rank'|'+rank'|null $orderBy
+     *        Ordering of the results by a given field.
+     *        If not provided, values will not be sorted.
      */
     public function getAllUserDataClassificationLevels(
         ?array $status = null,

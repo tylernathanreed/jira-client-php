@@ -27,11 +27,21 @@ trait IssueCustomFieldConfigurationApps
      * @link https://developer.atlassian.com/platform/forge/
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param ?list<int> $id The list of configuration IDs. To include multiple configurations, separate IDs with an ampersand: `id=10000&id=10001`. Can't be provided with `fieldContextId`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
-     * @param ?list<int> $fieldContextId The list of field context IDs. To include multiple field contexts, separate IDs with an ampersand: `fieldContextId=10000&fieldContextId=10001`. Can't be provided with `id`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
-     * @param int $issueId The ID of the issue to filter results by. If the issue doesn't exist, an empty list is returned. Can't be provided with `projectKeyOrId`, or `issueTypeId`.
-     * @param string $projectKeyOrId The ID or key of the project to filter results by. Must be provided with `issueTypeId`. Can't be provided with `issueId`.
-     * @param string $issueTypeId The ID of the issue type to filter results by. Must be provided with `projectKeyOrId`. Can't be provided with `issueId`.
+     * @param ?list<int> $id The list of configuration IDs.
+     *                       To include multiple configurations, separate IDs with an ampersand: `id=10000&id=10001`.
+     *                       Can't be provided with `fieldContextId`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
+     * @param ?list<int> $fieldContextId The list of field context IDs.
+     *                                   To include multiple field contexts, separate IDs with an ampersand: `fieldContextId=10000&fieldContextId=10001`.
+     *                                   Can't be provided with `id`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
+     * @param int $issueId The ID of the issue to filter results by.
+     *                     If the issue doesn't exist, an empty list is returned.
+     *                     Can't be provided with `projectKeyOrId`, or `issueTypeId`.
+     * @param string $projectKeyOrId The ID or key of the project to filter results by.
+     *                               Must be provided with `issueTypeId`.
+     *                               Can't be provided with `issueId`.
+     * @param string $issueTypeId The ID of the issue type to filter results by.
+     *                            Must be provided with `projectKeyOrId`.
+     *                            Can't be provided with `issueId`.
      * @param int $startAt The index of the first item to return in a page of results (page offset).
      * @param int $maxResults The maximum number of items to return per page.
      */
@@ -75,11 +85,21 @@ trait IssueCustomFieldConfigurationApps
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $fieldIdOrKey The ID or key of the custom field, for example `customfield_10000`.
-     * @param ?list<int> $id The list of configuration IDs. To include multiple configurations, separate IDs with an ampersand: `id=10000&id=10001`. Can't be provided with `fieldContextId`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
-     * @param ?list<int> $fieldContextId The list of field context IDs. To include multiple field contexts, separate IDs with an ampersand: `fieldContextId=10000&fieldContextId=10001`. Can't be provided with `id`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
-     * @param int $issueId The ID of the issue to filter results by. If the issue doesn't exist, an empty list is returned. Can't be provided with `projectKeyOrId`, or `issueTypeId`.
-     * @param string $projectKeyOrId The ID or key of the project to filter results by. Must be provided with `issueTypeId`. Can't be provided with `issueId`.
-     * @param string $issueTypeId The ID of the issue type to filter results by. Must be provided with `projectKeyOrId`. Can't be provided with `issueId`.
+     * @param ?list<int> $id The list of configuration IDs.
+     *                       To include multiple configurations, separate IDs with an ampersand: `id=10000&id=10001`.
+     *                       Can't be provided with `fieldContextId`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
+     * @param ?list<int> $fieldContextId The list of field context IDs.
+     *                                   To include multiple field contexts, separate IDs with an ampersand: `fieldContextId=10000&fieldContextId=10001`.
+     *                                   Can't be provided with `id`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
+     * @param int $issueId The ID of the issue to filter results by.
+     *                     If the issue doesn't exist, an empty list is returned.
+     *                     Can't be provided with `projectKeyOrId`, or `issueTypeId`.
+     * @param string $projectKeyOrId The ID or key of the project to filter results by.
+     *                               Must be provided with `issueTypeId`.
+     *                               Can't be provided with `issueId`.
+     * @param string $issueTypeId The ID of the issue type to filter results by.
+     *                            Must be provided with `projectKeyOrId`.
+     *                            Can't be provided with `issueId`.
      * @param int $startAt The index of the first item to return in a page of results (page offset).
      * @param int $maxResults The maximum number of items to return per page.
      */

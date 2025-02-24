@@ -15,7 +15,8 @@ trait Avatars
      * 
      * **"Permissions" required:** None.
      * 
-     * @param string $type The avatar type.
+     * @param 'issuetype'|'project'|'user'|'priority' $type
+     *        The avatar type.
      */
     public function getAllSystemAvatars(
         string $type,
@@ -43,7 +44,8 @@ trait Avatars
      * 
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
-     * @param string $type The avatar type.
+     * @param 'project'|'issuetype'|'priority' $type
+     *        The avatar type.
      * @param string $entityId The ID of the item the avatar is associated with.
      */
     public function getAvatars(
@@ -97,7 +99,8 @@ trait Avatars
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $type The avatar type.
+     * @param 'project'|'issuetype'|'priority' $type
+     *        The avatar type.
      * @param string $entityId The ID of the item the avatar is associated with.
      * @param int $x The X coordinate of the top-left corner of the crop region.
      * @param int $y The Y coordinate of the top-left corner of the crop region.
@@ -127,7 +130,8 @@ trait Avatars
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $type The avatar type.
+     * @param 'project'|'issuetype'|'priority' $type
+     *        The avatar type.
      * @param string $owningObjectId The ID of the item the avatar is associated with.
      * @param int $id The ID of the avatar.
      */
@@ -152,9 +156,14 @@ trait Avatars
      * 
      * **"Permissions" required:** None.
      * 
-     * @param string $type The icon type of the avatar.
-     * @param string $size The size of the avatar image. If not provided the default size is returned.
-     * @param string $format The format to return the avatar image in. If not provided the original content format is returned.
+     * @param 'issuetype'|'project'|'priority' $type
+     *        The icon type of the avatar.
+     * @param 'xsmall'|'small'|'medium'|'large'|'xlarge'|null $size
+     *        The size of the avatar image.
+     *        If not provided the default size is returned.
+     * @param 'png'|'svg'|null $format
+     *        The format to return the avatar image in.
+     *        If not provided the original content format is returned.
      */
     public function getAvatarImageByType(
         string $type,
@@ -185,10 +194,15 @@ trait Avatars
      * 
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
-     * @param string $type The icon type of the avatar.
+     * @param 'issuetype'|'project'|'priority' $type
+     *        The icon type of the avatar.
      * @param int $id The ID of the avatar.
-     * @param string $size The size of the avatar image. If not provided the default size is returned.
-     * @param string $format The format to return the avatar image in. If not provided the original content format is returned.
+     * @param 'xsmall'|'small'|'medium'|'large'|'xlarge'|null $size
+     *        The size of the avatar image.
+     *        If not provided the default size is returned.
+     * @param 'png'|'svg'|null $format
+     *        The format to return the avatar image in.
+     *        If not provided the original content format is returned.
      */
     public function getAvatarImageByID(
         string $type,
@@ -220,10 +234,15 @@ trait Avatars
      * 
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
-     * @param string $type The icon type of the avatar.
+     * @param 'issuetype'|'project'|'priority' $type
+     *        The icon type of the avatar.
      * @param string $entityId The ID of the project or issue type the avatar belongs to.
-     * @param string $size The size of the avatar image. If not provided the default size is returned.
-     * @param string $format The format to return the avatar image in. If not provided the original content format is returned.
+     * @param 'xsmall'|'small'|'medium'|'large'|'xlarge'|null $size
+     *        The size of the avatar image.
+     *        If not provided the default size is returned.
+     * @param 'png'|'svg'|null $format
+     *        The format to return the avatar image in.
+     *        If not provided the original content format is returned.
      */
     public function getAvatarImageByOwner(
         string $type,

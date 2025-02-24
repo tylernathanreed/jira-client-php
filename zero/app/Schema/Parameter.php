@@ -21,6 +21,7 @@ final class Parameter extends AbstractSchema
     protected array $computed = [];
 
     public function __construct(
+        public readonly int $index,
         public readonly string $name,
         public readonly Description $description,
         public readonly string $location,
@@ -38,7 +39,7 @@ final class Parameter extends AbstractSchema
     }
 
     /** @param TParameterObject $parameter */
-    public static function make(object $parameter): static
+    public static function make(int $index, object $parameter): static
     {
         $type = $parameter->schema->{'$ref'}
             ?? $parameter->schema->allOf[0]->{'$ref'}
@@ -54,13 +55,12 @@ final class Parameter extends AbstractSchema
             $listableType = implode('|', array_map(fn ($enum) => "'{$enum}'", $parameter->schema->items->enum));
         }
 
-        // @todo Listable type as enum (ClassificationLevels)
-
         [$nativeListableType, $isListableTypeRef] = static::ref($listableType);
 
         $associativeType = static::associativeType($parameter->schema->additionalProperties ?? null);
 
         return new static(
+            index: $index,
             name: $parameter->name,
             description: new Description($parameter->description ?? null),
             location: $parameter->in,

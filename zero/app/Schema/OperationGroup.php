@@ -2,6 +2,9 @@
 
 namespace App\Schema;
 
+use RuntimeException;
+use Throwable;
+
 /**
  * @phpstan-import-type TOperationArray from Specification
  */
@@ -20,7 +23,17 @@ final class OperationGroup extends AbstractSchema
     {
         return new static(
             name: $name,
-            operations: array_map(fn ($o) => Operation::make($o), $operations),
+            operations: array_map(function ($o) {
+                try {
+                    return Operation::make($o);
+                } catch (Throwable $e) {
+                    throw new RuntimeException(sprintf(
+                        'Failed to generate Operation [%s]: %s',
+                        $o['id'],
+                        $e->getMessage(),
+                    ), 0, $e);
+                }
+            }, $operations),
         );
     }
 }
