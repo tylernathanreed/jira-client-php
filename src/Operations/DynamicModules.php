@@ -13,7 +13,7 @@ trait DynamicModules
      * 
      * **"Permissions" required:** Only Connect apps can make this request.
      */
-    public function DynamicModulesResource.getModules_get(): Schema\ConnectModules
+    public function getModules(): Schema\ConnectModules
     {
         return $this->call(
             uri: '/rest/atlassian-connect/1/app/module/dynamic',
@@ -28,7 +28,7 @@ trait DynamicModules
      * 
      * **"Permissions" required:** Only Connect apps can make this request.
      */
-    public function DynamicModulesResource.registerModules_post(
+    public function registerModules(
         Schema\ConnectModules $request,
     ): true {
         return $this->call(
@@ -50,7 +50,7 @@ trait DynamicModules
      *                                 For example, `moduleKey=dynamic-attachment-entity-property&moduleKey=dynamic-select-field`
      *                                 Nonexistent keys are ignored.
      */
-    public function DynamicModulesResource.removeModules_delete(
+    public function removeModules(
         ?array $moduleKey = null,
     ): true {
         return $this->call(

@@ -106,10 +106,10 @@ trait Projects
      *                        - `insight` EXPERIMENTAL.
      *                       Returns the insight details of total issue count and last issue update time for the project
      *                        - `*` Returns the project with all available expand options.
-     * @param ?list<StringList> $properties EXPERIMENTAL.
-     *                                      A list of project properties to return for the project.
-     *                                      This parameter accepts a comma-separated list.
-     *                                      Invalid property names are ignored.
+     * @param ?list<Schema\StringList> $properties EXPERIMENTAL.
+     *                                             A list of project properties to return for the project.
+     *                                             This parameter accepts a comma-separated list.
+     *                                             Invalid property names are ignored.
      */
     public function getRecent(
         ?string $expand = null,
@@ -199,9 +199,9 @@ trait Projects
      *                                                    - `live` Search live projects
      *                                                    - `archived` Search archived projects
      *                                                    - `deleted` Search deleted projects, those in the recycle bin.
-     * @param ?list<StringList> $properties EXPERIMENTAL.
-     *                                      A list of project properties to return for the project.
-     *                                      This parameter accepts a comma-separated list.
+     * @param ?list<Schema\StringList> $properties EXPERIMENTAL.
+     *                                             A list of project properties to return for the project.
+     *                                             This parameter accepts a comma-separated list.
      * @param string $propertyQuery EXPERIMENTAL.
      *                              A query string used to search properties.
      *                              The query string cannot be specified using a JSON object.

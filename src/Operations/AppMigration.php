@@ -16,7 +16,7 @@ trait AppMigration
      * 
      * @param string $atlassianTransferId The ID of the transfer.
      */
-    public function AppIssueFieldValueUpdateResource.updateIssueFields_put(
+    public function updateIssueFields(
         Schema\ConnectCustomFieldValues $request,
         string $atlassianTransferId,
     ): true {
@@ -24,6 +24,7 @@ trait AppMigration
             uri: '/rest/atlassian-connect/1/migration/field',
             method: 'put',
             body: $request,
+            header: ['Atlassian-Transfer-Id' => $atlassianTransferId],
             success: 200,
             schema: true,
         );
@@ -37,13 +38,14 @@ trait AppMigration
      * @param 'IssueProperty'|'CommentProperty'|'DashboardItemProperty'|'IssueTypeProperty'|'ProjectProperty'|'UserProperty'|'WorklogProperty'|'BoardProperty'|'SprintProperty' $entityType
      *        The type indicating the object that contains the entity properties.
      */
-    public function MigrationResource.updateEntityPropertiesValue_put(
+    public function updateEntityPropertiesValue(
         string $atlassianTransferId,
         string $entityType,
     ): true {
         return $this->call(
             uri: '/rest/atlassian-connect/1/migration/properties/{entityType}',
             method: 'put',
+            header: ['Atlassian-Transfer-Id' => $atlassianTransferId],
             path: compact('entityType'),
             success: 200,
             schema: true,
@@ -55,7 +57,7 @@ trait AppMigration
      * 
      * @param string $atlassianTransferId The app migration transfer ID.
      */
-    public function MigrationResource.workflowRuleSearch_post(
+    public function workflowRuleSearch(
         Schema\WorkflowRulesSearch $request,
         string $atlassianTransferId,
     ): Schema\WorkflowRulesSearchDetails {
@@ -63,6 +65,7 @@ trait AppMigration
             uri: '/rest/atlassian-connect/1/migration/workflow/rule/search',
             method: 'post',
             body: $request,
+            header: ['Atlassian-Transfer-Id' => $atlassianTransferId],
             success: 200,
             schema: Schema\WorkflowRulesSearchDetails::class,
         );

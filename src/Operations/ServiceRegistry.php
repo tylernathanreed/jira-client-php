@@ -15,7 +15,7 @@ trait ServiceRegistry
      * 
      * @param list<string> $serviceIds The ID of the services (the strings starting with "b:" need to be decoded in Base64).
      */
-    public function ServiceRegistryResource.services_get(
+    public function services(
         array $serviceIds,
     ): true {
         return $this->call(

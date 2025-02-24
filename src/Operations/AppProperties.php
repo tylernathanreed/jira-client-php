@@ -16,7 +16,7 @@ trait AppProperties
      * 
      * @param string $addonKey The key of the app, as defined in its descriptor.
      */
-    public function AddonPropertiesResource.getAddonProperties_get(
+    public function getAddonProperties(
         string $addonKey,
     ): Schema\PropertyKeys {
         return $this->call(
@@ -37,7 +37,7 @@ trait AppProperties
      * @param string $addonKey The key of the app, as defined in its descriptor.
      * @param string $propertyKey The key of the property.
      */
-    public function AddonPropertiesResource.getAddonProperty_get(
+    public function getAddonProperty(
         string $addonKey,
         string $propertyKey,
     ): Schema\EntityProperty {
@@ -65,7 +65,7 @@ trait AppProperties
      * @param string $addonKey The key of the app, as defined in its descriptor.
      * @param string $propertyKey The key of the property.
      */
-    public function AddonPropertiesResource.putAddonProperty_put(
+    public function putAddonProperty(
         string $addonKey,
         string $propertyKey,
     ): Schema\OperationMessage {
@@ -87,7 +87,7 @@ trait AppProperties
      * @param string $addonKey The key of the app, as defined in its descriptor.
      * @param string $propertyKey The key of the property.
      */
-    public function AddonPropertiesResource.deleteAddonProperty_delete(
+    public function deleteAddonProperty(
         string $addonKey,
         string $propertyKey,
     ): true {

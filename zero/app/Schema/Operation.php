@@ -132,32 +132,15 @@ final class Operation extends AbstractSchema implements Stringable
             $parameters[] = $param->getDefinition();
         }
 
-        $queryNames = [];
-        foreach ($this->parameters as $param) {
-            if ($param->location === 'query') {
-                $queryNames[] = $param->getSafeName();
-            }
-        }
-
-        if (! empty($queryNames)) {
-            $queryParam = 'compact(\'' . implode('\', \'', $queryNames) . '\')';
-        }
-
-        $pathNames = [];
-        foreach ($this->parameters as $param) {
-            if ($param->location === 'path') {
-                $pathNames[] = $param->getSafeName();
-            }
-        }
-
-        if (! empty($pathNames)) {
-            $pathParam = 'compact(\'' . implode('\', \'', $pathNames) . '\')';
-        }
+        $queryParam = $this->getCallParamString('query');
+        $pathParam = $this->getCallParamString('path');
+        $headerParam = $this->getCallParamString('header');
     
         $arguments = array_filter([
             ['uri', "'{$this->uri}'"],
             ['method', "'{$this->method}'"],
             ['body', $bodyParam ?? null],
+            ['header', $headerParam ?? null],
             ['query', $queryParam ?? null],
             ['path', $pathParam ?? null],
             ['success', $this->successCode],
@@ -178,12 +161,71 @@ final class Operation extends AbstractSchema implements Stringable
         }
 
         return <<<CODE
-            public function {$this->id}({$paramString}): {$returnType}{
+            public function {$this->getSafeId()}({$paramString}): {$returnType}{
                 return \$this->call(
         {$argString}
                 );
             }
         CODE;
+    }
+
+    protected function getCallParamString(string $location): ?string
+    {
+        $compact = [];
+        $append = [];
+
+        foreach ($this->parameters as $param) {
+            if ($param->location !== $location) {
+                continue;
+            }
+
+            $safeName = $param->getSafeName();
+
+            if ($param->name === $safeName) {
+                $compact[] = $safeName;
+            } else {
+                $append[] = [$param->name, $safeName];
+            }
+        }
+
+        if (empty($compact) && empty($append)) {
+            return null;
+        }
+        
+        $compactStr = ! empty($compact)
+            ? 'compact(\'' . implode('\', \'', $compact) . '\')'
+            : null;
+        
+        $appendStr = ! empty($append)
+            ? '[' . implode(', ', array_map(fn ($a) => "'{$a[0]}' => \${$a[1]}", $append)) . ']'
+            : null;
+        
+        if (empty($compactStr)) {
+            return $appendStr;
+        }
+
+        if (empty($appendStr)) {
+            return $compactStr;
+        }
+
+        return '[...' . $compact . ', ...(' . $appendStr . ')]';
+    }
+
+    public function getSafeId(): string
+    {
+        $id = str_replace([
+            '_get',
+            '_post',
+            '_put',
+            '_patch',
+            '_delete'
+        ], '', $this->id);
+
+        if (($position = strpos($id, '.')) !== false) {
+            $id = substr($id, $position + 1);
+        }
+
+        return lcfirst($id);
     }
 
     public function __toString(): string

@@ -11,6 +11,7 @@ class Client
      * 
      * @param class-string<TSchema>|true $schema
      * @param Dto|array<string,mixed>|null $body
+     * @param array<string,mixed> $header
      * @param array<string,mixed> $query
      * @param array<string,int|string|null> $path
      *
@@ -22,6 +23,7 @@ class Client
         int $success,
         string|true $schema,
         Dto|array|null $body = null,
+        array $header = [],
         array $query = [],
         array $path = [],
     ) {

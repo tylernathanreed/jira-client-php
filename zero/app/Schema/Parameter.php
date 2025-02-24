@@ -57,6 +57,10 @@ final class Parameter extends AbstractSchema
 
         [$nativeListableType, $isListableTypeRef] = static::ref($listableType);
 
+        if ($isListableTypeRef) {
+            $nativeListableType = 'Schema\\' . $nativeListableType;
+        }
+
         $associativeType = static::associativeType($parameter->schema->additionalProperties ?? null);
 
         return new static(
