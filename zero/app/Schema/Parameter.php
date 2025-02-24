@@ -50,6 +50,12 @@ final class Parameter extends AbstractSchema
 
         $listableType = $parameter->schema->items?->type ?? $parameter->schema->items?->{'$ref'} ?? null;
 
+        if ($listableType === 'string' && isset($parameter->schema->items->enum)) {
+            $listableType = implode('|', array_map(fn ($enum) => "'{$enum}'", $parameter->schema->items->enum));
+        }
+
+        // @todo Listable type as enum (ClassificationLevels)
+
         [$nativeListableType, $isListableTypeRef] = static::ref($listableType);
 
         $associativeType = static::associativeType($parameter->schema->additionalProperties ?? null);
@@ -65,6 +71,7 @@ final class Parameter extends AbstractSchema
             associativeType: $associativeType,
             default: $parameter->schema->default ?? null,
             required: ($parameter->required ?? false) || ($parameter->in === 'path'),
+            enum: $parameter->schema->enum ?? null,
         );
     }
 

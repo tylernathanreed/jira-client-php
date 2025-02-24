@@ -9,6 +9,7 @@ trait PerformsOperations
 {
     use Operations\AnnouncementBanner;
     use Operations\Avatars;
+    use Operations\ClassificationLevels;
     use Operations\IssueBulkOperations;
     use Operations\IssueCustomFieldConfigurationApps;
 }
