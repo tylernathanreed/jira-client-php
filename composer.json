@@ -9,7 +9,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "OpenApi\\Spec\\": "src/"
+            "Jira\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "repositories": [
@@ -26,9 +31,12 @@
         "laravel/pint": "^1.20",
         "laravel/sail": "^1.41",
         "phpstan/phpstan": "^2.1",
-        "reedware/openapi-cli": "^0.0.1"
+        "reedware/openapi-cli": "^0.0.1",
+        "phpunit/phpunit": "^12.0",
+        "mockery/mockery": "^1.6"
     },
     "scripts": {
-        "test:static": "phpstan analyze"
+        "test:static": "phpstan analyze",
+        "test:suite": "phpunit"
     }
 }
