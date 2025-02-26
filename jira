@@ -26,7 +26,7 @@ define('LARAVEL_START', microtime(true));
 
 $autoloader = require __DIR__ . '/vendor/autoload.php';
 
-$basePath = __DIR__ . '/zero';
+$basePath = __DIR__;
 
 $builder = (new ApplicationBuilder(new Application($basePath)));
 

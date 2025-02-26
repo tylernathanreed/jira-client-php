@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b7372edfd2536697e8356b28424acf9",
+    "content-hash": "c12d0590a4c302a5e764ab56bed75cb7",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -6146,47 +6146,6 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
-        },
-        {
-            "name": "reedware/openapi-cli",
-            "version": "0.0.1",
-            "dist": {
-                "type": "path",
-                "url": "./zero",
-                "reference": "872c7e92034a1386a4fb4fb9621268ca92f8cb40"
-            },
-            "require": {
-                "php": "^8.2.0"
-            },
-            "require-dev": {
-                "laravel-zero/framework": "^11.36.1"
-            },
-            "bin": [
-                "builds/openapi"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jira\\CodeGen\\": "../codegen/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tyler Reed",
-                    "email": "tylernathanreed@gmail.com"
-                }
-            ],
-            "description": "A CLI tool for generating APIs from an OpenAPI Specification.",
-            "keywords": [
-                "cli",
-                "openapi"
-            ],
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "sebastian/cli-parser",

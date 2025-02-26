@@ -9,13 +9,7 @@ class Application extends BaseApplication
     /** @inheritdoc */
     public function version()
     {
-        $version = `git describe tags --abbrev=0 2>&1`;
-
-        if (! str_starts_with($version, 'v')) {
-            return 'Unreleased';
-        }
-
-        return $version;
+        return $this->app->make('git.version');
     }
 
     /** @inheritdoc */

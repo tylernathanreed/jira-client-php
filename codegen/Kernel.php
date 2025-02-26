@@ -2,6 +2,7 @@
 
 namespace Jira\CodeGen;
 
+use Illuminate\Config\Repository;
 use Illuminate\Console\Application as Artisan;
 use Jira\CodeGen\Commands;
 use LaravelZero\Framework\Kernel as BaseKernel;
@@ -10,6 +11,30 @@ use Symfony\Component\Console\Command\ListCommand;
 
 class Kernel extends BaseKernel
 {
+    /** @inheritdoc */
+    protected $bootstrappers = [
+        \LaravelZero\Framework\Bootstrap\CoreBindings::class,
+        // \LaravelZero\Framework\Bootstrap\LoadEnvironmentVariables::class,
+        // \LaravelZero\Framework\Bootstrap\LoadConfiguration::class,
+        \Illuminate\Foundation\Bootstrap\HandleExceptions::class,
+        \LaravelZero\Framework\Bootstrap\RegisterFacades::class,
+        \LaravelZero\Framework\Bootstrap\RegisterProviders::class,
+        \Illuminate\Foundation\Bootstrap\BootProviders::class,
+    ];
+
+    /** @inheritdoc */
+    public function bootstrap(): void
+    {
+        $this->app['env'] = 'production';
+        $this->app->instance('config', new Repository([
+            'app' => [
+                'providers' => [],
+            ]
+        ]));
+
+        parent::bootstrap();
+    }
+
     /** @inheritdoc */
     protected function commands(): void
     {
