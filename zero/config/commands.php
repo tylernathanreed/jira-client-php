@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'paths' => [app_path('Commands')],
+    'paths' => [],
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +40,8 @@ return [
     */
 
     'add' => [
-        //
+        Jira\CodeGen\Commands\MakeOperationGroupCommand::class,
+        Jira\CodeGen\Commands\MakeSchemaCommand::class,
     ],
 
     /*
