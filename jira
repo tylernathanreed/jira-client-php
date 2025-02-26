@@ -2,11 +2,7 @@
 <?php
 
 use Illuminate\Contracts\Console\Kernel as KernelContract;
-use Illuminate\Contracts\Debug\ExceptionHandler as HandlerContract;
-use Illuminate\Foundation\Configuration\ApplicationBuilder;
-use Illuminate\Foundation\Exceptions\Handler;
 use Jira\CodeGen\Application;
-use Jira\CodeGen\Kernel;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
@@ -26,20 +22,7 @@ define('LARAVEL_START', microtime(true));
 
 $autoloader = require __DIR__ . '/vendor/autoload.php';
 
-$basePath = __DIR__;
-
-$builder = (new ApplicationBuilder(new Application($basePath)));
-
-$builder->create()->singleton(KernelContract::class, Kernel::class);
-
-$builder->create()->singleton(HandlerContract::class, Handler::class);
-
-$builder
-    ->withEvents()
-    ->withCommands()
-    ->withProviders();
-
-$app = $builder->create();
+$app = Application::configure(basePath: __DIR__)->create();
 
 /*
 |--------------------------------------------------------------------------
