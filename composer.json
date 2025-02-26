@@ -7,17 +7,6 @@
         }
     ],
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Jira\\Client\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Jira\\CodeGen\\": "codegen/",
-            "Tests\\": "tests/"
-        }
-    },
     "repositories": [
         {
             "type": "path",
@@ -31,11 +20,33 @@
     "require-dev": {
         "laravel/pint": "^1.20",
         "laravel/sail": "^1.41",
+        "laravel-zero/framework": "^11.36.1",
+        "mockery/mockery": "^1.6",
         "phpstan/phpstan": "^2.1",
-        "reedware/openapi-cli": "^0.0.1",
-        "phpunit/phpunit": "^12.0",
-        "mockery/mockery": "^1.6"
+        "phpunit/phpunit": "^11.0|^12.0",
+        "reedware/openapi-cli": "^0.0.1"
     },
+    "autoload": {
+        "psr-4": {
+            "Jira\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jira\\CodeGen\\": "codegen/",
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "scripts": {
         "test:static": "phpstan analyze",
         "test:suite": "phpunit"

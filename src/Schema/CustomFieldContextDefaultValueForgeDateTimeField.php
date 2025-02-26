@@ -20,7 +20,7 @@ final readonly class CustomFieldContextDefaultValueForgeDateTimeField extends Dt
         public ?string $dateTime = null,
 
         /** Whether to use the current date. */
-        public ?bool $useCurrent = null,
+        public ?bool $useCurrent = false,
     ) {
     }
 }

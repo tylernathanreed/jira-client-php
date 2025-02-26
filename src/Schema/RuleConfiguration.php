@@ -12,7 +12,7 @@ final readonly class RuleConfiguration extends Dto
         public string $value,
 
         /** Whether the rule is disabled. */
-        public ?bool $disabled = null,
+        public ?bool $disabled = false,
 
         /**
          * A tag used to filter rules in "Get workflow transition rule configurations".

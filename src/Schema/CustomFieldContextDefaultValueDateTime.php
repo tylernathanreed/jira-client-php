@@ -17,7 +17,7 @@ final readonly class CustomFieldContextDefaultValueDateTime extends Dto
         public ?string $dateTime = null,
 
         /** Whether to use the current date. */
-        public ?bool $useCurrent = null,
+        public ?bool $useCurrent = false,
     ) {
     }
 }

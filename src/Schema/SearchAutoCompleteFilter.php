@@ -9,7 +9,7 @@ final readonly class SearchAutoCompleteFilter extends Dto
 {
     public function __construct(
         /** Include collapsed fields for fields that have non-unique names. */
-        public ?bool $includeCollapsedFields = null,
+        public ?bool $includeCollapsedFields = false,
 
         /**
          * List of project IDs used to filter the visible field details returned.

@@ -23,10 +23,9 @@ RUN apt-get update && apt-get upgrade -y \
     && echo "deb [signed-by=/etc/apt/keyrings/ppa_ondrej_php.gpg] https://ppa.launchpadcontent.net/ondrej/php/ubuntu noble main" > /etc/apt/sources.list.d/ppa_ondrej_php.list \
     && apt-get update \
     && apt-get install -y php8.3-cli php8.3-dev \
-    php8.3-imap php8.3-mbstring \
+    php8.3-mbstring php8.3-curl \
     php8.3-xml php8.3-zip php8.3-bcmath \
     php8.3-intl php8.3-readline \
-    php8.3-ldap \
     php8.3-xdebug \
     && curl -sLS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer \
     && apt-get update \
