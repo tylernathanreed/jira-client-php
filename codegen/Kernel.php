@@ -2,7 +2,6 @@
 
 namespace Jira\CodeGen;
 
-use Illuminate\Config\Repository;
 use Illuminate\Console\Application as Artisan;
 use Illuminate\Foundation\Console\Kernel as BaseKernel;
 use Illuminate\Support\Facades\Facade;
@@ -17,7 +16,6 @@ class Kernel extends BaseKernel
     /** @inheritdoc */
     protected $bootstrappers = [
         Bootstrap\HandleExceptions::class,
-        Bootstrap\RegisterProviders::class,
         Bootstrap\BootProviders::class,
     ];
 
@@ -53,11 +51,6 @@ class Kernel extends BaseKernel
     protected function loadConfiguration(): void
     {
         $this->app['env'] = 'production';
-        $this->app->instance('config', new Repository([
-            'app' => [
-                'providers' => [],
-            ]
-        ]));
     }
 
     protected function registerFacadeRoot(): void
@@ -114,5 +107,11 @@ class Kernel extends BaseKernel
     public function rerouteSymfonyCommandEvents(): static
     {
         return $this;
+    }
+
+    /** @inheritDoc */
+    public function terminate($input, $status): void
+    {
+        $this->app->terminate();
     }
 }

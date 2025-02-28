@@ -35,12 +35,6 @@ class Application extends BaseApplication
         static::setInstance($this);
 
         $this->instance('app', $this);
-        // parent::registerBaseBindings();
-
-        /*
-         * Ignores auto-discovery.
-         */
-        // $this->make(PackageManifest::class)->manifest = [];
     }
 
     /** @inheritdoc */
