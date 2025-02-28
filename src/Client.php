@@ -2,20 +2,20 @@
 
 namespace Jira\Client;
 
-use Illuminate\Http\Client\Factory;
+use Jira\Client\Contracts\Factory as FactoryContract;
 
 class Client
 {
     use PerformsOperations;
 
     public readonly Configuration $configuration;
-    public readonly Runner $runner;
+    public readonly FactoryContract $factory;
     public readonly Processor $processor;
 
-    public function __construct(Configuration $configuration, ?Runner $runner = null, ?Processor $processor = null)
+    public function __construct(Configuration $configuration, ?FactoryContract $factory = null, ?Processor $processor = null)
     {
         $this->configuration = $configuration;
-        $this->runner = $runner ?: new Runner(new Factory());
+        $this->factory = $factory ?: new Factory();
         $this->processor = $processor ?: new Processor(new Deserializer());
     }
     /**
@@ -49,7 +49,7 @@ class Client
             path: $path,
         );
 
-        $response = $this->runner->run($operation, $this->configuration);
+        $response = $this->factory->make($operation, $this->configuration);
 
         return $this->processor->process($operation, $response, $success, $schema);
     }

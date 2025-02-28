@@ -2,8 +2,8 @@
 
 namespace Jira\Client;
 
-use Illuminate\Http\Client\Response;
 use RuntimeException;
+use Psr\Http\Message\ResponseInterface;
 
 class Processor
 {
@@ -19,20 +19,20 @@ class Processor
      */
     public function process(
         PendingOperation $operation,
-        Response $response,
+        ResponseInterface $response,
         int $successCode,
         string|bool $schema
     ): Dto|true {
-        $statusCode = $response->getStatusCode();
+        $status = $response->getStatusCode();
 
-        if ($statusCode === 404) {
+        if ($status === 404) {
             throw new RuntimeException(sprintf(
                 '[404] Endpoint [%s] not found.',
                 $operation->uri
             ), 404);
         }
 
-        if ($statusCode === 405 && ! isset($schema[$statusCode])) {
+        if ($status === 405 && ! isset($schema[$status])) {
             throw new RuntimeException(sprintf(
                 '[405] Method [%s] against [%s] is not allowed.',
                 strtoupper($operation->method),
@@ -40,22 +40,24 @@ class Processor
             ), 405);
         }
 
-        if ($statusCode != $successCode) {
+        if ($status != $successCode) {
             throw new RuntimeException(sprintf(
                 '[%s] Unexpected status code (Expected: %s).',
-                $statusCode,
+                $status,
                 $successCode,
-            ), $statusCode);
+            ), $status);
         }
 
         if ($schema === true) {
             return true;
         }
 
-        $data = $response->json();
+        $body = (string) $response->getBody();
+
+        $data = json_decode($body, true);
 
         if (! is_array($data)) {
-            throw new RuntimeException('Unable to decode response body: ' . $response->body());
+            throw new RuntimeException('Unable to decode response body: ' . $body);
         }
 
         /** @var array<string,mixed> $data */
