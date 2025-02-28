@@ -1,15 +1,14 @@
-# For more information: https://laravel.com/docs/sail
 version: '3'
 services:
-    laravel.test:
+    dev:
         build:
             context: ./docker/runtimes/8.3
             dockerfile: Dockerfile
             args:
-                WWWGROUP: '${WWWGROUP}'
+                WWWGROUP: '${WWWGROUP:-1000}'
         image: sail-8.3/app
         environment:
-            WWWUSER: '${WWWUSER}'
+            WWWUSER: '${WWWUSER:-1000}'
             LARAVEL_SAIL: 1
         volumes:
             - '.:/var/www/html'

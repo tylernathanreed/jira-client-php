@@ -8,6 +8,7 @@
 /docker export-ignore
 /stubs export-ignore
 /tests export-ignore
+CONTRIBUTION.md export-ignore
 docker-compose.yml export-ignore
 phpstan.neon export-ignore
 phpunit.xml export-ignore

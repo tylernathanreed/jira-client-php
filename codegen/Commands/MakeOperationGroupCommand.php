@@ -4,31 +4,31 @@ namespace Jira\CodeGen\Commands;
 
 use Jira\CodeGen\Generators\Generator;
 use Jira\CodeGen\Generators\OperationsGenerator;
+use Override;
+use Symfony\Component\Console\Attribute\AsCommand;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
+#[AsCommand('make:operations', 'Generates a new operations trait')]
 class MakeOperationGroupCommand extends GeneratorCommand
 {
-    /** @var string */
-    protected $name = 'make:operations';
-
-    /** @var string */
-    protected $description = 'Generates a new operations trait';
-
-    public function handle(): ?bool
+    #[Override]
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
-        $result = parent::handle();
+        $result = parent::execute($input, $output);
 
-        if (! is_null($result)) {
+        if ($result) {
             return $result;
         }
 
         $this->updatePerformsOperationsTrait();
 
-        return null;
+        return 0;
     }
 
     public function generator(): Generator
     {
-        return $this->laravel->make(OperationsGenerator::class);
+        return new OperationsGenerator;
     }
 
 

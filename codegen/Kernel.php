@@ -2,31 +2,52 @@
 
 namespace Jira\CodeGen;
 
-use Illuminate\Console\Application as Artisan;
-use Illuminate\Foundation\Console\Kernel as BaseKernel;
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Facade;
 use Jira\CodeGen\Commands;
-use ReflectionClass;
+use Jira\CodeGen\Commands\GeneratorCommand;
+use Jira\Codegen\Handler;
 use Symfony\Component\Console\Command\ListCommand;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Process\Process;
-use Illuminate\Foundation\Bootstrap;
+use Symfony\Component\Console\Application as SymfonyApplication;
+use Throwable;
 
-class Kernel extends BaseKernel
+class Kernel
 {
-    /** @inheritdoc */
-    protected $bootstrappers = [
-        Bootstrap\HandleExceptions::class,
-        Bootstrap\BootProviders::class,
-    ];
+    protected ?SymfonyApplication $artisan = null;
+
+    public function __construct(
+        protected Application $app
+    ) {
+    }
+
+    public function handle(InputInterface $input, ?OutputInterface $output = null): int
+    {
+        try {
+            $this->bootstrap();
+
+            return $this->getArtisan()->run($input, $output);
+        } catch (Throwable $e) {
+            $this->renderException($output, $e);
+
+            return 1;
+        }
+    }
+
+    /** @inheritDoc */
+    public function terminate($input, $status): void
+    {
+        $this->app->terminate();
+    }
 
     /** @inheritdoc */
     public function bootstrap(): void
     {
         $this->registerCoreBindings();
         $this->loadConfiguration();
-        $this->registerFacadeRoot();      
-
-        parent::bootstrap();
+        $this->registerFacadeRoot();
 
         $this->getArtisan()->setName('Jira Client');
     }
@@ -60,58 +81,37 @@ class Kernel extends BaseKernel
         Facade::setFacadeApplication($this->app);
     }
 
-    /** @inheritdoc */
-    protected function commands(): void
+    protected function getArtisan(): SymfonyApplication
     {
-        Artisan::starting(
-            function ($artisan) {
-                $reflectionClass = new ReflectionClass(Artisan::class);
-                $commands = array_filter($artisan->all(), function ($command) {
-                    return $command instanceof Commands\GeneratorCommand
-                        || $command instanceof ListCommand;
-                });
-
-                $property = $reflectionClass->getParentClass()->getProperty('commands');
-
-                $property->setAccessible(true);
-                $property->setValue($artisan, $commands);
-                $property->setAccessible(false);
-            }
-        );
-
-        Artisan::starting(
-            function ($artisan) {
-                $artisan->resolveCommands([
-                    Commands\MakeOperationGroupCommand::class,
-                    Commands\MakeSchemaCommand::class,
-                ]);
-
-                $artisan->setContainerCommandLoader();
-            }
-        );
-
-        Artisan::starting(
-            function ($artisan) {
-                foreach ($artisan->all() as $command) {
-                    if ($command instanceof ListCommand) {
-                        $command->setHidden(true);
-                    }
-
-                    $artisan->setContainerCommandLoader();
-                    $command->setApplication($artisan);
-                }
-            }
-        );
+        return $this->artisan ??= $this->resolveArtisan();
     }
 
-    public function rerouteSymfonyCommandEvents(): static
+    protected function resolveArtisan(): SymfonyApplication
     {
-        return $this;
+        $artisan = new SymfonyApplication('Jira Client', $this->app->version());
+
+        foreach ($artisan->all() as $command) {
+            if ($command instanceof ListCommand || ! $command instanceof GeneratorCommand) {
+                $command->setHidden(true);
+            }
+        }
+
+        $commands = [
+            Commands\MakeOperationGroupCommand::class,
+            Commands\MakeSchemaCommand::class,
+        ];
+
+        foreach ($commands as $command) {
+            $instance = new $command;
+
+            $artisan->add($instance);
+        }
+
+        return $artisan;
     }
 
-    /** @inheritDoc */
-    public function terminate($input, $status): void
+    protected function renderException(OutputInterface $output, Throwable $e)
     {
-        $this->app->terminate();
+        $this->app[Handler::class]->renderForConsole($output, $e);
     }
 }

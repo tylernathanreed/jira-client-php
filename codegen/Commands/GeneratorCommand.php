@@ -2,27 +2,31 @@
 
 namespace Jira\CodeGen\Commands;
 
-use Illuminate\Console\Command;
 use Jira\CodeGen\Exceptions\ClassGenerationException;
 use Jira\CodeGen\Generators\Generator;
+use Override;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\OutputInterface;
 use Throwable;
 
 abstract class GeneratorCommand extends Command
 {
     abstract public function generator(): Generator;
 
-    public function handle(): ?bool
+    #[Override]
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $generator = $this->generator();
 
-        $names = $this->option('all')
+        $names = $input->getOption('all')
             ? $generator->all()
-            : [trim($this->argument('name'))];
+            : [trim($input->getArgument('name'))];
 
         if (count($names) === 1 && empty($names[0])) {
-            $this->components->error('Please provide a name or specify the --all option.');
+            $output->writeln('ERROR: Please provide a name or specify the --all option.');
 
             return false;
         }
@@ -35,16 +39,16 @@ abstract class GeneratorCommand extends Command
             }
 
             try {
-                $path = $generator->generate($name, $this->option('force'));
+                $path = $generator->generate($name, $input->getOption('force'));
 
                 $generated[ucfirst($name)] = true;
             } catch (ClassGenerationException $e) {
-                $this->components->error($e->getMessage());
+                $output->writeLn('ERROR: ' . $e->getMessage());
 
                 return false;
             } catch (Throwable $e) {
-                $this->components->error(sprintf('Failed to generate %s [%s]', static::type(), $name));
-                $this->components->error($e->getMessage());
+                $output->writeLn(sprintf('ERROR: Failed to generate %s [%s]', static::type(), $name));
+                $output->writeLn($e->getMessage());
 
                 if ($e->getPrevious()) {
                     throw $e->getPrevious();
@@ -53,15 +57,27 @@ abstract class GeneratorCommand extends Command
                 throw $e;
             }
 
-            $this->components->info(sprintf('%s [%s] created successfully.', static::type(), $path));
+            $output->writeLn(sprintf('%s [%s] created successfully.', static::type(), $path));
         }
 
-        return null;
+        return 0;
     }
 
     protected function type(): string
     {
         return substr(class_basename(static::class), strlen('Make'), -strlen('Command'));
+    }
+
+    #[Override]
+    public function configure(): void
+    {
+        foreach ($this->getArguments() as $arguments) {
+            $this->addArgument(...$arguments);
+        }
+
+        foreach ($this->getOptions() as $options) {
+            $this->addOption(...$options);
+        }
     }
 
     /** @return list<array{0:string,1:int,2:string}> */
