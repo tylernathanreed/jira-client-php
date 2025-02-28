@@ -4,7 +4,6 @@ namespace Jira\CodeGen;
 
 use Illuminate\Config\Repository;
 use Illuminate\Console\Application as Artisan;
-use Illuminate\Filesystem\FilesystemServiceProvider;
 use Illuminate\Foundation\Console\Kernel as BaseKernel;
 use Illuminate\Support\Facades\Facade;
 use Jira\CodeGen\Commands;
@@ -27,8 +26,7 @@ class Kernel extends BaseKernel
     {
         $this->registerCoreBindings();
         $this->loadConfiguration();
-        $this->registerFacadeRoot();
-        $this->registerCoreProviders();        
+        $this->registerFacadeRoot();      
 
         parent::bootstrap();
 
@@ -67,11 +65,6 @@ class Kernel extends BaseKernel
         Facade::clearResolvedInstances();
 
         Facade::setFacadeApplication($this->app);
-    }
-
-    protected function registerCoreProviders(): void
-    {
-        $this->app->register(FilesystemServiceProvider::class);
     }
 
     /** @inheritdoc */
@@ -116,5 +109,10 @@ class Kernel extends BaseKernel
                 }
             }
         );
+    }
+
+    public function rerouteSymfonyCommandEvents(): static
+    {
+        return $this;
     }
 }

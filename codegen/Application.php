@@ -7,8 +7,6 @@ use Illuminate\Contracts\Debug\ExceptionHandler as HandlerContract;
 use Illuminate\Events\EventServiceProvider;
 use Illuminate\Foundation\Application as BaseApplication;
 use Illuminate\Foundation\Configuration\ApplicationBuilder;
-use Illuminate\Foundation\Exceptions\Handler;
-use Illuminate\Foundation\PackageManifest;
 
 class Application extends BaseApplication
 {
@@ -34,12 +32,15 @@ class Application extends BaseApplication
     /** @inheritdoc */
     protected function registerBaseBindings(): void
     {
-        parent::registerBaseBindings();
+        static::setInstance($this);
+
+        $this->instance('app', $this);
+        // parent::registerBaseBindings();
 
         /*
          * Ignores auto-discovery.
          */
-        $this->make(PackageManifest::class)->manifest = [];
+        // $this->make(PackageManifest::class)->manifest = [];
     }
 
     /** @inheritdoc */
@@ -74,6 +75,12 @@ class Application extends BaseApplication
 
     /** @inheritdoc */
     public function configurationIsCached(): bool
+    {
+        return false;
+    }
+
+    /** @inheritdoc */
+    public function eventsAreCached(): bool
     {
         return false;
     }
