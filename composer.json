@@ -33,6 +33,9 @@
             "Tests\\": "tests/"
         }
     },
+    "bin": [
+        "bin/jira"
+    ],
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
@@ -44,6 +47,10 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "scripts": {
+        "up": "docker compose up -d",
+        "down": "docker compose down",
+        "build": "docker compose build --no-cache",
+        "bash": "docker compose exec -u sail dev bash",
         "test:static": "phpstan analyze",
         "test:suite": "phpunit"
     }

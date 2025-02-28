@@ -6,9 +6,9 @@ use Jira\CodeGen\Kernel;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
-$autoloader = require __DIR__ . '/vendor/autoload.php';
+$autoloader = require __DIR__ . '/../vendor/autoload.php';
 
-$app = Application::configure(basePath: __DIR__)->create();
+$app = Application::configure(basePath: __DIR__ . '/../')->create();
 
 $kernel = new Kernel($app);
 
