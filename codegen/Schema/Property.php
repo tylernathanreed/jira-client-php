@@ -45,7 +45,8 @@ final class Property extends AbstractSchema implements Stringable
     /** @param TValue $schema */
     public static function make(string $name, int $index, bool $required, array $schema): static
     {
-        $type = $schema['allOf'][0]['$ref']
+        $type = $schema['$ref']
+            ?? $schema['allOf'][0]['$ref']
             ?? $schema['additionalProperties']['$ref']
             ?? $schema['type']
             ?? null;

@@ -91,7 +91,7 @@ final readonly class User extends Dto
 
         /**
          * The time zone specified in the user's profile.
-         * Depending on the user’s privacy setting, this may be returned as null.
+         * If the user's time zone is not visible to the current user (due to user's profile setting), or if a time zone has not been set, the instance's default time zone will be returned.
          */
         public ?string $timeZone = null,
     ) {

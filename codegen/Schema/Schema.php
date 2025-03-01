@@ -2,7 +2,6 @@
 
 namespace Jira\CodeGen\Schema;
 
-use Jira\Client\Dto;
 use RuntimeException;
 use Throwable;
 

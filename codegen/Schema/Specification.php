@@ -75,6 +75,7 @@ use RuntimeException;
  *     default?: int|string|bool|null,
  *     nullable?: bool,
  *     example?: mixed,
+ *     '$ref'?: string,
  * }
  * @phpstan-type TAdditionalProperties array{
  *     description?: string,
