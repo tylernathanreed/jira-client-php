@@ -6,11 +6,8 @@ use Closure;
 use RuntimeException;
 
 /**
- * @phpstan-type TParameterObject object{
- *     name:string,
- *     description?:string,
- *     in:string,
- * }
+ * @phpstan-import-type TParameter from Specification
+ * @phpstan-import-type TAdditionalProperties from Specification
  */
 final class Parameter extends AbstractSchema
 {
@@ -26,11 +23,11 @@ final class Parameter extends AbstractSchema
         public readonly Description $description,
         public readonly string $location,
         public readonly ?string $type = null,
-        public readonly ?bool $typeIsRef = null,
+        public readonly bool $typeIsRef = false,
         public readonly ?string $format = null,
         public readonly ?string $listableType = null,
         public readonly ?string $associativeType = null,
-        public readonly int|string|null $default = null,
+        public readonly int|string|bool|null $default = null,
         public readonly bool $required = false,
 
         /** @var ?list<string> */
@@ -38,21 +35,20 @@ final class Parameter extends AbstractSchema
     ) {
     }
 
-    /** @param TParameterObject $parameter */
-    public static function make(int $index, object $parameter): static
+    /** @param TParameter $parameter */
+    public static function make(int $index, array $parameter): static
     {
-        $type = $parameter->schema->{'$ref'}
-            ?? $parameter->schema->allOf[0]->{'$ref'}
-            ?? $parameter->schema->additionalProperties?->{'$ref'}
-            ?? $parameter->schema->type
+        $type = $parameter['schema']['allOf'][0]['$ref']
+            ?? $parameter['schema']['additionalProperties']['$ref']
+            ?? $parameter['schema']['type']
             ?? null;
 
         [$nativeType, $isTypeRef] = self::ref($type);
 
-        $listableType = $parameter->schema->items?->type ?? $parameter->schema->items?->{'$ref'} ?? null;
+        $listableType = $parameter['schema']['items']['type'] ?? $parameter['schema']['items']['$ref'] ?? null;
 
-        if ($listableType === 'string' && isset($parameter->schema->items->enum)) {
-            $listableType = implode('|', array_map(fn ($enum) => "'{$enum}'", $parameter->schema->items->enum));
+        if ($listableType === 'string' && isset($parameter['schema']['items']['enum'])) {
+            $listableType = implode('|', array_map(fn ($enum) => "'{$enum}'", $parameter['schema']['items']['enum']));
         }
 
         [$nativeListableType, $isListableTypeRef] = self::ref($listableType);
@@ -61,45 +57,45 @@ final class Parameter extends AbstractSchema
             $nativeListableType = 'Schema\\' . $nativeListableType;
         }
 
-        $associativeType = self::associativeType($parameter->schema->additionalProperties ?? null);
+        $associativeType = self::associativeType($parameter['schema']['additionalProperties'] ?? null);
 
         return new self(
             index: $index,
-            name: $parameter->name,
-            description: new Description($parameter->description ?? null),
-            location: $parameter->in,
+            name: $parameter['name'],
+            description: new Description($parameter['description'] ?? null),
+            location: $parameter['in'],
             type: $nativeType,
-            typeIsRef: $isTypeRef,
-            format: $parameter->format ?? null,
+            typeIsRef: $isTypeRef ?? false,
+            format: $parameter['schema']['format'] ?? null,
             listableType: $nativeListableType ?? 'mixed',
             associativeType: $associativeType,
-            default: $parameter->schema->default ?? null,
-            required: ($parameter->required ?? false) || ($parameter->in === 'path'),
-            enum: $parameter->schema->enum ?? null,
+            default: $parameter['schema']['default'] ?? null,
+            required: ($parameter['required'] ?? false) || ($parameter['in'] === 'path'),
+            enum: $parameter['schema']['enum'] ?? null,
         );
     }
 
-    /** @param ?object{'items'?:object{'type':string},'type':string} $type */
-    protected static function associativeType(?object $type): ?string
+    /** @param TAdditionalProperties|bool|null $type */
+    protected static function associativeType(array|bool|null $type): ?string
     {
-        if (is_null($type)) {
+        if (is_null($type) || ! is_array($type)) {
             return null;
         }
 
-        if (isset($type->{'$ref'})) {
-            return static::ref($type->{'$ref'})[0];
+        if (isset($type['$ref'])) {
+            return static::ref($type['$ref'])[0];
         }
 
-        if (isset($type->items->{'$ref'})) {
-            return static::ref($type->items->{'$ref'})[0];
+        if (isset($type['items']['$ref'])) {
+            return static::ref($type['items']['$ref'])[0];
         }
 
-        if (isset($type->items->type)) {
-            return 'list<' . $type->items->type . '>';
+        if (isset($type['items']['type'])) {
+            return 'list<' . $type['items']['type'] . '>';
         }
 
-        if (isset($type->type)) {
-            return $type->type;
+        if (isset($type['type'])) {
+            return $type['type'];
         }
 
         return null;
@@ -211,7 +207,7 @@ final class Parameter extends AbstractSchema
         return (string) $this->default;
     }
 
-    public function getDoc(): ?string
+    public function getDoc(): string
     {
         $definition = strtr('{docType} ${name}', [
             '{docType}' => $this->getDocType() ?: $this->getNativeType(),
@@ -225,7 +221,7 @@ final class Parameter extends AbstractSchema
         $description = str_replace(
             ["     * \n", '     * '],
             ['', '     * ' . $indent],
-            rtrim(ltrim($this->description->render(4), "/* \n"), " */\n")
+            rtrim(ltrim((string) $this->description->render(4), "/* \n"), " */\n")
         );
 
         return $this->isEnum()
@@ -251,7 +247,7 @@ final class Parameter extends AbstractSchema
     /**
      * @phpstan-template T
      *
-     * @var Closure():T
+     * @param Closure():T $callback
      *
      * @return T
      */

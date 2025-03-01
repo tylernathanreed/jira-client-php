@@ -5,9 +5,8 @@ namespace Jira\CodeGen\Schema;
 use Stringable;
 
 /**
- * @phpstan-import-type TOperationArray from Specification
- * @phpstan-import-type TOperationObject from Specification
- * @phpstan-import-type TParameterObject from Parameter
+ * @phpstan-import-type TCompiledOperation from Specification
+ * @phpstan-import-type TParameter from Specification
  */
 final class Operation extends AbstractSchema implements Stringable
 {
@@ -20,10 +19,10 @@ final class Operation extends AbstractSchema implements Stringable
         public readonly Description $description,
         public readonly int $successCode,
 
-        /** @var class-string<Dto>|true */
+        /** @var string|true */
         public readonly string|true $successSchema,
 
-        /** @var ?class-string<Dto> */
+        /** @var ?string */
         public readonly ?string $bodySchema,
 
         /** @var list<Parameter> */
@@ -32,42 +31,42 @@ final class Operation extends AbstractSchema implements Stringable
     ) {
     }
 
-    /** @param TOperationArray $operation */
+    /** @param TCompiledOperation $operation */
     public static function make(array $operation): static
     {
         $op = $operation['operation'];
 
-        $responseCodes = array_keys((array) $op->responses);
+        $responseCodes = array_keys($op['responses'] ?? []);
 
         $successCode = count($responseCodes) > 1
             ? min(...$responseCodes)
             : $responseCodes[0];
 
         $successSchema = self::ref(
-            $op->responses->{$successCode}->content->{'application/json'}->schema->{'$ref'} ?? null
+            $op['responses'][$successCode]['content']['application/json']['schema']['$ref'] ?? null
         )[0] ?? true;
 
         $bodySchema = self::ref(
-            $op->requestBody->content->{'application/json'}->schema->{'$ref'} ?? null
+            $op['requestBody']['content']['application/json']['schema']['$ref'] ?? null
         )[0] ?? null;
 
         return new self(
             id: $operation['id'],
             uri: $operation['uri'],
             method: $operation['method'],
-            description: new Description($op->description ?? null),
-            deprecated: $op->deprecated ?? false,
+            description: new Description($op['description'] ?? null),
+            deprecated: $op['deprecated'] ?? false,
             successCode: $successCode,
             successSchema: $successSchema,
             bodySchema: $bodySchema,
-            parameters: isset($op->parameters)
-                ? self::makeParameters($op->parameters)
+            parameters: isset($op['parameters'])
+                ? self::makeParameters($op['parameters'])
                 : [],
         );
     }
 
     /**
-     * @param list<TParameterObject>
+     * @param list<TParameter> $parameters
      * @return list<Parameter>
      */
     protected static function makeParameters(array $parameters): array
@@ -207,7 +206,7 @@ final class Operation extends AbstractSchema implements Stringable
             return $compactStr;
         }
 
-        return '[...' . $compact . ', ...(' . $appendStr . ')]';
+        return '[...' . $compactStr . ', ...(' . $appendStr . ')]';
     }
 
     public function getSafeId(): string

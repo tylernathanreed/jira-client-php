@@ -2,22 +2,14 @@
 
 namespace Jira\CodeGen\Schema;
 
+use Jira\Client\Dto;
 use RuntimeException;
 use Throwable;
 
 /**
- * @phpstan-import-type TPropertyObject from Property
- *
- * @phpstan-type TSchemaObject object{
- *     description?: string,
- *     properties?: object,
- *     required?: list<string>,
- *     discriminator?: object{mapping:object,propertyName:string}
- *     oneOf?: list<object{'$ref':string}>
- *     anyOf?: list<object{'$ref':string}>
- *     type: string,
- *     nullable?: bool,
- * }
+ * @phpstan-import-type TSchema from Specification
+ * @phpstan-import-type TDiscriminator from Specification
+ * @phpstan-import-type TValue from Specification
  */
 final class Schema extends AbstractSchema
 {
@@ -27,7 +19,7 @@ final class Schema extends AbstractSchema
         public readonly string $name,
         public readonly Description $description,
 
-        /** @var array<string,Property> */
+        /** @var list<Property> */
         public readonly array $properties,
 
         /** @var array<string,true> */
@@ -37,45 +29,49 @@ final class Schema extends AbstractSchema
         /** @var ?array<string,string> */
         public readonly ?array $discriminatorMap,
         public readonly bool $nullable,
-        public readonly string $type,
+        public readonly ?string $type,
 
-        /** @var ?list<class-string<Dto>> */
+        /** @var ?list<string> */
         public readonly ?array $unionTypes,
     ) {
     }
 
-    /** @param TSchemaObject $schema */
-    public static function make(string $name, object $schema): static
+    /** @param TSchema $schema */
+    public static function make(string $name, array $schema): static
     {
-        [$key, $map] = self::discriminator($schema->discriminator ?? null);
+        // @phpstan-ignore argument.type (not mixed)
+        [$key, $map] = self::discriminator($schema['discriminator'] ?? null);
 
-        $unionTypes = isset($schema->anyOf)
-            ? array_map(fn ($type) => self::ref($type->{'$ref'})[0], $schema->anyOf)
+        /** @var ?list<string> $unionTypes */
+        $unionTypes = isset($schema['anyOf'])
+            ? array_filter(array_map(fn ($type) => self::ref($type['$ref'])[0], $schema['anyOf']))
             : null;
+
+        /** @var array<string,true> $required */
+        $required = array_fill_keys($schema['required'] ?? [], true);
 
         return new self(
             name: $name,
-            description: new Description($schema->description ?? null),
-            required: $required = array_fill_keys($schema->required ?? [], true),
-            properties: isset($schema->properties)
-                ? self::makeProperties($schema->properties, $required)
+            description: new Description($schema['description'] ?? null),
+            required: $required,
+            properties: isset($schema['properties'])
+                ? self::makeProperties($schema['properties'], $required)
                 : [],
             discriminatorKey: $key,
             discriminatorMap: $map,
-            type: $schema->type,
+            type: $schema['type'] ?? null,
             unionTypes: $unionTypes,
-            nullable: $schema->nullable ?? false,
+            nullable: $schema['nullable'] ?? false,
         );
     }
 
     /**
-     * @param  array<string,true>  $required
-     * @return array<string,Property>
+     * @param array<string,TValue> $properties
+     * @param array<string,true>  $required
+     * @return list<Property>
      */
-    protected static function makeProperties(object $properties, array $required): array
+    protected static function makeProperties(array $properties, array $required): array
     {
-        $source = (array) $properties;
-
         $properties = array_map(
             function ($property, $name, $i) use ($required) {
                 try {
@@ -88,9 +84,9 @@ final class Schema extends AbstractSchema
                     ), previous: $e);
                 }
             },
-            $source,
-            array_keys($source),
-            range(0, count($source) - 1)
+            $properties,
+            array_keys($properties),
+            range(0, count($properties) - 1)
         );
 
         usort($properties, function (Property $a, Property $b) {
@@ -111,20 +107,20 @@ final class Schema extends AbstractSchema
     }
 
     /**
-     * @param  ?object{mapping:object,propertyName:string}  $discriminator
+     * @param  ?TDiscriminator  $discriminator
      * @return array{0:?string,1:?array<string,string>}
      */
-    protected static function discriminator(?object $discriminator): array
+    protected static function discriminator(?array $discriminator): array
     {
         if (is_null($discriminator)) {
             return [null, null];
         }
 
-        $key = $discriminator->propertyName;
+        $key = $discriminator['propertyName'];
 
-        $map = (array) $discriminator->mapping;
+        $map = $discriminator['mapping'] ?? [];
 
-        $map = array_map(fn ($ref) => static::ref($ref)[0], $map);
+        $map = array_filter(array_map(fn ($ref) => static::ref($ref)[0], $map));
 
         return [$key, $map];
     }

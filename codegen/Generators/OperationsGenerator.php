@@ -6,10 +6,9 @@ use Jira\CodeGen\Exceptions\MissingSpecificationException;
 use Jira\CodeGen\Replacers\DummyMethodsReplacer;
 use Jira\CodeGen\Replacers\DummyTraitReplacer;
 use Jira\CodeGen\Schema\OperationGroup;
-use Jira\CodeGen\Schema\Schema;
 use Jira\CodeGen\Schema\Specification;
 
-/** @extends Generator<Schema> */
+/** @extends Generator<OperationGroup> */
 class OperationsGenerator extends Generator
 {
     /** {@inheritDoc} */

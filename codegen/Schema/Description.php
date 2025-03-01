@@ -4,7 +4,6 @@ namespace Jira\CodeGen\Schema;
 
 /**
  * @phpstan-type TDocTag array{0:?string,1:string}
- * @phpstan-type TDocTags list<TDocTag>
  */
 final class Description extends AbstractSchema
 {
@@ -13,7 +12,7 @@ final class Description extends AbstractSchema
     ) {
     }
 
-    /** @param TDocTags $tags */
+    /** @param list<TDocTag> $tags */
     public function render(int $indent = 0, array $tags = []): ?string
     {
         if (empty($this->description) && empty($tags)) {
@@ -24,11 +23,11 @@ final class Description extends AbstractSchema
 
         [$lines, $links] = $this->build();
 
-        $content = array_values(array_filter([
+        $content = [
             ...array_map(fn ($line) => [null, $line], $lines),
             ...array_map(fn ($line) => ['link', $line], $links),
             ...$tags,
-        ], fn ($tag) => ! is_null($tag[1])));
+        ];
 
         if (empty($content)) {
             return null;
@@ -61,7 +60,7 @@ final class Description extends AbstractSchema
         ]);
     }
 
-    /** @return array{0:list<string>,1:TDocTags} */
+    /** @return array{0:list<string>,1:list<string>} */
     protected function build(): array
     {
         if (is_null($this->description)) {
@@ -76,12 +75,14 @@ final class Description extends AbstractSchema
             $description
         );
 
+        assert(is_string($description));
+
         $lines = explode("\n", rtrim($description, "\n"));
 
         return [$lines, $links];
     }
 
-    /** @return array{0:string,1:TDocTags} */
+    /** @return array{0:string,1:list<string>} */
     protected function extractLinks(string $description): array
     {
         $result = preg_match_all('/\[(?<label>[^\]]+)\]\((?<link>[^\)]+)\)/', $description, $matches);

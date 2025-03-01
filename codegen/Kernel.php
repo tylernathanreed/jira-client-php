@@ -17,7 +17,7 @@ class Kernel
     ) {
     }
 
-    public function handle(InputInterface $input, ?OutputInterface $output = null): int
+    public function handle(InputInterface $input, OutputInterface $output): int
     {
         $app = $this->getApplication();
 

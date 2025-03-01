@@ -8,23 +8,8 @@ use RuntimeException;
 use Stringable;
 
 /**
- * @phpstan-type TPropertyObject object{
- *     description?: ?string,
- *     example?: mixed,
- *     type?: ?string,
- *     format?: string,
- *     items?: object{'$ref':string},
- *     allOf?: array{0:object{'$ref':string}}
- *     additionalProperties?: object{items?:object{type:string},type?:string,description?:string}
- *     readOnly?: bool,
- *     writeOnly?: bool,
- *     minItems?: int,
- *     maxItems?: int,
- *     uniqueItems?: bool,
- *     enum?: list<string>
- *     default?: int,
- *     '$ref'?: string,
- * }
+ * @phpstan-import-type TValue from Specification
+ * @phpstan-import-type TAdditionalProperties from Specification
  */
 final class Property extends AbstractSchema implements Stringable
 {
@@ -40,11 +25,11 @@ final class Property extends AbstractSchema implements Stringable
         public readonly Description $description,
         public readonly mixed $example = null,
         public readonly ?string $type = null,
-        public readonly ?bool $typeIsRef = null,
+        public readonly bool $typeIsRef = false,
         public readonly ?string $format = null,
         public readonly ?string $listableType = null,
         public readonly ?string $associativeType = null,
-        public readonly int|string|null $default = null,
+        public readonly int|string|bool|null $default = null,
         public readonly bool $required = false,
         public readonly bool $readOnly = false,
         public readonly bool $writeOnly = false,
@@ -57,65 +42,64 @@ final class Property extends AbstractSchema implements Stringable
     ) {
     }
 
-    /** @param TPropertyObject $schema */
-    public static function make(string $name, int $index, bool $required, object $schema): static
+    /** @param TValue $schema */
+    public static function make(string $name, int $index, bool $required, array $schema): static
     {
-        $type = $schema->{'$ref'}
-            ?? $schema->allOf[0]->{'$ref'}
-            ?? $schema->additionalProperties?->{'$ref'}
-            ?? $schema->type
+        $type = $schema['allOf'][0]['$ref']
+            ?? $schema['additionalProperties']['$ref']
+            ?? $schema['type']
             ?? null;
 
         [$nativeType, $isTypeRef] = self::ref($type);
 
-        $listableType = $schema->items?->type ?? $schema->items?->{'$ref'} ?? null;
+        $listableType = $schema['items']['type'] ?? $schema['items']['$ref'] ?? null;
 
         [$nativeListableType, $isListableTypeRef] = self::ref($listableType);
 
-        $associativeType = self::associativeType($schema->additionalProperties ?? null);
+        $associativeType = self::associativeType($schema['additionalProperties'] ?? null);
 
         return new self(
             name: $name,
             index: $index,
             required: $required,
-            description: new Description($schema->description ?? $schema->additionalProperties?->description ?? null),
-            example: $schema->example ?? null,
+            description: new Description($schema['description'] ?? null),
+            example: $schema['example'] ?? null,
             type: $nativeType,
-            typeIsRef: $isTypeRef,
-            format: $schema->format ?? null,
+            typeIsRef: $isTypeRef ?? false,
+            format: $schema['format'] ?? null,
             listableType: $nativeListableType ?? 'mixed',
             associativeType: $associativeType,
-            default: $schema->default ?? null,
-            readOnly: $schema->readOnly ?? false,
-            writeOnly: $schema->writeOnly ?? false,
-            minItems: $schema->minItems ?? null,
-            maxItems: $schema->maxItems ?? null,
-            uniqueItems: $schema->uniqueItems ?? false,
-            enum: $schema->enum ?? null,
+            default: $schema['default'] ?? null,
+            readOnly: $schema['readOnly'] ?? false,
+            writeOnly: $schema['writeOnly'] ?? false,
+            minItems: $schema['minItems'] ?? null,
+            maxItems: $schema['maxItems'] ?? null,
+            uniqueItems: $schema['uniqueItems'] ?? false,
+            enum: $schema['enum'] ?? null,
         );
     }
 
-    /** @param ?object{'items'?:object{'type':string},'type':string} $type */
-    protected static function associativeType(?object $type): ?string
+    /** @param ?TAdditionalProperties $type */
+    protected static function associativeType(array|bool|null $type): ?string
     {
-        if (is_null($type)) {
+        if (is_null($type) || ! is_array($type)) {
             return null;
         }
 
-        if (isset($type->{'$ref'})) {
-            return static::ref($type->{'$ref'})[0];
+        if (isset($type['$ref'])) {
+            return static::ref($type['$ref'])[0];
         }
 
-        if (isset($type->items->{'$ref'})) {
-            return static::ref($type->items->{'$ref'})[0];
+        if (isset($type['items']['$ref'])) {
+            return static::ref($type['items']['$ref'])[0];
         }
 
-        if (isset($type->items->type)) {
-            return 'list<' . $type->items->type . '>';
+        if (isset($type['items']['type'])) {
+            return 'list<' . $type['items']['type'] . '>';
         }
 
-        if (isset($type->type)) {
-            return $type->type;
+        if (isset($type['type'])) {
+            return $type['type'];
         }
 
         return null;
@@ -256,10 +240,13 @@ final class Property extends AbstractSchema implements Stringable
                 : preg_replace(
                     pattern: ["/\n/", '/array \( */', '/ +/', '/, ?\)/'],
                     replacement: ['', '[', ' ', ']'],
+                    // @phpstan-ignore argument.type (several assumptions)
                     subject: var_export(json_decode(json_encode($this->example), true), true)
                 );
 
-            $tags[] = ['example', $example];
+            if (! is_null($example)) {
+                $tags[] = ['example', $example];
+            }
         }
 
         return $this->description->render(
@@ -304,6 +291,7 @@ final class Property extends AbstractSchema implements Stringable
                 $argString .= "'{$argument}', ";
             }
 
+            // @phpstan-ignore empty.variable (loop is not always entered)
             if (! empty($argString)) {
                 $argString = '(' . rtrim($argString, ', ') . ')';
             }
@@ -321,7 +309,7 @@ final class Property extends AbstractSchema implements Stringable
     /**
      * @phpstan-template T
      *
-     * @var Closure():T
+     * @param Closure():T $callback
      *
      * @return T
      */

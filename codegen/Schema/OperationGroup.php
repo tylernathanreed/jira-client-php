@@ -6,7 +6,7 @@ use RuntimeException;
 use Throwable;
 
 /**
- * @phpstan-import-type TOperationArray from Specification
+ * @phpstan-import-type TCompiledOperation from Specification
  */
 final class OperationGroup extends AbstractSchema
 {
@@ -18,7 +18,7 @@ final class OperationGroup extends AbstractSchema
     ) {
     }
 
-    /** @param array<string,TOperationArray> $operations */
+    /** @param array<string,TCompiledOperation> $operations */
     public static function make(string $name, array $operations): static
     {
         return new self(

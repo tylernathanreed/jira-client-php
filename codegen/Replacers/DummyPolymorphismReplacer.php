@@ -20,7 +20,7 @@ class DummyPolymorphismReplacer extends Replacer
         $map = '';
         $indent = str_repeat(' ', 12);
 
-        foreach ($schema->discriminatorMap as $key => $class) {
+        foreach (($schema->discriminatorMap ?? []) as $key => $class) {
             $map .= "{$indent}'{$key}' => {$class}::class,\n";
         }
 

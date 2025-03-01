@@ -4,6 +4,7 @@ namespace Jira\CodeGen\Commands;
 
 use Jira\CodeGen\Exceptions\ClassGenerationException;
 use Jira\CodeGen\Generators\Generator;
+use Jira\CodeGen\Schema\AbstractSchema;
 use Override;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -12,8 +13,12 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Throwable;
 
+/**
+ * @phpstan-template TSchema of AbstractSchema
+ */
 abstract class GeneratorCommand extends Command
 {
+    /** @return Generator<TSchema> */
     abstract public function generator(): Generator;
 
     #[Override]
@@ -23,12 +28,12 @@ abstract class GeneratorCommand extends Command
 
         $names = $input->getOption('all')
             ? $generator->all()
-            : [trim($input->getArgument('name'))];
+            : [trim($input->getArgument('name'))]; // @phpstan-ignore argument.type (mixed)
 
         if (count($names) === 1 && empty($names[0])) {
             $output->writeln('ERROR: Please provide a name or specify the --all option.');
 
-            return false;
+            return 1;
         }
 
         $generated = [];
@@ -39,13 +44,13 @@ abstract class GeneratorCommand extends Command
             }
 
             try {
-                $path = $generator->generate($name, $input->getOption('force'));
+                $path = $generator->generate($name, (bool) $input->getOption('force'));
 
                 $generated[ucfirst($name)] = true;
             } catch (ClassGenerationException $e) {
                 $output->writeLn('ERROR: ' . $e->getMessage());
 
-                return false;
+                return 1;
             } catch (Throwable $e) {
                 $output->writeLn(sprintf('ERROR: Failed to generate %s [%s]', static::type(), $name));
                 $output->writeLn($e->getMessage());

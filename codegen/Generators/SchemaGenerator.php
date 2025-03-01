@@ -12,8 +12,13 @@ use Jira\CodeGen\Replacers\DummyPropertiesReplacer;
 use Jira\CodeGen\Replacers\DummyUnionReplacer;
 use Jira\CodeGen\Schema\Schema;
 use Jira\CodeGen\Schema\Specification;
+use Override;
 
-/** @extends Generator<Schema> */
+/**
+ * @phpstan-import-type TSchema from Specification
+ *
+ * @extends Generator<Schema>
+ */
 class SchemaGenerator extends Generator
 {
     /** {@inheritDoc} */
@@ -27,25 +32,29 @@ class SchemaGenerator extends Generator
         DummyIncludesReplacer::class,
     ];
 
+    #[Override]
     protected function schema(string $name): Schema
     {
         $spec = Specification::getSpecification();
 
-        $schemas = $spec->components->schemas;
+        /** @var array<string,TSchema> */
+        $schemas = $spec['components']['schemas'] ?? [];
 
-        if (! isset($schemas->{$name})) {
+        if (! isset($schemas[$name])) {
             throw new MissingSpecificationException($this->type(), $name);
         }
 
-        return Schema::make(ucfirst($name), $schemas->{$name});
+        return Schema::make(ucfirst($name), $schemas[$name]);
     }
 
+    #[Override]
     public function all(): array
     {
         $spec = Specification::getSpecification();
 
-        $schemas = $spec->components->schemas;
+        /** @var array<string,TSchema> */
+        $schemas = $spec['components']['schemas'] ?? [];
 
-        return array_keys((array) $schemas);
+        return array_keys($schemas);
     }
 }

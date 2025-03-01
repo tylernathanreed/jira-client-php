@@ -20,7 +20,7 @@ class DummyUnionReplacer extends Replacer
         $types = '';
         $indent = str_repeat(' ', 12);
 
-        foreach ($schema->unionTypes as $type) {
+        foreach (($schema->unionTypes ?? []) as $type) {
             $types .= "{$indent}{$type}::class,\n";
         }
 

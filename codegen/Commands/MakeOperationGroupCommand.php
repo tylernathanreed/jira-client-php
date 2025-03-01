@@ -4,11 +4,13 @@ namespace Jira\CodeGen\Commands;
 
 use Jira\CodeGen\Generators\Generator;
 use Jira\CodeGen\Generators\OperationsGenerator;
+use Jira\CodeGen\Schema\OperationGroup;
 use Override;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+/** @extends GeneratorCommand<OperationGroup> */
 #[AsCommand('make:operations', 'Generates a new operations trait')]
 class MakeOperationGroupCommand extends GeneratorCommand
 {
@@ -26,6 +28,7 @@ class MakeOperationGroupCommand extends GeneratorCommand
         return 0;
     }
 
+    #[Override]
     public function generator(): Generator
     {
         return new OperationsGenerator();
@@ -37,13 +40,17 @@ class MakeOperationGroupCommand extends GeneratorCommand
 
         $stub = file_get_contents($filepath);
 
+        if (! $stub) {
+            return;
+        }
+
         if (! preg_match('/(?P<imports>(?:^ +use [^;{]+;$\n?)+)/m', $stub, $match)) {
             return;
         }
 
         $traits = array_map(
             fn ($filepath) => '    use Operations\\' . basename($filepath, '.php') . ';',
-            glob(realpath(__DIR__ . '/../../') . '/src/Operations/*.php')
+            glob(realpath(__DIR__ . '/../../') . '/src/Operations/*.php') ?: []
         );
 
         $stub = str_replace(rtrim($match['imports']), implode("\n", $traits), $stub);

@@ -7,6 +7,7 @@ use Jira\CodeGen\Exceptions\ReservedWordException;
 use Jira\CodeGen\Replacers\Replacer;
 use Jira\CodeGen\Replacers\SortImportsReplacer;
 use Jira\CodeGen\Schema\AbstractSchema;
+use RuntimeException;
 
 /**
  * @phpstan-template TSchema of AbstractSchema
@@ -131,6 +132,10 @@ abstract class Generator
 
         $stub = $this->stub();
 
+        if ($stub === false) {
+            throw new RuntimeException('Failed to open stub.');
+        }
+
         $replacers = $this->replacers;
 
         $replacers[] = SortImportsReplacer::class;
@@ -164,17 +169,17 @@ abstract class Generator
         return $path;
     }
 
-    protected function write(string $path, string $contents): ?int
+    protected function write(string $path, string $contents): int|false
     {
         return file_put_contents($path, $contents);
     }
 
-    protected function stub(): string
+    protected function stub(): string|false
     {
         return file_get_contents($this->getStub());
     }
 
-    protected function getPath($name): string
+    protected function getPath(string $name): string
     {
         return strtr('{basePath}/src/{type}/{name}.php', [
             '{basePath}' => realpath('./'),
