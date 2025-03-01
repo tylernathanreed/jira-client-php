@@ -14,7 +14,6 @@
     },
     "require-dev": {
         "laravel/pint": "^1.20",
-        "laravel-zero/foundation": "^11.5.0",
         "mockery/mockery": "^1.6",
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^11.0|^12.0",
@@ -31,7 +30,10 @@
         "psr-4": {
             "Jira\\CodeGen\\": "codegen/",
             "Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "codegen/helpers.php"
+        ]
     },
     "bin": [
         "bin/jira"
@@ -47,10 +49,6 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "scripts": {
-        "up": "docker compose up -d",
-        "down": "docker compose down",
-        "build": "docker compose build --no-cache",
-        "bash": "docker compose exec -u sail dev bash",
         "test:static": "phpstan analyze",
         "test:suite": "phpunit"
     }

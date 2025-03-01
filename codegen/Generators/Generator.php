@@ -136,7 +136,7 @@ abstract class Generator
         $replacers[] = SortImportsReplacer::class;
 
         foreach ($replacers as $replacer) {
-            $stub = resolve($replacer)->replace($schema, $stub);
+            $stub = (new $replacer)->replace($schema, $stub);
         }
 
         return $stub;
@@ -148,11 +148,6 @@ abstract class Generator
     protected function isReservedName(string $name): bool
     {
         return in_array(strtolower($name), array_map('strtolower', $this->reservedNames));
-    }
-
-    protected function rootNamespace(): string
-    {
-        return app()->getNamespace();
     }
 
     protected function alreadyExists(string $path): bool
