@@ -9,7 +9,6 @@ use Jira\Client\Client;
 use Jira\Client\Configuration;
 use Jira\Client\Contracts\Factory as FactoryContract;
 use Jira\Client\Factory;
-use Mockery;
 use Override;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
@@ -26,14 +25,6 @@ abstract class OperationsTestCase extends TestCase
         $this->config = $this->newConfiguration();
         $this->factory = $this->newFactory();
         $this->client = $this->newClient();
-    }
-
-    #[Override]
-    protected function tearDown(): void
-    {
-        $this->addToAssertionCount(Mockery::getContainer()->mockery_getExpectationCount());
-
-        Mockery::close();
     }
 
     protected function assertCall(string $method, array $call, array $arguments, ?string $response): void
