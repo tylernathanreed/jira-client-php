@@ -2,13 +2,12 @@
 
 namespace Jira\CodeGen;
 
-use Jira\CodeGen\Commands;
 use Jira\CodeGen\Commands\GeneratorCommand;
+use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Command\ListCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Process\Process;
-use Symfony\Component\Console\Application;
 use Throwable;
 
 class Kernel
@@ -59,7 +58,7 @@ class Kernel
         ];
 
         foreach ($commands as $command) {
-            $instance = new $command;
+            $instance = new $command();
 
             $app->add($instance);
         }

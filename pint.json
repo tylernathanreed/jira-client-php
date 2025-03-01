@@ -1,0 +1,8 @@
+{
+    "preset": "psr12",
+    "exclude": [
+        "src",
+        "stubs",
+        "tests"
+    ]
+}

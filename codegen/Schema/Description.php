@@ -25,8 +25,8 @@ final class Description extends AbstractSchema
         [$lines, $links] = $this->build();
 
         $content = array_values(array_filter([
-            ...array_map(fn($line) => [null, $line], $lines),
-            ...array_map(fn($line) => ['link', $line], $links),
+            ...array_map(fn ($line) => [null, $line], $lines),
+            ...array_map(fn ($line) => ['link', $line], $links),
             ...$tags,
         ], fn ($tag) => ! is_null($tag[1])));
 
@@ -56,7 +56,7 @@ final class Description extends AbstractSchema
 
         return $indent . implode("\n" . $indent, [
             '/**',
-            ...array_map(fn($d) => " * {$d}", $doc),
+            ...array_map(fn ($d) => " * {$d}", $doc),
             " */\n",
         ]);
     }
@@ -96,7 +96,7 @@ final class Description extends AbstractSchema
             $description = str_replace("[{$label}]({$link})", "\"{$label}\"", $description);
         }
 
-        $links = array_filter($links, fn($link) => ! str_starts_with($link, '#'));
+        $links = array_filter($links, fn ($link) => ! str_starts_with($link, '#'));
 
         return [$description, array_values($links)];
     }

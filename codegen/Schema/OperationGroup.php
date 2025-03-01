@@ -21,7 +21,7 @@ final class OperationGroup extends AbstractSchema
     /** @param array<string,TOperationArray> $operations */
     public static function make(string $name, array $operations): static
     {
-        return new static(
+        return new self(
             name: $name,
             operations: array_map(function ($o) {
                 try {

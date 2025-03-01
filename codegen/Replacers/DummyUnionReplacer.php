@@ -38,7 +38,7 @@ class DummyUnionReplacer extends Replacer
 
         DOC, $stub);
 
-        return str_replace(<<<DOC
+        return str_replace(<<<'DOC'
 
             public function __construct(
 

@@ -136,7 +136,7 @@ abstract class Generator
         $replacers[] = SortImportsReplacer::class;
 
         foreach ($replacers as $replacer) {
-            $stub = (new $replacer)->replace($schema, $stub);
+            $stub = (new $replacer())->replace($schema, $stub);
         }
 
         return $stub;
@@ -164,7 +164,7 @@ abstract class Generator
         return $path;
     }
 
-    protected function write(string $path, string $contents): int|null
+    protected function write(string $path, string $contents): ?int
     {
         return file_put_contents($path, $contents);
     }

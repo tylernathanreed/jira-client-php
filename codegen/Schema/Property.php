@@ -57,7 +57,7 @@ final class Property extends AbstractSchema implements Stringable
     ) {
     }
 
-    /** @var TPropertyObject $schema */
+    /** @param TPropertyObject $schema */
     public static function make(string $name, int $index, bool $required, object $schema): static
     {
         $type = $schema->{'$ref'}
@@ -66,15 +66,15 @@ final class Property extends AbstractSchema implements Stringable
             ?? $schema->type
             ?? null;
 
-        [$nativeType, $isTypeRef] = static::ref($type);
+        [$nativeType, $isTypeRef] = self::ref($type);
 
         $listableType = $schema->items?->type ?? $schema->items?->{'$ref'} ?? null;
 
-        [$nativeListableType, $isListableTypeRef] = static::ref($listableType);
+        [$nativeListableType, $isListableTypeRef] = self::ref($listableType);
 
-        $associativeType = static::associativeType($schema->additionalProperties ?? null);
+        $associativeType = self::associativeType($schema->additionalProperties ?? null);
 
-        return new static(
+        return new self(
             name: $name,
             index: $index,
             required: $required,
@@ -320,8 +320,9 @@ final class Property extends AbstractSchema implements Stringable
 
     /**
      * @phpstan-template T
-     * 
+     *
      * @var Closure():T
+     *
      * @return T
      */
     protected function compute(string $key, Closure $callback): mixed
@@ -332,7 +333,7 @@ final class Property extends AbstractSchema implements Stringable
 
         return $this->computed[$key] = $callback();
     }
-    
+
     public function __toString(): string
     {
         return $this->getDoc() . $this->getAttributes() . $this->getDefinition();

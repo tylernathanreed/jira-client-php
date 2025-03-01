@@ -6,5 +6,4 @@ use RuntimeException;
 
 class ClassGenerationException extends RuntimeException
 {
-
 }

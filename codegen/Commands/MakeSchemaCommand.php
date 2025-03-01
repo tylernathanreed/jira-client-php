@@ -11,6 +11,6 @@ class MakeSchemaCommand extends GeneratorCommand
 {
     public function generator(): Generator
     {
-        return new SchemaGenerator;
+        return new SchemaGenerator();
     }
 }

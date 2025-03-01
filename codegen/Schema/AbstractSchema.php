@@ -4,5 +4,4 @@ namespace Jira\CodeGen\Schema;
 
 abstract class AbstractSchema
 {
-    
 }

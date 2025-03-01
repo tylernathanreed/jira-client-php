@@ -25,7 +25,7 @@ class DummyIncludesReplacer extends Replacer
             $includes[] = MapName::class;
         }
 
-        $content = implode("\n", array_map(fn($v) => "use {$v};", $includes));
+        $content = implode("\n", array_map(fn ($v) => "use {$v};", $includes));
 
         if (! empty($content)) {
             $content .= "\n";

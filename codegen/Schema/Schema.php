@@ -7,6 +7,7 @@ use Throwable;
 
 /**
  * @phpstan-import-type TPropertyObject from Property
+ *
  * @phpstan-type TSchemaObject object{
  *     description?: string,
  *     properties?: object,
@@ -24,7 +25,6 @@ final class Schema extends AbstractSchema
 
     public function __construct(
         public readonly string $name,
-
         public readonly Description $description,
 
         /** @var array<string,Property> */
@@ -32,14 +32,11 @@ final class Schema extends AbstractSchema
 
         /** @var array<string,true> */
         public readonly array $required,
-
         public readonly ?string $discriminatorKey,
 
         /** @var ?array<string,string> */
         public readonly ?array $discriminatorMap,
-
         public readonly bool $nullable,
-
         public readonly string $type,
 
         /** @var ?list<class-string<Dto>> */
@@ -50,18 +47,18 @@ final class Schema extends AbstractSchema
     /** @param TSchemaObject $schema */
     public static function make(string $name, object $schema): static
     {
-        [$key, $map] = static::discriminator($schema->discriminator ?? null);
+        [$key, $map] = self::discriminator($schema->discriminator ?? null);
 
         $unionTypes = isset($schema->anyOf)
-            ? array_map(fn($type) => static::ref($type->{'$ref'})[0], $schema->anyOf)
+            ? array_map(fn ($type) => self::ref($type->{'$ref'})[0], $schema->anyOf)
             : null;
 
-        return new static(
+        return new self(
             name: $name,
             description: new Description($schema->description ?? null),
             required: $required = array_fill_keys($schema->required ?? [], true),
             properties: isset($schema->properties)
-                ? static::makeProperties($schema->properties, $required)
+                ? self::makeProperties($schema->properties, $required)
                 : [],
             discriminatorKey: $key,
             discriminatorMap: $map,
@@ -72,8 +69,7 @@ final class Schema extends AbstractSchema
     }
 
     /**
-     * @param array<string,true> $required
-     *
+     * @param  array<string,true>  $required
      * @return array<string,Property>
      */
     protected static function makeProperties(object $properties, array $required): array
@@ -86,7 +82,7 @@ final class Schema extends AbstractSchema
                     return Property::make($name, $i, $required[$name] ?? false, $property);
                 } catch (Throwable $e) {
                     throw new RuntimeException(sprintf(
-                        "Failed to generate property [%s] (%s).",
+                        'Failed to generate property [%s] (%s).',
                         $name,
                         json_encode($property),
                     ), previous: $e);
@@ -115,8 +111,7 @@ final class Schema extends AbstractSchema
     }
 
     /**
-     * @param ?object{mapping:object,propertyName:string} $discriminator
-     * 
+     * @param  ?object{mapping:object,propertyName:string}  $discriminator
      * @return array{0:?string,1:?array<string,string>}
      */
     protected static function discriminator(?object $discriminator): array

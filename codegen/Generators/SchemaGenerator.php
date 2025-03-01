@@ -16,7 +16,7 @@ use Jira\CodeGen\Schema\Specification;
 /** @extends Generator<Schema> */
 class SchemaGenerator extends Generator
 {
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     protected $replacers = [
         DummyClassDocReplacer::class,
         DummyClassReplacer::class,

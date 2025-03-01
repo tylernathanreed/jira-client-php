@@ -28,9 +28,8 @@ final class Operation extends AbstractSchema implements Stringable
 
         /** @var list<Parameter> */
         public readonly array $parameters,
-
         public readonly bool $deprecated = false,
-    ) {  
+    ) {
     }
 
     /** @param TOperationArray $operation */
@@ -44,15 +43,15 @@ final class Operation extends AbstractSchema implements Stringable
             ? min(...$responseCodes)
             : $responseCodes[0];
 
-        $successSchema = static::ref(
+        $successSchema = self::ref(
             $op->responses->{$successCode}->content->{'application/json'}->schema->{'$ref'} ?? null
         )[0] ?? true;
 
-        $bodySchema = static::ref(
+        $bodySchema = self::ref(
             $op->requestBody->content->{'application/json'}->schema->{'$ref'} ?? null
         )[0] ?? null;
 
-        return new static(
+        return new self(
             id: $operation['id'],
             uri: $operation['uri'],
             method: $operation['method'],
@@ -62,7 +61,7 @@ final class Operation extends AbstractSchema implements Stringable
             successSchema: $successSchema,
             bodySchema: $bodySchema,
             parameters: isset($op->parameters)
-                ? static::makeParameters($op->parameters)
+                ? self::makeParameters($op->parameters)
                 : [],
         );
     }
@@ -119,9 +118,9 @@ final class Operation extends AbstractSchema implements Stringable
         $schema = $this->successSchema === true
             ? $returnType
             : "{$returnType}::class";
-        
+
         $parameters = [];
-        
+
         if ($this->bodySchema) {
             $parameters[] = '        Schema\\' . $this->bodySchema . ' $request,';
 
@@ -135,7 +134,7 @@ final class Operation extends AbstractSchema implements Stringable
         $queryParam = $this->getCallParamString('query');
         $pathParam = $this->getCallParamString('path');
         $headerParam = $this->getCallParamString('header');
-    
+
         $arguments = array_filter([
             ['uri', "'{$this->uri}'"],
             ['method', "'{$this->method}'"],
@@ -191,15 +190,15 @@ final class Operation extends AbstractSchema implements Stringable
         if (empty($compact) && empty($append)) {
             return null;
         }
-        
+
         $compactStr = ! empty($compact)
             ? 'compact(\'' . implode('\', \'', $compact) . '\')'
             : null;
-        
+
         $appendStr = ! empty($append)
             ? '[' . implode(', ', array_map(fn ($a) => "'{$a[0]}' => \${$a[1]}", $append)) . ']'
             : null;
-        
+
         if (empty($compactStr)) {
             return $appendStr;
         }
@@ -218,7 +217,7 @@ final class Operation extends AbstractSchema implements Stringable
             '_post',
             '_put',
             '_patch',
-            '_delete'
+            '_delete',
         ], '', $this->id);
 
         if (($position = strpos($id, '.')) !== false) {

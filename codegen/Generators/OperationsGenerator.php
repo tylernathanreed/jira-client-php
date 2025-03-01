@@ -12,7 +12,7 @@ use Jira\CodeGen\Schema\Specification;
 /** @extends Generator<Schema> */
 class OperationsGenerator extends Generator
 {
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     protected $replacers = [
         DummyTraitReplacer::class,
         DummyMethodsReplacer::class,

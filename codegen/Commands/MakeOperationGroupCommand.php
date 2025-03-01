@@ -28,9 +28,8 @@ class MakeOperationGroupCommand extends GeneratorCommand
 
     public function generator(): Generator
     {
-        return new OperationsGenerator;
+        return new OperationsGenerator();
     }
-
 
     protected function updatePerformsOperationsTrait(): void
     {
@@ -43,7 +42,7 @@ class MakeOperationGroupCommand extends GeneratorCommand
         }
 
         $traits = array_map(
-            fn($filepath) => '    use Operations\\' . basename($filepath, '.php') . ';',
+            fn ($filepath) => '    use Operations\\' . basename($filepath, '.php') . ';',
             glob(realpath(__DIR__ . '/../../') . '/src/Operations/*.php')
         );
 
@@ -51,6 +50,5 @@ class MakeOperationGroupCommand extends GeneratorCommand
 
         file_put_contents($filepath, $stub);
 
-        return;
     }
 }

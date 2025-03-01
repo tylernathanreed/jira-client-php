@@ -47,7 +47,7 @@ final class Parameter extends AbstractSchema
             ?? $parameter->schema->type
             ?? null;
 
-        [$nativeType, $isTypeRef] = static::ref($type);
+        [$nativeType, $isTypeRef] = self::ref($type);
 
         $listableType = $parameter->schema->items?->type ?? $parameter->schema->items?->{'$ref'} ?? null;
 
@@ -55,15 +55,15 @@ final class Parameter extends AbstractSchema
             $listableType = implode('|', array_map(fn ($enum) => "'{$enum}'", $parameter->schema->items->enum));
         }
 
-        [$nativeListableType, $isListableTypeRef] = static::ref($listableType);
+        [$nativeListableType, $isListableTypeRef] = self::ref($listableType);
 
         if ($isListableTypeRef) {
             $nativeListableType = 'Schema\\' . $nativeListableType;
         }
 
-        $associativeType = static::associativeType($parameter->schema->additionalProperties ?? null);
+        $associativeType = self::associativeType($parameter->schema->additionalProperties ?? null);
 
-        return new static(
+        return new self(
             index: $index,
             name: $parameter->name,
             description: new Description($parameter->description ?? null),
@@ -163,7 +163,7 @@ final class Parameter extends AbstractSchema
 
     public function getDocType(): ?string
     {
-        return $this->compute('docType', fn() => $this->resolveDocType());
+        return $this->compute('docType', fn () => $this->resolveDocType());
     }
 
     protected function resolveDocType(): ?string
@@ -191,7 +191,7 @@ final class Parameter extends AbstractSchema
 
     public function getSafeName(): string
     {
-        return $this->compute('safeName', fn() => static::resolveSafeName($this->name));
+        return $this->compute('safeName', fn () => static::resolveSafeName($this->name));
     }
 
     public function getDefaultString(): string
@@ -250,8 +250,9 @@ final class Parameter extends AbstractSchema
 
     /**
      * @phpstan-template T
-     * 
+     *
      * @var Closure():T
+     *
      * @return T
      */
     protected function compute(string $key, Closure $callback): mixed
