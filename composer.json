@@ -49,6 +49,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "scripts": {
+        "test:lint": "pint",
         "test:static": "phpstan analyze",
         "test:suite": "phpunit"
     }
