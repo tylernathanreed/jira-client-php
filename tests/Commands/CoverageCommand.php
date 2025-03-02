@@ -7,6 +7,7 @@ use Override;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Tests\Coverage;
 
@@ -17,7 +18,7 @@ class CoverageCommand extends Command
     public function execute(InputInterface $input, OutputInterface $output): int
     {
         try {
-            $coverage = Coverage::report($output);
+            $coverage = Coverage::report($output, (bool) $input->getOption('compact'));
         } catch (Exception $e) {
             $output->writeln(
                 '  <fg=black;bg=yellow;options=bold> WARN </> ' . $e->getMessage() . '</>',
@@ -42,5 +43,17 @@ class CoverageCommand extends Command
     protected function configure(): void
     {
         $this->setHidden(true);
+
+        foreach ($this->getOptions() as $options) {
+            $this->addOption(...$options);
+        }
+    }
+
+    /** @return list<array{0:string,1:string,2:int,3:string}> */
+    protected function getOptions(): array
+    {
+        return [
+            ['compact', 'c', InputOption::VALUE_NONE, 'Replace default result output with Compact format'],
+        ];
     }
 }

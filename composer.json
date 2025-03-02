@@ -51,6 +51,6 @@
         "test:lint": "pint",
         "test:static": "phpstan analyze",
         "test:suite": "phpunit",
-        "test:coverage": "XDEBUG_MODE=coverage phpunit --coverage-php ./.cache/phpunit/coverage.php && bin/jira coverage"
+        "test:coverage": "XDEBUG_MODE=coverage phpunit --coverage-php ./.cache/phpunit/coverage.php && bin/jira coverage --compact"
     }
 }
