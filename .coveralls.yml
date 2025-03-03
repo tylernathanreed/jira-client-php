@@ -1,2 +1,2 @@
-coverage_clover: .phpunit.coverage.xml
-json_path: .phpunit.coverage.json
+coverage_clover: .phpunit/coverage.xml
+json_path: .phpunit/coverage.json
