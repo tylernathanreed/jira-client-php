@@ -1,5 +1,13 @@
 {
     "name": "jira/client",
+    "description": "Provides an HTTP Client to interact with the Jira Cloud REST API",
+    "keywords": [
+        "jira",
+        "cloud",
+        "api",
+        "client",
+        "sdk"
+    ],
     "authors": [
         {
             "name": "Tyler Reed",
