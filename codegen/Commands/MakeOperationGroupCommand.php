@@ -7,17 +7,15 @@ use Jira\CodeGen\Generators\OperationsGenerator;
 use Jira\CodeGen\Schema\OperationGroup;
 use Override;
 use Symfony\Component\Console\Attribute\AsCommand;
-use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\OutputInterface;
 
 /** @extends GeneratorCommand<OperationGroup> */
 #[AsCommand('make:operations', 'Generates a new operations trait')]
 class MakeOperationGroupCommand extends GeneratorCommand
 {
     #[Override]
-    public function execute(InputInterface $input, OutputInterface $output): int
+    public function handle(): int
     {
-        $result = parent::execute($input, $output);
+        $result = parent::handle();
 
         if ($result) {
             return $result;
