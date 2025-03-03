@@ -5,7 +5,7 @@ namespace Tests\Unit\Operations;
 use Tests\OperationsTestCase;
 use Jira\Client\Schema;
 
-class AnnouncementBannerTest extends OperationsTestCase
+class OriginalAnnouncementBannerTest extends OperationsTestCase
 {
     public function testGetBanner(): void
     {

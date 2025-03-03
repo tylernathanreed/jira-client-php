@@ -2,8 +2,10 @@
 
 namespace Jira\CodeGen\Commands;
 
+use Jira\CodeGen\Contracts\SupportsTestGenerator;
 use Jira\CodeGen\Exceptions\ClassGenerationException;
 use Jira\CodeGen\Generators\Generator;
+use Jira\CodeGen\Generators\TestGenerator;
 use Jira\CodeGen\Schema\AbstractSchema;
 use Override;
 use Symfony\Component\Console\Input\InputArgument;
@@ -42,26 +44,14 @@ abstract class GeneratorCommand extends Command
                 continue;
             }
 
-            try {
-                $path = $generator->generate($name, $force);
-            } catch (ClassGenerationException $e) {
-                $this->error($e->getMessage());
-
+            if (($path = $this->makeSourceFile($generator, $name, $force)) === false) {
                 return 1;
-            } catch (Throwable $e) {
-                $this->error(sprintf(
-                    'Failed to generate %s [%s]',
-                    static::type(),
-                    $name
-                ));
+            }
 
-                $this->error($e->getMessage());
-
-                if ($e->getPrevious()) {
-                    throw $e->getPrevious();
+            if ($generator instanceof SupportsTestGenerator) {
+                if ($this->makeTestFile($generator->getTestGenerator(), $name, $force) === false) {
+                    return 1;
                 }
-
-                throw $e;
             }
 
             $generated[ucfirst($name)] = true;
@@ -74,6 +64,53 @@ abstract class GeneratorCommand extends Command
         }
 
         return 0;
+    }
+
+    /** @param Generator<TSchema> $generator */
+    protected function makeSourceFile(Generator $generator, string $name, bool $force): string|false
+    {
+        try {
+            return $generator->generate($name, $force);
+        } catch (ClassGenerationException $e) {
+            $this->error($e->getMessage());
+
+            return false;
+        } catch (Throwable $e) {
+            $this->error(sprintf(
+                'Failed to generate %s [%s].',
+                static::type(),
+                $name
+            ));
+
+            $this->error($e->getMessage());
+
+            if ($e->getPrevious()) {
+                throw $e->getPrevious();
+            }
+
+            throw $e;
+        }
+    }
+
+    protected function makeTestFile(TestGenerator $generator, string $name, bool $force): string|false
+    {
+        try {
+            return $generator->generate($name, $force);
+        } catch (Throwable $e) {
+            $this->error(sprintf(
+                'Failed to generate test for %s [%s].',
+                static::type(),
+                $name
+            ));
+
+            $this->error($e->getMessage());
+
+            if ($e->getPrevious()) {
+                throw $e->getPrevious();
+            }
+
+            throw $e;
+        }
     }
 
     protected function type(): string
