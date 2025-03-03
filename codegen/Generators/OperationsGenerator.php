@@ -4,7 +4,6 @@ namespace Jira\CodeGen\Generators;
 
 use Jira\CodeGen\Contracts\SupportsTestGenerator;
 use Jira\CodeGen\Exceptions\MissingSpecificationException;
-use Jira\CodeGen\Generators\TestGenerator;
 use Jira\CodeGen\Replacers\DummyMethodsReplacer;
 use Jira\CodeGen\Replacers\DummyTraitReplacer;
 use Jira\CodeGen\Schema\OperationGroup;
@@ -37,6 +36,6 @@ class OperationsGenerator extends Generator implements SupportsTestGenerator
 
     public function getTestGenerator(): TestGenerator
     {
-        return new OperationsTestGenerator;
+        return new OperationsTestGenerator();
     }
 }
