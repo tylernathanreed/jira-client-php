@@ -1,11 +1,9 @@
 name: Coverage
 
-on:
-  push:
-  pull_request:
+on: ["push", "pull_request"]
 
 jobs:
-  linux_tests:
+  build:
     runs-on: ubuntu-latest
 
     strategy:
@@ -36,6 +34,4 @@ jobs:
         run: vendor/bin/phpunit
 
       - name: Upload coverage results to Coveralls
-        env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: vendor/bin/php-coveralls -v
+        uses: coverallsapp/github-action@v2
