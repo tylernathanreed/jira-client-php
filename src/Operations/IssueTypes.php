@@ -20,14 +20,16 @@ trait IssueTypes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * @link https://confluence.atlassian.com/x/yodKLg
+     * 
+     * @return list<Schema\IssueTypeDetails>
      */
-    public function getIssueAllTypes(): true
+    public function getIssueAllTypes(): array
     {
         return $this->call(
             uri: '/rest/api/3/issuetype',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\IssueTypeDetails::class],
         );
     }
 
@@ -66,17 +68,19 @@ trait IssueTypes
      *                    - `-1` for Subtask
      *                    - `0` for Base
      *                    - `1` for Epic.
+     * 
+     * @return list<Schema\IssueTypeDetails>
      */
     public function getIssueTypesForProject(
         int $projectId,
         ?int $level = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/issuetype/project',
             method: 'get',
             query: compact('projectId', 'level'),
             success: 200,
-            schema: true,
+            schema: [Schema\IssueTypeDetails::class],
         );
     }
 
@@ -162,16 +166,18 @@ trait IssueTypes
      * **"Permissions" required:** None.
      * 
      * @param string $id The ID of the issue type.
+     * 
+     * @return list<Schema\IssueTypeDetails>
      */
     public function getAlternativeIssueTypes(
         string $id,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/issuetype/{id}/alternatives',
             method: 'get',
             path: compact('id'),
             success: 200,
-            schema: true,
+            schema: [Schema\IssueTypeDetails::class],
         );
     }
 

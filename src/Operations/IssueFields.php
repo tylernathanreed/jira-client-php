@@ -22,14 +22,16 @@ trait IssueFields
      * **"Permissions" required:** None.
      * 
      * @link https://confluence.atlassian.com/x/yodKLg
+     * 
+     * @return list<Schema\FieldDetails>
      */
-    public function getFields(): true
+    public function getFields(): array
     {
         return $this->call(
             uri: '/rest/api/3/field',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\FieldDetails::class],
         );
     }
 

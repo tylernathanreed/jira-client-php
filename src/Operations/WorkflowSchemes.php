@@ -65,18 +65,20 @@ trait WorkflowSchemes
      *                       Expand options include:
      *                        - `workflows.usages` Returns the project and issue types that each workflow in the workflow scheme is associated with.
      *                       @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
+     * 
+     * @return list<Schema\WorkflowSchemeReadResponse>
      */
     public function readWorkflowSchemes(
         Schema\WorkflowSchemeReadRequest $request,
         ?string $expand = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/workflowscheme/read',
             method: 'post',
             body: $request,
             query: compact('expand'),
             success: 200,
-            schema: true,
+            schema: [Schema\WorkflowSchemeReadResponse::class],
         );
     }
 

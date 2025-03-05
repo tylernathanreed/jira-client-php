@@ -30,17 +30,19 @@ trait Status
      *                        - `usages` Returns the project and issue types that use the status in their workflow
      *                        - `workflowUsages` Returns the workflows that use the status.
      *                       @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
+     * 
+     * @return list<Schema\JiraStatus>
      */
     public function getStatusesById(
         array $id,
         ?string $expand = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/statuses',
             method: 'get',
             query: compact('id', 'expand'),
             success: 200,
-            schema: true,
+            schema: [Schema\JiraStatus::class],
         );
     }
 
@@ -75,16 +77,18 @@ trait Status
      *  - *Administer Jira* "project permission."
      * 
      * @link https://confluence.atlassian.com/x/yodKLg
+     * 
+     * @return list<Schema\JiraStatus>
      */
     public function createStatuses(
         Schema\StatusCreateRequest $request,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/statuses',
             method: 'post',
             body: $request,
             success: 200,
-            schema: true,
+            schema: [Schema\JiraStatus::class],
         );
     }
 

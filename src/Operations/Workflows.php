@@ -21,16 +21,18 @@ trait Workflows
      * 
      * @param string $workflowName The name of the workflow to be returned.
      *                             Only one workflow can be specified.
+     * 
+     * @return list<Schema\DeprecatedWorkflow>
      */
     public function getAllWorkflows(
         ?string $workflowName = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/workflow',
             method: 'get',
             query: compact('workflowName'),
             success: 200,
-            schema: true,
+            schema: [Schema\DeprecatedWorkflow::class],
         );
     }
 

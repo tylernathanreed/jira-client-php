@@ -14,14 +14,16 @@ trait IssueNavigatorSettings
      * **"Permissions" required:** *Administer Jira* "global permission".
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
+     * 
+     * @return list<Schema\ColumnItem>
      */
-    public function getIssueNavigatorDefaultColumns(): true
+    public function getIssueNavigatorDefaultColumns(): array
     {
         return $this->call(
             uri: '/rest/api/3/settings/columns',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\ColumnItem::class],
         );
     }
 

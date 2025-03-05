@@ -30,18 +30,20 @@ trait Projects
      *                    If access is anonymous, then the recently accessed projects are based on the current HTTP session.
      * @param ?list<string> $properties A list of project properties to return for the project.
      *                                  This parameter accepts a comma-separated list.
+     * 
+     * @return list<Schema\Project>
      */
     public function getAllProjects(
         ?string $expand = null,
         ?int $recent = null,
         ?array $properties = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/project',
             method: 'get',
             query: compact('expand', 'recent', 'properties'),
             success: 200,
-            schema: true,
+            schema: [Schema\Project::class],
         );
     }
 
@@ -110,17 +112,19 @@ trait Projects
      *                                             A list of project properties to return for the project.
      *                                             This parameter accepts a comma-separated list.
      *                                             Invalid property names are ignored.
+     * 
+     * @return list<Schema\Project>
      */
     public function getRecent(
         ?string $expand = null,
         ?array $properties = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/project/recent',
             method: 'get',
             query: compact('expand', 'properties'),
             success: 200,
-            schema: true,
+            schema: [Schema\Project::class],
         );
     }
 
@@ -426,16 +430,18 @@ trait Projects
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
+     * 
+     * @return list<Schema\IssueTypeWithStatus>
      */
     public function getAllStatuses(
         string $projectIdOrKey,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/statuses',
             method: 'get',
             path: compact('projectIdOrKey'),
             success: 200,
-            schema: true,
+            schema: [Schema\IssueTypeWithStatus::class],
         );
     }
 

@@ -55,14 +55,16 @@ trait TimeTracking
      * 
      * @link https://developer.atlassian.com/cloud/jira/platform/modules/time-tracking-provider/
      * @link https://confluence.atlassian.com/x/x4dKLg
+     * 
+     * @return list<Schema\TimeTrackingProvider>
      */
-    public function getAvailableTimeTrackingImplementations(): true
+    public function getAvailableTimeTrackingImplementations(): array
     {
         return $this->call(
             uri: '/rest/api/3/configuration/timetracking/list',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\TimeTrackingProvider::class],
         );
     }
 

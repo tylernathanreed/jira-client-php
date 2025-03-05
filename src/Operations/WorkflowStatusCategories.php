@@ -12,14 +12,16 @@ trait WorkflowStatusCategories
      * Returns a list of all status categories
      * 
      * **"Permissions" required:** Permission to access Jira.
+     * 
+     * @return list<Schema\StatusCategory>
      */
-    public function getStatusCategories(): true
+    public function getStatusCategories(): array
     {
         return $this->call(
             uri: '/rest/api/3/statuscategory',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\StatusCategory::class],
         );
     }
 

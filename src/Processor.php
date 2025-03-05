@@ -13,16 +13,16 @@ class Processor
     }
 
     /**
-     * @param class-string<Dto>|true $schema
+     * @param array{0:class-string<Dto>}|class-string<Dto>|true $schema
      *
-     * @return ($schema is true ? true : Dto)
+     * @return ($schema is true ? true : ($schema is array ? list<Dto> : Dto))
      */
     public function process(
         PendingOperation $operation,
         ResponseInterface $response,
         int $successCode,
-        string|bool $schema
-    ): Dto|true {
+        array|string|bool $schema
+    ): array|Dto|true {
         $status = $response->getStatusCode();
 
         if ($status === 404) {
@@ -32,7 +32,7 @@ class Processor
             ), 404);
         }
 
-        if ($status === 405 && ! isset($schema[$status])) {
+        if ($status === 405) {
             throw new RuntimeException(sprintf(
                 '[405] Method [%s] against [%s] is not allowed.',
                 strtoupper($operation->method),
@@ -60,7 +60,12 @@ class Processor
             throw new RuntimeException('Unable to decode response body: ' . $body);
         }
 
-        /** @var array<string,mixed> $data */
-        return $this->deserializer->deserialize($data, $schema);
+        if (is_array($schema)) {
+            /** @var list<array<string,mixed>> $data */
+            return $this->deserializer->deserialize($data, $schema[0], array: true);
+        } else {
+            /** @var array<string,mixed> $data */
+            return $this->deserializer->deserialize($data, $schema);
+        }
     }
 }

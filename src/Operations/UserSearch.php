@@ -39,6 +39,8 @@ trait UserSearch
      *                          Required, unless `query` is specified.
      * @param int $startAt The index of the first item to return in a page of results (page offset).
      * @param int $maxResults The maximum number of items to return per page.
+     * 
+     * @return list<Schema\User>
      */
     public function findBulkAssignableUsers(
         string $projectKeys,
@@ -47,13 +49,13 @@ trait UserSearch
         ?string $accountId = null,
         ?int $startAt = 0,
         ?int $maxResults = 50,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/user/assignable/multiProjectSearch',
             method: 'get',
             query: compact('projectKeys', 'query', 'username', 'accountId', 'startAt', 'maxResults'),
             success: 200,
-            schema: true,
+            schema: [Schema\User::class],
         );
     }
 
@@ -106,6 +108,8 @@ trait UserSearch
      *                        The operation fetches users up to the maximum and then, from the fetched users, returns only the users that can be assigned to the issue.
      * @param int $actionDescriptorId The ID of the transition.
      * @param bool $recommend 
+     * 
+     * @return list<Schema\User>
      */
     public function findAssignableUsers(
         ?string $query = null,
@@ -119,13 +123,13 @@ trait UserSearch
         ?int $maxResults = 50,
         ?int $actionDescriptorId = null,
         ?bool $recommend = false,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/user/assignable/search',
             method: 'get',
             query: compact('query', 'sessionId', 'username', 'accountId', 'project', 'issueKey', 'issueId', 'startAt', 'maxResults', 'actionDescriptorId', 'recommend'),
             success: 200,
-            schema: true,
+            schema: [Schema\User::class],
         );
     }
 
@@ -207,6 +211,8 @@ trait UserSearch
      * @param string $projectKey The project key for the project (case sensitive).
      * @param int $startAt The index of the first item to return in a page of results (page offset).
      * @param int $maxResults The maximum number of items to return per page.
+     * 
+     * @return list<Schema\User>
      */
     public function findUsersWithAllPermissions(
         string $permissions,
@@ -217,13 +223,13 @@ trait UserSearch
         ?string $projectKey = null,
         ?int $startAt = 0,
         ?int $maxResults = 50,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/user/permission/search',
             method: 'get',
             query: compact('permissions', 'query', 'username', 'accountId', 'issueKey', 'projectKey', 'startAt', 'maxResults'),
             success: 200,
-            schema: true,
+            schema: [Schema\User::class],
         );
     }
 
@@ -315,6 +321,8 @@ trait UserSearch
      *                         The query string cannot be specified using a JSON object.
      *                         Example: To search for the value of `nested` from `{"something":{"nested":1,"other":2}}` use `thepropertykey.something.nested=1`.
      *                         Required, unless `accountId` or `query` is specified.
+     * 
+     * @return list<Schema\User>
      */
     public function findUsers(
         ?string $query = null,
@@ -323,13 +331,13 @@ trait UserSearch
         ?int $startAt = 0,
         ?int $maxResults = 50,
         ?string $property = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/user/search',
             method: 'get',
             query: compact('query', 'username', 'accountId', 'startAt', 'maxResults', 'property'),
             success: 200,
-            schema: true,
+            schema: [Schema\User::class],
         );
     }
 
@@ -471,6 +479,8 @@ trait UserSearch
      *                           Required, unless `issueKey` is specified.
      * @param int $startAt The index of the first item to return in a page of results (page offset).
      * @param int $maxResults The maximum number of items to return per page.
+     * 
+     * @return list<Schema\User>
      */
     public function findUsersWithBrowsePermission(
         ?string $query = null,
@@ -480,13 +490,13 @@ trait UserSearch
         ?string $projectKey = null,
         ?int $startAt = 0,
         ?int $maxResults = 50,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/user/viewissue/search',
             method: 'get',
             query: compact('query', 'username', 'accountId', 'issueKey', 'projectKey', 'startAt', 'maxResults'),
             success: 200,
-            schema: true,
+            schema: [Schema\User::class],
         );
     }
 }

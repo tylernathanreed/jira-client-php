@@ -406,18 +406,20 @@ trait IssueWorklogs
      * 
      * @param string $expand Use "expand" to include additional information about worklogs in the response.
      *                       This parameter accepts `properties` that returns the properties of each worklog.
+     * 
+     * @return list<Schema\Worklog>
      */
     public function getWorklogsForIds(
         Schema\WorklogIdsRequestBean $request,
         ?string $expand = '',
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/worklog/list',
             method: 'post',
             body: $request,
             query: compact('expand'),
             success: 200,
-            schema: true,
+            schema: [Schema\Worklog::class],
         );
     }
 

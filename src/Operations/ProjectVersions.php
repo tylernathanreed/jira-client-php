@@ -76,18 +76,20 @@ trait ProjectVersions
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
      * @param string $expand Use "expand" to include additional information in the response.
      *                       This parameter accepts `operations`, which returns actions that can be performed on the version.
+     * 
+     * @return list<Schema\Version>
      */
     public function getProjectVersions(
         string $projectIdOrKey,
         ?string $expand = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/versions',
             method: 'get',
             query: compact('expand'),
             path: compact('projectIdOrKey'),
             success: 200,
-            schema: true,
+            schema: [Schema\Version::class],
         );
     }
 
@@ -296,16 +298,18 @@ trait ProjectVersions
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $id The ID of the version.
+     * 
+     * @return list<Schema\VersionRelatedWork>
      */
     public function getRelatedWork(
         string $id,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/version/{id}/relatedwork',
             method: 'get',
             path: compact('id'),
             success: 200,
-            schema: true,
+            schema: [Schema\VersionRelatedWork::class],
         );
     }
 

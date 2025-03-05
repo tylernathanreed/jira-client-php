@@ -22,19 +22,21 @@ trait ScreenTabFields
      * @param int $screenId The ID of the screen.
      * @param int $tabId The ID of the screen tab.
      * @param string $projectKey The key of the project.
+     * 
+     * @return list<Schema\ScreenableField>
      */
     public function getAllScreenTabFields(
         int $screenId,
         int $tabId,
         ?string $projectKey = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/screens/{screenId}/tabs/{tabId}/fields',
             method: 'get',
             query: compact('projectKey'),
             path: compact('screenId', 'tabId'),
             success: 200,
-            schema: true,
+            schema: [Schema\ScreenableField::class],
         );
     }
 

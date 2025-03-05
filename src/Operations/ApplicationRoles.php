@@ -16,14 +16,16 @@ trait ApplicationRoles
      * 
      * @link https://confluence.atlassian.com/x/3YxjL
      * @link https://confluence.atlassian.com/x/x4dKLg
+     * 
+     * @return list<Schema\ApplicationRole>
      */
-    public function getAllApplicationRoles(): true
+    public function getAllApplicationRoles(): array
     {
         return $this->call(
             uri: '/rest/api/3/applicationrole',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\ApplicationRole::class],
         );
     }
 

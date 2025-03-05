@@ -58,16 +58,18 @@ trait FilterSharing
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param int $id The ID of the filter.
+     * 
+     * @return list<Schema\SharePermission>
      */
     public function getSharePermissions(
         int $id,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/filter/{id}/permission',
             method: 'get',
             path: compact('id'),
             success: 200,
-            schema: true,
+            schema: [Schema\SharePermission::class],
         );
     }
 
@@ -82,18 +84,20 @@ trait FilterSharing
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $id The ID of the filter.
+     * 
+     * @return list<Schema\SharePermission>
      */
     public function addSharePermission(
         Schema\SharePermissionInputBean $request,
         int $id,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/filter/{id}/permission',
             method: 'post',
             body: $request,
             path: compact('id'),
             success: 201,
-            schema: true,
+            schema: [Schema\SharePermission::class],
         );
     }
 

@@ -141,7 +141,7 @@ use RuntimeException;
  *     links?: array<string,TArray>
  * }
  * @phpstan-type TMediaType array{
- *     schema?: TSchema,
+ *     schema?: TValue,
  *     example?: mixed,
  *     examples?: array<string,TArray>,
  *     encoding?: array<string,TArray>,

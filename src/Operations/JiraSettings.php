@@ -23,18 +23,20 @@ trait JiraSettings
      * @param string $permissionLevel The permission level of all items being returned in the list.
      * @param string $keyFilter When a `key` isn't provided, this filters the list of results by the application property `key` using a regular expression.
      *                          For example, using `jira.lf.*` will return all application properties with keys that start with *jira.lf.*.
+     * 
+     * @return list<Schema\ApplicationProperty>
      */
     public function getApplicationProperty(
         ?string $key = null,
         ?string $permissionLevel = null,
         ?string $keyFilter = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/application-properties',
             method: 'get',
             query: compact('key', 'permissionLevel', 'keyFilter'),
             success: 200,
-            schema: true,
+            schema: [Schema\ApplicationProperty::class],
         );
     }
 
@@ -45,14 +47,16 @@ trait JiraSettings
      * **"Permissions" required:** *Administer Jira* "global permission".
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
+     * 
+     * @return list<Schema\ApplicationProperty>
      */
-    public function getAdvancedSettings(): true
+    public function getAdvancedSettings(): array
     {
         return $this->call(
             uri: '/rest/api/3/application-properties/advanced-settings',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\ApplicationProperty::class],
         );
     }
 

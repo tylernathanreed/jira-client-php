@@ -16,14 +16,16 @@ trait ProjectTypes
      * **"Permissions" required:** None.
      * 
      * @link https://confluence.atlassian.com/x/Var1Nw
+     * 
+     * @return list<Schema\ProjectType>
      */
-    public function getAllProjectTypes(): true
+    public function getAllProjectTypes(): array
     {
         return $this->call(
             uri: '/rest/api/3/project/type',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\ProjectType::class],
         );
     }
 
@@ -31,14 +33,16 @@ trait ProjectTypes
      * Returns all "project types" with a valid license.
      * 
      * @link https://confluence.atlassian.com/x/Var1Nw
+     * 
+     * @return list<Schema\ProjectType>
      */
-    public function getAllAccessibleProjectTypes(): true
+    public function getAllAccessibleProjectTypes(): array
     {
         return $this->call(
             uri: '/rest/api/3/project/type/accessible',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\ProjectType::class],
         );
     }
 

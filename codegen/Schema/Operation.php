@@ -19,8 +19,8 @@ final class Operation extends AbstractSchema implements Stringable
         public readonly Description $description,
         public readonly int $successCode,
 
-        /** @var string|true */
-        public readonly string|true $successSchema,
+        /** @var array{0:string}|string|true */
+        public readonly array|string|true $successSchema,
 
         /** @var ?string */
         public readonly ?string $bodySchema,
@@ -42,9 +42,16 @@ final class Operation extends AbstractSchema implements Stringable
             ? min(...$responseCodes)
             : $responseCodes[0];
 
-        $successSchema = self::ref(
-            $op['responses'][$successCode]['content']['application/json']['schema']['$ref'] ?? null
-        )[0] ?? true;
+        $successSchema = $op['responses'][$successCode]['content']['application/json']['schema'] ?? null;
+
+        if (isset($successSchema['$ref'])) {
+            $successSchema = self::ref($successSchema['$ref'])[0] ?? true;
+        } elseif (isset($successSchema['items']['$ref'])) {
+            $successSchema = [self::ref($successSchema['items']['$ref'])[0]];
+            assert(! is_null($successSchema[0]));
+        } else {
+            $successSchema = true;
+        }
 
         $bodySchema = self::ref(
             $op['requestBody']['content']['application/json']['schema']['$ref'] ?? null
@@ -102,6 +109,10 @@ final class Operation extends AbstractSchema implements Stringable
             $tags[] = ['param', $param->getDoc()];
         }
 
+        if (is_array($this->successSchema)) {
+            $tags[] = ['return', 'list<Schema\\' . $this->successSchema[0] . '>'];
+        }
+
         return $this->description->render(
             indent: 4,
             tags: $tags,
@@ -112,11 +123,19 @@ final class Operation extends AbstractSchema implements Stringable
     {
         $returnType = $this->successSchema === true
             ? 'true'
-            : "Schema\\{$this->successSchema}";
+            : (
+                is_array($this->successSchema)
+                    ? 'array'
+                    : "Schema\\{$this->successSchema}"
+            );
 
         $schema = $this->successSchema === true
             ? $returnType
-            : "{$returnType}::class";
+            : (
+                is_array($this->successSchema)
+                    ? "[Schema\\{$this->successSchema[0]}::class]"
+                    : "{$returnType}::class"
+            );
 
         $parameters = [];
 

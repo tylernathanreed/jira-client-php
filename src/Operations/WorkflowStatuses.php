@@ -14,14 +14,16 @@ trait WorkflowStatuses
      * This operation can be accessed anonymously
      * 
      * **"Permissions" required:** None.
+     * 
+     * @return list<Schema\StatusDetails>
      */
-    public function getStatuses(): true
+    public function getStatuses(): array
     {
         return $this->call(
             uri: '/rest/api/3/status',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\StatusDetails::class],
         );
     }
 

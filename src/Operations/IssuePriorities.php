@@ -12,14 +12,16 @@ trait IssuePriorities
      * Returns the list of all issue priorities
      * 
      * **"Permissions" required:** Permission to access Jira.
+     * 
+     * @return list<Schema\Priority>
      */
-    public function getPriorities(): true
+    public function getPriorities(): array
     {
         return $this->call(
             uri: '/rest/api/3/priority',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\Priority::class],
         );
     }
 

@@ -388,16 +388,18 @@ trait IssueAttachments
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue that attachments are added to.
+     * 
+     * @return list<Schema\Attachment>
      */
     public function addAttachment(
         string $issueIdOrKey,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/attachments',
             method: 'post',
             path: compact('issueIdOrKey'),
             success: 200,
-            schema: true,
+            schema: [Schema\Attachment::class],
         );
     }
 }

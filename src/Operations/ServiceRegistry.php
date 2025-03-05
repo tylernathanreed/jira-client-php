@@ -14,16 +14,18 @@ trait ServiceRegistry
      * **"Permissions" required:** Only Connect apps can make this request and the servicesIds belong to the tenant you are requesting
      * 
      * @param list<string> $serviceIds The ID of the services (the strings starting with "b:" need to be decoded in Base64).
+     * 
+     * @return list<Schema\ServiceRegistry>
      */
     public function services(
         array $serviceIds,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/atlassian-connect/1/service-registry',
             method: 'get',
             query: compact('serviceIds'),
             success: 200,
-            schema: true,
+            schema: [Schema\ServiceRegistry::class],
         );
     }
 }

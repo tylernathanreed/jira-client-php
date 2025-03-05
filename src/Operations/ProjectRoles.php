@@ -85,19 +85,21 @@ trait ProjectRoles
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
      * @param bool $currentMember Whether the roles should be filtered to include only those the user is assigned to.
      * @param bool $excludeConnectAddons 
+     * 
+     * @return list<Schema\ProjectRoleDetails>
      */
     public function getProjectRoleDetails(
         string $projectIdOrKey,
         ?bool $currentMember = false,
         ?bool $excludeConnectAddons = false,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/roledetails',
             method: 'get',
             query: compact('currentMember', 'excludeConnectAddons'),
             path: compact('projectIdOrKey'),
             success: 200,
-            schema: true,
+            schema: [Schema\ProjectRoleDetails::class],
         );
     }
 
@@ -128,14 +130,16 @@ trait ProjectRoles
      * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-project-roles/
      * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-project-roles/#Specifying-'default-members'-for-a-project-role
      * @link https://confluence.atlassian.com/x/x4dKLg
+     * 
+     * @return list<Schema\ProjectRole>
      */
-    public function getAllProjectRoles(): true
+    public function getAllProjectRoles(): array
     {
         return $this->call(
             uri: '/rest/api/3/role',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\ProjectRole::class],
         );
     }
 

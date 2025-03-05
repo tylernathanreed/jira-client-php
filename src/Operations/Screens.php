@@ -167,16 +167,18 @@ trait Screens
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $screenId The ID of the screen.
+     * 
+     * @return list<Schema\ScreenableField>
      */
     public function getAvailableScreenFields(
         int $screenId,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/screens/{screenId}/availableFields',
             method: 'get',
             path: compact('screenId'),
             success: 200,
-            schema: true,
+            schema: [Schema\ScreenableField::class],
         );
     }
 }

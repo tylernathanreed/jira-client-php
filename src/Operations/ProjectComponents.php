@@ -237,18 +237,20 @@ trait ProjectComponents
      *        Can be `jira` (default), `compass` or `auto`.
      *        When `auto` is specified, the API will return connected Compass components if the project is opted into Compass, otherwise it will return Jira components.
      *        Defaults to `jira`.
+     * 
+     * @return list<Schema\ProjectComponent>
      */
     public function getProjectComponents(
         string $projectIdOrKey,
         ?string $componentSource = 'jira',
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/components',
             method: 'get',
             query: compact('componentSource'),
             path: compact('projectIdOrKey'),
             success: 200,
-            schema: true,
+            schema: [Schema\ProjectComponent::class],
         );
     }
 }

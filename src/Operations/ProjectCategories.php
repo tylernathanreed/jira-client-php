@@ -12,14 +12,16 @@ trait ProjectCategories
      * Returns all project categories
      * 
      * **"Permissions" required:** Permission to access Jira.
+     * 
+     * @return list<Schema\ProjectCategory>
      */
-    public function getAllProjectCategories(): true
+    public function getAllProjectCategories(): array
     {
         return $this->call(
             uri: '/rest/api/3/projectCategory',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\ProjectCategory::class],
         );
     }
 

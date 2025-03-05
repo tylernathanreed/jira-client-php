@@ -42,14 +42,16 @@ trait Issues
      * **"Permissions" required:** *Administer Jira* "global permission".
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
+     * 
+     * @return list<Schema\IssueEvent>
      */
-    public function getEvents(): true
+    public function getEvents(): array
     {
         return $this->call(
             uri: '/rest/api/3/events',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\IssueEvent::class],
         );
     }
 

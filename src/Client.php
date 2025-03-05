@@ -22,24 +22,28 @@ class Client
      * @phpstan-template TDto of Dto
      * 
      * @param 'get'|'post'|'put'|'patch'|'delete' $method
-     * @param class-string<TDto>|true $schema
+     * @param array{0:class-string<TDto>}|class-string<TDto>|true $schema
      * @param Dto|array<string,mixed> $body
      * @param array<string,mixed> $header
      * @param array<string,mixed> $query
      * @param array<string,int|string|null> $path
      *
-     * @return ($schema is true ? true : (TDto is PolymorphicDto ? Dto : TDto))
+     * @return (
+     *     $schema is array ? (TDto is PolymorphicDto ? list<Dto> : list<TDto>) : (
+     *     $schema is string ? (TDto is PolymorphicDto ? Dto : TDto) : (
+     *     true
+     * )))
      */
     public function call(
         string $uri,
         string $method,
         int $success,
-        string|true $schema,
+        array|string|true $schema,
         Dto|array $body = [],
         array $header = [],
         array $query = [],
         array $path = [],
-    ): Dto|true {
+    ): array|Dto|true {
         $operation = new PendingOperation(
             uri: $uri,
             method: $method,

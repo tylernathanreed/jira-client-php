@@ -75,16 +75,18 @@ trait Filters
      *                       If you don't specify `subscriptions`, the `subscriptions` object is returned but it doesn't list any subscriptions.
      *                       The list of subscriptions returned is limited to 1000, to access additional subscriptions append `[start-index:end-index]` to the expand request.
      *                       For example, to access the next 1000 subscriptions, use `?expand=subscriptions[1001:2000]`.
+     * 
+     * @return list<Schema\Filter>
      */
     public function getFavouriteFilters(
         ?string $expand = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/filter/favourite',
             method: 'get',
             query: compact('expand'),
             success: 200,
-            schema: true,
+            schema: [Schema\Filter::class],
         );
     }
 
@@ -117,17 +119,19 @@ trait Filters
      *                       The list of subscriptions returned is limited to 1000, to access additional subscriptions append `[start-index:end-index]` to the expand request.
      *                       For example, to access the next 1000 subscriptions, use `?expand=subscriptions[1001:2000]`.
      * @param bool $includeFavourites Include the user's favorite filters in the response.
+     * 
+     * @return list<Schema\Filter>
      */
     public function getMyFilters(
         ?string $expand = null,
         ?bool $includeFavourites = false,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/filter/my',
             method: 'get',
             query: compact('expand', 'includeFavourites'),
             success: 200,
-            schema: true,
+            schema: [Schema\Filter::class],
         );
     }
 
@@ -354,16 +358,18 @@ trait Filters
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param int $id The ID of the filter.
+     * 
+     * @return list<Schema\ColumnItem>
      */
     public function getColumns(
         int $id,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/filter/{id}/columns',
             method: 'get',
             path: compact('id'),
             success: 200,
-            schema: true,
+            schema: [Schema\ColumnItem::class],
         );
     }
 

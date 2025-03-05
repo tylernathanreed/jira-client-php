@@ -157,19 +157,21 @@ trait Users
      *                           For example, `key=fred&key=barney`.
      *                           Required if `username` isn't provided.
      *                           Cannot be provided if `username` is present.
+     * 
+     * @return list<Schema\UserMigrationBean>
      */
     public function bulkGetUsersMigration(
         ?int $startAt = 0,
         ?int $maxResults = 10,
         ?array $username = null,
         ?array $key = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/user/bulk/migration',
             method: 'get',
             query: compact('startAt', 'maxResults', 'username', 'key'),
             success: 200,
-            schema: true,
+            schema: [Schema\UserMigrationBean::class],
         );
     }
 
@@ -189,17 +191,19 @@ trait Users
      *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
      * @param string $username This parameter is no longer available See the "deprecation notice" for details.
      *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * 
+     * @return list<Schema\ColumnItem>
      */
     public function getUserDefaultColumns(
         ?string $accountId = null,
         ?string $username = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/user/columns',
             method: 'get',
             query: compact('accountId', 'username'),
             success: 200,
-            schema: true,
+            schema: [Schema\ColumnItem::class],
         );
     }
 
@@ -328,18 +332,20 @@ trait Users
      * @param string $key This parameter is no longer available.
      *                    See the "deprecation notice" for details.
      *                    @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * 
+     * @return list<Schema\GroupName>
      */
     public function getUserGroups(
         string $accountId,
         ?string $username = null,
         ?string $key = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/user/groups',
             method: 'get',
             query: compact('accountId', 'username', 'key'),
             success: 200,
-            schema: true,
+            schema: [Schema\GroupName::class],
         );
     }
 
@@ -357,17 +363,19 @@ trait Users
      * 
      * @param int $startAt The index of the first item to return.
      * @param int $maxResults The maximum number of items to return.
+     * 
+     * @return list<Schema\User>
      */
     public function getAllUsersDefault(
         ?int $startAt = 0,
         ?int $maxResults = 50,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/users',
             method: 'get',
             query: compact('startAt', 'maxResults'),
             success: 200,
-            schema: true,
+            schema: [Schema\User::class],
         );
     }
 
@@ -385,17 +393,19 @@ trait Users
      * 
      * @param int $startAt The index of the first item to return.
      * @param int $maxResults The maximum number of items to return.
+     * 
+     * @return list<Schema\User>
      */
     public function getAllUsers(
         ?int $startAt = 0,
         ?int $maxResults = 50,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/users/search',
             method: 'get',
             query: compact('startAt', 'maxResults'),
             success: 200,
-            schema: true,
+            schema: [Schema\User::class],
         );
     }
 }

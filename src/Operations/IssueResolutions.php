@@ -12,14 +12,16 @@ trait IssueResolutions
      * Returns a list of all issue resolution values
      * 
      * **"Permissions" required:** Permission to access Jira.
+     * 
+     * @return list<Schema\Resolution>
      */
-    public function getResolutions(): true
+    public function getResolutions(): array
     {
         return $this->call(
             uri: '/rest/api/3/resolution',
             method: 'get',
             success: 200,
-            schema: true,
+            schema: [Schema\Resolution::class],
         );
     }
 

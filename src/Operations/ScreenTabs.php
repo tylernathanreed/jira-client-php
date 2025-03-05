@@ -55,18 +55,20 @@ trait ScreenTabs
      * 
      * @param int $screenId The ID of the screen.
      * @param string $projectKey The key of the project.
+     * 
+     * @return list<Schema\ScreenableTab>
      */
     public function getAllScreenTabs(
         int $screenId,
         ?string $projectKey = null,
-    ): true {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/screens/{screenId}/tabs',
             method: 'get',
             query: compact('projectKey'),
             path: compact('screenId'),
             success: 200,
-            schema: true,
+            schema: [Schema\ScreenableTab::class],
         );
     }
 
