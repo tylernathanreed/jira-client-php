@@ -21,9 +21,7 @@ final class Operation extends AbstractSchema implements Stringable
 
         /** @var array{0:string}|string|true */
         public readonly array|string|true $successSchema,
-
         public readonly ?string $successExample = null,
-
         public readonly ?string $bodySchema = null,
 
         /** @var array<string,mixed> */
@@ -68,7 +66,7 @@ final class Operation extends AbstractSchema implements Stringable
         $bodyExample = ! is_null($example = ($body['example'] ?? null))
             ? (is_string($example) ? json_decode($example, true) : $example)
             : null;
-        
+
         assert(is_array($bodyExample) || is_null($bodyExample));
         /** @var ?array<string,mixed> $bodyExample */
 
@@ -328,10 +326,10 @@ final class Operation extends AbstractSchema implements Stringable
             ['path', $pathParam ?? null],
             ['success', $this->successCode],
             ['schema', $schema],
-        ], fn($arg) => ! empty($arg[1]));
+        ], fn ($arg) => ! empty($arg[1]));
 
         $indent = str_repeat(' ', 16);
-        $callString = implode("\n", array_map(fn($arg) => "{$indent}'{$arg[0]}' => {$arg[1]},", $arguments));
+        $callString = implode("\n", array_map(fn ($arg) => "{$indent}'{$arg[0]}' => {$arg[1]},", $arguments));
 
         $indent = str_repeat(' ', 8);
         $paramString = implode("\n", $parameters);

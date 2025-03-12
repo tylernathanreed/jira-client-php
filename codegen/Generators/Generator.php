@@ -6,7 +6,7 @@ use Jira\CodeGen\Schema\AbstractSchema;
 
 /**
  * @phpstan-template TSchema of AbstractSchema
- * 
+ *
  * @extends AbstractSchemaGenerator<TSchema>
  */
 abstract class Generator extends AbstractSchemaGenerator
