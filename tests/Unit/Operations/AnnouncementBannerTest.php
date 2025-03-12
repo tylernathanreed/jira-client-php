@@ -2,10 +2,10 @@
 
 namespace Tests\Unit\Operations;
 
-use Tests\OperationsTestCase;
 use Jira\Client\Schema;
+use Tests\OperationsTestCase;
 
-class OriginalAnnouncementBannerTest extends OperationsTestCase
+class AnnouncementBannerTest extends OperationsTestCase
 {
     public function testGetBanner(): void
     {
@@ -18,7 +18,7 @@ class OriginalAnnouncementBannerTest extends OperationsTestCase
                 'schema' => Schema\AnnouncementBannerConfiguration::class,
             ],
             arguments: [],
-            response: "{\"hashId\":\"9HN2FJK9DM8BHRWERVW3RRTGDJ4G4D5C\",\"isDismissible\":false,\"isEnabled\":true,\"message\":\"This is a public, enabled, non-dismissible banner, set using the API\",\"visibility\":\"public\"}"
+            response: '{"hashId":"9HN2FJK9DM8BHRWERVW3RRTGDJ4G4D5C","isDismissible":false,"isEnabled":true,"message":"This is a public, enabled, non-dismissible banner, set using the API","visibility":"public"}',
         );
     }
 
@@ -27,8 +27,8 @@ class OriginalAnnouncementBannerTest extends OperationsTestCase
         $request = new Schema\AnnouncementBannerConfigurationUpdate(
             isDismissible: false,
             isEnabled: true,
-            message: "This is a public, enabled, non-dismissible banner, set using the API",
-            visibility: "public"
+            message: 'This is a public, enabled, non-dismissible banner, set using the API',
+            visibility: 'public',
         );
 
         $this->assertCall(

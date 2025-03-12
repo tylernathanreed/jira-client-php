@@ -2,7 +2,6 @@
 
 namespace Jira\CodeGen\Generators;
 
-use Jira\CodeGen\Exceptions\MissingSpecificationException;
 use Jira\CodeGen\Replacers\DummyClassDocReplacer;
 use Jira\CodeGen\Replacers\DummyClassReplacer;
 use Jira\CodeGen\Replacers\DummyIncludesReplacer;
@@ -14,11 +13,7 @@ use Jira\CodeGen\Schema\Schema;
 use Jira\CodeGen\Schema\Specification;
 use Override;
 
-/**
- * @phpstan-import-type TSchema from Specification
- *
- * @extends Generator<Schema>
- */
+/** @extends Generator<Schema> */
 class SchemaGenerator extends Generator
 {
     /** {@inheritDoc} */
@@ -33,28 +28,14 @@ class SchemaGenerator extends Generator
     ];
 
     #[Override]
-    protected function schema(string $name): Schema
+    public function schema(string $name): Schema
     {
-        $spec = Specification::getSpecification();
-
-        /** @var array<string,TSchema> */
-        $schemas = $spec['components']['schemas'] ?? [];
-
-        if (! isset($schemas[$name])) {
-            throw new MissingSpecificationException($this->type(), $name);
-        }
-
-        return Schema::make(ucfirst($name), $schemas[$name]);
+        return Specification::getComponentSchema($name);
     }
 
     #[Override]
     public function all(): array
     {
-        $spec = Specification::getSpecification();
-
-        /** @var array<string,TSchema> */
-        $schemas = $spec['components']['schemas'] ?? [];
-
-        return array_keys($schemas);
+        return array_keys(Specification::getComponentSchemas());
     }
 }

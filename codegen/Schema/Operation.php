@@ -22,11 +22,15 @@ final class Operation extends AbstractSchema implements Stringable
         /** @var array{0:string}|string|true */
         public readonly array|string|true $successSchema,
 
-        /** @var ?string */
-        public readonly ?string $bodySchema,
+        public readonly ?string $successExample = null,
+
+        public readonly ?string $bodySchema = null,
+
+        /** @var array<string,mixed> */
+        public readonly ?array $bodyExample = null,
 
         /** @var list<Parameter> */
-        public readonly array $parameters,
+        public readonly array $parameters = [],
         public readonly bool $deprecated = false,
     ) {
     }
@@ -42,7 +46,12 @@ final class Operation extends AbstractSchema implements Stringable
             ? min(...$responseCodes)
             : $responseCodes[0];
 
-        $successSchema = $op['responses'][$successCode]['content']['application/json']['schema'] ?? null;
+        $sucessResponse = $op['responses'][$successCode]['content']['application/json'] ?? [];
+
+        $successSchema = $sucessResponse['schema'] ?? null;
+        $successExample = ! is_null($example = ($sucessResponse['example'] ?? null))
+            ? (is_string($example) ? $example : (json_encode($example) ?: null))
+            : null;
 
         if (isset($successSchema['$ref'])) {
             $successSchema = self::ref($successSchema['$ref'])[0] ?? true;
@@ -53,9 +62,15 @@ final class Operation extends AbstractSchema implements Stringable
             $successSchema = true;
         }
 
-        $bodySchema = self::ref(
-            $op['requestBody']['content']['application/json']['schema']['$ref'] ?? null
-        )[0] ?? null;
+        $body = $op['requestBody']['content']['application/json'] ?? [];
+
+        $bodySchema = self::ref($body['schema']['$ref'] ?? null)[0] ?? null;
+        $bodyExample = ! is_null($example = ($body['example'] ?? null))
+            ? (is_string($example) ? json_decode($example, true) : $example)
+            : null;
+        
+        assert(is_array($bodyExample) || is_null($bodyExample));
+        /** @var ?array<string,mixed> $bodyExample */
 
         return new self(
             id: $operation['id'],
@@ -65,7 +80,9 @@ final class Operation extends AbstractSchema implements Stringable
             deprecated: $op['deprecated'] ?? false,
             successCode: $successCode,
             successSchema: $successSchema,
+            successExample: $successExample,
             bodySchema: $bodySchema,
+            bodyExample: $bodyExample,
             parameters: isset($op['parameters'])
                 ? self::makeParameters($op['parameters'])
                 : [],
@@ -248,5 +265,105 @@ final class Operation extends AbstractSchema implements Stringable
     public function __toString(): string
     {
         return $this->getDoc() . $this->getDefinition();
+    }
+
+    public function getTestDefinition(): string
+    {
+        $returnType = $this->successSchema === true
+            ? 'true'
+            : (
+                is_array($this->successSchema)
+                ? 'array'
+                : "Schema\\{$this->successSchema}"
+            );
+
+        $schema = $this->successSchema === true
+            ? $returnType
+            : (
+                is_array($this->successSchema)
+                ? "[Schema\\{$this->successSchema[0]}::class]"
+                : "{$returnType}::class"
+            );
+
+        $parameters = [];
+
+        if ($this->bodySchema) {
+            $parameters[] = '        Schema\\' . $this->bodySchema . ' $request,';
+
+            $bodyParam = '$request';
+
+            $argString = "\n" . str_repeat(' ', 16) . "\$request,\n" . str_repeat(' ', 12);
+
+            $setupStr = "\n" . str_repeat(' ', 8) . "\$request = new Schema\\{$this->bodySchema}(\n";
+
+            foreach ((array) $this->bodyExample as $key => $value) {
+                if (is_null($value)) {
+                    $value = 'null';
+                } elseif (is_bool($value)) {
+                    $value = $value ? 'true' : 'false';
+                } else {
+                    $value = '\'' . $value . '\'';
+                }
+
+                $setupStr .= str_repeat(' ', 12) . "{$key}: {$value},\n";
+            }
+
+            $setupStr .= str_repeat(' ', 8) . ");\n";
+        }
+
+        foreach ($this->parameters as $param) {
+            $parameters[] = $param->getDefinition();
+        }
+
+        $queryParam = $this->getCallParamString('query');
+        $pathParam = $this->getCallParamString('path');
+        $headerParam = $this->getCallParamString('header');
+
+        $arguments = array_filter([
+            ['uri', "'{$this->uri}'"],
+            ['method', "'{$this->method}'"],
+            ['body', $bodyParam ?? null],
+            ['header', $headerParam ?? null],
+            ['query', $queryParam ?? null],
+            ['path', $pathParam ?? null],
+            ['success', $this->successCode],
+            ['schema', $schema],
+        ], fn($arg) => ! empty($arg[1]));
+
+        $indent = str_repeat(' ', 16);
+        $callString = implode("\n", array_map(fn($arg) => "{$indent}'{$arg[0]}' => {$arg[1]},", $arguments));
+
+        $indent = str_repeat(' ', 8);
+        $paramString = implode("\n", $parameters);
+
+        if (! empty($paramString)) {
+            $paramString = "\n" . $paramString . "\n    ";
+            $returnType .= ' ';
+        } else {
+            $returnType = rtrim($returnType) . "\n    ";
+        }
+
+        $argString ??= '';
+        $setupStr ??= '';
+
+        $testMethod = 'test' . ucfirst($this->getSafeId());
+
+        $response = ! empty($this->successExample)
+            ? '\'' . $this->successExample . '\''
+            : 'null';
+
+        return <<<CODE
+            public function {$testMethod}(): void
+            {{$setupStr}
+                \$this->assertCall(
+                    method: '{$this->getSafeId()}',
+                    call: [
+        {$callString}
+                    ],
+                    arguments: [{$argString}],
+                    response: {$response},
+                );
+            }
+        CODE;
     }
 }

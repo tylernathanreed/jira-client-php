@@ -2,6 +2,7 @@
 
 namespace Jira\CodeGen\Schema;
 
+use Jira\CodeGen\Exceptions\MissingSpecificationException;
 use RuntimeException;
 
 /**
@@ -142,7 +143,7 @@ use RuntimeException;
  * }
  * @phpstan-type TMediaType array{
  *     schema?: TValue,
- *     example?: mixed,
+ *     example?: string|TArray,
  *     examples?: array<string,TArray>,
  *     encoding?: array<string,TArray>,
  * }
@@ -155,7 +156,7 @@ use RuntimeException;
  * }
  * @phpstan-type TCompiledOperations array<string,array<string,TCompiledOperation>>
  */
-class Specification
+final class Specification
 {
     use Concerns\ResolvesSafeNames;
 
@@ -184,6 +185,40 @@ class Specification
 
         // @phpstan-ignore return.type (Not going to validate)
         return json_decode($contents, true);
+    }
+
+    public static function getComponentSchema(string $name): Schema
+    {
+        $spec = Specification::getSpecification();
+
+        /** @var array<string,TSchema> */
+        $schemas = $spec['components']['schemas'] ?? [];
+
+        if (! isset($schemas[$name])) {
+            throw new MissingSpecificationException('Schema', $name);
+        }
+
+        return Schema::make(ucfirst($name), $schemas[$name]);
+    }
+
+    public static function getOperationGroup(string $name): OperationGroup
+    {
+        $operations = static::getOperationGroups();
+
+        if (is_null($group = ($operations[$name] ?? null))) {
+            throw new MissingSpecificationException('Operation Group', $name);
+        }
+
+        return OperationGroup::make($name, $group);
+    }
+
+    /** @return array<string,TSchema> */
+    public static function getComponentSchemas(): array
+    {
+        $spec = Specification::getSpecification();
+
+        /** @var array<string,TSchema> */
+        return $spec['components']['schemas'] ?? [];
     }
 
     /** @return TCompiledOperations */

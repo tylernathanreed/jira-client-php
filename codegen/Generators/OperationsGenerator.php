@@ -3,13 +3,15 @@
 namespace Jira\CodeGen\Generators;
 
 use Jira\CodeGen\Contracts\SupportsTestGenerator;
-use Jira\CodeGen\Exceptions\MissingSpecificationException;
 use Jira\CodeGen\Replacers\DummyMethodsReplacer;
 use Jira\CodeGen\Replacers\DummyTraitReplacer;
 use Jira\CodeGen\Schema\OperationGroup;
 use Jira\CodeGen\Schema\Specification;
 
-/** @extends Generator<OperationGroup> */
+/**
+ * @extends Generator<OperationGroup>
+ * @implements SupportsTestGenerator<OperationGroup>
+ */
 class OperationsGenerator extends Generator implements SupportsTestGenerator
 {
     /** {@inheritDoc} */
@@ -18,15 +20,9 @@ class OperationsGenerator extends Generator implements SupportsTestGenerator
         DummyMethodsReplacer::class,
     ];
 
-    protected function schema(string $name): OperationGroup
+    public function schema(string $name): OperationGroup
     {
-        $operations = Specification::getOperationGroups();
-
-        if (is_null($group = ($operations[$name] ?? null))) {
-            throw new MissingSpecificationException($this->type(), $name);
-        }
-
-        return OperationGroup::make($name, $group);
+        return Specification::getOperationGroup($name);
     }
 
     public function all(): array
