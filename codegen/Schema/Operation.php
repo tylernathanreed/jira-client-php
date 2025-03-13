@@ -297,17 +297,15 @@ final class Operation extends AbstractSchema implements Stringable
             $escape = function ($value) use (&$escape): string|array {
                 if (is_array($value)) {
                     foreach ($value as $k => $v) {
+                        /** @var scalar|array<string,mixed> $v */
                         $value[$k] = $escape($v);
                     }
 
                     return $value;
                 }
 
-                if (is_string($value)) {
-                    return str_replace('\'', '\\\'', $value);
-                }
-
-                return $value;
+                /** @var scalar $value */
+                return str_replace('\'', '\\\'', (string) $value);
             };
 
             foreach ((array) $this->bodyExample as $key => $value) {
@@ -332,8 +330,14 @@ final class Operation extends AbstractSchema implements Stringable
                         $value = preg_replace("/\d+ => /", '', $value);
                     }
                 } else {
-                    // @phpstan-ignore cast.string,binaryOp.invalid
-                    $value = '\'' . $escape((string) $value) . '\'';
+                    // @phpstan-ignore cast.string (mixed to string)
+                    $value = (string) $value;
+
+                    $value = $escape($value);
+
+                    assert(is_string($value));
+
+                    $value = '\'' . $value . '\'';
                 }
 
                 $setupStr .= str_repeat(' ', 12) . "{$key}: {$value},\n";
@@ -397,7 +401,6 @@ final class Operation extends AbstractSchema implements Stringable
             $returnType = rtrim($returnType) . "\n    ";
         }
 
-        $argString ??= '';
         $setupStr ??= '';
 
         $testMethod = 'test' . ucfirst($this->getSafeId());

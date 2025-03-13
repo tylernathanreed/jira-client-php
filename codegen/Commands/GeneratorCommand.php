@@ -92,6 +92,7 @@ abstract class GeneratorCommand extends Command
         }
     }
 
+    /** @param TestGenerator<AbstractSchema> $generator */
     protected function makeTestFile(TestGenerator $generator, string $name, bool $force): string|false
     {
         try {
