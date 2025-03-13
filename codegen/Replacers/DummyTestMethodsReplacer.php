@@ -13,7 +13,7 @@ class DummyTestMethodsReplacer extends Replacer
             return $stub;
         }
 
-        $methods = array_map(fn($operation) => $operation->getTestDefinition(), $schema->operations);
+        $methods = array_map(fn ($operation) => $operation->getTestDefinition(), $schema->operations);
 
         $content = implode("\n\n", $methods);
 
