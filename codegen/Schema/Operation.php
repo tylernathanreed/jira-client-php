@@ -404,7 +404,7 @@ final class Operation extends AbstractSchema implements Stringable
         $response = ! empty($this->successExample)
             ? '\'' . str_replace('\'', '\\\'', $this->successExample) . '\''
             : 'null';
-        
+
         if (is_null($this->successExample) && $this->successCode !== 204) {
             $setupStr = strtr("\n{indent}\$this->markTestIncomplete(\n{indent2}'{reason}'\n{indent});\n", [
                 '{indent}' => str_repeat(' ', 8),
