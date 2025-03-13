@@ -11,16 +11,16 @@ final readonly class WorkflowUpdateRequest extends Dto
         /**
          * The statuses to associate with the workflows.
          * 
-         * @var list<WorkflowStatusUpdate>
+         * @var ?list<WorkflowStatusUpdate>
          */
-        public array $statuses,
+        public ?array $statuses = null,
 
         /**
          * The details of the workflows to update.
          * 
-         * @var list<WorkflowUpdate>
+         * @var ?list<WorkflowUpdate>
          */
-        public array $workflows,
+        public ?array $workflows = null,
     ) {
     }
 }

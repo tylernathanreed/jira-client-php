@@ -8,21 +8,21 @@ use Jira\Client\Dto;
 final readonly class WorkflowCreateRequest extends Dto
 {
     public function __construct(
-        public WorkflowScope $scope,
+        public ?WorkflowScope $scope = null,
 
         /**
          * The statuses to associate with the workflows.
          * 
-         * @var list<WorkflowStatusUpdate>
+         * @var ?list<WorkflowStatusUpdate>
          */
-        public array $statuses,
+        public ?array $statuses = null,
 
         /**
          * The details of the workflows to create.
          * 
-         * @var list<WorkflowCreate>
+         * @var ?list<WorkflowCreate>
          */
-        public array $workflows,
+        public ?array $workflows = null,
     ) {
     }
 }

@@ -294,7 +294,7 @@ final class Operation extends AbstractSchema implements Stringable
 
             $setupStr = "\n" . str_repeat(' ', 8) . "\$request = new Schema\\{$this->bodySchema}(\n";
 
-            $escape = function ($value) use (&$escape) {
+            $escape = function ($value) use (&$escape): string|array {
                 if (is_array($value)) {
                     foreach ($value as $k => $v) {
                         $value[$k] = $escape($v);
@@ -332,6 +332,7 @@ final class Operation extends AbstractSchema implements Stringable
                         $value = preg_replace("/\d+ => /", '', $value);
                     }
                 } else {
+                    // @phpstan-ignore cast.string,binaryOp.invalid
                     $value = '\'' . $escape((string) $value) . '\'';
                 }
 
@@ -351,7 +352,7 @@ final class Operation extends AbstractSchema implements Stringable
 
         if (! empty($this->parameters) && isset($argString)) {
             $argString = rtrim($argString);
-        } elseif (! empty($this->parameters)) {
+        } elseif (! isset($argString)) {
             $argString = '';
         }
 
@@ -363,7 +364,7 @@ final class Operation extends AbstractSchema implements Stringable
             $setupStr = ($setupStr ?? '') . "\n" . str_repeat(' ', 8) . $param->getAssignment();
         }
 
-        if (! empty($this->parameters)) {
+        if (! empty($this->parameters) && isset($setupStr)) {
             $argString .= "\n" . str_repeat(' ', 12);
             $setupStr .= "\n";
         }
