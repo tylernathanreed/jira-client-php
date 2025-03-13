@@ -220,6 +220,58 @@ trait IssueBulkOperations
     }
 
     /**
+     * Use this API to submit a bulk unwatch request.
+     * You can unwatch up to 1,000 issues in a single operation
+     * 
+     * **"Permissions" required:**
+     * 
+     *  - Global bulk change "permission"
+     *  - Browse "project permission" in all projects that contain the selected issues
+     *  - If "issue-level security" is configured, issue-level security permission to view the issue.
+     * 
+     * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/
+     * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/
+     * @link https://confluence.atlassian.com/x/J4lKLg
+     */
+    public function submitBulkUnwatch(
+        Schema\IssueBulkWatchOrUnwatchPayload $request,
+    ): Schema\SubmittedBulkOperation {
+        return $this->call(
+            uri: '/rest/api/3/bulk/issues/unwatch',
+            method: 'post',
+            body: $request,
+            success: 201,
+            schema: Schema\SubmittedBulkOperation::class,
+        );
+    }
+
+    /**
+     * Use this API to submit a bulk watch request.
+     * You can watch up to 1,000 issues in a single operation
+     * 
+     * **"Permissions" required:**
+     * 
+     *  - Global bulk change "permission"
+     *  - Browse "project permission" in all projects that contain the selected issues
+     *  - If "issue-level security" is configured, issue-level security permission to view the issue.
+     * 
+     * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/
+     * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/
+     * @link https://confluence.atlassian.com/x/J4lKLg
+     */
+    public function submitBulkWatch(
+        Schema\IssueBulkWatchOrUnwatchPayload $request,
+    ): Schema\SubmittedBulkOperation {
+        return $this->call(
+            uri: '/rest/api/3/bulk/issues/watch',
+            method: 'post',
+            body: $request,
+            success: 201,
+            schema: Schema\SubmittedBulkOperation::class,
+        );
+    }
+
+    /**
      * Use this to get the progress state for the specified bulk operation `taskId`
      * 
      * **"Permissions" required:**

@@ -1224,7 +1224,7 @@ trait Workflows
      *  - DateFieldValidator
      *  - WindowsDateValidator
      * 
-     * ##### Proforma: Forms attached validator #####
+     * ##### Pro forma: Forms attached validator #####
      * 
      * Validates that one or more forms are attached to the issue
      * 

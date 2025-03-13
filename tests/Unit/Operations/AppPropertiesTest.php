@@ -30,7 +30,6 @@ class AppPropertiesTest extends OperationsTestCase
     public function testGetAddonProperty(): void
     {
         $addonKey = 'foo';
-
         $propertyKey = 'foo';
 
         $this->assertCall(
@@ -44,7 +43,6 @@ class AppPropertiesTest extends OperationsTestCase
             ],
             arguments: [
                 $addonKey,
-            
                 $propertyKey,
             ],
             response: '{"self":"https:\/\/your-domain.atlassian.net\/jira\/rest\/atlassian-connect\/1\/addon\/example.app.key\/properties\/propertyKey","key":"propertyKey","value":"propertyValue"}',
@@ -54,7 +52,6 @@ class AppPropertiesTest extends OperationsTestCase
     public function testPutAddonProperty(): void
     {
         $addonKey = 'foo';
-
         $propertyKey = 'foo';
 
         $this->assertCall(
@@ -68,7 +65,6 @@ class AppPropertiesTest extends OperationsTestCase
             ],
             arguments: [
                 $addonKey,
-            
                 $propertyKey,
             ],
             response: '{"message":"Property updated.","statusCode":200}',
@@ -78,7 +74,6 @@ class AppPropertiesTest extends OperationsTestCase
     public function testDeleteAddonProperty(): void
     {
         $addonKey = 'foo';
-
         $propertyKey = 'foo';
 
         $this->assertCall(
@@ -92,7 +87,6 @@ class AppPropertiesTest extends OperationsTestCase
             ],
             arguments: [
                 $addonKey,
-            
                 $propertyKey,
             ],
             response: null,

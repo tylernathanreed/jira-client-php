@@ -9,48 +9,9 @@ class AppMigrationTest extends OperationsTestCase
 {
     public function testUpdateIssueFields(): void
     {
-        $request = new Schema\ConnectCustomFieldValues(
-            updateValueList: [
-                [
-                    '_type' => 'StringIssueField',
-                    'issueID' => 10001,
-                    'fieldID' => 10076,
-                    'string' => 'new string value',
-                ],
-                [
-                    '_type' => 'TextIssueField',
-                    'issueID' => 10002,
-                    'fieldID' => 10077,
-                    'text' => 'new text value',
-                ],
-                [
-                    '_type' => 'SingleSelectIssueField',
-                    'issueID' => 10003,
-                    'fieldID' => 10078,
-                    'optionID' => '1',
-                ],
-                [
-                    '_type' => 'MultiSelectIssueField',
-                    'issueID' => 10004,
-                    'fieldID' => 10079,
-                    'optionID' => '2',
-                ],
-                [
-                    '_type' => 'RichTextIssueField',
-                    'issueID' => 10005,
-                    'fieldID' => 10080,
-                    'richText' => 'new rich text value',
-                ],
-                [
-                    '_type' => 'NumberIssueField',
-                    'issueID' => 10006,
-                    'fieldID' => 10082,
-                    'number' => 54,
-                ],
-            ],
+        $this->markTestIncomplete(
+            'Missing response example.'
         );
-
-        $atlassianTransferId = 'foo';
 
         $this->assertCall(
             method: 'updateIssueFields',
@@ -72,9 +33,9 @@ class AppMigrationTest extends OperationsTestCase
 
     public function testUpdateEntityPropertiesValue(): void
     {
-        $atlassianTransferId = 'foo';
-
-        $entityType = 'foo';
+        $this->markTestIncomplete(
+            'Missing response example.'
+        );
 
         $this->assertCall(
             method: 'updateEntityPropertiesValue',
@@ -88,7 +49,6 @@ class AppMigrationTest extends OperationsTestCase
             ],
             arguments: [
                 $atlassianTransferId,
-            
                 $entityType,
             ],
             response: null,

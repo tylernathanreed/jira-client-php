@@ -277,7 +277,8 @@ trait IssueSearch
      *                    @link https://confluence.atlassian.com/x/egORLQ
      * @param string $nextPageToken The token for a page to fetch that is not the first page.
      *                              The first page has a `nextPageToken` of `null`.
-     *                              Use the `nextPageToken` to fetch the next page of issues.
+     *                              Use the `nextPageToken` to fetch the next page of issues
+     *                              Note: The `nextPageToken` field is **not included** in the response for the last page, indicating there is no next page.
      * @param int $maxResults The maximum number of items to return per page.
      *                        To manage page size, API may return fewer items per page where a large number of fields are requested.
      *                        The greatest number of items returned per page is achieved when requesting `id` or `key` only.

@@ -35,7 +35,9 @@ class AppDataPoliciesTest extends OperationsTestCase
                 'success' => 200,
                 'schema' => Schema\ProjectDataPolicies::class,
             ],
-            arguments: [],
+            arguments: [
+                $ids,
+            ],
             response: '{"projectDataPolicies":[{"dataPolicy":{"anyContentBlocked":false},"id":1000},{"dataPolicy":{"anyContentBlocked":true},"id":1001}]}',
         );
     }

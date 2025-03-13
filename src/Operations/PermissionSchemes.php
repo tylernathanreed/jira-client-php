@@ -56,9 +56,14 @@ trait PermissionSchemes
      * Apps can also define custom permissions.
      * See the "project permission" and "global permission" module documentation for more information
      * 
-     * **Project permissions**
+     * **Administration permissions**
      * 
      *  - `ADMINISTER_PROJECTS`
+     *  - `EDIT_WORKFLOW`
+     *  - `EDIT_ISSUE_LAYOUT`
+     * 
+     * **Project permissions**
+     * 
      *  - `BROWSE_PROJECTS`
      *  - `MANAGE_SPRINTS_PERMISSION` (Jira Software only)
      *  - `SERVICEDESK_AGENT` (Jira Service Desk only)

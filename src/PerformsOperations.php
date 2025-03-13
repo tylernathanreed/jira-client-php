@@ -90,6 +90,7 @@ trait PerformsOperations
     use Operations\UIModificationsApps;
     use Operations\UserProperties;
     use Operations\UserSearch;
+    use Operations\Usernavproperties;
     use Operations\Users;
     use Operations\Webhooks;
     use Operations\WorkflowSchemeDrafts;
