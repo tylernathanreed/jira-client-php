@@ -42,6 +42,18 @@ abstract class OperationsTestCase extends TestCase
             $authorization = 'Basic ' . base64_encode('testing:password');
             $accept = ['application/json'];
 
+            foreach ((array) ($call['path'] ?? []) as $key => $value) {
+                $url = str_replace("{{$key}}", $value, $url);
+            }
+
+            if (isset($call['query'])) {
+                $query = array_filter($call['query'], fn ($v) => ! is_null($v));
+
+                if (! empty($query)) {
+                    $url .= '?' . http_build_query($query);
+                }
+            }
+
             $this->assertEqualsIgnoringCase($call['method'], $request->getMethod());
             $this->assertEquals($url, (string) $request->getUri());
             $this->assertEquals($authorization, $request->getHeader('Authorization')[0]);

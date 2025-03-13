@@ -301,6 +301,20 @@ final class Operation extends AbstractSchema implements Stringable
                     $value = 'null';
                 } elseif (is_bool($value)) {
                     $value = $value ? 'true' : 'false';
+                } elseif (is_array($value)) {
+                    $isList = array_is_list($value);
+
+                    $value = str_replace(
+                        search: ['array (', ')', " => \n", '  ', "\n"],
+                        replace: ['[', ']', ' => ', '    ', "\n" . str_repeat(' ', 12)],
+                        subject: var_export($value, true)
+                    );
+
+                    $value = preg_replace("/ => +\[/", ' => [', $value) ?: '';
+
+                    if ($isList) {
+                        $value = preg_replace("/\d+ => /", '', $value);
+                    }
                 } else {
                     $value = '\'' . $value . '\'';
                 }
@@ -309,10 +323,33 @@ final class Operation extends AbstractSchema implements Stringable
             }
 
             $setupStr .= str_repeat(' ', 8) . ");\n";
+
+            if (empty($this->bodyExample)) {
+                $setupStr = strtr("\n{indent}\$this->markTestIncomplete(\n{indent2}'{reason}'\n{indent});\n", [
+                    '{indent}' => str_repeat(' ', 8),
+                    '{indent2}' => str_repeat(' ', 12),
+                    '{reason}' => 'Missing body example.',
+                ]);
+            }
+        }
+
+        if (! empty($this->parameters) && isset($argString)) {
+            $argString = rtrim($argString);
+        } elseif (! empty($this->parameters)) {
+            $argString = '';
         }
 
         foreach ($this->parameters as $param) {
             $parameters[] = $param->getDefinition();
+
+            $argString .= "\n" . str_repeat(' ', 16) . "\${$param->getSafeName()},";
+
+            $setupStr = ($setupStr ?? '') . "\n" . str_repeat(' ', 8) . $param->getAssignment();
+        }
+
+        if (! empty($this->parameters)) {
+            $argString .= "\n" . str_repeat(' ', 12);
+            $setupStr .= "\n";
         }
 
         $queryParam = $this->getCallParamString('query');
@@ -351,6 +388,14 @@ final class Operation extends AbstractSchema implements Stringable
         $response = ! empty($this->successExample)
             ? '\'' . $this->successExample . '\''
             : 'null';
+        
+        if (is_null($this->successExample) && $this->successCode !== 204) {
+            $setupStr = strtr("\n{indent}\$this->markTestIncomplete(\n{indent2}'{reason}'\n{indent});\n", [
+                '{indent}' => str_repeat(' ', 8),
+                '{indent2}' => str_repeat(' ', 12),
+                '{reason}' => 'Missing response example.',
+            ]);
+        }
 
         return <<<CODE
             public function {$testMethod}(): void

@@ -28,6 +28,7 @@ final class Parameter extends AbstractSchema
         public readonly ?string $listableType = null,
         public readonly ?string $associativeType = null,
         public readonly int|string|bool|null $default = null,
+        public readonly int|string|bool|null $example = null,
         public readonly bool $required = false,
 
         /** @var ?list<string> */
@@ -70,6 +71,7 @@ final class Parameter extends AbstractSchema
             listableType: $nativeListableType ?? 'mixed',
             associativeType: $associativeType,
             default: $parameter['schema']['default'] ?? null,
+            example: $parameter['schema']['example'] ?? null,
             required: ($parameter['required'] ?? false) || ($parameter['in'] === 'path'),
             enum: $parameter['schema']['enum'] ?? null,
         );
@@ -242,6 +244,31 @@ final class Parameter extends AbstractSchema
                 ? " = {$this->getDefaultString()}"
                 : ($this->required ? '' : ' = null'),
         ]);
+    }
+
+    public function getAssignment(): string
+    {
+        $value = $this->example ?: $this->default;
+
+        if (is_null($value)) {
+            if ($this->required) {
+                if ($this->type === 'string') {
+                    $value = '\'foo\'';
+                } elseif ($this->type === 'int') {
+                    $value = 1234;
+                }
+            }
+
+            $value ??= 'null';
+        } elseif (is_bool($value)) {
+            $value = $value ? 'true' : 'false';
+        } elseif (is_numeric($value)) {
+            $value = $value;
+        } else {
+            $value = '\'' . $value . '\'';
+        }
+
+        return "\${$this->getSafeName()} = {$value};";
     }
 
     /**
