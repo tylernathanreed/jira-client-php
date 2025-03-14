@@ -141,7 +141,7 @@ final class Property extends AbstractSchema implements Stringable
 
     public function isAssociativeArray(): bool
     {
-        return $this->type === 'object' && ! is_null($this->associativeType);
+        return $this->type === 'object';
     }
 
     public function isDateTime(): bool
@@ -197,7 +197,7 @@ final class Property extends AbstractSchema implements Stringable
         }
 
         if ($this->isAssociativeArray()) {
-            return 'array<string,' . $this->associativeType . '>';
+            return 'array<string,' . ($this->associativeType ?: 'mixed') . '>';
         }
 
         throw new RuntimeException(

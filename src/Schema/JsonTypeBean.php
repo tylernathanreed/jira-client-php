@@ -11,8 +11,12 @@ final readonly class JsonTypeBean extends Dto
         /** The data type of the field. */
         public string $type,
 
-        /** If the field is a custom field, the configuration of the field. */
-        public ?object $configuration = null,
+        /**
+         * If the field is a custom field, the configuration of the field.
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $configuration = null,
 
         /** If the field is a custom field, the URI of the field. */
         public ?string $custom = null,

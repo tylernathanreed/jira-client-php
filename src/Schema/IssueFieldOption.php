@@ -24,8 +24,10 @@ final readonly class IssueFieldOption extends Dto
          * These properties can be searched using JQL, if the extractions (see "Issue Field Option Property Index") are defined in the descriptor for the issue field module.
          * 
          * @link https://developer.atlassian.com/cloud/jira/platform/modules/issue-field-option-property-index/
+         * 
+         * @var array<string,mixed>
          */
-        public ?object $properties = null,
+        public ?array $properties = null,
     ) {
     }
 }

@@ -17,7 +17,8 @@ final readonly class IssueBean extends Dto
         /** Expand options that include additional issue details in the response. */
         public ?string $expand = null,
 
-        public ?object $fields = null,
+        /** @var array<string,mixed> */
+        public ?array $fields = null,
 
         public ?IncludedFields $fieldsToInclude = null,
 
@@ -37,11 +38,19 @@ final readonly class IssueBean extends Dto
         /** The operations that can be performed on the issue. */
         public ?Operations $operations = null,
 
-        /** Details of the issue properties identified in the request. */
-        public ?object $properties = null,
+        /**
+         * Details of the issue properties identified in the request.
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $properties = null,
 
-        /** The rendered value of each field present on the issue. */
-        public ?object $renderedFields = null,
+        /**
+         * The rendered value of each field present on the issue.
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $renderedFields = null,
 
         /** The schema describing each field present on the issue. */
         public ?JsonTypeBean $schema = null,

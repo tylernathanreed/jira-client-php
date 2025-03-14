@@ -34,8 +34,12 @@ final readonly class Transition extends Dto
          */
         public string $type,
 
-        /** The properties of the transition. */
-        public ?object $properties = null,
+        /**
+         * The properties of the transition.
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $properties = null,
 
         public ?WorkflowRules $rules = null,
 

@@ -11,8 +11,12 @@ final readonly class JsonContextVariable extends Dto
         /** Type of custom context variable. */
         public string $type,
 
-        /** A JSON object containing custom content. */
-        public ?object $value = null,
+        /**
+         * A JSON object containing custom content.
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $value = null,
     ) {
     }
 }

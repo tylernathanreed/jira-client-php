@@ -105,8 +105,12 @@ final readonly class Project extends Dto
          */
         public ?string $projectTypeKey = null,
 
-        /** Map of project properties */
-        public ?object $properties = null,
+        /**
+         * Map of project properties
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $properties = null,
 
         /** The date when the project is deleted permanently. */
         public ?DateTimeImmutable $retentionTillDate = null,

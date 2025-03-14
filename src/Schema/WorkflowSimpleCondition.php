@@ -19,8 +19,10 @@ final readonly class WorkflowSimpleCondition extends Dto
         /**
          * EXPERIMENTAL.
          * The configuration of the transition rule.
+         * 
+         * @var array<string,mixed>
          */
-        public ?object $configuration = null,
+        public ?array $configuration = null,
     ) {
     }
 }

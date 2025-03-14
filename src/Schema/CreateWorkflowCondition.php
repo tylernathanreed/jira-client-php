@@ -18,8 +18,10 @@ final readonly class CreateWorkflowCondition extends Dto
         /**
          * EXPERIMENTAL.
          * The configuration of the transition rule.
+         * 
+         * @var array<string,mixed>
          */
-        public ?object $configuration = null,
+        public ?array $configuration = null,
 
         /**
          * The compound condition operator.

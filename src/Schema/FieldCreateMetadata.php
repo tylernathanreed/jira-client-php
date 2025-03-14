@@ -40,8 +40,12 @@ final readonly class FieldCreateMetadata extends Dto
         /** The URL that can be used to automatically complete the field. */
         public ?string $autoCompleteUrl = null,
 
-        /** The configuration properties. */
-        public ?object $configuration = null,
+        /**
+         * The configuration properties.
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $configuration = null,
 
         /** The default value of the field. */
         public mixed $defaultValue = null,

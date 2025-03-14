@@ -14,7 +14,8 @@ final readonly class MultipartFile extends Dto
 
         public ?bool $empty = null,
 
-        public ?object $inputStream = null,
+        /** @var array<string,mixed> */
+        public ?array $inputStream = null,
 
         public ?string $name = null,
 

@@ -13,7 +13,8 @@ final readonly class Resource extends Dto
 
         public ?string $filename = null,
 
-        public ?object $inputStream = null,
+        /** @var array<string,mixed> */
+        public ?array $inputStream = null,
 
         public ?bool $open = null,
 

@@ -14,8 +14,10 @@ final readonly class MandatoryFieldValueForADF extends Dto
          * For ADF format details, refer to: "Atlassian Document Format"
          * 
          * @link https://developer.atlassian.com/cloud/jira/platform/apis/document/structure
+         * 
+         * @var array<string,mixed>
          */
-        public object $value,
+        public array $value,
 
         /**
          * Will treat as `MandatoryFieldValueForADF` if type is `adf`

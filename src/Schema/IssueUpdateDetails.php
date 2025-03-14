@@ -13,8 +13,10 @@ final readonly class IssueUpdateDetails extends Dto
          * This field provides a straightforward option when setting a sub-field.
          * When multiple sub-fields or other operations are required, use `update`.
          * Fields included in here cannot be included in `update`.
+         * 
+         * @var array<string,mixed>
          */
-        public ?object $fields = null,
+        public ?array $fields = null,
 
         /** Additional issue history details. */
         public ?HistoryMetadata $historyMetadata = null,

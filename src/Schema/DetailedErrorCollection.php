@@ -7,8 +7,12 @@ use Jira\Client\Dto;
 final readonly class DetailedErrorCollection extends Dto
 {
     public function __construct(
-        /** Map of objects representing additional details for an error */
-        public ?object $details = null,
+        /**
+         * Map of objects representing additional details for an error
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $details = null,
 
         /**
          * The list of error messages produced by this operation.

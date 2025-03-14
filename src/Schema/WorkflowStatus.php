@@ -17,8 +17,10 @@ final readonly class WorkflowStatus extends Dto
         /**
          * Additional properties that modify the behavior of issues in this status.
          * Supports the properties `jira.issue.editable` and `issueEditable` (deprecated) that indicate whether issues are editable.
+         * 
+         * @var array<string,mixed>
          */
-        public ?object $properties = null,
+        public ?array $properties = null,
     ) {
     }
 }

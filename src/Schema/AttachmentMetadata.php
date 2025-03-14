@@ -27,8 +27,12 @@ final readonly class AttachmentMetadata extends Dto
         /** The MIME type of the attachment. */
         public ?string $mimeType = null,
 
-        /** Additional properties of the attachment. */
-        public ?object $properties = null,
+        /**
+         * Additional properties of the attachment.
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $properties = null,
 
         /** The URL of the attachment metadata details. */
         public ?string $self = null,

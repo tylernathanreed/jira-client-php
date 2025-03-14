@@ -7,7 +7,8 @@ use Jira\Client\Dto;
 final readonly class JiraRichTextInput extends Dto
 {
     public function __construct(
-        public ?object $adfValue = null,
+        /** @var array<string,mixed> */
+        public ?array $adfValue = null,
     ) {
     }
 }

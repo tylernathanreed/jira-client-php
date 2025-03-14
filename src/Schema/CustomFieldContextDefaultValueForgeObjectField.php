@@ -10,8 +10,12 @@ final readonly class CustomFieldContextDefaultValueForgeObjectField extends Dto
     public function __construct(
         public string $type,
 
-        /** The default JSON object. */
-        public ?object $object = null,
+        /**
+         * The default JSON object.
+         * 
+         * @var array<string,mixed>
+         */
+        public ?array $object = null,
     ) {
     }
 }

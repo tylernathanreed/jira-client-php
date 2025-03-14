@@ -32,11 +32,14 @@ final readonly class JsonNode extends Dto
 
         public ?float $doubleValue = null,
 
-        public ?object $elements = null,
+        /** @var array<string,mixed> */
+        public ?array $elements = null,
 
-        public ?object $fieldNames = null,
+        /** @var array<string,mixed> */
+        public ?array $fieldNames = null,
 
-        public ?object $fields = null,
+        /** @var array<string,mixed> */
+        public ?array $fields = null,
 
         public ?bool $floatingPointNumber = null,
 
