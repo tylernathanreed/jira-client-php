@@ -24,12 +24,12 @@ class IssueSecuritySchemesTest extends OperationsTestCase
 
     public function testCreateIssueSecurityScheme(): void
     {
-        $request = new Schema\CreateIssueSecuritySchemeDetails(
-            description: 'Newly created issue security scheme',
-            levels: [
+        $request = $this->deserialize(Schema\CreateIssueSecuritySchemeDetails::class, [
+            'description' => 'Newly created issue security scheme',
+            'levels' => [
                 [
                     'description' => 'Newly created level',
-                    'isDefault' => true,
+                    'isDefault' => '1',
                     'members' => [
                         [
                             'parameter' => 'administrators',
@@ -39,8 +39,8 @@ class IssueSecuritySchemesTest extends OperationsTestCase
                     'name' => 'New level',
                 ],
             ],
-            name: 'New security scheme',
-        );
+            'name' => 'New security scheme',
+        ]);
 
         $this->assertCall(
             method: 'createIssueSecurityScheme',
@@ -88,8 +88,8 @@ class IssueSecuritySchemesTest extends OperationsTestCase
 
     public function testSetDefaultLevels(): void
     {
-        $request = new Schema\SetDefaultLevelsRequest(
-            defaultValues: [
+        $request = $this->deserialize(Schema\SetDefaultLevelsRequest::class, [
+            'defaultValues' => [
                 [
                     'defaultLevelId' => '20000',
                     'issueSecuritySchemeId' => '10000',
@@ -99,7 +99,7 @@ class IssueSecuritySchemesTest extends OperationsTestCase
                     'issueSecuritySchemeId' => '12000',
                 ],
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'setDefaultLevels',
@@ -243,10 +243,10 @@ class IssueSecuritySchemesTest extends OperationsTestCase
 
     public function testUpdateIssueSecurityScheme(): void
     {
-        $request = new Schema\UpdateIssueSecuritySchemeRequestBean(
-            description: 'My issue security scheme description',
-            name: 'My issue security scheme name',
-        );
+        $request = $this->deserialize(Schema\UpdateIssueSecuritySchemeRequestBean::class, [
+            'description' => 'My issue security scheme description',
+            'name' => 'My issue security scheme name',
+        ]);
 
         $id = 'foo';
 
@@ -290,11 +290,11 @@ class IssueSecuritySchemesTest extends OperationsTestCase
 
     public function testAddSecurityLevel(): void
     {
-        $request = new Schema\AddSecuritySchemeLevelsRequestBean(
-            levels: [
+        $request = $this->deserialize(Schema\AddSecuritySchemeLevelsRequestBean::class, [
+            'levels' => [
                 [
                     'description' => 'First Level Description',
-                    'isDefault' => true,
+                    'isDefault' => '1',
                     'members' => [
                         [
                             'type' => 'reporter',
@@ -307,7 +307,7 @@ class IssueSecuritySchemesTest extends OperationsTestCase
                     'name' => 'First Level',
                 ],
             ],
-        );
+        ]);
 
         $schemeId = 'foo';
 
@@ -331,10 +331,10 @@ class IssueSecuritySchemesTest extends OperationsTestCase
 
     public function testUpdateSecurityLevel(): void
     {
-        $request = new Schema\UpdateIssueSecurityLevelDetails(
-            description: 'New level description',
-            name: 'New level name',
-        );
+        $request = $this->deserialize(Schema\UpdateIssueSecurityLevelDetails::class, [
+            'description' => 'New level description',
+            'name' => 'New level name',
+        ]);
 
         $schemeId = 'foo';
         $levelId = 'foo';
@@ -385,8 +385,8 @@ class IssueSecuritySchemesTest extends OperationsTestCase
 
     public function testAddSecurityLevelMembers(): void
     {
-        $request = new Schema\SecuritySchemeMembersRequest(
-            members: [
+        $request = $this->deserialize(Schema\SecuritySchemeMembersRequest::class, [
+            'members' => [
                 [
                     'type' => 'reporter',
                 ],
@@ -395,7 +395,7 @@ class IssueSecuritySchemesTest extends OperationsTestCase
                     'type' => 'group',
                 ],
             ],
-        );
+        ]);
 
         $schemeId = 'foo';
         $levelId = 'foo';

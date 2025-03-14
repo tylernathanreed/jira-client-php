@@ -234,14 +234,14 @@ class IssueWorklogsTest extends OperationsTestCase
 
     public function testGetWorklogsForIds(): void
     {
-        $request = new Schema\WorklogIdsRequestBean(
-            ids: [
-                1,
-                2,
-                5,
-                10,
+        $request = $this->deserialize(Schema\WorklogIdsRequestBean::class, [
+            'ids' => [
+                '1',
+                '2',
+                '5',
+                '10',
             ],
-        );
+        ]);
 
         $expand = '';
 

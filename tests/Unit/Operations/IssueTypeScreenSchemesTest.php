@@ -39,8 +39,8 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
 
     public function testCreateIssueTypeScreenScheme(): void
     {
-        $request = new Schema\IssueTypeScreenSchemeDetails(
-            issueTypeMappings: [
+        $request = $this->deserialize(Schema\IssueTypeScreenSchemeDetails::class, [
+            'issueTypeMappings' => [
                 [
                     'issueTypeId' => 'default',
                     'screenSchemeId' => '10001',
@@ -54,8 +54,8 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
                     'screenSchemeId' => '10002',
                 ],
             ],
-            name: 'Scrum issue type screen scheme',
-        );
+            'name' => 'Scrum issue type screen scheme',
+        ]);
 
         $this->assertCall(
             method: 'createIssueTypeScreenScheme',
@@ -123,10 +123,10 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
 
     public function testAssignIssueTypeScreenSchemeToProject(): void
     {
-        $request = new Schema\IssueTypeScreenSchemeProjectAssociation(
-            issueTypeScreenSchemeId: '10001',
-            projectId: '10002',
-        );
+        $request = $this->deserialize(Schema\IssueTypeScreenSchemeProjectAssociation::class, [
+            'issueTypeScreenSchemeId' => '10001',
+            'projectId' => '10002',
+        ]);
 
         $this->assertCall(
             method: 'assignIssueTypeScreenSchemeToProject',
@@ -146,10 +146,10 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
 
     public function testUpdateIssueTypeScreenScheme(): void
     {
-        $request = new Schema\IssueTypeScreenSchemeUpdateDetails(
-            description: 'Screens for scrum issue types.',
-            name: 'Scrum scheme',
-        );
+        $request = $this->deserialize(Schema\IssueTypeScreenSchemeUpdateDetails::class, [
+            'description' => 'Screens for scrum issue types.',
+            'name' => 'Scrum scheme',
+        ]);
 
         $issueTypeScreenSchemeId = 'foo';
 
@@ -193,8 +193,8 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
 
     public function testAppendMappingsForIssueTypeScreenScheme(): void
     {
-        $request = new Schema\IssueTypeScreenSchemeMappingDetails(
-            issueTypeMappings: [
+        $request = $this->deserialize(Schema\IssueTypeScreenSchemeMappingDetails::class, [
+            'issueTypeMappings' => [
                 [
                     'issueTypeId' => '10000',
                     'screenSchemeId' => '10001',
@@ -208,7 +208,7 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
                     'screenSchemeId' => '10002',
                 ],
             ],
-        );
+        ]);
 
         $issueTypeScreenSchemeId = 'foo';
 
@@ -232,9 +232,9 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
 
     public function testUpdateDefaultScreenScheme(): void
     {
-        $request = new Schema\UpdateDefaultScreenScheme(
-            screenSchemeId: '10010',
-        );
+        $request = $this->deserialize(Schema\UpdateDefaultScreenScheme::class, [
+            'screenSchemeId' => '10010',
+        ]);
 
         $issueTypeScreenSchemeId = 'foo';
 
@@ -258,13 +258,13 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
 
     public function testRemoveMappingsFromIssueTypeScreenScheme(): void
     {
-        $request = new Schema\IssueTypeIds(
-            issueTypeIds: [
+        $request = $this->deserialize(Schema\IssueTypeIds::class, [
+            'issueTypeIds' => [
                 '10000',
                 '10001',
                 '10004',
             ],
-        );
+        ]);
 
         $issueTypeScreenSchemeId = 'foo';
 

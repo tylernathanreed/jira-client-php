@@ -24,14 +24,14 @@ class JQLTest extends OperationsTestCase
 
     public function testGetAutoCompletePost(): void
     {
-        $request = new Schema\SearchAutoCompleteFilter(
-            includeCollapsedFields: true,
-            projectIds: [
-                10000,
-                10001,
-                10002,
+        $request = $this->deserialize(Schema\SearchAutoCompleteFilter::class, [
+            'includeCollapsedFields' => true,
+            'projectIds' => [
+                '10000',
+                '10001',
+                '10002',
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'getAutoCompletePost',
@@ -77,8 +77,8 @@ class JQLTest extends OperationsTestCase
 
     public function testParseJqlQueries(): void
     {
-        $request = new Schema\JqlQueriesToParse(
-            queries: [
+        $request = $this->deserialize(Schema\JqlQueriesToParse::class, [
+            'queries' => [
                 'summary ~ test AND (labels in (urgent, blocker] OR lastCommentedBy = currentUser(]] AND status CHANGED AFTER startOfMonth(-1M] ORDER BY updated DESC',
                 'issue.property["spaces here"].value in ("Service requests", Incidents]',
                 'invalid query',
@@ -87,7 +87,7 @@ class JQLTest extends OperationsTestCase
                 'project = INVALID',
                 'universe = 42',
             ],
-        );
+        ]);
 
         $validation = 'strict';
 
@@ -111,12 +111,12 @@ class JQLTest extends OperationsTestCase
 
     public function testMigrateQueries(): void
     {
-        $request = new Schema\JQLPersonalDataMigrationRequest(
-            queryStrings: [
+        $request = $this->deserialize(Schema\JQLPersonalDataMigrationRequest::class, [
+            'queryStrings' => [
                 'assignee = mia',
                 'issuetype = Bug AND assignee in (mia] AND reporter in (alana] order by lastViewed DESC',
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'migrateQueries',
@@ -136,8 +136,8 @@ class JQLTest extends OperationsTestCase
 
     public function testSanitiseJqlQueries(): void
     {
-        $request = new Schema\JqlQueriesToSanitize(
-            queries: [
+        $request = $this->deserialize(Schema\JqlQueriesToSanitize::class, [
+            'queries' => [
                 [
                     'query' => 'project = \\\'Sample project\\\'',
                 ],
@@ -154,7 +154,7 @@ class JQLTest extends OperationsTestCase
                     'query' => 'invalid query',
                 ],
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'sanitiseJqlQueries',

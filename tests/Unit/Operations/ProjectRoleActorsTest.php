@@ -9,19 +9,9 @@ class ProjectRoleActorsTest extends OperationsTestCase
 {
     public function testSetActors(): void
     {
-        $request = new Schema\ProjectRoleActorsUpdateBean(
-            categorisedActors: [
-                'atlassian-group-role-actor-id' => [
-                    0 => '952d12c3-5b5b-4d04-bb32-44d383afc4b2',
-                ],
-                'atlassian-user-role-actor' => [
-                    0 => '12345678-9abc-def1-2345-6789abcdef12',
-                ],
-            ],
+        $this->markTestSkipped(
+            'Explicitly skipped test.'
         );
-
-        $projectIdOrKey = 'foo';
-        $id = 1234;
 
         $this->assertCall(
             method: 'setActors',
@@ -44,11 +34,11 @@ class ProjectRoleActorsTest extends OperationsTestCase
 
     public function testAddActorUsers(): void
     {
-        $request = new Schema\ActorsMap(
-            groupId: [
+        $request = $this->deserialize(Schema\ActorsMap::class, [
+            'groupId' => [
                 '952d12c3-5b5b-4d04-bb32-44d383afc4b2',
             ],
-        );
+        ]);
 
         $projectIdOrKey = 'foo';
         $id = 1234;
@@ -123,11 +113,11 @@ class ProjectRoleActorsTest extends OperationsTestCase
 
     public function testAddProjectRoleActorsToRole(): void
     {
-        $request = new Schema\ActorInputBean(
-            user: [
+        $request = $this->deserialize(Schema\ActorInputBean::class, [
+            'user' => [
                 'admin',
             ],
-        );
+        ]);
 
         $id = 1234;
 

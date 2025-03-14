@@ -57,25 +57,25 @@ class IssueCustomFieldOptionsTest extends OperationsTestCase
 
     public function testUpdateCustomFieldOption(): void
     {
-        $request = new Schema\BulkCustomFieldOptionUpdateRequest(
-            options: [
+        $request = $this->deserialize(Schema\BulkCustomFieldOptionUpdateRequest::class, [
+            'options' => [
                 [
-                    'disabled' => false,
+                    'disabled' => '',
                     'id' => '10001',
                     'value' => 'Scranton',
                 ],
                 [
-                    'disabled' => true,
+                    'disabled' => '1',
                     'id' => '10002',
                     'value' => 'Manhattan',
                 ],
                 [
-                    'disabled' => false,
+                    'disabled' => '',
                     'id' => '10003',
                     'value' => 'The Electric City',
                 ],
             ],
-        );
+        ]);
 
         $fieldId = 'foo';
         $contextId = 1234;
@@ -101,23 +101,23 @@ class IssueCustomFieldOptionsTest extends OperationsTestCase
 
     public function testCreateCustomFieldOption(): void
     {
-        $request = new Schema\BulkCustomFieldOptionCreateRequest(
-            options: [
+        $request = $this->deserialize(Schema\BulkCustomFieldOptionCreateRequest::class, [
+            'options' => [
                 [
-                    'disabled' => false,
+                    'disabled' => '',
                     'value' => 'Scranton',
                 ],
                 [
-                    'disabled' => true,
+                    'disabled' => '1',
                     'optionId' => '10000',
                     'value' => 'Manhattan',
                 ],
                 [
-                    'disabled' => false,
+                    'disabled' => '',
                     'value' => 'The Electric City',
                 ],
             ],
-        );
+        ]);
 
         $fieldId = 'foo';
         $contextId = 1234;
@@ -143,13 +143,13 @@ class IssueCustomFieldOptionsTest extends OperationsTestCase
 
     public function testReorderCustomFieldOptions(): void
     {
-        $request = new Schema\OrderOfCustomFieldOptions(
-            customFieldOptionIds: [
+        $request = $this->deserialize(Schema\OrderOfCustomFieldOptions::class, [
+            'customFieldOptionIds' => [
                 '10001',
                 '10002',
             ],
-            position: 'First',
-        );
+            'position' => 'First',
+        ]);
 
         $fieldId = 'foo';
         $contextId = 1234;

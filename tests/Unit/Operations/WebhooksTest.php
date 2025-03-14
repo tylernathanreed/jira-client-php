@@ -32,9 +32,9 @@ class WebhooksTest extends OperationsTestCase
 
     public function testRegisterDynamicWebhooks(): void
     {
-        $request = new Schema\WebhookRegistrationDetails(
-            url: 'https://your-app.example.com/webhook-received',
-            webhooks: [
+        $request = $this->deserialize(Schema\WebhookRegistrationDetails::class, [
+            'url' => 'https://your-app.example.com/webhook-received',
+            'webhooks' => [
                 [
                     'events' => [
                         'jira:issue_created',
@@ -62,7 +62,7 @@ class WebhooksTest extends OperationsTestCase
                     'jqlFilter' => 'project = PROJ',
                 ],
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'registerDynamicWebhooks',

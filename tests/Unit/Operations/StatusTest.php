@@ -32,8 +32,8 @@ class StatusTest extends OperationsTestCase
 
     public function testUpdateStatuses(): void
     {
-        $request = new Schema\StatusUpdateRequest(
-            statuses: [
+        $request = $this->deserialize(Schema\StatusUpdateRequest::class, [
+            'statuses' => [
                 [
                     'description' => 'The issue is resolved',
                     'id' => '1000',
@@ -41,7 +41,7 @@ class StatusTest extends OperationsTestCase
                     'statusCategory' => 'DONE',
                 ],
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'updateStatuses',
@@ -61,9 +61,21 @@ class StatusTest extends OperationsTestCase
 
     public function testCreateStatuses(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\StatusCreateRequest::class, [
+            'scope' => [
+                'project' => [
+                    'id' => '1',
+                ],
+                'type' => 'PROJECT',
+            ],
+            'statuses' => [
+                [
+                    'description' => 'The issue is resolved',
+                    'name' => 'Finished',
+                    'statusCategory' => 'DONE',
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'createStatuses',

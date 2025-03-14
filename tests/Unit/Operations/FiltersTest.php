@@ -9,11 +9,11 @@ class FiltersTest extends OperationsTestCase
 {
     public function testCreateFilter(): void
     {
-        $request = new Schema\Filter(
-            description: 'Lists all open bugs',
-            jql: 'type = Bug and resolution is empty',
-            name: 'All Open Bugs',
-        );
+        $request = $this->deserialize(Schema\Filter::class, [
+            'description' => 'Lists all open bugs',
+            'jql' => 'type = Bug and resolution is empty',
+            'name' => 'All Open Bugs',
+        ]);
 
         $expand = null;
         $overrideSharePermissions = false;
@@ -150,11 +150,11 @@ class FiltersTest extends OperationsTestCase
 
     public function testUpdateFilter(): void
     {
-        $request = new Schema\Filter(
-            description: 'Lists all open bugs',
-            jql: 'type = Bug and resolution is empty',
-            name: 'All Open Bugs',
-        );
+        $request = $this->deserialize(Schema\Filter::class, [
+            'description' => 'Lists all open bugs',
+            'jql' => 'type = Bug and resolution is empty',
+            'name' => 'All Open Bugs',
+        ]);
 
         $id = 1234;
         $expand = null;
@@ -313,9 +313,9 @@ class FiltersTest extends OperationsTestCase
 
     public function testChangeFilterOwner(): void
     {
-        $request = new Schema\ChangeFilterOwner(
-            accountId: '0000-0000-0000-0000',
-        );
+        $request = $this->deserialize(Schema\ChangeFilterOwner::class, [
+            'accountId' => '0000-0000-0000-0000',
+        ]);
 
         $id = 1234;
 

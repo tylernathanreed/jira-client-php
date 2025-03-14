@@ -29,9 +29,9 @@ class ProjectEmailTest extends OperationsTestCase
 
     public function testUpdateProjectEmail(): void
     {
-        $request = new Schema\ProjectEmailAddress(
-            emailAddress: 'jira@example.atlassian.net',
-        );
+        $request = $this->deserialize(Schema\ProjectEmailAddress::class, [
+            'emailAddress' => 'jira@example.atlassian.net',
+        ]);
 
         $projectId = 1234;
 

@@ -34,9 +34,9 @@ class ScreenTabFieldsTest extends OperationsTestCase
 
     public function testAddScreenTabField(): void
     {
-        $request = new Schema\AddFieldBean(
-            fieldId: 'summary',
-        );
+        $request = $this->deserialize(Schema\AddFieldBean::class, [
+            'fieldId' => 'summary',
+        ]);
 
         $screenId = 1234;
         $tabId = 1234;

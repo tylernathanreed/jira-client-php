@@ -37,10 +37,10 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testCreateFieldConfiguration(): void
     {
-        $request = new Schema\FieldConfigurationDetails(
-            description: 'My field configuration description',
-            name: 'My Field Configuration',
-        );
+        $request = $this->deserialize(Schema\FieldConfigurationDetails::class, [
+            'description' => 'My field configuration description',
+            'name' => 'My Field Configuration',
+        ]);
 
         $this->assertCall(
             method: 'createFieldConfiguration',
@@ -60,10 +60,10 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testUpdateFieldConfiguration(): void
     {
-        $request = new Schema\FieldConfigurationDetails(
-            description: 'A brand new description',
-            name: 'My Modified Field Configuration',
-        );
+        $request = $this->deserialize(Schema\FieldConfigurationDetails::class, [
+            'description' => 'A brand new description',
+            'name' => 'My Modified Field Configuration',
+        ]);
 
         $id = 1234;
 
@@ -132,26 +132,26 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testUpdateFieldConfigurationItems(): void
     {
-        $request = new Schema\FieldConfigurationItemsDetails(
-            fieldConfigurationItems: [
+        $request = $this->deserialize(Schema\FieldConfigurationItemsDetails::class, [
+            'fieldConfigurationItems' => [
                 [
                     'description' => 'The new description of this item.',
                     'id' => 'customfield_10012',
-                    'isHidden' => false,
+                    'isHidden' => '',
                 ],
                 [
                     'id' => 'customfield_10011',
-                    'isRequired' => true,
+                    'isRequired' => '1',
                 ],
                 [
                     'description' => 'Another new description.',
                     'id' => 'customfield_10010',
-                    'isHidden' => false,
-                    'isRequired' => false,
+                    'isHidden' => '',
+                    'isRequired' => '',
                     'renderer' => 'wiki-renderer',
                 ],
             ],
-        );
+        ]);
 
         $id = 1234;
 
@@ -199,10 +199,10 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testCreateFieldConfigurationScheme(): void
     {
-        $request = new Schema\UpdateFieldConfigurationSchemeDetails(
-            description: 'We can use this one for software projects.',
-            name: 'Field Configuration Scheme for software related projects',
-        );
+        $request = $this->deserialize(Schema\UpdateFieldConfigurationSchemeDetails::class, [
+            'description' => 'We can use this one for software projects.',
+            'name' => 'Field Configuration Scheme for software related projects',
+        ]);
 
         $this->assertCall(
             method: 'createFieldConfigurationScheme',
@@ -270,10 +270,10 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testAssignFieldConfigurationSchemeToProject(): void
     {
-        $request = new Schema\FieldConfigurationSchemeProjectAssociation(
-            fieldConfigurationSchemeId: '10000',
-            projectId: '10000',
-        );
+        $request = $this->deserialize(Schema\FieldConfigurationSchemeProjectAssociation::class, [
+            'fieldConfigurationSchemeId' => '10000',
+            'projectId' => '10000',
+        ]);
 
         $this->assertCall(
             method: 'assignFieldConfigurationSchemeToProject',
@@ -293,10 +293,10 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testUpdateFieldConfigurationScheme(): void
     {
-        $request = new Schema\UpdateFieldConfigurationSchemeDetails(
-            description: 'We can use this one for software projects.',
-            name: 'Field Configuration Scheme for software related projects',
-        );
+        $request = $this->deserialize(Schema\UpdateFieldConfigurationSchemeDetails::class, [
+            'description' => 'We can use this one for software projects.',
+            'name' => 'Field Configuration Scheme for software related projects',
+        ]);
 
         $id = 1234;
 
@@ -340,8 +340,8 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testSetFieldConfigurationSchemeMapping(): void
     {
-        $request = new Schema\AssociateFieldConfigurationsWithIssueTypesRequest(
-            mappings: [
+        $request = $this->deserialize(Schema\AssociateFieldConfigurationsWithIssueTypesRequest::class, [
+            'mappings' => [
                 [
                     'fieldConfigurationId' => '10000',
                     'issueTypeId' => 'default',
@@ -355,7 +355,7 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
                     'issueTypeId' => '10002',
                 ],
             ],
-        );
+        ]);
 
         $id = 1234;
 
@@ -379,13 +379,13 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testRemoveIssueTypesFromGlobalFieldConfigurationScheme(): void
     {
-        $request = new Schema\IssueTypeIdsToRemove(
-            issueTypeIds: [
+        $request = $this->deserialize(Schema\IssueTypeIdsToRemove::class, [
+            'issueTypeIds' => [
                 '10000',
                 '10001',
                 '10002',
             ],
-        );
+        ]);
 
         $id = 1234;
 

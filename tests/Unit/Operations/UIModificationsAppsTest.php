@@ -33,8 +33,8 @@ class UIModificationsAppsTest extends OperationsTestCase
 
     public function testCreateUiModification(): void
     {
-        $request = new Schema\CreateUiModificationDetails(
-            contexts: [
+        $request = $this->deserialize(Schema\CreateUiModificationDetails::class, [
+            'contexts' => [
                 [
                     'issueTypeId' => '10000',
                     'projectId' => '10000',
@@ -53,13 +53,13 @@ class UIModificationsAppsTest extends OperationsTestCase
                 [
                     'issueTypeId' => '10003',
                     'projectId' => '10000',
-                    'viewType' => NULL,
+                    'viewType' => '',
                 ],
             ],
-            data: '{field: \'Story Points\', config: {hidden: false}}',
-            description: 'Reveals Story Points field when any Sprint is selected.',
-            name: 'Reveal Story Points',
-        );
+            'data' => '{field: \'Story Points\', config: {hidden: false}}',
+            'description' => 'Reveals Story Points field when any Sprint is selected.',
+            'name' => 'Reveal Story Points',
+        ]);
 
         $this->assertCall(
             method: 'createUiModification',
@@ -79,8 +79,8 @@ class UIModificationsAppsTest extends OperationsTestCase
 
     public function testUpdateUiModification(): void
     {
-        $request = new Schema\UpdateUiModificationDetails(
-            contexts: [
+        $request = $this->deserialize(Schema\UpdateUiModificationDetails::class, [
+            'contexts' => [
                 [
                     'issueTypeId' => '10000',
                     'projectId' => '10000',
@@ -97,9 +97,9 @@ class UIModificationsAppsTest extends OperationsTestCase
                     'viewType' => 'IssueTransition',
                 ],
             ],
-            data: '{field: \'Story Points\', config: {hidden: true}}',
-            name: 'Updated Reveal Story Points',
-        );
+            'data' => '{field: \'Story Points\', config: {hidden: true}}',
+            'name' => 'Updated Reveal Story Points',
+        ]);
 
         $uiModificationId = 'foo';
 

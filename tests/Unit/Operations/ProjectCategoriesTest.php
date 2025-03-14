@@ -24,10 +24,10 @@ class ProjectCategoriesTest extends OperationsTestCase
 
     public function testCreateProjectCategory(): void
     {
-        $request = new Schema\ProjectCategory(
-            description: 'Created Project Category',
-            name: 'CREATED',
-        );
+        $request = $this->deserialize(Schema\ProjectCategory::class, [
+            'description' => 'Created Project Category',
+            'name' => 'CREATED',
+        ]);
 
         $this->assertCall(
             method: 'createProjectCategory',
@@ -67,10 +67,10 @@ class ProjectCategoriesTest extends OperationsTestCase
 
     public function testUpdateProjectCategory(): void
     {
-        $request = new Schema\ProjectCategory(
-            description: 'Updated Project Category',
-            name: 'UPDATED',
-        );
+        $request = $this->deserialize(Schema\ProjectCategory::class, [
+            'description' => 'Updated Project Category',
+            'name' => 'UPDATED',
+        ]);
 
         $id = 1234;
 

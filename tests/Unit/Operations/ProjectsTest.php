@@ -33,21 +33,21 @@ class ProjectsTest extends OperationsTestCase
 
     public function testCreateProject(): void
     {
-        $request = new Schema\CreateProjectDetails(
-            assigneeType: 'PROJECT_LEAD',
-            avatarId: '10200',
-            categoryId: '10120',
-            description: 'Cloud migration initiative',
-            issueSecurityScheme: '10001',
-            key: 'EX',
-            leadAccountId: '5b10a0effa615349cb016cd8',
-            name: 'Example',
-            notificationScheme: '10021',
-            permissionScheme: '10011',
-            projectTemplateKey: 'com.atlassian.jira-core-project-templates:jira-core-simplified-process-control',
-            projectTypeKey: 'business',
-            url: 'http://atlassian.com',
-        );
+        $request = $this->deserialize(Schema\CreateProjectDetails::class, [
+            'assigneeType' => 'PROJECT_LEAD',
+            'avatarId' => '10200',
+            'categoryId' => '10120',
+            'description' => 'Cloud migration initiative',
+            'issueSecurityScheme' => '10001',
+            'key' => 'EX',
+            'leadAccountId' => '5b10a0effa615349cb016cd8',
+            'name' => 'Example',
+            'notificationScheme' => '10021',
+            'permissionScheme' => '10011',
+            'projectTemplateKey' => 'com.atlassian.jira-core-project-templates:jira-core-simplified-process-control',
+            'projectTypeKey' => 'business',
+            'url' => 'http://atlassian.com',
+        ]);
 
         $this->assertCall(
             method: 'createProject',

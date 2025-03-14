@@ -49,15 +49,15 @@ class WorkflowSchemeDraftsTest extends OperationsTestCase
 
     public function testUpdateWorkflowSchemeDraft(): void
     {
-        $request = new Schema\WorkflowScheme(
-            defaultWorkflow: 'jira',
-            description: 'The description of the example workflow scheme.',
-            issueTypeMappings: [
+        $request = $this->deserialize(Schema\WorkflowScheme::class, [
+            'defaultWorkflow' => 'jira',
+            'description' => 'The description of the example workflow scheme.',
+            'issueTypeMappings' => [
                 10000 => 'scrum workflow',
             ],
-            name: 'Example workflow scheme',
-            updateDraftIfNeeded: false,
-        );
+            'name' => 'Example workflow scheme',
+            'updateDraftIfNeeded' => false,
+        ]);
 
         $id = 1234;
 
@@ -121,10 +121,10 @@ class WorkflowSchemeDraftsTest extends OperationsTestCase
 
     public function testUpdateDraftDefaultWorkflow(): void
     {
-        $request = new Schema\DefaultWorkflow(
-            updateDraftIfNeeded: false,
-            workflow: 'jira',
-        );
+        $request = $this->deserialize(Schema\DefaultWorkflow::class, [
+            'updateDraftIfNeeded' => false,
+            'workflow' => 'jira',
+        ]);
 
         $id = 1234;
 
@@ -190,11 +190,11 @@ class WorkflowSchemeDraftsTest extends OperationsTestCase
 
     public function testSetWorkflowSchemeDraftIssueType(): void
     {
-        $request = new Schema\IssueTypeWorkflowMapping(
-            issueType: '10000',
-            updateDraftIfNeeded: false,
-            workflow: 'jira',
-        );
+        $request = $this->deserialize(Schema\IssueTypeWorkflowMapping::class, [
+            'issueType' => '10000',
+            'updateDraftIfNeeded' => false,
+            'workflow' => 'jira',
+        ]);
 
         $id = 1234;
         $issueType = 'foo';
@@ -242,8 +242,8 @@ class WorkflowSchemeDraftsTest extends OperationsTestCase
 
     public function testPublishDraftWorkflowScheme(): void
     {
-        $request = new Schema\PublishDraftWorkflowScheme(
-            statusMappings: [
+        $request = $this->deserialize(Schema\PublishDraftWorkflowScheme::class, [
+            'statusMappings' => [
                 [
                     'issueTypeId' => '10001',
                     'newStatusId' => '1',
@@ -265,7 +265,7 @@ class WorkflowSchemeDraftsTest extends OperationsTestCase
                     'statusId' => '4',
                 ],
             ],
-        );
+        ]);
 
         $id = 1234;
         $validateOnly = false;
@@ -315,13 +315,13 @@ class WorkflowSchemeDraftsTest extends OperationsTestCase
 
     public function testUpdateDraftWorkflowMapping(): void
     {
-        $request = new Schema\IssueTypesWorkflowMapping(
-            issueTypes: [
+        $request = $this->deserialize(Schema\IssueTypesWorkflowMapping::class, [
+            'issueTypes' => [
                 '10000',
             ],
-            updateDraftIfNeeded: true,
-            workflow: 'jira',
-        );
+            'updateDraftIfNeeded' => true,
+            'workflow' => 'jira',
+        ]);
 
         $id = 1234;
         $workflowName = 'foo';

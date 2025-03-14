@@ -29,9 +29,9 @@ class ProjectFeaturesTest extends OperationsTestCase
 
     public function testToggleFeatureForProject(): void
     {
-        $request = new Schema\ProjectFeatureState(
-            state: 'ENABLED',
-        );
+        $request = $this->deserialize(Schema\ProjectFeatureState::class, [
+            'state' => 'ENABLED',
+        ]);
 
         $projectIdOrKey = 'foo';
         $featureKey = 'foo';

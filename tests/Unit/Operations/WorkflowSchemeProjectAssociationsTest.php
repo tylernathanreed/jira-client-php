@@ -31,10 +31,10 @@ class WorkflowSchemeProjectAssociationsTest extends OperationsTestCase
 
     public function testAssignSchemeToProject(): void
     {
-        $request = new Schema\WorkflowSchemeProjectAssociation(
-            projectId: '10001',
-            workflowSchemeId: '10032',
-        );
+        $request = $this->deserialize(Schema\WorkflowSchemeProjectAssociation::class, [
+            'projectId' => '10001',
+            'workflowSchemeId' => '10032',
+        ]);
 
         $this->assertCall(
             method: 'assignSchemeToProject',

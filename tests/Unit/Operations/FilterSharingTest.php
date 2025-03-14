@@ -24,9 +24,9 @@ class FilterSharingTest extends OperationsTestCase
 
     public function testSetDefaultShareScope(): void
     {
-        $request = new Schema\DefaultShareScope(
-            scope: 'GLOBAL',
-        );
+        $request = $this->deserialize(Schema\DefaultShareScope::class, [
+            'scope' => 'GLOBAL',
+        ]);
 
         $this->assertCall(
             method: 'setDefaultShareScope',
@@ -66,11 +66,11 @@ class FilterSharingTest extends OperationsTestCase
 
     public function testAddSharePermission(): void
     {
-        $request = new Schema\SharePermissionInputBean(
-            groupname: 'jira-administrators',
-            rights: '1',
-            type: 'group',
-        );
+        $request = $this->deserialize(Schema\SharePermissionInputBean::class, [
+            'groupname' => 'jira-administrators',
+            'rights' => '1',
+            'type' => 'group',
+        ]);
 
         $id = 1234;
 

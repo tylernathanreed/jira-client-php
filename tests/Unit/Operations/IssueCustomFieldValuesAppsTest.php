@@ -9,25 +9,25 @@ class IssueCustomFieldValuesAppsTest extends OperationsTestCase
 {
     public function testUpdateMultipleCustomFieldValues(): void
     {
-        $request = new Schema\MultipleCustomFieldValuesUpdateDetails(
-            updates: [
+        $request = $this->deserialize(Schema\MultipleCustomFieldValuesUpdateDetails::class, [
+            'updates' => [
                 [
                     'customField' => 'customfield_10010',
                     'issueIds' => [
-                        10010,
-                        10011,
+                        '10010',
+                        '10011',
                     ],
                     'value' => 'new value',
                 ],
                 [
                     'customField' => 'customfield_10011',
                     'issueIds' => [
-                        10010,
+                        '10010',
                     ],
-                    'value' => 1000,
+                    'value' => '1000',
                 ],
             ],
-        );
+        ]);
 
         $generateChangelog = true;
 
@@ -51,16 +51,16 @@ class IssueCustomFieldValuesAppsTest extends OperationsTestCase
 
     public function testUpdateCustomFieldValue(): void
     {
-        $request = new Schema\CustomFieldValueUpdateDetails(
-            updates: [
+        $request = $this->deserialize(Schema\CustomFieldValueUpdateDetails::class, [
+            'updates' => [
                 [
                     'issueIds' => [
-                        10010,
+                        '10010',
                     ],
                     'value' => 'new value',
                 ],
             ],
-        );
+        ]);
 
         $fieldIdOrKey = 'foo';
         $generateChangelog = true;

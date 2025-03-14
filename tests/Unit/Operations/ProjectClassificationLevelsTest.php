@@ -29,9 +29,9 @@ class ProjectClassificationLevelsTest extends OperationsTestCase
 
     public function testUpdateDefaultProjectClassification(): void
     {
-        $request = new Schema\UpdateDefaultProjectClassificationBean(
-            id: 'ari:cloud:platform::classification-tag/dec24c48-5073-4c25-8fef-9d81a992c30c',
-        );
+        $request = $this->deserialize(Schema\UpdateDefaultProjectClassificationBean::class, [
+            'id' => 'ari:cloud:platform::classification-tag/dec24c48-5073-4c25-8fef-9d81a992c30c',
+        ]);
 
         $projectIdOrKey = 'foo';
 

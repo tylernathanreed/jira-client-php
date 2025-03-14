@@ -59,9 +59,9 @@ class ScreenTabsTest extends OperationsTestCase
 
     public function testAddScreenTab(): void
     {
-        $request = new Schema\ScreenableTab(
-            name: 'Fields Tab',
-        );
+        $request = $this->deserialize(Schema\ScreenableTab::class, [
+            'name' => 'Fields Tab',
+        ]);
 
         $screenId = 1234;
 

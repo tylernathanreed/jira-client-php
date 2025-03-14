@@ -40,15 +40,15 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testCreateCustomFieldContext(): void
     {
-        $request = new Schema\CreateCustomFieldContext(
-            description: 'A context used to define the custom field options for bugs.',
-            issueTypeIds: [
+        $request = $this->deserialize(Schema\CreateCustomFieldContext::class, [
+            'description' => 'A context used to define the custom field options for bugs.',
+            'issueTypeIds' => [
                 '10010',
             ],
-            name: 'Bug fields context',
-            projectIds: [
+            'name' => 'Bug fields context',
+            'projectIds' => [
             ],
-        );
+        ]);
 
         $fieldId = 'foo';
 
@@ -98,8 +98,8 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testSetDefaultValues(): void
     {
-        $request = new Schema\CustomFieldContextDefaultValueUpdate(
-            defaultValues: [
+        $request = $this->deserialize(Schema\CustomFieldContextDefaultValueUpdate::class, [
+            'defaultValues' => [
                 [
                     'contextId' => '10100',
                     'optionId' => '10001',
@@ -116,7 +116,7 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
                     'type' => 'option.single',
                 ],
             ],
-        );
+        ]);
 
         $fieldId = 'foo';
 
@@ -221,10 +221,10 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testUpdateCustomFieldContext(): void
     {
-        $request = new Schema\CustomFieldContextUpdateDetails(
-            description: 'A context used to define the custom field options for bugs.',
-            name: 'Bug fields context',
-        );
+        $request = $this->deserialize(Schema\CustomFieldContextUpdateDetails::class, [
+            'description' => 'A context used to define the custom field options for bugs.',
+            'name' => 'Bug fields context',
+        ]);
 
         $fieldId = 'foo';
         $contextId = 1234;
@@ -272,13 +272,13 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testAddIssueTypesToContext(): void
     {
-        $request = new Schema\IssueTypeIds(
-            issueTypeIds: [
+        $request = $this->deserialize(Schema\IssueTypeIds::class, [
+            'issueTypeIds' => [
                 '10001',
                 '10005',
                 '10006',
             ],
-        );
+        ]);
 
         $fieldId = 'foo';
         $contextId = 1234;
@@ -304,13 +304,13 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testRemoveIssueTypesFromContext(): void
     {
-        $request = new Schema\IssueTypeIds(
-            issueTypeIds: [
+        $request = $this->deserialize(Schema\IssueTypeIds::class, [
+            'issueTypeIds' => [
                 '10001',
                 '10005',
                 '10006',
             ],
-        );
+        ]);
 
         $fieldId = 'foo';
         $contextId = 1234;
@@ -336,13 +336,13 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testAssignProjectsToCustomFieldContext(): void
     {
-        $request = new Schema\ProjectIds(
-            projectIds: [
+        $request = $this->deserialize(Schema\ProjectIds::class, [
+            'projectIds' => [
                 '10001',
                 '10005',
                 '10006',
             ],
-        );
+        ]);
 
         $fieldId = 'foo';
         $contextId = 1234;
@@ -368,13 +368,13 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testRemoveCustomFieldContextFromProjects(): void
     {
-        $request = new Schema\ProjectIds(
-            projectIds: [
+        $request = $this->deserialize(Schema\ProjectIds::class, [
+            'projectIds' => [
                 '10001',
                 '10005',
                 '10006',
             ],
-        );
+        ]);
 
         $fieldId = 'foo';
         $contextId = 1234;

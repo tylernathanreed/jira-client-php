@@ -58,29 +58,29 @@ class PermissionsTest extends OperationsTestCase
 
     public function testGetBulkPermissions(): void
     {
-        $request = new Schema\BulkPermissionsRequestBean(
-            accountId: '5b10a2844c20165700ede21g',
-            globalPermissions: [
+        $request = $this->deserialize(Schema\BulkPermissionsRequestBean::class, [
+            'accountId' => '5b10a2844c20165700ede21g',
+            'globalPermissions' => [
                 'ADMINISTER',
             ],
-            projectPermissions: [
+            'projectPermissions' => [
                 [
                     'issues' => [
-                        10010,
-                        10011,
-                        10012,
-                        10013,
-                        10014,
+                        '10010',
+                        '10011',
+                        '10012',
+                        '10013',
+                        '10014',
                     ],
                     'permissions' => [
                         'EDIT_ISSUES',
                     ],
                     'projects' => [
-                        10001,
+                        '10001',
                     ],
                 ],
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'getBulkPermissions',

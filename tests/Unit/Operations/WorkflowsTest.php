@@ -29,103 +29,8 @@ class WorkflowsTest extends OperationsTestCase
 
     public function testCreateWorkflow(): void
     {
-        $request = new Schema\CreateWorkflowDetails(
-            description: 'This is a workflow used for Stories and Tasks',
-            name: 'Workflow 1',
-            statuses: [
-                [
-                    'id' => '1',
-                    'properties' => [
-                        'jira.issue.editable' => 'false',
-                    ],
-                ],
-                [
-                    'id' => '2',
-                ],
-                [
-                    'id' => '3',
-                ],
-            ],
-            transitions: [
-                [
-                    'from' => [
-                    ],
-                    'name' => 'Created',
-                    'to' => '1',
-                    'type' => 'initial',
-                ],
-                [
-                    'from' => [
-                        '1',
-                    ],
-                    'name' => 'In progress',
-                    'properties' => [
-                        'custom-property' => 'custom-value',
-                    ],
-                    'rules' => [
-                        'conditions' => [
-                            'conditions' => [
-                                [
-                                    'type' => 'RemoteOnlyCondition',
-                                ],
-                                [
-                                    'configuration' => [
-                                        'groups' => [
-                                            'developers',
-                                            'qa-testers',
-                                        ],
-                                    ],
-                                    'type' => 'UserInAnyGroupCondition',
-                                ],
-                            ],
-                            'operator' => 'AND',
-                        ],
-                        'postFunctions' => [
-                            [
-                                'type' => 'AssignToCurrentUserFunction',
-                            ],
-                        ],
-                    ],
-                    'screen' => [
-                        'id' => '10001',
-                    ],
-                    'to' => '2',
-                    'type' => 'directed',
-                ],
-                [
-                    'name' => 'Completed',
-                    'rules' => [
-                        'postFunctions' => [
-                            [
-                                'configuration' => [
-                                    'fieldId' => 'assignee',
-                                ],
-                                'type' => 'ClearFieldValuePostFunction',
-                            ],
-                        ],
-                        'validators' => [
-                            [
-                                'configuration' => [
-                                    'parentStatuses' => [
-                                        [
-                                            'id' => '3',
-                                        ],
-                                    ],
-                                ],
-                                'type' => 'ParentStatusValidator',
-                            ],
-                            [
-                                'configuration' => [
-                                    'permissionKey' => 'ADMINISTER_PROJECTS',
-                                ],
-                                'type' => 'PermissionValidator',
-                            ],
-                        ],
-                    ],
-                    'to' => '3',
-                    'type' => 'global',
-                ],
-            ],
+        $this->markTestSkipped(
+            'Explicitly skipped test.'
         );
 
         $this->assertCall(
@@ -271,16 +176,16 @@ class WorkflowsTest extends OperationsTestCase
 
     public function testReadWorkflows(): void
     {
-        $request = new Schema\WorkflowReadRequest(
-            projectAndIssueTypes: [
+        $request = $this->deserialize(Schema\WorkflowReadRequest::class, [
+            'projectAndIssueTypes' => [
             ],
-            workflowIds: [
+            'workflowIds' => [
             ],
-            workflowNames: [
+            'workflowNames' => [
                 'Workflow 1',
                 'Workflow 2',
             ],
-        );
+        ]);
 
         $expand = null;
         $useTransitionLinksFormat = false;
@@ -354,9 +259,153 @@ class WorkflowsTest extends OperationsTestCase
 
     public function testValidateCreateWorkflows(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\WorkflowCreateValidateRequest::class, [
+            'payload' => [
+                'scope' => [
+                    'type' => 'GLOBAL',
+                ],
+                'statuses' => [
+                    0 => [
+                        'description' => '',
+                        'name' => 'To Do',
+                        'statusCategory' => 'TODO',
+                        'statusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                    ],
+                    1 => [
+                        'description' => '',
+                        'name' => 'In Progress',
+                        'statusCategory' => 'IN_PROGRESS',
+                        'statusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                    ],
+                    2 => [
+                        'description' => '',
+                        'name' => 'Done',
+                        'statusCategory' => 'DONE',
+                        'statusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                    ],
+                ],
+                'workflows' => [
+                    0 => [
+                        'description' => '',
+                        'name' => 'Software workflow 1',
+                        'startPointLayout' => [
+                            'x' => '-100.00030899048',
+                            'y' => '-153.00020599365',
+                        ],
+                        'statuses' => [
+                            0 => [
+                                'layout' => [
+                                    'x' => '114.99993896484',
+                                    'y' => '-16',
+                                ],
+                                'properties' => [
+                                ],
+                                'statusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                            ],
+                            1 => [
+                                'layout' => [
+                                    'x' => '317.00009155273',
+                                    'y' => '-16',
+                                ],
+                                'properties' => [
+                                ],
+                                'statusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                            ],
+                            2 => [
+                                'layout' => [
+                                    'x' => '508.00024414062',
+                                    'y' => '-16',
+                                ],
+                                'properties' => [
+                                ],
+                                'statusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                            ],
+                        ],
+                        'transitions' => [
+                            0 => [
+                                'actions' => [
+                                ],
+                                'description' => '',
+                                'id' => '1',
+                                'links' => [
+                                ],
+                                'name' => 'Create',
+                                'properties' => [
+                                ],
+                                'toStatusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                                'triggers' => [
+                                ],
+                                'type' => 'INITIAL',
+                                'validators' => [
+                                ],
+                            ],
+                            1 => [
+                                'actions' => [
+                                ],
+                                'description' => '',
+                                'id' => '11',
+                                'links' => [
+                                ],
+                                'name' => 'To Do',
+                                'properties' => [
+                                ],
+                                'toStatusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                                'triggers' => [
+                                ],
+                                'type' => 'GLOBAL',
+                                'validators' => [
+                                ],
+                            ],
+                            2 => [
+                                'actions' => [
+                                ],
+                                'description' => '',
+                                'id' => '21',
+                                'links' => [
+                                ],
+                                'name' => 'In Progress',
+                                'properties' => [
+                                ],
+                                'toStatusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                                'triggers' => [
+                                ],
+                                'type' => 'GLOBAL',
+                                'validators' => [
+                                ],
+                            ],
+                            3 => [
+                                'actions' => [
+                                ],
+                                'description' => 'Move a work item from in progress to done',
+                                'id' => '31',
+                                'links' => [
+                                    0 => [
+                                        'fromPort' => '0',
+                                        'fromStatusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                                        'toPort' => '1',
+                                    ],
+                                ],
+                                'name' => 'Done',
+                                'properties' => [
+                                ],
+                                'toStatusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                                'triggers' => [
+                                ],
+                                'type' => 'DIRECTED',
+                                'validators' => [
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'validationOptions' => [
+                'levels' => [
+                    0 => 'ERROR',
+                    1 => 'WARNING',
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'validateCreateWorkflows',
@@ -408,8 +457,8 @@ class WorkflowsTest extends OperationsTestCase
 
     public function testUpdateWorkflows(): void
     {
-        $request = new Schema\WorkflowUpdateRequest(
-            statuses: [
+        $request = $this->deserialize(Schema\WorkflowUpdateRequest::class, [
+            'statuses' => [
                 [
                     'description' => '',
                     'name' => 'To Do',
@@ -429,7 +478,7 @@ class WorkflowsTest extends OperationsTestCase
                     'statusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
                 ],
             ],
-            workflows: [
+            'workflows' => [
                 [
                     'defaultStatusMappings' => [
                         [
@@ -440,8 +489,8 @@ class WorkflowsTest extends OperationsTestCase
                     'description' => '',
                     'id' => '10001',
                     'startPointLayout' => [
-                        'x' => -100.00030899047852,
-                        'y' => -153.00020599365234,
+                        'x' => '-100.00030899048',
+                        'y' => '-153.00020599365',
                     ],
                     'statusMappings' => [
                         [
@@ -458,8 +507,8 @@ class WorkflowsTest extends OperationsTestCase
                     'statuses' => [
                         [
                             'layout' => [
-                                'x' => 114.99993896484375,
-                                'y' => -16,
+                                'x' => '114.99993896484',
+                                'y' => '-16',
                             ],
                             'properties' => [
                             ],
@@ -467,8 +516,8 @@ class WorkflowsTest extends OperationsTestCase
                         ],
                         [
                             'layout' => [
-                                'x' => 317.0000915527344,
-                                'y' => -16,
+                                'x' => '317.00009155273',
+                                'y' => '-16',
                             ],
                             'properties' => [
                             ],
@@ -476,8 +525,8 @@ class WorkflowsTest extends OperationsTestCase
                         ],
                         [
                             'layout' => [
-                                'x' => 508.000244140625,
-                                'y' => -16,
+                                'x' => '508.00024414062',
+                                'y' => '-16',
                             ],
                             'properties' => [
                             ],
@@ -543,9 +592,9 @@ class WorkflowsTest extends OperationsTestCase
                             'id' => '31',
                             'links' => [
                                 [
-                                    'fromPort' => 0,
+                                    'fromPort' => '0',
                                     'fromStatusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
-                                    'toPort' => 1,
+                                    'toPort' => '1',
                                 ],
                             ],
                             'name' => 'Done',
@@ -561,11 +610,11 @@ class WorkflowsTest extends OperationsTestCase
                     ],
                     'version' => [
                         'id' => '6f6c988b-2590-4358-90c2-5f7960265592',
-                        'versionNumber' => 1,
+                        'versionNumber' => '1',
                     ],
                 ],
             ],
-        );
+        ]);
 
         $expand = null;
 
@@ -589,9 +638,172 @@ class WorkflowsTest extends OperationsTestCase
 
     public function testValidateUpdateWorkflows(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\WorkflowUpdateValidateRequestBean::class, [
+            'payload' => [
+                'statuses' => [
+                    0 => [
+                        'description' => '',
+                        'name' => 'To Do',
+                        'statusCategory' => 'TODO',
+                        'statusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                    ],
+                    1 => [
+                        'description' => '',
+                        'name' => 'In Progress',
+                        'statusCategory' => 'IN_PROGRESS',
+                        'statusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                    ],
+                    2 => [
+                        'description' => '',
+                        'name' => 'Done',
+                        'statusCategory' => 'DONE',
+                        'statusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                    ],
+                ],
+                'workflows' => [
+                    0 => [
+                        'defaultStatusMappings' => [
+                            0 => [
+                                'newStatusReference' => '10011',
+                                'oldStatusReference' => '10010',
+                            ],
+                        ],
+                        'description' => '',
+                        'id' => '10001',
+                        'startPointLayout' => [
+                            'x' => '-100.00030899048',
+                            'y' => '-153.00020599365',
+                        ],
+                        'statusMappings' => [
+                            0 => [
+                                'issueTypeId' => '10002',
+                                'projectId' => '10003',
+                                'statusMigrations' => [
+                                    0 => [
+                                        'newStatusReference' => '10011',
+                                        'oldStatusReference' => '10010',
+                                    ],
+                                ],
+                            ],
+                        ],
+                        'statuses' => [
+                            0 => [
+                                'layout' => [
+                                    'x' => '114.99993896484',
+                                    'y' => '-16',
+                                ],
+                                'properties' => [
+                                ],
+                                'statusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                            ],
+                            1 => [
+                                'layout' => [
+                                    'x' => '317.00009155273',
+                                    'y' => '-16',
+                                ],
+                                'properties' => [
+                                ],
+                                'statusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                            ],
+                            2 => [
+                                'layout' => [
+                                    'x' => '508.00024414062',
+                                    'y' => '-16',
+                                ],
+                                'properties' => [
+                                ],
+                                'statusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                            ],
+                        ],
+                        'transitions' => [
+                            0 => [
+                                'actions' => [
+                                ],
+                                'description' => '',
+                                'id' => '1',
+                                'links' => [
+                                ],
+                                'name' => 'Create',
+                                'properties' => [
+                                ],
+                                'toStatusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                                'triggers' => [
+                                ],
+                                'type' => 'INITIAL',
+                                'validators' => [
+                                ],
+                            ],
+                            1 => [
+                                'actions' => [
+                                ],
+                                'description' => '',
+                                'id' => '11',
+                                'links' => [
+                                ],
+                                'name' => 'To Do',
+                                'properties' => [
+                                ],
+                                'toStatusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                                'triggers' => [
+                                ],
+                                'type' => 'GLOBAL',
+                                'validators' => [
+                                ],
+                            ],
+                            2 => [
+                                'actions' => [
+                                ],
+                                'description' => '',
+                                'id' => '21',
+                                'links' => [
+                                ],
+                                'name' => 'In Progress',
+                                'properties' => [
+                                ],
+                                'toStatusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                                'triggers' => [
+                                ],
+                                'type' => 'GLOBAL',
+                                'validators' => [
+                                ],
+                            ],
+                            3 => [
+                                'actions' => [
+                                ],
+                                'description' => 'Move a work item from in progress to done',
+                                'id' => '31',
+                                'links' => [
+                                    0 => [
+                                        'fromPort' => '0',
+                                        'fromStatusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                                        'toPort' => '1',
+                                    ],
+                                ],
+                                'name' => 'Done',
+                                'properties' => [
+                                ],
+                                'toStatusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                                'triggers' => [
+                                ],
+                                'type' => 'DIRECTED',
+                                'validators' => [
+                                ],
+                            ],
+                        ],
+                        'version' => [
+                            'id' => '6f6c988b-2590-4358-90c2-5f7960265592',
+                            'versionNumber' => '1',
+                        ],
+                    ],
+                ],
+            ],
+            'validationOptions' => [
+                'levels' => [
+                    0 => 'ERROR',
+                    1 => 'WARNING',
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'validateUpdateWorkflows',

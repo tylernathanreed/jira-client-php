@@ -33,9 +33,9 @@ class GroupsTest extends OperationsTestCase
 
     public function testCreateGroup(): void
     {
-        $request = new Schema\AddGroupBean(
-            name: 'power-users',
-        );
+        $request = $this->deserialize(Schema\AddGroupBean::class, [
+            'name' => 'power-users',
+        ]);
 
         $this->assertCall(
             method: 'createGroup',

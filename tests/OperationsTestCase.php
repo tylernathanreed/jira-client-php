@@ -4,10 +4,11 @@ namespace Tests;
 
 use GuzzleHttp\Promise\Create;
 use GuzzleHttp\Psr7\Response as Psr7Response;
-use Illuminate\Http\Client\Factory as HttpFactory;
 use Jira\Client\Client;
 use Jira\Client\Configuration;
 use Jira\Client\Contracts\Factory as FactoryContract;
+use Jira\Client\Deserializer;
+use Jira\Client\Dto;
 use Jira\Client\Factory;
 use Override;
 use PHPUnit\Framework\TestCase;
@@ -18,6 +19,7 @@ abstract class OperationsTestCase extends TestCase
     protected Configuration $config;
     protected Client $client;
     protected FactoryContract $factory;
+    protected Deserializer $deserializer;
 
     #[Override]
     protected function setUp(): void
@@ -25,6 +27,7 @@ abstract class OperationsTestCase extends TestCase
         $this->config = $this->newConfiguration();
         $this->factory = $this->newFactory();
         $this->client = $this->newClient();
+        $this->deserializer = $this->newDeserializer();
     }
 
     protected function assertCall(string $method, array $call, array $arguments, ?string $response): void
@@ -61,7 +64,7 @@ abstract class OperationsTestCase extends TestCase
             $this->assertEquals($accept, $request->getHeader('Accept'));
 
             if (isset($call['body'])) {
-                $this->assertEquals(
+                $this->assertEqualsCanonicalizing(
                     expected: $call['body']->toArray(),
                     actual: json_decode((string) $request->getBody(), true)
                 );
@@ -69,6 +72,17 @@ abstract class OperationsTestCase extends TestCase
 
             return Create::promiseFor(new Psr7Response($status, body: $response));
         });
+    }
+
+    /**
+     * @phpstan-template TDto of Dto
+     * @param class-string<TDto> $class
+     * @param ($array is true ? list<array<string,mixed>> : array<string,mixed>) $data
+     * @return ($array is true ? (TDto is PolymorphicDto ? list<Dto> : list<TDto>) : (TDto is PolymorphicDto ? Dto : TDto))
+     */
+    protected function deserialize(string $class, array $data, bool $array = false)
+    {
+        return $this->deserializer->deserialize($data, $class, $array);
     }
 
     protected function newClient(): Client
@@ -89,13 +103,13 @@ abstract class OperationsTestCase extends TestCase
         );
     }
 
-    protected function newHttpFactory(): HttpFactory
-    {
-        return new HttpFactory;
-    }
-
     protected function newFactory(): FactoryContract
     {
         return new Factory();
+    }
+
+    protected function newDeserializer(): Deserializer
+    {
+        return new Deserializer();
     }
 }

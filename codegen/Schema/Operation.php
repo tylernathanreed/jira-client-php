@@ -292,7 +292,7 @@ final class Operation extends AbstractSchema implements Stringable
 
             $argString = "\n" . str_repeat(' ', 16) . "\$request,\n" . str_repeat(' ', 12);
 
-            $setupStr = "\n" . str_repeat(' ', 8) . "\$request = new Schema\\{$this->bodySchema}(\n";
+            $setupStr = "\n" . str_repeat(' ', 8) . "\$request = \$this->deserialize(Schema\\{$this->bodySchema}::class, [\n";
 
             $escape = function ($value) use (&$escape): string|array {
                 if (is_array($value)) {
@@ -340,10 +340,10 @@ final class Operation extends AbstractSchema implements Stringable
                     $value = '\'' . $value . '\'';
                 }
 
-                $setupStr .= str_repeat(' ', 12) . "{$key}: {$value},\n";
+                $setupStr .= str_repeat(' ', 12) . "'{$key}' => {$value},\n";
             }
 
-            $setupStr .= str_repeat(' ', 8) . ");\n";
+            $setupStr .= str_repeat(' ', 8) . "]);\n";
 
             if (empty($this->bodyExample)) {
                 $setupStr = strtr("\n{indent}\$this->markTestIncomplete(\n{indent2}'{reason}'\n{indent});\n", [
@@ -418,36 +418,6 @@ final class Operation extends AbstractSchema implements Stringable
         }
 
         if (in_array($testMethod, [
-            // Nested Schema in Body
-            'testBulkEditDashboards',
-            'testAddGadget',
-            'testUpdateGadget',
-            'testSubmitBulkMove',
-            'testAddComment',
-            'testUpdateComment',
-            'testCreateIssueFieldOption',
-            'testGetSelectableIssueFieldOptions',
-            'testUpdateIssueFieldOption',
-            'testCreateOrUpdateRemoteIssueLink',
-            'testGetFieldConfigurationSchemeProjectMapping',
-            'testUpdateRemoteIssueLink',
-            'testCreateIssue',
-            'testBulkFetchIssues',
-            'testNotify',
-            'testDoTransition',
-            'testEvaluateJiraExpression',
-            'testEvaluateJSISJiraExpression',
-            'testCreatePermissionGrant',
-            'testCreatePriorityScheme',
-            'testSuggestedPrioritiesForMappings',
-            'testUpdatePriorityScheme',
-            'testCreateScreenScheme',
-            'testUpdateScreenScheme',
-            'testCreateStatuses',
-            'testCreateWorkflows',
-            'testValidateCreateWorkflows',
-            'testValidateUpdateWorkflows',
-
             // Requires Bugfix in OpenApi Spec
             'testGetAllGadgets',
 
@@ -501,6 +471,22 @@ final class Operation extends AbstractSchema implements Stringable
             'testGetUserGroups',
             'testGetWorkflowTransitionProperties',
             'testGetWorkflowsPaginated',
+            'testSubmitBulkMove',
+            'testBulkEditDashboards',
+            'testAddGadget',
+            'testUpdateGadget',
+            'testCreateIssueFieldOption',
+            'testGetSelectableIssueFieldOptions',
+            'testUpdateIssueFieldOption',
+            'testGetFieldConfigurationSchemeProjectMapping',
+            'testCreateIssue',
+            'testCreateIssues',
+            'testBulkFetchIssues',
+            'testDoTransition',
+            'testEvaluateJiraExpression',
+            'testEvaluateJSISJiraExpression',
+            'testCreateWorkflow',
+            'testCreateWorkflows',
 
             // Unknown class boolean
             'testGetIsWatchingIssueBulk',
@@ -508,9 +494,14 @@ final class Operation extends AbstractSchema implements Stringable
             // Unknown class object
             'testGetIssueLimitReport',
 
+            // Unknown class integer
+            'testCreatePriorityScheme',
+            'testUpdatePriorityScheme',
+
             // Unknown class list<string>
             'testUpdateWorkflowTransitionRuleConfigurations',
             'testDeleteWorkflowTransitionRuleConfigurations',
+            'testSetActors',
 
             // Unknown named parameter
             'testExportArchivedIssues',

@@ -86,9 +86,9 @@ class MyselfTest extends OperationsTestCase
 
     public function testSetLocale(): void
     {
-        $request = new Schema\Locale(
-            locale: 'en_US',
-        );
+        $request = $this->deserialize(Schema\Locale::class, [
+            'locale' => 'en_US',
+        ]);
 
         $this->assertCall(
             method: 'setLocale',

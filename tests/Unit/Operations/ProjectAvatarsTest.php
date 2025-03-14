@@ -9,9 +9,9 @@ class ProjectAvatarsTest extends OperationsTestCase
 {
     public function testUpdateProjectAvatar(): void
     {
-        $request = new Schema\Avatar(
-            id: '10010',
-        );
+        $request = $this->deserialize(Schema\Avatar::class, [
+            'id' => '10010',
+        ]);
 
         $projectIdOrKey = 'foo';
 

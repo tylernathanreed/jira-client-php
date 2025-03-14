@@ -24,10 +24,10 @@ class IssueResolutionsTest extends OperationsTestCase
 
     public function testCreateResolution(): void
     {
-        $request = new Schema\CreateResolutionDetails(
-            description: 'My resolution description',
-            name: 'My new resolution',
-        );
+        $request = $this->deserialize(Schema\CreateResolutionDetails::class, [
+            'description' => 'My resolution description',
+            'name' => 'My new resolution',
+        ]);
 
         $this->assertCall(
             method: 'createResolution',
@@ -47,9 +47,9 @@ class IssueResolutionsTest extends OperationsTestCase
 
     public function testSetDefaultResolution(): void
     {
-        $request = new Schema\SetDefaultResolutionRequest(
-            id: '3',
-        );
+        $request = $this->deserialize(Schema\SetDefaultResolutionRequest::class, [
+            'id' => '3',
+        ]);
 
         $this->assertCall(
             method: 'setDefaultResolution',
@@ -69,13 +69,13 @@ class IssueResolutionsTest extends OperationsTestCase
 
     public function testMoveResolutions(): void
     {
-        $request = new Schema\ReorderIssueResolutionsRequest(
-            after: '10002',
-            ids: [
+        $request = $this->deserialize(Schema\ReorderIssueResolutionsRequest::class, [
+            'after' => '10002',
+            'ids' => [
                 '10000',
                 '10001',
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'moveResolutions',
@@ -141,10 +141,10 @@ class IssueResolutionsTest extends OperationsTestCase
 
     public function testUpdateResolution(): void
     {
-        $request = new Schema\UpdateResolutionDetails(
-            description: 'My updated resolution description',
-            name: 'My updated resolution',
-        );
+        $request = $this->deserialize(Schema\UpdateResolutionDetails::class, [
+            'description' => 'My updated resolution description',
+            'name' => 'My updated resolution',
+        ]);
 
         $id = 'foo';
 

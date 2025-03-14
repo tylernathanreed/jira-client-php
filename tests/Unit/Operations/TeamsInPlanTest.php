@@ -34,13 +34,13 @@ class TeamsInPlanTest extends OperationsTestCase
 
     public function testAddAtlassianTeam(): void
     {
-        $request = new Schema\AddAtlassianTeamRequest(
-            capacity: '200',
-            id: 'AtlassianTeamId',
-            issueSourceId: '0',
-            planningStyle: 'Scrum',
-            sprintLength: '2',
-        );
+        $request = $this->deserialize(Schema\AddAtlassianTeamRequest::class, [
+            'capacity' => '200',
+            'id' => 'AtlassianTeamId',
+            'issueSourceId' => '0',
+            'planningStyle' => 'Scrum',
+            'sprintLength' => '2',
+        ]);
 
         $planId = 1234;
 

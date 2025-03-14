@@ -32,9 +32,33 @@ class IssueRemoteLinksTest extends OperationsTestCase
 
     public function testCreateOrUpdateRemoteIssueLink(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\RemoteIssueLinkRequest::class, [
+            'application' => [
+                'name' => 'My Acme Tracker',
+                'type' => 'com.acme.tracker',
+            ],
+            'globalId' => 'system=http://www.mycompany.com/support&id=1',
+            'object' => [
+                'icon' => [
+                    'title' => 'Support Ticket',
+                    'url16x16' => 'http://www.mycompany.com/support/ticket.png',
+                ],
+                'status' => [
+                    'icon' => [
+                        'link' => 'http://www.mycompany.com/support?id=1&details=closed',
+                        'title' => 'Case Closed',
+                        'url16x16' => 'http://www.mycompany.com/support/resolved.png',
+                    ],
+                    'resolved' => '1',
+                ],
+                'summary' => 'Customer support issue',
+                'title' => 'TSTSUP-111',
+                'url' => 'http://www.mycompany.com/support?id=1',
+            ],
+            'relationship' => 'causes',
+        ]);
+
+        $issueIdOrKey = 'foo';
 
         $this->assertCall(
             method: 'createOrUpdateRemoteIssueLink',
@@ -101,9 +125,34 @@ class IssueRemoteLinksTest extends OperationsTestCase
 
     public function testUpdateRemoteIssueLink(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\RemoteIssueLinkRequest::class, [
+            'application' => [
+                'name' => 'My Acme Tracker',
+                'type' => 'com.acme.tracker',
+            ],
+            'globalId' => 'system=http://www.mycompany.com/support&id=1',
+            'object' => [
+                'icon' => [
+                    'title' => 'Support Ticket',
+                    'url16x16' => 'http://www.mycompany.com/support/ticket.png',
+                ],
+                'status' => [
+                    'icon' => [
+                        'link' => 'http://www.mycompany.com/support?id=1&details=closed',
+                        'title' => 'Case Closed',
+                        'url16x16' => 'http://www.mycompany.com/support/resolved.png',
+                    ],
+                    'resolved' => '1',
+                ],
+                'summary' => 'Customer support issue',
+                'title' => 'TSTSUP-111',
+                'url' => 'http://www.mycompany.com/support?id=1',
+            ],
+            'relationship' => 'causes',
+        ]);
+
+        $issueIdOrKey = 10000;
+        $linkId = 10000;
 
         $this->assertCall(
             method: 'updateRemoteIssueLink',

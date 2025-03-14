@@ -24,9 +24,9 @@ class TimeTrackingTest extends OperationsTestCase
 
     public function testSelectTimeTrackingImplementation(): void
     {
-        $request = new Schema\TimeTrackingProvider(
-            key: 'Jira',
-        );
+        $request = $this->deserialize(Schema\TimeTrackingProvider::class, [
+            'key' => 'Jira',
+        ]);
 
         $this->assertCall(
             method: 'selectTimeTrackingImplementation',
@@ -76,12 +76,12 @@ class TimeTrackingTest extends OperationsTestCase
 
     public function testSetSharedTimeTrackingConfiguration(): void
     {
-        $request = new Schema\TimeTrackingConfiguration(
-            defaultUnit: 'hour',
-            timeFormat: 'pretty',
-            workingDaysPerWeek: '5.5',
-            workingHoursPerDay: '7.6',
-        );
+        $request = $this->deserialize(Schema\TimeTrackingConfiguration::class, [
+            'defaultUnit' => 'hour',
+            'timeFormat' => 'pretty',
+            'workingDaysPerWeek' => '5.5',
+            'workingHoursPerDay' => '7.6',
+        ]);
 
         $this->assertCall(
             method: 'setSharedTimeTrackingConfiguration',

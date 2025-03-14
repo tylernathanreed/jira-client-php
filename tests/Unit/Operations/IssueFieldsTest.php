@@ -24,12 +24,12 @@ class IssueFieldsTest extends OperationsTestCase
 
     public function testCreateCustomField(): void
     {
-        $request = new Schema\CustomFieldDefinitionJsonBean(
-            description: 'Custom field for picking groups',
-            name: 'New custom field',
-            searcherKey: 'com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher',
-            type: 'com.atlassian.jira.plugin.system.customfieldtypes:grouppicker',
-        );
+        $request = $this->deserialize(Schema\CustomFieldDefinitionJsonBean::class, [
+            'description' => 'Custom field for picking groups',
+            'name' => 'New custom field',
+            'searcherKey' => 'com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher',
+            'type' => 'com.atlassian.jira.plugin.system.customfieldtypes:grouppicker',
+        ]);
 
         $this->assertCall(
             method: 'createCustomField',
@@ -111,11 +111,11 @@ class IssueFieldsTest extends OperationsTestCase
 
     public function testUpdateCustomField(): void
     {
-        $request = new Schema\UpdateCustomFieldDetails(
-            description: 'Select the manager and the corresponding employee.',
-            name: 'Managers and employees list',
-            searcherKey: 'com.atlassian.jira.plugin.system.customfieldtypes:cascadingselectsearcher',
-        );
+        $request = $this->deserialize(Schema\UpdateCustomFieldDetails::class, [
+            'description' => 'Select the manager and the corresponding employee.',
+            'name' => 'Managers and employees list',
+            'searcherKey' => 'com.atlassian.jira.plugin.system.customfieldtypes:cascadingselectsearcher',
+        ]);
 
         $fieldId = 'foo';
 

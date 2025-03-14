@@ -9,13 +9,13 @@ class IssueBulkOperationsTest extends OperationsTestCase
 {
     public function testSubmitBulkDelete(): void
     {
-        $request = new Schema\IssueBulkDeletePayload(
-            selectedIssueIdsOrKeys: [
+        $request = $this->deserialize(Schema\IssueBulkDeletePayload::class, [
+            'selectedIssueIdsOrKeys' => [
                 '10001',
                 '10002',
             ],
-            sendBulkNotification: false,
-        );
+            'sendBulkNotification' => false,
+        ]);
 
         $this->assertCall(
             method: 'submitBulkDelete',
@@ -129,8 +129,8 @@ class IssueBulkOperationsTest extends OperationsTestCase
 
     public function testSubmitBulkTransition(): void
     {
-        $request = new Schema\IssueBulkTransitionPayload(
-            bulkTransitionInputs: [
+        $request = $this->deserialize(Schema\IssueBulkTransitionPayload::class, [
+            'bulkTransitionInputs' => [
                 [
                     'selectedIssueIdsOrKeys' => [
                         '10001',
@@ -145,8 +145,8 @@ class IssueBulkOperationsTest extends OperationsTestCase
                     'transitionId' => '2',
                 ],
             ],
-            sendBulkNotification: false,
-        );
+            'sendBulkNotification' => false,
+        ]);
 
         $this->assertCall(
             method: 'submitBulkTransition',

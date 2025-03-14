@@ -36,18 +36,18 @@ class IssueSearchTest extends OperationsTestCase
 
     public function testMatchIssues(): void
     {
-        $request = new Schema\IssuesAndJQLQueries(
-            issueIds: [
-                10001,
-                1000,
-                10042,
+        $request = $this->deserialize(Schema\IssuesAndJQLQueries::class, [
+            'issueIds' => [
+                '10001',
+                '1000',
+                '10042',
             ],
-            jqls: [
+            'jqls' => [
                 'project = FOO',
                 'issuetype = Bug',
                 'summary ~ "some text" AND project in (FOO, BAR]',
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'matchIssues',
@@ -119,9 +119,9 @@ class IssueSearchTest extends OperationsTestCase
 
     public function testCountIssues(): void
     {
-        $request = new Schema\JQLCountRequestBean(
-            jql: 'project = HSP',
-        );
+        $request = $this->deserialize(Schema\JQLCountRequestBean::class, [
+            'jql' => 'project = HSP',
+        ]);
 
         $this->assertCall(
             method: 'countIssues',
@@ -141,11 +141,11 @@ class IssueSearchTest extends OperationsTestCase
 
     public function testSearchForIssuesIds(): void
     {
-        $request = new Schema\IdSearchRequestBean(
-            jql: 'project = HSP',
-            maxResults: '1000',
-            nextPageToken: 'EgQIlMIC',
-        );
+        $request = $this->deserialize(Schema\IdSearchRequestBean::class, [
+            'jql' => 'project = HSP',
+            'maxResults' => '1000',
+            'nextPageToken' => 'EgQIlMIC',
+        ]);
 
         $this->assertCall(
             method: 'searchForIssuesIds',

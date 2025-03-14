@@ -65,14 +65,14 @@ class ProjectVersionsTest extends OperationsTestCase
 
     public function testCreateVersion(): void
     {
-        $request = new Schema\Version(
-            archived: false,
-            description: 'An excellent version',
-            name: 'New Version 1',
-            projectId: '10000',
-            releaseDate: '2010-07-06',
-            released: true,
-        );
+        $request = $this->deserialize(Schema\Version::class, [
+            'archived' => false,
+            'description' => 'An excellent version',
+            'name' => 'New Version 1',
+            'projectId' => '10000',
+            'releaseDate' => '2010-07-06',
+            'released' => true,
+        ]);
 
         $this->assertCall(
             method: 'createVersion',
@@ -115,18 +115,18 @@ class ProjectVersionsTest extends OperationsTestCase
 
     public function testUpdateVersion(): void
     {
-        $request = new Schema\Version(
-            archived: false,
-            description: 'An excellent version',
-            id: '10000',
-            name: 'New Version 1',
-            overdue: true,
-            projectId: '10000',
-            releaseDate: '2010-07-06',
-            released: true,
-            self: 'https://your-domain.atlassian.net/rest/api/~ver~/version/10000',
-            userReleaseDate: '6/Jul/2010',
-        );
+        $request = $this->deserialize(Schema\Version::class, [
+            'archived' => false,
+            'description' => 'An excellent version',
+            'id' => '10000',
+            'name' => 'New Version 1',
+            'overdue' => true,
+            'projectId' => '10000',
+            'releaseDate' => '2010-07-06',
+            'released' => true,
+            'self' => 'https://your-domain.atlassian.net/rest/api/~ver~/version/10000',
+            'userReleaseDate' => '6/Jul/2010',
+        ]);
 
         $id = 'foo';
 
@@ -197,9 +197,9 @@ class ProjectVersionsTest extends OperationsTestCase
 
     public function testMoveVersion(): void
     {
-        $request = new Schema\VersionMoveBean(
-            after: 'https://your-domain.atlassian.net/rest/api/~ver~/version/10000',
-        );
+        $request = $this->deserialize(Schema\VersionMoveBean::class, [
+            'after' => 'https://your-domain.atlassian.net/rest/api/~ver~/version/10000',
+        ]);
 
         $id = 'foo';
 
@@ -263,12 +263,12 @@ class ProjectVersionsTest extends OperationsTestCase
 
     public function testUpdateRelatedWork(): void
     {
-        $request = new Schema\VersionRelatedWork(
-            category: 'Design',
-            relatedWorkId: 'fabcdef6-7878-1234-beaf-43211234abcd',
-            title: 'Design link',
-            url: 'https://www.atlassian.com',
-        );
+        $request = $this->deserialize(Schema\VersionRelatedWork::class, [
+            'category' => 'Design',
+            'relatedWorkId' => 'fabcdef6-7878-1234-beaf-43211234abcd',
+            'title' => 'Design link',
+            'url' => 'https://www.atlassian.com',
+        ]);
 
         $id = 'foo';
 
@@ -292,11 +292,11 @@ class ProjectVersionsTest extends OperationsTestCase
 
     public function testCreateRelatedWork(): void
     {
-        $request = new Schema\VersionRelatedWork(
-            category: 'Design',
-            title: 'Design link',
-            url: 'https://www.atlassian.com',
-        );
+        $request = $this->deserialize(Schema\VersionRelatedWork::class, [
+            'category' => 'Design',
+            'title' => 'Design link',
+            'url' => 'https://www.atlassian.com',
+        ]);
 
         $id = 'foo';
 

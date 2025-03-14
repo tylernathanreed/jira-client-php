@@ -59,12 +59,12 @@ class JQLFunctionsAppsTest extends OperationsTestCase
 
     public function testGetPrecomputationsByID(): void
     {
-        $request = new Schema\JqlFunctionPrecomputationGetByIdRequest(
-            precomputationIDs: [
+        $request = $this->deserialize(Schema\JqlFunctionPrecomputationGetByIdRequest::class, [
+            'precomputationIDs' => [
                 'f2ef228b-367f-4c6b-bd9d-0d0e96b5bd7b',
                 '2a854f11-d0e1-4260-aea8-64a562a7062a',
             ],
-        );
+        ]);
 
         $orderBy = null;
 

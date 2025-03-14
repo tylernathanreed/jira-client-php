@@ -66,10 +66,10 @@ class ScreensTest extends OperationsTestCase
 
     public function testCreateScreen(): void
     {
-        $request = new Schema\ScreenDetails(
-            description: 'Enables changes to resolution and linked issues.',
-            name: 'Resolve Security Issue Screen',
-        );
+        $request = $this->deserialize(Schema\ScreenDetails::class, [
+            'description' => 'Enables changes to resolution and linked issues.',
+            'name' => 'Resolve Security Issue Screen',
+        ]);
 
         $this->assertCall(
             method: 'createScreen',
@@ -111,10 +111,10 @@ class ScreensTest extends OperationsTestCase
 
     public function testUpdateScreen(): void
     {
-        $request = new Schema\UpdateScreenDetails(
-            description: 'Enables changes to resolution and linked issues for accessibility related issues.',
-            name: 'Resolve Accessibility Issue Screen',
-        );
+        $request = $this->deserialize(Schema\UpdateScreenDetails::class, [
+            'description' => 'Enables changes to resolution and linked issues for accessibility related issues.',
+            'name' => 'Resolve Accessibility Issue Screen',
+        ]);
 
         $screenId = 1234;
 

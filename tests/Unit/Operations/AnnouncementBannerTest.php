@@ -24,12 +24,12 @@ class AnnouncementBannerTest extends OperationsTestCase
 
     public function testSetBanner(): void
     {
-        $request = new Schema\AnnouncementBannerConfigurationUpdate(
-            isDismissible: false,
-            isEnabled: true,
-            message: 'This is a public, enabled, non-dismissible banner, set using the API',
-            visibility: 'public',
-        );
+        $request = $this->deserialize(Schema\AnnouncementBannerConfigurationUpdate::class, [
+            'isDismissible' => false,
+            'isEnabled' => true,
+            'message' => 'This is a public, enabled, non-dismissible banner, set using the API',
+            'visibility' => 'public',
+        ]);
 
         $this->assertCall(
             method: 'setBanner',

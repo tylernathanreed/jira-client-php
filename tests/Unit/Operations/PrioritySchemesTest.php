@@ -65,9 +65,25 @@ class PrioritySchemesTest extends OperationsTestCase
 
     public function testSuggestedPrioritiesForMappings(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\SuggestedMappingsRequestBean::class, [
+            'maxResults' => '50',
+            'priorities' => [
+                'add' => [
+                    0 => '10001',
+                    1 => '10002',
+                ],
+                'remove' => [
+                    0 => '10003',
+                ],
+            ],
+            'projects' => [
+                'add' => [
+                    0 => '10021',
+                ],
+            ],
+            'schemeId' => '10005',
+            'startAt' => '0',
+        ]);
 
         $this->assertCall(
             method: 'suggestedPrioritiesForMappings',

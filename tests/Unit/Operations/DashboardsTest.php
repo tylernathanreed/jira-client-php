@@ -33,17 +33,17 @@ class DashboardsTest extends OperationsTestCase
 
     public function testCreateDashboard(): void
     {
-        $request = new Schema\DashboardDetails(
-            description: 'A dashboard to help auditors identify sample of issues to check.',
-            editPermissions: [
+        $request = $this->deserialize(Schema\DashboardDetails::class, [
+            'description' => 'A dashboard to help auditors identify sample of issues to check.',
+            'editPermissions' => [
             ],
-            name: 'Auditors dashboard',
-            sharePermissions: [
+            'name' => 'Auditors dashboard',
+            'sharePermissions' => [
                 [
                     'type' => 'global',
                 ],
             ],
-        );
+        ]);
 
         $extendAdminPermissions = false;
 
@@ -355,17 +355,17 @@ class DashboardsTest extends OperationsTestCase
 
     public function testUpdateDashboard(): void
     {
-        $request = new Schema\DashboardDetails(
-            description: 'A dashboard to help auditors identify sample of issues to check.',
-            editPermissions: [
+        $request = $this->deserialize(Schema\DashboardDetails::class, [
+            'description' => 'A dashboard to help auditors identify sample of issues to check.',
+            'editPermissions' => [
             ],
-            name: 'Auditors dashboard',
-            sharePermissions: [
+            'name' => 'Auditors dashboard',
+            'sharePermissions' => [
                 [
                     'type' => 'global',
                 ],
             ],
-        );
+        ]);
 
         $id = 'foo';
         $extendAdminPermissions = false;
@@ -412,17 +412,17 @@ class DashboardsTest extends OperationsTestCase
 
     public function testCopyDashboard(): void
     {
-        $request = new Schema\DashboardDetails(
-            description: 'A dashboard to help auditors identify sample of issues to check.',
-            editPermissions: [
+        $request = $this->deserialize(Schema\DashboardDetails::class, [
+            'description' => 'A dashboard to help auditors identify sample of issues to check.',
+            'editPermissions' => [
             ],
-            name: 'Auditors dashboard',
-            sharePermissions: [
+            'name' => 'Auditors dashboard',
+            'sharePermissions' => [
                 [
                     'type' => 'global',
                 ],
             ],
-        );
+        ]);
 
         $id = 'foo';
         $extendAdminPermissions = false;

@@ -94,10 +94,10 @@ class ProjectRolesTest extends OperationsTestCase
 
     public function testCreateProjectRole(): void
     {
-        $request = new Schema\CreateUpdateRoleRequestBean(
-            description: 'A project role that represents developers in a project',
-            name: 'Developers',
-        );
+        $request = $this->deserialize(Schema\CreateUpdateRoleRequestBean::class, [
+            'description' => 'A project role that represents developers in a project',
+            'name' => 'Developers',
+        ]);
 
         $this->assertCall(
             method: 'createProjectRole',
@@ -137,10 +137,10 @@ class ProjectRolesTest extends OperationsTestCase
 
     public function testFullyUpdateProjectRole(): void
     {
-        $request = new Schema\CreateUpdateRoleRequestBean(
-            description: 'A project role that represents developers in a project',
-            name: 'Developers',
-        );
+        $request = $this->deserialize(Schema\CreateUpdateRoleRequestBean::class, [
+            'description' => 'A project role that represents developers in a project',
+            'name' => 'Developers',
+        ]);
 
         $id = 1234;
 
@@ -164,10 +164,10 @@ class ProjectRolesTest extends OperationsTestCase
 
     public function testPartialUpdateProjectRole(): void
     {
-        $request = new Schema\CreateUpdateRoleRequestBean(
-            description: 'A project role that represents developers in a project',
-            name: 'Developers',
-        );
+        $request = $this->deserialize(Schema\CreateUpdateRoleRequestBean::class, [
+            'description' => 'A project role that represents developers in a project',
+            'name' => 'Developers',
+        ]);
 
         $id = 1234;
 

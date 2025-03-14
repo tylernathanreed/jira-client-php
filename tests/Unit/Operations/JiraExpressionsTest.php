@@ -9,16 +9,16 @@ class JiraExpressionsTest extends OperationsTestCase
 {
     public function testAnalyseExpression(): void
     {
-        $request = new Schema\JiraExpressionForAnalysis(
-            contextVariables: [
+        $request = $this->deserialize(Schema\JiraExpressionForAnalysis::class, [
+            'contextVariables' => [
                 'listOfStrings' => 'List<String>',
                 'record' => '{ a: Number, b: String }',
                 'value' => 'User',
             ],
-            expressions: [
+            'expressions' => [
                 'issues.map(issue => issue.properties[\\\'property_key\\\']]',
             ],
-        );
+        ]);
 
         $check = 'syntax';
 

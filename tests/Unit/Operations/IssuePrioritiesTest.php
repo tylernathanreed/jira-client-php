@@ -24,12 +24,12 @@ class IssuePrioritiesTest extends OperationsTestCase
 
     public function testCreatePriority(): void
     {
-        $request = new Schema\CreatePriorityDetails(
-            description: 'My priority description',
-            iconUrl: 'images/icons/priorities/major.png',
-            name: 'My new priority',
-            statusColor: '#ABCDEF',
-        );
+        $request = $this->deserialize(Schema\CreatePriorityDetails::class, [
+            'description' => 'My priority description',
+            'iconUrl' => 'images/icons/priorities/major.png',
+            'name' => 'My new priority',
+            'statusColor' => '#ABCDEF',
+        ]);
 
         $this->assertCall(
             method: 'createPriority',
@@ -49,9 +49,9 @@ class IssuePrioritiesTest extends OperationsTestCase
 
     public function testSetDefaultPriority(): void
     {
-        $request = new Schema\SetDefaultPriorityRequest(
-            id: '3',
-        );
+        $request = $this->deserialize(Schema\SetDefaultPriorityRequest::class, [
+            'id' => '3',
+        ]);
 
         $this->assertCall(
             method: 'setDefaultPriority',
@@ -71,13 +71,13 @@ class IssuePrioritiesTest extends OperationsTestCase
 
     public function testMovePriorities(): void
     {
-        $request = new Schema\ReorderIssuePriorities(
-            after: '10003',
-            ids: [
+        $request = $this->deserialize(Schema\ReorderIssuePriorities::class, [
+            'after' => '10003',
+            'ids' => [
                 '10004',
                 '10005',
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'movePriorities',
@@ -149,12 +149,12 @@ class IssuePrioritiesTest extends OperationsTestCase
 
     public function testUpdatePriority(): void
     {
-        $request = new Schema\UpdatePriorityDetails(
-            description: 'My updated priority description',
-            iconUrl: 'images/icons/priorities/minor.png',
-            name: 'My updated priority',
-            statusColor: '#123456',
-        );
+        $request = $this->deserialize(Schema\UpdatePriorityDetails::class, [
+            'description' => 'My updated priority description',
+            'iconUrl' => 'images/icons/priorities/minor.png',
+            'name' => 'My updated priority',
+            'statusColor' => '#123456',
+        ]);
 
         $id = 'foo';
 

@@ -52,9 +52,9 @@ class ProjectPermissionSchemesTest extends OperationsTestCase
 
     public function testAssignPermissionScheme(): void
     {
-        $request = new Schema\IdBean(
-            id: '10000',
-        );
+        $request = $this->deserialize(Schema\IdBean::class, [
+            'id' => '10000',
+        ]);
 
         $projectKeyOrId = 'foo';
         $expand = null;

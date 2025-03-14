@@ -36,9 +36,9 @@ class WorkflowTransitionPropertiesTest extends OperationsTestCase
 
     public function testUpdateWorkflowTransitionProperty(): void
     {
-        $request = new Schema\WorkflowTransitionProperty(
-            value: 'createissue',
-        );
+        $request = $this->deserialize(Schema\WorkflowTransitionProperty::class, [
+            'value' => 'createissue',
+        ]);
 
         $transitionId = 1234;
         $key = 'foo';
@@ -69,9 +69,9 @@ class WorkflowTransitionPropertiesTest extends OperationsTestCase
 
     public function testCreateWorkflowTransitionProperty(): void
     {
-        $request = new Schema\WorkflowTransitionProperty(
-            value: 'createissue',
-        );
+        $request = $this->deserialize(Schema\WorkflowTransitionProperty::class, [
+            'value' => 'createissue',
+        ]);
 
         $transitionId = 1234;
         $key = 'foo';

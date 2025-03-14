@@ -9,14 +9,14 @@ class IssueCommentsTest extends OperationsTestCase
 {
     public function testGetCommentsByIds(): void
     {
-        $request = new Schema\IssueCommentListRequestBean(
-            ids: [
-                1,
-                2,
-                5,
-                10,
+        $request = $this->deserialize(Schema\IssueCommentListRequestBean::class, [
+            'ids' => [
+                '1',
+                '2',
+                '5',
+                '10',
             ],
-        );
+        ]);
 
         $expand = null;
 
@@ -69,9 +69,31 @@ class IssueCommentsTest extends OperationsTestCase
 
     public function testAddComment(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\Comment::class, [
+            'body' => [
+                'content' => [
+                    0 => [
+                        'content' => [
+                            0 => [
+                                'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.',
+                                'type' => 'text',
+                            ],
+                        ],
+                        'type' => 'paragraph',
+                    ],
+                ],
+                'type' => 'doc',
+                'version' => '1',
+            ],
+            'visibility' => [
+                'identifier' => 'Administrators',
+                'type' => 'role',
+                'value' => 'Administrators',
+            ],
+        ]);
+
+        $issueIdOrKey = 'foo';
+        $expand = null;
 
         $this->assertCall(
             method: 'addComment',
@@ -120,9 +142,34 @@ class IssueCommentsTest extends OperationsTestCase
 
     public function testUpdateComment(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\Comment::class, [
+            'body' => [
+                'content' => [
+                    0 => [
+                        'content' => [
+                            0 => [
+                                'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.',
+                                'type' => 'text',
+                            ],
+                        ],
+                        'type' => 'paragraph',
+                    ],
+                ],
+                'type' => 'doc',
+                'version' => '1',
+            ],
+            'visibility' => [
+                'identifier' => 'Administrators',
+                'type' => 'role',
+                'value' => 'Administrators',
+            ],
+        ]);
+
+        $issueIdOrKey = 'foo';
+        $id = 'foo';
+        $notifyUsers = true;
+        $overrideEditableFlag = false;
+        $expand = null;
 
         $this->assertCall(
             method: 'updateComment',

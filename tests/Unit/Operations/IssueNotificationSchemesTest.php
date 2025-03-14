@@ -39,10 +39,10 @@ class IssueNotificationSchemesTest extends OperationsTestCase
 
     public function testCreateNotificationScheme(): void
     {
-        $request = new Schema\CreateNotificationSchemeDetails(
-            description: 'My new scheme description',
-            name: 'My new notification scheme',
-            notificationSchemeEvents: [
+        $request = $this->deserialize(Schema\CreateNotificationSchemeDetails::class, [
+            'description' => 'My new scheme description',
+            'name' => 'My new notification scheme',
+            'notificationSchemeEvents' => [
                 [
                     'event' => [
                         'id' => '1',
@@ -55,7 +55,7 @@ class IssueNotificationSchemesTest extends OperationsTestCase
                     ],
                 ],
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'createNotificationScheme',
@@ -124,10 +124,10 @@ class IssueNotificationSchemesTest extends OperationsTestCase
 
     public function testUpdateNotificationScheme(): void
     {
-        $request = new Schema\UpdateNotificationSchemeDetails(
-            description: 'My updated notification scheme description',
-            name: 'My updated notification scheme',
-        );
+        $request = $this->deserialize(Schema\UpdateNotificationSchemeDetails::class, [
+            'description' => 'My updated notification scheme description',
+            'name' => 'My updated notification scheme',
+        ]);
 
         $id = 'foo';
 
@@ -151,8 +151,8 @@ class IssueNotificationSchemesTest extends OperationsTestCase
 
     public function testAddNotifications(): void
     {
-        $request = new Schema\AddNotificationsDetails(
-            notificationSchemeEvents: [
+        $request = $this->deserialize(Schema\AddNotificationsDetails::class, [
+            'notificationSchemeEvents' => [
                 [
                     'event' => [
                         'id' => '1',
@@ -165,7 +165,7 @@ class IssueNotificationSchemesTest extends OperationsTestCase
                     ],
                 ],
             ],
-        );
+        ]);
 
         $id = 'foo';
 

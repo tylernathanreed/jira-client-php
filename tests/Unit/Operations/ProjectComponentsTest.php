@@ -37,14 +37,14 @@ class ProjectComponentsTest extends OperationsTestCase
 
     public function testCreateComponent(): void
     {
-        $request = new Schema\ProjectComponent(
-            assigneeType: 'PROJECT_LEAD',
-            description: 'This is a Jira component',
-            isAssigneeTypeValid: false,
-            leadAccountId: '5b10a2844c20165700ede21g',
-            name: 'Component 1',
-            project: 'HSP',
-        );
+        $request = $this->deserialize(Schema\ProjectComponent::class, [
+            'assigneeType' => 'PROJECT_LEAD',
+            'description' => 'This is a Jira component',
+            'isAssigneeTypeValid' => false,
+            'leadAccountId' => '5b10a2844c20165700ede21g',
+            'name' => 'Component 1',
+            'project' => 'HSP',
+        ]);
 
         $this->assertCall(
             method: 'createComponent',
@@ -84,13 +84,13 @@ class ProjectComponentsTest extends OperationsTestCase
 
     public function testUpdateComponent(): void
     {
-        $request = new Schema\ProjectComponent(
-            assigneeType: 'PROJECT_LEAD',
-            description: 'This is a Jira component',
-            isAssigneeTypeValid: false,
-            leadAccountId: '5b10a2844c20165700ede21g',
-            name: 'Component 1',
-        );
+        $request = $this->deserialize(Schema\ProjectComponent::class, [
+            'assigneeType' => 'PROJECT_LEAD',
+            'description' => 'This is a Jira component',
+            'isAssigneeTypeValid' => false,
+            'leadAccountId' => '5b10a2844c20165700ede21g',
+            'name' => 'Component 1',
+        ]);
 
         $id = 'foo';
 

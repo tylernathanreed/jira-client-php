@@ -29,10 +29,10 @@ class PermissionSchemesTest extends OperationsTestCase
 
     public function testCreatePermissionScheme(): void
     {
-        $request = new Schema\PermissionScheme(
-            description: 'description',
-            name: 'Example permission scheme',
-            permissions: [
+        $request = $this->deserialize(Schema\PermissionScheme::class, [
+            'description' => 'description',
+            'name' => 'Example permission scheme',
+            'permissions' => [
                 [
                     'holder' => [
                         'parameter' => 'jira-core-users',
@@ -42,7 +42,7 @@ class PermissionSchemesTest extends OperationsTestCase
                     'permission' => 'ADMINISTER_PROJECTS',
                 ],
             ],
-        );
+        ]);
 
         $expand = null;
 
@@ -89,10 +89,10 @@ class PermissionSchemesTest extends OperationsTestCase
 
     public function testUpdatePermissionScheme(): void
     {
-        $request = new Schema\PermissionScheme(
-            description: 'description',
-            name: 'Example permission scheme',
-            permissions: [
+        $request = $this->deserialize(Schema\PermissionScheme::class, [
+            'description' => 'description',
+            'name' => 'Example permission scheme',
+            'permissions' => [
                 [
                     'holder' => [
                         'parameter' => 'jira-core-users',
@@ -102,7 +102,7 @@ class PermissionSchemesTest extends OperationsTestCase
                     'permission' => 'ADMINISTER_PROJECTS',
                 ],
             ],
-        );
+        ]);
 
         $schemeId = 1234;
         $expand = null;
@@ -172,9 +172,17 @@ class PermissionSchemesTest extends OperationsTestCase
 
     public function testCreatePermissionGrant(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\PermissionGrant::class, [
+            'holder' => [
+                'parameter' => 'jira-core-users',
+                'type' => 'group',
+                'value' => 'ca85fac0-d974-40ca-a615-7af99c48d24f',
+            ],
+            'permission' => 'ADMINISTER_PROJECTS',
+        ]);
+
+        $schemeId = 1234;
+        $expand = null;
 
         $this->assertCall(
             method: 'createPermissionGrant',

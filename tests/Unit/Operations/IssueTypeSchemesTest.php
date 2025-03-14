@@ -39,16 +39,16 @@ class IssueTypeSchemesTest extends OperationsTestCase
 
     public function testCreateIssueTypeScheme(): void
     {
-        $request = new Schema\IssueTypeSchemeDetails(
-            defaultIssueTypeId: '10002',
-            description: 'A collection of issue types suited to use in a kanban style project.',
-            issueTypeIds: [
+        $request = $this->deserialize(Schema\IssueTypeSchemeDetails::class, [
+            'defaultIssueTypeId' => '10002',
+            'description' => 'A collection of issue types suited to use in a kanban style project.',
+            'issueTypeIds' => [
                 '10001',
                 '10002',
                 '10003',
             ],
-            name: 'Kanban Issue Type Scheme',
-        );
+            'name' => 'Kanban Issue Type Scheme',
+        ]);
 
         $this->assertCall(
             method: 'createIssueTypeScheme',
@@ -116,10 +116,10 @@ class IssueTypeSchemesTest extends OperationsTestCase
 
     public function testAssignIssueTypeSchemeToProject(): void
     {
-        $request = new Schema\IssueTypeSchemeProjectAssociation(
-            issueTypeSchemeId: '10000',
-            projectId: '10000',
-        );
+        $request = $this->deserialize(Schema\IssueTypeSchemeProjectAssociation::class, [
+            'issueTypeSchemeId' => '10000',
+            'projectId' => '10000',
+        ]);
 
         $this->assertCall(
             method: 'assignIssueTypeSchemeToProject',
@@ -139,11 +139,11 @@ class IssueTypeSchemesTest extends OperationsTestCase
 
     public function testUpdateIssueTypeScheme(): void
     {
-        $request = new Schema\IssueTypeSchemeUpdateDetails(
-            defaultIssueTypeId: '10002',
-            description: 'A collection of issue types suited to use in a kanban style project.',
-            name: 'Kanban Issue Type Scheme',
-        );
+        $request = $this->deserialize(Schema\IssueTypeSchemeUpdateDetails::class, [
+            'defaultIssueTypeId' => '10002',
+            'description' => 'A collection of issue types suited to use in a kanban style project.',
+            'name' => 'Kanban Issue Type Scheme',
+        ]);
 
         $issueTypeSchemeId = 1234;
 
@@ -187,13 +187,13 @@ class IssueTypeSchemesTest extends OperationsTestCase
 
     public function testAddIssueTypesToIssueTypeScheme(): void
     {
-        $request = new Schema\IssueTypeIds(
-            issueTypeIds: [
+        $request = $this->deserialize(Schema\IssueTypeIds::class, [
+            'issueTypeIds' => [
                 '10000',
                 '10002',
                 '10003',
             ],
-        );
+        ]);
 
         $issueTypeSchemeId = 1234;
 
@@ -217,14 +217,14 @@ class IssueTypeSchemesTest extends OperationsTestCase
 
     public function testReorderIssueTypesInIssueTypeScheme(): void
     {
-        $request = new Schema\OrderOfIssueTypes(
-            after: '10008',
-            issueTypeIds: [
+        $request = $this->deserialize(Schema\OrderOfIssueTypes::class, [
+            'after' => '10008',
+            'issueTypeIds' => [
                 '10001',
                 '10004',
                 '10002',
             ],
-        );
+        ]);
 
         $issueTypeSchemeId = 1234;
 

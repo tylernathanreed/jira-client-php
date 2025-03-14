@@ -39,9 +39,15 @@ class ScreenSchemesTest extends OperationsTestCase
 
     public function testCreateScreenScheme(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\ScreenSchemeDetails::class, [
+            'description' => 'Manage employee data',
+            'name' => 'Employee screen scheme',
+            'screens' => [
+                'default' => '10017',
+                'edit' => '10019',
+                'view' => '10020',
+            ],
+        ]);
 
         $this->assertCall(
             method: 'createScreenScheme',
@@ -61,9 +67,15 @@ class ScreenSchemesTest extends OperationsTestCase
 
     public function testUpdateScreenScheme(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\UpdateScreenSchemeDetails::class, [
+            'name' => 'Employee screen scheme v2',
+            'screens' => [
+                'create' => '10019',
+                'default' => '10018',
+            ],
+        ]);
+
+        $screenSchemeId = 'foo';
 
         $this->assertCall(
             method: 'updateScreenScheme',

@@ -24,11 +24,11 @@ class IssueLinkTypesTest extends OperationsTestCase
 
     public function testCreateIssueLinkType(): void
     {
-        $request = new Schema\IssueLinkType(
-            inward: 'Duplicated by',
-            name: 'Duplicate',
-            outward: 'Duplicates',
-        );
+        $request = $this->deserialize(Schema\IssueLinkType::class, [
+            'inward' => 'Duplicated by',
+            'name' => 'Duplicate',
+            'outward' => 'Duplicates',
+        ]);
 
         $this->assertCall(
             method: 'createIssueLinkType',
@@ -68,11 +68,11 @@ class IssueLinkTypesTest extends OperationsTestCase
 
     public function testUpdateIssueLinkType(): void
     {
-        $request = new Schema\IssueLinkType(
-            inward: 'Duplicated by',
-            name: 'Duplicate',
-            outward: 'Duplicates',
-        );
+        $request = $this->deserialize(Schema\IssueLinkType::class, [
+            'inward' => 'Duplicated by',
+            'name' => 'Duplicate',
+            'outward' => 'Duplicates',
+        ]);
 
         $issueLinkTypeId = 'foo';
 

@@ -9,12 +9,12 @@ class IssueCustomFieldConfigurationAppsTest extends OperationsTestCase
 {
     public function testGetCustomFieldsConfigurations(): void
     {
-        $request = new Schema\ConfigurationsListParameters(
-            fieldIdsOrKeys: [
+        $request = $this->deserialize(Schema\ConfigurationsListParameters::class, [
+            'fieldIdsOrKeys' => [
                 'customfield_10035',
                 'customfield_10036',
             ],
-        );
+        ]);
 
         $id = null;
         $fieldContextId = null;

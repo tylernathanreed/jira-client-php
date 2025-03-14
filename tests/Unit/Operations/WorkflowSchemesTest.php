@@ -31,15 +31,15 @@ class WorkflowSchemesTest extends OperationsTestCase
 
     public function testCreateWorkflowScheme(): void
     {
-        $request = new Schema\WorkflowScheme(
-            defaultWorkflow: 'jira',
-            description: 'The description of the example workflow scheme.',
-            issueTypeMappings: [
+        $request = $this->deserialize(Schema\WorkflowScheme::class, [
+            'defaultWorkflow' => 'jira',
+            'description' => 'The description of the example workflow scheme.',
+            'issueTypeMappings' => [
                 10000 => 'scrum workflow',
                 10001 => 'builds workflow',
             ],
-            name: 'Example workflow scheme',
-        );
+            'name' => 'Example workflow scheme',
+        ]);
 
         $this->assertCall(
             method: 'createWorkflowScheme',
@@ -59,15 +59,15 @@ class WorkflowSchemesTest extends OperationsTestCase
 
     public function testReadWorkflowSchemes(): void
     {
-        $request = new Schema\WorkflowSchemeReadRequest(
-            projectIds: [
+        $request = $this->deserialize(Schema\WorkflowSchemeReadRequest::class, [
+            'projectIds' => [
                 '10047',
                 '10048',
             ],
-            workflowSchemeIds: [
+            'workflowSchemeIds' => [
                 '3e59db0f-ed6c-47ce-8d50-80c0c4572677',
             ],
-        );
+        ]);
 
         $expand = null;
 
@@ -113,10 +113,10 @@ class WorkflowSchemesTest extends OperationsTestCase
 
     public function testUpdateWorkflowSchemeMappings(): void
     {
-        $request = new Schema\WorkflowSchemeUpdateRequiredMappingsRequest(
-            defaultWorkflowId: '10010',
-            id: '10001',
-            workflowsForIssueTypes: [
+        $request = $this->deserialize(Schema\WorkflowSchemeUpdateRequiredMappingsRequest::class, [
+            'defaultWorkflowId' => '10010',
+            'id' => '10001',
+            'workflowsForIssueTypes' => [
                 [
                     'issueTypeIds' => [
                         '10010',
@@ -125,7 +125,7 @@ class WorkflowSchemesTest extends OperationsTestCase
                     'workflowId' => '10001',
                 ],
             ],
-        );
+        ]);
 
         $this->assertCall(
             method: 'updateWorkflowSchemeMappings',
@@ -168,15 +168,15 @@ class WorkflowSchemesTest extends OperationsTestCase
 
     public function testUpdateWorkflowScheme(): void
     {
-        $request = new Schema\WorkflowScheme(
-            defaultWorkflow: 'jira',
-            description: 'The description of the example workflow scheme.',
-            issueTypeMappings: [
+        $request = $this->deserialize(Schema\WorkflowScheme::class, [
+            'defaultWorkflow' => 'jira',
+            'description' => 'The description of the example workflow scheme.',
+            'issueTypeMappings' => [
                 10000 => 'scrum workflow',
             ],
-            name: 'Example workflow scheme',
-            updateDraftIfNeeded: false,
-        );
+            'name' => 'Example workflow scheme',
+            'updateDraftIfNeeded' => false,
+        ]);
 
         $id = 1234;
 
@@ -243,10 +243,10 @@ class WorkflowSchemesTest extends OperationsTestCase
 
     public function testUpdateDefaultWorkflow(): void
     {
-        $request = new Schema\DefaultWorkflow(
-            updateDraftIfNeeded: false,
-            workflow: 'jira',
-        );
+        $request = $this->deserialize(Schema\DefaultWorkflow::class, [
+            'updateDraftIfNeeded' => false,
+            'workflow' => 'jira',
+        ]);
 
         $id = 1234;
 
@@ -318,11 +318,11 @@ class WorkflowSchemesTest extends OperationsTestCase
 
     public function testSetWorkflowSchemeIssueType(): void
     {
-        $request = new Schema\IssueTypeWorkflowMapping(
-            issueType: '10000',
-            updateDraftIfNeeded: false,
-            workflow: 'jira',
-        );
+        $request = $this->deserialize(Schema\IssueTypeWorkflowMapping::class, [
+            'issueType' => '10000',
+            'updateDraftIfNeeded' => false,
+            'workflow' => 'jira',
+        ]);
 
         $id = 1234;
         $issueType = 'foo';
@@ -398,13 +398,13 @@ class WorkflowSchemesTest extends OperationsTestCase
 
     public function testUpdateWorkflowMapping(): void
     {
-        $request = new Schema\IssueTypesWorkflowMapping(
-            issueTypes: [
+        $request = $this->deserialize(Schema\IssueTypesWorkflowMapping::class, [
+            'issueTypes' => [
                 '10000',
             ],
-            updateDraftIfNeeded: true,
-            workflow: 'jira',
-        );
+            'updateDraftIfNeeded' => true,
+            'workflow' => 'jira',
+        ]);
 
         $id = 1234;
         $workflowName = 'foo';
