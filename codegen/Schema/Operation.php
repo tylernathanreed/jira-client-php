@@ -434,10 +434,6 @@ final class Operation extends AbstractSchema implements Stringable
             'testGetAllProjects',
             'testGetRecent',
 
-            // Undefined Schema
-            'testSubmitBulkUnwatch',
-            'testSubmitBulkWatch',
-
             // Missing discriminator
             'testGetDefaultValues',
 

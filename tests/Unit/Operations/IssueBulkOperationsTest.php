@@ -166,9 +166,13 @@ class IssueBulkOperationsTest extends OperationsTestCase
 
     public function testSubmitBulkUnwatch(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssueBulkWatchOrUnwatchPayload::class, [
+            'selectedIssueIdsOrKeys' => [
+                '10001',
+                '10002',
+            ],
+            'sendBulkNotification' => false,
+        ]);
 
         $this->assertCall(
             method: 'submitBulkUnwatch',
@@ -188,9 +192,13 @@ class IssueBulkOperationsTest extends OperationsTestCase
 
     public function testSubmitBulkWatch(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssueBulkWatchOrUnwatchPayload::class, [
+            'selectedIssueIdsOrKeys' => [
+                '10001',
+                '10002',
+            ],
+            'sendBulkNotification' => false,
+        ]);
 
         $this->assertCall(
             method: 'submitBulkWatch',
