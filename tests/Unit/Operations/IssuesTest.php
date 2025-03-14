@@ -46,9 +46,134 @@ class IssuesTest extends OperationsTestCase
 
     public function testCreateIssue(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssueUpdateDetails::class, [
+            'fields' => [
+                'assignee' => [
+                    'id' => '5b109f2e9729b51b54dc274d',
+                ],
+                'components' => [
+                    0 => [
+                        'id' => '10000',
+                    ],
+                ],
+                'customfield_10000' => '09/Jun/19',
+                'customfield_20000' => '06/Jul/19 3:25 PM',
+                'customfield_30000' => [
+                    0 => '10000',
+                    1 => '10002',
+                ],
+                'customfield_40000' => [
+                    'content' => [
+                        0 => [
+                            'content' => [
+                                0 => [
+                                    'text' => 'Occurs on all orders',
+                                    'type' => 'text',
+                                ],
+                            ],
+                            'type' => 'paragraph',
+                        ],
+                    ],
+                    'type' => 'doc',
+                    'version' => '1',
+                ],
+                'customfield_50000' => [
+                    'content' => [
+                        0 => [
+                            'content' => [
+                                0 => [
+                                    'text' => 'Could impact day-to-day work.',
+                                    'type' => 'text',
+                                ],
+                            ],
+                            'type' => 'paragraph',
+                        ],
+                    ],
+                    'type' => 'doc',
+                    'version' => '1',
+                ],
+                'customfield_60000' => 'jira-software-users',
+                'customfield_70000' => [
+                    0 => 'jira-administrators',
+                    1 => 'jira-software-users',
+                ],
+                'customfield_80000' => [
+                    'value' => 'red',
+                ],
+                'description' => [
+                    'content' => [
+                        0 => [
+                            'content' => [
+                                0 => [
+                                    'text' => 'Order entry fails when selecting supplier.',
+                                    'type' => 'text',
+                                ],
+                            ],
+                            'type' => 'paragraph',
+                        ],
+                    ],
+                    'type' => 'doc',
+                    'version' => '1',
+                ],
+                'duedate' => '2019-05-11',
+                'environment' => [
+                    'content' => [
+                        0 => [
+                            'content' => [
+                                0 => [
+                                    'text' => 'UAT',
+                                    'type' => 'text',
+                                ],
+                            ],
+                            'type' => 'paragraph',
+                        ],
+                    ],
+                    'type' => 'doc',
+                    'version' => '1',
+                ],
+                'fixVersions' => [
+                    0 => [
+                        'id' => '10001',
+                    ],
+                ],
+                'issuetype' => [
+                    'id' => '10000',
+                ],
+                'labels' => [
+                    0 => 'bugfix',
+                    1 => 'blitz_test',
+                ],
+                'parent' => [
+                    'key' => 'PROJ-123',
+                ],
+                'priority' => [
+                    'id' => '20000',
+                ],
+                'project' => [
+                    'id' => '10000',
+                ],
+                'reporter' => [
+                    'id' => '5b10a2844c20165700ede21g',
+                ],
+                'security' => [
+                    'id' => '10000',
+                ],
+                'summary' => 'Main order flow broken',
+                'timetracking' => [
+                    'originalEstimate' => '10',
+                    'remainingEstimate' => '5',
+                ],
+                'versions' => [
+                    0 => [
+                        'id' => '10000',
+                    ],
+                ],
+            ],
+            'update' => [
+            ],
+        ]);
+
+        $updateHistory = false;
 
         $this->assertCall(
             method: 'createIssue',
@@ -118,9 +243,263 @@ class IssuesTest extends OperationsTestCase
 
     public function testCreateIssues(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssuesUpdateBean::class, [
+            'issueUpdates' => [
+                [
+                    'fields' => [
+                        'assignee' => [
+                            'id' => '5b109f2e9729b51b54dc274d',
+                        ],
+                        'components' => [
+                            [
+                                'id' => '10000',
+                            ],
+                        ],
+                        'customfield_10000' => '09/Jun/19',
+                        'customfield_20000' => '06/Jul/19 3:25 PM',
+                        'customfield_30000' => [
+                            '10000',
+                            '10002',
+                        ],
+                        'customfield_40000' => [
+                            'content' => [
+                                [
+                                    'content' => [
+                                        [
+                                            'text' => 'Occurs on all orders',
+                                            'type' => 'text',
+                                        ],
+                                    ],
+                                    'type' => 'paragraph',
+                                ],
+                            ],
+                            'type' => 'doc',
+                            'version' => '1',
+                        ],
+                        'customfield_50000' => [
+                            'content' => [
+                                [
+                                    'content' => [
+                                        [
+                                            'text' => 'Could impact day-to-day work.',
+                                            'type' => 'text',
+                                        ],
+                                    ],
+                                    'type' => 'paragraph',
+                                ],
+                            ],
+                            'type' => 'doc',
+                            'version' => '1',
+                        ],
+                        'customfield_60000' => 'jira-software-users',
+                        'customfield_70000' => [
+                            'jira-administrators',
+                            'jira-software-users',
+                        ],
+                        'customfield_80000' => [
+                            'value' => 'red',
+                        ],
+                        'description' => [
+                            'content' => [
+                                [
+                                    'content' => [
+                                        [
+                                            'text' => 'Order entry fails when selecting supplier.',
+                                            'type' => 'text',
+                                        ],
+                                    ],
+                                    'type' => 'paragraph',
+                                ],
+                            ],
+                            'type' => 'doc',
+                            'version' => '1',
+                        ],
+                        'duedate' => '2011-03-11',
+                        'environment' => [
+                            'content' => [
+                                [
+                                    'content' => [
+                                        [
+                                            'text' => 'UAT',
+                                            'type' => 'text',
+                                        ],
+                                    ],
+                                    'type' => 'paragraph',
+                                ],
+                            ],
+                            'type' => 'doc',
+                            'version' => '1',
+                        ],
+                        'fixVersions' => [
+                            [
+                                'id' => '10001',
+                            ],
+                        ],
+                        'issuetype' => [
+                            'id' => '10000',
+                        ],
+                        'labels' => [
+                            'bugfix',
+                            'blitz_test',
+                        ],
+                        'priority' => [
+                            'id' => '20000',
+                        ],
+                        'project' => [
+                            'id' => '10000',
+                        ],
+                        'reporter' => [
+                            'id' => '5b10a2844c20165700ede21g',
+                        ],
+                        'security' => [
+                            'id' => '10000',
+                        ],
+                        'summary' => 'Main order flow broken',
+                        'timetracking' => [
+                            'originalEstimate' => '10',
+                            'remainingEstimate' => '5',
+                        ],
+                        'versions' => [
+                            [
+                                'id' => '10000',
+                            ],
+                        ],
+                    ],
+                    'update' => [
+                        'worklog' => [
+                            [
+                                'add' => [
+                                    'started' => '2019-07-05T11:05:00.000+0000',
+                                    'timeSpent' => '60m',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    'fields' => [
+                        'assignee' => [
+                            'id' => '5b109f2e9729b51b54dc274d',
+                        ],
+                        'components' => [
+                            [
+                                'id' => '10000',
+                            ],
+                        ],
+                        'customfield_10000' => '09/Jun/19',
+                        'customfield_20000' => '06/Jul/19 3:25 PM',
+                        'customfield_30000' => [
+                            '10000',
+                            '10002',
+                        ],
+                        'customfield_40000' => [
+                            'content' => [
+                                [
+                                    'content' => [
+                                        [
+                                            'text' => 'Occurs on all orders',
+                                            'type' => 'text',
+                                        ],
+                                    ],
+                                    'type' => 'paragraph',
+                                ],
+                            ],
+                            'type' => 'doc',
+                            'version' => '1',
+                        ],
+                        'customfield_50000' => [
+                            'content' => [
+                                [
+                                    'content' => [
+                                        [
+                                            'text' => 'Could impact day-to-day work.',
+                                            'type' => 'text',
+                                        ],
+                                    ],
+                                    'type' => 'paragraph',
+                                ],
+                            ],
+                            'type' => 'doc',
+                            'version' => '1',
+                        ],
+                        'customfield_60000' => 'jira-software-users',
+                        'customfield_70000' => [
+                            'jira-administrators',
+                            'jira-software-users',
+                        ],
+                        'customfield_80000' => [
+                            'value' => 'red',
+                        ],
+                        'description' => [
+                            'content' => [
+                                [
+                                    'content' => [
+                                        [
+                                            'text' => 'Order remains pending after approved.',
+                                            'type' => 'text',
+                                        ],
+                                    ],
+                                    'type' => 'paragraph',
+                                ],
+                            ],
+                            'type' => 'doc',
+                            'version' => '1',
+                        ],
+                        'duedate' => '2019-04-16',
+                        'environment' => [
+                            'content' => [
+                                [
+                                    'content' => [
+                                        [
+                                            'text' => 'UAT',
+                                            'type' => 'text',
+                                        ],
+                                    ],
+                                    'type' => 'paragraph',
+                                ],
+                            ],
+                            'type' => 'doc',
+                            'version' => '1',
+                        ],
+                        'fixVersions' => [
+                            [
+                                'id' => '10001',
+                            ],
+                        ],
+                        'issuetype' => [
+                            'id' => '10000',
+                        ],
+                        'labels' => [
+                            'new_release',
+                        ],
+                        'priority' => [
+                            'id' => '20000',
+                        ],
+                        'project' => [
+                            'id' => '1000',
+                        ],
+                        'reporter' => [
+                            'id' => '5b10a2844c20165700ede21g',
+                        ],
+                        'security' => [
+                            'id' => '10000',
+                        ],
+                        'summary' => 'Order stuck in pending',
+                        'timetracking' => [
+                            'originalEstimate' => '15',
+                            'remainingEstimate' => '5',
+                        ],
+                        'versions' => [
+                            [
+                                'id' => '10000',
+                            ],
+                        ],
+                    ],
+                    'update' => [
+                    ],
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'createIssues',
@@ -140,9 +519,24 @@ class IssuesTest extends OperationsTestCase
 
     public function testBulkFetchIssues(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\BulkFetchIssueRequestBean::class, [
+            'expand' => [
+                'names',
+            ],
+            'fields' => [
+                'summary',
+                'project',
+                'assignee',
+            ],
+            'fieldsByKeys' => false,
+            'issueIdsOrKeys' => [
+                'EX-1',
+                'EX-2',
+                '10005',
+            ],
+            'properties' => [
+            ],
+        ]);
 
         $this->assertCall(
             method: 'bulkFetchIssues',
@@ -287,9 +681,13 @@ class IssuesTest extends OperationsTestCase
 
     public function testGetIssue(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $issueIdOrKey = 'foo';
+        $fields = null;
+        $fieldsByKeys = false;
+        $expand = null;
+        $properties = null;
+        $updateHistory = false;
+        $failFast = false;
 
         $this->assertCall(
             method: 'getIssue',
@@ -563,9 +961,68 @@ class IssuesTest extends OperationsTestCase
 
     public function testDoTransition(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssueUpdateDetails::class, [
+            'fields' => [
+                'assignee' => [
+                    'name' => 'bob',
+                ],
+                'resolution' => [
+                    'name' => 'Fixed',
+                ],
+            ],
+            'historyMetadata' => [
+                'activityDescription' => 'Complete order processing',
+                'actor' => [
+                    'avatarUrl' => 'http://mysystem/avatar/tony.jpg',
+                    'displayName' => 'Tony',
+                    'id' => 'tony',
+                    'type' => 'mysystem-user',
+                    'url' => 'http://mysystem/users/tony',
+                ],
+                'cause' => [
+                    'id' => 'myevent',
+                    'type' => 'mysystem-event',
+                ],
+                'description' => 'From the order testing process',
+                'extraData' => [
+                    'Iteration' => '10a',
+                    'Step' => '4',
+                ],
+                'generator' => [
+                    'id' => 'mysystem-1',
+                    'type' => 'mysystem-application',
+                ],
+                'type' => 'myplugin:type',
+            ],
+            'transition' => [
+                'id' => '5',
+            ],
+            'update' => [
+                'comment' => [
+                    0 => [
+                        'add' => [
+                            'body' => [
+                                'content' => [
+                                    0 => [
+                                        'content' => [
+                                            0 => [
+                                                'text' => 'Bug has been fixed',
+                                                'type' => 'text',
+                                            ],
+                                        ],
+                                        'type' => 'paragraph',
+                                    ],
+                                ],
+                                'type' => 'doc',
+                                'version' => '1',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $issueIdOrKey = 'foo';
 
         $this->assertCall(
             method: 'doTransition',

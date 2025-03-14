@@ -9,9 +9,9 @@ class IssueCustomFieldOptionsAppsTest extends OperationsTestCase
 {
     public function testGetAllIssueFieldOptions(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $fieldKey = 'foo';
+        $startAt = 0;
+        $maxResults = 50;
 
         $this->assertCall(
             method: 'getAllIssueFieldOptions',
@@ -34,9 +34,44 @@ class IssueCustomFieldOptionsAppsTest extends OperationsTestCase
 
     public function testCreateIssueFieldOption(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssueFieldOptionCreateBean::class, [
+            'config' => [
+                'attributes' => [
+                ],
+                'scope' => [
+                    'global' => [
+                    ],
+                    'projects' => [
+                    ],
+                    'projects2' => [
+                        0 => [
+                            'attributes' => [
+                                0 => 'notSelectable',
+                            ],
+                            'id' => '1001',
+                        ],
+                        1 => [
+                            'attributes' => [
+                                0 => 'notSelectable',
+                            ],
+                            'id' => '1002',
+                        ],
+                    ],
+                ],
+            ],
+            'properties' => [
+                'description' => 'The team\\\'s description',
+                'founded' => '2016-06-06',
+                'leader' => [
+                    'email' => 'lname@example.com',
+                    'name' => 'Leader Name',
+                ],
+                'members' => '42',
+            ],
+            'value' => 'Team 1',
+        ]);
+
+        $fieldKey = 'foo';
 
         $this->assertCall(
             method: 'createIssueFieldOption',
@@ -58,9 +93,10 @@ class IssueCustomFieldOptionsAppsTest extends OperationsTestCase
 
     public function testGetSelectableIssueFieldOptions(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $fieldKey = 'foo';
+        $startAt = 0;
+        $maxResults = 50;
+        $projectId = null;
 
         $this->assertCall(
             method: 'getSelectableIssueFieldOptions',
@@ -84,9 +120,10 @@ class IssueCustomFieldOptionsAppsTest extends OperationsTestCase
 
     public function testGetVisibleIssueFieldOptions(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $fieldKey = 'foo';
+        $startAt = 0;
+        $maxResults = 50;
+        $projectId = null;
 
         $this->assertCall(
             method: 'getVisibleIssueFieldOptions',
@@ -110,9 +147,8 @@ class IssueCustomFieldOptionsAppsTest extends OperationsTestCase
 
     public function testGetIssueFieldOption(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $fieldKey = 'foo';
+        $optionId = 1234;
 
         $this->assertCall(
             method: 'getIssueFieldOption',
@@ -133,9 +169,46 @@ class IssueCustomFieldOptionsAppsTest extends OperationsTestCase
 
     public function testUpdateIssueFieldOption(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssueFieldOption::class, [
+            'config' => [
+                'attributes' => [
+                ],
+                'scope' => [
+                    'global' => [
+                    ],
+                    'projects' => [
+                    ],
+                    'projects2' => [
+                        0 => [
+                            'attributes' => [
+                                0 => 'notSelectable',
+                            ],
+                            'id' => '1001',
+                        ],
+                        1 => [
+                            'attributes' => [
+                                0 => 'notSelectable',
+                            ],
+                            'id' => '1002',
+                        ],
+                    ],
+                ],
+            ],
+            'id' => '1',
+            'properties' => [
+                'description' => 'The team\\\'s description',
+                'founded' => '2016-06-06',
+                'leader' => [
+                    'email' => 'lname@example.com',
+                    'name' => 'Leader Name',
+                ],
+                'members' => '42',
+            ],
+            'value' => 'Team 1',
+        ]);
+
+        $fieldKey = 'foo';
+        $optionId = 1234;
 
         $this->assertCall(
             method: 'updateIssueFieldOption',

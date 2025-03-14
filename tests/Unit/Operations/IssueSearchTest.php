@@ -97,9 +97,22 @@ class IssueSearchTest extends OperationsTestCase
 
     public function testSearchForIssuesUsingJqlPost(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\SearchRequestBean::class, [
+            'expand' => [
+                'names',
+                'schema',
+                'operations',
+            ],
+            'fields' => [
+                'summary',
+                'status',
+                'assignee',
+            ],
+            'fieldsByKeys' => false,
+            'jql' => 'project = HSP',
+            'maxResults' => '15',
+            'startAt' => '0',
+        ]);
 
         $this->assertCall(
             method: 'searchForIssuesUsingJqlPost',

@@ -29,9 +29,104 @@ class WorkflowsTest extends OperationsTestCase
 
     public function testCreateWorkflow(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\CreateWorkflowDetails::class, [
+            'description' => 'This is a workflow used for Stories and Tasks',
+            'name' => 'Workflow 1',
+            'statuses' => [
+                [
+                    'id' => '1',
+                    'properties' => [
+                        'jira.issue.editable' => 'false',
+                    ],
+                ],
+                [
+                    'id' => '2',
+                ],
+                [
+                    'id' => '3',
+                ],
+            ],
+            'transitions' => [
+                [
+                    'from' => [
+                    ],
+                    'name' => 'Created',
+                    'to' => '1',
+                    'type' => 'initial',
+                ],
+                [
+                    'from' => [
+                        '1',
+                    ],
+                    'name' => 'In progress',
+                    'properties' => [
+                        'custom-property' => 'custom-value',
+                    ],
+                    'rules' => [
+                        'conditions' => [
+                            'conditions' => [
+                                [
+                                    'type' => 'RemoteOnlyCondition',
+                                ],
+                                [
+                                    'configuration' => [
+                                        'groups' => [
+                                            'developers',
+                                            'qa-testers',
+                                        ],
+                                    ],
+                                    'type' => 'UserInAnyGroupCondition',
+                                ],
+                            ],
+                            'operator' => 'AND',
+                        ],
+                        'postFunctions' => [
+                            [
+                                'type' => 'AssignToCurrentUserFunction',
+                            ],
+                        ],
+                    ],
+                    'screen' => [
+                        'id' => '10001',
+                    ],
+                    'to' => '2',
+                    'type' => 'directed',
+                ],
+                [
+                    'name' => 'Completed',
+                    'rules' => [
+                        'postFunctions' => [
+                            [
+                                'configuration' => [
+                                    'fieldId' => 'assignee',
+                                ],
+                                'type' => 'ClearFieldValuePostFunction',
+                            ],
+                        ],
+                        'validators' => [
+                            [
+                                'configuration' => [
+                                    'parentStatuses' => [
+                                        [
+                                            'id' => '3',
+                                        ],
+                                    ],
+                                ],
+                                'type' => 'ParentStatusValidator',
+                            ],
+                            [
+                                'configuration' => [
+                                    'permissionKey' => 'ADMINISTER_PROJECTS',
+                                ],
+                                'type' => 'PermissionValidator',
+                            ],
+                        ],
+                    ],
+                    'to' => '3',
+                    'type' => 'global',
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'createWorkflow',
@@ -51,9 +146,13 @@ class WorkflowsTest extends OperationsTestCase
 
     public function testGetWorkflowsPaginated(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $startAt = 0;
+        $maxResults = 50;
+        $workflowName = null;
+        $expand = null;
+        $queryString = null;
+        $orderBy = null;
+        $isActive = null;
 
         $this->assertCall(
             method: 'getWorkflowsPaginated',
@@ -237,9 +336,145 @@ class WorkflowsTest extends OperationsTestCase
 
     public function testCreateWorkflows(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\WorkflowCreateRequest::class, [
+            'scope' => [
+                'type' => 'GLOBAL',
+            ],
+            'statuses' => [
+                [
+                    'description' => '',
+                    'name' => 'To Do',
+                    'statusCategory' => 'TODO',
+                    'statusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                ],
+                [
+                    'description' => '',
+                    'name' => 'In Progress',
+                    'statusCategory' => 'IN_PROGRESS',
+                    'statusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                ],
+                [
+                    'description' => '',
+                    'name' => 'Done',
+                    'statusCategory' => 'DONE',
+                    'statusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                ],
+            ],
+            'workflows' => [
+                [
+                    'description' => '',
+                    'name' => 'Software workflow 1',
+                    'startPointLayout' => [
+                        'x' => '-100.00030899048',
+                        'y' => '-153.00020599365',
+                    ],
+                    'statuses' => [
+                        [
+                            'layout' => [
+                                'x' => '114.99993896484',
+                                'y' => '-16',
+                            ],
+                            'properties' => [
+                            ],
+                            'statusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                        ],
+                        [
+                            'layout' => [
+                                'x' => '317.00009155273',
+                                'y' => '-16',
+                            ],
+                            'properties' => [
+                            ],
+                            'statusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                        ],
+                        [
+                            'layout' => [
+                                'x' => '508.00024414062',
+                                'y' => '-16',
+                            ],
+                            'properties' => [
+                            ],
+                            'statusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                        ],
+                    ],
+                    'transitions' => [
+                        [
+                            'actions' => [
+                            ],
+                            'description' => '',
+                            'id' => '1',
+                            'links' => [
+                            ],
+                            'name' => 'Create',
+                            'properties' => [
+                            ],
+                            'toStatusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                            'triggers' => [
+                            ],
+                            'type' => 'INITIAL',
+                            'validators' => [
+                            ],
+                        ],
+                        [
+                            'actions' => [
+                            ],
+                            'description' => '',
+                            'id' => '11',
+                            'links' => [
+                            ],
+                            'name' => 'To Do',
+                            'properties' => [
+                            ],
+                            'toStatusReference' => 'f0b24de5-25e7-4fab-ab94-63d81db6c0c0',
+                            'triggers' => [
+                            ],
+                            'type' => 'GLOBAL',
+                            'validators' => [
+                            ],
+                        ],
+                        [
+                            'actions' => [
+                            ],
+                            'description' => '',
+                            'id' => '21',
+                            'links' => [
+                            ],
+                            'name' => 'In Progress',
+                            'properties' => [
+                            ],
+                            'toStatusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                            'triggers' => [
+                            ],
+                            'type' => 'GLOBAL',
+                            'validators' => [
+                            ],
+                        ],
+                        [
+                            'actions' => [
+                            ],
+                            'description' => 'Move a work item from in progress to done',
+                            'id' => '31',
+                            'links' => [
+                                [
+                                    'fromPort' => '0',
+                                    'fromStatusReference' => 'c7a35bf0-c127-4aa6-869f-4033730c61d8',
+                                    'toPort' => '1',
+                                ],
+                            ],
+                            'name' => 'Done',
+                            'properties' => [
+                            ],
+                            'toStatusReference' => '6b3fc04d-3316-46c5-a257-65751aeb8849',
+                            'triggers' => [
+                            ],
+                            'type' => 'DIRECTED',
+                            'validators' => [
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'createWorkflows',

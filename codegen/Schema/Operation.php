@@ -420,15 +420,23 @@ final class Operation extends AbstractSchema implements Stringable
         if (in_array($testMethod, [
             // Requires Bugfix in OpenApi Spec
             'testGetAllGadgets',
+            'testAddGadget',
+            'testUpdateGadget',
 
             // Example/Type mismatch
             'testBulkGetGroups',
             'testBulkGetUsers',
             'testGetDynamicWebhooksForApp',
             'testRefreshWebhooks',
+            'testReplaceIssueFieldOption',
+            'testReplaceCustomFieldOption',
+            'testFindAssignableUsers',
+            'testGetUserGroups',
 
             // Missing discriminator
             'testGetDefaultValues',
+            'testEvaluateJiraExpression',
+            'testEvaluateJSISJiraExpression',
 
             // Missing parameter in test
             'testGetFieldConfigurationSchemeMappings',
@@ -439,43 +447,17 @@ final class Operation extends AbstractSchema implements Stringable
             'testGetWorkflowSchemeProjectAssociations',
             'testGetWorkflowTransitionRuleConfigurations',
 
-            // Deserializer error
+            // Example missing required property
+            'testBulkEditDashboards',
+            'testSubmitBulkMove',
             'testGetCustomFieldContextsForProjectsAndIssueTypes',
-            'testGetAllIssueFieldOptions',
-            'testGetVisibleIssueFieldOptions',
-            'testGetIssueFieldOption',
-            'testReplaceIssueFieldOption',
             'testGetOptionsForContext',
-            'testReplaceCustomFieldOption',
-            'testSearchForIssuesUsingJqlPost',
+            'testGetFieldConfigurationSchemeProjectMapping',
             'testGetCreateIssueMeta',
             'testGetCreateIssueMetaIssueTypeId',
-            'testGetIssue',
             'testGetEditIssueMeta',
             'testGetTransitions',
-            'testGetProject',
-            'testUpdateProject',
-            'testRestore',
-            'testFindAssignableUsers',
-            'testGetUserGroups',
             'testGetWorkflowTransitionProperties',
-            'testGetWorkflowsPaginated',
-            'testSubmitBulkMove',
-            'testBulkEditDashboards',
-            'testAddGadget',
-            'testUpdateGadget',
-            'testCreateIssueFieldOption',
-            'testGetSelectableIssueFieldOptions',
-            'testUpdateIssueFieldOption',
-            'testGetFieldConfigurationSchemeProjectMapping',
-            'testCreateIssue',
-            'testCreateIssues',
-            'testBulkFetchIssues',
-            'testDoTransition',
-            'testEvaluateJiraExpression',
-            'testEvaluateJSISJiraExpression',
-            'testCreateWorkflow',
-            'testCreateWorkflows',
 
             // Unknown class boolean
             'testGetIsWatchingIssueBulk',
