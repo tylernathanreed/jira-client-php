@@ -2,10 +2,15 @@
 
 namespace Jira\Client;
 
+use DateTimeImmutable;
+use DateTimeInterface;
 use JsonSerializable;
 use ReflectionClass;
 use ReflectionProperty;
 
+/**
+ * @phpstan-type TNonArray Dto|DateTimeInterface|scalar|null
+ */
 abstract readonly class Dto implements JsonSerializable
 {
     /** @return array<string,mixed> */
@@ -29,21 +34,30 @@ abstract readonly class Dto implements JsonSerializable
     /**
      * @phpstan-template TKey of int|string
      * @phpstan-template TValue of mixed
-     * @phpstan-template TScalar of string|int|float|bool|null
      *
-     * @param Dto|array<TKey,TValue>|TScalar $value
-     * @return ($value is Dto ? array<string,mixed> : ($value is array ? array<TKey,TValue> : TScalar))
+     * @param TNonArray|array<TKey,TValue> $value
+     * @return ($value is Dto ? array<string,mixed> : ($value is array ? array<TKey,TValue> : TNonArray))
      */
-    protected static function arrayify(Dto|array|string|int|float|bool|null $value): array|string|int|float|bool|null
+    protected static function arrayify($value)
     {
         if ($value instanceof Dto) {
             return static::arrayify($value->toArray());
         }
 
+        if ($value instanceof DateTimeImmutable) {
+            return $value->format('c');
+        }
+
         if (is_array($value)) {
-            // @phpstan-ignore argument.type
-            return array_map(function (Dto|array|string|int|float|bool|null $v): array|string|int|float|bool|null {
-                // @phpstan-ignore argument.templateType
+            return array_map(function ($v) {
+                assert(
+                    $v instanceof Dto ||
+                    $v instanceof DateTimeInterface ||
+                    is_array($v) ||
+                    is_scalar($v) ||
+                    is_null($v)
+                );
+
                 return static::arrayify($v);
             }, $value);
         }

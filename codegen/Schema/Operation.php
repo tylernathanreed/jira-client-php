@@ -427,13 +427,6 @@ final class Operation extends AbstractSchema implements Stringable
             'testGetDynamicWebhooksForApp',
             'testRefreshWebhooks',
 
-            // DateTimeImmutable
-            'testAddAttachment',
-            'testGetBulkOperationProgress',
-            'testUpdateWorklog',
-            'testGetAllProjects',
-            'testGetRecent',
-
             // Missing discriminator
             'testGetDefaultValues',
 

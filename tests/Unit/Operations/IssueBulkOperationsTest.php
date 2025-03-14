@@ -218,9 +218,7 @@ class IssueBulkOperationsTest extends OperationsTestCase
 
     public function testGetBulkOperationProgress(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $taskId = 'foo';
 
         $this->assertCall(
             method: 'getBulkOperationProgress',

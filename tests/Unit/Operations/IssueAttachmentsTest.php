@@ -155,9 +155,7 @@ class IssueAttachmentsTest extends OperationsTestCase
 
     public function testAddAttachment(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $issueIdOrKey = 'foo';
 
         $this->assertCall(
             method: 'addAttachment',

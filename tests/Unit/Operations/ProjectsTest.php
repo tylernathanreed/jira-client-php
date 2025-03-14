@@ -9,9 +9,9 @@ class ProjectsTest extends OperationsTestCase
 {
     public function testGetAllProjects(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $expand = null;
+        $recent = null;
+        $properties = null;
 
         $this->assertCall(
             method: 'getAllProjects',
@@ -67,9 +67,8 @@ class ProjectsTest extends OperationsTestCase
 
     public function testGetRecent(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $expand = null;
+        $properties = null;
 
         $this->assertCall(
             method: 'getRecent',

@@ -150,9 +150,37 @@ class IssueWorklogsTest extends OperationsTestCase
 
     public function testUpdateWorklog(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\Worklog::class, [
+            'comment' => [
+                'content' => [
+                    0 => [
+                        'content' => [
+                            0 => [
+                                'text' => 'I did some work here.',
+                                'type' => 'text',
+                            ],
+                        ],
+                        'type' => 'paragraph',
+                    ],
+                ],
+                'type' => 'doc',
+                'version' => '1',
+            ],
+            'started' => '2021-01-17T12:34:00.000+0000',
+            'timeSpentSeconds' => '12000',
+            'visibility' => [
+                'identifier' => '276f955c-63d7-42c8-9520-92d01dca0625',
+                'type' => 'group',
+            ],
+        ]);
+
+        $issueIdOrKey = 'foo';
+        $id = 'foo';
+        $notifyUsers = true;
+        $adjustEstimate = 'auto';
+        $newEstimate = null;
+        $expand = '';
+        $overrideEditableFlag = false;
 
         $this->assertCall(
             method: 'updateWorklog',

@@ -77,6 +77,8 @@ class Deserializer
                 $args[] = $this->fromArray($property, $value);
             } elseif ($type->getName() === DateTimeImmutable::class && is_string($value)) {
                 $args[] = new DateTimeImmutable($value);
+            } elseif ($type->getName() === DateTimeImmutable::class && is_int($value)) {
+                $args[] = (new DateTimeImmutable)->setTimestamp($value);
             } elseif (! $type->isBuiltin() && is_subclass_of($type->getName(), Dto::class) && is_array($value)) {
                 // @phpstan-ignore argument.type
                 $args[] = $this->from($type->getName(), $value);
