@@ -74,7 +74,7 @@ class Deserializer
             } elseif (! $type instanceof ReflectionNamedType) {
                 $args[] = $value;
             } elseif ($type->getName() === 'array' && is_array($value)) {
-                $args[] = $this->fromArray($property, $value);
+                $args[] = $this->fromArray($class, $property, $value);
             } elseif ($type->getName() === DateTimeImmutable::class && is_string($value)) {
                 $args[] = new DateTimeImmutable($value);
             } elseif ($type->getName() === DateTimeImmutable::class && is_int($value)) {
@@ -91,10 +91,11 @@ class Deserializer
     }
 
     /**
+     * @param class-string<Dto> $class
      * @param array<mixed,mixed> $array
      * @return array<mixed,mixed>
      */
-    protected function fromArray(ReflectionProperty $property, array $array): array
+    protected function fromArray(string $class, ReflectionProperty $property, array $array): array
     {
         $doc = $property->getDocComment();
 
@@ -120,6 +121,6 @@ class Deserializer
             return $this->deserialize($array, $subclass, array: true);
         }
 
-        throw new InvalidArgumentException("Unknown class [{$subclass}].");
+        throw new InvalidArgumentException("Unknown class [{$subclass}] when deserializing [{$class}].");
     }
 }

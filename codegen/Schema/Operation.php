@@ -463,12 +463,11 @@ final class Operation extends AbstractSchema implements Stringable
             'testGetTransitions',
             'testGetWorkflowTransitionProperties',
 
+            // Example has bad response
+            'testUpdatePriorityScheme',
+
             // Unknown class object
             'testGetIssueLimitReport',
-
-            // Unknown class integer
-            'testCreatePriorityScheme',
-            'testUpdatePriorityScheme',
 
             // Unknown class list<string>
             'testUpdateWorkflowTransitionRuleConfigurations',

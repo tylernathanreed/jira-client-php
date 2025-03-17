@@ -17,7 +17,7 @@ final readonly class PriorityMapping extends Dto
          * Issues with priority ID `10000` are being migrated into this priority scheme will need mapping to new priorities.
          * The `in` mapping would be `{"10000": 10001}`.
          * 
-         * @var array<string,integer>
+         * @var array<string,int>
          */
         public ?array $in = null,
 
@@ -32,7 +32,7 @@ final readonly class PriorityMapping extends Dto
          * Issues with priority ID `10001` are being migrated out of this priority scheme will need mapping to new priorities.
          * The `out` mapping would be `{"10001": 10000}`.
          * 
-         * @var array<string,integer>
+         * @var array<string,int>
          */
         public ?array $out = null,
     ) {

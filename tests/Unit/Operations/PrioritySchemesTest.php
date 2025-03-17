@@ -43,9 +43,31 @@ class PrioritySchemesTest extends OperationsTestCase
 
     public function testCreatePriorityScheme(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\CreatePrioritySchemeDetails::class, [
+            'defaultPriorityId' => '10001',
+            'description' => 'My priority scheme description',
+            'mappings' => [
+                'in' => [
+                    10002 => '10000',
+                    10005 => '10001',
+                    10006 => '10001',
+                    10008 => '10003',
+                ],
+                'out' => [
+                ],
+            ],
+            'name' => 'My new priority scheme',
+            'priorityIds' => [
+                '10000',
+                '10001',
+                '10003',
+            ],
+            'projectIds' => [
+                '10005',
+                '10006',
+                '10007',
+            ],
+        ]);
 
         $this->assertCall(
             method: 'createPriorityScheme',

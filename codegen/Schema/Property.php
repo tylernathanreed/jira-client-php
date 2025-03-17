@@ -100,7 +100,11 @@ final class Property extends AbstractSchema implements Stringable
         }
 
         if (isset($type['type'])) {
-            return $type['type'];
+            return match ($type['type']) {
+                'integer' => 'int',
+                'boolean' => 'bool',
+                default => $type['type'],
+            };
         }
 
         return null;
