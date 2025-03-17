@@ -438,6 +438,10 @@ final class Operation extends AbstractSchema implements Stringable
             'testEvaluateJiraExpression',
             'testEvaluateJSISJiraExpression',
 
+            // Missing discriminator mapping
+            'testCreateAssociations',
+            'testRemoveAssociations',
+
             // Missing parameter in test
             'testGetFieldConfigurationSchemeMappings',
             'testGetIssueTypeSchemeForProjects',

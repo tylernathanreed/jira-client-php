@@ -1001,20 +1001,18 @@ trait Workflows
      *                        - `workflows.usages` Returns the project and issue types that each workflow is associated with
      *                        - `statuses.usages` Returns the project and issue types that each status is associated with.
      *                       @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
-     * @param bool $useTransitionLinksFormat Return the new fields (`toStatusReference`/`links`) instead of the deprecated fields (`to`/`from`) for workflow transition port mappings.
      * @param bool $useApprovalConfiguration Return the new field `approvalConfiguration` instead of the deprecated status properties for approval configuration.
      */
     public function readWorkflows(
         Schema\WorkflowReadRequest $request,
         ?string $expand = null,
-        ?bool $useTransitionLinksFormat = false,
         ?bool $useApprovalConfiguration = false,
     ): Schema\WorkflowReadResponse {
         return $this->call(
             uri: '/rest/api/3/workflows',
             method: 'post',
             body: $request,
-            query: compact('expand', 'useTransitionLinksFormat', 'useApprovalConfiguration'),
+            query: compact('expand', 'useApprovalConfiguration'),
             success: 200,
             schema: Schema\WorkflowReadResponse::class,
         );

@@ -39,6 +39,8 @@ abstract class GeneratorCommand extends Command
 
         $generated = [];
 
+        $missing = array_fill_keys($generator->existing(), true);
+
         foreach ($names as $name) {
             if (isset($generated[ucfirst($name)])) {
                 continue;
@@ -55,12 +57,25 @@ abstract class GeneratorCommand extends Command
             }
 
             $generated[ucfirst($name)] = true;
+            $missing[ucfirst($name)] = false;
 
             $this->success(sprintf(
                 '%s [%s] created successfully.',
                 static::type(),
                 $path
             ));
+        }
+
+        if ($this->option('all')) {
+            $missing = array_keys(array_filter($missing, fn ($f) => $f === true));
+
+            foreach ($missing as $name) {
+                $this->warn(sprintf(
+                    '%s [%s] is missing!',
+                    static::type(),
+                    $name
+                ));
+            }
         }
 
         return 0;

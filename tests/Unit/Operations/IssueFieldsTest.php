@@ -56,13 +56,14 @@ class IssueFieldsTest extends OperationsTestCase
         $query = null;
         $orderBy = null;
         $expand = null;
+        $projectIds = null;
 
         $this->assertCall(
             method: 'getFieldsPaginated',
             call: [
                 'uri' => '/rest/api/3/field/search',
                 'method' => 'get',
-                'query' => compact('startAt', 'maxResults', 'type', 'id', 'query', 'orderBy', 'expand'),
+                'query' => compact('startAt', 'maxResults', 'type', 'id', 'query', 'orderBy', 'expand', 'projectIds'),
                 'success' => 200,
                 'schema' => Schema\PageBeanField::class,
             ],
@@ -74,6 +75,7 @@ class IssueFieldsTest extends OperationsTestCase
                 $query,
                 $orderBy,
                 $expand,
+                $projectIds,
             ],
             response: '{"isLast":false,"maxResults":50,"startAt":0,"total":2,"values":[{"id":"customfield_10000","name":"Approvers","schema":{"custom":"com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker","customId":10000,"items":"user","type":"array"},"description":"Contains users needed for approval. This custom field was created by Jira Service Desk.","key":"customfield_10000","stableId":"sfid:approvers","isLocked":true,"searcherKey":"com.atlassian.jira.plugin.system.customfieldtypes:userpickergroupsearcher","screensCount":2,"contextsCount":2,"lastUsed":{"type":"TRACKED","value":"2021-01-28T07:37:40.000+0000"}},{"id":"customfield_10001","name":"Change reason","schema":{"custom":"com.atlassian.jira.plugin.system.customfieldtypes:select","customId":10001,"type":"option"},"description":"Choose the reason for the change request","key":"customfield_10001","stableId":"sfid:change-reason","isLocked":false,"searcherKey":"com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher","screensCount":2,"contextsCount":2,"projectsCount":2,"lastUsed":{"type":"NOT_TRACKED"}}]}',
         );

@@ -14,12 +14,27 @@ abstract class Generator extends AbstractSchemaGenerator
     /** @return list<string> */
     abstract public function all(): array;
 
+    /** @return list<string> */
+    public function existing(): array
+    {
+        return array_map(function (string $filepath) {
+            return basename($filepath, '.php');
+        }, glob($this->directory() . '/*.php') ?: []);
+    }
+
     protected function getPath(string $name): string
     {
-        return strtr('{basePath}/src/{type}/{name}.php', [
+        return strtr('{directory}/{name}.php', [
+            '{directory}' => $this->directory(),
+            '{name}' => ucfirst($name),
+        ]);
+    }
+
+    protected function directory(): string
+    {
+        return strtr('{basePath}/src/{type}', [
             '{basePath}' => realpath('./'),
             '{type}' => $this->type(),
-            '{name}' => ucfirst($name),
         ]);
     }
 

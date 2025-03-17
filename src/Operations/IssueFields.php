@@ -90,6 +90,7 @@ trait IssueFields
      *                        - `contextsCount` returns the number of contexts related to a field
      *                        - `isLocked` returns information about whether the field is locked
      *                        - `searcherKey` returns the searcher key for each custom field
+     * @param ?list<int> $projectIds 
      */
     public function getFieldsPaginated(
         ?int $startAt = 0,
@@ -99,11 +100,12 @@ trait IssueFields
         ?string $query = null,
         ?string $orderBy = null,
         ?string $expand = null,
+        ?array $projectIds = null,
     ): Schema\PageBeanField {
         return $this->call(
             uri: '/rest/api/3/field/search',
             method: 'get',
-            query: compact('startAt', 'maxResults', 'type', 'id', 'query', 'orderBy', 'expand'),
+            query: compact('startAt', 'maxResults', 'type', 'id', 'query', 'orderBy', 'expand', 'projectIds'),
             success: 200,
             schema: Schema\PageBeanField::class,
         );

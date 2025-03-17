@@ -25,6 +25,7 @@ trait PerformsOperations
     use Operations\IssueBulkOperations;
     use Operations\IssueCommentProperties;
     use Operations\IssueComments;
+    use Operations\IssueCustomFieldAssociations;
     use Operations\IssueCustomFieldConfigurationApps;
     use Operations\IssueCustomFieldContexts;
     use Operations\IssueCustomFieldOptions;
