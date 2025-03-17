@@ -9,9 +9,13 @@ class IssueWatchersTest extends OperationsTestCase
 {
     public function testGetIsWatchingIssueBulk(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssueList::class, [
+            'issueIds' => [
+                '10001',
+                '10002',
+                '10005',
+            ],
+        ]);
 
         $this->assertCall(
             method: 'getIsWatchingIssueBulk',

@@ -463,9 +463,6 @@ final class Operation extends AbstractSchema implements Stringable
             'testGetTransitions',
             'testGetWorkflowTransitionProperties',
 
-            // Unknown class boolean
-            'testGetIsWatchingIssueBulk',
-
             // Unknown class object
             'testGetIssueLimitReport',
 

@@ -108,7 +108,7 @@ class Deserializer
             return $array;
         }
 
-        if (in_array($type, ['int', 'float', 'string'])) {
+        if (in_array($type, ['int', 'float', 'string', 'boolean'])) {
             return array_map(function ($v) use ($type) {
                 settype($v, $type);
                 return $v;
