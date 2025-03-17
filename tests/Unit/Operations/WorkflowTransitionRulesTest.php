@@ -38,9 +38,45 @@ class WorkflowTransitionRulesTest extends OperationsTestCase
 
     public function testUpdateWorkflowTransitionRuleConfigurations(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\WorkflowTransitionRulesUpdate::class, [
+            'workflows' => [
+                [
+                    'conditions' => [
+                        [
+                            'configuration' => [
+                                'disabled' => '',
+                                'tag' => 'Another tag',
+                                'value' => '{ "size": "medium" }',
+                            ],
+                            'id' => 'd663bd873d93-59f5-11e9-8647-b4d6cbdc',
+                        ],
+                    ],
+                    'postFunctions' => [
+                        [
+                            'configuration' => [
+                                'disabled' => '',
+                                'tag' => 'Sample tag',
+                                'value' => '{ "color": "red" }',
+                            ],
+                            'id' => 'b4d6cbdc-59f5-11e9-8647-d663bd873d93',
+                        ],
+                    ],
+                    'validators' => [
+                        [
+                            'configuration' => [
+                                'disabled' => '',
+                                'value' => '{ "shape": "square" }',
+                            ],
+                            'id' => '11e9-59f5-b4d6cbdc-8647-d663bd873d93',
+                        ],
+                    ],
+                    'workflowId' => [
+                        'draft' => '',
+                        'name' => 'My Workflow name',
+                    ],
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'updateWorkflowTransitionRuleConfigurations',
@@ -60,9 +96,21 @@ class WorkflowTransitionRulesTest extends OperationsTestCase
 
     public function testDeleteWorkflowTransitionRuleConfigurations(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\WorkflowsWithTransitionRulesDetails::class, [
+            'workflows' => [
+                [
+                    'workflowId' => [
+                        'draft' => '',
+                        'name' => 'Internal support workflow',
+                    ],
+                    'workflowRuleIds' => [
+                        'b4d6cbdc-59f5-11e9-8647-d663bd873d93',
+                        'd663bd873d93-59f5-11e9-8647-b4d6cbdc',
+                        '11e9-59f5-b4d6cbdc-8647-d663bd873d93',
+                    ],
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'deleteWorkflowTransitionRuleConfigurations',

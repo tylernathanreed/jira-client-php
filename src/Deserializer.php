@@ -99,13 +99,29 @@ class Deserializer
     {
         $doc = $property->getDocComment();
 
-        if (! $doc || ! preg_match('/list<(?<list>[^>]+)>|array<(?<key>[^>]+), ?(?<type>[^>]+)/', $doc, $matches)) {
+        if (! $doc) {
             return $array;
         }
 
-        $type = $matches['type'] ?? $matches['list'];
+        $var = preg_match('/@var (.*)\n/', $doc, $matches)
+            ? $matches[1]
+            : null;
 
-        if ($type === 'mixed') {
+        if (! $var) {
+            return $array;
+        }
+
+        if (str_starts_with($var, 'list')) {
+            $type = substr($var, strlen('list<'), -strlen('>'));
+        } else {
+            if (! preg_match('/^array<(?<key>[^>]+), ?(?<type>.+)>$/', $var, $matches)) {
+                return $array;
+            }
+
+            $type = $matches['type'];
+        }
+
+        if ($type === 'mixed' || str_starts_with($type, 'list')) {
             return $array;
         }
 

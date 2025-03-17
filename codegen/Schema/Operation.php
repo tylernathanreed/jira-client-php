@@ -469,11 +469,6 @@ final class Operation extends AbstractSchema implements Stringable
             // Unknown class object
             'testGetIssueLimitReport',
 
-            // Unknown class list<string>
-            'testUpdateWorkflowTransitionRuleConfigurations',
-            'testDeleteWorkflowTransitionRuleConfigurations',
-            'testSetActors',
-
             // Unknown named parameter
             'testExportArchivedIssues',
 

@@ -9,9 +9,19 @@ class ProjectRoleActorsTest extends OperationsTestCase
 {
     public function testSetActors(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\ProjectRoleActorsUpdateBean::class, [
+            'categorisedActors' => [
+                'atlassian-group-role-actor-id' => [
+                    0 => '952d12c3-5b5b-4d04-bb32-44d383afc4b2',
+                ],
+                'atlassian-user-role-actor' => [
+                    0 => '12345678-9abc-def1-2345-6789abcdef12',
+                ],
+            ],
+        ]);
+
+        $projectIdOrKey = 'foo';
+        $id = 1234;
 
         $this->assertCall(
             method: 'setActors',
