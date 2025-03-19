@@ -1,0 +1,22 @@
+[
+    {
+        "type": "merge",
+        "path": "components.schemas.DashboardGadgetPosition",
+        "value": {
+            "properties": {
+                "row": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "column": {
+                    "format": "int32",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "row",
+                "column"
+            ]
+        }
+    }
+]

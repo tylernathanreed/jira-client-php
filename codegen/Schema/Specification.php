@@ -3,7 +3,7 @@
 namespace Jira\CodeGen\Schema;
 
 use Jira\CodeGen\Exceptions\MissingSpecificationException;
-use RuntimeException;
+use Jira\CodeGen\Specification\SpecificationResolver;
 
 /**
  * @phpstan-type TArray array<string,mixed>
@@ -169,22 +169,7 @@ final class Specification
     /** @return TOpenApi */
     public static function getSpecification(): array
     {
-        return static::$specification ??= static::resolveSpecification();
-    }
-
-    /** @return TOpenApi */
-    protected static function resolveSpecification(): array
-    {
-        $filepath = 'https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json';
-
-        $contents = file_get_contents($filepath);
-
-        if ($contents === false) {
-            throw new RuntimeException('Failed to open specification.');
-        }
-
-        // @phpstan-ignore return.type (Not going to validate)
-        return json_decode($contents, true);
+        return static::$specification ??= (new SpecificationResolver)->resolve();
     }
 
     public static function getComponentSchema(string $name): Schema

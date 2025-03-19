@@ -144,9 +144,10 @@ class DashboardsTest extends OperationsTestCase
 
     public function testGetAllGadgets(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $dashboardId = 1234;
+        $moduleKey = null;
+        $uri = null;
+        $gadgetId = null;
 
         $this->assertCall(
             method: 'getAllGadgets',
@@ -170,9 +171,18 @@ class DashboardsTest extends OperationsTestCase
 
     public function testAddGadget(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\DashboardGadgetSettings::class, [
+            'color' => 'blue',
+            'ignoreUriAndModuleKeyValidation' => false,
+            'moduleKey' => 'com.atlassian.plugins.atlassian-connect-plugin:com.atlassian.connect.node.sample-addon__sample-dashboard-item',
+            'position' => [
+                'column' => '1',
+                'row' => '0',
+            ],
+            'title' => 'Issue statistics',
+        ]);
+
+        $dashboardId = 1234;
 
         $this->assertCall(
             method: 'addGadget',
@@ -194,9 +204,17 @@ class DashboardsTest extends OperationsTestCase
 
     public function testUpdateGadget(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\DashboardGadgetUpdateRequest::class, [
+            'color' => 'red',
+            'position' => [
+                'column' => '1',
+                'row' => '1',
+            ],
+            'title' => 'My new gadget title',
+        ]);
+
+        $dashboardId = 1234;
+        $gadgetId = 1234;
 
         $this->assertCall(
             method: 'updateGadget',
