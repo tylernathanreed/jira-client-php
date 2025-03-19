@@ -31,7 +31,7 @@ class Processor
         if ($status === 404) {
             throw new NotFoundHttpException(sprintf(
                 '[404] Endpoint [%s] not found.',
-                $operation->uri
+                $operation->getExpandedUri()
             ), 404);
         }
 
@@ -39,7 +39,7 @@ class Processor
             throw new MethodNotAllowedHttpException(sprintf(
                 '[405] Method [%s] against [%s] is not allowed.',
                 strtoupper($operation->method),
-                $operation->uri,
+                $operation->getExpandedUri(),
             ), 405);
         }
 

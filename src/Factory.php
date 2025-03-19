@@ -60,9 +60,7 @@ class Factory implements FactoryContract
 
     protected function getUrl(PendingOperation $operation, Configuration $config): string
     {
-        $url = ltrim(rtrim($config->host, '/') . '/' . ltrim($operation->uri, '/'), '/');
-
-        return UriTemplate::expand($url, $operation->path);
+        return ltrim(rtrim($config->host, '/') . '/' . ltrim($operation->getExpandedUri(), '/'), '/');
     }
 
     /** @return TOptions */

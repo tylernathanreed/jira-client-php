@@ -2,6 +2,8 @@
 
 namespace Jira\Client;
 
+use GuzzleHttp\UriTemplate\UriTemplate;
+
 class PendingOperation
 {
     public function __construct(
@@ -22,4 +24,9 @@ class PendingOperation
         /** @var array<string,mixed> */
         public array $path = [],
     ) {}
+
+    public function getExpandedUri(): string
+    {
+        return UriTemplate::expand($this->uri, $this->path);
+    }
 }
