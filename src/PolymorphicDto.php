@@ -2,7 +2,7 @@
 
 namespace Jira\Client;
 
-use InvalidArgumentException;
+use Jira\Client\Exceptions\InvalidDiscriminatorException;
 
 abstract readonly class PolymorphicDto extends Dto
 {
@@ -17,7 +17,7 @@ abstract readonly class PolymorphicDto extends Dto
         $type = static::discriminatorMap()[$discriminator] ?? null;
 
         if (is_null($type)) {
-            throw new InvalidArgumentException(sprintf(
+            throw new InvalidDiscriminatorException(sprintf(
                 'Could not find [%s] mapping for [%s].',
                 static::class,
                 $type
@@ -37,14 +37,14 @@ abstract readonly class PolymorphicDto extends Dto
         $discriminator = $data[static::discriminator()] ?? null;
 
         if (is_null($discriminator)) {
-            throw new InvalidArgumentException(sprintf(
+            throw new InvalidDiscriminatorException(sprintf(
                 'Could not find [%s] discriminator.',
                 static::class,
             ));
         }
 
         if (! is_string($discriminator)) {
-            throw new InvalidArgumentException(sprintf(
+            throw new InvalidDiscriminatorException(sprintf(
                 'Discriminator for [%s] is not a string.',
                 static::class,
             ));

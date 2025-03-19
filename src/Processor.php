@@ -2,7 +2,10 @@
 
 namespace Jira\Client;
 
-use RuntimeException;
+use Jira\Client\Exceptions\InvalidBodyHttpException;
+use Jira\Client\Exceptions\MethodNotAllowedHttpException;
+use Jira\Client\Exceptions\NotFoundHttpException;
+use Jira\Client\Exceptions\UnsupportedStatusCodeHttpException;
 use Psr\Http\Message\ResponseInterface;
 
 class Processor
@@ -26,14 +29,14 @@ class Processor
         $status = $response->getStatusCode();
 
         if ($status === 404) {
-            throw new RuntimeException(sprintf(
+            throw new NotFoundHttpException(sprintf(
                 '[404] Endpoint [%s] not found.',
                 $operation->uri
             ), 404);
         }
 
         if ($status === 405) {
-            throw new RuntimeException(sprintf(
+            throw new MethodNotAllowedHttpException(sprintf(
                 '[405] Method [%s] against [%s] is not allowed.',
                 strtoupper($operation->method),
                 $operation->uri,
@@ -41,7 +44,7 @@ class Processor
         }
 
         if ($status != $successCode) {
-            throw new RuntimeException(sprintf(
+            throw new UnsupportedStatusCodeHttpException(sprintf(
                 '[%s] Unexpected status code (Expected: %s).',
                 $status,
                 $successCode,
@@ -57,7 +60,7 @@ class Processor
         $data = json_decode($body, true);
 
         if (! is_array($data)) {
-            throw new RuntimeException('Unable to decode response body: ' . $body);
+            throw new InvalidBodyHttpException('Unable to decode response body: ' . $body);
         }
 
         if (is_array($schema)) {

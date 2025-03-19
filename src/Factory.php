@@ -9,9 +9,9 @@ use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\RequestOptions;
 use GuzzleHttp\UriTemplate\UriTemplate;
 use Jira\Client\Contracts\Factory as FactoryContract;
+use Jira\Client\Exceptions\StrayRequestException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use RuntimeException;
 
 /**
  * @phpstan-type TOptions array{
@@ -136,7 +136,7 @@ class Factory implements FactoryContract
                     }
                 }
 
-                throw new RuntimeException(sprintf(
+                throw new StrayRequestException(sprintf(
                     'Attempted request to [%s] without a matching fake.',
                     (string) $request->getUri()
                 ));

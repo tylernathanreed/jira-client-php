@@ -2,7 +2,7 @@
 
 namespace Jira\Client;
 
-use InvalidArgumentException;
+use Jira\Client\Exceptions\InvalidConfigurationException;
 
 class Configuration
 {
@@ -43,7 +43,7 @@ class Configuration
             return;
         }
 
-        throw new InvalidArgumentException(sprintf(
+        throw new InvalidConfigurationException(sprintf(
             'Token Auth ([accessToken]) or Basic Auth ([username] and [password]) must be provided.'
         ));
     }

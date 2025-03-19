@@ -3,7 +3,7 @@
 namespace Jira\Client;
 
 use DateTimeImmutable;
-use InvalidArgumentException;
+use Jira\Client\Exceptions\DeserializationException;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
@@ -137,6 +137,6 @@ class Deserializer
             return $this->deserialize($array, $subclass, array: true);
         }
 
-        throw new InvalidArgumentException("Unknown class [{$subclass}] when deserializing [{$class}].");
+        throw new DeserializationException("Unknown class [{$subclass}] when deserializing [{$class}].");
     }
 }
