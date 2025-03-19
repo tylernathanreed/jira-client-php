@@ -169,7 +169,7 @@ final class Specification
     /** @return TOpenApi */
     public static function getSpecification(): array
     {
-        return static::$specification ??= (new SpecificationResolver)->resolve();
+        return static::$specification ??= (new SpecificationResolver())->resolve();
     }
 
     public static function getComponentSchema(string $name): Schema
