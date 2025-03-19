@@ -81,9 +81,11 @@ class UsersTest extends OperationsTestCase
 
     public function testBulkGetUsers(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $accountId = json_decode('["5b10ac8d82e05b22cc7d4ef5"]', true);
+        $startAt = 0;
+        $maxResults = 10;
+        $username = null;
+        $key = null;
 
         $this->assertCall(
             method: 'bulkGetUsers',

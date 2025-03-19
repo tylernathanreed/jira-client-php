@@ -1,0 +1,9 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/user/bulk.get.parameters.4.schema.example",
+        "value": [
+            "5b10ac8d82e05b22cc7d4ef5"
+        ]
+    }
+]
