@@ -80,9 +80,12 @@ class GroupsTest extends OperationsTestCase
 
     public function testBulkGetGroups(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $startAt = 0;
+        $maxResults = 50;
+        $groupId = json_decode('["3571b9a7-348f-414a-9087-8e1ea03a7df8"]', true);
+        $groupName = null;
+        $accessType = null;
+        $applicationKey = null;
 
         $this->assertCall(
             method: 'bulkGetGroups',

@@ -419,7 +419,6 @@ final class Operation extends AbstractSchema implements Stringable
 
         if (in_array($testMethod, [
             // Example/Type mismatch
-            'testBulkGetGroups',
             'testBulkGetUsers',
             'testGetDynamicWebhooksForApp',
             'testRefreshWebhooks',

@@ -10,7 +10,7 @@ use RuntimeException;
  * @phpstan-type TFix array{
  *     type: 'merge'|'set',
  *     path: string,
- *     value: array<int|string,mixed>
+ *     value: array<int|string,mixed>|string
  * }
  */
 class SpecificationResolver
@@ -63,11 +63,13 @@ class SpecificationResolver
     protected function applyFix(array &$spec, array $fix): array
     {
         if ($fix['type'] === 'merge') {
+            assert(is_array($fix['value']));
             // @phpstan-ignore parameterByRef.type,return.type (shape is maintained enough)
             return Fix::merge($spec, $fix['path'], $fix['value']);
         }
 
-        return $spec;
+        // @phpstan-ignore parameterByRef.type,return.type (shape is maintained enough)
+        return Fix::set($spec, $fix['path'], $fix['value']);
     }
 
     /** @return TOpenApi */

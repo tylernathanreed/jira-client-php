@@ -17,6 +17,7 @@ final class Parameter extends AbstractSchema
     /** @var array<string,mixed> */
     protected array $computed = [];
 
+    /** @param array<array-key,mixed>|int|string|bool|null $example */
     public function __construct(
         public readonly int $index,
         public readonly string $name,
@@ -28,7 +29,7 @@ final class Parameter extends AbstractSchema
         public readonly ?string $listableType = null,
         public readonly ?string $associativeType = null,
         public readonly int|string|bool|null $default = null,
-        public readonly int|string|bool|null $example = null,
+        public readonly array|int|string|bool|null $example = null,
         public readonly bool $required = false,
 
         /** @var ?list<string> */
@@ -264,6 +265,8 @@ final class Parameter extends AbstractSchema
             $value = $value ? 'true' : 'false';
         } elseif (is_numeric($value)) {
             $value = $value;
+        } elseif (is_array($value)) {
+            $value = 'json_decode(\'' . json_encode($value) . '\', true)';
         } else {
             $value = '\'' . $value . '\'';
         }
