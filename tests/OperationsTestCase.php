@@ -13,6 +13,9 @@ use Jira\Client\Factory;
 use Override;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
+use ReflectionClass;
+use ReflectionNamedType;
+use ReflectionProperty;
 
 abstract class OperationsTestCase extends TestCase
 {
@@ -34,7 +37,11 @@ abstract class OperationsTestCase extends TestCase
     {
         $this->mockCall($call, $response, $call['success']);
 
-        $this->client->{$method}(...$arguments);
+        $result = $this->client->{$method}(...$arguments);
+
+        if ($result instanceof Dto) {
+            $this->assertValidSchema($result);
+        }
     }
 
     protected function mockCall(array $call, ?string $response, int $status): void
@@ -72,6 +79,50 @@ abstract class OperationsTestCase extends TestCase
 
             return Create::promiseFor(new Psr7Response($status, body: $response));
         });
+    }
+
+    protected function assertValidSchema(Dto $schema): void
+    {
+        $properties = (new ReflectionClass($schema))->getProperties(ReflectionProperty::IS_PUBLIC);
+
+        foreach ($properties as $property) {
+            if (! ($type = $property->getType()) || ! $type instanceof ReflectionNamedType) {
+                continue;
+            }
+
+            if ($type->getName() !== 'array') {
+                continue;
+            }
+
+            $value = $property->getValue($schema);
+
+            if (is_null($value)) {
+                continue;
+            }
+
+            if (preg_match('/@var ?\?list<([^>]+)>/', $property->getDocComment(), $matches)) {
+                $iterableType = 'Jira\Client\Schema\\' . $matches[1];
+
+                if (! class_exists($iterableType)) {
+                    continue;
+                }
+
+                $this->assertIsArray($value);
+
+                foreach ($value as $item) {
+                    $this->assertInstanceOf($iterableType, $item, sprintf(
+                        'Property [%s] expects list<%s>, found list<%s>.',
+                        $property->getName(),
+                        $iterableType,
+                        gettype($item),
+                    ));
+
+                    if ($item instanceof Dto) {
+                        $this->assertValidSchema($item);
+                    }
+                }
+            }
+        }
     }
 
     /**

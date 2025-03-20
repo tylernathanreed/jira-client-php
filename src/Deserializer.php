@@ -103,7 +103,7 @@ class Deserializer
             return $array;
         }
 
-        $var = preg_match('/@var (.*)\n/', $doc, $matches)
+        $var = preg_match('/@var ?\?([^ ]+)(?:\n| \*)/', $doc, $matches)
             ? $matches[1]
             : null;
 
