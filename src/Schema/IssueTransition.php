@@ -14,8 +14,10 @@ final readonly class IssueTransition extends Dto
         /**
          * Details of the fields associated with the issue transition screen.
          * Use this information to populate `fields` and `update` in a transition request.
+         * 
+         * @var array<string,FieldMetadata>
          */
-        public ?FieldMetadata $fields = null,
+        public ?array $fields = null,
 
         /** Whether there is a screen associated with the issue transition. */
         public ?bool $hasScreen = null,

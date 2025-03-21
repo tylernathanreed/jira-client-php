@@ -32,8 +32,12 @@ final readonly class WorkflowScheme extends Dto
          */
         public ?array $issueTypeMappings = null,
 
-        /** The issue types available in Jira. */
-        public ?IssueTypeDetails $issueTypes = null,
+        /**
+         * The issue types available in Jira.
+         * 
+         * @var array<string,IssueTypeDetails>
+         */
+        public ?array $issueTypes = null,
 
         /**
          * The date-time that the draft workflow scheme was last modified.

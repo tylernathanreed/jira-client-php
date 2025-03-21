@@ -83,9 +83,88 @@ class IssueBulkOperationsTest extends OperationsTestCase
 
     public function testSubmitBulkMove(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\IssueBulkMovePayload::class, [
+            'sendBulkNotification' => true,
+            'targetToSourcesMapping' => [
+                'PROJECT-KEY,10001' => [
+                    'inferClassificationDefaults' => '',
+                    'inferFieldDefaults' => '',
+                    'inferStatusDefaults' => '',
+                    'inferSubtaskTypeDefault' => '1',
+                    'issueIdsOrKeys' => [
+                        0 => 'ISSUE-1',
+                    ],
+                    'targetClassification' => [
+                        0 => [
+                            'classifications' => [
+                                '5bfa70f7-4af1-44f5-9e12-1ce185f15a38' => [
+                                    0 => 'bd58e74c-c31b-41a7-ba69-9673ebd9dae9',
+                                    1 => '-1',
+                                ],
+                            ],
+                        ],
+                    ],
+                    'targetMandatoryFields' => [
+                        0 => [
+                            'fields' => [
+                                'customfield_10000' => [
+                                    'retain' => '',
+                                    'type' => 'raw',
+                                    'value' => [
+                                        0 => 'value-1',
+                                        1 => 'value-2',
+                                    ],
+                                ],
+                                'description' => [
+                                    'retain' => '1',
+                                    'type' => 'adf',
+                                    'value' => [
+                                        'content' => [
+                                            0 => [
+                                                'content' => [
+                                                    0 => [
+                                                        'text' => 'New description value',
+                                                        'type' => 'text',
+                                                    ],
+                                                ],
+                                                'type' => 'paragraph',
+                                            ],
+                                        ],
+                                        'type' => 'doc',
+                                        'version' => '1',
+                                    ],
+                                ],
+                                'fixVersions' => [
+                                    'retain' => '',
+                                    'type' => 'raw',
+                                    'value' => [
+                                        0 => '10009',
+                                    ],
+                                ],
+                                'labels' => [
+                                    'retain' => '',
+                                    'type' => 'raw',
+                                    'value' => [
+                                        0 => 'label-1',
+                                        1 => 'label-2',
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                    'targetStatus' => [
+                        0 => [
+                            'statuses' => [
+                                10001 => [
+                                    0 => '10002',
+                                    1 => '10003',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'submitBulkMove',

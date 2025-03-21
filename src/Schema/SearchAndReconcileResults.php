@@ -29,8 +29,12 @@ final readonly class SearchAndReconcileResults extends Dto
          */
         public ?string $nextPageToken = null,
 
-        /** The schema describing the field types in the search results. */
-        public ?JsonTypeBean $schema = null,
+        /**
+         * The schema describing the field types in the search results.
+         * 
+         * @var array<string,JsonTypeBean>
+         */
+        public ?array $schema = null,
     ) {
     }
 }

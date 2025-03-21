@@ -19,8 +19,10 @@ final readonly class IssueEntityPropertiesForMultiUpdate extends Dto
         /**
          * Entity properties to set on the issue.
          * The maximum length of an issue property value is 32768 characters.
+         * 
+         * @var array<string,JsonNode>
          */
-        public ?JsonNode $properties = null,
+        public ?array $properties = null,
     ) {
     }
 }

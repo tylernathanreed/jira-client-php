@@ -11,7 +11,7 @@ final readonly class BulkIssueIsWatching extends Dto
         /**
          * The map of issue ID to boolean watch status.
          * 
-         * @var array<string,boolean>
+         * @var array<string,bool>
          */
         public ?array $issuesIsWatching = null,
     ) {

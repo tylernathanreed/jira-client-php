@@ -28,8 +28,10 @@ final readonly class IssueBulkMovePayload extends Dto
          *  - ***Destination issueType*** (Required): ID of the issueType to which the issues are being moved
          *  - ***Destination parent ID or key*** (Optional): ID or key of the issue which will become the parent of the issues being moved.
          * Only required when the destination issueType is a subtask.
+         * 
+         * @var array<string,TargetToSourcesMapping>
          */
-        public ?TargetToSourcesMapping $targetToSourcesMapping = null,
+        public ?array $targetToSourcesMapping = null,
     ) {
     }
 }

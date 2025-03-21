@@ -28,8 +28,12 @@ final readonly class SearchResults extends Dto
          */
         public ?array $names = null,
 
-        /** The schema describing the field types in the search results. */
-        public ?JsonTypeBean $schema = null,
+        /**
+         * The schema describing the field types in the search results.
+         * 
+         * @var array<string,JsonTypeBean>
+         */
+        public ?array $schema = null,
 
         /** The index of the first item returned on the page. */
         public ?int $startAt = null,

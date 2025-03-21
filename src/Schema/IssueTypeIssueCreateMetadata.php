@@ -20,8 +20,12 @@ final readonly class IssueTypeIssueCreateMetadata extends Dto
         /** Expand options that include additional issue type metadata details in the response. */
         public ?string $expand = null,
 
-        /** List of the fields available when creating an issue for the issue type. */
-        public ?FieldMetadata $fields = null,
+        /**
+         * List of the fields available when creating an issue for the issue type.
+         * 
+         * @var array<string,FieldMetadata>
+         */
+        public ?array $fields = null,
 
         /** Hierarchy level of the issue type. */
         public ?int $hierarchyLevel = null,

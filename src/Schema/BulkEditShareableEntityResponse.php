@@ -15,8 +15,12 @@ final readonly class BulkEditShareableEntityResponse extends Dto
          */
         public string $action,
 
-        /** The mapping dashboard id to errors if any. */
-        public ?BulkEditActionError $entityErrors = null,
+        /**
+         * The mapping dashboard id to errors if any.
+         * 
+         * @var array<string,BulkEditActionError>
+         */
+        public ?array $entityErrors = null,
     ) {
     }
 }

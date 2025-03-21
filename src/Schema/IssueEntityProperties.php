@@ -20,8 +20,12 @@ final readonly class IssueEntityProperties extends Dto
          */
         public ?array $entitiesIds = null,
 
-        /** A list of entity property keys and values. */
-        public ?JsonNode $properties = null,
+        /**
+         * A list of entity property keys and values.
+         * 
+         * @var array<string,JsonNode>
+         */
+        public ?array $properties = null,
     ) {
     }
 }

@@ -1,0 +1,17 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/workflow/rule/config.put.requestBody.content.application/json.example.workflows.0.conditions.0.key",
+        "value": "foo"
+    },
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/workflow/rule/config.put.requestBody.content.application/json.example.workflows.0.postFunctions.0.key",
+        "value": "bar"
+    },
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/workflow/rule/config.put.requestBody.content.application/json.example.workflows.0.validators.0.key",
+        "value": "baz"
+    }
+]

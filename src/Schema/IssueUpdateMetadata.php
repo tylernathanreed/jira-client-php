@@ -8,7 +8,8 @@ use Jira\Client\Dto;
 final readonly class IssueUpdateMetadata extends Dto
 {
     public function __construct(
-        public ?FieldMetadata $fields = null,
+        /** @var array<string,FieldMetadata> */
+        public ?array $fields = null,
     ) {
     }
 }

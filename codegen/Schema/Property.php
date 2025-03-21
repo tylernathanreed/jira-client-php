@@ -47,7 +47,6 @@ final class Property extends AbstractSchema implements Stringable
     {
         $type = $schema['$ref']
             ?? $schema['allOf'][0]['$ref']
-            ?? $schema['additionalProperties']['$ref']
             ?? $schema['type']
             ?? null;
 

@@ -24,7 +24,7 @@ final readonly class IssueLimitReportResponseBean extends Dto
         /**
          * The fields and their defined limits
          * 
-         * @var array<string,integer>
+         * @var array<string,int>
          */
         public ?array $limits = null,
     ) {

@@ -49,6 +49,7 @@ class WorkflowTransitionRulesTest extends OperationsTestCase
                                 'value' => '{ "size": "medium" }',
                             ],
                             'id' => 'd663bd873d93-59f5-11e9-8647-b4d6cbdc',
+                            'key' => 'foo',
                         ],
                     ],
                     'postFunctions' => [
@@ -59,6 +60,7 @@ class WorkflowTransitionRulesTest extends OperationsTestCase
                                 'value' => '{ "color": "red" }',
                             ],
                             'id' => 'b4d6cbdc-59f5-11e9-8647-d663bd873d93',
+                            'key' => 'bar',
                         ],
                     ],
                     'validators' => [
@@ -68,6 +70,7 @@ class WorkflowTransitionRulesTest extends OperationsTestCase
                                 'value' => '{ "shape": "square" }',
                             ],
                             'id' => '11e9-59f5-b4d6cbdc-8647-d663bd873d93',
+                            'key' => 'baz',
                         ],
                     ],
                     'workflowId' => [

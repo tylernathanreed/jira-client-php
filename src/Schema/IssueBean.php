@@ -52,8 +52,12 @@ final readonly class IssueBean extends Dto
          */
         public ?array $renderedFields = null,
 
-        /** The schema describing each field present on the issue. */
-        public ?JsonTypeBean $schema = null,
+        /**
+         * The schema describing each field present on the issue.
+         * 
+         * @var array<string,JsonTypeBean>
+         */
+        public ?array $schema = null,
 
         /** The URL of the issue details. */
         public ?string $self = null,
