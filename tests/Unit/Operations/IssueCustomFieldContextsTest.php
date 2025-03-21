@@ -167,9 +167,26 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testGetCustomFieldContextsForProjectsAndIssueTypes(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\ProjectIssueTypeMappings::class, [
+            'mappings' => [
+                [
+                    'issueTypeId' => '10000',
+                    'projectId' => '10000',
+                ],
+                [
+                    'issueTypeId' => '10001',
+                    'projectId' => '10000',
+                ],
+                [
+                    'issueTypeId' => '10002',
+                    'projectId' => '10001',
+                ],
+            ],
+        ]);
+
+        $fieldId = 'foo';
+        $startAt = 0;
+        $maxResults = 50;
 
         $this->assertCall(
             method: 'getCustomFieldContextsForProjectsAndIssueTypes',
