@@ -29,9 +29,12 @@ class IssueCustomFieldOptionsTest extends OperationsTestCase
 
     public function testGetOptionsForContext(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $fieldId = 'foo';
+        $contextId = 1234;
+        $optionId = null;
+        $onlyOptions = false;
+        $startAt = 0;
+        $maxResults = 100;
 
         $this->assertCall(
             method: 'getOptionsForContext',
@@ -51,7 +54,7 @@ class IssueCustomFieldOptionsTest extends OperationsTestCase
                 $startAt,
                 $maxResults,
             ],
-            response: '{"isLast":true,"maxResults":100,"startAt":0,"total":4,"values":[{"id":"10001","value":"New York"},{"id":"10002","value":"Boston","disabled":true},{"id":"10004","value":"Denver"},{"id":"10003","value":"Brooklyn","optionId":"10001"}]}',
+            response: '{"isLast":true,"maxResults":100,"startAt":0,"total":4,"values":[{"id":"10001","value":"New York","disabled":false},{"id":"10002","value":"Boston","disabled":true},{"id":"10004","value":"Denver","disabled":false},{"id":"10003","value":"Brooklyn","disabled":false,"optionId":"10001"}]}',
         );
     }
 
