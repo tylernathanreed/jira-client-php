@@ -1,0 +1,7 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/dashboard/bulk/edit.put.responses.200.content.application/json.example",
+        "value": "{\"action\":\"changePermission\",\"entityErrors\":{}}"
+    }
+]

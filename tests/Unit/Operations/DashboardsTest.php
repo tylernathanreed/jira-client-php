@@ -67,9 +67,33 @@ class DashboardsTest extends OperationsTestCase
 
     public function testBulkEditDashboards(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\BulkEditShareableEntityRequest::class, [
+            'action' => 'changePermission',
+            'entityIds' => [
+                '10001',
+                '10002',
+            ],
+            'extendAdminPermissions' => true,
+            'permissionDetails' => [
+                'editPermissions' => [
+                    0 => [
+                        'group' => [
+                            'groupId' => '276f955c-63d7-42c8-9520-92d01dca0625',
+                            'name' => 'jira-administrators',
+                            'self' => 'https://your-domain.atlassian.net/rest/api/~ver~/group?groupId=276f955c-63d7-42c8-9520-92d01dca0625',
+                        ],
+                        'id' => '10010',
+                        'type' => 'group',
+                    ],
+                ],
+                'sharePermissions' => [
+                    0 => [
+                        'id' => '10000',
+                        'type' => 'global',
+                    ],
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'bulkEditDashboards',
@@ -83,7 +107,7 @@ class DashboardsTest extends OperationsTestCase
             arguments: [
                 $request,
             ],
-            response: '{"action":"changePermission","entityErrors":{"10002":{"errorMessages":["Only owner or editors of the dashboard can change permissions."],"errors":{}}}}',
+            response: '{"action":"changePermission","entityErrors":{}}',
         );
     }
 

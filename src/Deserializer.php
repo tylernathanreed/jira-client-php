@@ -73,6 +73,8 @@ class Deserializer
                 $args[] = $value;
             } elseif (! $type instanceof ReflectionNamedType) {
                 $args[] = $value;
+            } elseif (is_array($value) && empty($value) && $type->allowsNull()) {
+                $args[] = null;
             } elseif ($type->getName() === 'array' && is_array($value)) {
                 $args[] = $this->fromArray($class, $property, $value);
             } elseif ($type->getName() === DateTimeImmutable::class && is_string($value)) {
@@ -103,7 +105,7 @@ class Deserializer
             return $array;
         }
 
-        $var = preg_match('/@var ?\?([^ ]+)(?:\n| \*)/', $doc, $matches)
+        $var = preg_match('/@var \??([^ ]+)(?:\n| \*)/', $doc, $matches)
             ? $matches[1]
             : null;
 
