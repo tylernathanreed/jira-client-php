@@ -1,0 +1,12 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/workflow/transitions/{transitionId}/properties.get.responses.200.content.application/json.schema",
+        "value": {
+            "items": {
+                "$ref": "#/components/schemas/WorkflowTransitionProperty"
+            },
+            "type": "array"
+        }
+    }
+]

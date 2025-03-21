@@ -30,6 +30,8 @@ trait WorkflowTransitionProperties
      * @param 'live'|'draft'|null $workflowMode
      *        The workflow status.
      *        Set to *live* for active and inactive workflows, or *draft* for draft workflows.
+     * 
+     * @return list<Schema\WorkflowTransitionProperty>
      */
     public function getWorkflowTransitionProperties(
         int $transitionId,
@@ -37,14 +39,14 @@ trait WorkflowTransitionProperties
         ?bool $includeReservedKeys = false,
         ?string $key = null,
         ?string $workflowMode = 'live',
-    ): Schema\WorkflowTransitionProperty {
+    ): array {
         return $this->call(
             uri: '/rest/api/3/workflow/transitions/{transitionId}/properties',
             method: 'get',
             query: compact('workflowName', 'includeReservedKeys', 'key', 'workflowMode'),
             path: compact('transitionId'),
             success: 200,
-            schema: Schema\WorkflowTransitionProperty::class,
+            schema: [Schema\WorkflowTransitionProperty::class],
         );
     }
 

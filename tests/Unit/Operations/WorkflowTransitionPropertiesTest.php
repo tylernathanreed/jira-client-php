@@ -9,9 +9,11 @@ class WorkflowTransitionPropertiesTest extends OperationsTestCase
 {
     public function testGetWorkflowTransitionProperties(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $transitionId = 1234;
+        $workflowName = 'foo';
+        $includeReservedKeys = false;
+        $key = null;
+        $workflowMode = 'live';
 
         $this->assertCall(
             method: 'getWorkflowTransitionProperties',
@@ -21,7 +23,7 @@ class WorkflowTransitionPropertiesTest extends OperationsTestCase
                 'query' => compact('workflowName', 'includeReservedKeys', 'key', 'workflowMode'),
                 'path' => compact('transitionId'),
                 'success' => 200,
-                'schema' => Schema\WorkflowTransitionProperty::class,
+                'schema' => [Schema\WorkflowTransitionProperty::class],
             ],
             arguments: [
                 $transitionId,
