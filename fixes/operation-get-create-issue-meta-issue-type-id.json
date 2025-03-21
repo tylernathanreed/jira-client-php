@@ -1,0 +1,7 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/issue/createmeta/{projectIdOrKey}/issuetypes/{issueTypeId}.get.responses.200.content.application/json.example",
+        "value": "{\"fields\":[{\"fieldId\":\"assignee\",\"hasDefaultValue\":false,\"key\":\"assignee\",\"name\":\"Assignee\",\"operations\":[\"set\"],\"required\":true,\"schema\":{\"type\":\"user\",\"system\":\"assignee\"}}],\"maxResults\":1,\"startAt\":0,\"total\":1}"
+    }
+]

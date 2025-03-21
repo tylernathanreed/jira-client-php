@@ -609,9 +609,10 @@ class IssuesTest extends OperationsTestCase
 
     public function testGetCreateIssueMetaIssueTypeId(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $projectIdOrKey = 'foo';
+        $issueTypeId = 'foo';
+        $startAt = 0;
+        $maxResults = 50;
 
         $this->assertCall(
             method: 'getCreateIssueMetaIssueTypeId',
@@ -629,7 +630,7 @@ class IssuesTest extends OperationsTestCase
                 $startAt,
                 $maxResults,
             ],
-            response: '{"fields":[{"fieldId":"assignee","hasDefaultValue":false,"key":"assignee","name":"Assignee","operations":["set"],"required":true}],"maxResults":1,"startAt":0,"total":1}',
+            response: '{"fields":[{"fieldId":"assignee","hasDefaultValue":false,"key":"assignee","name":"Assignee","operations":["set"],"required":true,"schema":{"type":"user","system":"assignee"}}],"maxResults":1,"startAt":0,"total":1}',
         );
     }
 
@@ -849,9 +850,9 @@ class IssuesTest extends OperationsTestCase
 
     public function testGetEditIssueMeta(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $issueIdOrKey = 'foo';
+        $overrideScreenSecurity = false;
+        $overrideEditableFlag = false;
 
         $this->assertCall(
             method: 'getEditIssueMeta',
@@ -935,9 +936,12 @@ class IssuesTest extends OperationsTestCase
 
     public function testGetTransitions(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $issueIdOrKey = 'foo';
+        $expand = null;
+        $transitionId = null;
+        $skipRemoteOnlyCondition = false;
+        $includeUnavailableTransitions = false;
+        $sortByOpsBarAndStatus = false;
 
         $this->assertCall(
             method: 'getTransitions',
