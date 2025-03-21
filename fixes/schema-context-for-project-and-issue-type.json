@@ -1,0 +1,10 @@
+[
+    {
+        "type": "set",
+        "path": "components.schemas.ContextForProjectAndIssueType.required",
+        "value": [
+            "issueTypeId",
+            "projectId"
+        ]
+    }
+]
