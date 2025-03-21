@@ -444,18 +444,6 @@ final class Operation extends AbstractSchema implements Stringable
             'testGetWorkflowSchemeProjectAssociations',
             'testGetWorkflowTransitionRuleConfigurations',
 
-            // Example missing required property
-            'testBulkEditDashboards',
-            'testSubmitBulkMove',
-            'testGetCustomFieldContextsForProjectsAndIssueTypes',
-            'testGetOptionsForContext',
-            'testGetFieldConfigurationSchemeProjectMapping',
-            'testGetCreateIssueMeta',
-            'testGetCreateIssueMetaIssueTypeId',
-            'testGetEditIssueMeta',
-            'testGetTransitions',
-            'testGetWorkflowTransitionProperties',
-
             // Example has bad response
             'testUpdatePriorityScheme',
 
