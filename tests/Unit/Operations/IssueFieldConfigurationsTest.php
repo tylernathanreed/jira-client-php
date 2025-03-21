@@ -246,9 +246,9 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testGetFieldConfigurationSchemeProjectMapping(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $projectId = [1234];
+        $startAt = 0;
+        $maxResults = 50;
 
         $this->assertCall(
             method: 'getFieldConfigurationSchemeProjectMapping',

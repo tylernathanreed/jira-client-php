@@ -257,6 +257,8 @@ final class Parameter extends AbstractSchema
                     $value = '\'foo\'';
                 } elseif ($this->type === 'int') {
                     $value = 1234;
+                } elseif ($this->type === 'array' && $this->listableType === 'int') {
+                    $value = '[1234]';
                 }
             }
 
