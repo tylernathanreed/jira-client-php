@@ -556,9 +556,11 @@ class IssuesTest extends OperationsTestCase
 
     public function testGetCreateIssueMeta(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $projectIds = null;
+        $projectKeys = null;
+        $issuetypeIds = null;
+        $issuetypeNames = null;
+        $expand = 'projects.issuetypes.fields';
 
         $this->assertCall(
             method: 'getCreateIssueMeta',
@@ -576,7 +578,7 @@ class IssuesTest extends OperationsTestCase
                 $issuetypeNames,
                 $expand,
             ],
-            response: '{"projects":[{"avatarUrls":{"16x16":"https://your-domain.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011","24x24":"https://your-domain.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10011","32x32":"https://your-domain.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10011","48x48":"https://your-domain.atlassian.net/secure/projectavatar?pid=10000&avatarId=10011"},"id":"10000","issuetypes":[{"description":"An error in the code","fields":{"issuetype":{"allowedValues":["set"],"autoCompleteUrl":"issuetype","hasDefaultValue":false,"key":"issuetype","name":"Issue Type","required":true}},"iconUrl":"https://your-domain.atlassian.net/images/icons/issuetypes/bug.png","id":"1","name":"Bug","self":"https://your-domain.atlassian.net/rest/api/3/issueType/1","subtask":false}],"key":"ED","name":"Edison Project","self":"https://your-domain.atlassian.net/rest/api/3/project/ED"}]}',
+            response: '{"expand":"projects","projects":[{"avatarUrls":{"16x16":"https://your-domain.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011","24x24":"https://your-domain.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10011","32x32":"https://your-domain.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10011","48x48":"https://your-domain.atlassian.net/secure/projectavatar?pid=10000&avatarId=10011"},"id":"10000","issuetypes":[{"description":"An error in the code","fields":{"issuetype":{"allowedValues":["set"],"autoCompleteUrl":"issuetype","hasDefaultValue":false,"key":"issuetype","name":"Issue Type","required":true,"schema":{"type":"issuetype","system":"issuetype"},"operations":[]}},"iconUrl":"https://your-domain.atlassian.net/images/icons/issuetypes/bug.png","id":"1","name":"Bug","self":"https://your-domain.atlassian.net/rest/api/3/issueType/1","subtask":false}],"key":"ED","name":"Edison Project","self":"https://your-domain.atlassian.net/rest/api/3/project/ED"}]}',
         );
     }
 
