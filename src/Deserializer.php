@@ -7,6 +7,7 @@ use Jira\Client\Exceptions\DeserializationException;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
+use TypeError;
 
 class Deserializer
 {
@@ -42,6 +43,26 @@ class Deserializer
      * @return T
      */
     public function from(string $class, array $data): Dto
+    {
+        try {
+            return $this->resolve($class, $data);
+        } catch (TypeError $e) {
+            throw new DeserializationException(sprintf(
+                'Failed to deserialize [%s]: %s (Data: %s)',
+                $class,
+                substr($e->getMessage(), strlen($class . '::__construct(): ')),
+                json_encode($data),
+            ), previous: $e);
+        }
+    }
+
+    /**
+     * @phpstan-template T of Dto
+     * @param class-string<T> $class
+     * @param array<string,mixed> $data
+     * @return T
+     */
+    protected function resolve(string $class, array $data): Dto
     {
         $reflector = new ReflectionClass($class);
 
