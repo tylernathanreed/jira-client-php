@@ -1,0 +1,10 @@
+[
+    {
+        "type": "merge",
+        "path": "components.schemas.WebhooksExpirationDate.properties.expirationDate",
+        "value": {
+            "type": "string",
+            "format": "date-time"
+        }
+    }
+]
