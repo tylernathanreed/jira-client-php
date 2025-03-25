@@ -9,9 +9,8 @@ class WebhooksTest extends OperationsTestCase
 {
     public function testGetDynamicWebhooksForApp(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $startAt = 0;
+        $maxResults = 100;
 
         $this->assertCall(
             method: 'getDynamicWebhooksForApp',
@@ -126,9 +125,13 @@ class WebhooksTest extends OperationsTestCase
 
     public function testRefreshWebhooks(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\ContainerForWebhookIDs::class, [
+            'webhookIds' => [
+                '10000',
+                '10001',
+                '10042',
+            ],
+        ]);
 
         $this->assertCall(
             method: 'refreshWebhooks',
