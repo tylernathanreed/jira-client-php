@@ -427,15 +427,6 @@ final class Operation extends AbstractSchema implements Stringable
             'testCreateAssociations',
             'testRemoveAssociations',
 
-            // Missing parameter in test
-            'testGetFieldConfigurationSchemeMappings',
-            'testGetIssueTypeSchemeForProjects',
-            'testGetIssueTypeScreenSchemeProjectAssociations',
-            'testGetStatusesById',
-            'testDeleteStatusesById',
-            'testGetWorkflowSchemeProjectAssociations',
-            'testGetWorkflowTransitionRuleConfigurations',
-
             // Example has bad response
             'testUpdatePriorityScheme',
 

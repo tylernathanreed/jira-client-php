@@ -34,6 +34,9 @@ final class Parameter extends AbstractSchema
 
         /** @var ?list<string> */
         public readonly ?array $enum = null,
+
+        /** @var ?list<string> */
+        public readonly ?array $listableEnum = null,
     ) {
     }
 
@@ -75,6 +78,7 @@ final class Parameter extends AbstractSchema
             example: $parameter['schema']['example'] ?? null,
             required: ($parameter['required'] ?? false) || ($parameter['in'] === 'path'),
             enum: $parameter['schema']['enum'] ?? null,
+            listableEnum: $parameter['schema']['items']['enum'] ?? null,
         );
     }
 
@@ -259,6 +263,10 @@ final class Parameter extends AbstractSchema
                     $value = 1234;
                 } elseif ($this->type === 'array' && $this->listableType === 'int') {
                     $value = '[1234]';
+                } elseif ($this->type === 'array' && $this->listableType === 'string') {
+                    $value = '[\'foo\']';
+                } elseif ($this->type === 'array' && ! empty($this->listableEnum)) {
+                    $value = '[\'' . $this->listableEnum[0] . '\']';
                 }
             }
 

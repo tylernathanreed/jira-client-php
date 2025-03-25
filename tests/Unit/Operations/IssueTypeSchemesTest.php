@@ -92,9 +92,9 @@ class IssueTypeSchemesTest extends OperationsTestCase
 
     public function testGetIssueTypeSchemeForProjects(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $projectId = [1234];
+        $startAt = 0;
+        $maxResults = 50;
 
         $this->assertCall(
             method: 'getIssueTypeSchemeForProjects',

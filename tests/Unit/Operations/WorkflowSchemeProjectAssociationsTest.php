@@ -9,9 +9,7 @@ class WorkflowSchemeProjectAssociationsTest extends OperationsTestCase
 {
     public function testGetWorkflowSchemeProjectAssociations(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $projectId = [1234];
 
         $this->assertCall(
             method: 'getWorkflowSchemeProjectAssociations',

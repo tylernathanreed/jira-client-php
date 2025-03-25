@@ -99,9 +99,9 @@ class IssueTypeScreenSchemesTest extends OperationsTestCase
 
     public function testGetIssueTypeScreenSchemeProjectAssociations(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $projectId = [1234];
+        $startAt = 0;
+        $maxResults = 50;
 
         $this->assertCall(
             method: 'getIssueTypeScreenSchemeProjectAssociations',

@@ -9,9 +9,8 @@ class StatusTest extends OperationsTestCase
 {
     public function testGetStatusesById(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $id = ['foo'];
+        $expand = null;
 
         $this->assertCall(
             method: 'getStatusesById',
@@ -95,9 +94,7 @@ class StatusTest extends OperationsTestCase
 
     public function testDeleteStatusesById(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $id = ['foo'];
 
         $this->assertCall(
             method: 'deleteStatusesById',

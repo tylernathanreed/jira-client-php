@@ -222,9 +222,9 @@ class IssueFieldConfigurationsTest extends OperationsTestCase
 
     public function testGetFieldConfigurationSchemeMappings(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $startAt = 0;
+        $maxResults = 50;
+        $fieldConfigurationSchemeId = null;
 
         $this->assertCall(
             method: 'getFieldConfigurationSchemeMappings',
