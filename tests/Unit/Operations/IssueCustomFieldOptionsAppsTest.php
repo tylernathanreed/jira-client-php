@@ -253,9 +253,12 @@ class IssueCustomFieldOptionsAppsTest extends OperationsTestCase
 
     public function testReplaceIssueFieldOption(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $fieldKey = 'foo';
+        $optionId = 1234;
+        $replaceWith = null;
+        $jql = null;
+        $overrideScreenSecurity = false;
+        $overrideEditableFlag = false;
 
         $this->assertCall(
             method: 'replaceIssueFieldOption',
@@ -275,7 +278,7 @@ class IssueCustomFieldOptionsAppsTest extends OperationsTestCase
                 $overrideScreenSecurity,
                 $overrideEditableFlag,
             ],
-            response: '{"self":"https://your-domain.atlassian.net/rest/api/3/task/1","id":"1","description":"Remove option 1 from issues matched by \'*\', and replace with option 3","status":"COMPLETE","result":{"errors":{"errorMessages":["Option 2 cannot be set on issue MKY-5 as it is not in the correct scope"],"errors":{},"httpStatusCode":{"empty":false,"present":true}},"modifiedIssues":[10001,10010],"unmodifiedIssues":[10005]},"elapsedRuntime":42}',
+            response: '{"self":"https://your-domain.atlassian.net/rest/api/3/task/1","id":"1","description":"Remove option 1 from issues matched by \'*\', and replace with option 3","status":"COMPLETE","result":{"errors":{"errorMessages":["Option 2 cannot be set on issue MKY-5 as it is not in the correct scope"],"errors":{},"httpStatusCode":303},"modifiedIssues":[10001,10010],"unmodifiedIssues":[10005]},"elapsedRuntime":42,"lastUpdate":1742915785,"progress":100,"submitted":1742915785,"submittedBy":1234}',
         );
     }
 }
