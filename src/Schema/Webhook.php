@@ -2,6 +2,7 @@
 
 namespace Jira\Client\Schema;
 
+use DateTimeImmutable;
 use Jira\Client\Dto;
 
 /** A webhook. */
@@ -27,7 +28,7 @@ final readonly class Webhook extends Dto
          * 
          * @link https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-webhooks/#api-rest-api-3-webhook-refresh-put
          */
-        public ?int $expirationDate = null,
+        public ?DateTimeImmutable $expirationDate = null,
 
         /**
          * A list of field IDs.
