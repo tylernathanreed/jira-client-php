@@ -1,0 +1,7 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/field/{fieldId}/context/{contextId}/option/{optionId}/issue.delete.responses.303.content.application/json.example",
+        "value": "{\"self\":\"https://your-domain.atlassian.net/rest/api/3/task/1\",\"id\":\"1\",\"description\":\"Remove option 1 from issues matched by '*', and replace with option 3\",\"status\":\"COMPLETE\",\"result\":{\"errors\":{\"errorMessages\":[\"Option 2 cannot be set on issue MKY-5 as it is not in the correct scope\"],\"errors\":{},\"httpStatusCode\":303},\"modifiedIssues\":[10001,10010],\"unmodifiedIssues\":[10005]},\"elapsedRuntime\":42,\"lastUpdate\":1742915785,\"progress\":100,\"submitted\":1742915785,\"submittedBy\":1234}"
+    }
+]
