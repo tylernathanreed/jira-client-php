@@ -1,0 +1,7 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/user/groups.get.responses.200.content.application/json.example",
+        "value": "[{\"groupId\":\"276f955c-63d7-42c8-9520-92d01dca0625\",\"name\":\"jira-administrators\",\"self\":\"https://your-domain.atlassian.net/rest/api/3/group?groupId=276f955c-63d7-42c8-9520-92d01dca0625\"}]"
+    }
+]

@@ -246,9 +246,9 @@ class UsersTest extends OperationsTestCase
 
     public function testGetUserGroups(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $accountId = '5b10ac8d82e05b22cc7d4ef5';
+        $username = null;
+        $key = null;
 
         $this->assertCall(
             method: 'getUserGroups',
@@ -264,7 +264,7 @@ class UsersTest extends OperationsTestCase
                 $username,
                 $key,
             ],
-            response: '{"groupId":"276f955c-63d7-42c8-9520-92d01dca0625","name":"jira-administrators","self":"https://your-domain.atlassian.net/rest/api/3/group?groupId=276f955c-63d7-42c8-9520-92d01dca0625"}',
+            response: '[{"groupId":"276f955c-63d7-42c8-9520-92d01dca0625","name":"jira-administrators","self":"https://your-domain.atlassian.net/rest/api/3/group?groupId=276f955c-63d7-42c8-9520-92d01dca0625"}]',
         );
     }
 
