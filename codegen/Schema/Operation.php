@@ -418,14 +418,6 @@ final class Operation extends AbstractSchema implements Stringable
         }
 
         if (in_array($testMethod, [
-            // Example/Type mismatch
-            'testGetDynamicWebhooksForApp',
-            'testRefreshWebhooks',
-            'testReplaceIssueFieldOption',
-            'testReplaceCustomFieldOption',
-            'testFindAssignableUsers',
-            'testGetUserGroups',
-
             // Missing discriminator
             'testGetDefaultValues',
             'testEvaluateJiraExpression',
