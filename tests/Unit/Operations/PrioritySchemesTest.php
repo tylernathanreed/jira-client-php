@@ -153,9 +153,51 @@ class PrioritySchemesTest extends OperationsTestCase
 
     public function testUpdatePriorityScheme(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\UpdatePrioritySchemeRequestBean::class, [
+            'defaultPriorityId' => '10001',
+            'description' => 'My priority scheme description',
+            'mappings' => [
+                'in' => [
+                    10003 => '10002',
+                    10004 => '10001',
+                ],
+                'out' => [
+                    10001 => '10005',
+                    10002 => '10006',
+                ],
+            ],
+            'name' => 'My new priority scheme',
+            'priorities' => [
+                'add' => [
+                    'ids' => [
+                        0 => '10001',
+                        1 => '10002',
+                    ],
+                ],
+                'remove' => [
+                    'ids' => [
+                        0 => '10003',
+                        1 => '10004',
+                    ],
+                ],
+            ],
+            'projects' => [
+                'add' => [
+                    'ids' => [
+                        0 => '10101',
+                        1 => '10102',
+                    ],
+                ],
+                'remove' => [
+                    'ids' => [
+                        0 => '10103',
+                        1 => '10104',
+                    ],
+                ],
+            ],
+        ]);
+
+        $schemeId = 1234;
 
         $this->assertCall(
             method: 'updatePriorityScheme',
@@ -171,7 +213,7 @@ class PrioritySchemesTest extends OperationsTestCase
                 $request,
                 $schemeId,
             ],
-            response: '{"task":{"self":"https://your-domain.atlassian.net/rest/api/3/task/1","id":"1","description":"Task description","status":"COMPLETE","result":"the task result, this may be any JSON","submittedBy":10000,"progress":100,"elapsedRuntime":156,"submitted":1501708132800,"started":1501708132900,"finished":1501708133000,"lastUpdate":1501708133000},"updated":{"description":"This is the default scheme used by all new and unassigned projects","id":"1","isDefault":true,"name":"Default Priority Scheme","priorities":{"isLast":true,"maxResults":50,"startAt":0,"total":3,"values":[{"description":"Serious problem that could block progress.","iconUrl":"/images/icons/priorities/high.svg","id":"1","isDefault":false,"name":"High","statusColor":"#f15C75"},{"description":"Has the potential to affect progress.","iconUrl":"/images/icons/priorities/medium.svg","id":"2","isDefault":true,"name":"Medium","statusColor":"#f79232"},{"description":"Minor problem or easily worked around.","iconUrl":"/images/icons/priorities/low.svg","id":"3","isDefault":false,"name":"Low","statusColor":"#707070"}]},"projects":{"isLast":true,"maxResults":50,"startAt":0,"total":1,"values":[{"avatarUrls":{"16x16":"secure/projectavatar?size=xsmall&pid=10000","24x24":"secure/projectavatar?size=small&pid=10000","32x32":"secure/projectavatar?size=medium&pid=10000","48x48":"secure/projectavatar?size=large&pid=10000"},"id":"10000","key":"EX","name":"Example","projectCategory":{"description":"Project category description","id":"10000","name":"A project category"},"projectTypeKey":"ProjectTypeKey{key=\'software\'}","self":"project/EX","simplified":false}]}}}',
+            response: '{"task":{"self":"https://your-domain.atlassian.net/rest/api/3/task/1","id":"1","description":"Task description","status":"COMPLETE","result":{"textValue":"the task result, this may be any JSON"},"submittedBy":10000,"progress":100,"elapsedRuntime":156,"submitted":1501708132800,"started":1501708132900,"finished":1501708133000,"lastUpdate":1501708133000},"updated":{"description":"This is the default scheme used by all new and unassigned projects","id":"1","isDefault":true,"name":"Default Priority Scheme","priorities":{"isLast":true,"maxResults":50,"startAt":0,"total":3,"values":[{"description":"Serious problem that could block progress.","iconUrl":"/images/icons/priorities/high.svg","id":"1","isDefault":false,"name":"High","statusColor":"#f15C75"},{"description":"Has the potential to affect progress.","iconUrl":"/images/icons/priorities/medium.svg","id":"2","isDefault":true,"name":"Medium","statusColor":"#f79232"},{"description":"Minor problem or easily worked around.","iconUrl":"/images/icons/priorities/low.svg","id":"3","isDefault":false,"name":"Low","statusColor":"#707070"}]},"projects":{"isLast":true,"maxResults":50,"startAt":0,"total":1,"values":[{"avatarUrls":{"16x16":"secure/projectavatar?size=xsmall&pid=10000","24x24":"secure/projectavatar?size=small&pid=10000","32x32":"secure/projectavatar?size=medium&pid=10000","48x48":"secure/projectavatar?size=large&pid=10000"},"id":"10000","key":"EX","name":"Example","projectCategory":{"description":"Project category description","id":"10000","name":"A project category"},"projectTypeKey":"ProjectTypeKey{key=\'software\'}","self":"project/EX","simplified":false}]}}}',
         );
     }
 

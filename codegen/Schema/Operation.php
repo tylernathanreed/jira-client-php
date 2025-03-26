@@ -427,9 +427,6 @@ final class Operation extends AbstractSchema implements Stringable
             'testCreateAssociations',
             'testRemoveAssociations',
 
-            // Example has bad response
-            'testUpdatePriorityScheme',
-
             // Unknown class object
             'testGetIssueLimitReport',
 
