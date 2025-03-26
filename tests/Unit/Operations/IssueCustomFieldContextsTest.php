@@ -72,9 +72,10 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
 
     public function testGetDefaultValues(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $fieldId = 'foo';
+        $contextId = null;
+        $startAt = 0;
+        $maxResults = 50;
 
         $this->assertCall(
             method: 'getDefaultValues',
@@ -92,7 +93,7 @@ class IssueCustomFieldContextsTest extends OperationsTestCase
                 $startAt,
                 $maxResults,
             ],
-            response: '{"isLast":true,"maxResults":50,"startAt":0,"total":3,"values":[{"contextId":"10100","optionId":"10001"},{"contextId":"10101","optionId":"10003"},{"contextId":"10103"}]}',
+            response: '{"isLast":true,"maxResults":50,"startAt":0,"total":3,"values":[{"type":"option.single","contextId":"10100","optionId":"10001"},{"type":"option.single","contextId":"10101","optionId":"10003"}]}',
         );
     }
 

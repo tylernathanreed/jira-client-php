@@ -2,6 +2,7 @@
 
 namespace Jira\Client\Schema;
 
+use Jira\Client\Attributes\PolymorphicList;
 use Jira\Client\Dto;
 
 /**
@@ -14,8 +15,9 @@ final readonly class WorkflowCompoundCondition extends Dto
         /**
          * The list of workflow conditions.
          * 
-         * @var list<WorkflowCondition>
+         * @var list<WorkflowCompoundCondition|WorkflowSimpleCondition>
          */
+        #[PolymorphicList(WorkflowCondition::class)]
         public array $conditions,
 
         public string $nodeType,

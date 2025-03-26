@@ -2,8 +2,11 @@
 
 namespace Jira\CodeGen\Schema;
 
+use Attribute;
 use Closure;
 use Jira\Client\Attributes\MapName;
+use Jira\Client\Attributes\PolymorphicList;
+use Jira\Client\PolymorphicDto;
 use RuntimeException;
 use Stringable;
 
@@ -196,7 +199,16 @@ final class Property extends AbstractSchema implements Stringable
         }
 
         if ($this->isArray()) {
-            return ($this->required ? '' : '?') . "list<{$this->listableType}>";
+            $type = $this->listableType;
+            $class = 'Jira\Client\Schema\\' . $type;
+
+            if (class_exists($class) && is_subclass_of($class, PolymorphicDto::class)) {
+                $qualifiedMorphTypes = array_values($class::discriminatorMap());
+                $baseMorphTypes = array_map(fn($c) => class_basename($c), $qualifiedMorphTypes);
+                $type = implode('|', $baseMorphTypes);
+            }
+
+            return ($this->required ? '' : '?') . "list<{$type}>";
         }
 
         if ($this->isAssociativeArray()) {
@@ -274,15 +286,32 @@ final class Property extends AbstractSchema implements Stringable
         ]);
     }
 
-    public function getAttributes(): string
+    /** @return array<class-string<Attribute>,list<scalar>> */
+    public function getAttributes(): array
     {
-        $indent = str_repeat(' ', 8);
-
         $attributes = [];
 
         if ($this->requiresNameMapping()) {
             $attributes[MapName::class] = [$this->getOriginalName()];
         }
+
+        if ($this->listableType) {
+            $class = 'Jira\Client\Schema\\' . $this->listableType;
+
+            if (class_exists($class) && is_subclass_of($class, PolymorphicDto::class)) {
+                $attributes[PolymorphicList::class] = [$this->listableType . '::class'];
+            }
+        }
+
+        // @phpstan-ignore return.type (semantics)
+        return $attributes;
+    }
+
+    protected function getAttributesDefinition(): string
+    {
+        $indent = str_repeat(' ', 8);
+
+        $attributes = $this->getAttributes();
 
         $content = '';
 
@@ -292,10 +321,11 @@ final class Property extends AbstractSchema implements Stringable
             $argString = '';
 
             foreach ($arguments as $argument) {
-                $argString .= "'{$argument}', ";
+                $argString .= str_ends_with((string) $argument, '::class')
+                    ? $argument . ', '
+                    : "'{$argument}', ";
             }
 
-            // @phpstan-ignore empty.variable (loop is not always entered)
             if (! empty($argString)) {
                 $argString = '(' . rtrim($argString, ', ') . ')';
             }
@@ -328,6 +358,6 @@ final class Property extends AbstractSchema implements Stringable
 
     public function __toString(): string
     {
-        return $this->getDoc() . $this->getAttributes() . $this->getDefinition();
+        return $this->getDoc() . $this->getAttributesDefinition() . $this->getDefinition();
     }
 }

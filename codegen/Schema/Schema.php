@@ -2,6 +2,7 @@
 
 namespace Jira\CodeGen\Schema;
 
+use Attribute;
 use RuntimeException;
 use Throwable;
 
@@ -126,7 +127,7 @@ final class Schema extends AbstractSchema
 
     public function isPolymorphic(): bool
     {
-        return ! is_null($this->discriminatorKey);
+        return ! is_null($this->discriminatorKey) && ! empty($this->discriminatorMap);
     }
 
     public function isUnionType(): bool
@@ -154,5 +155,19 @@ final class Schema extends AbstractSchema
         }
 
         return false;
+    }
+
+    /** @return list<class-string<Attribute>> */
+    public function getPropertyAttributes(): array
+    {
+        $attributes = [];
+
+        foreach ($this->properties as $property) {
+            foreach ($property->getAttributes() as $attribute => $arguments) {
+                $attributes[$attribute] = true;
+            }
+        }
+
+        return array_keys($attributes);
     }
 }

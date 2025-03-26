@@ -3,7 +3,6 @@
 namespace Jira\CodeGen\Replacers;
 
 use DateTimeImmutable;
-use Jira\Client\Attributes\MapName;
 use Jira\CodeGen\Schema\AbstractSchema;
 use Jira\CodeGen\Schema\Schema;
 
@@ -21,8 +20,8 @@ class DummyIncludesReplacer extends Replacer
             $includes[] = DateTimeImmutable::class;
         }
 
-        if ($schema->hasMappedPropertyName()) {
-            $includes[] = MapName::class;
+        foreach ($schema->getPropertyAttributes() as $attribute) {
+            $includes[] = $attribute;
         }
 
         $content = implode("\n", array_map(fn ($v) => "use {$v};", $includes));

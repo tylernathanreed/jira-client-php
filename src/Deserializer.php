@@ -3,7 +3,9 @@
 namespace Jira\Client;
 
 use DateTimeImmutable;
+use Jira\Client\Attributes\PolymorphicList;
 use Jira\Client\Exceptions\DeserializationException;
+use Jira\Client\PolymorphicDto;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
@@ -159,6 +161,14 @@ class Deserializer
                 settype($v, $type);
                 return $v;
             }, $array);
+        }
+
+        if (! empty($attributes = $property->getAttributes(PolymorphicList::class))) {
+            /** @var class-string<PolymorphicDto> $polymorph */
+            $polymorph = $attributes[0]->getArguments()[0];
+
+            // @phpstan-ignore argument.type
+            return $this->deserialize($array, $polymorph, array: true);
         }
 
         if (class_exists($subclass = 'Jira\\Client\\Schema\\' . $type) && is_subclass_of($subclass, Dto::class)) {

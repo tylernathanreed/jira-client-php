@@ -2,10 +2,10 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\PolymorphicDto;
+use Jira\Client\Dto;
 
 /** Identifier for a field for example FIELD\_ID. */
-final readonly class FieldIdentifierObject extends PolymorphicDto
+final readonly class FieldIdentifierObject extends Dto
 {
     public function __construct(
         public string $type,
@@ -13,18 +13,5 @@ final readonly class FieldIdentifierObject extends PolymorphicDto
         /** @var array<string,mixed> */
         public ?array $identifier = null,
     ) {
-    }
-
-    public static function discriminator(): string
-    {
-        return 'type';
-    }
-
-    /** @inheritDoc */
-    public static function discriminatorMap(): array
-    {
-        return [
-
-        ];
     }
 }

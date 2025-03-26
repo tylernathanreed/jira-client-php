@@ -42,9 +42,59 @@ class JiraExpressionsTest extends OperationsTestCase
 
     public function testEvaluateJiraExpression(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\JiraExpressionEvalRequestBean::class, [
+            'context' => [
+                'board' => '10100',
+                'custom' => [
+                    'config' => [
+                        'type' => 'json',
+                        'value' => [
+                            'userId' => '10002',
+                        ],
+                    ],
+                    'issuesList' => [
+                        'type' => 'json',
+                        'value' => [
+                            0 => [
+                                'key' => 'ACJIRA-1471',
+                                'type' => 'issue',
+                            ],
+                            1 => [
+                                'id' => '100001',
+                                'type' => 'issue',
+                            ],
+                        ],
+                    ],
+                    'myUser' => [
+                        'accountId' => '100001',
+                        'type' => 'user',
+                    ],
+                    'nullField' => [
+                        'type' => 'json',
+                    ],
+                ],
+                'customerRequest' => '1450',
+                'issue' => [
+                    'key' => 'ACJIRA-1470',
+                ],
+                'issues' => [
+                    'jql' => [
+                        'maxResults' => '100',
+                        'query' => 'project = HSP',
+                        'startAt' => '0',
+                        'validation' => 'strict',
+                    ],
+                ],
+                'project' => [
+                    'key' => 'ACJIRA',
+                ],
+                'serviceDesk' => '10023',
+                'sprint' => '10001',
+            ],
+            'expression' => '{ key: issue.key, type: issue.issueType.name, links: issue.links.map(link => link.linkedIssue.id), listCustomVariable: issuesList.includes(issue), customVariables: myUser.accountId == config.userId}',
+        ]);
+
+        $expand = null;
 
         $this->assertCall(
             method: 'evaluateJiraExpression',
@@ -66,9 +116,58 @@ class JiraExpressionsTest extends OperationsTestCase
 
     public function testEvaluateJSISJiraExpression(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\JiraExpressionEvaluateRequestBean::class, [
+            'context' => [
+                'board' => '10100',
+                'custom' => [
+                    'config' => [
+                        'type' => 'json',
+                        'value' => [
+                            'userId' => '10002',
+                        ],
+                    ],
+                    'issuesList' => [
+                        'type' => 'json',
+                        'value' => [
+                            0 => [
+                                'key' => 'ACJIRA-1471',
+                                'type' => 'issue',
+                            ],
+                            1 => [
+                                'id' => '100001',
+                                'type' => 'issue',
+                            ],
+                        ],
+                    ],
+                    'myUser' => [
+                        'accountId' => '100001',
+                        'type' => 'user',
+                    ],
+                    'nullField' => [
+                        'type' => 'json',
+                    ],
+                ],
+                'customerRequest' => '1450',
+                'issue' => [
+                    'key' => 'ACJIRA-1470',
+                ],
+                'issues' => [
+                    'jql' => [
+                        'maxResults' => '100',
+                        'nextPageToken' => 'EgQIlMIC',
+                        'query' => 'project = HSP',
+                    ],
+                ],
+                'project' => [
+                    'key' => 'ACJIRA',
+                ],
+                'serviceDesk' => '10023',
+                'sprint' => '10001',
+            ],
+            'expression' => '{ key: issue.key, type: issue.issueType.name, links: issue.links.map(link => link.linkedIssue.id), listCustomVariable: issuesList.includes(issue), customVariables: myUser.accountId == config.userId}',
+        ]);
+
+        $expand = null;
 
         $this->assertCall(
             method: 'evaluateJSISJiraExpression',

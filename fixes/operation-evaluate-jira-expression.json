@@ -1,0 +1,19 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/expression/eval.post.requestBody.content.application/json.example.context.custom.issuesList",
+        "value": {
+            "type": "json",
+            "value": [
+                {
+                    "key": "ACJIRA-1471",
+                    "type": "issue"
+                },
+                {
+                    "id": 100001,
+                    "type": "issue"
+                }
+            ]
+        }
+    }
+]

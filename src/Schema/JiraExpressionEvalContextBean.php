@@ -2,6 +2,7 @@
 
 namespace Jira\Client\Schema;
 
+use Jira\Client\Attributes\PolymorphicList;
 use Jira\Client\Dto;
 
 final readonly class JiraExpressionEvalContextBean extends Dto
@@ -23,8 +24,9 @@ final readonly class JiraExpressionEvalContextBean extends Dto
          * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#user
          * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#issue
          * 
-         * @var ?list<CustomContextVariable>
+         * @var ?list<IssueContextVariable|JsonContextVariable|UserContextVariable>
          */
+        #[PolymorphicList(CustomContextVariable::class)]
         public ?array $custom = null,
 
         /**
