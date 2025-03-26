@@ -1,0 +1,18 @@
+[
+    {
+        "type": "merge",
+        "path": "components.schemas.IssueLimitReportResponseBean.properties.issuesApproachingLimit.additionalProperties",
+        "value": {
+            "format": "int64",
+            "type": "integer"
+        }
+    },
+    {
+        "type": "merge",
+        "path": "components.schemas.IssueLimitReportResponseBean.properties.issuesBreachingLimit.additionalProperties",
+        "value": {
+            "format": "int64",
+            "type": "integer"
+        }
+    }
+]

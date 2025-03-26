@@ -426,9 +426,6 @@ final class Operation extends AbstractSchema implements Stringable
             // Missing discriminator mapping
             'testCreateAssociations',
             'testRemoveAssociations',
-
-            // Unknown class object
-            'testGetIssueLimitReport',
         ])) {
             $setupStr = strtr("\n{indent}\$this->markTestSkipped(\n{indent2}'{reason}'\n{indent});\n", [
                 '{indent}' => str_repeat(' ', 8),

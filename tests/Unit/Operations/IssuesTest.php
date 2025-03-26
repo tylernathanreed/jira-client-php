@@ -636,9 +636,7 @@ class IssuesTest extends OperationsTestCase
 
     public function testGetIssueLimitReport(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $isReturningKeys = false;
 
         $this->assertCall(
             method: 'getIssueLimitReport',
