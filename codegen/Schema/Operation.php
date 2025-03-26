@@ -441,10 +441,6 @@ final class Operation extends AbstractSchema implements Stringable
 
             // Unable to decode response body
             'testGetUserEmail',
-
-            // Failed to match query string
-            'testSearchForIssuesUsingJql',
-            'testSearchAndReconsileIssuesUsingJql',
         ])) {
             $setupStr = strtr("\n{indent}\$this->markTestSkipped(\n{indent2}'{reason}'\n{indent});\n", [
                 '{indent}' => str_repeat(' ', 8),

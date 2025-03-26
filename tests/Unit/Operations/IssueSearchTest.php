@@ -67,9 +67,15 @@ class IssueSearchTest extends OperationsTestCase
 
     public function testSearchForIssuesUsingJql(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $jql = 'project = HSP';
+        $startAt = 0;
+        $maxResults = 50;
+        $validateQuery = 'strict';
+        $fields = null;
+        $expand = null;
+        $properties = null;
+        $fieldsByKeys = false;
+        $failFast = false;
 
         $this->assertCall(
             method: 'searchForIssuesUsingJql',
@@ -178,9 +184,15 @@ class IssueSearchTest extends OperationsTestCase
 
     public function testSearchAndReconsileIssuesUsingJql(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $jql = 'project = HSP';
+        $nextPageToken = '<string>';
+        $maxResults = 114;
+        $fields = null;
+        $expand = '<string>';
+        $properties = null;
+        $fieldsByKeys = false;
+        $failFast = false;
+        $reconcileIssues = null;
 
         $this->assertCall(
             method: 'searchAndReconsileIssuesUsingJql',

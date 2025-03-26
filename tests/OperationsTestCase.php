@@ -60,7 +60,7 @@ abstract class OperationsTestCase extends TestCase
                 $query = array_filter($call['query'], fn ($v) => ! is_null($v));
 
                 if (! empty($query)) {
-                    $url .= '?' . http_build_query($query);
+                    $url .= '?' . http_build_query($query, encoding_type: PHP_QUERY_RFC3986);
                 }
             }
 
