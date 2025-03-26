@@ -88,6 +88,12 @@ class Deserializer
 
             $type = $parameter->getType();
 
+            if (is_null($value) && $type instanceof ReflectionNamedType && ! $type->allowsNull()) {
+                if ($type->getName() === 'array') {
+                    $value = [];
+                }
+            }
+
             if (is_null($value)) {
                 $args[] = $value;
             } elseif (is_null($type)) {

@@ -35,9 +35,9 @@ class UsersTest extends OperationsTestCase
 
     public function testCreateUser(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\NewUserDetails::class, [
+            'emailAddress' => 'mia@atlassian.com',
+        ]);
 
         $this->assertCall(
             method: 'createUser',
