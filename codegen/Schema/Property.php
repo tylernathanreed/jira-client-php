@@ -204,7 +204,7 @@ final class Property extends AbstractSchema implements Stringable
 
             if (class_exists($class) && is_subclass_of($class, PolymorphicDto::class)) {
                 $qualifiedMorphTypes = array_values($class::discriminatorMap());
-                $baseMorphTypes = array_map(fn($c) => class_basename($c), $qualifiedMorphTypes);
+                $baseMorphTypes = array_map(fn ($c) => class_basename($c), $qualifiedMorphTypes);
                 $type = implode('|', $baseMorphTypes);
             }
 
