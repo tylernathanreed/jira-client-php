@@ -202,9 +202,7 @@ class UsersTest extends OperationsTestCase
 
     public function testGetUserEmail(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $accountId = 'foo';
 
         $this->assertCall(
             method: 'getUserEmail',
@@ -218,7 +216,7 @@ class UsersTest extends OperationsTestCase
             arguments: [
                 $accountId,
             ],
-            response: 'name@example.com',
+            response: '{"email":"name@example.com"}',
         );
     }
 

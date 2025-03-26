@@ -1,0 +1,7 @@
+[
+    {
+        "type": "set",
+        "path": "paths./rest/api/3/user/email.get.responses.200.content.application/json.example",
+        "value": "{\"email\":\"name@example.com\"}"
+    }
+]

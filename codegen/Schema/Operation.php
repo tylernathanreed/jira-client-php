@@ -429,9 +429,6 @@ final class Operation extends AbstractSchema implements Stringable
 
             // Unknown class object
             'testGetIssueLimitReport',
-
-            // Unable to decode response body
-            'testGetUserEmail',
         ])) {
             $setupStr = strtr("\n{indent}\$this->markTestSkipped(\n{indent2}'{reason}'\n{indent});\n", [
                 '{indent}' => str_repeat(' ', 8),
