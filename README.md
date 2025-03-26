@@ -7,7 +7,18 @@
 
 This package provides an HTTP Client to interact with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#version).
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Configuration](#configuration)
+  - [1. Authentication](#authentication)
+  - [2. Laravel](#laravel)
+- [Usage](#usage)
+  - [1. Operations](#operations)
+  - [2. Schema](#schema)
+
 ## Installation
+<a name="installation"></a>
 
 Install this package using [Composer](https://getcomposer.org/):
 
@@ -16,10 +27,12 @@ composer require jira/client
 ```
 
 ## Configuration
+<a name="configuration"></a>
 
 The Jira Client must be constructed with a Configuration instance.
 
 ### 1. Authentication
+<a name="authentication"></a>
 
 #### i. Basic Authentication
 
@@ -52,6 +65,7 @@ $client = new Client(new Configuration(
 Note that Atlassian has a security policy for [API Tokens](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) that cause them to expire within one year. You'll need a process to rotate API Tokens if you authenticate in this manner.
 
 ### 2. Laravel
+<a name="laravel"></a>
 
 If you are using Laravel, you can bind the `Configuration` instance to the container in your `AppServiceProvider`:
 
@@ -91,6 +105,7 @@ return [
 ```
 
 ## Usage
+<a name="usage"></a>
 
 This package strictly follows the [OpenAPI Specification of the Jira Cloud REST API](https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json).
 
@@ -99,5 +114,11 @@ The API Specification for [Operations](https://spec.openapis.org/oas/latest.html
 By following the OpenAPI specification, this package supports 100% of all operations documented by Atlassian.
 
 ### 1. Operations
+<a name="operations"></a>
+
+Coming soon.
+
+### 2. Schema
+<a name="schema"></a>
 
 Coming soon.
