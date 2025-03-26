@@ -433,9 +433,6 @@ final class Operation extends AbstractSchema implements Stringable
             // Unknown class object
             'testGetIssueLimitReport',
 
-            // Unknown named parameter
-            'testExportArchivedIssues',
-
             // Too few arguments in schema construction
             'testCreateUser',
 

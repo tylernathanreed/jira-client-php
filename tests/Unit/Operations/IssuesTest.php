@@ -1050,9 +1050,32 @@ class IssuesTest extends OperationsTestCase
 
     public function testExportArchivedIssues(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\ArchivedIssuesFilterRequest::class, [
+            'archivedBy' => [
+                'uuid-rep-001',
+                'uuid-rep-002',
+            ],
+            'archivedDate' => [
+                'dateAfter' => '2023-01-01',
+                'dateBefore' => '2023-01-12',
+            ],
+            'archivedDateRange' => [
+                'dateAfter' => '2023-01-01',
+                'dateBefore' => '2023-01-12',
+            ],
+            'issueTypes' => [
+                '10001',
+                '10002',
+            ],
+            'projects' => [
+                'FOO',
+                'BAR',
+            ],
+            'reporters' => [
+                'uuid-rep-001',
+                'uuid-rep-002',
+            ],
+        ]);
 
         $this->assertCall(
             method: 'exportArchivedIssues',
