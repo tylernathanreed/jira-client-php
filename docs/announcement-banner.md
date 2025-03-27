@@ -2,74 +2,57 @@
 
 This resource represents an announcement banner. Use it to retrieve and update banner configuration.
 
-| Operations |     |
-| ---------- | --- |
-| GET        | /rest/api/3/announcementBanner |
-| PUT        | /rest/api/3/announcementBanner |
+## Operations
 
-## GET Get announcement banner configuration
+- [Get Announcement Banner Configuration](#)
+- [Update announcement banner configuration](#)
+
+## Get Announcement Banner Configuration
+
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-announcement-banner/#api-rest-api-3-announcementbanner-get
 
 Returns the current announcement banner configuration.
 
-**[Permissions](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions) required:** *Administer Jira* [global permission](https://confluence.atlassian.com/x/x4dKLg).
-
-**[Data Security Policy](https://developer.atlassian.com/cloud/confluence/data-security-developer-guide)**: Exempt from app access rules
+### Example
 
 ```php
-$response = $client->getBanner();
+use Jira\Client\Schema;
+
+/** @var Schema\AnnouncementBannerConfiguration $response */
+$response = $client->setBanner(new Schema\AnnouncementBannerConfigurationUpdate(
+    isDismissible: false,
+    isEnabled: true,
+    message: 'This is a public, enabled, non-dismissible banner, set using the API',
+    visibility: 'public',
+));
 ```
-
-### Scopes
-
-**[OAuth 2.0 scopes](https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/) required**: `manage:jira-configuration`
-
-**[Connect app scope](https://developer.atlassian.com/cloud/jira/platform/scopes) required**: `ADMIN`
 
 ### Request
 
-This request has no parameters.
+#### Request Body
 
-### Responses
+Source: [`Jira\Client\Schema\AnnouncementBannerConfigurationUpdate`](#)
 
-200 OK
+Configuration of the announcement banner.
 
-Returned if the request is successful.
+| Property            | Type       | Default | Description                                                              |
+| ------------------- | ---------- | ------- | ------------------------------------------------------------------------ |
+| **`isDismissible`** | `?boolean` | `null`  | Flag indicating if the announcement banner can be dismissed by the user. |
+| **`isEnabled`**     | `?boolean` | `null`  | Flag indicating if the announcement banner is enabled or not.            |
+| **`message`**       | `?string`  | `null`  | The text on the announcement banner.                                     |
+| **`visibility`**    | `?string`  | `null`  | Visibility of the announcement banner. Can be public or private.         |
 
-application/json
 
-[AnnouncementBannerConfiguration](#)
+### Response
+
+Source: [`Jira\Client\Schema\AnnouncementBannerConfiguration`](#)
 
 Announcement banner configuration.
 
-<details><summary>Show child properties</summary>
-```php
-/** Announcement banner configuration. */
-final readonly class AnnouncementBannerConfiguration extends Dto
-{
-    public function __construct(
-        /**
-         * Hash of the banner data.
-         * The client detects updates by comparing hash IDs.
-         */
-        public ?string $hashId = null,
-
-        /** Flag indicating if the announcement banner can be dismissed by the user. */
-        public ?bool $isDismissible = null,
-
-        /** Flag indicating if the announcement banner is enabled or not. */
-        public ?bool $isEnabled = null,
-
-        /** The text on the announcement banner. */
-        public ?string $message = null,
-
-        /**
-         * Visibility of the announcement banner.
-         * 
-         * @var 'PUBLIC'|'PRIVATE'|null
-         */
-        public ?string $visibility = null,
-    ) {
-    }
-}
-```
-</details>
+| Property            | Type       | Default | Description                                                                    |
+| ------------------- | ---------- | ------- | ------------------------------------------------------------------------------ |
+| **`hashId`**        | `?string`  | `null`  | Hash of the banner data.<br/>The client detects updates by comparing hash IDs. |
+| **`isDismissible`** | `?boolean` | `null`  | Flag indicating if the announcement banner can be dismissed by the user.       |
+| **`isEnabled`**     | `?boolean` | `null`  | Flag indicating if the announcement banner is enabled or not.                  |
+| **`message`**       | `?string`  | `null`  | The text on the announcement banner.                                           |
+| **`visibility`**    | `?string`  | `null`  | Visibility of the announcement banner. Can be public or private.               |
