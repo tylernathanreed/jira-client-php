@@ -111,14 +111,57 @@ This package strictly follows the [OpenAPI Specification of the Jira Cloud REST 
 
 The API Specification for [Operations](https://spec.openapis.org/oas/latest.html#operation-object) includes an `operationId`, which determines the name of the methods available on the `Client` instance.
 
+```php
+use Jira\Client\Schema;
+
+$response = $client->createProject(new Schema\CreateProjectDetails(
+    key: 'EX',
+    name: 'Example',
+    projectTypeKey: 'business',
+    projectTemplateKey: 'com.atlassian.jira-core-project-templates:jira-core-project-management',
+    description: 'Example description',
+    avatarId: 10130,
+    issueSecurityScheme: 1000,
+    permissionScheme: 1000,
+    notificationScheme: 1000,
+    categoryId: 1000,
+));
+
+var_dump($response);
+
+// object(ProjectIdentifiers)#1 (3) {
+//   ["id"] => int(10042)
+//   ["key"] => string(2) "EX"
+//   ["self"] => string(43) "http://example.com/rest/api/2/project/10042"
+// }
+```
+
 By following the OpenAPI specification, this package supports 100% of all operations documented by Atlassian.
 
 ### 1. Operations
 <a name="operations"></a>
 
-Coming soon.
+#### [Announcement Banner](#)
+- [Get Announcement Banner Configuration](#)
+- [Update Announcement Banner Configuration](#)
+
+#### [App Data Policies](#)
+- [Get data policy for the workspace](#)
+- [Get data policy for projects](#)
+
+WIP
 
 ### 2. Schema
 <a name="schema"></a>
 
-Coming soon.
+- [ActorInputBean](#)
+- [ActorsMap](#)
+- [AddAtlassianTeamRequest](#)
+- [AddFieldBean](#)
+- [AddGroupBean](#)
+- [AddNotificationsDetails](#)
+- [AddSecuritySchemeLevelsRequestBean](#)
+- [AnnouncementBannerConfiguration](#)
+- [AnnouncementBannerConfigurationUpdate](#)
+
+WIP
