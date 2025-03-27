@@ -10,8 +10,7 @@ final readonly class AssociationContextObject extends Dto
     public function __construct(
         public string $type,
 
-        /** @var array<string,mixed> */
-        public ?array $identifier = null,
+        public ?int $identifier = null,
     ) {
     }
 }

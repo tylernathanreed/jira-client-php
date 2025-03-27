@@ -1,0 +1,10 @@
+[
+    {
+        "type": "set",
+        "path": "components.schemas.AssociationContextObject.properties.identifier",
+        "value": {
+            "type": "integer",
+            "format": "int64"
+        }
+    }
+]

@@ -9,9 +9,28 @@ class IssueCustomFieldAssociationsTest extends OperationsTestCase
 {
     public function testCreateAssociations(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\FieldAssociationsRequest::class, [
+            'associationContexts' => [
+                [
+                    'identifier' => '10000',
+                    'type' => 'PROJECT_ID',
+                ],
+                [
+                    'identifier' => '10001',
+                    'type' => 'PROJECT_ID',
+                ],
+            ],
+            'fields' => [
+                [
+                    'identifier' => 'customfield_10000',
+                    'type' => 'FIELD_ID',
+                ],
+                [
+                    'identifier' => 'customfield_10001',
+                    'type' => 'FIELD_ID',
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'createAssociations',
@@ -31,9 +50,28 @@ class IssueCustomFieldAssociationsTest extends OperationsTestCase
 
     public function testRemoveAssociations(): void
     {
-        $this->markTestSkipped(
-            'Explicitly skipped test.'
-        );
+        $request = $this->deserialize(Schema\FieldAssociationsRequest::class, [
+            'associationContexts' => [
+                [
+                    'identifier' => '10000',
+                    'type' => 'PROJECT_ID',
+                ],
+                [
+                    'identifier' => '10001',
+                    'type' => 'PROJECT_ID',
+                ],
+            ],
+            'fields' => [
+                [
+                    'identifier' => 'customfield_10000',
+                    'type' => 'FIELD_ID',
+                ],
+                [
+                    'identifier' => 'customfield_10001',
+                    'type' => 'FIELD_ID',
+                ],
+            ],
+        ]);
 
         $this->assertCall(
             method: 'removeAssociations',

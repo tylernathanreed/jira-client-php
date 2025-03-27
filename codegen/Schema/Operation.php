@@ -417,18 +417,6 @@ final class Operation extends AbstractSchema implements Stringable
             ]);
         }
 
-        if (in_array($testMethod, [
-            // Missing discriminator mapping
-            'testCreateAssociations',
-            'testRemoveAssociations',
-        ])) {
-            $setupStr = strtr("\n{indent}\$this->markTestSkipped(\n{indent2}'{reason}'\n{indent});\n", [
-                '{indent}' => str_repeat(' ', 8),
-                '{indent2}' => str_repeat(' ', 12),
-                '{reason}' => 'Explicitly skipped test.',
-            ]);
-        }
-
         return <<<CODE
             public function {$testMethod}(): void
             {{$setupStr}

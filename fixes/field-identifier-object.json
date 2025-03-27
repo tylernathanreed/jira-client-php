@@ -1,0 +1,9 @@
+[
+    {
+        "type": "set",
+        "path": "components.schemas.FieldIdentifierObject.properties.identifier",
+        "value": {
+            "type": "string"
+        }
+    }
+]
