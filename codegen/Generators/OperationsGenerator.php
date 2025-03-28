@@ -57,7 +57,7 @@ class OperationsGenerator extends Generator implements SupportsTestGenerator
         }
 
         $traits = array_map(
-            fn($filepath) => '    use Operations\\' . basename($filepath, '.php') . ';',
+            fn ($filepath) => '    use Operations\\' . basename($filepath, '.php') . ';',
             glob(realpath(__DIR__ . '/../../') . '/src/Operations/*.php') ?: []
         );
 
