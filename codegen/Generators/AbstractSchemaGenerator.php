@@ -123,6 +123,12 @@ abstract class AbstractSchemaGenerator
         return $path;
     }
 
+    /** To be executed by consumer if all instances are generated. */
+    public function afterAll(): void
+    {
+        //
+    }
+
     /** @return TSchema */
     abstract public function schema(string $name): AbstractSchema;
 

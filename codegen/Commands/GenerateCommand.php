@@ -156,6 +156,8 @@ class GenerateCommand extends Command
                 $name
             ));
         }
+
+        $generator->afterAll();
     }
 
     protected function generateAll(): void
