@@ -56,6 +56,7 @@ class Kernel
         $commands = [
             Commands\MakeOperationGroupCommand::class,
             Commands\MakeSchemaCommand::class,
+            Commands\GenerateCommand::class,
             CoverageCommand::class,
         ];
 
