@@ -64,7 +64,7 @@ class GenerateCommand extends Command
         if (is_null($type)) {
             return null;
         }
-    
+
         /** @var ?string $name */
         $name = $this->argument('name');
 
@@ -89,7 +89,7 @@ class GenerateCommand extends Command
     {
         if (! is_null($type) && ! is_null($name)) {
             $this->generateAssets($type, $name);
-        } else if (! is_null($type)) {
+        } elseif (! is_null($type)) {
             $this->generateType($type);
         } else {
             $this->generateAll();
@@ -122,7 +122,7 @@ class GenerateCommand extends Command
     {
         /** @var Generator<*>&SupportsTestGenerator<*> */
         $sourceGenerator = $this->generator($type);
-        
+
         $testGenerator = $sourceGenerator->getTestGenerator();
 
         return $this->runGenerator($testGenerator, $type, 'test', $name);
