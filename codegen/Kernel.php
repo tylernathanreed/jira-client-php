@@ -2,13 +2,11 @@
 
 namespace Jira\CodeGen;
 
-use Jira\CodeGen\Commands\GeneratorCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Command\ListCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Process\Process;
-use Tests\Commands\CoverageCommand;
 use Throwable;
 
 class Kernel
@@ -48,16 +46,13 @@ class Kernel
         $app = new Application('Jira Client', $this->version());
 
         foreach ($app->all() as $command) {
-            if ($command instanceof ListCommand || ! $command instanceof GeneratorCommand) {
+            if ($command instanceof ListCommand) {
                 $command->setHidden(true);
             }
         }
 
         $commands = [
-            Commands\MakeOperationGroupCommand::class,
-            Commands\MakeSchemaCommand::class,
             Commands\GenerateCommand::class,
-            CoverageCommand::class,
         ];
 
         foreach ($commands as $command) {
