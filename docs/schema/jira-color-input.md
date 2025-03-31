@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraColorInput`](/src/Schema/JiraColorInput.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` |  |
+| `name` | `` |  |
 
 ## References
 

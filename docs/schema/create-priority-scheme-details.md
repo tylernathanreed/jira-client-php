@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\CreatePrioritySchemeDetails`](/src/Schema/CreatePri
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultPriorityId` | `int` | The ID of the default priority for the priority scheme. |
-| `name` | `string` | The name of the priority scheme. Must be unique. |
-| `priorityIds` | `array` | The IDs of priorities in the scheme. |
-| `description` | `string` | The description of the priority scheme. |
-| `mappings` | `PriorityMapping` | Instructions to migrate the priorities of issues.
+| `defaultPriorityId` | `` | The ID of the default priority for the priority scheme. |
+| `name` | `` | The name of the priority scheme. Must be unique. |
+| `priorityIds` | `list<int>` | The IDs of priorities in the scheme. |
+| `description` | `` | The description of the priority scheme. |
+| `mappings` | `` | Instructions to migrate the priorities of issues.
 
 `in` mappings are used to migrate the priorities of issues to priorities used within the priority scheme.
 
@@ -24,7 +24,7 @@ Source: [`Jira\Client\Schema\CreatePrioritySchemeDetails`](/src/Schema/CreatePri
  *  When **projects** are **removed** from the priority scheme, no mapping needs to be provided as the removed projects are not using the priorities of the new priority scheme.
 
 For more information on `in` and `out` mappings, see the child properties documentation for the `PriorityMapping` object below. |
-| `projectIds` | `array` | The IDs of projects that will use the priority scheme. |
+| `projectIds` | `?list<int>` | The IDs of projects that will use the priority scheme. |
 
 ## References
 

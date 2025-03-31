@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\AttachmentArchive`](/src/Schema/AttachmentArchive.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `entries` | `array` |  |
-| `moreAvailable` | `bool` |  |
-| `totalEntryCount` | `int` |  |
-| `totalNumberOfEntriesAvailable` | `int` |  |
+| `entries` | `?list<AttachmentArchiveEntry>` |  |
+| `moreAvailable` | `` |  |
+| `totalEntryCount` | `` |  |
+| `totalNumberOfEntriesAvailable` | `` |  |
 
 ## References
 

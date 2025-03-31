@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsagePage`](/src/Schema/Wor
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `nextPageToken` | `string` | Token for the next page of issue type usages. |
-| `values` | `array` | The list of issue types. |
+| `nextPageToken` | `` | Token for the next page of issue type usages. |
+| `values` | `?list<WorkflowProjectIssueTypeUsage>` | The list of issue types. |
 
 ## References
 

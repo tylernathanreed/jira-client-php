@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\ExportArchivedIssuesTaskProgressResponse`](/src/Sch
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fileUrl` | `string` |  |
-| `payload` | `string` |  |
-| `progress` | `int` |  |
-| `status` | `string` |  |
-| `submittedTime` | `string` |  |
-| `taskId` | `string` |  |
+| `fileUrl` | `` |  |
+| `payload` | `` |  |
+| `progress` | `` |  |
+| `status` | `` |  |
+| `submittedTime` | `` |  |
+| `taskId` | `` |  |
 
 ## References
 

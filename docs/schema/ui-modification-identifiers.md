@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UiModificationIdentifiers`](/src/Schema/UiModificat
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the UI modification. |
-| `self` | `string` | The URL of the UI modification. |
+| `id` | `` | The ID of the UI modification. |
+| `self` | `` | The URL of the UI modification. |
 
 ## References
 

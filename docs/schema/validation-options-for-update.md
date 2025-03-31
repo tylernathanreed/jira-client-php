@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\ValidationOptionsForUpdate`](/src/Schema/Validation
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `levels` | `array` |  |
+| `levels` | `?list<string>` |  |
 
 ## References
 

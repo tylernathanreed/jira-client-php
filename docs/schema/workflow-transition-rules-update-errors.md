@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRulesUpdateErrors`](/src/Schema/W
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `updateResults` | `array` | A list of workflows. |
+| `updateResults` | `list<WorkflowTransitionRulesUpdateErrorDetails>` | A list of workflows. |
 
 ## References
 

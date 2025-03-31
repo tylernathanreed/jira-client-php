@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldOptionCreate`](/src/Schema/CustomFieldOp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `value` | `string` | The value of the custom field option. |
-| `disabled` | `bool` | Whether the option is disabled. |
-| `optionId` | `string` | For cascading options, the ID of a parent option. |
+| `value` | `` | The value of the custom field option. |
+| `disabled` | `` | Whether the option is disabled. |
+| `optionId` | `` | For cascading options, the ID of a parent option. |
 
 ## References
 

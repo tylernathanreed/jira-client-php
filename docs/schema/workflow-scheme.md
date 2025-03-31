@@ -6,19 +6,19 @@ Source: [`Jira\Client\Schema\WorkflowScheme`](/src/Schema/WorkflowScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultWorkflow` | `string` | The name of the default workflow for the workflow scheme. The default workflow has *All Unassigned Issue Types* assigned to it in Jira. If `defaultWorkflow` is not specified when creating a workflow scheme, it is set to *Jira Workflow (jira)*. |
-| `description` | `string` | The description of the workflow scheme. |
-| `draft` | `bool` | Whether the workflow scheme is a draft or not. |
-| `id` | `int` | The ID of the workflow scheme. |
-| `issueTypeMappings` | `object` | The issue type to workflow mappings, where each mapping is an issue type ID and workflow name pair. Note that an issue type can only be mapped to one workflow in a workflow scheme. |
-| `issueTypes` | `object` | The issue types available in Jira. |
-| `lastModified` | `string` | The date-time that the draft workflow scheme was last modified. A modification is a change to the issue type-project mappings only. This property does not apply to non-draft workflows. |
-| `lastModifiedUser` | `User` | The user that last modified the draft workflow scheme. A modification is a change to the issue type-project mappings only. This property does not apply to non-draft workflows. |
-| `name` | `string` | The name of the workflow scheme. The name must be unique. The maximum length is 255 characters. Required when creating a workflow scheme. |
-| `originalDefaultWorkflow` | `string` | For draft workflow schemes, this property is the name of the default workflow for the original workflow scheme. The default workflow has *All Unassigned Issue Types* assigned to it in Jira. |
-| `originalIssueTypeMappings` | `object` | For draft workflow schemes, this property is the issue type to workflow mappings for the original workflow scheme, where each mapping is an issue type ID and workflow name pair. Note that an issue type can only be mapped to one workflow in a workflow scheme. |
-| `self` | `string` |  |
-| `updateDraftIfNeeded` | `bool` | Whether to create or update a draft workflow scheme when updating an active workflow scheme. An active workflow scheme is a workflow scheme that is used by at least one project. The following examples show how this property works:
+| `defaultWorkflow` | `` | The name of the default workflow for the workflow scheme. The default workflow has *All Unassigned Issue Types* assigned to it in Jira. If `defaultWorkflow` is not specified when creating a workflow scheme, it is set to *Jira Workflow (jira)*. |
+| `description` | `` | The description of the workflow scheme. |
+| `draft` | `` | Whether the workflow scheme is a draft or not. |
+| `id` | `` | The ID of the workflow scheme. |
+| `issueTypeMappings` | `array<string,string>` | The issue type to workflow mappings, where each mapping is an issue type ID and workflow name pair. Note that an issue type can only be mapped to one workflow in a workflow scheme. |
+| `issueTypes` | `array<string,IssueTypeDetails>` | The issue types available in Jira. |
+| `lastModified` | `` | The date-time that the draft workflow scheme was last modified. A modification is a change to the issue type-project mappings only. This property does not apply to non-draft workflows. |
+| `lastModifiedUser` | `` | The user that last modified the draft workflow scheme. A modification is a change to the issue type-project mappings only. This property does not apply to non-draft workflows. |
+| `name` | `` | The name of the workflow scheme. The name must be unique. The maximum length is 255 characters. Required when creating a workflow scheme. |
+| `originalDefaultWorkflow` | `` | For draft workflow schemes, this property is the name of the default workflow for the original workflow scheme. The default workflow has *All Unassigned Issue Types* assigned to it in Jira. |
+| `originalIssueTypeMappings` | `array<string,string>` | For draft workflow schemes, this property is the issue type to workflow mappings for the original workflow scheme, where each mapping is an issue type ID and workflow name pair. Note that an issue type can only be mapped to one workflow in a workflow scheme. |
+| `self` | `` |  |
+| `updateDraftIfNeeded` | `` | Whether to create or update a draft workflow scheme when updating an active workflow scheme. An active workflow scheme is a workflow scheme that is used by at least one project. The following examples show how this property works:
 
  *  Update an active workflow scheme with `updateDraftIfNeeded` set to `true`: If a draft workflow scheme exists, it is updated. Otherwise, a draft workflow scheme is created.
  *  Update an active workflow scheme with `updateDraftIfNeeded` set to `false`: An error is returned, as active workflow schemes cannot be updated.

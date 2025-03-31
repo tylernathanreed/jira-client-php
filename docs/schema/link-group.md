@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\LinkGroup`](/src/Schema/LinkGroup.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `groups` | `array` |  |
-| `header` | `SimpleLink` |  |
-| `id` | `string` |  |
-| `links` | `array` |  |
-| `styleClass` | `string` |  |
-| `weight` | `int` |  |
+| `groups` | `?list<LinkGroup>` |  |
+| `header` | `` |  |
+| `id` | `` |  |
+| `links` | `?list<SimpleLink>` |  |
+| `styleClass` | `` |  |
+| `weight` | `` |  |
 
 ## References
 

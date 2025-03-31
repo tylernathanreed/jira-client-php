@@ -6,17 +6,17 @@ Source: [`Jira\Client\Schema\ProjectRole`](/src/Schema/ProjectRole.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `actors` | `array` | The list of users who act in this role. |
-| `admin` | `bool` | Whether this role is the admin role for the project. |
-| `currentUserRole` | `bool` | Whether the calling user is part of this role. |
-| `default` | `bool` | Whether this role is the default role for the project |
-| `description` | `string` | The description of the project role. |
-| `id` | `int` | The ID of the project role. |
-| `name` | `string` | The name of the project role. |
-| `roleConfigurable` | `bool` | Whether the roles are configurable for this project. |
-| `scope` | `Scope` | The scope of the role. Indicated for roles associated with [next-gen projects](https://confluence.atlassian.com/x/loMyO). |
-| `self` | `string` | The URL the project role details. |
-| `translatedName` | `string` | The translated name of the project role. |
+| `actors` | `?list<RoleActor>` | The list of users who act in this role. |
+| `admin` | `` | Whether this role is the admin role for the project. |
+| `currentUserRole` | `` | Whether the calling user is part of this role. |
+| `default` | `` | Whether this role is the default role for the project |
+| `description` | `` | The description of the project role. |
+| `id` | `` | The ID of the project role. |
+| `name` | `` | The name of the project role. |
+| `roleConfigurable` | `` | Whether the roles are configurable for this project. |
+| `scope` | `` | The scope of the role. Indicated for roles associated with [next-gen projects](https://confluence.atlassian.com/x/loMyO). |
+| `self` | `` | The URL the project role details. |
+| `translatedName` | `` | The translated name of the project role. |
 
 ## References
 

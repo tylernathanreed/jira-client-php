@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraTimeTrackingField`](/src/Schema/JiraTimeTrackin
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `timeRemaining` | `string` |  |
+| `timeRemaining` | `` |  |
 
 ## References
 

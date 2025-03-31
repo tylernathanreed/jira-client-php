@@ -6,17 +6,17 @@ Source: [`Jira\Client\Schema\FieldCreateMetadata`](/src/Schema/FieldCreateMetada
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `string` | The field id. |
-| `key` | `string` | The key of the field. |
-| `name` | `string` | The name of the field. |
-| `operations` | `array` | The list of operations that can be performed on the field. |
-| `required` | `bool` | Whether the field is required. |
-| `schema` | `JsonTypeBean` | The data type of the field. |
-| `allowedValues` | `array` | The list of values allowed in the field. |
-| `autoCompleteUrl` | `string` | The URL that can be used to automatically complete the field. |
-| `configuration` | `object` | The configuration properties. |
+| `fieldId` | `` | The field id. |
+| `key` | `` | The key of the field. |
+| `name` | `` | The name of the field. |
+| `operations` | `list<string>` | The list of operations that can be performed on the field. |
+| `required` | `` | Whether the field is required. |
+| `schema` | `` | The data type of the field. |
+| `allowedValues` | `?list<mixed>` | The list of values allowed in the field. |
+| `autoCompleteUrl` | `` | The URL that can be used to automatically complete the field. |
+| `configuration` | `array<string,mixed>` | The configuration properties. |
 | `defaultValue` | `` | The default value of the field. |
-| `hasDefaultValue` | `bool` | Whether the field has a default value. |
+| `hasDefaultValue` | `` | Whether the field has a default value. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\UpdateDefaultScreenScheme`](/src/Schema/UpdateDefau
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `screenSchemeId` | `string` | The ID of the screen scheme. |
+| `screenSchemeId` | `` | The ID of the screen scheme. |
 
 ## References
 

@@ -6,15 +6,15 @@ Source: [`Jira\Client\Schema\ProjectRoleDetails`](/src/Schema/ProjectRoleDetails
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `admin` | `bool` | Whether this role is the admin role for the project. |
-| `default` | `bool` | Whether this role is the default role for the project. |
-| `description` | `string` | The description of the project role. |
-| `id` | `int` | The ID of the project role. |
-| `name` | `string` | The name of the project role. |
-| `roleConfigurable` | `bool` | Whether the roles are configurable for this project. |
-| `scope` | `Scope` | The scope of the role. Indicated for roles associated with [next-gen projects](https://confluence.atlassian.com/x/loMyO). |
-| `self` | `string` | The URL the project role details. |
-| `translatedName` | `string` | The translated name of the project role. |
+| `admin` | `` | Whether this role is the admin role for the project. |
+| `default` | `` | Whether this role is the default role for the project. |
+| `description` | `` | The description of the project role. |
+| `id` | `` | The ID of the project role. |
+| `name` | `` | The name of the project role. |
+| `roleConfigurable` | `` | Whether the roles are configurable for this project. |
+| `scope` | `` | The scope of the role. Indicated for roles associated with [next-gen projects](https://confluence.atlassian.com/x/loMyO). |
+| `self` | `` | The URL the project role details. |
+| `translatedName` | `` | The translated name of the project role. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\AttachmentSettings`](/src/Schema/AttachmentSettings
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `enabled` | `bool` | Whether the ability to add attachments is enabled. |
-| `uploadLimit` | `int` | The maximum size of attachments permitted, in bytes. |
+| `enabled` | `` | Whether the ability to add attachments is enabled. |
+| `uploadLimit` | `` | The maximum size of attachments permitted, in bytes. |
 
 ## References
 

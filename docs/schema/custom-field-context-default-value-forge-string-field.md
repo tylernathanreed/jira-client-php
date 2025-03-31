@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeStringField`](/s
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `string` | The ID of the context. |
-| `type` | `string` |  |
-| `text` | `string` | The default text. The maximum length is 254 characters. |
+| `contextId` | `` | The ID of the context. |
+| `type` | `` |  |
+| `text` | `` | The default text. The maximum length is 254 characters. |
 
 ## References
 

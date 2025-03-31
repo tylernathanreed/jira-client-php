@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\FieldValueClause`](/src/Schema/FieldValueClause.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `field` | `JqlQueryField` |  |
-| `operand` | `JqlQueryClauseOperand` |  |
-| `operator` | `string` | The operator between the field and operand. |
+| `field` | `` |  |
+| `operand` | `` |  |
+| `operator` | `'='|'!='|'>'|'<'|'>='|'<='|'in'|'not in'|'~'|'~='|'is'|'is not'` | The operator between the field and operand. |
 
 ## References
 

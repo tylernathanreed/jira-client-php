@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\IssuesUpdateBean`](/src/Schema/IssuesUpdateBean.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueUpdates` | `array` |  |
+| `issueUpdates` | `?list<IssueUpdateDetails>` |  |
 
 ## References
 

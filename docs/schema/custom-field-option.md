@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\CustomFieldOption`](/src/Schema/CustomFieldOption.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `self` | `string` | The URL of these custom field option details. |
-| `value` | `string` | The value of the custom field option. |
+| `self` | `` | The URL of these custom field option details. |
+| `value` | `` | The value of the custom field option. |
 
 ## References
 

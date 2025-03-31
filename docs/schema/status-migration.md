@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\StatusMigration`](/src/Schema/StatusMigration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `newStatusReference` | `string` | The new status ID. |
-| `oldStatusReference` | `string` | The old status ID. |
+| `newStatusReference` | `` | The new status ID. |
+| `oldStatusReference` | `` | The old status ID. |
 
 ## References
 

@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\PageOfCreateMetaIssueTypeWithField`](/src/Schema/Pa
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fields` | `array` | The collection of FieldCreateMetaBeans. |
-| `maxResults` | `int` | The maximum number of items to return per page. |
-| `results` | `array` |  |
-| `startAt` | `int` | The index of the first item returned. |
-| `total` | `int` | The total number of items in all pages. |
+| `fields` | `?list<FieldCreateMetadata>` | The collection of FieldCreateMetaBeans. |
+| `maxResults` | `` | The maximum number of items to return per page. |
+| `results` | `?list<FieldCreateMetadata>` |  |
+| `startAt` | `` | The index of the first item returned. |
+| `total` | `` | The total number of items in all pages. |
 
 ## References
 

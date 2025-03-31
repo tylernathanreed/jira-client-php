@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\AttachmentArchiveItemReadable`](/src/Schema/Attachm
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `index` | `int` | The position of the item within the archive. |
-| `label` | `string` | The label for the archive item. |
-| `mediaType` | `string` | The MIME type of the archive item. |
-| `path` | `string` | The path of the archive item. |
-| `size` | `string` | The size of the archive item. |
+| `index` | `` | The position of the item within the archive. |
+| `label` | `` | The label for the archive item. |
+| `mediaType` | `` | The MIME type of the archive item. |
+| `path` | `` | The path of the archive item. |
+| `size` | `` | The size of the archive item. |
 
 ## References
 

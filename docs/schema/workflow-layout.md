@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowLayout`](/src/Schema/WorkflowLayout.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `x` | `float` | The x axis location. |
-| `y` | `float` | The y axis location. |
+| `x` | `` | The x axis location. |
+| `y` | `` | The y axis location. |
 
 ## References
 

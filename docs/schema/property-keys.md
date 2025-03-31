@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PropertyKeys`](/src/Schema/PropertyKeys.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `keys` | `array` | Property key details. |
+| `keys` | `?list<PropertyKey>` | Property key details. |
 
 ## References
 

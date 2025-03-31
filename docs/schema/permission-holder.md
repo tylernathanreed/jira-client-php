@@ -8,10 +8,10 @@ Source: [`Jira\Client\Schema\PermissionHolder`](/src/Schema/PermissionHolder.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `string` | The type of permission holder. |
-| `expand` | `string` | Expand options that include additional permission holder details in the response. |
-| `parameter` | `string` | As a group's name can change, use of `value` is recommended. The identifier associated withthe `type` value that defines the holder of the permission. |
-| `value` | `string` | The identifier associated with the `type` value that defines the holder of the permission. |
+| `type` | `` | The type of permission holder. |
+| `expand` | `` | Expand options that include additional permission holder details in the response. |
+| `parameter` | `` | As a group's name can change, use of `value` is recommended. The identifier associated withthe `type` value that defines the holder of the permission. |
+| `value` | `` | The identifier associated with the `type` value that defines the holder of the permission. |
 
 ## References
 

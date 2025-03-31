@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\MultiIssueEntityProperties`](/src/Schema/MultiIssue
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issues` | `array` | A list of issue IDs and their respective properties. |
+| `issues` | `?list<IssueEntityPropertiesForMultiUpdate>` | A list of issue IDs and their respective properties. |
 
 ## References
 

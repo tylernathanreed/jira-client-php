@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\StatusCreateRequest`](/src/Schema/StatusCreateReque
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `scope` | `StatusScope` |  |
-| `statuses` | `array` | Details of the statuses being created. |
+| `scope` | `` |  |
+| `statuses` | `list<StatusCreate>` | Details of the statuses being created. |
 
 ## References
 

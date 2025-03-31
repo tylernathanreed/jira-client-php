@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsage`](/src/Schema/Workflo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the issue type. |
+| `id` | `` | The ID of the issue type. |
 
 ## References
 

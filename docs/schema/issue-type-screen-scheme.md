@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\IssueTypeScreenScheme`](/src/Schema/IssueTypeScreen
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the issue type screen scheme. |
-| `name` | `string` | The name of the issue type screen scheme. |
-| `description` | `string` | The description of the issue type screen scheme. |
+| `id` | `` | The ID of the issue type screen scheme. |
+| `name` | `` | The name of the issue type screen scheme. |
+| `description` | `` | The description of the issue type screen scheme. |
 
 ## References
 

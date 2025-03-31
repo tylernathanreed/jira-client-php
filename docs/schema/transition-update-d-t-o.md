@@ -6,19 +6,19 @@ Source: [`Jira\Client\Schema\TransitionUpdateDTO`](/src/Schema/TransitionUpdateD
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `actions` | `array` | The post-functions of the transition. |
-| `conditions` | `ConditionGroupUpdate` |  |
-| `customIssueEventId` | `string` | The custom event ID of the transition. |
-| `description` | `string` | The description of the transition. |
-| `id` | `string` | The ID of the transition. |
-| `links` | `array` | The statuses the transition can start from, and the mapping of ports between the statuses. |
-| `name` | `string` | The name of the transition. |
-| `properties` | `object` | The properties of the transition. |
-| `toStatusReference` | `string` | The status the transition goes to. |
-| `transitionScreen` | `WorkflowRuleConfiguration` |  |
-| `triggers` | `array` | The triggers of the transition. |
-| `type` | `string` | The transition type. |
-| `validators` | `array` | The validators of the transition. |
+| `actions` | `?list<WorkflowRuleConfiguration>` | The post-functions of the transition. |
+| `conditions` | `` |  |
+| `customIssueEventId` | `` | The custom event ID of the transition. |
+| `description` | `` | The description of the transition. |
+| `id` | `` | The ID of the transition. |
+| `links` | `?list<WorkflowTransitionLinks>` | The statuses the transition can start from, and the mapping of ports between the statuses. |
+| `name` | `` | The name of the transition. |
+| `properties` | `array<string,string>` | The properties of the transition. |
+| `toStatusReference` | `` | The status the transition goes to. |
+| `transitionScreen` | `` |  |
+| `triggers` | `?list<WorkflowTrigger>` | The triggers of the transition. |
+| `type` | `'INITIAL'|'GLOBAL'|'DIRECTED'|null` | The transition type. |
+| `validators` | `?list<WorkflowRuleConfiguration>` | The validators of the transition. |
 
 ## References
 

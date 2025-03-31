@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\GetTeamResponseForPage`](/src/Schema/GetTeamRespons
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The team ID. |
-| `type` | `string` | The team type. This is "PlanOnly" or "Atlassian". |
-| `name` | `string` | The team name. This is returned if the type is "PlanOnly". |
+| `id` | `` | The team ID. |
+| `type` | `'PlanOnly'|'Atlassian'` | The team type. This is "PlanOnly" or "Atlassian". |
+| `name` | `` | The team name. This is returned if the type is "PlanOnly". |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ProjectAvatars`](/src/Schema/ProjectAvatars.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `custom` | `array` | List of avatars added to Jira. These avatars may be deleted. |
-| `system` | `array` | List of avatars included with Jira. These avatars cannot be deleted. |
+| `custom` | `?list<Avatar>` | List of avatars added to Jira. These avatars may be deleted. |
+| `system` | `?list<Avatar>` | List of avatars included with Jira. These avatars cannot be deleted. |
 
 ## References
 

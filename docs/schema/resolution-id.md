@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ResolutionId`](/src/Schema/ResolutionId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the issue resolution. |
+| `id` | `` | The ID of the issue resolution. |
 
 ## References
 

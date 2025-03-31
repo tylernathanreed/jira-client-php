@@ -10,11 +10,11 @@ Source: [`Jira\Client\Schema\JiraExpressionValidationError`](/src/Schema/JiraExp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `message` | `string` | Details about the error. |
-| `type` | `string` | The error type. |
-| `column` | `int` | The text column in which the error occurred. |
-| `expression` | `string` | The part of the expression in which the error occurred. |
-| `line` | `int` | The text line in which the error occurred. |
+| `message` | `` | Details about the error. |
+| `type` | `'syntax'|'type'|'other'` | The error type. |
+| `column` | `` | The text column in which the error occurred. |
+| `expression` | `` | The part of the expression in which the error occurred. |
+| `line` | `` | The text line in which the error occurred. |
 
 ## References
 

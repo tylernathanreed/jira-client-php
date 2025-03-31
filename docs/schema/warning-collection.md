@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\WarningCollection`](/src/Schema/WarningCollection.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `warnings` | `array` |  |
+| `warnings` | `?list<string>` |  |
 
 ## References
 

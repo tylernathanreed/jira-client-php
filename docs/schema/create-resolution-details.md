@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\CreateResolutionDetails`](/src/Schema/CreateResolut
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The name of the resolution. Must be unique (case-insensitive). |
-| `description` | `string` | The description of the resolution. |
+| `name` | `` | The name of the resolution. Must be unique (case-insensitive). |
+| `description` | `` | The description of the resolution. |
 
 ## References
 

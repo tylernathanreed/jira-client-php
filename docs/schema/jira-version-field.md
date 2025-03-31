@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraVersionField`](/src/Schema/JiraVersionField.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `versionId` | `string` |  |
+| `versionId` | `` |  |
 
 ## References
 

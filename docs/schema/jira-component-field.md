@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraComponentField`](/src/Schema/JiraComponentField
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `componentId` | `int` |  |
+| `componentId` | `` |  |
 
 ## References
 

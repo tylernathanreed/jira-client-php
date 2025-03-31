@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\IssueFieldOption`](/src/Schema/IssueFieldOption.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `int` | The unique identifier for the option. This is only unique within the select field's set of options. |
-| `value` | `string` | The option's name, which is displayed in Jira. |
-| `config` | `IssueFieldOptionConfiguration` |  |
-| `properties` | `object` | The properties of the object, as arbitrary key-value pairs. These properties can be searched using JQL, if the extractions (see [Issue Field Option Property Index](https://developer.atlassian.com/cloud/jira/platform/modules/issue-field-option-property-index/)) are defined in the descriptor for the issue field module. |
+| `id` | `` | The unique identifier for the option. This is only unique within the select field's set of options. |
+| `value` | `` | The option's name, which is displayed in Jira. |
+| `config` | `` |  |
+| `properties` | `array<string,mixed>` | The properties of the object, as arbitrary key-value pairs. These properties can be searched using JQL, if the extractions (see [Issue Field Option Property Index](https://developer.atlassian.com/cloud/jira/platform/modules/issue-field-option-property-index/)) are defined in the descriptor for the issue field module. |
 
 ## References
 

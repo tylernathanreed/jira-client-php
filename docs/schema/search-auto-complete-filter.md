@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\SearchAutoCompleteFilter`](/src/Schema/SearchAutoCo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `includeCollapsedFields` | `bool` | Include collapsed fields for fields that have non-unique names. |
-| `projectIds` | `array` | List of project IDs used to filter the visible field details returned. |
+| `includeCollapsedFields` | `` | Include collapsed fields for fields that have non-unique names. |
+| `projectIds` | `?list<int>` | List of project IDs used to filter the visible field details returned. |
 
 ## References
 

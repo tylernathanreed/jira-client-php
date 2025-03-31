@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\NotificationRecipientsRestrictions`](/src/Schema/No
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `groupIds` | `array` | List of groupId memberships required to receive the notification. |
-| `groups` | `array` | List of group memberships required to receive the notification. |
-| `permissions` | `array` | List of permissions required to receive the notification. |
+| `groupIds` | `?list<string>` | List of groupId memberships required to receive the notification. |
+| `groups` | `?list<GroupName>` | List of group memberships required to receive the notification. |
+| `permissions` | `?list<RestrictedPermission>` | List of permissions required to receive the notification. |
 
 ## References
 

@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\WorkflowReferenceStatus`](/src/Schema/WorkflowRefer
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `approvalConfiguration` | `ApprovalConfiguration` |  |
-| `deprecated` | `bool` | Indicates if the status is deprecated. |
-| `layout` | `WorkflowStatusLayout` |  |
-| `properties` | `object` | The properties associated with the status. |
-| `statusReference` | `string` | The reference of the status. |
+| `approvalConfiguration` | `` |  |
+| `deprecated` | `` | Indicates if the status is deprecated. |
+| `layout` | `` |  |
+| `properties` | `array<string,string>` | The properties associated with the status. |
+| `statusReference` | `` | The reference of the status. |
 
 ## References
 

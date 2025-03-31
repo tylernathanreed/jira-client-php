@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SuggestedMappingsForProjectsRequestBean`](/src/Sche
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `add` | `array` | The ids of projects being added to the scheme. |
+| `add` | `?list<int>` | The ids of projects being added to the scheme. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectIssueTypeMappings`](/src/Schema/ProjectIssue
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `mappings` | `array` | The project and issue type mappings. |
+| `mappings` | `list<ProjectIssueTypeMapping>` | The project and issue type mappings. |
 
 ## References
 

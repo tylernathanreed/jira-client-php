@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueTypeScreenSchemeId`](/src/Schema/IssueTypeScre
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the issue type screen scheme. |
+| `id` | `` | The ID of the issue type screen scheme. |
 
 ## References
 

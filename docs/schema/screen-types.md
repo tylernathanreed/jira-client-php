@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\ScreenTypes`](/src/Schema/ScreenTypes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `default` | `int` | The ID of the default screen. Required when creating a screen scheme. |
-| `create` | `int` | The ID of the create screen. |
-| `edit` | `int` | The ID of the edit screen. |
-| `view` | `int` | The ID of the view screen. |
+| `default` | `` | The ID of the default screen. Required when creating a screen scheme. |
+| `create` | `` | The ID of the create screen. |
+| `edit` | `` | The ID of the edit screen. |
+| `view` | `` | The ID of the view screen. |
 
 ## References
 

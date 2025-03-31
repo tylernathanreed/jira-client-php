@@ -6,15 +6,15 @@ Source: [`Jira\Client\Schema\PrioritySchemeWithPaginatedPrioritiesAndProjects`](
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the priority scheme. |
-| `name` | `string` | The name of the priority scheme |
-| `default` | `bool` |  |
-| `defaultPriorityId` | `string` | The ID of the default issue priority. |
-| `description` | `string` | The description of the priority scheme |
-| `isDefault` | `bool` |  |
-| `priorities` | `PageBeanPriorityWithSequence` | The paginated list of priorities. |
-| `projects` | `PageBeanProjectDetails` | The paginated list of projects. |
-| `self` | `string` | The URL of the priority scheme. |
+| `id` | `` | The ID of the priority scheme. |
+| `name` | `` | The name of the priority scheme |
+| `default` | `` |  |
+| `defaultPriorityId` | `` | The ID of the default issue priority. |
+| `description` | `` | The description of the priority scheme |
+| `isDefault` | `` |  |
+| `priorities` | `` | The paginated list of priorities. |
+| `projects` | `` | The paginated list of projects. |
+| `self` | `` | The URL of the priority scheme. |
 
 ## References
 

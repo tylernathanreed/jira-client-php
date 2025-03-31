@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\ArchivedIssuesFilterRequest`](/src/Schema/ArchivedI
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `archivedBy` | `array` | List archived issues archived by a specified account ID. |
-| `archivedDateRange` | `DateRangeFilterRequest` |  |
-| `issueTypes` | `array` | List archived issues with a specified issue type ID. |
-| `projects` | `array` | List archived issues with a specified project key. |
-| `reporters` | `array` | List archived issues where the reporter is a specified account ID. |
+| `archivedBy` | `?list<string>` | List archived issues archived by a specified account ID. |
+| `archivedDateRange` | `` |  |
+| `issueTypes` | `?list<string>` | List archived issues with a specified issue type ID. |
+| `projects` | `?list<string>` | List archived issues with a specified project key. |
+| `reporters` | `?list<string>` | List archived issues where the reporter is a specified account ID. |
 
 ## References
 

@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\VersionIssueCounts`](/src/Schema/VersionIssueCounts
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `customFieldUsage` | `array` | List of custom fields using the version. |
-| `issueCountWithCustomFieldsShowingVersion` | `int` | Count of issues where a version custom field is set to the version. |
-| `issuesAffectedCount` | `int` | Count of issues where the `affectedVersion` is set to the version. |
-| `issuesFixedCount` | `int` | Count of issues where the `fixVersion` is set to the version. |
-| `self` | `string` | The URL of these count details. |
+| `customFieldUsage` | `?list<VersionUsageInCustomField>` | List of custom fields using the version. |
+| `issueCountWithCustomFieldsShowingVersion` | `` | Count of issues where a version custom field is set to the version. |
+| `issuesAffectedCount` | `` | Count of issues where the `affectedVersion` is set to the version. |
+| `issuesFixedCount` | `` | Count of issues where the `fixVersion` is set to the version. |
+| `self` | `` | The URL of these count details. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ProjectUsagePage`](/src/Schema/ProjectUsagePage.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `nextPageToken` | `string` | Page token for the next page of project usages. |
-| `values` | `array` | The list of projects. |
+| `nextPageToken` | `` | Page token for the next page of project usages. |
+| `values` | `?list<ProjectUsage>` | The list of projects. |
 
 ## References
 

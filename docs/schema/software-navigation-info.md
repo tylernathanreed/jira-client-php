@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\SoftwareNavigationInfo`](/src/Schema/SoftwareNaviga
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `boardId` | `int` |  |
-| `boardName` | `string` |  |
-| `simpleBoard` | `bool` |  |
-| `totalBoardsInProject` | `int` |  |
+| `boardId` | `` |  |
+| `boardName` | `` |  |
+| `simpleBoard` | `` |  |
+| `totalBoardsInProject` | `` |  |
 
 ## References
 

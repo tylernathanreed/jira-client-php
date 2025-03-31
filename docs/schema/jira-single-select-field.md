@@ -9,8 +9,8 @@ Source: [`Jira\Client\Schema\JiraSingleSelectField`](/src/Schema/JiraSingleSelec
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `string` |  |
-| `option` | `JiraSelectedOptionField` |  |
+| `fieldId` | `` |  |
+| `option` | `` |  |
 
 ## References
 

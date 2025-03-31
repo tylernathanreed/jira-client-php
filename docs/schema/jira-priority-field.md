@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraPriorityField`](/src/Schema/JiraPriorityField.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `priorityId` | `string` |  |
+| `priorityId` | `` |  |
 
 ## References
 

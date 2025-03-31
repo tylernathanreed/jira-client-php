@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowSchemeReadRequest`](/src/Schema/WorkflowSch
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projectIds` | `array` | The list of project IDs to query. |
-| `workflowSchemeIds` | `array` | The list of workflow scheme IDs to query. |
+| `projectIds` | `?list<string>` | The list of project IDs to query. |
+| `workflowSchemeIds` | `?list<string>` | The list of workflow scheme IDs to query. |
 
 ## References
 

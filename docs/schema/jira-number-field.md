@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraNumberField`](/src/Schema/JiraNumberField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `string` |  |
-| `value` | `float` |  |
+| `fieldId` | `` |  |
+| `value` | `` |  |
 
 ## References
 

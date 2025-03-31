@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\RemoteObject`](/src/Schema/RemoteObject.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `title` | `string` | The title of the item. |
-| `url` | `string` | The URL of the item. |
-| `icon` | `Icon` | Details of the icon for the item. If no icon is defined, the default link icon is used in Jira. |
-| `status` | `Status` | The status of the item. |
-| `summary` | `string` | The summary details of the item. |
+| `title` | `` | The title of the item. |
+| `url` | `` | The URL of the item. |
+| `icon` | `` | Details of the icon for the item. If no icon is defined, the default link icon is used in Jira. |
+| `status` | `` | The status of the item. |
+| `summary` | `` | The summary details of the item. |
 
 ## References
 

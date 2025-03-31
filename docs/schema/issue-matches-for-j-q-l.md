@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueMatchesForJQL`](/src/Schema/IssueMatchesForJQL
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errors` | `array` | A list of errors. |
-| `matchedIssues` | `array` | A list of issue IDs. |
+| `errors` | `list<string>` | A list of errors. |
+| `matchedIssues` | `list<int>` | A list of issue IDs. |
 
 ## References
 

@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraMultipleGroupPickerField`](/src/Schema/JiraMult
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `string` |  |
-| `groups` | `array` |  |
+| `fieldId` | `` |  |
+| `groups` | `list<JiraGroupInput>` |  |
 
 ## References
 

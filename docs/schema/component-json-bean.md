@@ -5,12 +5,12 @@ Source: [`Jira\Client\Schema\ComponentJsonBean`](/src/Schema/ComponentJsonBean.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `ari` | `string` |  |
-| `description` | `string` |  |
-| `id` | `string` |  |
-| `metadata` | `object` |  |
-| `name` | `string` |  |
-| `self` | `string` |  |
+| `ari` | `` |  |
+| `description` | `` |  |
+| `id` | `` |  |
+| `metadata` | `array<string,string>` |  |
+| `name` | `` |  |
+| `self` | `` |  |
 
 ## References
 

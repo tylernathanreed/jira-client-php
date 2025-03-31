@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\StatusUpdateRequest`](/src/Schema/StatusUpdateReque
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statuses` | `array` | The list of statuses that will be updated. |
+| `statuses` | `list<StatusUpdate>` | The list of statuses that will be updated. |
 
 ## References
 

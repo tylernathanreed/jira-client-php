@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\FieldConfiguration`](/src/Schema/FieldConfiguration
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` | The description of the field configuration. |
-| `id` | `int` | The ID of the field configuration. |
-| `name` | `string` | The name of the field configuration. |
-| `isDefault` | `bool` | Whether the field configuration is the default. |
+| `description` | `` | The description of the field configuration. |
+| `id` | `` | The ID of the field configuration. |
+| `name` | `` | The name of the field configuration. |
+| `isDefault` | `` | Whether the field configuration is the default. |
 
 ## References
 

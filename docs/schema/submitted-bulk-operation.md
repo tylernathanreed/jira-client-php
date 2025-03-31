@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\SubmittedBulkOperation`](/src/Schema/SubmittedBulkO
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `taskId` | `string` |  |
+| `taskId` | `` |  |
 
 ## References
 

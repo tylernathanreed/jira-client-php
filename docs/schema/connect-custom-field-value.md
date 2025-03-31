@@ -6,14 +6,14 @@ Source: [`Jira\Client\Schema\ConnectCustomFieldValue`](/src/Schema/ConnectCustom
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `_type` | `string` | The type of custom field. |
-| `fieldID` | `int` | The custom field ID. |
-| `issueID` | `int` | The issue ID. |
-| `number` | `float` | The value of number type custom field when `_type` is `NumberIssueField`. |
-| `optionID` | `string` | The value of single select and multiselect custom field type when `_type` is `SingleSelectIssueField` or `MultiSelectIssueField`. |
-| `richText` | `string` | The value of richText type custom field when `_type` is `RichTextIssueField`. |
-| `string` | `string` | The value of string type custom field when `_type` is `StringIssueField`. |
-| `text` | `string` | The value of of text custom field type when `_type` is `TextIssueField`. |
+| `_type` | `'StringIssueField'|'NumberIssueField'|'RichTextIssueField'|'SingleSelectIssueField'|'MultiSelectIssueField'|'TextIssueField'` | The type of custom field. |
+| `fieldID` | `` | The custom field ID. |
+| `issueID` | `` | The issue ID. |
+| `number` | `` | The value of number type custom field when `_type` is `NumberIssueField`. |
+| `optionID` | `` | The value of single select and multiselect custom field type when `_type` is `SingleSelectIssueField` or `MultiSelectIssueField`. |
+| `richText` | `` | The value of richText type custom field when `_type` is `RichTextIssueField`. |
+| `string` | `` | The value of string type custom field when `_type` is `StringIssueField`. |
+| `text` | `` | The value of of text custom field type when `_type` is `TextIssueField`. |
 
 ## References
 

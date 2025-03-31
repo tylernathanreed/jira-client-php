@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\PageOfCreateMetaIssueTypes`](/src/Schema/PageOfCrea
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `createMetaIssueType` | `array` |  |
-| `issueTypes` | `array` | The list of CreateMetaIssueType. |
-| `maxResults` | `int` | The maximum number of items to return per page. |
-| `startAt` | `int` | The index of the first item returned. |
-| `total` | `int` | The total number of items in all pages. |
+| `createMetaIssueType` | `?list<IssueTypeIssueCreateMetadata>` |  |
+| `issueTypes` | `?list<IssueTypeIssueCreateMetadata>` | The list of CreateMetaIssueType. |
+| `maxResults` | `` | The maximum number of items to return per page. |
+| `startAt` | `` | The index of the first item returned. |
+| `total` | `` | The total number of items in all pages. |
 
 ## References
 

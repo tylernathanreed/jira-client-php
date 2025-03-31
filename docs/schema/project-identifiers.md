@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\ProjectIdentifiers`](/src/Schema/ProjectIdentifiers
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `int` | The ID of the created project. |
-| `key` | `string` | The key of the created project. |
-| `self` | `string` | The URL of the created project. |
+| `id` | `` | The ID of the created project. |
+| `key` | `` | The key of the created project. |
+| `self` | `` | The URL of the created project. |
 
 ## References
 

@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\RemoveOptionFromIssuesResult`](/src/Schema/RemoveOp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errors` | `SimpleErrorCollection` | A collection of errors related to unchanged issues. The collection size is limited, which means not all errors may be returned. |
-| `modifiedIssues` | `array` | The IDs of the modified issues. |
-| `unmodifiedIssues` | `array` | The IDs of the unchanged issues, those issues where errors prevent modification. |
+| `errors` | `` | A collection of errors related to unchanged issues. The collection size is limited, which means not all errors may be returned. |
+| `modifiedIssues` | `?list<int>` | The IDs of the modified issues. |
+| `unmodifiedIssues` | `?list<int>` | The IDs of the unchanged issues, those issues where errors prevent modification. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\CreateWorkflowStatusDetails`](/src/Schema/CreateWor
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the status. |
-| `properties` | `object` | The properties of the status. |
+| `id` | `` | The ID of the status. |
+| `properties` | `array<string,string>` | The properties of the status. |
 
 ## References
 

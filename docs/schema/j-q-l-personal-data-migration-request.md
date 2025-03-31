@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JQLPersonalDataMigrationRequest`](/src/Schema/JQLPe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queryStrings` | `array` | A list of queries with user identifiers. Maximum of 100 queries. |
+| `queryStrings` | `?list<string>` | A list of queries with user identifiers. Maximum of 100 queries. |
 
 ## References
 

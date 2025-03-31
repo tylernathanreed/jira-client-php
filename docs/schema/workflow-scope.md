@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowScope`](/src/Schema/WorkflowScope.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `project` | `ProjectId` |  |
-| `type` | `string` | The scope of the workflow. `GLOBAL` for company-managed projects and `PROJECT` for team-managed projects. |
+| `project` | `` |  |
+| `type` | `'PROJECT'|'GLOBAL'|null` | The scope of the workflow. `GLOBAL` for company-managed projects and `PROJECT` for team-managed projects. |
 
 ## References
 

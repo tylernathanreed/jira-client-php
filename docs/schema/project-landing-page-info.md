@@ -5,17 +5,17 @@ Source: [`Jira\Client\Schema\ProjectLandingPageInfo`](/src/Schema/ProjectLanding
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `attributes` | `object` |  |
-| `boardId` | `int` |  |
-| `boardName` | `string` |  |
-| `projectKey` | `string` |  |
-| `projectType` | `string` |  |
-| `queueCategory` | `string` |  |
-| `queueId` | `int` |  |
-| `queueName` | `string` |  |
-| `simpleBoard` | `bool` |  |
-| `simplified` | `bool` |  |
-| `url` | `string` |  |
+| `attributes` | `array<string,string>` |  |
+| `boardId` | `` |  |
+| `boardName` | `` |  |
+| `projectKey` | `` |  |
+| `projectType` | `` |  |
+| `queueCategory` | `` |  |
+| `queueId` | `` |  |
+| `queueName` | `` |  |
+| `simpleBoard` | `` |  |
+| `simplified` | `` |  |
+| `url` | `` |  |
 
 ## References
 

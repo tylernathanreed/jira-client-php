@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ProjectWithDataPolicy`](/src/Schema/ProjectWithData
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `dataPolicy` | `ProjectDataPolicy` | Data policy. |
-| `id` | `int` | The project ID. |
+| `dataPolicy` | `` | Data policy. |
+| `id` | `` | The project ID. |
 
 ## References
 

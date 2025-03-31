@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueTextArea`](/src/Schem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `string` |  |
-| `text` | `string` | The default text. The maximum length is 32767 characters. |
+| `type` | `` |  |
+| `text` | `` | The default text. The maximum length is 32767 characters. |
 
 ## References
 

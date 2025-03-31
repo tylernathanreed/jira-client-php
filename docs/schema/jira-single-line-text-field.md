@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraSingleLineTextField`](/src/Schema/JiraSingleLin
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `string` |  |
-| `text` | `string` |  |
+| `fieldId` | `` |  |
+| `text` | `` |  |
 
 ## References
 

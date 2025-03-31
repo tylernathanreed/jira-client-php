@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectPermissions`](/src/Schema/ProjectPermissions
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `canEdit` | `bool` | Whether the logged user can edit the project. |
+| `canEdit` | `` | Whether the logged user can edit the project. |
 
 ## References
 

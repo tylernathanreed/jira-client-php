@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\BulkEditGetFields`](/src/Schema/BulkEditGetFields.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `endingBefore` | `string` | The end cursor for use in pagination. |
-| `fields` | `array` | List of all the fields |
-| `startingAfter` | `string` | The start cursor for use in pagination. |
+| `endingBefore` | `` | The end cursor for use in pagination. |
+| `fields` | `?list<IssueBulkEditField>` | List of all the fields |
+| `startingAfter` | `` | The start cursor for use in pagination. |
 
 ## References
 

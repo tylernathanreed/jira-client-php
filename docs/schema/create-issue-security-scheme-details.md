@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CreateIssueSecuritySchemeDetails`](/src/Schema/Crea
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The name of the issue security scheme. Must be unique (case-insensitive). |
-| `description` | `string` | The description of the issue security scheme. |
-| `levels` | `array` | The list of scheme levels which should be added to the security scheme. |
+| `name` | `` | The name of the issue security scheme. Must be unique (case-insensitive). |
+| `description` | `` | The description of the issue security scheme. |
+| `levels` | `?list<SecuritySchemeLevelBean>` | The list of scheme levels which should be added to the security scheme. |
 
 ## References
 

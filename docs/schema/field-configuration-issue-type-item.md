@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\FieldConfigurationIssueTypeItem`](/src/Schema/Field
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldConfigurationId` | `string` | The ID of the field configuration. |
-| `fieldConfigurationSchemeId` | `string` | The ID of the field configuration scheme. |
-| `issueTypeId` | `string` | The ID of the issue type or *default*. When set to *default* this field configuration issue type item applies to all issue types without a field configuration. |
+| `fieldConfigurationId` | `` | The ID of the field configuration. |
+| `fieldConfigurationSchemeId` | `` | The ID of the field configuration scheme. |
+| `issueTypeId` | `` | The ID of the issue type or *default*. When set to *default* this field configuration issue type item applies to all issue types without a field configuration. |
 
 ## References
 

@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraLabelsInput`](/src/Schema/JiraLabelsInput.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` |  |
+| `name` | `` |  |
 
 ## References
 

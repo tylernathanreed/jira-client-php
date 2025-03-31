@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\LicensedApplication`](/src/Schema/LicensedApplicati
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the application. |
-| `plan` | `string` | The licensing plan. |
+| `id` | `` | The ID of the application. |
+| `plan` | `'UNLICENSED'|'FREE'|'PAID'` | The licensing plan. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationGetByIdResponse`](/src/Sch
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `notFoundPrecomputationIDs` | `array` | List of precomputations that were not found. |
-| `precomputations` | `array` | The list of precomputations. |
+| `notFoundPrecomputationIDs` | `?list<string>` | List of precomputations that were not found. |
+| `precomputations` | `?list<JqlFunctionPrecomputationBean>` | The list of precomputations. |
 
 ## References
 

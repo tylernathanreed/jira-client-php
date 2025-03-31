@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\AssociationContextObject`](/src/Schema/AssociationC
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `string` |  |
-| `identifier` | `int` |  |
+| `type` | `` |  |
+| `identifier` | `` |  |
 
 ## References
 

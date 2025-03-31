@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\IssuePickerSuggestionsIssueType`](/src/Schema/Issue
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the type of issues suggested for use in auto-completion. |
-| `issues` | `array` | A list of issues suggested for use in auto-completion. |
-| `label` | `string` | The label of the type of issues suggested for use in auto-completion. |
-| `msg` | `string` | If no issue suggestions are found, returns a message indicating no suggestions were found, |
-| `sub` | `string` | If issue suggestions are found, returns a message indicating the number of issues suggestions found and returned. |
+| `id` | `` | The ID of the type of issues suggested for use in auto-completion. |
+| `issues` | `?list<SuggestedIssue>` | A list of issues suggested for use in auto-completion. |
+| `label` | `` | The label of the type of issues suggested for use in auto-completion. |
+| `msg` | `` | If no issue suggestions are found, returns a message indicating no suggestions were found, |
+| `sub` | `` | If issue suggestions are found, returns a message indicating the number of issues suggestions found and returned. |
 
 ## References
 

@@ -6,17 +6,17 @@ Source: [`Jira\Client\Schema\IssueTransition`](/src/Schema/IssueTransition.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `expand` | `string` | Expand options that include additional transition details in the response. |
-| `fields` | `object` | Details of the fields associated with the issue transition screen. Use this information to populate `fields` and `update` in a transition request. |
-| `hasScreen` | `bool` | Whether there is a screen associated with the issue transition. |
-| `id` | `string` | The ID of the issue transition. Required when specifying a transition to undertake. |
-| `isAvailable` | `bool` | Whether the transition is available to be performed. |
-| `isConditional` | `bool` | Whether the issue has to meet criteria before the issue transition is applied. |
-| `isGlobal` | `bool` | Whether the issue transition is global, that is, the transition is applied to issues regardless of their status. |
-| `isInitial` | `bool` | Whether this is the initial issue transition for the workflow. |
-| `looped` | `bool` |  |
-| `name` | `string` | The name of the issue transition. |
-| `to` | `StatusDetails` | Details of the issue status after the transition. |
+| `expand` | `` | Expand options that include additional transition details in the response. |
+| `fields` | `array<string,FieldMetadata>` | Details of the fields associated with the issue transition screen. Use this information to populate `fields` and `update` in a transition request. |
+| `hasScreen` | `` | Whether there is a screen associated with the issue transition. |
+| `id` | `` | The ID of the issue transition. Required when specifying a transition to undertake. |
+| `isAvailable` | `` | Whether the transition is available to be performed. |
+| `isConditional` | `` | Whether the issue has to meet criteria before the issue transition is applied. |
+| `isGlobal` | `` | Whether the issue transition is global, that is, the transition is applied to issues regardless of their status. |
+| `isInitial` | `` | Whether this is the initial issue transition for the workflow. |
+| `looped` | `` |  |
+| `name` | `` | The name of the issue transition. |
+| `to` | `` | Details of the issue status after the transition. |
 
 ## References
 

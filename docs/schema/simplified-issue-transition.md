@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\SimplifiedIssueTransition`](/src/Schema/SimplifiedI
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `to` | `IssueTransitionStatus` | The issue status change of the transition. |
-| `transitionId` | `int` | The unique ID of the transition. |
-| `transitionName` | `string` | The name of the transition. |
+| `to` | `` | The issue status change of the transition. |
+| `transitionId` | `` | The unique ID of the transition. |
+| `transitionName` | `` | The name of the transition. |
 
 ## References
 

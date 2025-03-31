@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\SuggestedMappingsRequestBean`](/src/Schema/Suggeste
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `maxResults` | `int` | The maximum number of results that could be on the page. |
-| `priorities` | `SuggestedMappingsForPrioritiesRequestBean` | The priority changes in the scheme. |
-| `projects` | `SuggestedMappingsForProjectsRequestBean` | The project changes in the scheme. |
-| `schemeId` | `int` | The id of the priority scheme. |
-| `startAt` | `int` | The index of the first item returned on the page. |
+| `maxResults` | `` | The maximum number of results that could be on the page. |
+| `priorities` | `` | The priority changes in the scheme. |
+| `projects` | `` | The project changes in the scheme. |
+| `schemeId` | `` | The id of the priority scheme. |
+| `startAt` | `` | The index of the first item returned on the page. |
 
 ## References
 

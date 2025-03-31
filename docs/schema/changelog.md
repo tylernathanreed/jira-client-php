@@ -7,11 +7,11 @@ Source: [`Jira\Client\Schema\Changelog`](/src/Schema/Changelog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `author` | `UserDetails` | The user who made the change. |
-| `created` | `string` | The date on which the change took place. |
-| `historyMetadata` | `HistoryMetadata` | The history metadata associated with the changed. |
-| `id` | `string` | The ID of the changelog. |
-| `items` | `array` | The list of items changed. |
+| `author` | `` | The user who made the change. |
+| `created` | `` | The date on which the change took place. |
+| `historyMetadata` | `` | The history metadata associated with the changed. |
+| `id` | `` | The ID of the changelog. |
+| `items` | `?list<ChangeDetails>` | The list of items changed. |
 
 ## References
 

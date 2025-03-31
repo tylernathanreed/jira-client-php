@@ -5,12 +5,12 @@ Source: [`Jira\Client\Schema\PageWithCursorGetTeamResponseForPage`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `cursor` | `string` |  |
-| `last` | `bool` |  |
-| `nextPageCursor` | `string` |  |
-| `size` | `int` |  |
-| `total` | `int` |  |
-| `values` | `array` |  |
+| `cursor` | `` |  |
+| `last` | `` |  |
+| `nextPageCursor` | `` |  |
+| `size` | `` |  |
+| `total` | `` |  |
+| `values` | `?list<GetTeamResponseForPage>` |  |
 
 ## References
 

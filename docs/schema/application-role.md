@@ -6,20 +6,20 @@ Source: [`Jira\Client\Schema\ApplicationRole`](/src/Schema/ApplicationRole.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultGroups` | `array` | The groups that are granted default access for this application role. As a group's name can change, use of `defaultGroupsDetails` is recommended to identify a groups. |
-| `defaultGroupsDetails` | `array` | The groups that are granted default access for this application role. |
-| `defined` | `bool` | Deprecated. |
-| `groupDetails` | `array` | The groups associated with the application role. |
-| `groups` | `array` | The groups associated with the application role. As a group's name can change, use of `groupDetails` is recommended to identify a groups. |
-| `hasUnlimitedSeats` | `bool` |  |
-| `key` | `string` | The key of the application role. |
-| `name` | `string` | The display name of the application role. |
-| `numberOfSeats` | `int` | The maximum count of users on your license. |
-| `platform` | `bool` | Indicates if the application role belongs to Jira platform (`jira-core`). |
-| `remainingSeats` | `int` | The count of users remaining on your license. |
-| `selectedByDefault` | `bool` | Determines whether this application role should be selected by default on user creation. |
-| `userCount` | `int` | The number of users counting against your license. |
-| `userCountDescription` | `string` | The [type of users](https://confluence.atlassian.com/x/lRW3Ng) being counted against your license. |
+| `defaultGroups` | `?list<string>` | The groups that are granted default access for this application role. As a group's name can change, use of `defaultGroupsDetails` is recommended to identify a groups. |
+| `defaultGroupsDetails` | `?list<GroupName>` | The groups that are granted default access for this application role. |
+| `defined` | `` | Deprecated. |
+| `groupDetails` | `?list<GroupName>` | The groups associated with the application role. |
+| `groups` | `?list<string>` | The groups associated with the application role. As a group's name can change, use of `groupDetails` is recommended to identify a groups. |
+| `hasUnlimitedSeats` | `` |  |
+| `key` | `` | The key of the application role. |
+| `name` | `` | The display name of the application role. |
+| `numberOfSeats` | `` | The maximum count of users on your license. |
+| `platform` | `` | Indicates if the application role belongs to Jira platform (`jira-core`). |
+| `remainingSeats` | `` | The count of users remaining on your license. |
+| `selectedByDefault` | `` | Determines whether this application role should be selected by default on user creation. |
+| `userCount` | `` | The number of users counting against your license. |
+| `userCountDescription` | `` | The [type of users](https://confluence.atlassian.com/x/lRW3Ng) being counted against your license. |
 
 ## References
 

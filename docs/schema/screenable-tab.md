@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ScreenableTab`](/src/Schema/ScreenableTab.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The name of the screen tab. The maximum length is 255 characters. |
-| `id` | `int` | The ID of the screen tab. |
+| `name` | `` | The name of the screen tab. The maximum length is 255 characters. |
+| `id` | `` | The ID of the screen tab. |
 
 ## References
 

@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultipleGroupPicker`]
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `string` | The ID of the context. |
-| `groupIds` | `array` | The IDs of the default groups. |
-| `type` | `string` |  |
+| `contextId` | `` | The ID of the context. |
+| `groupIds` | `list<string>` | The IDs of the default groups. |
+| `type` | `` |  |
 
 ## References
 

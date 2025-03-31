@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\PrioritySchemeId`](/src/Schema/PrioritySchemeId.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the priority scheme. |
-| `task` | `TaskProgressBeanJsonNode` | The in-progress issue migration task. |
+| `id` | `` | The ID of the priority scheme. |
+| `task` | `` | The in-progress issue migration task. |
 
 ## References
 

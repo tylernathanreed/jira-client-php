@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUpdateRequiredMappingsResponse`](/src
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statusMappingsByIssueTypes` | `array` | The list of required status mappings by issue type. |
-| `statusMappingsByWorkflows` | `array` | The list of required status mappings by workflow. |
-| `statuses` | `array` | The details of the statuses in the associated workflows. |
-| `statusesPerWorkflow` | `array` | The statuses associated with each workflow. |
+| `statusMappingsByIssueTypes` | `?list<RequiredMappingByIssueType>` | The list of required status mappings by issue type. |
+| `statusMappingsByWorkflows` | `?list<RequiredMappingByWorkflows>` | The list of required status mappings by workflow. |
+| `statuses` | `?list<StatusMetadata>` | The details of the statuses in the associated workflows. |
+| `statusesPerWorkflow` | `?list<StatusesPerWorkflow>` | The statuses associated with each workflow. |
 
 ## References
 

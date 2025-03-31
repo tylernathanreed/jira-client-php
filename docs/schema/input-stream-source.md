@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\InputStreamSource`](/src/Schema/InputStreamSource.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `inputStream` | `object` |  |
+| `inputStream` | `array<string,mixed>` |  |
 
 ## References
 

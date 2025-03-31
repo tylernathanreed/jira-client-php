@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\StatusProjectUsage`](/src/Schema/StatusProjectUsage
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The project ID. |
+| `id` | `` | The project ID. |
 
 ## References
 

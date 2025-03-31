@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\EntityPropertyDetails`](/src/Schema/EntityPropertyD
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `entityId` | `float` | The entity property ID. |
-| `key` | `string` | The entity property key. |
-| `value` | `string` | The new value of the entity property. |
+| `entityId` | `` | The entity property ID. |
+| `key` | `` | The entity property key. |
+| `value` | `` | The new value of the entity property. |
 
 ## References
 

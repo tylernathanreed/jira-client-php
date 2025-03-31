@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\TimeTrackingConfiguration`](/src/Schema/TimeTrackin
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultUnit` | `string` | The default unit of time applied to logged time. |
-| `timeFormat` | `string` | The format that will appear on an issue's *Time Spent* field. |
-| `workingDaysPerWeek` | `float` | The number of days in a working week. |
-| `workingHoursPerDay` | `float` | The number of hours in a working day. |
+| `defaultUnit` | `'minute'|'hour'|'day'|'week'` | The default unit of time applied to logged time. |
+| `timeFormat` | `'pretty'|'days'|'hours'` | The format that will appear on an issue's *Time Spent* field. |
+| `workingDaysPerWeek` | `` | The number of days in a working week. |
+| `workingHoursPerDay` | `` | The number of hours in a working day. |
 
 ## References
 

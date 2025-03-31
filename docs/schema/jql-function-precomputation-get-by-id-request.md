@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationGetByIdRequest`](/src/Sche
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `precomputationIDs` | `array` |  |
+| `precomputationIDs` | `?list<string>` |  |
 
 ## References
 

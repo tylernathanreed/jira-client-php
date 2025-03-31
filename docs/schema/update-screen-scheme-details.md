@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\UpdateScreenSchemeDetails`](/src/Schema/UpdateScree
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` | The description of the screen scheme. The maximum length is 255 characters. |
-| `name` | `string` | The name of the screen scheme. The name must be unique. The maximum length is 255 characters. |
-| `screens` | `UpdateScreenTypes` | The IDs of the screens for the screen types of the screen scheme. Only screens used in classic projects are accepted. |
+| `description` | `` | The description of the screen scheme. The maximum length is 255 characters. |
+| `name` | `` | The name of the screen scheme. The name must be unique. The maximum length is 255 characters. |
+| `screens` | `` | The IDs of the screens for the screen types of the screen scheme. Only screens used in classic projects are accepted. |
 
 ## References
 

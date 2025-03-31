@@ -5,11 +5,11 @@ Source: [`Jira\Client\Schema\SimpleListWrapperGroupName`](/src/Schema/SimpleList
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `callback` | `ListWrapperCallbackGroupName` |  |
-| `items` | `array` |  |
-| `max-results` | `int` |  |
-| `pagingCallback` | `ListWrapperCallbackGroupName` |  |
-| `size` | `int` |  |
+| `callback` | `` |  |
+| `items` | `?list<GroupName>` |  |
+| `max-results` | `` |  |
+| `pagingCallback` | `` |  |
+| `size` | `` |  |
 
 ## References
 

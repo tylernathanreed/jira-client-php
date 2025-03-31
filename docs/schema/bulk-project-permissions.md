@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\BulkProjectPermissions`](/src/Schema/BulkProjectPer
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `permissions` | `array` | List of project permissions. |
-| `issues` | `array` | List of issue IDs. |
-| `projects` | `array` | List of project IDs. |
+| `permissions` | `list<string>` | List of project permissions. |
+| `issues` | `?list<int>` | List of issue IDs. |
+| `projects` | `?list<int>` | List of project IDs. |
 
 ## References
 

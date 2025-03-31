@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueChangelogIds`](/src/Schema/IssueChangelogIds.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `changelogIds` | `array` | The list of changelog IDs. |
+| `changelogIds` | `list<int>` | The list of changelog IDs. |
 
 ## References
 

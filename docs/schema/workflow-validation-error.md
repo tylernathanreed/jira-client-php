@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\WorkflowValidationError`](/src/Schema/WorkflowValid
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `code` | `string` | An error code. |
-| `elementReference` | `WorkflowElementReference` |  |
-| `level` | `string` | The validation error level. |
-| `message` | `string` | An error message. |
-| `type` | `string` | The type of element the error or warning references. |
+| `code` | `` | An error code. |
+| `elementReference` | `` |  |
+| `level` | `'WARNING'|'ERROR'|null` | The validation error level. |
+| `message` | `` | An error message. |
+| `type` | `'RULE'|'STATUS'|'STATUS_LAYOUT'|'STATUS_PROPERTY'|'WORKFLOW'|'TRANSITION'|'TRANSITION_PROPERTY'|'SCOPE'|'STATUS_MAPPING'|'TRIGGER'|null` | The type of element the error or warning references. |
 
 ## References
 

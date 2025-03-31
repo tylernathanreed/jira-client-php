@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\CustomFieldContextOption`](/src/Schema/CustomFieldC
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `disabled` | `bool` | Whether the option is disabled. |
-| `id` | `string` | The ID of the custom field option. |
-| `value` | `string` | The value of the custom field option. |
-| `optionId` | `string` | For cascading options, the ID of the custom field option containing the cascading option. |
+| `disabled` | `` | Whether the option is disabled. |
+| `id` | `` | The ID of the custom field option. |
+| `value` | `` | The value of the custom field option. |
+| `optionId` | `` | For cascading options, the ID of the custom field option containing the cascading option. |
 
 ## References
 

@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueProject`](/src/Schema
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `string` | The ID of the context. |
-| `projectId` | `string` | The ID of the default project. |
-| `type` | `string` |  |
+| `contextId` | `` | The ID of the context. |
+| `projectId` | `` | The ID of the default project. |
+| `type` | `` |  |
 
 ## References
 

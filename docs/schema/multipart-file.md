@@ -5,14 +5,14 @@ Source: [`Jira\Client\Schema\MultipartFile`](/src/Schema/MultipartFile.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `bytes` | `array` |  |
-| `contentType` | `string` |  |
-| `empty` | `bool` |  |
-| `inputStream` | `object` |  |
-| `name` | `string` |  |
-| `originalFilename` | `string` |  |
-| `resource` | `Resource` |  |
-| `size` | `int` |  |
+| `bytes` | `?list<string>` |  |
+| `contentType` | `` |  |
+| `empty` | `` |  |
+| `inputStream` | `array<string,mixed>` |  |
+| `name` | `` |  |
+| `originalFilename` | `` |  |
+| `resource` | `` |  |
+| `size` | `` |  |
 
 ## References
 

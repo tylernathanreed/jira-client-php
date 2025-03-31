@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\JqlQueryClauseTimePredicate`](/src/Schema/JqlQueryC
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `operand` | `JqlQueryClauseOperand` |  |
-| `operator` | `string` | The operator between the field and the operand. |
+| `operand` | `` |  |
+| `operator` | `'before'|'after'|'from'|'to'|'on'|'during'|'by'` | The operator between the field and the operand. |
 
 ## References
 

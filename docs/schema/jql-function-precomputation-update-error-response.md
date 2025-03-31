@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateErrorResponse`](/src
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errorMessages` | `array` | The list of error messages produced by this operation. |
-| `notFoundPrecomputationIDs` | `array` | List of precomputations that were not found. |
+| `errorMessages` | `?list<string>` | The list of error messages produced by this operation. |
+| `notFoundPrecomputationIDs` | `?list<string>` | List of precomputations that were not found. |
 
 ## References
 

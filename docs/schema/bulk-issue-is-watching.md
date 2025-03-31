@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\BulkIssueIsWatching`](/src/Schema/BulkIssueIsWatchi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issuesIsWatching` | `object` | The map of issue ID to boolean watch status. |
+| `issuesIsWatching` | `array<string,bool>` | The map of issue ID to boolean watch status. |
 
 ## References
 

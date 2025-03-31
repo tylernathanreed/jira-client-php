@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUsage`](/src/Schema/WorkflowSchemeUsa
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The workflow scheme ID. |
+| `id` | `` | The workflow scheme ID. |
 
 ## References
 

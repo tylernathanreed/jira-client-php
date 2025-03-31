@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ContainerForProjectFeatures`](/src/Schema/Container
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `features` | `array` | The project features. |
+| `features` | `?list<ProjectFeature>` | The project features. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionScreenDetails`](/src/Schema
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the screen. |
+| `id` | `` | The ID of the screen. |
 
 ## References
 

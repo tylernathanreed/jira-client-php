@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\FieldConfigurationSchemeProjects`](/src/Schema/Fiel
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projectIds` | `array` | The IDs of projects using the field configuration scheme. |
-| `fieldConfigurationScheme` | `FieldConfigurationScheme` |  |
+| `projectIds` | `list<string>` | The IDs of projects using the field configuration scheme. |
+| `fieldConfigurationScheme` | `` |  |
 
 ## References
 

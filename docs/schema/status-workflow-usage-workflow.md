@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\StatusWorkflowUsageWorkflow`](/src/Schema/StatusWor
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The workflow ID. |
+| `id` | `` | The workflow ID. |
 
 ## References
 

@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraMultipleSelectUserPickerField`](/src/Schema/Jir
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `string` |  |
-| `users` | `array` |  |
+| `fieldId` | `` |  |
+| `users` | `?list<JiraUserField>` |  |
 
 ## References
 

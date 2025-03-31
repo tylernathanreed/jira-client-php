@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\FoundUsers`](/src/Schema/FoundUsers.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `header` | `string` | Header text indicating the number of users in the response and the total number of users found in the search. |
-| `total` | `int` | The total number of users found in the search. |
-| `users` | `array` |  |
+| `header` | `` | Header text indicating the number of users in the response and the total number of users found in the search. |
+| `total` | `` | The total number of users found in the search. |
+| `users` | `?list<UserPickerUser>` |  |
 
 ## References
 

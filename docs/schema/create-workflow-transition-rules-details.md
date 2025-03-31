@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionRulesDetails`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `conditions` | `CreateWorkflowCondition` | The workflow conditions. |
-| `postFunctions` | `array` | The workflow post functions.
+| `conditions` | `` | The workflow conditions. |
+| `postFunctions` | `?list<CreateWorkflowTransitionRule>` | The workflow post functions.
 
 **Note:** The default post functions are always added to the *initial* transition, as in:
 
@@ -54,7 +54,7 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionRulesDetails`](/src/Schema/
             }
         }
     ] |
-| `validators` | `array` | The workflow validators.
+| `validators` | `?list<CreateWorkflowTransitionRule>` | The workflow validators.
 
 **Note:** The default permission validator is always added to the *initial* transition, as in:
 

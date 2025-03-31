@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\IssueTypeScreenSchemeDetails`](/src/Schema/IssueTyp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeMappings` | `array` | The IDs of the screen schemes for the issue type IDs and *default*. A *default* entry is required to create an issue type screen scheme, it defines the mapping for all issue types without a screen scheme. |
-| `name` | `string` | The name of the issue type screen scheme. The name must be unique. The maximum length is 255 characters. |
-| `description` | `string` | The description of the issue type screen scheme. The maximum length is 255 characters. |
+| `issueTypeMappings` | `list<IssueTypeScreenSchemeMapping>` | The IDs of the screen schemes for the issue type IDs and *default*. A *default* entry is required to create an issue type screen scheme, it defines the mapping for all issue types without a screen scheme. |
+| `name` | `` | The name of the issue type screen scheme. The name must be unique. The maximum length is 255 characters. |
+| `description` | `` | The description of the issue type screen scheme. The maximum length is 255 characters. |
 
 ## References
 

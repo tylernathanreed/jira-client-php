@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRulesUpdateErrorDetails`](/src/Sc
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `ruleUpdateErrors` | `object` | A list of transition rule update errors, indexed by the transition rule ID. Any transition rule that appears here wasn't updated. |
-| `updateErrors` | `array` | The list of errors that specify why the workflow update failed. The workflow was not updated if the list contains any entries. |
-| `workflowId` | `WorkflowId` |  |
+| `ruleUpdateErrors` | `array<string,list<string>>` | A list of transition rule update errors, indexed by the transition rule ID. Any transition rule that appears here wasn't updated. |
+| `updateErrors` | `list<string>` | The list of errors that specify why the workflow update failed. The workflow was not updated if the list contains any entries. |
+| `workflowId` | `` |  |
 
 ## References
 

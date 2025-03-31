@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowCreateResponse`](/src/Schema/WorkflowCreate
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statuses` | `array` | List of created statuses. |
-| `workflows` | `array` | List of created workflows. |
+| `statuses` | `?list<JiraWorkflowStatus>` | List of created statuses. |
+| `workflows` | `?list<JiraWorkflow>` | List of created workflows. |
 
 ## References
 

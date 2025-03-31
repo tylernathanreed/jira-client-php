@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\AttachmentArchiveImpl`](/src/Schema/AttachmentArchi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `entries` | `array` | The list of the items included in the archive. |
-| `totalEntryCount` | `int` | The number of items in the archive. |
+| `entries` | `?list<AttachmentArchiveEntry>` | The list of the items included in the archive. |
+| `totalEntryCount` | `` | The number of items in the archive. |
 
 ## References
 

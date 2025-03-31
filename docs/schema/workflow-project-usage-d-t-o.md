@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowProjectUsageDTO`](/src/Schema/WorkflowProje
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projects` | `ProjectUsagePage` |  |
-| `workflowId` | `string` | The workflow ID. |
+| `projects` | `` |  |
+| `workflowId` | `` | The workflow ID. |
 
 ## References
 

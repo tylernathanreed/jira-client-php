@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SetDefaultPriorityRequest`](/src/Schema/SetDefaultP
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the new default issue priority. Must be an existing ID or null. Setting this to null erases the default priority setting. |
+| `id` | `` | The ID of the new default issue priority. Must be an existing ID or null. Setting this to null erases the default priority setting. |
 
 ## References
 

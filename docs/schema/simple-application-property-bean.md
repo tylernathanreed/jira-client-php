@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\SimpleApplicationPropertyBean`](/src/Schema/SimpleA
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the application property. |
-| `value` | `string` | The new value. |
+| `id` | `` | The ID of the application property. |
+| `value` | `` | The new value. |
 
 ## References
 

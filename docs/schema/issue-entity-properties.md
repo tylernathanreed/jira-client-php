@@ -8,8 +8,8 @@ Source: [`Jira\Client\Schema\IssueEntityProperties`](/src/Schema/IssueEntityProp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `entitiesIds` | `array` | A list of entity property IDs. |
-| `properties` | `object` | A list of entity property keys and values. |
+| `entitiesIds` | `?list<int>` | A list of entity property IDs. |
+| `properties` | `array<string,JsonNode>` | A list of entity property keys and values. |
 
 ## References
 

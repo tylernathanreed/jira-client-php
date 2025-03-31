@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraMultipleSelectField`](/src/Schema/JiraMultipleS
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `string` |  |
-| `options` | `array` |  |
+| `fieldId` | `` |  |
+| `options` | `list<JiraSelectedOptionField>` |  |
 
 ## References
 

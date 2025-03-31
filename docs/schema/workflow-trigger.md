@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowTrigger`](/src/Schema/WorkflowTrigger.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `parameters` | `object` | The parameters of the trigger. |
-| `ruleKey` | `string` | The rule key of the trigger. |
-| `id` | `string` | The ID of the trigger. |
+| `parameters` | `array<string,string>` | The parameters of the trigger. |
+| `ruleKey` | `` | The rule key of the trigger. |
+| `id` | `` | The ID of the trigger. |
 
 ## References
 

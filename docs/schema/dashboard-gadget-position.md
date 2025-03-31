@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\DashboardGadgetPosition`](/src/Schema/DashboardGadg
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `row` | `int` |  |
-| `column` | `int` |  |
+| `row` | `` |  |
+| `column` | `` |  |
 
 ## References
 

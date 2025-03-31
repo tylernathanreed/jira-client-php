@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateResponse`](/src/Sche
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `notFoundPrecomputationIDs` | `array` | List of precomputations that were not found and skipped. Only returned if the request passed skipNotFoundPrecomputations=true. |
+| `notFoundPrecomputationIDs` | `?list<string>` | List of precomputations that were not found and skipped. Only returned if the request passed skipNotFoundPrecomputations=true. |
 
 ## References
 

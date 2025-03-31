@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowSchemeAssociation`](/src/Schema/WorkflowSch
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeIds` | `array` | The issue types assigned to the workflow. |
-| `workflowId` | `string` | The ID of the workflow. |
+| `issueTypeIds` | `list<string>` | The issue types assigned to the workflow. |
+| `workflowId` | `` | The ID of the workflow. |
 
 ## References
 

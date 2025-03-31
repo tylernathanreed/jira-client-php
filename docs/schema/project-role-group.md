@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\ProjectRoleGroup`](/src/Schema/ProjectRoleGroup.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `displayName` | `string` | The display name of the group. |
-| `groupId` | `string` | The ID of the group. |
-| `name` | `string` | The name of the group. As a group's name can change, use of `groupId` is recommended to identify the group. |
+| `displayName` | `` | The display name of the group. |
+| `groupId` | `` | The ID of the group. |
+| `name` | `` | The name of the group. As a group's name can change, use of `groupId` is recommended to identify the group. |
 
 ## References
 

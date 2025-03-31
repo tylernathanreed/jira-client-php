@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SecuritySchemeId`](/src/Schema/SecuritySchemeId.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the issue security scheme. |
+| `id` | `` | The ID of the issue security scheme. |
 
 ## References
 

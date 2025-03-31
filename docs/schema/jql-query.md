@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\JqlQuery`](/src/Schema/JqlQuery.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `orderBy` | `JqlQueryOrderByClause` |  |
-| `where` | `JqlQueryClause` |  |
+| `orderBy` | `` |  |
+| `where` | `` |  |
 
 ## References
 

@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\StatusMappingDTO`](/src/Schema/StatusMappingDTO.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `string` | The issue type for the status mapping. |
-| `projectId` | `string` | The project for the status mapping. |
-| `statusMigrations` | `array` | The list of old and new status ID mappings for the specified project and issue type. |
+| `issueTypeId` | `` | The issue type for the status mapping. |
+| `projectId` | `` | The project for the status mapping. |
+| `statusMigrations` | `list<StatusMigration>` | The list of old and new status ID mappings for the specified project and issue type. |
 
 ## References
 

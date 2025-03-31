@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueCascadingOption`](/sr
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `string` | The ID of the context. |
-| `optionId` | `string` | The ID of the default option. |
-| `type` | `string` |  |
-| `cascadingOptionId` | `string` | The ID of the default cascading option. |
+| `contextId` | `` | The ID of the context. |
+| `optionId` | `` | The ID of the default option. |
+| `type` | `` |  |
+| `cascadingOptionId` | `` | The ID of the default cascading option. |
 
 ## References
 

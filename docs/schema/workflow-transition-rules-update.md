@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRulesUpdate`](/src/Schema/Workflo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `workflows` | `array` | The list of workflows with transition rules to update. |
+| `workflows` | `list<WorkflowTransitionRules>` | The list of workflows with transition rules to update. |
 
 ## References
 

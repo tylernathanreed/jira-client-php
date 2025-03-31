@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ParsedJqlQueries`](/src/Schema/ParsedJqlQueries.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queries` | `array` | A list of parsed JQL queries. |
+| `queries` | `list<ParsedJqlQuery>` | A list of parsed JQL queries. |
 
 ## References
 

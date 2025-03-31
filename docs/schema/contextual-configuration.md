@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ContextualConfiguration`](/src/Schema/ContextualCon
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldContextId` | `string` | The ID of the field context the configuration is associated with. |
-| `id` | `string` | The ID of the configuration. |
+| `fieldContextId` | `` | The ID of the field context the configuration is associated with. |
+| `id` | `` | The ID of the configuration. |
 | `configuration` | `` | The field configuration. |
 | `schema` | `` | The field value schema. |
 

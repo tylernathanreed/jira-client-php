@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\VersionUnresolvedIssuesCount`](/src/Schema/VersionU
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issuesCount` | `int` | Count of issues. |
-| `issuesUnresolvedCount` | `int` | Count of unresolved issues. |
-| `self` | `string` | The URL of these count details. |
+| `issuesCount` | `` | Count of issues. |
+| `issuesUnresolvedCount` | `` | Count of unresolved issues. |
+| `self` | `` | The URL of these count details. |
 
 ## References
 

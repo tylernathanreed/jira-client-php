@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\ScreenWithTab`](/src/Schema/ScreenWithTab.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` | The description of the screen. |
-| `id` | `int` | The ID of the screen. |
-| `name` | `string` | The name of the screen. |
-| `scope` | `Scope` | The scope of the screen. |
-| `tab` | `ScreenableTab` | The tab for the screen. |
+| `description` | `` | The description of the screen. |
+| `id` | `` | The ID of the screen. |
+| `name` | `` | The name of the screen. |
+| `scope` | `` | The scope of the screen. |
+| `tab` | `` | The tab for the screen. |
 
 ## References
 

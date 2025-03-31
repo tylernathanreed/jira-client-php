@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\DuplicatePlanRequest`](/src/Schema/DuplicatePlanReq
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The plan name. |
+| `name` | `` | The plan name. |
 
 ## References
 

@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\ColumnRequestBody`](/src/Schema/ColumnRequestBody.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `columns` | `array` |  |
+| `columns` | `?list<string>` |  |
 
 ## References
 

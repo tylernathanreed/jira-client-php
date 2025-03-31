@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueTypeIdsToRemove`](/src/Schema/IssueTypeIdsToRe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeIds` | `array` | The list of issue type IDs. Must contain unique values not longer than 255 characters and not be empty. Maximum of 100 IDs. |
+| `issueTypeIds` | `list<string>` | The list of issue type IDs. Must contain unique values not longer than 255 characters and not be empty. Maximum of 100 IDs. |
 
 ## References
 

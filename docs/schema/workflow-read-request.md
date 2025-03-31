@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\WorkflowReadRequest`](/src/Schema/WorkflowReadReque
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projectAndIssueTypes` | `array` | The list of projects and issue types to query. |
-| `workflowIds` | `array` | The list of workflow IDs to query. |
-| `workflowNames` | `array` | The list of workflow names to query. |
+| `projectAndIssueTypes` | `?list<ProjectAndIssueTypePair>` | The list of projects and issue types to query. |
+| `workflowIds` | `?list<string>` | The list of workflow IDs to query. |
+| `workflowNames` | `?list<string>` | The list of workflow names to query. |
 
 ## References
 

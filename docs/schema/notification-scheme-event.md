@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\NotificationSchemeEvent`](/src/Schema/NotificationS
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `event` | `NotificationEvent` |  |
-| `notifications` | `array` |  |
+| `event` | `` |  |
+| `notifications` | `?list<EventNotification>` |  |
 
 ## References
 

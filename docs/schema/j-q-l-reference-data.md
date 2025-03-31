@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\JQLReferenceData`](/src/Schema/JQLReferenceData.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `jqlReservedWords` | `array` | List of JQL query reserved words. |
-| `visibleFieldNames` | `array` | List of fields usable in JQL queries. |
-| `visibleFunctionNames` | `array` | List of functions usable in JQL queries. |
+| `jqlReservedWords` | `?list<string>` | List of JQL query reserved words. |
+| `visibleFieldNames` | `?list<FieldReferenceData>` | List of fields usable in JQL queries. |
+| `visibleFunctionNames` | `?list<FunctionReferenceData>` | List of functions usable in JQL queries. |
 
 ## References
 

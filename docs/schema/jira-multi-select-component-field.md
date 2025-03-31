@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\JiraMultiSelectComponentField`](/src/Schema/JiraMul
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `bulkEditMultiSelectFieldOption` | `string` |  |
-| `components` | `array` |  |
-| `fieldId` | `string` |  |
+| `bulkEditMultiSelectFieldOption` | `'ADD'|'REMOVE'|'REPLACE'|'REMOVE_ALL'` |  |
+| `components` | `list<JiraComponentField>` |  |
+| `fieldId` | `` |  |
 
 ## References
 

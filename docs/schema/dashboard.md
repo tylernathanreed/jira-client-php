@@ -6,20 +6,20 @@ Source: [`Jira\Client\Schema\Dashboard`](/src/Schema/Dashboard.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `automaticRefreshMs` | `int` | The automatic refresh interval for the dashboard in milliseconds. |
-| `description` | `string` |  |
-| `editPermissions` | `array` | The details of any edit share permissions for the dashboard. |
-| `id` | `string` | The ID of the dashboard. |
-| `isFavourite` | `bool` | Whether the dashboard is selected as a favorite by the user. |
-| `isWritable` | `bool` | Whether the current user has permission to edit the dashboard. |
-| `name` | `string` | The name of the dashboard. |
-| `owner` | `UserBean` | The owner of the dashboard. |
-| `popularity` | `int` | The number of users who have this dashboard as a favorite. |
-| `rank` | `int` | The rank of this dashboard. |
-| `self` | `string` | The URL of these dashboard details. |
-| `sharePermissions` | `array` | The details of any view share permissions for the dashboard. |
-| `systemDashboard` | `bool` | Whether the current dashboard is system dashboard. |
-| `view` | `string` | The URL of the dashboard. |
+| `automaticRefreshMs` | `` | The automatic refresh interval for the dashboard in milliseconds. |
+| `description` | `` |  |
+| `editPermissions` | `?list<SharePermission>` | The details of any edit share permissions for the dashboard. |
+| `id` | `` | The ID of the dashboard. |
+| `isFavourite` | `` | Whether the dashboard is selected as a favorite by the user. |
+| `isWritable` | `` | Whether the current user has permission to edit the dashboard. |
+| `name` | `` | The name of the dashboard. |
+| `owner` | `` | The owner of the dashboard. |
+| `popularity` | `` | The number of users who have this dashboard as a favorite. |
+| `rank` | `` | The rank of this dashboard. |
+| `self` | `` | The URL of these dashboard details. |
+| `sharePermissions` | `?list<SharePermission>` | The details of any view share permissions for the dashboard. |
+| `systemDashboard` | `` | Whether the current dashboard is system dashboard. |
+| `view` | `` | The URL of the dashboard. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUsagePage`](/src/Schema/WorkflowSchem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `nextPageToken` | `string` | Token for the next page of issue type usages. |
-| `values` | `array` | The list of workflow schemes. |
+| `nextPageToken` | `` | Token for the next page of issue type usages. |
+| `values` | `?list<WorkflowSchemeUsage>` | The list of workflow schemes. |
 
 ## References
 

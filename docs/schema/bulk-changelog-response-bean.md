@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\BulkChangelogResponseBean`](/src/Schema/BulkChangel
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueChangeLogs` | `array` | The list of issues changelogs. |
-| `nextPageToken` | `string` | Continuation token to fetch the next page. If this result represents the last or the only page, this token will be null. |
+| `issueChangeLogs` | `?list<IssueChangeLog>` | The list of issues changelogs. |
+| `nextPageToken` | `` | Continuation token to fetch the next page. If this result represents the last or the only page, this token will be null. |
 
 ## References
 

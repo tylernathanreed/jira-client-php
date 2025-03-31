@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\AnnouncementBannerConfigurationUpdate`](/src/Schema
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `isDismissible` | `bool` | Flag indicating if the announcement banner can be dismissed by the user. |
-| `isEnabled` | `bool` | Flag indicating if the announcement banner is enabled or not. |
-| `message` | `string` | The text on the announcement banner. |
-| `visibility` | `string` | Visibility of the announcement banner. Can be public or private. |
+| `isDismissible` | `` | Flag indicating if the announcement banner can be dismissed by the user. |
+| `isEnabled` | `` | Flag indicating if the announcement banner is enabled or not. |
+| `message` | `` | The text on the announcement banner. |
+| `visibility` | `` | Visibility of the announcement banner. Can be public or private. |
 
 ## References
 

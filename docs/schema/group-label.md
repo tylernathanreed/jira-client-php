@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\GroupLabel`](/src/Schema/GroupLabel.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `text` | `string` | The group label name. |
-| `title` | `string` | The title of the group label. |
-| `type` | `string` | The type of the group label. |
+| `text` | `` | The group label name. |
+| `title` | `` | The title of the group label. |
+| `type` | `'ADMIN'|'SINGLE'|'MULTIPLE'|null` | The type of the group label. |
 
 ## References
 

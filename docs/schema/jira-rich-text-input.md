@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraRichTextInput`](/src/Schema/JiraRichTextInput.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `adfValue` | `object` |  |
+| `adfValue` | `array<string,mixed>` |  |
 
 ## References
 

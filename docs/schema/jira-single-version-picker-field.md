@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraSingleVersionPickerField`](/src/Schema/JiraSing
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `string` |  |
-| `version` | `JiraVersionField` |  |
+| `fieldId` | `` |  |
+| `version` | `` |  |
 
 ## References
 

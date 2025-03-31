@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\StatusesPerWorkflow`](/src/Schema/StatusesPerWorkfl
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `initialStatusId` | `string` | The ID of the initial status for the workflow. |
-| `statuses` | `array` | The status IDs associated with the workflow. |
-| `workflowId` | `string` | The ID of the workflow. |
+| `initialStatusId` | `` | The ID of the initial status for the workflow. |
+| `statuses` | `?list<string>` | The status IDs associated with the workflow. |
+| `workflowId` | `` | The ID of the workflow. |
 
 ## References
 

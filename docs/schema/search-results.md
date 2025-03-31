@@ -6,14 +6,14 @@ Source: [`Jira\Client\Schema\SearchResults`](/src/Schema/SearchResults.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `expand` | `string` | Expand options that include additional search result details in the response. |
-| `issues` | `array` | The list of issues found by the search. |
-| `maxResults` | `int` | The maximum number of results that could be on the page. |
-| `names` | `object` | The ID and name of each field in the search results. |
-| `schema` | `object` | The schema describing the field types in the search results. |
-| `startAt` | `int` | The index of the first item returned on the page. |
-| `total` | `int` | The number of results on the page. |
-| `warningMessages` | `array` | Any warnings related to the JQL query. |
+| `expand` | `` | Expand options that include additional search result details in the response. |
+| `issues` | `?list<IssueBean>` | The list of issues found by the search. |
+| `maxResults` | `` | The maximum number of results that could be on the page. |
+| `names` | `array<string,string>` | The ID and name of each field in the search results. |
+| `schema` | `array<string,JsonTypeBean>` | The schema describing the field types in the search results. |
+| `startAt` | `` | The index of the first item returned on the page. |
+| `total` | `` | The number of results on the page. |
+| `warningMessages` | `?list<string>` | Any warnings related to the JQL query. |
 
 ## References
 

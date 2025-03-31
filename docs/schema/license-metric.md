@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\LicenseMetric`](/src/Schema/LicenseMetric.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `key` | `string` | The key of a specific license metric. |
-| `value` | `string` | The calculated value of a licence metric linked to the key. An example licence metric is the approximate number of user accounts. |
+| `key` | `` | The key of a specific license metric. |
+| `value` | `` | The calculated value of a licence metric linked to the key. An example licence metric is the approximate number of user accounts. |
 
 ## References
 

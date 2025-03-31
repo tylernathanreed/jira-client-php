@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\CreateCustomFieldContext`](/src/Schema/CreateCustom
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The name of the context. |
-| `description` | `string` | The description of the context. |
-| `id` | `string` | The ID of the context. |
-| `issueTypeIds` | `array` | The list of issue types IDs for the context. If the list is empty, the context refers to all issue types. |
-| `projectIds` | `array` | The list of project IDs associated with the context. If the list is empty, the context is global. |
+| `name` | `` | The name of the context. |
+| `description` | `` | The description of the context. |
+| `id` | `` | The ID of the context. |
+| `issueTypeIds` | `?list<string>` | The list of issue types IDs for the context. If the list is empty, the context refers to all issue types. |
+| `projectIds` | `?list<string>` | The list of project IDs associated with the context. If the list is empty, the context is global. |
 
 ## References
 

@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\BulkContextualConfiguration`](/src/Schema/BulkConte
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `customFieldId` | `string` | The ID of the custom field. |
-| `fieldContextId` | `string` | The ID of the field context the configuration is associated with. |
-| `id` | `string` | The ID of the configuration. |
+| `customFieldId` | `` | The ID of the custom field. |
+| `fieldContextId` | `` | The ID of the field context the configuration is associated with. |
+| `id` | `` | The ID of the configuration. |
 | `configuration` | `` | The field configuration. |
 | `schema` | `` | The field value schema. |
 

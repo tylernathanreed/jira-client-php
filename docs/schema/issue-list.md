@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueList`](/src/Schema/IssueList.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueIds` | `array` | The list of issue IDs. |
+| `issueIds` | `list<string>` | The list of issue IDs. |
 
 ## References
 

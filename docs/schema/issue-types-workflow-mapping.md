@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\IssueTypesWorkflowMapping`](/src/Schema/IssueTypesW
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultMapping` | `bool` | Whether the workflow is the default workflow for the workflow scheme. |
-| `issueTypes` | `array` | The list of issue type IDs. |
-| `updateDraftIfNeeded` | `bool` | Whether a draft workflow scheme is created or updated when updating an active workflow scheme. The draft is updated with the new workflow-issue types mapping. Defaults to `false`. |
-| `workflow` | `string` | The name of the workflow. Optional if updating the workflow-issue types mapping. |
+| `defaultMapping` | `` | Whether the workflow is the default workflow for the workflow scheme. |
+| `issueTypes` | `?list<string>` | The list of issue type IDs. |
+| `updateDraftIfNeeded` | `` | Whether a draft workflow scheme is created or updated when updating an active workflow scheme. The draft is updated with the new workflow-issue types mapping. Defaults to `false`. |
+| `workflow` | `` | The name of the workflow. Optional if updating the workflow-issue types mapping. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\JiraExpressionForAnalysis`](/src/Schema/JiraExpress
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `expressions` | `array` | The list of Jira expressions to analyse. |
-| `contextVariables` | `object` | Context variables and their types. The type checker assumes that [common context variables](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#context-variables), such as `issue` or `project`, are available in context and sets their type. Use this property to override the default types or provide details of new variables. |
+| `expressions` | `list<string>` | The list of Jira expressions to analyse. |
+| `contextVariables` | `array<string,string>` | Context variables and their types. The type checker assumes that [common context variables](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#context-variables), such as `issue` or `project`, are available in context and sets their type. Use this property to override the default types or provide details of new variables. |
 
 ## References
 

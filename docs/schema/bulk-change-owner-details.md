@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\BulkChangeOwnerDetails`](/src/Schema/BulkChangeOwne
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `autofixName` | `bool` | Whether the name is fixed automatically if it's duplicated after changing owner. |
-| `newOwner` | `string` | The account id of the new owner. |
+| `autofixName` | `` | Whether the name is fixed automatically if it's duplicated after changing owner. |
+| `newOwner` | `` | The account id of the new owner. |
 
 ## References
 

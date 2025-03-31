@@ -5,12 +5,12 @@ Source: [`Jira\Client\Schema\WorkflowCapabilities`](/src/Schema/WorkflowCapabili
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `connectRules` | `array` | The Connect provided ecosystem rules available. |
-| `editorScope` | `string` | The scope of the workflow capabilities. `GLOBAL` for company-managed projects and `PROJECT` for team-managed projects. |
-| `forgeRules` | `array` | The Forge provided ecosystem rules available. |
-| `projectTypes` | `array` | The types of projects that this capability set is available for. |
-| `systemRules` | `array` | The Atlassian provided system rules available. |
-| `triggerRules` | `array` | The trigger rules available. |
+| `connectRules` | `?list<AvailableWorkflowConnectRule>` | The Connect provided ecosystem rules available. |
+| `editorScope` | `'PROJECT'|'GLOBAL'|null` | The scope of the workflow capabilities. `GLOBAL` for company-managed projects and `PROJECT` for team-managed projects. |
+| `forgeRules` | `?list<AvailableWorkflowForgeRule>` | The Forge provided ecosystem rules available. |
+| `projectTypes` | `?list<string>` | The types of projects that this capability set is available for. |
+| `systemRules` | `?list<AvailableWorkflowSystemRule>` | The Atlassian provided system rules available. |
+| `triggerRules` | `?list<AvailableWorkflowTriggers>` | The trigger rules available. |
 
 ## References
 

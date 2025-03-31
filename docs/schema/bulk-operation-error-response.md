@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\BulkOperationErrorResponse`](/src/Schema/BulkOperat
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errors` | `array` |  |
+| `errors` | `?list<ErrorMessage>` |  |
 
 ## References
 

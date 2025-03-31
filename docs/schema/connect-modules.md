@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\ConnectModules`](/src/Schema/ConnectModules.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `modules` | `array` | A list of app modules in the same format as the `modules` property in the
+| `modules` | `list<ConnectModule>` | A list of app modules in the same format as the `modules` property in the
 [app descriptor](https://developer.atlassian.com/cloud/jira/platform/app-descriptor/). |
 
 ## References

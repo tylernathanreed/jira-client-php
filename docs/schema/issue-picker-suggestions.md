@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssuePickerSuggestions`](/src/Schema/IssuePickerSug
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `sections` | `array` | A list of issues for an issue type suggested for use in auto-completion. |
+| `sections` | `?list<IssuePickerSuggestionsIssueType>` | A list of issues for an issue type suggested for use in auto-completion. |
 
 ## References
 

@@ -5,14 +5,14 @@ Source: [`Jira\Client\Schema\Resource`](/src/Schema/Resource.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` |  |
-| `file` | `string` |  |
-| `filename` | `string` |  |
-| `inputStream` | `object` |  |
-| `open` | `bool` |  |
-| `readable` | `bool` |  |
-| `uri` | `string` |  |
-| `url` | `string` |  |
+| `description` | `` |  |
+| `file` | `` |  |
+| `filename` | `` |  |
+| `inputStream` | `array<string,mixed>` |  |
+| `open` | `` |  |
+| `readable` | `` |  |
+| `uri` | `` |  |
+| `url` | `` |  |
 
 ## References
 

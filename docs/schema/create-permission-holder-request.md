@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\CreatePermissionHolderRequest`](/src/Schema/CreateP
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `string` | The permission holder type. This must be "Group" or "AccountId". |
-| `value` | `string` | The permission holder value. This must be a group name if the type is "Group" or an account ID if the type is "AccountId". |
+| `type` | `'Group'|'AccountId'` | The permission holder type. This must be "Group" or "AccountId". |
+| `value` | `` | The permission holder value. This must be a group name if the type is "Group" or an account ID if the type is "AccountId". |
 
 ## References
 

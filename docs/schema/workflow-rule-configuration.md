@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowRuleConfiguration`](/src/Schema/WorkflowRul
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `ruleKey` | `string` | The rule key of the rule. |
-| `id` | `string` | The ID of the rule. |
-| `parameters` | `object` | The parameters related to the rule. |
+| `ruleKey` | `` | The rule key of the rule. |
+| `id` | `` | The ID of the rule. |
+| `parameters` | `array<string,string>` | The parameters related to the rule. |
 
 ## References
 

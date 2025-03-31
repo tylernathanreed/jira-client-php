@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\IssueTypeSchemeUpdateDetails`](/src/Schema/IssueTyp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultIssueTypeId` | `string` | The ID of the default issue type of the issue type scheme. |
-| `description` | `string` | The description of the issue type scheme. The maximum length is 4000 characters. |
-| `name` | `string` | The name of the issue type scheme. The name must be unique. The maximum length is 255 characters. |
+| `defaultIssueTypeId` | `` | The ID of the default issue type of the issue type scheme. |
+| `description` | `` | The description of the issue type scheme. The maximum length is 4000 characters. |
+| `name` | `` | The name of the issue type scheme. The name must be unique. The maximum length is 255 characters. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ConfigurationsListParameters`](/src/Schema/Configur
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldIdsOrKeys` | `array` | List of IDs or keys of the custom fields. It can be a mix of IDs and keys in the same query. |
+| `fieldIdsOrKeys` | `list<string>` | List of IDs or keys of the custom fields. It can be a mix of IDs and keys in the same query. |
 
 ## References
 

@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\StatusDetails`](/src/Schema/StatusDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` | The description of the status. |
-| `iconUrl` | `string` | The URL of the icon used to represent the status. |
-| `id` | `string` | The ID of the status. |
-| `name` | `string` | The name of the status. |
-| `scope` | `Scope` | The scope of the field. |
-| `self` | `string` | The URL of the status. |
-| `statusCategory` | `StatusCategory` | The category assigned to the status. |
+| `description` | `` | The description of the status. |
+| `iconUrl` | `` | The URL of the icon used to represent the status. |
+| `id` | `` | The ID of the status. |
+| `name` | `` | The name of the status. |
+| `scope` | `` | The scope of the field. |
+| `self` | `` | The URL of the status. |
+| `statusCategory` | `` | The category assigned to the status. |
 
 ## References
 

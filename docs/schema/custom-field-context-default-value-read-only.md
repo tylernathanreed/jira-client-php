@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueReadOnly`](/src/Schem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `string` |  |
-| `text` | `string` | The default text. The maximum length is 255 characters. |
+| `type` | `` |  |
+| `text` | `` | The default text. The maximum length is 255 characters. |
 
 ## References
 

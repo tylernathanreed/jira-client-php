@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\IssueTypeUpdateBean`](/src/Schema/IssueTypeUpdateBe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `avatarId` | `int` | The ID of an issue type avatar. |
-| `description` | `string` | The description of the issue type. |
-| `name` | `string` | The unique name for the issue type. The maximum length is 60 characters. |
+| `avatarId` | `` | The ID of an issue type avatar. |
+| `description` | `` | The description of the issue type. |
+| `name` | `` | The unique name for the issue type. The maximum length is 60 characters. |
 
 ## References
 

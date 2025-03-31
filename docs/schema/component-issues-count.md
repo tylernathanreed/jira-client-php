@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ComponentIssuesCount`](/src/Schema/ComponentIssuesC
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueCount` | `int` | The count of issues assigned to a component. |
-| `self` | `string` | The URL for this count of issues for a component. |
+| `issueCount` | `` | The count of issues assigned to a component. |
+| `self` | `` | The URL for this count of issues for a component. |
 
 ## References
 

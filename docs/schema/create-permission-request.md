@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\CreatePermissionRequest`](/src/Schema/CreatePermiss
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `holder` | `CreatePermissionHolderRequest` | The permission holder. |
-| `type` | `string` | The permission type. This must be "View" or "Edit". |
+| `holder` | `` | The permission holder. |
+| `type` | `'View'|'Edit'` | The permission type. This must be "View" or "Edit". |
 
 ## References
 

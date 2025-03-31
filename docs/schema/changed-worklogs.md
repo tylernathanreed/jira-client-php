@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\ChangedWorklogs`](/src/Schema/ChangedWorklogs.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `lastPage` | `bool` |  |
-| `nextPage` | `string` | The URL of the next list of changed worklogs. |
-| `self` | `string` | The URL of this changed worklogs list. |
-| `since` | `int` | The datetime of the first worklog item in the list. |
-| `until` | `int` | The datetime of the last worklog item in the list. |
-| `values` | `array` | Changed worklog list. |
+| `lastPage` | `` |  |
+| `nextPage` | `` | The URL of the next list of changed worklogs. |
+| `self` | `` | The URL of this changed worklogs list. |
+| `since` | `` | The datetime of the first worklog item in the list. |
+| `until` | `` | The datetime of the last worklog item in the list. |
+| `values` | `?list<ChangedWorklog>` | Changed worklog list. |
 
 ## References
 

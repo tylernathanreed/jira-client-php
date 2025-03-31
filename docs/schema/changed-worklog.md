@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\ChangedWorklog`](/src/Schema/ChangedWorklog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `properties` | `array` | Details of properties associated with the change. |
-| `updatedTime` | `int` | The datetime of the change. |
-| `worklogId` | `int` | The ID of the worklog. |
+| `properties` | `?list<EntityProperty>` | Details of properties associated with the change. |
+| `updatedTime` | `` | The datetime of the change. |
+| `worklogId` | `` | The ID of the worklog. |
 
 ## References
 

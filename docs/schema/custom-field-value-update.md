@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CustomFieldValueUpdate`](/src/Schema/CustomFieldVal
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueIds` | `array` | The list of issue IDs. |
+| `issueIds` | `list<int>` | The list of issue IDs. |
 | `value` | `` | The value for the custom field. The value must be compatible with the [custom field type](https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-custom-field/#data-types) as follows:
 
  *  `string` the value must be a string.

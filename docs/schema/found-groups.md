@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\FoundGroups`](/src/Schema/FoundGroups.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `groups` | `array` |  |
-| `header` | `string` | Header text indicating the number of groups in the response and the total number of groups found in the search. |
-| `total` | `int` | The total number of groups found in the search. |
+| `groups` | `?list<FoundGroup>` |  |
+| `header` | `` | Header text indicating the number of groups in the response and the total number of groups found in the search. |
+| `total` | `` | The total number of groups found in the search. |
 
 ## References
 

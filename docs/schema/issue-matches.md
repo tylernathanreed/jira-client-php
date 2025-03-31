@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueMatches`](/src/Schema/IssueMatches.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `matches` | `array` |  |
+| `matches` | `list<IssueMatchesForJQL>` |  |
 
 ## References
 

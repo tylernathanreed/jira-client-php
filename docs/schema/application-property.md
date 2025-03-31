@@ -6,15 +6,15 @@ Source: [`Jira\Client\Schema\ApplicationProperty`](/src/Schema/ApplicationProper
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `allowedValues` | `array` | The allowed values, if applicable. |
-| `defaultValue` | `string` | The default value of the application property. |
-| `desc` | `string` | The description of the application property. |
-| `example` | `string` |  |
-| `id` | `string` | The ID of the application property. The ID and key are the same. |
-| `key` | `string` | The key of the application property. The ID and key are the same. |
-| `name` | `string` | The name of the application property. |
-| `type` | `string` | The data type of the application property. |
-| `value` | `string` | The new value. |
+| `allowedValues` | `?list<string>` | The allowed values, if applicable. |
+| `defaultValue` | `` | The default value of the application property. |
+| `desc` | `` | The description of the application property. |
+| `example` | `` |  |
+| `id` | `` | The ID of the application property. The ID and key are the same. |
+| `key` | `` | The key of the application property. The ID and key are the same. |
+| `name` | `` | The name of the application property. |
+| `type` | `` | The data type of the application property. |
+| `value` | `` | The new value. |
 
 ## References
 

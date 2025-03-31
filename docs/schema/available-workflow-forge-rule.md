@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\AvailableWorkflowForgeRule`](/src/Schema/AvailableW
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` | The rule description. |
-| `id` | `string` | The unique ARI of the forge rule type. |
-| `name` | `string` | The rule name. |
-| `ruleKey` | `string` | The rule key. |
-| `ruleType` | `string` | The rule type. |
+| `description` | `` | The rule description. |
+| `id` | `` | The unique ARI of the forge rule type. |
+| `name` | `` | The rule name. |
+| `ruleKey` | `` | The rule key. |
+| `ruleType` | `'Condition'|'Validator'|'Function'|'Screen'|null` | The rule type. |
 
 ## References
 

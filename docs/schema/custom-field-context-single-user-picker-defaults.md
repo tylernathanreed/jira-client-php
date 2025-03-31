@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\CustomFieldContextSingleUserPickerDefaults`](/src/S
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `string` | The ID of the default user. |
-| `contextId` | `string` | The ID of the context. |
-| `type` | `string` |  |
-| `userFilter` | `UserFilter` |  |
+| `accountId` | `` | The ID of the default user. |
+| `contextId` | `` | The ID of the context. |
+| `type` | `` |  |
+| `userFilter` | `` |  |
 
 ## References
 

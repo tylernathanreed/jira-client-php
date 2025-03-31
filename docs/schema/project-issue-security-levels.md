@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectIssueSecurityLevels`](/src/Schema/ProjectIss
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `levels` | `array` | Issue level security items list. |
+| `levels` | `list<SecurityLevel>` | Issue level security items list. |
 
 ## References
 

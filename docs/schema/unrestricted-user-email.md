@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\UnrestrictedUserEmail`](/src/Schema/UnrestrictedUse
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `string` | The accountId of the user |
-| `email` | `string` | The email of the user |
+| `accountId` | `` | The accountId of the user |
+| `email` | `` | The email of the user |
 
 ## References
 

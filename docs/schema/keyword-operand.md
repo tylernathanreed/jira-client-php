@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\KeywordOperand`](/src/Schema/KeywordOperand.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `keyword` | `string` | The keyword that is the operand value. |
+| `keyword` | `'empty'` | The keyword that is the operand value. |
 
 ## References
 

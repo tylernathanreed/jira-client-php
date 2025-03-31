@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\IncludedFields`](/src/Schema/IncludedFields.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `actuallyIncluded` | `array` |  |
-| `excluded` | `array` |  |
-| `included` | `array` |  |
+| `actuallyIncluded` | `?list<string>` |  |
+| `excluded` | `?list<string>` |  |
+| `included` | `?list<string>` |  |
 
 ## References
 

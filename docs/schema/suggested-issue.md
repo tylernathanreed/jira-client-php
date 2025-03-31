@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\SuggestedIssue`](/src/Schema/SuggestedIssue.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `int` | The ID of the issue. |
-| `img` | `string` | The URL of the issue type's avatar. |
-| `key` | `string` | The key of the issue. |
-| `keyHtml` | `string` | The key of the issue in HTML format. |
-| `summary` | `string` | The phrase containing the query string in HTML format, with the string highlighted with HTML bold tags. |
-| `summaryText` | `string` | The phrase containing the query string, as plain text. |
+| `id` | `` | The ID of the issue. |
+| `img` | `` | The URL of the issue type's avatar. |
+| `key` | `` | The key of the issue. |
+| `keyHtml` | `` | The key of the issue in HTML format. |
+| `summary` | `` | The phrase containing the query string in HTML format, with the string highlighted with HTML bold tags. |
+| `summaryText` | `` | The phrase containing the query string, as plain text. |
 
 ## References
 

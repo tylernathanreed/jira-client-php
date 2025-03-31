@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowRulesSearchDetails`](/src/Schema/WorkflowRu
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `invalidRules` | `array` | List of workflow rule IDs that do not belong to the workflow or can not be found. |
-| `validRules` | `array` | List of valid workflow transition rules. |
-| `workflowEntityId` | `string` | The workflow ID. |
+| `invalidRules` | `?list<string>` | List of workflow rule IDs that do not belong to the workflow or can not be found. |
+| `validRules` | `?list<WorkflowTransitionRules>` | List of valid workflow transition rules. |
+| `workflowEntityId` | `` | The workflow ID. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssuesMetaBean`](/src/Schema/IssuesMetaBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `jql` | `IssuesJqlMetaDataBean` |  |
+| `jql` | `` |  |
 
 ## References
 

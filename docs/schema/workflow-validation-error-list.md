@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\WorkflowValidationErrorList`](/src/Schema/WorkflowV
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errors` | `array` | The list of validation errors. |
+| `errors` | `?list<WorkflowValidationError>` | The list of validation errors. |
 
 ## References
 

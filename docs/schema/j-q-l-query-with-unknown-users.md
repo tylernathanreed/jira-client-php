@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\JQLQueryWithUnknownUsers`](/src/Schema/JQLQueryWith
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `convertedQuery` | `string` | The converted query, with accountIDs instead of user identifiers, or 'unknown' for users that could not be found |
-| `originalQuery` | `string` | The original query, for reference |
+| `convertedQuery` | `` | The converted query, with accountIDs instead of user identifiers, or 'unknown' for users that could not be found |
+| `originalQuery` | `` | The original query, for reference |
 
 ## References
 

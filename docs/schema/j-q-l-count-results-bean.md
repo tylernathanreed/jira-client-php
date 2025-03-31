@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JQLCountResultsBean`](/src/Schema/JQLCountResultsBe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `count` | `int` | Number of issues matching JQL query. |
+| `count` | `` | Number of issues matching JQL query. |
 
 ## References
 

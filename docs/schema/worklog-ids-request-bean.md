@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\WorklogIdsRequestBean`](/src/Schema/WorklogIdsReque
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `ids` | `array` | A list of worklog IDs. |
+| `ids` | `list<int>` | A list of worklog IDs. |
 
 ## References
 

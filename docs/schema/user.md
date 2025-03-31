@@ -14,24 +14,24 @@ Source: [`Jira\Client\Schema\User`](/src/Schema/User.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `string` | The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*. Required in requests. |
-| `accountType` | `string` | The user account type. Can take the following values:
+| `accountId` | `` | The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*. Required in requests. |
+| `accountType` | `'atlassian'|'app'|'customer'|'unknown'|null` | The user account type. Can take the following values:
 
  *  `atlassian` regular Atlassian user account
  *  `app` system account used for Connect applications and OAuth to represent external systems
  *  `customer` Jira Service Desk account representing an external service desk |
-| `active` | `bool` | Whether the user is active. |
-| `applicationRoles` | `SimpleListWrapperApplicationRole` | The application roles the user is assigned to. |
-| `avatarUrls` | `AvatarUrlsBean` | The avatars of the user. |
-| `displayName` | `string` | The display name of the user. Depending on the user’s privacy setting, this may return an alternative value. |
-| `emailAddress` | `string` | The email address of the user. Depending on the user’s privacy setting, this may be returned as null. |
-| `expand` | `string` | Expand options that include additional user details in the response. |
-| `groups` | `SimpleListWrapperGroupName` | The groups that the user belongs to. |
-| `key` | `string` | This property is no longer available and will be removed from the documentation soon. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details. |
-| `locale` | `string` | The locale of the user. Depending on the user’s privacy setting, this may be returned as null. |
-| `name` | `string` | This property is no longer available and will be removed from the documentation soon. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details. |
-| `self` | `string` | The URL of the user. |
-| `timeZone` | `string` | The time zone specified in the user's profile. If the user's time zone is not visible to the current user (due to user's profile setting), or if a time zone has not been set, the instance's default time zone will be returned. |
+| `active` | `` | Whether the user is active. |
+| `applicationRoles` | `` | The application roles the user is assigned to. |
+| `avatarUrls` | `` | The avatars of the user. |
+| `displayName` | `` | The display name of the user. Depending on the user’s privacy setting, this may return an alternative value. |
+| `emailAddress` | `` | The email address of the user. Depending on the user’s privacy setting, this may be returned as null. |
+| `expand` | `` | Expand options that include additional user details in the response. |
+| `groups` | `` | The groups that the user belongs to. |
+| `key` | `` | This property is no longer available and will be removed from the documentation soon. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details. |
+| `locale` | `` | The locale of the user. Depending on the user’s privacy setting, this may be returned as null. |
+| `name` | `` | This property is no longer available and will be removed from the documentation soon. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details. |
+| `self` | `` | The URL of the user. |
+| `timeZone` | `` | The time zone specified in the user's profile. If the user's time zone is not visible to the current user (due to user's profile setting), or if a time zone has not been set, the instance's default time zone will be returned. |
 
 ## References
 

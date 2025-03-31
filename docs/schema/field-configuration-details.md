@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\FieldConfigurationDetails`](/src/Schema/FieldConfig
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The name of the field configuration. Must be unique. |
-| `description` | `string` | The description of the field configuration. |
+| `name` | `` | The name of the field configuration. Must be unique. |
+| `description` | `` | The description of the field configuration. |
 
 ## References
 

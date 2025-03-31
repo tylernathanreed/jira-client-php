@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueArchivalSyncRequest`](/src/Schema/IssueArchiva
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueIdsOrKeys` | `array` |  |
+| `issueIdsOrKeys` | `?list<string>` |  |
 
 ## References
 

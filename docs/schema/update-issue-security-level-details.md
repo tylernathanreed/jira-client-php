@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UpdateIssueSecurityLevelDetails`](/src/Schema/Updat
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` | The description of the issue security scheme level. |
-| `name` | `string` | The name of the issue security scheme level. Must be unique. |
+| `description` | `` | The description of the issue security scheme level. |
+| `name` | `` | The name of the issue security scheme level. Must be unique. |
 
 ## References
 

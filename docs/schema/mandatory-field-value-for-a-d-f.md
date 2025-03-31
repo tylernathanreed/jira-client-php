@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\MandatoryFieldValueForADF`](/src/Schema/MandatoryFi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `value` | `object` | Value for each field. Accepts Atlassian Document Format (ADF) for rich text fields like `description`, `environments`. For ADF format details, refer to: [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure) |
-| `type` | `string` | Will treat as `MandatoryFieldValueForADF` if type is `adf` |
-| `retain` | `bool` | If `true`, will try to retain original non-null issue field values on move. |
+| `value` | `array<string,mixed>` | Value for each field. Accepts Atlassian Document Format (ADF) for rich text fields like `description`, `environments`. For ADF format details, refer to: [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure) |
+| `type` | `'adf'|'raw'` | Will treat as `MandatoryFieldValueForADF` if type is `adf` |
+| `retain` | `` | If `true`, will try to retain original non-null issue field values on move. |
 
 ## References
 

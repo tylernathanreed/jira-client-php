@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeMultiUserField`]
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountIds` | `array` | The IDs of the default users. |
-| `contextId` | `string` | The ID of the context. |
-| `type` | `string` |  |
+| `accountIds` | `list<string>` | The IDs of the default users. |
+| `contextId` | `` | The ID of the context. |
+| `type` | `` |  |
 
 ## References
 

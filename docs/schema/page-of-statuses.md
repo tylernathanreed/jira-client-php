@@ -5,13 +5,13 @@ Source: [`Jira\Client\Schema\PageOfStatuses`](/src/Schema/PageOfStatuses.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `isLast` | `bool` | Whether this is the last page. |
-| `maxResults` | `int` | The maximum number of items that could be returned. |
-| `nextPage` | `string` | The URL of the next page of results, if any. |
-| `self` | `string` | The URL of this page. |
-| `startAt` | `int` | The index of the first item returned on the page. |
-| `total` | `int` | Number of items that satisfy the search. |
-| `values` | `array` | The list of items. |
+| `isLast` | `` | Whether this is the last page. |
+| `maxResults` | `` | The maximum number of items that could be returned. |
+| `nextPage` | `` | The URL of the next page of results, if any. |
+| `self` | `` | The URL of this page. |
+| `startAt` | `` | The index of the first item returned on the page. |
+| `total` | `` | Number of items that satisfy the search. |
+| `values` | `?list<JiraStatus>` | The list of items. |
 
 ## References
 

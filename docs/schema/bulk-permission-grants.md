@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\BulkPermissionGrants`](/src/Schema/BulkPermissionGr
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `globalPermissions` | `array` | List of permissions granted to the user. |
-| `projectPermissions` | `array` | List of project permissions and the projects and issues those permissions provide access to. |
+| `globalPermissions` | `list<string>` | List of permissions granted to the user. |
+| `projectPermissions` | `list<BulkProjectPermissionGrants>` | List of project permissions and the projects and issues those permissions provide access to. |
 
 ## References
 

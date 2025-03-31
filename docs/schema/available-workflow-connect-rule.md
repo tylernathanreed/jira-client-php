@@ -6,15 +6,15 @@ Source: [`Jira\Client\Schema\AvailableWorkflowConnectRule`](/src/Schema/Availabl
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `addonKey` | `string` | The add-on providing the rule. |
-| `createUrl` | `string` | The URL creation path segment defined in the Connect module. |
-| `description` | `string` | The rule description. |
-| `editUrl` | `string` | The URL edit path segment defined in the Connect module. |
-| `moduleKey` | `string` | The module providing the rule. |
-| `name` | `string` | The rule name. |
-| `ruleKey` | `string` | The rule key. |
-| `ruleType` | `string` | The rule type. |
-| `viewUrl` | `string` | The URL view path segment defined in the Connect module. |
+| `addonKey` | `` | The add-on providing the rule. |
+| `createUrl` | `` | The URL creation path segment defined in the Connect module. |
+| `description` | `` | The rule description. |
+| `editUrl` | `` | The URL edit path segment defined in the Connect module. |
+| `moduleKey` | `` | The module providing the rule. |
+| `name` | `` | The rule name. |
+| `ruleKey` | `` | The rule key. |
+| `ruleType` | `'Condition'|'Validator'|'Function'|'Screen'|null` | The rule type. |
+| `viewUrl` | `` | The URL view path segment defined in the Connect module. |
 
 ## References
 

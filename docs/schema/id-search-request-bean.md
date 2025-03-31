@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\IdSearchRequestBean`](/src/Schema/IdSearchRequestBe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `jql` | `string` | A [JQL](https://confluence.atlassian.com/x/egORLQ) expression. Order by clauses are not allowed. |
-| `maxResults` | `int` | The maximum number of items to return per page. |
-| `nextPageToken` | `string` | The continuation token to fetch the next page. This token is provided by the response of this endpoint. |
+| `jql` | `` | A [JQL](https://confluence.atlassian.com/x/egORLQ) expression. Order by clauses are not allowed. |
+| `maxResults` | `` | The maximum number of items to return per page. |
+| `nextPageToken` | `` | The continuation token to fetch the next page. This token is provided by the response of this endpoint. |
 
 ## References
 

@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\HealthCheckResult`](/src/Schema/HealthCheckResult.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` | The description of the Jira health check item. |
-| `name` | `string` | The name of the Jira health check item. |
-| `passed` | `bool` | Whether the Jira health check item passed or failed. |
+| `description` | `` | The description of the Jira health check item. |
+| `name` | `` | The name of the Jira health check item. |
+| `passed` | `` | Whether the Jira health check item passed or failed. |
 
 ## References
 

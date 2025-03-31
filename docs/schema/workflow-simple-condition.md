@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\WorkflowSimpleCondition`](/src/Schema/WorkflowSimpl
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `nodeType` | `string` |  |
-| `type` | `string` | The type of the transition rule. |
-| `configuration` | `object` | EXPERIMENTAL. The configuration of the transition rule. |
+| `nodeType` | `` |  |
+| `type` | `` | The type of the transition rule. |
+| `configuration` | `array<string,mixed>` | EXPERIMENTAL. The configuration of the transition rule. |
 
 ## References
 

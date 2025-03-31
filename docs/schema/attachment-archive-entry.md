@@ -5,11 +5,11 @@ Source: [`Jira\Client\Schema\AttachmentArchiveEntry`](/src/Schema/AttachmentArch
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `abbreviatedName` | `string` |  |
-| `entryIndex` | `int` |  |
-| `mediaType` | `string` |  |
-| `name` | `string` |  |
-| `size` | `int` |  |
+| `abbreviatedName` | `` |  |
+| `entryIndex` | `` |  |
+| `mediaType` | `` |  |
+| `name` | `` |  |
+| `size` | `` |  |
 
 ## References
 

@@ -7,11 +7,11 @@ Source: [`Jira\Client\Schema\WorkflowElementReference`](/src/Schema/WorkflowElem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `propertyKey` | `string` | A property key. |
-| `ruleId` | `string` | A rule ID. |
-| `statusMappingReference` | `ProjectAndIssueTypePair` |  |
-| `statusReference` | `string` | A status reference. |
-| `transitionId` | `string` | A transition ID. |
+| `propertyKey` | `` | A property key. |
+| `ruleId` | `` | A rule ID. |
+| `statusMappingReference` | `` |  |
+| `statusReference` | `` | A status reference. |
+| `transitionId` | `` | A transition ID. |
 
 ## References
 

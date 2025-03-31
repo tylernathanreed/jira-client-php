@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\StatusMapping`](/src/Schema/StatusMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `string` | The ID of the issue type. |
-| `newStatusId` | `string` | The ID of the new status. |
-| `statusId` | `string` | The ID of the status. |
+| `issueTypeId` | `` | The ID of the issue type. |
+| `newStatusId` | `` | The ID of the new status. |
+| `statusId` | `` | The ID of the status. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\FieldConfigurationItemsDetails`](/src/Schema/FieldC
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldConfigurationItems` | `array` | Details of fields in a field configuration. |
+| `fieldConfigurationItems` | `list<FieldConfigurationItem>` | Details of fields in a field configuration. |
 
 ## References
 

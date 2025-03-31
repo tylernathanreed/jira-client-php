@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraGroupInput`](/src/Schema/JiraGroupInput.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `groupName` | `string` |  |
+| `groupName` | `` |  |
 
 ## References
 

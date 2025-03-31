@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\FieldConfigurationSchemeProjectAssociation`](/src/S
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projectId` | `string` | The ID of the project. |
-| `fieldConfigurationSchemeId` | `string` | The ID of the field configuration scheme. If the field configuration scheme ID is `null`, the operation assigns the default field configuration scheme. |
+| `projectId` | `` | The ID of the project. |
+| `fieldConfigurationSchemeId` | `` | The ID of the field configuration scheme. If the field configuration scheme ID is `null`, the operation assigns the default field configuration scheme. |
 
 ## References
 

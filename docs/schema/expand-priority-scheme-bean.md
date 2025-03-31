@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\ExpandPrioritySchemeBean`](/src/Schema/ExpandPriori
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the priority scheme. |
-| `name` | `string` | The name of the priority scheme. |
-| `self` | `string` | The URL of the priority scheme. |
+| `id` | `` | The ID of the priority scheme. |
+| `name` | `` | The name of the priority scheme. |
+| `self` | `` | The URL of the priority scheme. |
 
 ## References
 

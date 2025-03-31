@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JqlQueryOrderByClause`](/src/Schema/JqlQueryOrderBy
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fields` | `array` | The list of order-by clause fields and their ordering directives. |
+| `fields` | `list<JqlQueryOrderByClauseElement>` | The list of order-by clause fields and their ordering directives. |
 
 ## References
 

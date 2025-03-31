@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\GetPermissionResponse`](/src/Schema/GetPermissionRe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `holder` | `GetPermissionHolderResponse` | The permission holder. |
-| `type` | `string` | The permission type. This is "View" or "Edit". |
+| `holder` | `` | The permission holder. |
+| `type` | `'View'|'Edit'` | The permission type. This is "View" or "Edit". |
 
 ## References
 

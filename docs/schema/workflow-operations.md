@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowOperations`](/src/Schema/WorkflowOperations
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `canDelete` | `bool` | Whether the workflow can be deleted. |
-| `canEdit` | `bool` | Whether the workflow can be updated. |
+| `canDelete` | `` | Whether the workflow can be deleted. |
+| `canEdit` | `` | Whether the workflow can be updated. |
 
 ## References
 

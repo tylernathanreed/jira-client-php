@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueTypeSchemeProjects`](/src/Schema/IssueTypeSche
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeScheme` | `IssueTypeScheme` | Details of an issue type scheme. |
-| `projectIds` | `array` | The IDs of the projects using the issue type scheme. |
+| `issueTypeScheme` | `` | Details of an issue type scheme. |
+| `projectIds` | `list<string>` | The IDs of the projects using the issue type scheme. |
 
 ## References
 

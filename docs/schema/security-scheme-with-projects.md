@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\SecuritySchemeWithProjects`](/src/Schema/SecuritySc
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `int` | The ID of the issue security scheme. |
-| `name` | `string` | The name of the issue security scheme. |
-| `self` | `string` | The URL of the issue security scheme. |
-| `defaultLevel` | `int` | The default level ID of the issue security scheme. |
-| `description` | `string` | The description of the issue security scheme. |
-| `projectIds` | `array` | The list of project IDs associated with the issue security scheme. |
+| `id` | `` | The ID of the issue security scheme. |
+| `name` | `` | The name of the issue security scheme. |
+| `self` | `` | The URL of the issue security scheme. |
+| `defaultLevel` | `` | The default level ID of the issue security scheme. |
+| `description` | `` | The description of the issue security scheme. |
+| `projectIds` | `?list<int>` | The list of project IDs associated with the issue security scheme. |
 
 ## References
 

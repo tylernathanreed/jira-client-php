@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\BulkChangelogRequestBean`](/src/Schema/BulkChangelo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueIdsOrKeys` | `array` | List of issue IDs/keys to fetch changelogs for |
-| `fieldIds` | `array` | List of field IDs to filter changelogs |
-| `maxResults` | `int` | The maximum number of items to return per page |
-| `nextPageToken` | `string` | The cursor for pagination |
+| `issueIdsOrKeys` | `list<string>` | List of issue IDs/keys to fetch changelogs for |
+| `fieldIds` | `?list<string>` | List of field IDs to filter changelogs |
+| `maxResults` | `` | The maximum number of items to return per page |
+| `nextPageToken` | `` | The cursor for pagination |
 
 ## References
 

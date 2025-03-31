@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\StatusCategory`](/src/Schema/StatusCategory.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `colorName` | `string` | The name of the color used to represent the status category. |
-| `id` | `int` | The ID of the status category. |
-| `key` | `string` | The key of the status category. |
-| `name` | `string` | The name of the status category. |
-| `self` | `string` | The URL of the status category. |
+| `colorName` | `` | The name of the color used to represent the status category. |
+| `id` | `` | The ID of the status category. |
+| `key` | `` | The key of the status category. |
+| `name` | `` | The name of the status category. |
+| `self` | `` | The URL of the status category. |
 
 ## References
 

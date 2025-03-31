@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueTypeSchemeMapping`](/src/Schema/IssueTypeSchem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `string` | The ID of the issue type. |
-| `issueTypeSchemeId` | `string` | The ID of the issue type scheme. |
+| `issueTypeId` | `` | The ID of the issue type. |
+| `issueTypeSchemeId` | `` | The ID of the issue type scheme. |
 
 ## References
 

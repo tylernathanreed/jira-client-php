@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\OrderOfCustomFieldOptions`](/src/Schema/OrderOfCust
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `customFieldOptionIds` | `array` | A list of IDs of custom field options to move. The order of the custom field option IDs in the list is the order they are given after the move. The list must contain custom field options or cascading options, but not both. |
-| `after` | `string` | The ID of the custom field option or cascading option to place the moved options after. Required if `position` isn't provided. |
-| `position` | `string` | The position the custom field options should be moved to. Required if `after` isn't provided. |
+| `customFieldOptionIds` | `list<string>` | A list of IDs of custom field options to move. The order of the custom field option IDs in the list is the order they are given after the move. The list must contain custom field options or cascading options, but not both. |
+| `after` | `` | The ID of the custom field option or cascading option to place the moved options after. Required if `position` isn't provided. |
+| `position` | `'First'|'Last'|null` | The position the custom field options should be moved to. Required if `after` isn't provided. |
 
 ## References
 

@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\PermissionScheme`](/src/Schema/PermissionScheme.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The name of the permission scheme. Must be unique. |
-| `description` | `string` | A description for the permission scheme. |
-| `expand` | `string` | The expand options available for the permission scheme. |
-| `id` | `int` | The ID of the permission scheme. |
-| `permissions` | `array` | The permission scheme to create or update. See [About permission schemes and grants](../api-group-permission-schemes/#about-permission-schemes-and-grants) for more information. |
-| `scope` | `Scope` | The scope of the permission scheme. |
-| `self` | `string` | The URL of the permission scheme. |
+| `name` | `` | The name of the permission scheme. Must be unique. |
+| `description` | `` | A description for the permission scheme. |
+| `expand` | `` | The expand options available for the permission scheme. |
+| `id` | `` | The ID of the permission scheme. |
+| `permissions` | `?list<PermissionGrant>` | The permission scheme to create or update. See [About permission schemes and grants](../api-group-permission-schemes/#about-permission-schemes-and-grants) for more information. |
+| `scope` | `` | The scope of the permission scheme. |
+| `self` | `` | The URL of the permission scheme. |
 
 ## References
 

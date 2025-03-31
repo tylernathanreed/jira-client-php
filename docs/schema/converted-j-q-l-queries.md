@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ConvertedJQLQueries`](/src/Schema/ConvertedJQLQueri
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queriesWithUnknownUsers` | `array` | List of queries containing user information that could not be mapped to an existing user |
-| `queryStrings` | `array` | The list of converted query strings with account IDs in place of user identifiers. |
+| `queriesWithUnknownUsers` | `?list<JQLQueryWithUnknownUsers>` | List of queries containing user information that could not be mapped to an existing user |
+| `queryStrings` | `?list<string>` | The list of converted query strings with account IDs in place of user identifiers. |
 
 ## References
 

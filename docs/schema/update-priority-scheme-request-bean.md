@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\UpdatePrioritySchemeRequestBean`](/src/Schema/Updat
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultPriorityId` | `int` | The default priority of the scheme. |
-| `description` | `string` | The description of the priority scheme. |
-| `mappings` | `PriorityMapping` | Instructions to migrate the priorities of issues.
+| `defaultPriorityId` | `` | The default priority of the scheme. |
+| `description` | `` | The description of the priority scheme. |
+| `mappings` | `` | Instructions to migrate the priorities of issues.
 
 `in` mappings are used to migrate the priorities of issues to priorities used within the priority scheme.
 
@@ -26,9 +26,9 @@ Source: [`Jira\Client\Schema\UpdatePrioritySchemeRequestBean`](/src/Schema/Updat
      *  An `out` mapping must be provided for each of these priorities.
 
 For more information on `in` and `out` mappings, see the child properties documentation for the `PriorityMapping` object below. |
-| `name` | `string` | The name of the priority scheme. Must be unique. |
-| `priorities` | `UpdatePrioritiesInSchemeRequestBean` | The priorities in the scheme. |
-| `projects` | `UpdateProjectsInSchemeRequestBean` | The projects in the scheme. |
+| `name` | `` | The name of the priority scheme. Must be unique. |
+| `priorities` | `` | The priorities in the scheme. |
+| `projects` | `` | The projects in the scheme. |
 
 ## References
 

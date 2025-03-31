@@ -10,23 +10,23 @@ Source: [`Jira\Client\Schema\IssueLinkType`](/src/Schema/IssueLinkType.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the issue link type and is used as follows:
+| `id` | `` | The ID of the issue link type and is used as follows:
 
  *  In the [ issueLink](#api-rest-api-3-issueLink-post) resource it is the type of issue link. Required on create when `name` isn't provided. Otherwise, read only.
  *  In the [ issueLinkType](#api-rest-api-3-issueLinkType-post) resource it is read only. |
-| `inward` | `string` | The description of the issue link type inward link and is used as follows:
+| `inward` | `` | The description of the issue link type inward link and is used as follows:
 
  *  In the [ issueLink](#api-rest-api-3-issueLink-post) resource it is read only.
  *  In the [ issueLinkType](#api-rest-api-3-issueLinkType-post) resource it is required on create and optional on update. Otherwise, read only. |
-| `name` | `string` | The name of the issue link type and is used as follows:
+| `name` | `` | The name of the issue link type and is used as follows:
 
  *  In the [ issueLink](#api-rest-api-3-issueLink-post) resource it is the type of issue link. Required on create when `id` isn't provided. Otherwise, read only.
  *  In the [ issueLinkType](#api-rest-api-3-issueLinkType-post) resource it is required on create and optional on update. Otherwise, read only. |
-| `outward` | `string` | The description of the issue link type outward link and is used as follows:
+| `outward` | `` | The description of the issue link type outward link and is used as follows:
 
  *  In the [ issueLink](#api-rest-api-3-issueLink-post) resource it is read only.
  *  In the [ issueLinkType](#api-rest-api-3-issueLinkType-post) resource it is required on create and optional on update. Otherwise, read only. |
-| `self` | `string` | The URL of the issue link type. Read only. |
+| `self` | `` | The URL of the issue link type. Read only. |
 
 ## References
 

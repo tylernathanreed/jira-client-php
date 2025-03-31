@@ -5,12 +5,12 @@ Source: [`Jira\Client\Schema\ResolutionJsonBean`](/src/Schema/ResolutionJsonBean
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `default` | `bool` |  |
-| `description` | `string` |  |
-| `iconUrl` | `string` |  |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `self` | `string` |  |
+| `default` | `` |  |
+| `description` | `` |  |
+| `iconUrl` | `` |  |
+| `id` | `` |  |
+| `name` | `` |  |
+| `self` | `` |  |
 
 ## References
 

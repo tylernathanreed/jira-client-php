@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\JiraMultipleVersionPickerField`](/src/Schema/JiraMu
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `bulkEditMultiSelectFieldOption` | `string` |  |
-| `fieldId` | `string` |  |
-| `versions` | `array` |  |
+| `bulkEditMultiSelectFieldOption` | `'ADD'|'REMOVE'|'REPLACE'|'REMOVE_ALL'` |  |
+| `fieldId` | `` |  |
+| `versions` | `list<JiraVersionField>` |  |
 
 ## References
 

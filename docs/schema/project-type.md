@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\ProjectType`](/src/Schema/ProjectType.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `color` | `string` | The color of the project type. |
-| `descriptionI18nKey` | `string` | The key of the project type's description. |
-| `formattedKey` | `string` | The formatted key of the project type. |
-| `icon` | `string` | The icon of the project type. |
-| `key` | `string` | The key of the project type. |
+| `color` | `` | The color of the project type. |
+| `descriptionI18nKey` | `` | The key of the project type's description. |
+| `formattedKey` | `` | The formatted key of the project type. |
+| `icon` | `` | The icon of the project type. |
+| `key` | `` | The key of the project type. |
 
 ## References
 

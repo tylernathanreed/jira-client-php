@@ -8,9 +8,9 @@ Source: [`Jira\Client\Schema\JqlQueryField`](/src/Schema/JqlQueryField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The name of the field. |
-| `encodedName` | `string` | The encoded name of the field, which can be used directly in a JQL query. |
-| `property` | `array` | When the field refers to a value in an entity property, details of the entity property value. |
+| `name` | `` | The name of the field. |
+| `encodedName` | `` | The encoded name of the field, which can be used directly in a JQL query. |
+| `property` | `?list<JqlQueryFieldEntityProperty>` | When the field refers to a value in an entity property, details of the entity property value. |
 
 ## References
 

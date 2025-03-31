@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JqlQueriesToParse`](/src/Schema/JqlQueriesToParse.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queries` | `array` | A list of queries to parse. |
+| `queries` | `list<string>` | A list of queries to parse. |
 
 ## References
 

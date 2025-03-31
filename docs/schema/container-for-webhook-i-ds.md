@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ContainerForWebhookIDs`](/src/Schema/ContainerForWe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `webhookIds` | `array` | A list of webhook IDs. |
+| `webhookIds` | `list<int>` | A list of webhook IDs. |
 
 ## References
 

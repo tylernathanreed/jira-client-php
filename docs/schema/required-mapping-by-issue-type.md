@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\RequiredMappingByIssueType`](/src/Schema/RequiredMa
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `string` | The ID of the issue type. |
-| `statusIds` | `array` | The status IDs requiring mapping. |
+| `issueTypeId` | `` | The ID of the issue type. |
+| `statusIds` | `?list<string>` | The status IDs requiring mapping. |
 
 ## References
 

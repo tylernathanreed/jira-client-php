@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PermittedProjects`](/src/Schema/PermittedProjects.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projects` | `array` | A list of projects. |
+| `projects` | `?list<ProjectIdentifierBean>` | A list of projects. |
 
 ## References
 

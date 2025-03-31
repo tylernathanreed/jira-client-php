@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\UserContextVariable`](/src/Schema/UserContextVariab
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `string` | The account ID of the user. |
-| `type` | `string` | Type of custom context variable. |
+| `accountId` | `` | The account ID of the user. |
+| `type` | `` | Type of custom context variable. |
 
 ## References
 

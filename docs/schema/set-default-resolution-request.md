@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SetDefaultResolutionRequest`](/src/Schema/SetDefaul
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the new default issue resolution. Must be an existing ID or null. Setting this to null erases the default resolution setting. |
+| `id` | `` | The ID of the new default issue resolution. Must be an existing ID or null. Setting this to null erases the default resolution setting. |
 
 ## References
 

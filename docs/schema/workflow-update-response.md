@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\WorkflowUpdateResponse`](/src/Schema/WorkflowUpdate
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statuses` | `array` | List of updated statuses. |
-| `taskId` | `string` | If there is a [asynchronous task](#async-operations) operation, as a result of this update. |
-| `workflows` | `array` | List of updated workflows. |
+| `statuses` | `?list<JiraWorkflowStatus>` | List of updated statuses. |
+| `taskId` | `` | If there is a [asynchronous task](#async-operations) operation, as a result of this update. |
+| `workflows` | `?list<JiraWorkflow>` | List of updated workflows. |
 
 ## References
 

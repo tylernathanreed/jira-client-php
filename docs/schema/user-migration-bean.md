@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\UserMigrationBean`](/src/Schema/UserMigrationBean.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `string` |  |
-| `key` | `string` |  |
-| `username` | `string` |  |
+| `accountId` | `` |  |
+| `key` | `` |  |
+| `username` | `` |  |
 
 ## References
 

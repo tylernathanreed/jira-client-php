@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldOptionUpdate`](/src/Schema/CustomFieldOp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the custom field option. |
-| `disabled` | `bool` | Whether the option is disabled. |
-| `value` | `string` | The value of the custom field option. |
+| `id` | `` | The ID of the custom field option. |
+| `disabled` | `` | Whether the option is disabled. |
+| `value` | `` | The value of the custom field option. |
 
 ## References
 

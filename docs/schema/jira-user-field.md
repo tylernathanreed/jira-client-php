@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraUserField`](/src/Schema/JiraUserField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `string` |  |
+| `accountId` | `` |  |
 
 ## References
 

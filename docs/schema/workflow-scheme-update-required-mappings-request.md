@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUpdateRequiredMappingsRequest`](/src/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the workflow scheme. |
-| `workflowsForIssueTypes` | `array` | The new workflow to issue type mappings for this workflow scheme. |
-| `defaultWorkflowId` | `string` | The ID of the new default workflow for this workflow scheme. Only used in global-scoped workflow schemes. If it isn't specified, is set to *Jira Workflow (jira)*. |
+| `id` | `` | The ID of the workflow scheme. |
+| `workflowsForIssueTypes` | `list<WorkflowSchemeAssociation>` | The new workflow to issue type mappings for this workflow scheme. |
+| `defaultWorkflowId` | `` | The ID of the new default workflow for this workflow scheme. Only used in global-scoped workflow schemes. If it isn't specified, is set to *Jira Workflow (jira)*. |
 
 ## References
 

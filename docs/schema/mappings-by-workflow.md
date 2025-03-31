@@ -8,9 +8,9 @@ Source: [`Jira\Client\Schema\MappingsByWorkflow`](/src/Schema/MappingsByWorkflow
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `newWorkflowId` | `string` | The ID of the new workflow. |
-| `oldWorkflowId` | `string` | The ID of the old workflow. |
-| `statusMappings` | `array` | The list of status mappings. |
+| `newWorkflowId` | `` | The ID of the new workflow. |
+| `oldWorkflowId` | `` | The ID of the old workflow. |
+| `statusMappings` | `list<WorkflowAssociationStatusMapping>` | The list of status mappings. |
 
 ## References
 

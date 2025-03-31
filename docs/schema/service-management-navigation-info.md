@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\ServiceManagementNavigationInfo`](/src/Schema/Servi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queueCategory` | `string` |  |
-| `queueId` | `int` |  |
-| `queueName` | `string` |  |
+| `queueCategory` | `` |  |
+| `queueId` | `` |  |
+| `queueName` | `` |  |
 
 ## References
 

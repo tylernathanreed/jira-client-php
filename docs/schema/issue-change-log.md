@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueChangeLog`](/src/Schema/IssueChangeLog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `changeHistories` | `array` | List of changelogs that belongs to given issueId. |
-| `issueId` | `string` | The ID of the issue. |
+| `changeHistories` | `?list<Changelog>` | List of changelogs that belongs to given issueId. |
+| `issueId` | `` | The ID of the issue. |
 
 ## References
 

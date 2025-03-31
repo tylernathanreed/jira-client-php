@@ -19,7 +19,7 @@ class DummyPropertiesTableReplacer extends Replacer
         foreach ($schema->properties as $property) {
             $table->add([
                 "`{$property->name}`",
-                "`{$property->type}`",
+                "`{$property->getDocType()}`",
                 $property->description,
             ]);
         }

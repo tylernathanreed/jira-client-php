@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\PaginatedResponseIssueTypeIssueCreateMetadata`](/sr
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `maxResults` | `int` |  |
-| `results` | `array` |  |
-| `startAt` | `int` |  |
-| `total` | `int` |  |
+| `maxResults` | `` |  |
+| `results` | `?list<IssueTypeIssueCreateMetadata>` |  |
+| `startAt` | `` |  |
+| `total` | `` |  |
 
 ## References
 

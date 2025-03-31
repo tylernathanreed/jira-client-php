@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\ErrorCollection`](/src/Schema/ErrorCollection.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errorMessages` | `array` | The list of error messages produced by this operation. For example, "input parameter 'key' must be provided" |
-| `errors` | `object` | The list of errors by parameter returned by the operation. For example,"projectKey": "Project keys must start with an uppercase letter, followed by one or more uppercase alphanumeric characters." |
-| `status` | `int` |  |
+| `errorMessages` | `?list<string>` | The list of error messages produced by this operation. For example, "input parameter 'key' must be provided" |
+| `errors` | `array<string,string>` | The list of errors by parameter returned by the operation. For example,"projectKey": "Project keys must start with an uppercase letter, followed by one or more uppercase alphanumeric characters." |
+| `status` | `` |  |
 
 ## References
 

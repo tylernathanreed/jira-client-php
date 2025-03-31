@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\WorkManagementNavigationInfo`](/src/Schema/WorkMana
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `boardName` | `string` |  |
+| `boardName` | `` |  |
 
 ## References
 

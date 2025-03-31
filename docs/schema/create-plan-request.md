@@ -5,14 +5,14 @@ Source: [`Jira\Client\Schema\CreatePlanRequest`](/src/Schema/CreatePlanRequest.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueSources` | `array` | The issue sources to include in the plan. |
-| `name` | `string` | The plan name. |
-| `scheduling` | `CreateSchedulingRequest` | The scheduling settings for the plan. |
-| `crossProjectReleases` | `array` | The cross-project releases to include in the plan. |
-| `customFields` | `array` | The custom fields for the plan. |
-| `exclusionRules` | `CreateExclusionRulesRequest` | The exclusion rules for the plan. |
-| `leadAccountId` | `string` | The account ID of the plan lead. |
-| `permissions` | `array` | The permissions for the plan. |
+| `issueSources` | `list<CreateIssueSourceRequest>` | The issue sources to include in the plan. |
+| `name` | `` | The plan name. |
+| `scheduling` | `` | The scheduling settings for the plan. |
+| `crossProjectReleases` | `?list<CreateCrossProjectReleaseRequest>` | The cross-project releases to include in the plan. |
+| `customFields` | `?list<CreateCustomFieldRequest>` | The custom fields for the plan. |
+| `exclusionRules` | `` | The exclusion rules for the plan. |
+| `leadAccountId` | `` | The account ID of the plan lead. |
+| `permissions` | `?list<CreatePermissionRequest>` | The permissions for the plan. |
 
 ## References
 

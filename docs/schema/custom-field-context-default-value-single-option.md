@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueSingleOption`](/src/S
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `string` | The ID of the context. |
-| `optionId` | `string` | The ID of the default option. |
-| `type` | `string` |  |
+| `contextId` | `` | The ID of the context. |
+| `optionId` | `` | The ID of the default option. |
+| `type` | `` |  |
 
 ## References
 

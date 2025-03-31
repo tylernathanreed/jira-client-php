@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowTransitionLinks`](/src/Schema/WorkflowTrans
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fromPort` | `int` | The port that the transition starts from. |
-| `fromStatusReference` | `string` | The status that the transition starts from. |
-| `toPort` | `int` | The port that the transition goes to. |
+| `fromPort` | `` | The port that the transition starts from. |
+| `fromStatusReference` | `` | The status that the transition starts from. |
+| `toPort` | `` | The port that the transition goes to. |
 
 ## References
 

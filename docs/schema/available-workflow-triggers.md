@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\AvailableWorkflowTriggers`](/src/Schema/AvailableWo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `availableTypes` | `array` | The list of available trigger types. |
-| `ruleKey` | `string` | The rule key of the rule. |
+| `availableTypes` | `list<AvailableWorkflowTriggerTypes>` | The list of available trigger types. |
+| `ruleKey` | `` | The rule key of the rule. |
 
 ## References
 

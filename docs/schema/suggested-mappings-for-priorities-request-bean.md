@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\SuggestedMappingsForPrioritiesRequestBean`](/src/Sc
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `add` | `array` | The ids of priorities being removed from the scheme. |
-| `remove` | `array` | The ids of priorities being removed from the scheme. |
+| `add` | `?list<int>` | The ids of priorities being removed from the scheme. |
+| `remove` | `?list<int>` | The ids of priorities being removed from the scheme. |
 
 ## References
 

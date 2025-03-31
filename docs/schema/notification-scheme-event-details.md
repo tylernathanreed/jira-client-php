@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\NotificationSchemeEventDetails`](/src/Schema/Notifi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `event` | `NotificationSchemeEventTypeId` | The ID of the event. |
-| `notifications` | `array` | The list of notifications mapped to a specified event. |
+| `event` | `` | The ID of the event. |
+| `notifications` | `list<NotificationSchemeNotificationDetails>` | The list of notifications mapped to a specified event. |
 
 ## References
 

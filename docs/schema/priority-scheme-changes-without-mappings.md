@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\PrioritySchemeChangesWithoutMappings`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `ids` | `array` | Affected entity ids. |
+| `ids` | `list<int>` | Affected entity ids. |
 
 ## References
 

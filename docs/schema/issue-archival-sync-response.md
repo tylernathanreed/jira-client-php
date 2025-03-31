@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueArchivalSyncResponse`](/src/Schema/IssueArchiv
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errors` | `Errors` |  |
-| `numberOfIssuesUpdated` | `int` |  |
+| `errors` | `` |  |
+| `numberOfIssuesUpdated` | `` |  |
 
 ## References
 

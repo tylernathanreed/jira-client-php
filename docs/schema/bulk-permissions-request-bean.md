@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\BulkPermissionsRequestBean`](/src/Schema/BulkPermis
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `string` | The account ID of a user. |
-| `globalPermissions` | `array` | Global permissions to look up. |
-| `projectPermissions` | `array` | Project permissions with associated projects and issues to look up. |
+| `accountId` | `` | The account ID of a user. |
+| `globalPermissions` | `?list<string>` | Global permissions to look up. |
+| `projectPermissions` | `?list<BulkProjectPermissions>` | Project permissions with associated projects and issues to look up. |
 
 ## References
 

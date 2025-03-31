@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\RestrictedPermission`](/src/Schema/RestrictedPermis
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the permission. Either `id` or `key` must be specified. Use [Get all permissions](#api-rest-api-3-permissions-get) to get the list of permissions. |
-| `key` | `string` | The key of the permission. Either `id` or `key` must be specified. Use [Get all permissions](#api-rest-api-3-permissions-get) to get the list of permissions. |
+| `id` | `` | The ID of the permission. Either `id` or `key` must be specified. Use [Get all permissions](#api-rest-api-3-permissions-get) to get the list of permissions. |
+| `key` | `` | The key of the permission. Either `id` or `key` must be specified. Use [Get all permissions](#api-rest-api-3-permissions-get) to get the list of permissions. |
 
 ## References
 

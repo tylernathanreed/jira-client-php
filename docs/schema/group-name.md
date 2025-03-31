@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\GroupName`](/src/Schema/GroupName.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `groupId` | `string` | The ID of the group, which uniquely identifies the group across all Atlassian products. For example, *952d12c3-5b5b-4d04-bb32-44d383afc4b2*. |
-| `name` | `string` | The name of group. |
-| `self` | `string` | The URL for these group details. |
+| `groupId` | `` | The ID of the group, which uniquely identifies the group across all Atlassian products. For example, *952d12c3-5b5b-4d04-bb32-44d383afc4b2*. |
+| `name` | `` | The name of group. |
+| `self` | `` | The URL for these group details. |
 
 ## References
 

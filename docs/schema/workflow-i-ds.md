@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowIDs`](/src/Schema/WorkflowIDs.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | The name of the workflow. |
-| `entityId` | `string` | The entity ID of the workflow. |
+| `name` | `` | The name of the workflow. |
+| `entityId` | `` | The entity ID of the workflow. |
 
 ## References
 

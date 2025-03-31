@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\PermissionsKeysBean`](/src/Schema/PermissionsKeysBe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `permissions` | `array` | A list of permission keys. |
+| `permissions` | `list<string>` | A list of permission keys. |
 
 ## References
 

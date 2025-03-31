@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssuesAndJQLQueries`](/src/Schema/IssuesAndJQLQueri
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueIds` | `array` | A list of issue IDs. |
-| `jqls` | `array` | A list of JQL queries. |
+| `issueIds` | `list<int>` | A list of issue IDs. |
+| `jqls` | `list<string>` | A list of JQL queries. |
 
 ## References
 

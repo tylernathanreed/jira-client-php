@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\IssueLimitReportResponseBean`](/src/Schema/IssueLim
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issuesApproachingLimit` | `object` | A list of ids of issues approaching the limit and their field count |
-| `issuesBreachingLimit` | `object` | A list of ids of issues breaching the limit and their field count |
-| `limits` | `object` | The fields and their defined limits |
+| `issuesApproachingLimit` | `array<string,int>` | A list of ids of issues approaching the limit and their field count |
+| `issuesBreachingLimit` | `array<string,int>` | A list of ids of issues breaching the limit and their field count |
+| `limits` | `array<string,int>` | The fields and their defined limits |
 
 ## References
 

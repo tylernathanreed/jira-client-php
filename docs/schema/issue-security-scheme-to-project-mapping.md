@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueSecuritySchemeToProjectMapping`](/src/Schema/I
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueSecuritySchemeId` | `string` |  |
-| `projectId` | `string` |  |
+| `issueSecuritySchemeId` | `` |  |
+| `projectId` | `` |  |
 
 ## References
 

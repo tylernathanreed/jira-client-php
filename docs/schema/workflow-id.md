@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowId`](/src/Schema/WorkflowId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `draft` | `bool` | Whether the workflow is in the draft state. |
-| `name` | `string` | The name of the workflow. |
+| `draft` | `` | Whether the workflow is in the draft state. |
+| `name` | `` | The name of the workflow. |
 
 ## References
 

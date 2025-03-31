@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueTypeScreenSchemeMappingDetails`](/src/Schema/I
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeMappings` | `array` | The list of issue type to screen scheme mappings. A *default* entry cannot be specified because a default entry is added when an issue type screen scheme is created. |
+| `issueTypeMappings` | `list<IssueTypeScreenSchemeMapping>` | The list of issue type to screen scheme mappings. A *default* entry cannot be specified because a default entry is added when an issue type screen scheme is created. |
 
 ## References
 

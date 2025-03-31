@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\BulkEditActionError`](/src/Schema/BulkEditActionErr
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errorMessages` | `array` | The error messages. |
-| `errors` | `object` | The errors. |
+| `errorMessages` | `list<string>` | The error messages. |
+| `errors` | `array<string,string>` | The errors. |
 
 ## References
 

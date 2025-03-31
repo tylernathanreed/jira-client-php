@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\StatusProjectUsageDTO`](/src/Schema/StatusProjectUs
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projects` | `StatusProjectUsagePage` |  |
-| `statusId` | `string` | The status ID. |
+| `projects` | `` |  |
+| `statusId` | `` | The status ID. |
 
 ## References
 

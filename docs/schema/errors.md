@@ -5,11 +5,11 @@ Source: [`Jira\Client\Schema\Errors`](/src/Schema/Errors.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueIsSubtask` | `Error` |  |
-| `issuesInArchivedProjects` | `Error` |  |
-| `issuesInUnlicensedProjects` | `Error` |  |
-| `issuesNotFound` | `Error` |  |
-| `userDoesNotHavePermission` | `Error` |  |
+| `issueIsSubtask` | `` |  |
+| `issuesInArchivedProjects` | `` |  |
+| `issuesInUnlicensedProjects` | `` |  |
+| `issuesNotFound` | `` |  |
+| `userDoesNotHavePermission` | `` |  |
 
 ## References
 

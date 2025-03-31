@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\IssueTransitionStatus`](/src/Schema/IssueTransition
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statusId` | `int` | The unique ID of the status. |
-| `statusName` | `string` | The name of the status. |
+| `statusId` | `` | The unique ID of the status. |
+| `statusName` | `` | The name of the status. |
 
 ## References
 

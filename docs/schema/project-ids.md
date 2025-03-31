@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectIds`](/src/Schema/ProjectIds.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projectIds` | `array` | The IDs of projects. |
+| `projectIds` | `list<string>` | The IDs of projects. |
 
 ## References
 

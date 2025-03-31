@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ScreenableField`](/src/Schema/ScreenableField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `string` | The ID of the screen tab field. |
-| `name` | `string` | The name of the screen tab field. Required on create and update. The maximum length is 255 characters. |
+| `id` | `` | The ID of the screen tab field. |
+| `name` | `` | The name of the screen tab field. Required on create and update. The maximum length is 255 characters. |
 
 ## References
 

@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\Visibility`](/src/Schema/Visibility.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `identifier` | `string` | The ID of the group or the name of the role that visibility of this item is restricted to. |
-| `type` | `string` | Whether visibility of this item is restricted to a group or role. |
-| `value` | `string` | The name of the group or role that visibility of this item is restricted to. Please note that the name of a group is mutable, to reliably identify a group use `identifier`. |
+| `identifier` | `` | The ID of the group or the name of the role that visibility of this item is restricted to. |
+| `type` | `'group'|'role'|null` | Whether visibility of this item is restricted to a group or role. |
+| `value` | `` | The name of the group or role that visibility of this item is restricted to. Please note that the name of a group is mutable, to reliably identify a group use `identifier`. |
 
 ## References
 

@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\AvailableWorkflowSystemRule`](/src/Schema/Available
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `string` | The rule description. |
-| `incompatibleRuleKeys` | `array` | List of rules that conflict with this one. |
-| `isAvailableForInitialTransition` | `bool` | Whether the rule can be added added to an initial transition. |
-| `isVisible` | `bool` | Whether the rule is visible. |
-| `name` | `string` | The rule name. |
-| `ruleKey` | `string` | The rule key. |
-| `ruleType` | `string` | The rule type. |
+| `description` | `` | The rule description. |
+| `incompatibleRuleKeys` | `list<string>` | List of rules that conflict with this one. |
+| `isAvailableForInitialTransition` | `` | Whether the rule can be added added to an initial transition. |
+| `isVisible` | `` | Whether the rule is visible. |
+| `name` | `` | The rule name. |
+| `ruleKey` | `` | The rule key. |
+| `ruleType` | `'Condition'|'Validator'|'Function'|'Screen'` | The rule type. |
 
 ## References
 

@@ -10,8 +10,8 @@ Source: [`Jira\Client\Schema\ProjectIssueTypes`](/src/Schema/ProjectIssueTypes.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypes` | `array` | IDs of the issue types |
-| `project` | `ProjectId` |  |
+| `issueTypes` | `?list<string>` | IDs of the issue types |
+| `project` | `` |  |
 
 ## References
 

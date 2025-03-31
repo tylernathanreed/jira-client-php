@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraDurationField`](/src/Schema/JiraDurationField.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `originalEstimateField` | `string` |  |
+| `originalEstimateField` | `` |  |
 
 ## References
 
