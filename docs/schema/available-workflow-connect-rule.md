@@ -13,7 +13,7 @@ Source: [`Jira\Client\Schema\AvailableWorkflowConnectRule`](/src/Schema/Availabl
 | `moduleKey` | `string` | The module providing the rule. |
 | `name` | `string` | The rule name. |
 | `ruleKey` | `string` | The rule key. |
-| `ruleType` | `'Condition'\|'Validator'\|'Function'\|'Screen'\|null` | The rule type. |
+| `ruleType` | `'Condition'\|`<br/>`'Validator'\|`<br/>`'Function'\|`<br/>`'Screen'\|`<br/>`null` | The rule type. |
 | `viewUrl` | `string` | The URL view path segment defined in the Connect module. |
 
 ## References

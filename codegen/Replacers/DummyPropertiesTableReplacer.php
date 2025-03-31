@@ -33,6 +33,10 @@ class DummyPropertiesTableReplacer extends Replacer
                 $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->listableType) . '.md');
             }
 
+            if (is_string($type) && strlen($type) > 40) {
+                $type = str_replace('|', '|`<br/>`', $type);
+            }
+
             $table->add([
                 "`{$property->name}`",
                 $type instanceof Link ? $type : "`{$type}`",

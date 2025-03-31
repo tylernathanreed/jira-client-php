@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\FieldLastUsed`](/src/Schema/FieldLastUsed.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `'TRACKED'\|'NOT_TRACKED'\|'NO_INFORMATION'\|null` | Last used value type:<br/><br/> *  *TRACKED*: field is tracked and a last used date is available.<br/> *  *NOT\_TRACKED*: field is not tracked, last used date is not available.<br/> *  *NO\_INFORMATION*: field is tracked, but no last used date is available. |
+| `type` | `'TRACKED'\|`<br/>`'NOT_TRACKED'\|`<br/>`'NO_INFORMATION'\|`<br/>`null` | Last used value type:<br/><br/> *  *TRACKED*: field is tracked and a last used date is available.<br/> *  *NOT\_TRACKED*: field is not tracked, last used date is not available.<br/> *  *NO\_INFORMATION*: field is tracked, but no last used date is available. |
 | `value` | `string` | The date when the value of the field last changed. |
 
 ## References

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectFeatureState`](/src/Schema/ProjectFeatureSta
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `state` | `'ENABLED'\|'DISABLED'\|'COMING_SOON'\|null` | The feature state. |
+| `state` | `'ENABLED'\|`<br/>`'DISABLED'\|`<br/>`'COMING_SOON'\|`<br/>`null` | The feature state. |
 
 ## References
 

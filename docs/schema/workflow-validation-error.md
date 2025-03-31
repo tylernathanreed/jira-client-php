@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\WorkflowValidationError`](/src/Schema/WorkflowValid
 | `elementReference` | [`WorkflowElementReference`](/docs/schema/workflow-element-reference.md) |  |
 | `level` | `'WARNING'\|'ERROR'\|null` | The validation error level. |
 | `message` | `string` | An error message. |
-| `type` | `'RULE'\|'STATUS'\|'STATUS_LAYOUT'\|'STATUS_PROPERTY'\|'WORKFLOW'\|'TRANSITION'\|'TRANSITION_PROPERTY'\|'SCOPE'\|'STATUS_MAPPING'\|'TRIGGER'\|null` | The type of element the error or warning references. |
+| `type` | `'RULE'\|`<br/>`'STATUS'\|`<br/>`'STATUS_LAYOUT'\|`<br/>`'STATUS_PROPERTY'\|`<br/>`'WORKFLOW'\|`<br/>`'TRANSITION'\|`<br/>`'TRANSITION_PROPERTY'\|`<br/>`'SCOPE'\|`<br/>`'STATUS_MAPPING'\|`<br/>`'TRIGGER'\|`<br/>`null` | The type of element the error or warning references. |
 
 ## References
 

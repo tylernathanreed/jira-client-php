@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\User`](/src/Schema/User.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `accountId` | `string` | The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*. Required in requests. |
-| `accountType` | `'atlassian'\|'app'\|'customer'\|'unknown'\|null` | The user account type. Can take the following values:<br/><br/> *  `atlassian` regular Atlassian user account<br/> *  `app` system account used for Connect applications and OAuth to represent external systems<br/> *  `customer` Jira Service Desk account representing an external service desk |
+| `accountType` | `'atlassian'\|`<br/>`'app'\|`<br/>`'customer'\|`<br/>`'unknown'\|`<br/>`null` | The user account type. Can take the following values:<br/><br/> *  `atlassian` regular Atlassian user account<br/> *  `app` system account used for Connect applications and OAuth to represent external systems<br/> *  `customer` Jira Service Desk account representing an external service desk |
 | `active` | `bool` | Whether the user is active. |
 | `applicationRoles` | [`SimpleListWrapperApplicationRole`](/docs/schema/simple-list-wrapper-application-role.md) | The application roles the user is assigned to. |
 | `avatarUrls` | [`AvatarUrlsBean`](/docs/schema/avatar-urls-bean.md) | The avatars of the user. |

@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\TaskProgressBeanObject`](/src/Schema/TaskProgressBe
 | `lastUpdate` | `int` | A timestamp recording when the task progress was last updated. |
 | `progress` | `int` | The progress of the task, as a percentage complete. |
 | `self` | `string` | The URL of the task. |
-| `status` | `'ENQUEUED'\|'RUNNING'\|'COMPLETE'\|'FAILED'\|'CANCEL_REQUESTED'\|'CANCELLED'\|'DEAD'` | The status of the task. |
+| `status` | `'ENQUEUED'\|`<br/>`'RUNNING'\|`<br/>`'COMPLETE'\|`<br/>`'FAILED'\|`<br/>`'CANCEL_REQUESTED'\|`<br/>`'CANCELLED'\|`<br/>`'DEAD'` | The status of the task. |
 | `submitted` | `int` | A timestamp recording when the task was submitted. |
 | `submittedBy` | `int` | The ID of the user who submitted the task. |
 | `description` | `string` | The description of the task. |

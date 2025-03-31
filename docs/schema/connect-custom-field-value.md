@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ConnectCustomFieldValue`](/src/Schema/ConnectCustom
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `_type` | `'StringIssueField'\|'NumberIssueField'\|'RichTextIssueField'\|'SingleSelectIssueField'\|'MultiSelectIssueField'\|'TextIssueField'` | The type of custom field. |
+| `_type` | `'StringIssueField'\|`<br/>`'NumberIssueField'\|`<br/>`'RichTextIssueField'\|`<br/>`'SingleSelectIssueField'\|`<br/>`'MultiSelectIssueField'\|`<br/>`'TextIssueField'` | The type of custom field. |
 | `fieldID` | `int` | The custom field ID. |
 | `issueID` | `int` | The issue ID. |
 | `number` | `float` | The value of number type custom field when `_type` is `NumberIssueField`. |

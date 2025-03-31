@@ -30,7 +30,7 @@ Source: [`Jira\Client\Schema\Project`](/src/Schema/Project.php)
 | `name` | `string` | The name of the project. |
 | `permissions` | [`ProjectPermissions`](/docs/schema/project-permissions.md) | User permissions on the project |
 | `projectCategory` | [`ProjectCategory`](/docs/schema/project-category.md) | The category the project belongs to. |
-| `projectTypeKey` | `'software'\|'service_desk'\|'business'\|null` | The [project type](https://confluence.atlassian.com/x/GwiiLQ#Jiraapplicationsoverview-Productfeaturesandprojecttypes) of the project. |
+| `projectTypeKey` | `'software'\|`<br/>`'service_desk'\|`<br/>`'business'\|`<br/>`null` | The [project type](https://confluence.atlassian.com/x/GwiiLQ#Jiraapplicationsoverview-Productfeaturesandprojecttypes) of the project. |
 | `properties` | `array<string,mixed>` | Map of project properties |
 | `retentionTillDate` | `string` | The date when the project is deleted permanently. |
 | `roles` | `array<string,string>` | The name and self URL for each role defined in the project. For more information, see [Create project role](#api-rest-api-3-role-post). |

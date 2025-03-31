@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\ApprovalConfiguration`](/src/Schema/ApprovalConfigu
 | Property | Type | Description |
 | --- | --- | --- |
 | `active` | `'true'\|'false'` | Whether the approval configuration is active. |
-| `conditionType` | `'number'\|'percent'\|'numberPerPrincipal'` | How the required approval count is calculated. It may be configured to require a specific number of approvals, or approval by a percentage of approvers. If the approvers source field is Approver groups, you can configure how many approvals per group are required for the request to be approved. The number will be the same across all groups. |
+| `conditionType` | `'number'\|`<br/>`'percent'\|`<br/>`'numberPerPrincipal'` | How the required approval count is calculated. It may be configured to require a specific number of approvals, or approval by a percentage of approvers. If the approvers source field is Approver groups, you can configure how many approvals per group are required for the request to be approved. The number will be the same across all groups. |
 | `conditionValue` | `string` | The number or percentage of approvals required for a request to be approved. If `conditionType` is `number`, the value must be 20 or less. If `conditionType` is `percent`, the value must be 100 or less. |
 | `fieldId` | `string` | The custom field ID of the "Approvers" or "Approver Groups" field. |
 | `transitionApproved` | `string` | The numeric ID of the transition to be executed if the request is approved. |

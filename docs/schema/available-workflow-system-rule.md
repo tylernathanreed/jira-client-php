@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\AvailableWorkflowSystemRule`](/src/Schema/Available
 | `isVisible` | `bool` | Whether the rule is visible. |
 | `name` | `string` | The rule name. |
 | `ruleKey` | `string` | The rule key. |
-| `ruleType` | `'Condition'\|'Validator'\|'Function'\|'Screen'` | The rule type. |
+| `ruleType` | `'Condition'\|`<br/>`'Validator'\|`<br/>`'Function'\|`<br/>`'Screen'` | The rule type. |
 
 ## References
 

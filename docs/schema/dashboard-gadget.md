@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\DashboardGadget`](/src/Schema/DashboardGadget.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `color` | `'blue'\|'red'\|'yellow'\|'green'\|'cyan'\|'purple'\|'gray'\|'white'` | The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`. |
+| `color` | `'blue'\|`<br/>`'red'\|`<br/>`'yellow'\|`<br/>`'green'\|`<br/>`'cyan'\|`<br/>`'purple'\|`<br/>`'gray'\|`<br/>`'white'` | The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`. |
 | `id` | `int` | The ID of the gadget instance. |
 | `position` | [`DashboardGadgetPosition`](/docs/schema/dashboard-gadget-position.md) | The position of the gadget. |
 | `title` | `string` | The title of the gadget. |

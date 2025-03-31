@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\GetDateFieldResponse`](/src/Schema/GetDateFieldResp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `'DueDate'\|'TargetStartDate'\|'TargetEndDate'\|'DateCustomField'` | The date field type. This is "DueDate", "TargetStartDate", "TargetEndDate" or "DateCustomField". |
+| `type` | `'DueDate'\|`<br/>`'TargetStartDate'\|`<br/>`'TargetEndDate'\|`<br/>`'DateCustomField'` | The date field type. This is "DueDate", "TargetStartDate", "TargetEndDate" or "DateCustomField". |
 | `dateCustomFieldId` | `int` | A date custom field ID. This is returned if the type is "DateCustomField". |
 
 ## References
