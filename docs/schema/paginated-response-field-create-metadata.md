@@ -1,0 +1,21 @@
+# Paginated Response Field Create Metadata
+
+
+Source: [`Jira\Client\Schema\PaginatedResponseFieldCreateMetadata`](src/Schema/PaginatedResponseFieldCreateMetadata.php)
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `maxResults` | `int` |  |
+| `results` | `array` |  |
+| `startAt` | `int` |  |
+| `total` | `int` |  |
+
+## References
+
+### Operations
+
+*None*
+
+### Schema
+
+*None*

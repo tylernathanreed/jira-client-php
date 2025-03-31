@@ -1,0 +1,22 @@
+# Ui Modification Identifiers
+
+Identifiers for a UI modification.
+
+Source: [`Jira\Client\Schema\UiModificationIdentifiers`](src/Schema/UiModificationIdentifiers.php)
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `id` | `string` | The ID of the UI modification. |
+| `self` | `string` | The URL of the UI modification. |
+
+## References
+
+### Operations
+
+| Group | Operation |
+| --- | --- |
+| [UIModificationsApps](/docs/operations/u-i-modifications-apps.md) | [createUiModification](/docs/operations/u-i-modifications-apps.md#create-ui-modification) |
+
+### Schema
+
+*None*

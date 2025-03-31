@@ -1,0 +1,25 @@
+# Status Layout Update
+
+The statuses associated with this workflow.
+
+Source: [`Jira\Client\Schema\StatusLayoutUpdate`](src/Schema/StatusLayoutUpdate.php)
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `properties` | `object` | The properties for this status layout. |
+| `statusReference` | `string` | A unique ID which the status will use to refer to this layout configuration. |
+| `approvalConfiguration` | `ApprovalConfiguration` |  |
+| `layout` | `WorkflowLayout` |  |
+
+## References
+
+### Operations
+
+*None*
+
+### Schema
+
+| Group | Operation |
+| --- | --- |
+| [WorkflowCreate](/docs/schema/workflow-create.md) |
+| [WorkflowUpdate](/docs/schema/workflow-update.md) |

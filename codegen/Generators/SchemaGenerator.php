@@ -2,6 +2,7 @@
 
 namespace Jira\CodeGen\Generators;
 
+use Jira\CodeGen\Contracts\SupportsReadmeGenerator;
 use Jira\CodeGen\Replacers\DummyClassDocReplacer;
 use Jira\CodeGen\Replacers\DummyClassReplacer;
 use Jira\CodeGen\Replacers\DummyIncludesReplacer;
@@ -13,8 +14,11 @@ use Jira\CodeGen\Schema\Schema;
 use Jira\CodeGen\Schema\Specification;
 use Override;
 
-/** @extends Generator<Schema> */
-class SchemaGenerator extends Generator
+/**
+ * @extends Generator<Schema>
+ * @implements SupportsReadmeGenerator<Schema>
+ */
+class SchemaGenerator extends Generator implements SupportsReadmeGenerator
 {
     /** {@inheritDoc} */
     protected $replacers = [
@@ -37,5 +41,10 @@ class SchemaGenerator extends Generator
     public function all(): array
     {
         return array_keys(Specification::getComponentSchemas());
+    }
+
+    public function getReadmeGenerator(): ReadmeGenerator
+    {
+        return new SchemaReadmeGenerator;
     }
 }

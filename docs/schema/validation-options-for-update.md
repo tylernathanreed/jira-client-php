@@ -1,0 +1,22 @@
+# Validation Options For Update
+
+The level of validation to return from the API.
+If no values are provided, the default would return `WARNING` and `ERROR` level validation results.
+
+Source: [`Jira\Client\Schema\ValidationOptionsForUpdate`](src/Schema/ValidationOptionsForUpdate.php)
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `levels` | `array` |  |
+
+## References
+
+### Operations
+
+*None*
+
+### Schema
+
+| Group | Operation |
+| --- | --- |
+| [WorkflowUpdateValidateRequestBean](/docs/schema/workflow-update-validate-request-bean.md) |

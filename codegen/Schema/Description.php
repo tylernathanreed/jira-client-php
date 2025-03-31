@@ -2,10 +2,12 @@
 
 namespace Jira\CodeGen\Schema;
 
+use Stringable;
+
 /**
  * @phpstan-type TDocTag array{0:?string,1:string}
  */
-final class Description extends AbstractSchema
+final class Description extends AbstractSchema implements Stringable
 {
     public function __construct(
         public readonly ?string $description
@@ -60,6 +62,22 @@ final class Description extends AbstractSchema
         ]);
     }
 
+    public function toMarkdown(): ?string
+    {
+        [$lines, $links] = $this->build();
+
+        if (empty($lines)) {
+            return null;
+        }
+
+        $links = array_map(fn ($link) => 'See: ' . $link, $links);
+
+        return implode("\n", [
+            ...$lines,
+            ...$links,
+        ]) ;
+    }
+
     /** @return array{0:list<string>,1:list<string>} */
     protected function build(): array
     {
@@ -100,5 +118,10 @@ final class Description extends AbstractSchema
         $links = array_filter($links, fn ($link) => ! str_starts_with($link, '#'));
 
         return [$description, array_values($links)];
+    }
+
+    public function __toString(): string
+    {
+        return $this->description ?: '';
     }
 }

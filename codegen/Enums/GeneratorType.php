@@ -2,6 +2,7 @@
 
 namespace Jira\CodeGen\Enums;
 
+use Jira\CodeGen\Contracts\SupportsReadmeGenerator;
 use Jira\CodeGen\Contracts\SupportsTestGenerator;
 use Jira\CodeGen\Generators\Generator;
 use Jira\CodeGen\Generators\OperationsGenerator;
@@ -25,6 +26,11 @@ enum GeneratorType: string
             self::Schema => SchemaGenerator::class,
             self::Operations => OperationsGenerator::class,
         };
+    }
+
+    public function supportsReadmeGenerator(): bool
+    {
+        return is_subclass_of($this->generator(), SupportsReadmeGenerator::class);
     }
 
     public function supportsTestGenerator(): bool

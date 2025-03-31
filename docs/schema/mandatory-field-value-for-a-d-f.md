@@ -1,0 +1,23 @@
+# Mandatory Field Value For A D F
+
+An object notation input
+
+Source: [`Jira\Client\Schema\MandatoryFieldValueForADF`](src/Schema/MandatoryFieldValueForADF.php)
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `value` | `object` | Value for each field. Accepts Atlassian Document Format (ADF) for rich text fields like `description`, `environments`. For ADF format details, refer to: [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure) |
+| `type` | `string` | Will treat as `MandatoryFieldValueForADF` if type is `adf` |
+| `retain` | `bool` | If `true`, will try to retain original non-null issue field values on move. |
+
+## References
+
+### Operations
+
+*None*
+
+### Schema
+
+| Group | Operation |
+| --- | --- |
+| [fields](/docs/schema/fields.md) |

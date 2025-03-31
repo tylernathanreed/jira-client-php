@@ -2,6 +2,7 @@
 
 namespace Jira\CodeGen\Commands;
 
+use Jira\CodeGen\Contracts\SupportsReadmeGenerator;
 use Jira\CodeGen\Contracts\SupportsTestGenerator;
 use Jira\CodeGen\Enums\GeneratorType;
 use Jira\CodeGen\Exceptions\ClassGenerationException;
@@ -104,6 +105,10 @@ class GenerateCommand extends Command
             $this->generateTestFile($type, $name);
         }
 
+        if ($type->supportsReadmeGenerator()) {
+            $this->generateReadmeFile($type, $name);
+        }
+
         $this->success(sprintf(
             '%s [%s] created successfully.',
             $type->name,
@@ -126,6 +131,16 @@ class GenerateCommand extends Command
         $testGenerator = $sourceGenerator->getTestGenerator();
 
         return $this->runGenerator($testGenerator, $type, 'test', $name);
+    }
+
+    protected function generateReadmeFile(GeneratorType $type, string $name): string
+    {
+        /** @var Generator<*>&SupportsReadmeGenerator<*> */
+        $sourceGenerator = $this->generator($type);
+
+        $readmeGenerator = $sourceGenerator->getReadmeGenerator();
+
+        return $this->runGenerator($readmeGenerator, $type, 'readme', $name);
     }
 
     protected function generateType(GeneratorType $type): void

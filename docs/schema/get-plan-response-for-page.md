@@ -1,0 +1,23 @@
+# Get Plan Response For Page
+
+
+Source: [`Jira\Client\Schema\GetPlanResponseForPage`](src/Schema/GetPlanResponseForPage.php)
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `id` | `string` | The plan ID. |
+| `name` | `string` | The plan name. |
+| `status` | `string` | The plan status. This is "Active", "Trashed" or "Archived". |
+| `issueSources` | `array` | The issue sources included in the plan. |
+
+## References
+
+### Operations
+
+*None*
+
+### Schema
+
+| Group | Operation |
+| --- | --- |
+| [PageWithCursorGetPlanResponseForPage](/docs/schema/page-with-cursor-get-plan-response-for-page.md) |
