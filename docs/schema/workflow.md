@@ -7,11 +7,11 @@ Source: [`Jira\Client\Schema\Workflow`](/src/Schema/Workflow.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `description` | `string` | The description of the workflow. |
-| `id` | `PublishedWorkflowId` |  |
+| `id` | [`PublishedWorkflowId`](/docs/schema/published-workflow-id.md) |  |
 | `created` | `string` | The creation date of the workflow. |
 | `hasDraftWorkflow` | `bool` | Whether the workflow has a draft version. |
 | `isDefault` | `bool` | Whether this is the default workflow. |
-| `operations` | `WorkflowOperations` |  |
+| `operations` | [`WorkflowOperations`](/docs/schema/workflow-operations.md) |  |
 | `projects` | [`?list<ProjectDetails>`](/docs/schema/project-details.md) | The projects the workflow is assigned to, through workflow schemes. |
 | `schemes` | [`?list<WorkflowSchemeIdName>`](/docs/schema/workflow-scheme-id-name.md) | The workflow schemes the workflow is assigned to. |
 | `statuses` | [`?list<WorkflowStatus>`](/docs/schema/workflow-status.md) | The statuses of the workflow. |

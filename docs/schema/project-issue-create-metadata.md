@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectIssueCreateMetadata`](/src/Schema/ProjectIss
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `avatarUrls` | `AvatarUrlsBean` | List of the project's avatars, returning the avatar size and associated URL. |
+| `avatarUrls` | [`AvatarUrlsBean`](/docs/schema/avatar-urls-bean.md) | List of the project's avatars, returning the avatar size and associated URL. |
 | `expand` | `string` | Expand options that include additional project issue create metadata details in the response. |
 | `id` | `string` | The ID of the project. |
 | `issuetypes` | [`?list<IssueTypeIssueCreateMetadata>`](/docs/schema/issue-type-issue-create-metadata.md) | List of the issue types supported by the project. |

@@ -16,7 +16,7 @@ Source: [`Jira\Client\Schema\IssueTransition`](/src/Schema/IssueTransition.php)
 | `isInitial` | `bool` | Whether this is the initial issue transition for the workflow. |
 | `looped` | `bool` |  |
 | `name` | `string` | The name of the issue transition. |
-| `to` | `StatusDetails` | Details of the issue status after the transition. |
+| `to` | [`StatusDetails`](/docs/schema/status-details.md) | Details of the issue status after the transition. |
 
 ## References
 

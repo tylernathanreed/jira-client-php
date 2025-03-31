@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JiraSingleGroupPickerField`](/src/Schema/JiraSingle
 | Property | Type | Description |
 | --- | --- | --- |
 | `fieldId` | `string` |  |
-| `group` | `JiraGroupInput` |  |
+| `group` | [`JiraGroupInput`](/docs/schema/jira-group-input.md) |  |
 
 ## References
 

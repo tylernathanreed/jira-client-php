@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\StatusCreateRequest`](/src/Schema/StatusCreateReque
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `scope` | `StatusScope` |  |
+| `scope` | [`StatusScope`](/docs/schema/status-scope.md) |  |
 | `statuses` | [`list<StatusCreate>`](/docs/schema/status-create.md) | Details of the statuses being created. |
 
 ## References

@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\Context`](/src/Schema/Context.php)
 | --- | --- | --- |
 | `id` | `int` | The ID of the context. |
 | `name` | `string` | The name of the context. |
-| `scope` | `Scope` | The scope of the context. |
+| `scope` | [`Scope`](/docs/schema/scope.md) | The scope of the context. |
 
 ## References
 

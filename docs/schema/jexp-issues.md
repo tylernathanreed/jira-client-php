@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JexpIssues`](/src/Schema/JexpIssues.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `jql` | `JexpJqlIssues` | The JQL query that specifies the set of issues available in the Jira expression. |
+| `jql` | [`JexpJqlIssues`](/docs/schema/jexp-jql-issues.md) | The JQL query that specifies the set of issues available in the Jira expression. |
 
 ## References
 

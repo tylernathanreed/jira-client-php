@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\SuggestedMappingsRequestBean`](/src/Schema/Suggeste
 | Property | Type | Description |
 | --- | --- | --- |
 | `maxResults` | `int` | The maximum number of results that could be on the page. |
-| `priorities` | `SuggestedMappingsForPrioritiesRequestBean` | The priority changes in the scheme. |
-| `projects` | `SuggestedMappingsForProjectsRequestBean` | The project changes in the scheme. |
+| `priorities` | [`SuggestedMappingsForPrioritiesRequestBean`](/docs/schema/suggested-mappings-for-priorities-request-bean.md) | The priority changes in the scheme. |
+| `projects` | [`SuggestedMappingsForProjectsRequestBean`](/docs/schema/suggested-mappings-for-projects-request-bean.md) | The project changes in the scheme. |
 | `schemeId` | `int` | The id of the priority scheme. |
 | `startAt` | `int` | The index of the first item returned on the page. |
 

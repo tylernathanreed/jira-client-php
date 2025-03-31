@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraDateTimeField`](/src/Schema/JiraDateTimeField.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `dateTime` | `JiraDateTimeInput` |  |
+| `dateTime` | [`JiraDateTimeInput`](/docs/schema/jira-date-time-input.md) |  |
 | `fieldId` | `string` |  |
 
 ## References

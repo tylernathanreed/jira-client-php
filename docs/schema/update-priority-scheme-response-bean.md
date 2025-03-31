@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UpdatePrioritySchemeResponseBean`](/src/Schema/Upda
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `priorityScheme` | `PrioritySchemeWithPaginatedPrioritiesAndProjects` |  |
-| `task` | `TaskProgressBeanJsonNode` | The in-progress issue migration task. |
+| `priorityScheme` | [`PrioritySchemeWithPaginatedPrioritiesAndProjects`](/docs/schema/priority-scheme-with-paginated-priorities-and-projects.md) |  |
+| `task` | [`TaskProgressBeanJsonNode`](/docs/schema/task-progress-bean-json-node.md) | The in-progress issue migration task. |
 
 ## References
 

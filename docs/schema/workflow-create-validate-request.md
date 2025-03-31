@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\WorkflowCreateValidateRequest`](/src/Schema/Workflo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `payload` | `WorkflowCreateRequest` |  |
-| `validationOptions` | `ValidationOptionsForCreate` |  |
+| `payload` | [`WorkflowCreateRequest`](/docs/schema/workflow-create-request.md) |  |
+| `validationOptions` | [`ValidationOptionsForCreate`](/docs/schema/validation-options-for-create.md) |  |
 
 ## References
 

@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\SimpleListWrapperGroupName`](/src/Schema/SimpleList
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `callback` | `ListWrapperCallbackGroupName` |  |
+| `callback` | [`ListWrapperCallbackGroupName`](/docs/schema/list-wrapper-callback-group-name.md) |  |
 | `items` | [`?list<GroupName>`](/docs/schema/group-name.md) |  |
 | `max-results` | `int` |  |
-| `pagingCallback` | `ListWrapperCallbackGroupName` |  |
+| `pagingCallback` | [`ListWrapperCallbackGroupName`](/docs/schema/list-wrapper-callback-group-name.md) |  |
 | `size` | `int` |  |
 
 ## References

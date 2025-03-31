@@ -7,10 +7,10 @@ Source: [`Jira\Client\Schema\WorkflowSchemeReadResponse`](/src/Schema/WorkflowSc
 | --- | --- | --- |
 | `id` | `string` | The ID of the workflow scheme. |
 | `name` | `string` | The name of the workflow scheme. |
-| `scope` | `WorkflowScope` |  |
-| `version` | `DocumentVersion` |  |
+| `scope` | [`WorkflowScope`](/docs/schema/workflow-scope.md) |  |
+| `version` | [`DocumentVersion`](/docs/schema/document-version.md) |  |
 | `workflowsForIssueTypes` | [`list<WorkflowMetadataAndIssueTypeRestModel>`](/docs/schema/workflow-metadata-and-issue-type-rest-model.md) | Mappings from workflows to issue types. |
-| `defaultWorkflow` | `WorkflowMetadataRestModel` |  |
+| `defaultWorkflow` | [`WorkflowMetadataRestModel`](/docs/schema/workflow-metadata-rest-model.md) |  |
 | `description` | `string` | The description of the workflow scheme. |
 | `projectIdsUsingScheme` | `?list<string>` | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 

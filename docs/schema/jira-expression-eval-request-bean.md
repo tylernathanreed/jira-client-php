@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JiraExpressionEvalRequestBean`](/src/Schema/JiraExp
 | Property | Type | Description |
 | --- | --- | --- |
 | `expression` | `string` | The Jira expression to evaluate. |
-| `context` | `JiraExpressionEvalContextBean` | The context in which the Jira expression is evaluated. |
+| `context` | [`JiraExpressionEvalContextBean`](/docs/schema/jira-expression-eval-context-bean.md) | The context in which the Jira expression is evaluated. |
 
 ## References
 

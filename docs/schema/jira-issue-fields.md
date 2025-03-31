@@ -26,7 +26,7 @@ Source: [`Jira\Client\Schema\JiraIssueFields`](/src/Schema/JiraIssueFields.php)
 
  *  To add, specify the date and time in ISO format for `formattedDateTime`.
  *  To clear, provide an empty string for `formattedDateTime`. |
-| `issueType` | `JiraIssueTypeField` | Set the issue type field by providing an `issueTypeId`. |
+| `issueType` | [`JiraIssueTypeField`](/docs/schema/jira-issue-type-field.md) | Set the issue type field by providing an `issueTypeId`. |
 | `labelsFields` | [`?list<JiraLabelsField>`](/docs/schema/jira-labels-field.md) | Edit a labels field:
 
  *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
@@ -47,12 +47,12 @@ Source: [`Jira\Client\Schema\JiraIssueFields`](/src/Schema/JiraIssueFields.php)
 
  *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
  *  To clear the field, use the `REMOVE_ALL` option with an empty `versions` array. |
-| `multiselectComponents` | `JiraMultiSelectComponentField` | Edit a multi select components field:
+| `multiselectComponents` | [`JiraMultiSelectComponentField`](/docs/schema/jira-multi-select-component-field.md) | Edit a multi select components field:
 
  *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
  *  To clear, use the `REMOVE_ALL` option with an empty `components` array. |
-| `originalEstimateField` | `JiraDurationField` | Edit the original estimate field. |
-| `priority` | `JiraPriorityField` | Set the priority of an issue by specifying a `priorityId`. |
+| `originalEstimateField` | [`JiraDurationField`](/docs/schema/jira-duration-field.md) | Edit the original estimate field. |
+| `priority` | [`JiraPriorityField`](/docs/schema/jira-priority-field.md) | Set the priority of an issue by specifying a `priorityId`. |
 | `richTextFields` | [`?list<JiraRichTextField>`](/docs/schema/jira-rich-text-field.md) | Add or clear a rich text field:
 
  *  To add, provide `adfValue`. Note that rich text fields only support ADF values.
@@ -80,7 +80,7 @@ For ADF format details, refer to: [Atlassian Document Format](https://developer.
 
  *  To add, specify the version with a `versionId`.
  *  To clear, set `versionId` to `-1`. |
-| `timeTrackingField` | `JiraTimeTrackingField` | Edit the time tracking field. |
+| `timeTrackingField` | [`JiraTimeTrackingField`](/docs/schema/jira-time-tracking-field.md) | Edit the time tracking field. |
 | `urlFields` | [`?list<JiraUrlField>`](/docs/schema/jira-url-field.md) | Add or clear a URL field:
 
  *  To add, provide the `url` with the desired URL value.

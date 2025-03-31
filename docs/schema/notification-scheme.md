@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\NotificationScheme`](/src/Schema/NotificationScheme
 | `name` | `string` | The name of the notification scheme. |
 | `notificationSchemeEvents` | [`?list<NotificationSchemeEvent>`](/docs/schema/notification-scheme-event.md) | The notification events and associated recipients. |
 | `projects` | `?list<int>` | The list of project IDs associated with the notification scheme. |
-| `scope` | `Scope` | The scope of the notification scheme. |
+| `scope` | [`Scope`](/docs/schema/scope.md) | The scope of the notification scheme. |
 | `self` | `string` |  |
 
 ## References

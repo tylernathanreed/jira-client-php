@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\FoundUsersAndGroups`](/src/Schema/FoundUsersAndGrou
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `groups` | `FoundGroups` |  |
-| `users` | `FoundUsers` |  |
+| `groups` | [`FoundGroups`](/docs/schema/found-groups.md) |  |
+| `users` | [`FoundUsers`](/docs/schema/found-users.md) |  |
 
 ## References
 

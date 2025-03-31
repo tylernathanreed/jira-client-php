@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\TaskProgressBeanJsonNode`](/src/Schema/TaskProgress
 | `description` | `string` | The description of the task. |
 | `finished` | `int` | A timestamp recording when the task was finished. |
 | `message` | `string` | Information about the progress of the task. |
-| `result` | `JsonNode` | The result of the task execution. |
+| `result` | [`JsonNode`](/docs/schema/json-node.md) | The result of the task execution. |
 | `started` | `int` | A timestamp recording when the task was started. |
 
 ## References

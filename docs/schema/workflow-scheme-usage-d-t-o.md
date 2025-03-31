@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUsageDTO`](/src/Schema/WorkflowScheme
 | Property | Type | Description |
 | --- | --- | --- |
 | `workflowId` | `string` | The workflow ID. |
-| `workflowSchemes` | `WorkflowSchemeUsagePage` |  |
+| `workflowSchemes` | [`WorkflowSchemeUsagePage`](/docs/schema/workflow-scheme-usage-page.md) |  |
 
 ## References
 

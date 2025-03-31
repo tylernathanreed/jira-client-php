@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JiraSingleVersionPickerField`](/src/Schema/JiraSing
 | Property | Type | Description |
 | --- | --- | --- |
 | `fieldId` | `string` |  |
-| `version` | `JiraVersionField` |  |
+| `version` | [`JiraVersionField`](/docs/schema/jira-version-field.md) |  |
 
 ## References
 

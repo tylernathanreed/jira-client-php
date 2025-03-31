@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\DeprecatedWorkflow`](/src/Schema/DeprecatedWorkflow
 | `lastModifiedUser` | `string` | This property is no longer available and will be removed from the documentation soon. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details. |
 | `lastModifiedUserAccountId` | `string` | The account ID of the user that last modified the workflow. |
 | `name` | `string` | The name of the workflow. |
-| `scope` | `Scope` | The scope where this workflow applies |
+| `scope` | [`Scope`](/docs/schema/scope.md) | The scope where this workflow applies |
 | `steps` | `int` | The number of steps included in the workflow. |
 
 ## References

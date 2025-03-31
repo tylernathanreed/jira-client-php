@@ -8,8 +8,8 @@ Source: [`Jira\Client\Schema\StatusLayoutUpdate`](/src/Schema/StatusLayoutUpdate
 | --- | --- | --- |
 | `properties` | `array<string,string>` | The properties for this status layout. |
 | `statusReference` | `string` | A unique ID which the status will use to refer to this layout configuration. |
-| `approvalConfiguration` | `ApprovalConfiguration` |  |
-| `layout` | `WorkflowLayout` |  |
+| `approvalConfiguration` | [`ApprovalConfiguration`](/docs/schema/approval-configuration.md) |  |
+| `layout` | [`WorkflowLayout`](/docs/schema/workflow-layout.md) |  |
 
 ## References
 

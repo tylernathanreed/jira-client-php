@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeUserField`](/src
 | `accountId` | `string` | The ID of the default user. |
 | `contextId` | `string` | The ID of the context. |
 | `type` | `string` |  |
-| `userFilter` | `UserFilter` |  |
+| `userFilter` | [`UserFilter`](/docs/schema/user-filter.md) |  |
 
 ## References
 

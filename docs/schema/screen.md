@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\Screen`](/src/Schema/Screen.php)
 | `description` | `string` | The description of the screen. |
 | `id` | `int` | The ID of the screen. |
 | `name` | `string` | The name of the screen. |
-| `scope` | `Scope` | The scope of the screen. |
+| `scope` | [`Scope`](/docs/schema/scope.md) | The scope of the screen. |
 
 ## References
 

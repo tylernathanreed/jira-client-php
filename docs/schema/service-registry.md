@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\ServiceRegistry`](/src/Schema/ServiceRegistry.php)
 | `name` | `string` | service name |
 | `organizationId` | `string` | organization ID |
 | `revision` | `string` | service revision |
-| `serviceTier` | `ServiceRegistryTier` |  |
+| `serviceTier` | [`ServiceRegistryTier`](/docs/schema/service-registry-tier.md) |  |
 
 ## References
 

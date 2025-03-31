@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\FilterSubscription`](/src/Schema/FilterSubscription
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `group` | `GroupName` | The group subscribing to filter. |
+| `group` | [`GroupName`](/docs/schema/group-name.md) | The group subscribing to filter. |
 | `id` | `int` | The ID of the filter subscription. |
-| `user` | `User` | The user subscribing to filter. |
+| `user` | [`User`](/docs/schema/user.md) | The user subscribing to filter. |
 
 ## References
 

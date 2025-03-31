@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraColorField`](/src/Schema/JiraColorField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `color` | `JiraColorInput` |  |
+| `color` | [`JiraColorInput`](/docs/schema/jira-color-input.md) |  |
 | `fieldId` | `string` |  |
 
 ## References

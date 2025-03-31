@@ -8,9 +8,9 @@ Source: [`Jira\Client\Schema\BulkEditShareableEntityRequest`](/src/Schema/BulkEd
 | --- | --- | --- |
 | `action` | `'changeOwner'\|'changePermission'\|'addPermission'\|'removePermission'` | Allowed action for bulk edit shareable entity |
 | `entityIds` | `list<int>` | The id list of shareable entities to be changed. |
-| `changeOwnerDetails` | `BulkChangeOwnerDetails` | The details of change owner action. |
+| `changeOwnerDetails` | [`BulkChangeOwnerDetails`](/docs/schema/bulk-change-owner-details.md) | The details of change owner action. |
 | `extendAdminPermissions` | `bool` | Whether the actions are executed by users with Administer Jira global permission. |
-| `permissionDetails` | `PermissionDetails` | The permission details to be changed. |
+| `permissionDetails` | [`PermissionDetails`](/docs/schema/permission-details.md) | The permission details to be changed. |
 
 ## References
 

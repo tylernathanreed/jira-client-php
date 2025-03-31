@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\JExpEvaluateMetaDataBean`](/src/Schema/JExpEvaluate
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `complexity` | `JiraExpressionsComplexityBean` | Contains information about the expression complexity. For example, the number of steps it took to evaluate the expression. |
-| `issues` | `JExpEvaluateIssuesMetaBean` | Contains information about the `issues` variable in the context. For example, is the issues were loaded with JQL, information about the page will be included here. |
+| `complexity` | [`JiraExpressionsComplexityBean`](/docs/schema/jira-expressions-complexity-bean.md) | Contains information about the expression complexity. For example, the number of steps it took to evaluate the expression. |
+| `issues` | [`JExpEvaluateIssuesMetaBean`](/docs/schema/j-exp-evaluate-issues-meta-bean.md) | Contains information about the `issues` variable in the context. For example, is the issues were loaded with JQL, information about the page will be included here. |
 
 ## References
 

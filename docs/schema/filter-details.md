@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\FilterDetails`](/src/Schema/FilterDetails.php)
 | `favouritedCount` | `int` | The count of how many users have selected this filter as a favorite, including the filter owner. |
 | `id` | `string` | The unique identifier for the filter. |
 | `jql` | `string` | The JQL query for the filter. For example, *project = SSP AND issuetype = Bug*. |
-| `owner` | `User` | The user who owns the filter. Defaults to the creator of the filter, however, Jira administrators can change the owner of a shared filter in the admin settings. |
+| `owner` | [`User`](/docs/schema/user.md) | The user who owns the filter. Defaults to the creator of the filter, however, Jira administrators can change the owner of a shared filter in the admin settings. |
 | `searchUrl` | `string` | A URL to view the filter results in Jira, using the [Search for issues using JQL](#api-rest-api-3-filter-search-get) operation with the filter's JQL string to return the filter results. For example, *https://your-domain.atlassian.net/rest/api/3/search?jql=project+%3D+SSP+AND+issuetype+%3D+Bug*. |
 | `self` | `string` | The URL of the filter. |
 | `sharePermissions` | [`?list<SharePermission>`](/docs/schema/share-permission.md) | The groups and projects that the filter is shared with. This can be specified when updating a filter, but not when creating a filter. |

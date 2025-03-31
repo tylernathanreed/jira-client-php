@@ -21,12 +21,12 @@ Source: [`Jira\Client\Schema\User`](/src/Schema/User.php)
  *  `app` system account used for Connect applications and OAuth to represent external systems
  *  `customer` Jira Service Desk account representing an external service desk |
 | `active` | `bool` | Whether the user is active. |
-| `applicationRoles` | `SimpleListWrapperApplicationRole` | The application roles the user is assigned to. |
-| `avatarUrls` | `AvatarUrlsBean` | The avatars of the user. |
+| `applicationRoles` | [`SimpleListWrapperApplicationRole`](/docs/schema/simple-list-wrapper-application-role.md) | The application roles the user is assigned to. |
+| `avatarUrls` | [`AvatarUrlsBean`](/docs/schema/avatar-urls-bean.md) | The avatars of the user. |
 | `displayName` | `string` | The display name of the user. Depending on the user’s privacy setting, this may return an alternative value. |
 | `emailAddress` | `string` | The email address of the user. Depending on the user’s privacy setting, this may be returned as null. |
 | `expand` | `string` | Expand options that include additional user details in the response. |
-| `groups` | `SimpleListWrapperGroupName` | The groups that the user belongs to. |
+| `groups` | [`SimpleListWrapperGroupName`](/docs/schema/simple-list-wrapper-group-name.md) | The groups that the user belongs to. |
 | `key` | `string` | This property is no longer available and will be removed from the documentation soon. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details. |
 | `locale` | `string` | The locale of the user. Depending on the user’s privacy setting, this may be returned as null. |
 | `name` | `string` | This property is no longer available and will be removed from the documentation soon. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details. |

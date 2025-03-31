@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\WorkflowMetadataRestModel`](/src/Schema/WorkflowMet
 | `usage` | [`list<SimpleUsage>`](/docs/schema/simple-usage.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 
 Use the optional `workflows.usages` expand to get additional information about the projects and issue types associated with the workflows in the workflow scheme. |
-| `version` | `DocumentVersion` |  |
+| `version` | [`DocumentVersion`](/docs/schema/document-version.md) |  |
 
 ## References
 

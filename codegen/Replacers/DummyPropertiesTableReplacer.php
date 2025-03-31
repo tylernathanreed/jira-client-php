@@ -21,6 +21,12 @@ class DummyPropertiesTableReplacer extends Replacer
         foreach ($schema->properties as $property) {
             $type = str_replace('|', '\|', $property->getDocType() ?: $property->type ?: 'mixed');
 
+            if ($property->typeIsRef) {
+                assert(is_string($property->type));
+
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->type) . '.md');
+            }
+
             if ($property->listableTypeIsRef) {
                 assert(is_string($property->listableType));
 

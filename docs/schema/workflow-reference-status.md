@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowReferenceStatus`](/src/Schema/WorkflowRefer
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `approvalConfiguration` | `ApprovalConfiguration` |  |
+| `approvalConfiguration` | [`ApprovalConfiguration`](/docs/schema/approval-configuration.md) |  |
 | `deprecated` | `bool` | Indicates if the status is deprecated. |
-| `layout` | `WorkflowStatusLayout` |  |
+| `layout` | [`WorkflowStatusLayout`](/docs/schema/workflow-status-layout.md) |  |
 | `properties` | `array<string,string>` | The properties associated with the status. |
 | `statusReference` | `string` | The reference of the status. |
 

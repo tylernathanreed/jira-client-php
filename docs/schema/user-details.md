@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\UserDetails`](/src/Schema/UserDetails.php)
 | `accountId` | `string` | The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*. |
 | `accountType` | `string` | The type of account represented by this user. This will be one of 'atlassian' (normal users), 'app' (application user) or 'customer' (Jira Service Desk customer user) |
 | `active` | `bool` | Whether the user is active. |
-| `avatarUrls` | `AvatarUrlsBean` | The avatars of the user. |
+| `avatarUrls` | [`AvatarUrlsBean`](/docs/schema/avatar-urls-bean.md) | The avatars of the user. |
 | `displayName` | `string` | The display name of the user. Depending on the user’s privacy settings, this may return an alternative value. |
 | `emailAddress` | `string` | The email address of the user. Depending on the user’s privacy settings, this may be returned as null. |
 | `key` | `string` | This property is no longer available and will be removed from the documentation soon. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details. |

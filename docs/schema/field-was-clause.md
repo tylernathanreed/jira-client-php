@@ -9,8 +9,8 @@ Source: [`Jira\Client\Schema\FieldWasClause`](/src/Schema/FieldWasClause.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `field` | `JqlQueryField` |  |
-| `operand` | `JqlQueryClauseOperand` |  |
+| `field` | [`JqlQueryField`](/docs/schema/jql-query-field.md) |  |
+| `operand` | [`JqlQueryClauseOperand`](/docs/schema/jql-query-clause-operand.md) |  |
 | `operator` | `'was'\|'was in'\|'was not in'\|'was not'` | The operator between the field and operand. |
 | `predicates` | [`list<JqlQueryClauseTimePredicate>`](/docs/schema/jql-query-clause-time-predicate.md) | The list of time predicates. |
 

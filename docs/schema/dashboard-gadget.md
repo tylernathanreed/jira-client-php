@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\DashboardGadget`](/src/Schema/DashboardGadget.php)
 | --- | --- | --- |
 | `color` | `'blue'\|'red'\|'yellow'\|'green'\|'cyan'\|'purple'\|'gray'\|'white'` | The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`. |
 | `id` | `int` | The ID of the gadget instance. |
-| `position` | `DashboardGadgetPosition` | The position of the gadget. |
+| `position` | [`DashboardGadgetPosition`](/docs/schema/dashboard-gadget-position.md) | The position of the gadget. |
 | `title` | `string` | The title of the gadget. |
 | `moduleKey` | `string` | The module key of the gadget type. |
 | `uri` | `string` | The URI of the gadget type. |

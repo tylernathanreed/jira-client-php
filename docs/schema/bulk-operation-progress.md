@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\BulkOperationProgress`](/src/Schema/BulkOperationPr
 | `progressPercent` | `int` | Progress of the task as a percentage. |
 | `started` | `string` | A timestamp of when the task was started. |
 | `status` | `'ENQUEUED'\|'RUNNING'\|'COMPLETE'\|'FAILED'\|'CANCEL_REQUESTED'\|'CANCELLED'\|'DEAD'\|null` | The status of the task. |
-| `submittedBy` | `User` |  |
+| `submittedBy` | [`User`](/docs/schema/user.md) |  |
 | `taskId` | `string` | The ID of the task. |
 | `totalIssueCount` | `int` | The number of issues that the bulk operation was attempted on. |
 | `updated` | `string` | A timestamp of when the task progress was last updated. |

@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\FieldConfigurationSchemeProjects`](/src/Schema/Fiel
 | Property | Type | Description |
 | --- | --- | --- |
 | `projectIds` | `list<string>` | The IDs of projects using the field configuration scheme. |
-| `fieldConfigurationScheme` | `FieldConfigurationScheme` |  |
+| `fieldConfigurationScheme` | [`FieldConfigurationScheme`](/docs/schema/field-configuration-scheme.md) |  |
 
 ## References
 

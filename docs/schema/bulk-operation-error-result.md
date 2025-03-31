@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\BulkOperationErrorResult`](/src/Schema/BulkOperatio
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `elementErrors` | `ErrorCollection` |  |
+| `elementErrors` | [`ErrorCollection`](/docs/schema/error-collection.md) |  |
 | `failedElementNumber` | `int` |  |
 | `status` | `int` |  |
 

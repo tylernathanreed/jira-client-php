@@ -14,7 +14,7 @@ Source: [`Jira\Client\Schema\ProjectRole`](/src/Schema/ProjectRole.php)
 | `id` | `int` | The ID of the project role. |
 | `name` | `string` | The name of the project role. |
 | `roleConfigurable` | `bool` | Whether the roles are configurable for this project. |
-| `scope` | `Scope` | The scope of the role. Indicated for roles associated with [next-gen projects](https://confluence.atlassian.com/x/loMyO). |
+| `scope` | [`Scope`](/docs/schema/scope.md) | The scope of the role. Indicated for roles associated with [next-gen projects](https://confluence.atlassian.com/x/loMyO). |
 | `self` | `string` | The URL the project role details. |
 | `translatedName` | `string` | The translated name of the project role. |
 

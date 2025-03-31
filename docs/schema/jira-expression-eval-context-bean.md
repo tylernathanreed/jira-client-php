@@ -13,9 +13,9 @@ Source: [`Jira\Client\Schema\JiraExpressionEvalContextBean`](/src/Schema/JiraExp
  *  `json`: A JSON object containing custom content.
  *  `list`: A JSON list of `user`, `issue`, or `json` variable types. |
 | `customerRequest` | `int` | The ID of the customer request that is available under the `customerRequest` variable when evaluating the expression. This is the same as the ID of the underlying Jira issue, but the customer request context variable will have a different type. |
-| `issue` | `IdOrKeyBean` | The issue that is available under the `issue` variable when evaluating the expression. |
-| `issues` | `JexpIssues` | The collection of issues that is available under the `issues` variable when evaluating the expression. |
-| `project` | `IdOrKeyBean` | The project that is available under the `project` variable when evaluating the expression. |
+| `issue` | [`IdOrKeyBean`](/docs/schema/id-or-key-bean.md) | The issue that is available under the `issue` variable when evaluating the expression. |
+| `issues` | [`JexpIssues`](/docs/schema/jexp-issues.md) | The collection of issues that is available under the `issues` variable when evaluating the expression. |
+| `project` | [`IdOrKeyBean`](/docs/schema/id-or-key-bean.md) | The project that is available under the `project` variable when evaluating the expression. |
 | `serviceDesk` | `int` | The ID of the service desk that is available under the `serviceDesk` variable when evaluating the expression. |
 | `sprint` | `int` | The ID of the sprint that is available under the `sprint` variable when evaluating the expression. |
 

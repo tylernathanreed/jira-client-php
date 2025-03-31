@@ -10,9 +10,9 @@ Source: [`Jira\Client\Schema\StatusDetails`](/src/Schema/StatusDetails.php)
 | `iconUrl` | `string` | The URL of the icon used to represent the status. |
 | `id` | `string` | The ID of the status. |
 | `name` | `string` | The name of the status. |
-| `scope` | `Scope` | The scope of the field. |
+| `scope` | [`Scope`](/docs/schema/scope.md) | The scope of the field. |
 | `self` | `string` | The URL of the status. |
-| `statusCategory` | `StatusCategory` | The category assigned to the status. |
+| `statusCategory` | [`StatusCategory`](/docs/schema/status-category.md) | The category assigned to the status. |
 
 ## References
 

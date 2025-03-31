@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\Changelog`](/src/Schema/Changelog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `author` | `UserDetails` | The user who made the change. |
+| `author` | [`UserDetails`](/docs/schema/user-details.md) | The user who made the change. |
 | `created` | `string` | The date on which the change took place. |
-| `historyMetadata` | `HistoryMetadata` | The history metadata associated with the changed. |
+| `historyMetadata` | [`HistoryMetadata`](/docs/schema/history-metadata.md) | The history metadata associated with the changed. |
 | `id` | `string` | The ID of the changelog. |
 | `items` | [`?list<ChangeDetails>`](/docs/schema/change-details.md) | The list of items changed. |
 

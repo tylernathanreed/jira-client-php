@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\IssueTypeIssueCreateMetadata`](/src/Schema/IssueTyp
 | `iconUrl` | `string` | The URL of the issue type's avatar. |
 | `id` | `string` | The ID of the issue type. |
 | `name` | `string` | The name of the issue type. |
-| `scope` | `Scope` | Details of the next-gen projects the issue type is available in. |
+| `scope` | [`Scope`](/docs/schema/scope.md) | Details of the next-gen projects the issue type is available in. |
 | `self` | `string` | The URL of these issue type details. |
 | `subtask` | `bool` | Whether this issue type is used to create subtasks. |
 

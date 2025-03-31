@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\Attachment`](/src/Schema/Attachment.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `author` | `UserDetails` | Details of the user who added the attachment. |
+| `author` | [`UserDetails`](/docs/schema/user-details.md) | Details of the user who added the attachment. |
 | `content` | `string` | The content of the attachment. |
 | `created` | `string` | The datetime the attachment was created. |
 | `filename` | `string` | The file name of the attachment. |

@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\WorkflowUpdateValidateRequestBean`](/src/Schema/Wor
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `payload` | `WorkflowUpdateRequest` |  |
-| `validationOptions` | `ValidationOptionsForUpdate` |  |
+| `payload` | [`WorkflowUpdateRequest`](/docs/schema/workflow-update-request.md) |  |
+| `validationOptions` | [`ValidationOptionsForUpdate`](/docs/schema/validation-options-for-update.md) |  |
 
 ## References
 

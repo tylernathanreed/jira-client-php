@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowCreateRequest`](/src/Schema/WorkflowCreateR
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `scope` | `WorkflowScope` |  |
+| `scope` | [`WorkflowScope`](/docs/schema/workflow-scope.md) |  |
 | `statuses` | [`?list<WorkflowStatusUpdate>`](/docs/schema/workflow-status-update.md) | The statuses to associate with the workflows. |
 | `workflows` | [`?list<WorkflowCreate>`](/docs/schema/workflow-create.md) | The details of the workflows to create. |
 

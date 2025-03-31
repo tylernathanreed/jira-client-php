@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\LinkIssueRequestJsonBean`](/src/Schema/LinkIssueReq
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `inwardIssue` | `LinkedIssue` |  |
-| `outwardIssue` | `LinkedIssue` |  |
-| `type` | `IssueLinkType` |  |
-| `comment` | `Comment` |  |
+| `inwardIssue` | [`LinkedIssue`](/docs/schema/linked-issue.md) |  |
+| `outwardIssue` | [`LinkedIssue`](/docs/schema/linked-issue.md) |  |
+| `type` | [`IssueLinkType`](/docs/schema/issue-link-type.md) |  |
+| `comment` | [`Comment`](/docs/schema/comment.md) |  |
 
 ## References
 

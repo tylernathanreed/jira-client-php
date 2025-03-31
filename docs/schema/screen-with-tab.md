@@ -9,8 +9,8 @@ Source: [`Jira\Client\Schema\ScreenWithTab`](/src/Schema/ScreenWithTab.php)
 | `description` | `string` | The description of the screen. |
 | `id` | `int` | The ID of the screen. |
 | `name` | `string` | The name of the screen. |
-| `scope` | `Scope` | The scope of the screen. |
-| `tab` | `ScreenableTab` | The tab for the screen. |
+| `scope` | [`Scope`](/docs/schema/scope.md) | The scope of the screen. |
+| `tab` | [`ScreenableTab`](/docs/schema/screenable-tab.md) | The tab for the screen. |
 
 ## References
 

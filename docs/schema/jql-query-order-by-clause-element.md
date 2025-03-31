@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JqlQueryOrderByClauseElement`](/src/Schema/JqlQuery
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `field` | `JqlQueryField` |  |
+| `field` | [`JqlQueryField`](/docs/schema/jql-query-field.md) |  |
 | `direction` | `'asc'\|'desc'\|null` | The direction in which to order the results. |
 
 ## References

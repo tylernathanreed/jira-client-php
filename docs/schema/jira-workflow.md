@@ -11,8 +11,8 @@ Source: [`Jira\Client\Schema\JiraWorkflow`](/src/Schema/JiraWorkflow.php)
 | `id` | `string` | The ID of the workflow. |
 | `isEditable` | `bool` | Indicates if the workflow can be edited. |
 | `name` | `string` | The name of the workflow. |
-| `scope` | `WorkflowScope` |  |
-| `startPointLayout` | `WorkflowLayout` |  |
+| `scope` | [`WorkflowScope`](/docs/schema/workflow-scope.md) |  |
+| `startPointLayout` | [`WorkflowLayout`](/docs/schema/workflow-layout.md) |  |
 | `statuses` | [`?list<WorkflowReferenceStatus>`](/docs/schema/workflow-reference-status.md) | The statuses referenced in this workflow. |
 | `taskId` | `string` | If there is a current [asynchronous task](#async-operations) operation for this workflow. |
 | `transitions` | [`?list<WorkflowTransitions>`](/docs/schema/workflow-transitions.md) | The transitions of the workflow. Note that a transition can have either the deprecated `to`/`from` fields or the `toStatusReference`/`links` fields, but never both nor a combination. |
@@ -20,7 +20,7 @@ Source: [`Jira\Client\Schema\JiraWorkflow`](/src/Schema/JiraWorkflow.php)
 | `usages` | [`?list<ProjectIssueTypes>`](/docs/schema/project-issue-types.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 
 Use the optional `workflows.usages` expand to get additional information about the projects and issue types associated with the requested workflows. |
-| `version` | `DocumentVersion` |  |
+| `version` | [`DocumentVersion`](/docs/schema/document-version.md) |  |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\Comment`](/src/Schema/Comment.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `author` | `UserDetails` | The ID of the user who created the comment. |
+| `author` | [`UserDetails`](/docs/schema/user-details.md) | The ID of the user who created the comment. |
 | `body` | `mixed` | The comment text in [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure/). |
 | `created` | `string` | The date and time at which the comment was created. |
 | `id` | `string` | The ID of the comment. |
@@ -15,9 +15,9 @@ Source: [`Jira\Client\Schema\Comment`](/src/Schema/Comment.php)
 | `properties` | [`?list<EntityProperty>`](/docs/schema/entity-property.md) | A list of comment properties. Optional on create and update. |
 | `renderedBody` | `string` | The rendered version of the comment. |
 | `self` | `string` | The URL of the comment. |
-| `updateAuthor` | `UserDetails` | The ID of the user who updated the comment last. |
+| `updateAuthor` | [`UserDetails`](/docs/schema/user-details.md) | The ID of the user who updated the comment last. |
 | `updated` | `string` | The date and time at which the comment was updated last. |
-| `visibility` | `Visibility` | The group or role to which this comment is visible. Optional on create and update. |
+| `visibility` | [`Visibility`](/docs/schema/visibility.md) | The group or role to which this comment is visible. Optional on create and update. |
 
 ## References
 

@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\MultipartFile`](/src/Schema/MultipartFile.php)
 | `inputStream` | `array<string,mixed>` |  |
 | `name` | `string` |  |
 | `originalFilename` | `string` |  |
-| `resource` | `Resource` |  |
+| `resource` | [`Resource`](/docs/schema/resource.md) |  |
 | `size` | `int` |  |
 
 ## References

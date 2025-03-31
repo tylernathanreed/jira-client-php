@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRulesDetails`](/src/Schema/Workfl
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `workflowId` | `WorkflowId` |  |
+| `workflowId` | [`WorkflowId`](/docs/schema/workflow-id.md) |  |
 | `workflowRuleIds` | `list<string>` | The list of connect workflow rule IDs. |
 
 ## References

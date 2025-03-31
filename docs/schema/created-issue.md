@@ -9,8 +9,8 @@ Source: [`Jira\Client\Schema\CreatedIssue`](/src/Schema/CreatedIssue.php)
 | `id` | `string` | The ID of the created issue or subtask. |
 | `key` | `string` | The key of the created issue or subtask. |
 | `self` | `string` | The URL of the created issue or subtask. |
-| `transition` | `NestedResponse` | The response code and messages related to any requested transition. |
-| `watchers` | `NestedResponse` | The response code and messages related to any requested watchers. |
+| `transition` | [`NestedResponse`](/docs/schema/nested-response.md) | The response code and messages related to any requested transition. |
+| `watchers` | [`NestedResponse`](/docs/schema/nested-response.md) | The response code and messages related to any requested watchers. |
 
 ## References
 

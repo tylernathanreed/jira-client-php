@@ -12,8 +12,8 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionDetails`](/src/Schema/Creat
 | `description` | `string` | The description of the transition. The maximum length is 1000 characters. |
 | `from` | `?list<string>` | The statuses the transition can start from. |
 | `properties` | `array<string,string>` | The properties of the transition. |
-| `rules` | `CreateWorkflowTransitionRulesDetails` | The rules of the transition. |
-| `screen` | `CreateWorkflowTransitionScreenDetails` | The screen of the transition. |
+| `rules` | [`CreateWorkflowTransitionRulesDetails`](/docs/schema/create-workflow-transition-rules-details.md) | The rules of the transition. |
+| `screen` | [`CreateWorkflowTransitionScreenDetails`](/docs/schema/create-workflow-transition-screen-details.md) | The screen of the transition. |
 
 ## References
 

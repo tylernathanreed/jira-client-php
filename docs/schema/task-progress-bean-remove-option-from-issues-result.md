@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\TaskProgressBeanRemoveOptionFromIssuesResult`](/src
 | `description` | `string` | The description of the task. |
 | `finished` | `int` | A timestamp recording when the task was finished. |
 | `message` | `string` | Information about the progress of the task. |
-| `result` | `RemoveOptionFromIssuesResult` | The result of the task execution. |
+| `result` | [`RemoveOptionFromIssuesResult`](/docs/schema/remove-option-from-issues-result.md) | The result of the task execution. |
 | `started` | `int` | A timestamp recording when the task was started. |
 
 ## References

@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\WorkflowElementReference`](/src/Schema/WorkflowElem
 | --- | --- | --- |
 | `propertyKey` | `string` | A property key. |
 | `ruleId` | `string` | A rule ID. |
-| `statusMappingReference` | `ProjectAndIssueTypePair` |  |
+| `statusMappingReference` | [`ProjectAndIssueTypePair`](/docs/schema/project-and-issue-type-pair.md) |  |
 | `statusReference` | `string` | A status reference. |
 | `transitionId` | `string` | A transition ID. |
 

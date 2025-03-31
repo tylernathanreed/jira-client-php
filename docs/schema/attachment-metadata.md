@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\AttachmentMetadata`](/src/Schema/AttachmentMetadata
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `author` | `User` | Details of the user who attached the file. |
+| `author` | [`User`](/docs/schema/user.md) | Details of the user who attached the file. |
 | `content` | `string` | The URL of the attachment. |
 | `created` | `string` | The datetime the attachment was created. |
 | `filename` | `string` | The name of the attachment file. |

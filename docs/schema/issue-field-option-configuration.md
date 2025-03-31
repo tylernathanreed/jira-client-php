@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\IssueFieldOptionConfiguration`](/src/Schema/IssueFi
 | Property | Type | Description |
 | --- | --- | --- |
 | `attributes` | `?list<string>` | DEPRECATED |
-| `scope` | `IssueFieldOptionScopeBean` | Defines the projects that the option is available in. If the scope is not defined, then the option is available in all projects. |
+| `scope` | [`IssueFieldOptionScopeBean`](/docs/schema/issue-field-option-scope-bean.md) | Defines the projects that the option is available in. If the scope is not defined, then the option is available in all projects. |
 
 ## References
 

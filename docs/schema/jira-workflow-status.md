@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\JiraWorkflowStatus`](/src/Schema/JiraWorkflowStatus
 | `description` | `string` | The description of the status. |
 | `id` | `string` | The ID of the status. |
 | `name` | `string` | The name of the status. |
-| `scope` | `WorkflowScope` |  |
+| `scope` | [`WorkflowScope`](/docs/schema/workflow-scope.md) |  |
 | `statusCategory` | `'TODO'\|'IN_PROGRESS'\|'DONE'\|null` | The category of the status. |
 | `statusReference` | `string` | The reference of the status. |
 | `usages` | [`?list<ProjectIssueTypes>`](/docs/schema/project-issue-types.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.

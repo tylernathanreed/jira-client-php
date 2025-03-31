@@ -13,8 +13,8 @@ Source: [`Jira\Client\Schema\Transition`](/src/Schema/Transition.php)
 | `to` | `string` | The status the transition goes to. |
 | `type` | `'global'\|'initial'\|'directed'` | The type of the transition. |
 | `properties` | `array<string,mixed>` | The properties of the transition. |
-| `rules` | `WorkflowRules` |  |
-| `screen` | `TransitionScreenDetails` |  |
+| `rules` | [`WorkflowRules`](/docs/schema/workflow-rules.md) |  |
+| `screen` | [`TransitionScreenDetails`](/docs/schema/transition-screen-details.md) |  |
 
 ## References
 

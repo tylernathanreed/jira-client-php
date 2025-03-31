@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\WorkflowMetadataAndIssueTypeRestModel`](/src/Schema
 | Property | Type | Description |
 | --- | --- | --- |
 | `issueTypeIds` | `list<string>` | The list of issue type IDs for the mapping. |
-| `workflow` | `WorkflowMetadataRestModel` |  |
+| `workflow` | [`WorkflowMetadataRestModel`](/docs/schema/workflow-metadata-rest-model.md) |  |
 
 ## References
 

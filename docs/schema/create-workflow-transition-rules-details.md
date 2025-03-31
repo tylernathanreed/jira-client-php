@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionRulesDetails`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `conditions` | `CreateWorkflowCondition` | The workflow conditions. |
+| `conditions` | [`CreateWorkflowCondition`](/docs/schema/create-workflow-condition.md) | The workflow conditions. |
 | `postFunctions` | [`?list<CreateWorkflowTransitionRule>`](/docs/schema/create-workflow-transition-rule.md) | The workflow post functions.
 
 **Note:** The default post functions are always added to the *initial* transition, as in:

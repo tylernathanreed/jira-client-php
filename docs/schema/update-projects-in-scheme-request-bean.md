@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UpdateProjectsInSchemeRequestBean`](/src/Schema/Upd
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `add` | `PrioritySchemeChangesWithoutMappings` | Projects to add to a scheme |
-| `remove` | `PrioritySchemeChangesWithoutMappings` | Projects to remove from a scheme |
+| `add` | [`PrioritySchemeChangesWithoutMappings`](/docs/schema/priority-scheme-changes-without-mappings.md) | Projects to add to a scheme |
+| `remove` | [`PrioritySchemeChangesWithoutMappings`](/docs/schema/priority-scheme-changes-without-mappings.md) | Projects to remove from a scheme |
 
 ## References
 

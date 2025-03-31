@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\SanitizedJqlQuery`](/src/Schema/SanitizedJqlQuery.p
 | Property | Type | Description |
 | --- | --- | --- |
 | `accountId` | `string` | The account ID of the user for whom sanitization was performed. |
-| `errors` | `ErrorCollection` | The list of errors. |
+| `errors` | [`ErrorCollection`](/docs/schema/error-collection.md) | The list of errors. |
 | `initialQuery` | `string` | The initial query. |
 | `sanitizedQuery` | `string` | The sanitized query, if there were no errors. |
 

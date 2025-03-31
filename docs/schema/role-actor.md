@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\RoleActor`](/src/Schema/RoleActor.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `actorGroup` | `ProjectRoleGroup` |  |
-| `actorUser` | `ProjectRoleUser` |  |
+| `actorGroup` | [`ProjectRoleGroup`](/docs/schema/project-role-group.md) |  |
+| `actorUser` | [`ProjectRoleUser`](/docs/schema/project-role-user.md) |  |
 | `avatarUrl` | `string` | The avatar of the role actor. |
 | `displayName` | `string` | The display name of the role actor. For users, depending on the user’s privacy setting, this may return an alternative value for the user's name. |
 | `id` | `int` | The ID of the role actor. |

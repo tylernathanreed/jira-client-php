@@ -8,13 +8,13 @@ Source: [`Jira\Client\Schema\Field`](/src/Schema/Field.php)
 | --- | --- | --- |
 | `id` | `string` | The ID of the field. |
 | `name` | `string` | The name of the field. |
-| `schema` | `JsonTypeBean` |  |
+| `schema` | [`JsonTypeBean`](/docs/schema/json-type-bean.md) |  |
 | `contextsCount` | `int` | Number of contexts where the field is used. |
 | `description` | `string` | The description of the field. |
 | `isLocked` | `bool` | Whether the field is locked. |
 | `isUnscreenable` | `bool` | Whether the field is shown on screen or not. |
 | `key` | `string` | The key of the field. |
-| `lastUsed` | `FieldLastUsed` |  |
+| `lastUsed` | [`FieldLastUsed`](/docs/schema/field-last-used.md) |  |
 | `projectsCount` | `int` | Number of projects where the field is used. |
 | `screensCount` | `int` | Number of screens where the field is used. |
 | `searcherKey` | `string` | The searcher key of the field. Returned for custom fields. |

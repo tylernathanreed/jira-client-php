@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JiraRichTextField`](/src/Schema/JiraRichTextField.p
 | Property | Type | Description |
 | --- | --- | --- |
 | `fieldId` | `string` |  |
-| `richText` | `JiraRichTextInput` |  |
+| `richText` | [`JiraRichTextInput`](/docs/schema/jira-rich-text-input.md) |  |
 
 ## References
 

@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\CreatePrioritySchemeDetails`](/src/Schema/CreatePri
 | `name` | `string` | The name of the priority scheme. Must be unique. |
 | `priorityIds` | `list<int>` | The IDs of priorities in the scheme. |
 | `description` | `string` | The description of the priority scheme. |
-| `mappings` | `PriorityMapping` | Instructions to migrate the priorities of issues.
+| `mappings` | [`PriorityMapping`](/docs/schema/priority-mapping.md) | Instructions to migrate the priorities of issues.
 
 `in` mappings are used to migrate the priorities of issues to priorities used within the priority scheme.
 

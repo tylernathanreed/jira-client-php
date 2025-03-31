@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\Priority`](/src/Schema/Priority.php)
 | `id` | `string` | The ID of the issue priority. |
 | `isDefault` | `bool` | Whether this priority is the default. |
 | `name` | `string` | The name of the issue priority. |
-| `schemes` | `ExpandPrioritySchemePage` | Priority schemes associated with the issue priority. |
+| `schemes` | [`ExpandPrioritySchemePage`](/docs/schema/expand-priority-scheme-page.md) | Priority schemes associated with the issue priority. |
 | `self` | `string` | The URL of the issue priority. |
 | `statusColor` | `string` | The color used to indicate the issue priority. |
 

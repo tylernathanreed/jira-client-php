@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\Version`](/src/Schema/Version.php)
 
 Optional for create and update. |
 | `id` | `string` | The ID of the version. |
-| `issuesStatusForFixVersion` | `VersionIssuesStatus` | If the expand option `issuesstatus` is used, returns the count of issues in this version for each of the status categories *to do*, *in progress*, *done*, and *unmapped*. The *unmapped* property contains a count of issues with a status other than *to do*, *in progress*, and *done*. |
+| `issuesStatusForFixVersion` | [`VersionIssuesStatus`](/docs/schema/version-issues-status.md) | If the expand option `issuesstatus` is used, returns the count of issues in this version for each of the status categories *to do*, *in progress*, *done*, and *unmapped*. The *unmapped* property contains a count of issues with a status other than *to do*, *in progress*, and *done*. |
 | `moveUnfixedIssuesTo` | `string` | The URL of the self link to the version to which all unfixed issues are moved when a version is released. Not applicable when creating a version. Optional when updating a version. |
 | `name` | `string` | The unique name of the version. Required when creating a version. Optional when updating a version. The maximum length is 255 characters. |
 | `operations` | [`?list<SimpleLink>`](/docs/schema/simple-link.md) | If the expand option `operations` is used, returns the list of operations available for this version. |

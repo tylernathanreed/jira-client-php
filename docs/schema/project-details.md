@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\ProjectDetails`](/src/Schema/ProjectDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `avatarUrls` | `AvatarUrlsBean` | The URLs of the project's avatars. |
+| `avatarUrls` | [`AvatarUrlsBean`](/docs/schema/avatar-urls-bean.md) | The URLs of the project's avatars. |
 | `id` | `string` | The ID of the project. |
 | `key` | `string` | The key of the project. |
 | `name` | `string` | The name of the project. |
-| `projectCategory` | `UpdatedProjectCategory` | The category the project belongs to. |
+| `projectCategory` | [`UpdatedProjectCategory`](/docs/schema/updated-project-category.md) | The category the project belongs to. |
 | `projectTypeKey` | `'software'\|'service_desk'\|'business'\|null` | The [project type](https://confluence.atlassian.com/x/GwiiLQ#Jiraapplicationsoverview-Productfeaturesandprojecttypes) of the project. |
 | `self` | `string` | The URL of the project details. |
 | `simplified` | `bool` | Whether or not the project is simplified. |

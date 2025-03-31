@@ -13,7 +13,7 @@ Source: [`Jira\Client\Schema\Dashboard`](/src/Schema/Dashboard.php)
 | `isFavourite` | `bool` | Whether the dashboard is selected as a favorite by the user. |
 | `isWritable` | `bool` | Whether the current user has permission to edit the dashboard. |
 | `name` | `string` | The name of the dashboard. |
-| `owner` | `UserBean` | The owner of the dashboard. |
+| `owner` | [`UserBean`](/docs/schema/user-bean.md) | The owner of the dashboard. |
 | `popularity` | `int` | The number of users who have this dashboard as a favorite. |
 | `rank` | `int` | The rank of this dashboard. |
 | `self` | `string` | The URL of these dashboard details. |

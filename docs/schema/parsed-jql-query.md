@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\ParsedJqlQuery`](/src/Schema/ParsedJqlQuery.php)
 | --- | --- | --- |
 | `query` | `string` | The JQL query that was parsed and validated. |
 | `errors` | `?list<string>` | The list of syntax or validation errors. |
-| `structure` | `JqlQuery` | The syntax tree of the query. Empty if the query was invalid. |
+| `structure` | [`JqlQuery`](/docs/schema/jql-query.md) | The syntax tree of the query. Empty if the query was invalid. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueArchivalSyncResponse`](/src/Schema/IssueArchiv
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errors` | `Errors` |  |
+| `errors` | [`Errors`](/docs/schema/errors.md) |  |
 | `numberOfIssuesUpdated` | `int` |  |
 
 ## References

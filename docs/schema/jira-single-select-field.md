@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\JiraSingleSelectField`](/src/Schema/JiraSingleSelec
 | Property | Type | Description |
 | --- | --- | --- |
 | `fieldId` | `string` |  |
-| `option` | `JiraSelectedOptionField` |  |
+| `option` | [`JiraSelectedOptionField`](/docs/schema/jira-selected-option-field.md) |  |
 
 ## References
 

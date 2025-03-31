@@ -14,7 +14,7 @@ Source: [`Jira\Client\Schema\AuditRecordBean`](/src/Schema/AuditRecordBean.php)
 | `description` | `string` | The description of the audit record. |
 | `eventSource` | `string` | The event the audit record originated from. |
 | `id` | `int` | The ID of the audit record. |
-| `objectItem` | `AssociatedItemBean` |  |
+| `objectItem` | [`AssociatedItemBean`](/docs/schema/associated-item-bean.md) |  |
 | `remoteAddress` | `string` | The URL of the computer where the creation of the audit record was initiated. |
 | `summary` | `string` | The summary of the audit record. |
 

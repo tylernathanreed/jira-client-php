@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\StatusScope`](/src/Schema/StatusScope.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `type` | `'PROJECT'\|'GLOBAL'` | The scope of the status. `GLOBAL` for company-managed projects and `PROJECT` for team-managed projects. |
-| `project` | `ProjectId` |  |
+| `project` | [`ProjectId`](/docs/schema/project-id.md) |  |
 
 ## References
 
