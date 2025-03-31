@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CustomFieldConfigurations`](/src/Schema/CustomField
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `configurations` | [`list<ContextualConfiguration>`](/src/Schema/ContextualConfiguration.php) | The list of custom field configuration details. |
+| `configurations` | [`list<ContextualConfiguration>`](/docs/schemas/contextual-configuration.md) | The list of custom field configuration details. |
 
 ## References
 

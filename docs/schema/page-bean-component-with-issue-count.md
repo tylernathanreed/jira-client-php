@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanComponentWithIssueCount`](/src/Schema/PageB
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<ComponentWithIssueCount>`](/src/Schema/ComponentWithIssueCount.php) | The list of items. |
+| `values` | [`?list<ComponentWithIssueCount>`](/docs/schemas/component-with-issue-count.md) | The list of items. |
 
 ## References
 

@@ -13,7 +13,7 @@ Source: [`Jira\Client\Schema\ServerInformation`](/src/Schema/ServerInformation.p
 | `displayUrl` | `string` | The display URL of the Jira instance. |
 | `displayUrlConfluence` | `string` | The display URL of Confluence. |
 | `displayUrlServicedeskHelpCenter` | `string` | The display URL of the Servicedesk Help Center. |
-| `healthChecks` | [`?list<HealthCheckResult>`](/src/Schema/HealthCheckResult.php) | Jira instance health check results. Deprecated and no longer returned. |
+| `healthChecks` | [`?list<HealthCheckResult>`](/docs/schemas/health-check-result.md) | Jira instance health check results. Deprecated and no longer returned. |
 | `scmInfo` | `string` | The unique identifier of the Jira version. |
 | `serverTime` | `string` | The time in Jira when this request was responded to. |
 | `serverTimeZone` | `string` | The default timezone of the Jira server. In a format known as Olson Time Zones, IANA Time Zones or TZ Database Time Zones. |

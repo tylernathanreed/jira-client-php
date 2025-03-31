@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\PageOfCreateMetaIssueTypes`](/src/Schema/PageOfCrea
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `createMetaIssueType` | [`?list<IssueTypeIssueCreateMetadata>`](/src/Schema/IssueTypeIssueCreateMetadata.php) |  |
-| `issueTypes` | [`?list<IssueTypeIssueCreateMetadata>`](/src/Schema/IssueTypeIssueCreateMetadata.php) | The list of CreateMetaIssueType. |
+| `createMetaIssueType` | [`?list<IssueTypeIssueCreateMetadata>`](/docs/schemas/issue-type-issue-create-metadata.md) |  |
+| `issueTypes` | [`?list<IssueTypeIssueCreateMetadata>`](/docs/schemas/issue-type-issue-create-metadata.md) | The list of CreateMetaIssueType. |
 | `maxResults` | `int` | The maximum number of items to return per page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The total number of items in all pages. |

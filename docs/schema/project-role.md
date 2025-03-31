@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectRole`](/src/Schema/ProjectRole.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `actors` | [`?list<RoleActor>`](/src/Schema/RoleActor.php) | The list of users who act in this role. |
+| `actors` | [`?list<RoleActor>`](/docs/schemas/role-actor.md) | The list of users who act in this role. |
 | `admin` | `bool` | Whether this role is the admin role for the project. |
 | `currentUserRole` | `bool` | Whether the calling user is part of this role. |
 | `default` | `bool` | Whether this role is the default role for the project |

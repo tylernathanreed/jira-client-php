@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanComment`](/src/Schema/PageBeanComment.php)
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<Comment>`](/src/Schema/Comment.php) | The list of items. |
+| `values` | [`?list<Comment>`](/docs/schemas/comment.md) | The list of items. |
 
 ## References
 

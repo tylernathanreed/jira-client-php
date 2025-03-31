@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\LinkGroup`](/src/Schema/LinkGroup.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `groups` | [`?list<LinkGroup>`](/src/Schema/LinkGroup.php) |  |
+| `groups` | [`?list<LinkGroup>`](/docs/schemas/link-group.md) |  |
 | `header` | `SimpleLink` |  |
 | `id` | `string` |  |
-| `links` | [`?list<SimpleLink>`](/src/Schema/SimpleLink.php) |  |
+| `links` | [`?list<SimpleLink>`](/docs/schemas/simple-link.md) |  |
 | `styleClass` | `string` |  |
 | `weight` | `int` |  |
 

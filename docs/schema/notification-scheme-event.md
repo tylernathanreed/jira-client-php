@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\NotificationSchemeEvent`](/src/Schema/NotificationS
 | Property | Type | Description |
 | --- | --- | --- |
 | `event` | `NotificationEvent` |  |
-| `notifications` | [`?list<EventNotification>`](/src/Schema/EventNotification.php) |  |
+| `notifications` | [`?list<EventNotification>`](/docs/schemas/event-notification.md) |  |
 
 ## References
 

@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanGroupDetails`](/src/Schema/PageBeanGroupDet
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<GroupDetails>`](/src/Schema/GroupDetails.php) | The list of items. |
+| `values` | [`?list<GroupDetails>`](/docs/schemas/group-details.md) | The list of items. |
 
 ## References
 

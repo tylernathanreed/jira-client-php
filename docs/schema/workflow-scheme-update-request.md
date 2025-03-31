@@ -11,9 +11,9 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUpdateRequest`](/src/Schema/WorkflowS
 | `name` | `string` | The new name for this workflow scheme. |
 | `version` | `DocumentVersion` |  |
 | `defaultWorkflowId` | `string` | The ID of the workflow for issue types without having a mapping defined in this workflow scheme. Only used in global-scoped workflow schemes. If the `defaultWorkflowId` isn't specified, this is set to *Jira Workflow (jira)*. |
-| `statusMappingsByIssueTypeOverride` | [`?list<MappingsByIssueTypeOverride>`](/src/Schema/MappingsByIssueTypeOverride.php) | Overrides, for the selected issue types, any status mappings provided in `statusMappingsByWorkflows`. Status mappings are required when the new workflow for an issue type doesn't contain all statuses that the old workflow has. Status mappings can be provided by a combination of `statusMappingsByWorkflows` and `statusMappingsByIssueTypeOverride`. |
-| `statusMappingsByWorkflows` | [`?list<MappingsByWorkflow>`](/src/Schema/MappingsByWorkflow.php) | The status mappings by workflows. Status mappings are required when the new workflow for an issue type doesn't contain all statuses that the old workflow has. Status mappings can be provided by a combination of `statusMappingsByWorkflows` and `statusMappingsByIssueTypeOverride`. |
-| `workflowsForIssueTypes` | [`?list<WorkflowSchemeAssociation>`](/src/Schema/WorkflowSchemeAssociation.php) | Mappings from workflows to issue types. |
+| `statusMappingsByIssueTypeOverride` | [`?list<MappingsByIssueTypeOverride>`](/docs/schemas/mappings-by-issue-type-override.md) | Overrides, for the selected issue types, any status mappings provided in `statusMappingsByWorkflows`. Status mappings are required when the new workflow for an issue type doesn't contain all statuses that the old workflow has. Status mappings can be provided by a combination of `statusMappingsByWorkflows` and `statusMappingsByIssueTypeOverride`. |
+| `statusMappingsByWorkflows` | [`?list<MappingsByWorkflow>`](/docs/schemas/mappings-by-workflow.md) | The status mappings by workflows. Status mappings are required when the new workflow for an issue type doesn't contain all statuses that the old workflow has. Status mappings can be provided by a combination of `statusMappingsByWorkflows` and `statusMappingsByIssueTypeOverride`. |
+| `workflowsForIssueTypes` | [`?list<WorkflowSchemeAssociation>`](/docs/schemas/workflow-scheme-association.md) | Mappings from workflows to issue types. |
 
 ## References
 

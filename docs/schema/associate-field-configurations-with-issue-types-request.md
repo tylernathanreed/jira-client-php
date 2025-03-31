@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\AssociateFieldConfigurationsWithIssueTypesRequest`]
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `mappings` | [`list<FieldConfigurationToIssueTypeMapping>`](/src/Schema/FieldConfigurationToIssueTypeMapping.php) | Field configuration to issue type mappings. |
+| `mappings` | [`list<FieldConfigurationToIssueTypeMapping>`](/docs/schemas/field-configuration-to-issue-type-mapping.md) | Field configuration to issue type mappings. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\PermissionDetails`](/src/Schema/PermissionDetails.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `editPermissions` | [`list<SharePermission>`](/src/Schema/SharePermission.php) | The edit permissions for the shareable entities. |
-| `sharePermissions` | [`list<SharePermission>`](/src/Schema/SharePermission.php) | The share permissions for the shareable entities. |
+| `editPermissions` | [`list<SharePermission>`](/docs/schemas/share-permission.md) | The edit permissions for the shareable entities. |
+| `sharePermissions` | [`list<SharePermission>`](/docs/schemas/share-permission.md) | The share permissions for the shareable entities. |
 
 ## References
 

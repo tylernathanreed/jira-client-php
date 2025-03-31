@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\ConditionGroupUpdate`](/src/Schema/ConditionGroupUp
 | Property | Type | Description |
 | --- | --- | --- |
 | `operation` | `'ANY'\|'ALL'` | Determines how the conditions in the group are evaluated. Accepts either `ANY` or `ALL`. If `ANY` is used, at least one condition in the group must be true for the group to evaluate to true. If `ALL` is used, all conditions in the group must be true for the group to evaluate to true. |
-| `conditionGroups` | [`?list<ConditionGroupUpdate>`](/src/Schema/ConditionGroupUpdate.php) | The nested conditions of the condition group. |
-| `conditions` | [`?list<WorkflowRuleConfiguration>`](/src/Schema/WorkflowRuleConfiguration.php) | The rules for this condition. |
+| `conditionGroups` | [`?list<ConditionGroupUpdate>`](/docs/schemas/condition-group-update.md) | The nested conditions of the condition group. |
+| `conditions` | [`?list<WorkflowRuleConfiguration>`](/docs/schemas/workflow-rule-configuration.md) | The rules for this condition. |
 
 ## References
 

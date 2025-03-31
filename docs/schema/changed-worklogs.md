@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\ChangedWorklogs`](/src/Schema/ChangedWorklogs.php)
 | `self` | `string` | The URL of this changed worklogs list. |
 | `since` | `int` | The datetime of the first worklog item in the list. |
 | `until` | `int` | The datetime of the last worklog item in the list. |
-| `values` | [`?list<ChangedWorklog>`](/src/Schema/ChangedWorklog.php) | Changed worklog list. |
+| `values` | [`?list<ChangedWorklog>`](/docs/schemas/changed-worklog.md) | Changed worklog list. |
 
 ## References
 

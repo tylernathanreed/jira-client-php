@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanIssueSecuritySchemeToProjectMapping`](/src/
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<IssueSecuritySchemeToProjectMapping>`](/src/Schema/IssueSecuritySchemeToProjectMapping.php) | The list of items. |
+| `values` | [`?list<IssueSecuritySchemeToProjectMapping>`](/docs/schemas/issue-security-scheme-to-project-mapping.md) | The list of items. |
 
 ## References
 

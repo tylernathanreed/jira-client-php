@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanIssueSecurityLevelMember`](/src/Schema/Page
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<IssueSecurityLevelMember>`](/src/Schema/IssueSecurityLevelMember.php) | The list of items. |
+| `values` | [`?list<IssueSecurityLevelMember>`](/docs/schemas/issue-security-level-member.md) | The list of items. |
 
 ## References
 

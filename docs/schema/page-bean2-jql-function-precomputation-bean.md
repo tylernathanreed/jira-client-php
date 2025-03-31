@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBean2JqlFunctionPrecomputationBean`](/src/Schem
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<JqlFunctionPrecomputationBean>`](/src/Schema/JqlFunctionPrecomputationBean.php) | The list of items. |
+| `values` | [`?list<JqlFunctionPrecomputationBean>`](/docs/schemas/jql-function-precomputation-bean.md) | The list of items. |
 
 ## References
 

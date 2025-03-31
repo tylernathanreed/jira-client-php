@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\FieldConfigurationItemsDetails`](/src/Schema/FieldC
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldConfigurationItems` | [`list<FieldConfigurationItem>`](/src/Schema/FieldConfigurationItem.php) | Details of fields in a field configuration. |
+| `fieldConfigurationItems` | [`list<FieldConfigurationItem>`](/docs/schemas/field-configuration-item.md) | Details of fields in a field configuration. |
 
 ## References
 

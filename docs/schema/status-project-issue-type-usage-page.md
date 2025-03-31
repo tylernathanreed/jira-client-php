@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsagePage`](/src/Schema/Statu
 | Property | Type | Description |
 | --- | --- | --- |
 | `nextPageToken` | `string` | Page token for the next page of issue type usages. |
-| `values` | [`?list<StatusProjectIssueTypeUsage>`](/src/Schema/StatusProjectIssueTypeUsage.php) | The list of issue types. |
+| `values` | [`?list<StatusProjectIssueTypeUsage>`](/docs/schemas/status-project-issue-type-usage.md) | The list of issue types. |
 
 ## References
 

@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanNotificationSchemeAndProjectMappingJsonBean
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<NotificationSchemeAndProjectMappingJsonBean>`](/src/Schema/NotificationSchemeAndProjectMappingJsonBean.php) | The list of items. |
+| `values` | [`?list<NotificationSchemeAndProjectMappingJsonBean>`](/docs/schemas/notification-scheme-and-project-mapping-json-bean.md) | The list of items. |
 
 ## References
 

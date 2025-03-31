@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\JiraMultipleVersionPickerField`](/src/Schema/JiraMu
 | --- | --- | --- |
 | `bulkEditMultiSelectFieldOption` | `'ADD'\|'REMOVE'\|'REPLACE'\|'REMOVE_ALL'` |  |
 | `fieldId` | `string` |  |
-| `versions` | [`list<JiraVersionField>`](/src/Schema/JiraVersionField.php) |  |
+| `versions` | [`list<JiraVersionField>`](/docs/schemas/jira-version-field.md) |  |
 
 ## References
 

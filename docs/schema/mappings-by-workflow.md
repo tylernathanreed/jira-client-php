@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\MappingsByWorkflow`](/src/Schema/MappingsByWorkflow
 | --- | --- | --- |
 | `newWorkflowId` | `string` | The ID of the new workflow. |
 | `oldWorkflowId` | `string` | The ID of the old workflow. |
-| `statusMappings` | [`list<WorkflowAssociationStatusMapping>`](/src/Schema/WorkflowAssociationStatusMapping.php) | The list of status mappings. |
+| `statusMappings` | [`list<WorkflowAssociationStatusMapping>`](/docs/schemas/workflow-association-status-mapping.md) | The list of status mappings. |
 
 ## References
 

@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\SearchResults`](/src/Schema/SearchResults.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `expand` | `string` | Expand options that include additional search result details in the response. |
-| `issues` | [`?list<IssueBean>`](/src/Schema/IssueBean.php) | The list of issues found by the search. |
+| `issues` | [`?list<IssueBean>`](/docs/schemas/issue-bean.md) | The list of issues found by the search. |
 | `maxResults` | `int` | The maximum number of results that could be on the page. |
 | `names` | `array<string,string>` | The ID and name of each field in the search results. |
 | `schema` | `array<string,JsonTypeBean>` | The schema describing the field types in the search results. |

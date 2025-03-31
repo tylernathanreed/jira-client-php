@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\ContainerForRegisteredWebhooks`](/src/Schema/Contai
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `webhookRegistrationResult` | [`?list<RegisteredWebhook>`](/src/Schema/RegisteredWebhook.php) | A list of registered webhooks. |
+| `webhookRegistrationResult` | [`?list<RegisteredWebhook>`](/docs/schemas/registered-webhook.md) | A list of registered webhooks. |
 
 ## References
 

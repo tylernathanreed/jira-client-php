@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowsWithTransitionRulesDetails`](/src/Schema/W
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `workflows` | [`list<WorkflowTransitionRulesDetails>`](/src/Schema/WorkflowTransitionRulesDetails.php) | The list of workflows with transition rules to delete. |
+| `workflows` | [`list<WorkflowTransitionRulesDetails>`](/docs/schemas/workflow-transition-rules-details.md) | The list of workflows with transition rules to delete. |
 
 ## References
 

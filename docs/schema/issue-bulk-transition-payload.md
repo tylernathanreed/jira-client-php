@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueBulkTransitionPayload`](/src/Schema/IssueBulkT
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `bulkTransitionInputs` | [`list<BulkTransitionSubmitInput>`](/src/Schema/BulkTransitionSubmitInput.php) | List of objects and each object has two properties:
+| `bulkTransitionInputs` | [`list<BulkTransitionSubmitInput>`](/docs/schemas/bulk-transition-submit-input.md) | List of objects and each object has two properties:
 
  *  Issues that will be bulk transitioned.
  *  TransitionId that corresponds to a specific transition of issues that share the same workflow. |

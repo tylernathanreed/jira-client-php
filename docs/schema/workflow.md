@@ -12,10 +12,10 @@ Source: [`Jira\Client\Schema\Workflow`](/src/Schema/Workflow.php)
 | `hasDraftWorkflow` | `bool` | Whether the workflow has a draft version. |
 | `isDefault` | `bool` | Whether this is the default workflow. |
 | `operations` | `WorkflowOperations` |  |
-| `projects` | [`?list<ProjectDetails>`](/src/Schema/ProjectDetails.php) | The projects the workflow is assigned to, through workflow schemes. |
-| `schemes` | [`?list<WorkflowSchemeIdName>`](/src/Schema/WorkflowSchemeIdName.php) | The workflow schemes the workflow is assigned to. |
-| `statuses` | [`?list<WorkflowStatus>`](/src/Schema/WorkflowStatus.php) | The statuses of the workflow. |
-| `transitions` | [`?list<Transition>`](/src/Schema/Transition.php) | The transitions of the workflow. |
+| `projects` | [`?list<ProjectDetails>`](/docs/schemas/project-details.md) | The projects the workflow is assigned to, through workflow schemes. |
+| `schemes` | [`?list<WorkflowSchemeIdName>`](/docs/schemas/workflow-scheme-id-name.md) | The workflow schemes the workflow is assigned to. |
+| `statuses` | [`?list<WorkflowStatus>`](/docs/schemas/workflow-status.md) | The statuses of the workflow. |
+| `transitions` | [`?list<Transition>`](/docs/schemas/transition.md) | The transitions of the workflow. |
 | `updated` | `string` | The last edited date of the workflow. |
 
 ## References

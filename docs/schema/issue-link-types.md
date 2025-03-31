@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueLinkTypes`](/src/Schema/IssueLinkTypes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueLinkTypes` | [`?list<IssueLinkType>`](/src/Schema/IssueLinkType.php) | The issue link type bean. |
+| `issueLinkTypes` | [`?list<IssueLinkType>`](/docs/schemas/issue-link-type.md) | The issue link type bean. |
 
 ## References
 

@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUpdateRequiredMappingsResponse`](/src
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statusMappingsByIssueTypes` | [`?list<RequiredMappingByIssueType>`](/src/Schema/RequiredMappingByIssueType.php) | The list of required status mappings by issue type. |
-| `statusMappingsByWorkflows` | [`?list<RequiredMappingByWorkflows>`](/src/Schema/RequiredMappingByWorkflows.php) | The list of required status mappings by workflow. |
-| `statuses` | [`?list<StatusMetadata>`](/src/Schema/StatusMetadata.php) | The details of the statuses in the associated workflows. |
-| `statusesPerWorkflow` | [`?list<StatusesPerWorkflow>`](/src/Schema/StatusesPerWorkflow.php) | The statuses associated with each workflow. |
+| `statusMappingsByIssueTypes` | [`?list<RequiredMappingByIssueType>`](/docs/schemas/required-mapping-by-issue-type.md) | The list of required status mappings by issue type. |
+| `statusMappingsByWorkflows` | [`?list<RequiredMappingByWorkflows>`](/docs/schemas/required-mapping-by-workflows.md) | The list of required status mappings by workflow. |
+| `statuses` | [`?list<StatusMetadata>`](/docs/schemas/status-metadata.md) | The details of the statuses in the associated workflows. |
+| `statusesPerWorkflow` | [`?list<StatusesPerWorkflow>`](/docs/schemas/statuses-per-workflow.md) | The statuses associated with each workflow. |
 
 ## References
 

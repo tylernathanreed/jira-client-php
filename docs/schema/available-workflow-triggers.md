@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\AvailableWorkflowTriggers`](/src/Schema/AvailableWo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `availableTypes` | [`list<AvailableWorkflowTriggerTypes>`](/src/Schema/AvailableWorkflowTriggerTypes.php) | The list of available trigger types. |
+| `availableTypes` | [`list<AvailableWorkflowTriggerTypes>`](/docs/schemas/available-workflow-trigger-types.md) | The list of available trigger types. |
 | `ruleKey` | `string` | The rule key of the rule. |
 
 ## References

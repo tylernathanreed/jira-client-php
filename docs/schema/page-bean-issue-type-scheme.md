@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanIssueTypeScheme`](/src/Schema/PageBeanIssue
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<IssueTypeScheme>`](/src/Schema/IssueTypeScheme.php) | The list of items. |
+| `values` | [`?list<IssueTypeScheme>`](/docs/schemas/issue-type-scheme.md) | The list of items. |
 
 ## References
 

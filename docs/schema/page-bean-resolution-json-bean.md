@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanResolutionJsonBean`](/src/Schema/PageBeanRe
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<ResolutionJsonBean>`](/src/Schema/ResolutionJsonBean.php) | The list of items. |
+| `values` | [`?list<ResolutionJsonBean>`](/docs/schemas/resolution-json-bean.md) | The list of items. |
 
 ## References
 

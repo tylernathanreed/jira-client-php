@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanContext`](/src/Schema/PageBeanContext.php)
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<Context>`](/src/Schema/Context.php) | The list of items. |
+| `values` | [`?list<Context>`](/docs/schemas/context.md) | The list of items. |
 
 ## References
 

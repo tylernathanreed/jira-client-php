@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateRequestBean`](/src/S
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `values` | [`?list<JqlFunctionPrecomputationUpdateBean>`](/src/Schema/JqlFunctionPrecomputationUpdateBean.php) |  |
+| `values` | [`?list<JqlFunctionPrecomputationUpdateBean>`](/docs/schemas/jql-function-precomputation-update-bean.md) |  |
 
 ## References
 

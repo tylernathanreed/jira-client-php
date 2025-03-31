@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\Votes`](/src/Schema/Votes.php)
 | --- | --- | --- |
 | `hasVoted` | `bool` | Whether the user making this request has voted on the issue. |
 | `self` | `string` | The URL of these issue vote details. |
-| `voters` | [`?list<User>`](/src/Schema/User.php) | List of the users who have voted on this issue. An empty list is returned when the calling user doesn't have the *View voters and watchers* project permission. |
+| `voters` | [`?list<User>`](/docs/schemas/user.md) | List of the users who have voted on this issue. An empty list is returned when the calling user doesn't have the *View voters and watchers* project permission. |
 | `votes` | `int` | The number of votes on the issue. |
 
 ## References

@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\PageWithCursorGetPlanResponseForPage`](/src/Schema/
 | `nextPageCursor` | `string` |  |
 | `size` | `int` |  |
 | `total` | `int` |  |
-| `values` | [`?list<GetPlanResponseForPage>`](/src/Schema/GetPlanResponseForPage.php) |  |
+| `values` | [`?list<GetPlanResponseForPage>`](/docs/schemas/get-plan-response-for-page.md) |  |
 
 ## References
 

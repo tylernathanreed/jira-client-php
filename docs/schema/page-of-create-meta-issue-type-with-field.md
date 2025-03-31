@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\PageOfCreateMetaIssueTypeWithField`](/src/Schema/Pa
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fields` | [`?list<FieldCreateMetadata>`](/src/Schema/FieldCreateMetadata.php) | The collection of FieldCreateMetaBeans. |
+| `fields` | [`?list<FieldCreateMetadata>`](/docs/schemas/field-create-metadata.md) | The collection of FieldCreateMetaBeans. |
 | `maxResults` | `int` | The maximum number of items to return per page. |
-| `results` | [`?list<FieldCreateMetadata>`](/src/Schema/FieldCreateMetadata.php) |  |
+| `results` | [`?list<FieldCreateMetadata>`](/docs/schemas/field-create-metadata.md) |  |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The total number of items in all pages. |
 
