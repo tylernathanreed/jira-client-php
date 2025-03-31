@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\SecurityScheme`](/src/Schema/SecurityScheme.php)
 | `defaultSecurityLevelId` | `int` | The ID of the default security level. |
 | `description` | `string` | The description of the issue security scheme. |
 | `id` | `int` | The ID of the issue security scheme. |
-| `levels` | `?list<[SecurityLevel](/src/Schema/SecurityLevel.php)>` |  |
+| `levels` | [`?list<SecurityLevel>`](/src/Schema/SecurityLevel.php) |  |
 | `name` | `string` | The name of the issue security scheme. |
 | `self` | `string` | The URL of the issue security scheme. |
 

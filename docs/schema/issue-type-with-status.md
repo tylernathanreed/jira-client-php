@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\IssueTypeWithStatus`](/src/Schema/IssueTypeWithStat
 | `id` | `string` | The ID of the issue type. |
 | `name` | `string` | The name of the issue type. |
 | `self` | `string` | The URL of the issue type's status details. |
-| `statuses` | `list<[StatusDetails](/src/Schema/StatusDetails.php)>` | List of status details for the issue type. |
+| `statuses` | [`list<StatusDetails>`](/src/Schema/StatusDetails.php) | List of status details for the issue type. |
 | `subtask` | `bool` | Whether this issue type represents subtasks. |
 
 ## References

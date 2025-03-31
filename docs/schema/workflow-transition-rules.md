@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRules`](/src/Schema/WorkflowTrans
 | Property | Type | Description |
 | --- | --- | --- |
 | `workflowId` | `WorkflowId` |  |
-| `conditions` | `?list<[AppWorkflowTransitionRule](/src/Schema/AppWorkflowTransitionRule.php)>` | The list of conditions within the workflow. |
-| `postFunctions` | `?list<[AppWorkflowTransitionRule](/src/Schema/AppWorkflowTransitionRule.php)>` | The list of post functions within the workflow. |
-| `validators` | `?list<[AppWorkflowTransitionRule](/src/Schema/AppWorkflowTransitionRule.php)>` | The list of validators within the workflow. |
+| `conditions` | [`?list<AppWorkflowTransitionRule>`](/src/Schema/AppWorkflowTransitionRule.php) | The list of conditions within the workflow. |
+| `postFunctions` | [`?list<AppWorkflowTransitionRule>`](/src/Schema/AppWorkflowTransitionRule.php) | The list of post functions within the workflow. |
+| `validators` | [`?list<AppWorkflowTransitionRule>`](/src/Schema/AppWorkflowTransitionRule.php) | The list of validators within the workflow. |
 
 ## References
 

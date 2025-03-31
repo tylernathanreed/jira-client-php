@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PublishDraftWorkflowScheme`](/src/Schema/PublishDra
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statusMappings` | `?list<[StatusMapping](/src/Schema/StatusMapping.php)>` | Mappings of statuses to new statuses for issue types. |
+| `statusMappings` | [`?list<StatusMapping>`](/src/Schema/StatusMapping.php) | Mappings of statuses to new statuses for issue types. |
 
 ## References
 

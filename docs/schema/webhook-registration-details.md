@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\WebhookRegistrationDetails`](/src/Schema/WebhookReg
 | Property | Type | Description |
 | --- | --- | --- |
 | `url` | `string` | The URL that specifies where to send the webhooks. This URL must use the same base URL as the Connect app. Only a single URL per app is allowed to be registered. |
-| `webhooks` | `list<[WebhookDetails](/src/Schema/WebhookDetails.php)>` | A list of webhooks. |
+| `webhooks` | [`list<WebhookDetails>`](/src/Schema/WebhookDetails.php) | A list of webhooks. |
 
 ## References
 

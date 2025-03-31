@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanProject`](/src/Schema/PageBeanProject.php)
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<[Project](/src/Schema/Project.php)>` | The list of items. |
+| `values` | [`?list<Project>`](/src/Schema/Project.php) | The list of items. |
 
 ## References
 

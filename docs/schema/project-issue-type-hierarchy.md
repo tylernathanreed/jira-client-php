@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectIssueTypeHierarchy`](/src/Schema/ProjectIssu
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `hierarchy` | `?list<[ProjectIssueTypesHierarchyLevel](/src/Schema/ProjectIssueTypesHierarchyLevel.php)>` | Details of an issue type hierarchy level. |
+| `hierarchy` | [`?list<ProjectIssueTypesHierarchyLevel>`](/src/Schema/ProjectIssueTypesHierarchyLevel.php) | Details of an issue type hierarchy level. |
 | `projectId` | `int` | The ID of the project. |
 
 ## References

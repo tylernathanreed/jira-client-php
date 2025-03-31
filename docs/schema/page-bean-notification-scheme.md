@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanNotificationScheme`](/src/Schema/PageBeanNo
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<[NotificationScheme](/src/Schema/NotificationScheme.php)>` | The list of items. |
+| `values` | [`?list<NotificationScheme>`](/src/Schema/NotificationScheme.php) | The list of items. |
 
 ## References
 

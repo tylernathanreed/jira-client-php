@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanFieldConfigurationScheme`](/src/Schema/Page
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<[FieldConfigurationScheme](/src/Schema/FieldConfigurationScheme.php)>` | The list of items. |
+| `values` | [`?list<FieldConfigurationScheme>`](/src/Schema/FieldConfigurationScheme.php) | The list of items. |
 
 ## References
 

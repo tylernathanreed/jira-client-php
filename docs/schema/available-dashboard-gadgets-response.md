@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\AvailableDashboardGadgetsResponse`](/src/Schema/Ava
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `gadgets` | `list<[AvailableDashboardGadget](/src/Schema/AvailableDashboardGadget.php)>` | The list of available gadgets. |
+| `gadgets` | [`list<AvailableDashboardGadget>`](/src/Schema/AvailableDashboardGadget.php) | The list of available gadgets. |
 
 ## References
 

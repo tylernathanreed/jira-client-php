@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SystemAvatars`](/src/Schema/SystemAvatars.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `system` | `?list<[Avatar](/src/Schema/Avatar.php)>` | A list of avatar details. |
+| `system` | [`?list<Avatar>`](/src/Schema/Avatar.php) | A list of avatar details. |
 
 ## References
 

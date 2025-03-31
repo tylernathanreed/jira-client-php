@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\CreateIssueSecuritySchemeDetails`](/src/Schema/Crea
 | --- | --- | --- |
 | `name` | `string` | The name of the issue security scheme. Must be unique (case-insensitive). |
 | `description` | `string` | The description of the issue security scheme. |
-| `levels` | `?list<[SecuritySchemeLevelBean](/src/Schema/SecuritySchemeLevelBean.php)>` | The list of scheme levels which should be added to the security scheme. |
+| `levels` | [`?list<SecuritySchemeLevelBean>`](/src/Schema/SecuritySchemeLevelBean.php) | The list of scheme levels which should be added to the security scheme. |
 
 ## References
 

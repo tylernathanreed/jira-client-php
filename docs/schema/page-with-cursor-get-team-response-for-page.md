@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\PageWithCursorGetTeamResponseForPage`](/src/Schema/
 | `nextPageCursor` | `string` |  |
 | `size` | `int` |  |
 | `total` | `int` |  |
-| `values` | `?list<[GetTeamResponseForPage](/src/Schema/GetTeamResponseForPage.php)>` |  |
+| `values` | [`?list<GetTeamResponseForPage>`](/src/Schema/GetTeamResponseForPage.php) |  |
 
 ## References
 

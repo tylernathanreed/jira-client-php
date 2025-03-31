@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\Transitions`](/src/Schema/Transitions.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `expand` | `string` | Expand options that include additional transitions details in the response. |
-| `transitions` | `?list<[IssueTransition](/src/Schema/IssueTransition.php)>` | List of issue transitions. |
+| `transitions` | [`?list<IssueTransition>`](/src/Schema/IssueTransition.php) | List of issue transitions. |
 
 ## References
 

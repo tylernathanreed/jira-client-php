@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JqlQueriesToSanitize`](/src/Schema/JqlQueriesToSani
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queries` | `list<[JqlQueryToSanitize](/src/Schema/JqlQueryToSanitize.php)>` | The list of JQL queries to sanitize. Must contain unique values. Maximum of 20 queries. |
+| `queries` | [`list<JqlQueryToSanitize>`](/src/Schema/JqlQueryToSanitize.php) | The list of JQL queries to sanitize. Must contain unique values. Maximum of 20 queries. |
 
 ## References
 

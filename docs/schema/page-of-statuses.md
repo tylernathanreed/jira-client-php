@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\PageOfStatuses`](/src/Schema/PageOfStatuses.php)
 | `self` | `string` | The URL of this page. |
 | `startAt` | `int` | The index of the first item returned on the page. |
 | `total` | `int` | Number of items that satisfy the search. |
-| `values` | `?list<[JiraStatus](/src/Schema/JiraStatus.php)>` | The list of items. |
+| `values` | [`?list<JiraStatus>`](/src/Schema/JiraStatus.php) | The list of items. |
 
 ## References
 

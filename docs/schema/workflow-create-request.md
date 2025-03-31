@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\WorkflowCreateRequest`](/src/Schema/WorkflowCreateR
 | Property | Type | Description |
 | --- | --- | --- |
 | `scope` | `WorkflowScope` |  |
-| `statuses` | `?list<[WorkflowStatusUpdate](/src/Schema/WorkflowStatusUpdate.php)>` | The statuses to associate with the workflows. |
-| `workflows` | `?list<[WorkflowCreate](/src/Schema/WorkflowCreate.php)>` | The details of the workflows to create. |
+| `statuses` | [`?list<WorkflowStatusUpdate>`](/src/Schema/WorkflowStatusUpdate.php) | The statuses to associate with the workflows. |
+| `workflows` | [`?list<WorkflowCreate>`](/src/Schema/WorkflowCreate.php) | The details of the workflows to create. |
 
 ## References
 

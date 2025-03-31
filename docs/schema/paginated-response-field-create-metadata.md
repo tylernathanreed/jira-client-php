@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PaginatedResponseFieldCreateMetadata`](/src/Schema/
 | Property | Type | Description |
 | --- | --- | --- |
 | `maxResults` | `int` |  |
-| `results` | `?list<[FieldCreateMetadata](/src/Schema/FieldCreateMetadata.php)>` |  |
+| `results` | [`?list<FieldCreateMetadata>`](/src/Schema/FieldCreateMetadata.php) |  |
 | `startAt` | `int` |  |
 | `total` | `int` |  |
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\FieldAssociationsRequest`](/src/Schema/FieldAssocia
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `associationContexts` | `list<[AssociationContextObject](/src/Schema/AssociationContextObject.php)>` | Contexts to associate/unassociate the fields with. |
-| `fields` | `list<[FieldIdentifierObject](/src/Schema/FieldIdentifierObject.php)>` | Fields to associate/unassociate with projects. |
+| `associationContexts` | [`list<AssociationContextObject>`](/src/Schema/AssociationContextObject.php) | Contexts to associate/unassociate the fields with. |
+| `fields` | [`list<FieldIdentifierObject>`](/src/Schema/FieldIdentifierObject.php) | Fields to associate/unassociate with projects. |
 
 ## References
 

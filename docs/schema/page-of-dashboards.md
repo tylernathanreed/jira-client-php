@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PageOfDashboards`](/src/Schema/PageOfDashboards.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `dashboards` | `?list<[Dashboard](/src/Schema/Dashboard.php)>` | List of dashboards. |
+| `dashboards` | [`?list<Dashboard>`](/src/Schema/Dashboard.php) | List of dashboards. |
 | `maxResults` | `int` | The maximum number of results that could be on the page. |
 | `next` | `string` | The URL of the next page of results, if any. |
 | `prev` | `string` | The URL of the previous page of results, if any. |

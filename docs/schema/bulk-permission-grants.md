@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\BulkPermissionGrants`](/src/Schema/BulkPermissionGr
 | Property | Type | Description |
 | --- | --- | --- |
 | `globalPermissions` | `list<string>` | List of permissions granted to the user. |
-| `projectPermissions` | `list<[BulkProjectPermissionGrants](/src/Schema/BulkProjectPermissionGrants.php)>` | List of project permissions and the projects and issues those permissions provide access to. |
+| `projectPermissions` | [`list<BulkProjectPermissionGrants>`](/src/Schema/BulkProjectPermissionGrants.php) | List of project permissions and the projects and issues those permissions provide access to. |
 
 ## References
 

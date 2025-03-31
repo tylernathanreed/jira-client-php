@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CustomFieldUpdatedContextOptionsList`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `options` | `?list<[CustomFieldOptionUpdate](/src/Schema/CustomFieldOptionUpdate.php)>` | The updated custom field options. |
+| `options` | [`?list<CustomFieldOptionUpdate>`](/src/Schema/CustomFieldOptionUpdate.php) | The updated custom field options. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SanitizedJqlQueries`](/src/Schema/SanitizedJqlQueri
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queries` | `?list<[SanitizedJqlQuery](/src/Schema/SanitizedJqlQuery.php)>` | The list of sanitized JQL queries. |
+| `queries` | [`?list<SanitizedJqlQuery>`](/src/Schema/SanitizedJqlQuery.php) | The list of sanitized JQL queries. |
 
 ## References
 

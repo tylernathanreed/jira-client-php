@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JiraMultipleSelectUserPickerField`](/src/Schema/Jir
 | Property | Type | Description |
 | --- | --- | --- |
 | `fieldId` | `string` |  |
-| `users` | `?list<[JiraUserField](/src/Schema/JiraUserField.php)>` |  |
+| `users` | [`?list<JiraUserField>`](/src/Schema/JiraUserField.php) |  |
 
 ## References
 

@@ -11,10 +11,10 @@ Source: [`Jira\Client\Schema\JiraStatus`](/src/Schema/JiraStatus.php)
 | `name` | `string` | The name of the status. |
 | `scope` | `StatusScope` |  |
 | `statusCategory` | `'TODO'\|'IN_PROGRESS'\|'DONE'\|null` | The category of the status. |
-| `usages` | `?list<[ProjectIssueTypes](/src/Schema/ProjectIssueTypes.php)>` | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
+| `usages` | [`?list<ProjectIssueTypes>`](/src/Schema/ProjectIssueTypes.php) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 
 Projects and issue types where the status is used. Only available if the `usages` expand is requested. |
-| `workflowUsages` | `?list<[WorkflowUsages](/src/Schema/WorkflowUsages.php)>` | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
+| `workflowUsages` | [`?list<WorkflowUsages>`](/src/Schema/WorkflowUsages.php) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 
 The workflows that use this status. Only available if the `workflowUsages` expand is requested. |
 

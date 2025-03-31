@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanContextForProjectAndIssueType`](/src/Schema
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<[ContextForProjectAndIssueType](/src/Schema/ContextForProjectAndIssueType.php)>` | The list of items. |
+| `values` | [`?list<ContextForProjectAndIssueType>`](/src/Schema/ContextForProjectAndIssueType.php) | The list of items. |
 
 ## References
 

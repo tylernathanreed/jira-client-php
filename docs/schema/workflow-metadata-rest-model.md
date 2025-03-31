@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\WorkflowMetadataRestModel`](/src/Schema/WorkflowMet
 | `description` | `string` | The description of the workflow. |
 | `id` | `string` | The ID of the workflow. |
 | `name` | `string` | The name of the workflow. |
-| `usage` | `list<[SimpleUsage](/src/Schema/SimpleUsage.php)>` | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
+| `usage` | [`list<SimpleUsage>`](/src/Schema/SimpleUsage.php) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 
 Use the optional `workflows.usages` expand to get additional information about the projects and issue types associated with the workflows in the workflow scheme. |
 | `version` | `DocumentVersion` |  |

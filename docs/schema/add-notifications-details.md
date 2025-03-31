@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\AddNotificationsDetails`](/src/Schema/AddNotificati
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `notificationSchemeEvents` | `list<[NotificationSchemeEventDetails](/src/Schema/NotificationSchemeEventDetails.php)>` | The list of notifications which should be added to the notification scheme. |
+| `notificationSchemeEvents` | [`list<NotificationSchemeEventDetails>`](/src/Schema/NotificationSchemeEventDetails.php) | The list of notifications which should be added to the notification scheme. |
 
 ## References
 

@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanBulkContextualConfiguration`](/src/Schema/P
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<[BulkContextualConfiguration](/src/Schema/BulkContextualConfiguration.php)>` | The list of items. |
+| `values` | [`?list<BulkContextualConfiguration>`](/src/Schema/BulkContextualConfiguration.php) | The list of items. |
 
 ## References
 

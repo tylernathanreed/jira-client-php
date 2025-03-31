@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\FieldWasClause`](/src/Schema/FieldWasClause.php)
 | `field` | `JqlQueryField` |  |
 | `operand` | `JqlQueryClauseOperand` |  |
 | `operator` | `'was'\|'was in'\|'was not in'\|'was not'` | The operator between the field and operand. |
-| `predicates` | `list<[JqlQueryClauseTimePredicate](/src/Schema/JqlQueryClauseTimePredicate.php)>` | The list of time predicates. |
+| `predicates` | [`list<JqlQueryClauseTimePredicate>`](/src/Schema/JqlQueryClauseTimePredicate.php) | The list of time predicates. |
 
 ## References
 

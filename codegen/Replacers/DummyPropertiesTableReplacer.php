@@ -23,16 +23,12 @@ class DummyPropertiesTableReplacer extends Replacer
             if ($property->listableTypeIsRef) {
                 assert(is_string($property->listableType));
 
-                $type = str_replace(
-                    $property->listableType,
-                    new Link($property->listableType, '/src/Schema/' . $property->listableType . '.php'),
-                    $type
-                );
+                $type = new Link("`{$type}`", '/src/Schema/' . $property->listableType . '.php');
             }
 
             $table->add([
                 "`{$property->name}`",
-                "`{$type}`",
+                $type instanceof Link ? $type : "`{$type}`",
                 $property->description,
             ]);
         }

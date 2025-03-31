@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanUserDetails`](/src/Schema/PageBeanUserDetai
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<[UserDetails](/src/Schema/UserDetails.php)>` | The list of items. |
+| `values` | [`?list<UserDetails>`](/src/Schema/UserDetails.php) | The list of items. |
 
 ## References
 
