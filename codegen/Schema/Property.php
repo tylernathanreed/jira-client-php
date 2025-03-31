@@ -33,6 +33,7 @@ final class Property extends AbstractSchema implements Stringable
         public readonly ?string $listableType = null,
         public readonly ?bool $listableTypeIsRef = null,
         public readonly ?string $associativeType = null,
+        public readonly ?bool $associativeTypeIsRef = null,
         public readonly int|string|bool|null $default = null,
         public readonly bool $required = false,
         public readonly bool $readOnly = false,
@@ -60,7 +61,7 @@ final class Property extends AbstractSchema implements Stringable
 
         [$nativeListableType, $isListableTypeRef] = self::ref($listableType);
 
-        $associativeType = self::associativeType($schema['additionalProperties'] ?? null);
+        [$associativeType, $isAssociativeTypeRef] = self::associativeType($schema['additionalProperties'] ?? null);
 
         return new self(
             name: $name,
@@ -74,6 +75,7 @@ final class Property extends AbstractSchema implements Stringable
             listableType: $nativeListableType ?? 'mixed',
             listableTypeIsRef: $isListableTypeRef ?? null,
             associativeType: $associativeType,
+            associativeTypeIsRef: $isAssociativeTypeRef,
             default: $schema['default'] ?? null,
             readOnly: $schema['readOnly'] ?? false,
             writeOnly: $schema['writeOnly'] ?? false,
@@ -84,34 +86,37 @@ final class Property extends AbstractSchema implements Stringable
         );
     }
 
-    /** @param ?TAdditionalProperties $type */
-    protected static function associativeType(array|bool|null $type): ?string
+    /**
+     * @param ?TAdditionalProperties $type
+     * @return array<?string,?bool>
+     */
+    protected static function associativeType(array|bool|null $type): array
     {
         if (is_null($type) || ! is_array($type)) {
-            return null;
+            return [null, null];
         }
 
         if (isset($type['$ref'])) {
-            return static::ref($type['$ref'])[0];
+            return static::ref($type['$ref']);
         }
 
         if (isset($type['items']['$ref'])) {
-            return static::ref($type['items']['$ref'])[0];
+            return static::ref($type['items']['$ref']);
         }
 
         if (isset($type['items']['type'])) {
-            return 'list<' . $type['items']['type'] . '>';
+            return ['list<' . $type['items']['type'] . '>', false];
         }
 
         if (isset($type['type'])) {
-            return match ($type['type']) {
+            return [match ($type['type']) {
                 'integer' => 'int',
                 'boolean' => 'bool',
                 default => $type['type'],
-            };
+            }, false];
         }
 
-        return null;
+        return [null, null];
     }
 
     public function hasType(): bool

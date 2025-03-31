@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\IssueEntityProperties`](/src/Schema/IssueEntityProp
 | Property | Type | Description |
 | --- | --- | --- |
 | `entitiesIds` | `?list<int>` | A list of entity property IDs. |
-| `properties` | `array<string,JsonNode>` | A list of entity property keys and values. |
+| `properties` | [`array<string,JsonNode>`](/docs/schema/json-node.md) | A list of entity property keys and values. |
 
 ## References
 

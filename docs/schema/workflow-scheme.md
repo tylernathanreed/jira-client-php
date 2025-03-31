@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\WorkflowScheme`](/src/Schema/WorkflowScheme.php)
 | `draft` | `bool` | Whether the workflow scheme is a draft or not. |
 | `id` | `int` | The ID of the workflow scheme. |
 | `issueTypeMappings` | `array<string,string>` | The issue type to workflow mappings, where each mapping is an issue type ID and workflow name pair. Note that an issue type can only be mapped to one workflow in a workflow scheme. |
-| `issueTypes` | `array<string,IssueTypeDetails>` | The issue types available in Jira. |
+| `issueTypes` | [`array<string,IssueTypeDetails>`](/docs/schema/issue-type-details.md) | The issue types available in Jira. |
 | `lastModified` | `string` | The date-time that the draft workflow scheme was last modified. A modification is a change to the issue type-project mappings only. This property does not apply to non-draft workflows. |
 | `lastModifiedUser` | [`User`](/docs/schema/user.md) | The user that last modified the draft workflow scheme. A modification is a change to the issue type-project mappings only. This property does not apply to non-draft workflows. |
 | `name` | `string` | The name of the workflow scheme. The name must be unique. The maximum length is 255 characters. Required when creating a workflow scheme. |

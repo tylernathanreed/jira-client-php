@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueUpdateMetadata`](/src/Schema/IssueUpdateMetada
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fields` | `array<string,FieldMetadata>` |  |
+| `fields` | [`array<string,FieldMetadata>`](/docs/schema/field-metadata.md) |  |
 
 ## References
 

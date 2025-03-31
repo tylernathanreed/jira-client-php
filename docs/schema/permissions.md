@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\Permissions`](/src/Schema/Permissions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `permissions` | `array<string,UserPermission>` | List of permissions. |
+| `permissions` | [`array<string,UserPermission>`](/docs/schema/user-permission.md) | List of permissions. |
 
 ## References
 

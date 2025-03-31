@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\IssueTypeIssueCreateMetadata`](/src/Schema/IssueTyp
 | `description` | `string` | The description of the issue type. |
 | `entityId` | `string` | Unique ID for next-gen projects. |
 | `expand` | `string` | Expand options that include additional issue type metadata details in the response. |
-| `fields` | `array<string,FieldMetadata>` | List of the fields available when creating an issue for the issue type. |
+| `fields` | [`array<string,FieldMetadata>`](/docs/schema/field-metadata.md) | List of the fields available when creating an issue for the issue type. |
 | `hierarchyLevel` | `int` | Hierarchy level of the issue type. |
 | `iconUrl` | `string` | The URL of the issue type's avatar. |
 | `id` | `string` | The ID of the issue type. |

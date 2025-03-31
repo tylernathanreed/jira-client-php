@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\IssueTransition`](/src/Schema/IssueTransition.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `expand` | `string` | Expand options that include additional transition details in the response. |
-| `fields` | `array<string,FieldMetadata>` | Details of the fields associated with the issue transition screen. Use this information to populate `fields` and `update` in a transition request. |
+| `fields` | [`array<string,FieldMetadata>`](/docs/schema/field-metadata.md) | Details of the fields associated with the issue transition screen. Use this information to populate `fields` and `update` in a transition request. |
 | `hasScreen` | `bool` | Whether there is a screen associated with the issue transition. |
 | `id` | `string` | The ID of the issue transition. Required when specifying a transition to undertake. |
 | `isAvailable` | `bool` | Whether the transition is available to be performed. |

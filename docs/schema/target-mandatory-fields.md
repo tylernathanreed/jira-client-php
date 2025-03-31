@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\TargetMandatoryFields`](/src/Schema/TargetMandatory
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fields` | `array<string,Fields>` | Contains the value of mandatory fields |
+| `fields` | [`array<string,Fields>`](/docs/schema/fields.md) | Contains the value of mandatory fields |
 
 ## References
 

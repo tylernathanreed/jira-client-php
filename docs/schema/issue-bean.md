@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\IssueBean`](/src/Schema/IssueBean.php)
 | `operations` | [`Operations`](/docs/schema/operations.md) | The operations that can be performed on the issue. |
 | `properties` | `array<string,mixed>` | Details of the issue properties identified in the request. |
 | `renderedFields` | `array<string,mixed>` | The rendered value of each field present on the issue. |
-| `schema` | `array<string,JsonTypeBean>` | The schema describing each field present on the issue. |
+| `schema` | [`array<string,JsonTypeBean>`](/docs/schema/json-type-bean.md) | The schema describing each field present on the issue. |
 | `self` | `string` | The URL of the issue details. |
 | `transitions` | [`?list<IssueTransition>`](/docs/schema/issue-transition.md) | The transitions that can be performed on the issue. |
 | `versionedRepresentations` | `array<string,object>` | The versions of each field on the issue. |
