@@ -2,7 +2,7 @@
 
 namespace Jira\CodeGen\Commands;
 
-use Jira\CodeGen\Exceptions\CommandException;
+use Jira\CodeGen\Exceptions\CommandFailedException;
 use LogicException;
 use Override;
 use Symfony\Component\Console\Command\Command as SymfonyCommand;
@@ -22,7 +22,7 @@ class Command extends SymfonyCommand
 
         try {
             return $this->handle();
-        } catch (CommandException $e) {
+        } catch (CommandFailedException $e) {
             $this->error($e);
 
             return $e->getCode() ?: 1;

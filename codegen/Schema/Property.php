@@ -88,7 +88,7 @@ final class Property extends AbstractSchema implements Stringable
 
     /**
      * @param ?TAdditionalProperties $type
-     * @return array<?string,?bool>
+     * @return array{0:?string,1:?bool}
      */
     protected static function associativeType(array|bool|null $type): array
     {
