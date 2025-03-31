@@ -16,7 +16,7 @@ Source: [`Jira\Client\Schema\GetIssueSourceResponse`](/src/Schema/GetIssueSource
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [GetPlanResponse](/docs/schema/get-plan-response.md) |
 | [GetPlanResponseForPage](/docs/schema/get-plan-response-for-page.md) |

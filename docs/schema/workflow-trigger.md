@@ -18,7 +18,7 @@ Source: [`Jira\Client\Schema\WorkflowTrigger`](/src/Schema/WorkflowTrigger.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [TransitionUpdateDTO](/docs/schema/transition-update-d-t-o.md) |
 | [WorkflowTransitions](/docs/schema/workflow-transitions.md) |

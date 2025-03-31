@@ -20,8 +20,8 @@ Source: [`Jira\Client\Schema\UiModificationContextDetails`](/src/Schema/UiModifi
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreateUiModificationDetails](/docs/schema/create-ui-modification-details.md) |
 | [UiModificationDetails](/docs/schema/ui-modification-details.md) |
 | [UpdateUiModificationDetails](/docs/schema/update-ui-modification-details.md) |

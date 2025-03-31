@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\SimplifiedHierarchyLevel`](/src/Schema/SimplifiedHi
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Hierarchy](/docs/schema/hierarchy.md) |

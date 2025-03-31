@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ProjectIdentifierBean`](/src/Schema/ProjectIdentifi
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PermittedProjects](/docs/schema/permitted-projects.md) |

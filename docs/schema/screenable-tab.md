@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\ScreenableTab`](/src/Schema/ScreenableTab.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ScreenWithTab](/docs/schema/screen-with-tab.md) |

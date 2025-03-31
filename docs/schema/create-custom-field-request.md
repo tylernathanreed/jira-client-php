@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\CreateCustomFieldRequest`](/src/Schema/CreateCustom
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatePlanRequest](/docs/schema/create-plan-request.md) |

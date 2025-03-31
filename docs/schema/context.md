@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\Context`](/src/Schema/Context.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanContext](/docs/schema/page-bean-context.md) |

@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\WorkflowCreate`](/src/Schema/WorkflowCreate.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCreateRequest](/docs/schema/workflow-create-request.md) |

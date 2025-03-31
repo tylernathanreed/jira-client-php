@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\WorkflowMetadataAndIssueTypeRestModel`](/src/Schema
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowSchemeReadResponse](/docs/schema/workflow-scheme-read-response.md) |

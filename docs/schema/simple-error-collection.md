@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\SimpleErrorCollection`](/src/Schema/SimpleErrorColl
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [RemoveOptionFromIssuesResult](/docs/schema/remove-option-from-issues-result.md) |

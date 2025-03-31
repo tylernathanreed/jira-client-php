@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IssueMatchesForJQL`](/src/Schema/IssueMatchesForJQL
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueMatches](/docs/schema/issue-matches.md) |

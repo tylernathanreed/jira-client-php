@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\StatusWorkflowUsageWorkflow`](/src/Schema/StatusWor
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [StatusWorkflowUsagePage](/docs/schema/status-workflow-usage-page.md) |

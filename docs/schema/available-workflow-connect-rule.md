@@ -24,6 +24,6 @@ Source: [`Jira\Client\Schema\AvailableWorkflowConnectRule`](/src/Schema/Availabl
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCapabilities](/docs/schema/workflow-capabilities.md) |

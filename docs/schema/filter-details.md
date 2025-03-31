@@ -30,6 +30,6 @@ Source: [`Jira\Client\Schema\FilterDetails`](/src/Schema/FilterDetails.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanFilterDetails](/docs/schema/page-bean-filter-details.md) |

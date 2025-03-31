@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\CompoundClause`](/src/Schema/CompoundClause.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueryClause](/docs/schema/jql-query-clause.md) |

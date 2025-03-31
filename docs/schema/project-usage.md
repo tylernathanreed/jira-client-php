@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\ProjectUsage`](/src/Schema/ProjectUsage.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ProjectUsagePage](/docs/schema/project-usage-page.md) |

@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\FieldWasClause`](/src/Schema/FieldWasClause.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueryClause](/docs/schema/jql-query-clause.md) |

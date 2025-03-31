@@ -21,8 +21,8 @@ Source: [`Jira\Client\Schema\PermissionHolder`](/src/Schema/PermissionHolder.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueSecurityLevelMember](/docs/schema/issue-security-level-member.md) |
 | [PermissionGrant](/docs/schema/permission-grant.md) |
 | [SecurityLevelMember](/docs/schema/security-level-member.md) |

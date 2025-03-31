@@ -14,6 +14,6 @@ Source: [`Jira\Client\Schema\JqlQueryUnitaryOperand`](/src/Schema/JqlQueryUnitar
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ListOperand](/docs/schema/list-operand.md) |

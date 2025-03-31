@@ -16,7 +16,7 @@ Source: [`Jira\Client\Schema\SecuritySchemeLevelMemberBean`](/src/Schema/Securit
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SecuritySchemeLevelBean](/docs/schema/security-scheme-level-bean.md) |
 | [SecuritySchemeMembersRequest](/docs/schema/security-scheme-members-request.md) |

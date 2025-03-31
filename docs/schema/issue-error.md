@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IssueError`](/src/Schema/IssueError.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkIssueResults](/docs/schema/bulk-issue-results.md) |

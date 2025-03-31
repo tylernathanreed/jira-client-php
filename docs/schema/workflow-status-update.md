@@ -20,7 +20,7 @@ Source: [`Jira\Client\Schema\WorkflowStatusUpdate`](/src/Schema/WorkflowStatusUp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCreateRequest](/docs/schema/workflow-create-request.md) |
 | [WorkflowUpdateRequest](/docs/schema/workflow-update-request.md) |

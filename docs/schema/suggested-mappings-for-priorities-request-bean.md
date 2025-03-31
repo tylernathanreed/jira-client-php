@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\SuggestedMappingsForPrioritiesRequestBean`](/src/Sc
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SuggestedMappingsRequestBean](/docs/schema/suggested-mappings-request-bean.md) |

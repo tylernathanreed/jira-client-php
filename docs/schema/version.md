@@ -47,8 +47,8 @@ Optional for create and update. |
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListVersion](/docs/schema/legacy-jackson1-list-version.md) |
 | [PageBeanVersion](/docs/schema/page-bean-version.md) |
 | [Project](/docs/schema/project.md) |

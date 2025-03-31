@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraPriorityField`](/src/Schema/JiraPriorityField.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

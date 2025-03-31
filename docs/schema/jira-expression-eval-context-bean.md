@@ -27,6 +27,6 @@ Source: [`Jira\Client\Schema\JiraExpressionEvalContextBean`](/src/Schema/JiraExp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionEvalRequestBean](/docs/schema/jira-expression-eval-request-bean.md) |

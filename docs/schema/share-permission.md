@@ -35,8 +35,8 @@ For a request, specify the `id` for the role. You must also specify the `project
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Dashboard](/docs/schema/dashboard.md) |
 | [DashboardDetails](/docs/schema/dashboard-details.md) |
 | [Filter](/docs/schema/filter.md) |

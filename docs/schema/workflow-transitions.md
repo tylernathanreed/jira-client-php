@@ -28,6 +28,6 @@ Source: [`Jira\Client\Schema\WorkflowTransitions`](/src/Schema/WorkflowTransitio
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraWorkflow](/docs/schema/jira-workflow.md) |

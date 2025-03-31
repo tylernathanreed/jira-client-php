@@ -29,6 +29,6 @@ The workflows that use this status. Only available if the `workflowUsages` expan
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageOfStatuses](/docs/schema/page-of-statuses.md) |

@@ -24,7 +24,7 @@ Source: [`Jira\Client\Schema\ApprovalConfiguration`](/src/Schema/ApprovalConfigu
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [StatusLayoutUpdate](/docs/schema/status-layout-update.md) |
 | [WorkflowReferenceStatus](/docs/schema/workflow-reference-status.md) |

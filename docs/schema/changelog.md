@@ -21,8 +21,8 @@ Source: [`Jira\Client\Schema\Changelog`](/src/Schema/Changelog.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueChangeLog](/docs/schema/issue-change-log.md) |
 | [PageBeanChangelog](/docs/schema/page-bean-changelog.md) |
 | [PageOfChangelogs](/docs/schema/page-of-changelogs.md) |

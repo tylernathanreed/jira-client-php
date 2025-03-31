@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\WorkflowAssociationStatusMapping`](/src/Schema/Work
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [MappingsByIssueTypeOverride](/docs/schema/mappings-by-issue-type-override.md) |
 | [MappingsByWorkflow](/docs/schema/mappings-by-workflow.md) |

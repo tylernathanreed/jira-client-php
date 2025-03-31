@@ -18,7 +18,7 @@ Source: [`Jira\Client\Schema\SecuritySchemeLevelBean`](/src/Schema/SecuritySchem
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AddSecuritySchemeLevelsRequestBean](/docs/schema/add-security-scheme-levels-request-bean.md) |
 | [CreateIssueSecuritySchemeDetails](/docs/schema/create-issue-security-scheme-details.md) |

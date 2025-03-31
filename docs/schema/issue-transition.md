@@ -26,8 +26,8 @@ Source: [`Jira\Client\Schema\IssueTransition`](/src/Schema/IssueTransition.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueBean](/docs/schema/issue-bean.md) |
 | [IssueUpdateDetails](/docs/schema/issue-update-details.md) |
 | [Transitions](/docs/schema/transitions.md) |

@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\JqlQueryClauseTimePredicate`](/src/Schema/JqlQueryC
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FieldChangedClause](/docs/schema/field-changed-clause.md) |
 | [FieldWasClause](/docs/schema/field-was-clause.md) |

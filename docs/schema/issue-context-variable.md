@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\IssueContextVariable`](/src/Schema/IssueContextVari
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomContextVariable](/docs/schema/custom-context-variable.md) |

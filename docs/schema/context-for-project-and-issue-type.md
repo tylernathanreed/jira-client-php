@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\ContextForProjectAndIssueType`](/src/Schema/Context
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanContextForProjectAndIssueType](/docs/schema/page-bean-context-for-project-and-issue-type.md) |

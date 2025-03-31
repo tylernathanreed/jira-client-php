@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeUserField`](/src
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValue](/docs/schema/custom-field-context-default-value.md) |

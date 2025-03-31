@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\WorkflowValidationError`](/src/Schema/WorkflowValid
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowValidationErrorList](/docs/schema/workflow-validation-error-list.md) |

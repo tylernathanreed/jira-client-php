@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\ScreenTypes`](/src/Schema/ScreenTypes.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ScreenScheme](/docs/schema/screen-scheme.md) |
 | [ScreenSchemeDetails](/docs/schema/screen-scheme-details.md) |

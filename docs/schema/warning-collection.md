@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\WarningCollection`](/src/Schema/WarningCollection.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [NestedResponse](/docs/schema/nested-response.md) |

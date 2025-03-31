@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JiraSingleLineTextField`](/src/Schema/JiraSingleLin
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

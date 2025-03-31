@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\DateRangeFilterRequest`](/src/Schema/DateRangeFilte
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ArchivedIssuesFilterRequest](/docs/schema/archived-issues-filter-request.md) |

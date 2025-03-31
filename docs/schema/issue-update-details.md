@@ -24,6 +24,6 @@ Source: [`Jira\Client\Schema\IssueUpdateDetails`](/src/Schema/IssueUpdateDetails
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssuesUpdateBean](/docs/schema/issues-update-bean.md) |

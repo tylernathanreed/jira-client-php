@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\GetPermissionResponse`](/src/Schema/GetPermissionRe
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [GetPlanResponse](/docs/schema/get-plan-response.md) |

@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\ProjectRoleGroup`](/src/Schema/ProjectRoleGroup.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [RoleActor](/docs/schema/role-actor.md) |

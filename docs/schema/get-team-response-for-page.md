@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\GetTeamResponseForPage`](/src/Schema/GetTeamRespons
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageWithCursorGetTeamResponseForPage](/docs/schema/page-with-cursor-get-team-response-for-page.md) |

@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\CustomFieldContext`](/src/Schema/CustomFieldContext
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanCustomFieldContext](/docs/schema/page-bean-custom-field-context.md) |

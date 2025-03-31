@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\BulkChangeOwnerDetails`](/src/Schema/BulkChangeOwne
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkEditShareableEntityRequest](/docs/schema/bulk-edit-shareable-entity-request.md) |

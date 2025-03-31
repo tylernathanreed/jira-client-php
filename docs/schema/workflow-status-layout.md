@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\WorkflowStatusLayout`](/src/Schema/WorkflowStatusLa
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowReferenceStatus](/docs/schema/workflow-reference-status.md) |

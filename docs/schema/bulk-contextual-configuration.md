@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\BulkContextualConfiguration`](/src/Schema/BulkConte
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanBulkContextualConfiguration](/docs/schema/page-bean-bulk-contextual-configuration.md) |

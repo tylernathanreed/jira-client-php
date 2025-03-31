@@ -18,7 +18,7 @@ Source: [`Jira\Client\Schema\JiraExpressionsComplexityBean`](/src/Schema/JiraExp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JExpEvaluateMetaDataBean](/docs/schema/j-exp-evaluate-meta-data-bean.md) |
 | [JiraExpressionEvaluationMetaDataBean](/docs/schema/jira-expression-evaluation-meta-data-bean.md) |

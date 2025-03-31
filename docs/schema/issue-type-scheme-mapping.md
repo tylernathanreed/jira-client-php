@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IssueTypeSchemeMapping`](/src/Schema/IssueTypeSchem
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanIssueTypeSchemeMapping](/docs/schema/page-bean-issue-type-scheme-mapping.md) |

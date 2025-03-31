@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultipleGroupPicker`]
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValue](/docs/schema/custom-field-context-default-value.md) |

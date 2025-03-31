@@ -24,6 +24,6 @@ Source: [`Jira\Client\Schema\Transition`](/src/Schema/Transition.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Workflow](/docs/schema/workflow.md) |

@@ -23,7 +23,7 @@ The username of the user. |
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Dashboard](/docs/schema/dashboard.md) |
 | [SharePermission](/docs/schema/share-permission.md) |

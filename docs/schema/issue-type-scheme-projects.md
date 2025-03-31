@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IssueTypeSchemeProjects`](/src/Schema/IssueTypeSche
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanIssueTypeSchemeProjects](/docs/schema/page-bean-issue-type-scheme-projects.md) |

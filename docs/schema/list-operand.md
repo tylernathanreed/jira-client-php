@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ListOperand`](/src/Schema/ListOperand.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueryClauseOperand](/docs/schema/jql-query-clause-operand.md) |

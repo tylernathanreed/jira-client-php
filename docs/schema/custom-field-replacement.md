@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\CustomFieldReplacement`](/src/Schema/CustomFieldRep
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [DeleteAndReplaceVersionBean](/docs/schema/delete-and-replace-version-bean.md) |

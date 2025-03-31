@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\FieldUpdateOperation`](/src/Schema/FieldUpdateOpera
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueUpdateDetails](/docs/schema/issue-update-details.md) |

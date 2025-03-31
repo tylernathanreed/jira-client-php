@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\WorkflowUsages`](/src/Schema/WorkflowUsages.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraStatus](/docs/schema/jira-status.md) |

@@ -30,8 +30,8 @@ Use the optional `workflows.usages` expand to get additional information about t
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCreateResponse](/docs/schema/workflow-create-response.md) |
 | [WorkflowReadResponse](/docs/schema/workflow-read-response.md) |
 | [WorkflowSearchResponse](/docs/schema/workflow-search-response.md) |

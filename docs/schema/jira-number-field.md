@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JiraNumberField`](/src/Schema/JiraNumberField.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\SecurityLevelMember`](/src/Schema/SecurityLevelMemb
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanSecurityLevelMember](/docs/schema/page-bean-security-level-member.md) |

@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\PermissionDetails`](/src/Schema/PermissionDetails.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkEditShareableEntityRequest](/docs/schema/bulk-edit-shareable-entity-request.md) |

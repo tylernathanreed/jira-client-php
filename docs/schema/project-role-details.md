@@ -26,6 +26,6 @@ Source: [`Jira\Client\Schema\ProjectRoleDetails`](/src/Schema/ProjectRoleDetails
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListProjectRoleDetails](/docs/schema/legacy-jackson1-list-project-role-details.md) |

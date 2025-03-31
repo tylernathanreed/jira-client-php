@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\StatusMapping`](/src/Schema/StatusMapping.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PublishDraftWorkflowScheme](/docs/schema/publish-draft-workflow-scheme.md) |

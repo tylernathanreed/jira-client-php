@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\ProjectFeature`](/src/Schema/ProjectFeature.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ContainerForProjectFeatures](/docs/schema/container-for-project-features.md) |

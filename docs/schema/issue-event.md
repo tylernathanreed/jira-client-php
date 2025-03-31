@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\IssueEvent`](/src/Schema/IssueEvent.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListIssueEvent](/docs/schema/legacy-jackson1-list-issue-event.md) |

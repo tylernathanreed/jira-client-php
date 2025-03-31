@@ -24,6 +24,6 @@ Source: [`Jira\Client\Schema\JiraExpressionValidationError`](/src/Schema/JiraExp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionAnalysis](/docs/schema/jira-expression-analysis.md) |

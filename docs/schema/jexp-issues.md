@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JexpIssues`](/src/Schema/JexpIssues.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionEvalContextBean](/docs/schema/jira-expression-eval-context-bean.md) |

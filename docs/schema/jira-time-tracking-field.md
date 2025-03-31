@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraTimeTrackingField`](/src/Schema/JiraTimeTrackin
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\JiraExpressionAnalysis`](/src/Schema/JiraExpression
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionsAnalysis](/docs/schema/jira-expressions-analysis.md) |

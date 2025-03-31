@@ -14,7 +14,7 @@ Source: [`Jira\Client\Schema\WorkflowCondition`](/src/Schema/WorkflowCondition.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCompoundCondition](/docs/schema/workflow-compound-condition.md) |
 | [WorkflowRules](/docs/schema/workflow-rules.md) |

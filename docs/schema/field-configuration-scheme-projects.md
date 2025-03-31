@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\FieldConfigurationSchemeProjects`](/src/Schema/Fiel
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanFieldConfigurationSchemeProjects](/docs/schema/page-bean-field-configuration-scheme-projects.md) |

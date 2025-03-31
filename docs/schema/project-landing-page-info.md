@@ -25,6 +25,6 @@ Source: [`Jira\Client\Schema\ProjectLandingPageInfo`](/src/Schema/ProjectLanding
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Project](/docs/schema/project.md) |

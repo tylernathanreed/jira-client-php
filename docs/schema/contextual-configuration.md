@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\ContextualConfiguration`](/src/Schema/ContextualCon
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldConfigurations](/docs/schema/custom-field-configurations.md) |
 | [PageBeanContextualConfiguration](/docs/schema/page-bean-contextual-configuration.md) |

@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\CustomFieldOptionCreate`](/src/Schema/CustomFieldOp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkCustomFieldOptionCreateRequest](/docs/schema/bulk-custom-field-option-create-request.md) |

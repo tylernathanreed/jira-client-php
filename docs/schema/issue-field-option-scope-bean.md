@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IssueFieldOptionScopeBean`](/src/Schema/IssueFieldO
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueFieldOptionConfiguration](/docs/schema/issue-field-option-configuration.md) |

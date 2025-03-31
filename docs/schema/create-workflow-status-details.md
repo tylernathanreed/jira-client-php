@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\CreateWorkflowStatusDetails`](/src/Schema/CreateWor
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreateWorkflowDetails](/docs/schema/create-workflow-details.md) |

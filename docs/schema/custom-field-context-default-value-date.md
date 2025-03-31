@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueDate`](/src/Schema/Cu
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValue](/docs/schema/custom-field-context-default-value.md) |

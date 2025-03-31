@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\WorkflowSchemeAssociation`](/src/Schema/WorkflowSch
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowSchemeUpdateRequest](/docs/schema/workflow-scheme-update-request.md) |
 | [WorkflowSchemeUpdateRequiredMappingsRequest](/docs/schema/workflow-scheme-update-required-mappings-request.md) |

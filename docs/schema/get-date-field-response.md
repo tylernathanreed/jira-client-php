@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\GetDateFieldResponse`](/src/Schema/GetDateFieldResp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [GetSchedulingResponse](/docs/schema/get-scheduling-response.md) |

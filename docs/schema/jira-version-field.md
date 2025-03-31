@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\JiraVersionField`](/src/Schema/JiraVersionField.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraMultipleVersionPickerField](/docs/schema/jira-multiple-version-picker-field.md) |
 | [JiraSingleVersionPickerField](/docs/schema/jira-single-version-picker-field.md) |

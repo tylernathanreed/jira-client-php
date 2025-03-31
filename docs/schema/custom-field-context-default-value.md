@@ -13,7 +13,7 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValue`](/src/Schema/Custom
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValueUpdate](/docs/schema/custom-field-context-default-value-update.md) |
 | [PageBeanCustomFieldContextDefaultValue](/docs/schema/page-bean-custom-field-context-default-value.md) |

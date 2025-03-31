@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JExpEvaluateIssuesJqlMetaDataBean`](/src/Schema/JEx
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JExpEvaluateIssuesMetaBean](/docs/schema/j-exp-evaluate-issues-meta-bean.md) |

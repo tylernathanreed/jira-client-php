@@ -26,7 +26,7 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationBean`](/src/Schema/JqlFunc
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlFunctionPrecomputationGetByIdResponse](/docs/schema/jql-function-precomputation-get-by-id-response.md) |
 | [PageBean2JqlFunctionPrecomputationBean](/docs/schema/page-bean2-jql-function-precomputation-bean.md) |

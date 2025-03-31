@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\IssuesJqlMetaDataBean`](/src/Schema/IssuesJqlMetaDa
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssuesMetaBean](/docs/schema/issues-meta-bean.md) |

@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\VersionUsageInCustomField`](/src/Schema/VersionUsag
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [VersionIssueCounts](/docs/schema/version-issue-counts.md) |

@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\AvailableWorkflowForgeRule`](/src/Schema/AvailableW
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCapabilities](/docs/schema/workflow-capabilities.md) |

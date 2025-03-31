@@ -20,8 +20,8 @@ Source: [`Jira\Client\Schema\JqlQueryField`](/src/Schema/JqlQueryField.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FieldChangedClause](/docs/schema/field-changed-clause.md) |
 | [FieldValueClause](/docs/schema/field-value-clause.md) |
 | [FieldWasClause](/docs/schema/field-was-clause.md) |

@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\SanitizedJqlQuery`](/src/Schema/SanitizedJqlQuery.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SanitizedJqlQueries](/docs/schema/sanitized-jql-queries.md) |

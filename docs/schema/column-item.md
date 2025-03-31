@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\ColumnItem`](/src/Schema/ColumnItem.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListColumnItem](/docs/schema/legacy-jackson1-list-column-item.md) |

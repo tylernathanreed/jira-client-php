@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JiraRichTextField`](/src/Schema/JiraRichTextField.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

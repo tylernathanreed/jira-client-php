@@ -20,8 +20,8 @@ Source: [`Jira\Client\Schema\GroupName`](/src/Schema/GroupName.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ApplicationRole](/docs/schema/application-role.md) |
 | [EventNotification](/docs/schema/event-notification.md) |
 | [FilterSubscription](/docs/schema/filter-subscription.md) |

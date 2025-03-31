@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\UserList`](/src/Schema/UserList.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Filter](/docs/schema/filter.md) |

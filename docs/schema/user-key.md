@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\UserKey`](/src/Schema/UserKey.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanUserKey](/docs/schema/page-bean-user-key.md) |

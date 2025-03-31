@@ -21,8 +21,8 @@ Source: [`Jira\Client\Schema\JsonTypeBean`](/src/Schema/JsonTypeBean.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Field](/docs/schema/field.md) |
 | [FieldCreateMetadata](/docs/schema/field-create-metadata.md) |
 | [FieldDetails](/docs/schema/field-details.md) |

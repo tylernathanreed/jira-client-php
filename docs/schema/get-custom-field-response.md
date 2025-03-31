@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\GetCustomFieldResponse`](/src/Schema/GetCustomField
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [GetPlanResponse](/docs/schema/get-plan-response.md) |

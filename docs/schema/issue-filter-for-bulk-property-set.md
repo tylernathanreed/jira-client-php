@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\IssueFilterForBulkPropertySet`](/src/Schema/IssueFi
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkIssuePropertyUpdateRequest](/docs/schema/bulk-issue-property-update-request.md) |

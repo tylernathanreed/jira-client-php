@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\GroupDetails`](/src/Schema/GroupDetails.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanGroupDetails](/docs/schema/page-bean-group-details.md) |

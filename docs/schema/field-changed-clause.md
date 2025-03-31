@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\FieldChangedClause`](/src/Schema/FieldChangedClause
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueryClause](/docs/schema/jql-query-clause.md) |

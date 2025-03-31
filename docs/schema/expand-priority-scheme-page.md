@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ExpandPrioritySchemePage`](/src/Schema/ExpandPriori
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Priority](/docs/schema/priority.md) |

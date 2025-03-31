@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\ProjectIssueCreateMetadata`](/src/Schema/ProjectIss
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueCreateMetadata](/docs/schema/issue-create-metadata.md) |

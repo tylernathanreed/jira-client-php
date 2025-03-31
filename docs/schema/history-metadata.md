@@ -26,7 +26,7 @@ Source: [`Jira\Client\Schema\HistoryMetadata`](/src/Schema/HistoryMetadata.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Changelog](/docs/schema/changelog.md) |
 | [IssueUpdateDetails](/docs/schema/issue-update-details.md) |

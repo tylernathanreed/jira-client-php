@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\JqlQueryFieldEntityProperty`](/src/Schema/JqlQueryF
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueryField](/docs/schema/jql-query-field.md) |

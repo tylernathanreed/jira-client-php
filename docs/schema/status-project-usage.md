@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\StatusProjectUsage`](/src/Schema/StatusProjectUsage
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [StatusProjectUsagePage](/docs/schema/status-project-usage-page.md) |

@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\AvailableDashboardGadget`](/src/Schema/AvailableDas
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AvailableDashboardGadgetsResponse](/docs/schema/available-dashboard-gadgets-response.md) |

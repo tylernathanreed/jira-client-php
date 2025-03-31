@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\NotificationRecipients`](/src/Schema/NotificationRe
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Notification](/docs/schema/notification.md) |

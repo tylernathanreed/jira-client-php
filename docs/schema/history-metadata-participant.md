@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\HistoryMetadataParticipant`](/src/Schema/HistoryMet
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [HistoryMetadata](/docs/schema/history-metadata.md) |

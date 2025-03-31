@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\StatusCreate`](/src/Schema/StatusCreate.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [StatusCreateRequest](/docs/schema/status-create-request.md) |

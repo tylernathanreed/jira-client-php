@@ -26,6 +26,6 @@ Source: [`Jira\Client\Schema\Workflow`](/src/Schema/Workflow.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanWorkflow](/docs/schema/page-bean-workflow.md) |

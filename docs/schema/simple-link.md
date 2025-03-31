@@ -22,7 +22,7 @@ Source: [`Jira\Client\Schema\SimpleLink`](/src/Schema/SimpleLink.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LinkGroup](/docs/schema/link-group.md) |
 | [Version](/docs/schema/version.md) |

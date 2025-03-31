@@ -17,8 +17,8 @@ Source: [`Jira\Client\Schema\WorkflowId`](/src/Schema/WorkflowId.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowTransitionRules](/docs/schema/workflow-transition-rules.md) |
 | [WorkflowTransitionRulesDetails](/docs/schema/workflow-transition-rules-details.md) |
 | [WorkflowTransitionRulesUpdateErrorDetails](/docs/schema/workflow-transition-rules-update-error-details.md) |

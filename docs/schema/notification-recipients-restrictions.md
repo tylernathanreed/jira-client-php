@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\NotificationRecipientsRestrictions`](/src/Schema/No
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Notification](/docs/schema/notification.md) |

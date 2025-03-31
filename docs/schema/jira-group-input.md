@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\JiraGroupInput`](/src/Schema/JiraGroupInput.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraMultipleGroupPickerField](/docs/schema/jira-multiple-group-picker-field.md) |
 | [JiraSingleGroupPickerField](/docs/schema/jira-single-group-picker-field.md) |

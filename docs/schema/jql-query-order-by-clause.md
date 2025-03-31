@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JqlQueryOrderByClause`](/src/Schema/JqlQueryOrderBy
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQuery](/docs/schema/jql-query.md) |

@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraLabelsInput`](/src/Schema/JiraLabelsInput.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraLabelsField](/docs/schema/jira-labels-field.md) |

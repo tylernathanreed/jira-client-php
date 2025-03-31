@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\CustomContextVariable`](/src/Schema/CustomContextVa
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionEvalContextBean](/docs/schema/jira-expression-eval-context-bean.md) |
 | [JiraExpressionEvaluateContextBean](/docs/schema/jira-expression-evaluate-context-bean.md) |

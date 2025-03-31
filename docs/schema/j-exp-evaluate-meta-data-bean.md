@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\JExpEvaluateMetaDataBean`](/src/Schema/JExpEvaluate
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JExpEvaluateJiraExpressionResultBean](/docs/schema/j-exp-evaluate-jira-expression-result-bean.md) |

@@ -75,6 +75,6 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionRulesDetails`](/src/Schema/
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreateWorkflowTransitionDetails](/docs/schema/create-workflow-transition-details.md) |

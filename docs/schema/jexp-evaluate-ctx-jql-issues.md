@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\JexpEvaluateCtxJqlIssues`](/src/Schema/JexpEvaluate
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JexpEvaluateCtxIssues](/docs/schema/jexp-evaluate-ctx-issues.md) |

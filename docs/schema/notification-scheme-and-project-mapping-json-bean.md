@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\NotificationSchemeAndProjectMappingJsonBean`](/src/
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanNotificationSchemeAndProjectMappingJsonBean](/docs/schema/page-bean-notification-scheme-and-project-mapping-json-bean.md) |

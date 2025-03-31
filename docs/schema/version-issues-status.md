@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\VersionIssuesStatus`](/src/Schema/VersionIssuesStat
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Version](/docs/schema/version.md) |

@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\JiraExpressionComplexity`](/src/Schema/JiraExpressi
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionAnalysis](/docs/schema/jira-expression-analysis.md) |

@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JiraExpressionEvaluationMetaDataBean`](/src/Schema/
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionResult](/docs/schema/jira-expression-result.md) |

@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\GlobalScopeBean`](/src/Schema/GlobalScopeBean.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueFieldOptionScopeBean](/docs/schema/issue-field-option-scope-bean.md) |

@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IssueSecuritySchemeToProjectMapping`](/src/Schema/I
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanIssueSecuritySchemeToProjectMapping](/docs/schema/page-bean-issue-security-scheme-to-project-mapping.md) |

@@ -20,7 +20,7 @@ Source: [`Jira\Client\Schema\IssueTypeScheme`](/src/Schema/IssueTypeScheme.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueTypeSchemeProjects](/docs/schema/issue-type-scheme-projects.md) |
 | [PageBeanIssueTypeScheme](/docs/schema/page-bean-issue-type-scheme.md) |

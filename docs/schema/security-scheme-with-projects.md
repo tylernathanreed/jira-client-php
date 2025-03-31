@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\SecuritySchemeWithProjects`](/src/Schema/SecuritySc
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanSecuritySchemeWithProjects](/docs/schema/page-bean-security-scheme-with-projects.md) |

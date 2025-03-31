@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IssueChangeLog`](/src/Schema/IssueChangeLog.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkChangelogResponseBean](/docs/schema/bulk-changelog-response-bean.md) |

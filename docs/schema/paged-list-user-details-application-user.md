@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\PagedListUserDetailsApplicationUser`](/src/Schema/P
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Group](/docs/schema/group.md) |

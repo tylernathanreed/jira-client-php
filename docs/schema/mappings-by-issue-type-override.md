@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\MappingsByIssueTypeOverride`](/src/Schema/MappingsB
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowSchemeUpdateRequest](/docs/schema/workflow-scheme-update-request.md) |

@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\UserContextVariable`](/src/Schema/UserContextVariab
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomContextVariable](/docs/schema/custom-context-variable.md) |

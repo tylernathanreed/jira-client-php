@@ -18,8 +18,8 @@ Source: [`Jira\Client\Schema\AvatarUrlsBean`](/src/Schema/AvatarUrlsBean.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Project](/docs/schema/project.md) |
 | [ProjectDetails](/docs/schema/project-details.md) |
 | [ProjectIssueCreateMetadata](/docs/schema/project-issue-create-metadata.md) |

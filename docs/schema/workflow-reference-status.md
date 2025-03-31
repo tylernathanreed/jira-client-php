@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\WorkflowReferenceStatus`](/src/Schema/WorkflowRefer
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraWorkflow](/docs/schema/jira-workflow.md) |

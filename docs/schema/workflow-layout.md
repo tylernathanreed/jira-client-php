@@ -17,8 +17,8 @@ Source: [`Jira\Client\Schema\WorkflowLayout`](/src/Schema/WorkflowLayout.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraWorkflow](/docs/schema/jira-workflow.md) |
 | [StatusLayoutUpdate](/docs/schema/status-layout-update.md) |
 | [WorkflowCreate](/docs/schema/workflow-create.md) |

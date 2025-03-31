@@ -125,8 +125,8 @@ Source: [`Jira\Client\Schema\ErrorCollection`](/src/Schema/ErrorCollection.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkOperationErrorResult](/docs/schema/bulk-operation-error-result.md) |
 | [NestedResponse](/docs/schema/nested-response.md) |
 | [SanitizedJqlQuery](/docs/schema/sanitized-jql-query.md) |

@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\CreatePermissionRequest`](/src/Schema/CreatePermiss
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatePlanRequest](/docs/schema/create-plan-request.md) |

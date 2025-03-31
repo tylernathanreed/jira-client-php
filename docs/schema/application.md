@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\Application`](/src/Schema/Application.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [RemoteIssueLink](/docs/schema/remote-issue-link.md) |
 | [RemoteIssueLinkRequest](/docs/schema/remote-issue-link-request.md) |

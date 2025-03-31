@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\ProjectIssueTypesHierarchyLevel`](/src/Schema/Proje
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ProjectIssueTypeHierarchy](/docs/schema/project-issue-type-hierarchy.md) |

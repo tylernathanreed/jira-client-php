@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRulesUpdateErrorDetails`](/src/Sc
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowTransitionRulesUpdateErrors](/docs/schema/workflow-transition-rules-update-errors.md) |

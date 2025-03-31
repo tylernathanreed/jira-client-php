@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeMultiGroupField`
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValue](/docs/schema/custom-field-context-default-value.md) |

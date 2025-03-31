@@ -27,8 +27,8 @@ Source: [`Jira\Client\Schema\EntityProperty`](/src/Schema/EntityProperty.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ChangedWorklog](/docs/schema/changed-worklog.md) |
 | [Comment](/docs/schema/comment.md) |
 | [IssueUpdateDetails](/docs/schema/issue-update-details.md) |

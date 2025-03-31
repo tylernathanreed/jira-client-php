@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\Errors`](/src/Schema/Errors.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueArchivalSyncResponse](/docs/schema/issue-archival-sync-response.md) |

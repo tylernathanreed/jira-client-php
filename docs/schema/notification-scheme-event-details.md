@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\NotificationSchemeEventDetails`](/src/Schema/Notifi
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AddNotificationsDetails](/docs/schema/add-notifications-details.md) |
 | [CreateNotificationSchemeDetails](/docs/schema/create-notification-scheme-details.md) |

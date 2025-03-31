@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\WorkflowRules`](/src/Schema/WorkflowRules.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Transition](/docs/schema/transition.md) |

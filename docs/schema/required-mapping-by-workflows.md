@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\RequiredMappingByWorkflows`](/src/Schema/RequiredMa
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowSchemeUpdateRequiredMappingsResponse](/docs/schema/workflow-scheme-update-required-mappings-response.md) |

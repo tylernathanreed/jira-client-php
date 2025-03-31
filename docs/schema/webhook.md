@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\Webhook`](/src/Schema/Webhook.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanWebhook](/docs/schema/page-bean-webhook.md) |

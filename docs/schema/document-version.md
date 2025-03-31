@@ -17,8 +17,8 @@ Source: [`Jira\Client\Schema\DocumentVersion`](/src/Schema/DocumentVersion.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraWorkflow](/docs/schema/jira-workflow.md) |
 | [WorkflowMetadataRestModel](/docs/schema/workflow-metadata-rest-model.md) |
 | [WorkflowSchemeReadResponse](/docs/schema/workflow-scheme-read-response.md) |

@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\Error`](/src/Schema/Error.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Errors](/docs/schema/errors.md) |

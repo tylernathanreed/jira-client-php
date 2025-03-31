@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\ConditionGroupConfiguration`](/src/Schema/Condition
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowTransitions](/docs/schema/workflow-transitions.md) |

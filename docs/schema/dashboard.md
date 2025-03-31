@@ -34,7 +34,7 @@ Source: [`Jira\Client\Schema\Dashboard`](/src/Schema/Dashboard.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanDashboard](/docs/schema/page-bean-dashboard.md) |
 | [PageOfDashboards](/docs/schema/page-of-dashboards.md) |

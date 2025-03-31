@@ -32,6 +32,6 @@ Source: [`Jira\Client\Schema\ApplicationRole`](/src/Schema/ApplicationRole.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SimpleListWrapperApplicationRole](/docs/schema/simple-list-wrapper-application-role.md) |

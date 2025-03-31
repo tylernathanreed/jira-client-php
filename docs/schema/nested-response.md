@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\NestedResponse`](/src/Schema/NestedResponse.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatedIssue](/docs/schema/created-issue.md) |

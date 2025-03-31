@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\JexpEvaluateCtxIssues`](/src/Schema/JexpEvaluateCtx
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionEvaluateContextBean](/docs/schema/jira-expression-evaluate-context-bean.md) |

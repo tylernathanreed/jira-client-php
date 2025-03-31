@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ConnectModule`](/src/Schema/ConnectModule.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ConnectModules](/docs/schema/connect-modules.md) |

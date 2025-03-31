@@ -25,7 +25,7 @@ Source: [`Jira\Client\Schema\Icon`](/src/Schema/Icon.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [RemoteObject](/docs/schema/remote-object.md) |
 | [Status](/docs/schema/status.md) |

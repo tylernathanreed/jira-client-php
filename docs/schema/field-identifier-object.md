@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\FieldIdentifierObject`](/src/Schema/FieldIdentifier
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FieldAssociationsRequest](/docs/schema/field-associations-request.md) |
 | [FieldIdIdentifier](/docs/schema/field-id-identifier.md) |

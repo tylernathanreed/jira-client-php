@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\FieldLastUsed`](/src/Schema/FieldLastUsed.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Field](/docs/schema/field.md) |

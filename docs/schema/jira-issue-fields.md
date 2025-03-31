@@ -94,6 +94,6 @@ For ADF format details, refer to: [Atlassian Document Format](https://developer.
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueBulkEditPayload](/docs/schema/issue-bulk-edit-payload.md) |

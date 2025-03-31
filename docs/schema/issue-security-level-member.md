@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\IssueSecurityLevelMember`](/src/Schema/IssueSecurit
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanIssueSecurityLevelMember](/docs/schema/page-bean-issue-security-level-member.md) |

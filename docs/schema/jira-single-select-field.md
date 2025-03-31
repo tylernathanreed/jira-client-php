@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\JiraSingleSelectField`](/src/Schema/JiraSingleSelec
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

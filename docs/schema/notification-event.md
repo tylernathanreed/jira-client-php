@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\NotificationEvent`](/src/Schema/NotificationEvent.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [NotificationSchemeEvent](/docs/schema/notification-scheme-event.md) |

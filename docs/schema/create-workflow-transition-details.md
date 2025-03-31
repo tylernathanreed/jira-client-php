@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionDetails`](/src/Schema/Creat
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreateWorkflowDetails](/docs/schema/create-workflow-details.md) |

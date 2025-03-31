@@ -26,6 +26,6 @@ A list of appropriate values must be provided if the field is of the `list` [col
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [MultipleCustomFieldValuesUpdateDetails](/docs/schema/multiple-custom-field-values-update-details.md) |

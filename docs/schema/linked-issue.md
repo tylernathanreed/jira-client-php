@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\LinkedIssue`](/src/Schema/LinkedIssue.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueLink](/docs/schema/issue-link.md) |
 | [LinkIssueRequestJsonBean](/docs/schema/link-issue-request-json-bean.md) |

@@ -24,6 +24,6 @@ Source: [`Jira\Client\Schema\ProjectCategory`](/src/Schema/ProjectCategory.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Project](/docs/schema/project.md) |

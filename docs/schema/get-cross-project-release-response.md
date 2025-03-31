@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\GetCrossProjectReleaseResponse`](/src/Schema/GetCro
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [GetPlanResponse](/docs/schema/get-plan-response.md) |

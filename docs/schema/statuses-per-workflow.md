@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\StatusesPerWorkflow`](/src/Schema/StatusesPerWorkfl
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowSchemeUpdateRequiredMappingsResponse](/docs/schema/workflow-scheme-update-required-mappings-response.md) |

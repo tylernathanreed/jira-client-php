@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\TimeTrackingDetails`](/src/Schema/TimeTrackingDetai
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Fields](/docs/schema/fields.md) |

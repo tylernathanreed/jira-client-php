@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\TransitionScreenDetails`](/src/Schema/TransitionScr
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Transition](/docs/schema/transition.md) |

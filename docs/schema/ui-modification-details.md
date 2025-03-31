@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\UiModificationDetails`](/src/Schema/UiModificationD
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanUiModificationDetails](/docs/schema/page-bean-ui-modification-details.md) |

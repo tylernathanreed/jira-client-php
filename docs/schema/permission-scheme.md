@@ -28,6 +28,6 @@ Source: [`Jira\Client\Schema\PermissionScheme`](/src/Schema/PermissionScheme.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PermissionSchemes](/docs/schema/permission-schemes.md) |

@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\IssueTypeScreenSchemeItem`](/src/Schema/IssueTypeSc
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanIssueTypeScreenSchemeItem](/docs/schema/page-bean-issue-type-screen-scheme-item.md) |

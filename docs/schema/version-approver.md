@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\VersionApprover`](/src/Schema/VersionApprover.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Version](/docs/schema/version.md) |

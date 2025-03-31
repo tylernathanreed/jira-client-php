@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\WebhookDetails`](/src/Schema/WebhookDetails.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WebhookRegistrationDetails](/docs/schema/webhook-registration-details.md) |

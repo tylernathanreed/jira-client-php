@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueLabels`](/src/Schema/
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValue](/docs/schema/custom-field-context-default-value.md) |

@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\UserPermission`](/src/Schema/UserPermission.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Permissions](/docs/schema/permissions.md) |

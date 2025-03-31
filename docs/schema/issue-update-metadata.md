@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\IssueUpdateMetadata`](/src/Schema/IssueUpdateMetada
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueBean](/docs/schema/issue-bean.md) |

@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraRichTextInput`](/src/Schema/JiraRichTextInput.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraRichTextField](/docs/schema/jira-rich-text-field.md) |

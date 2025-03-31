@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\StatusCategory`](/src/Schema/StatusCategory.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [StatusDetails](/docs/schema/status-details.md) |

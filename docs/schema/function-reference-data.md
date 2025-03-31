@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\FunctionReferenceData`](/src/Schema/FunctionReferen
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JQLReferenceData](/docs/schema/j-q-l-reference-data.md) |

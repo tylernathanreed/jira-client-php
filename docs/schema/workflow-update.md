@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\WorkflowUpdate`](/src/Schema/WorkflowUpdate.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowUpdateRequest](/docs/schema/workflow-update-request.md) |

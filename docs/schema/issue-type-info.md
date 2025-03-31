@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\IssueTypeInfo`](/src/Schema/IssueTypeInfo.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ProjectIssueTypesHierarchyLevel](/docs/schema/project-issue-types-hierarchy-level.md) |

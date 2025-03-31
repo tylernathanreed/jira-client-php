@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\ScreenScheme`](/src/Schema/ScreenScheme.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanScreenScheme](/docs/schema/page-bean-screen-scheme.md) |

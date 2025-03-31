@@ -24,7 +24,7 @@ Source: [`Jira\Client\Schema\PrioritySchemeWithPaginatedPrioritiesAndProjects`](
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanPrioritySchemeWithPaginatedPrioritiesAndProjects](/docs/schema/page-bean-priority-scheme-with-paginated-priorities-and-projects.md) |
 | [UpdatePrioritySchemeResponseBean](/docs/schema/update-priority-scheme-response-bean.md) |

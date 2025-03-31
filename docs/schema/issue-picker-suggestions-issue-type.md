@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\IssuePickerSuggestionsIssueType`](/src/Schema/Issue
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssuePickerSuggestions](/docs/schema/issue-picker-suggestions.md) |

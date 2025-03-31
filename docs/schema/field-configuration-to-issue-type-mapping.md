@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\FieldConfigurationToIssueTypeMapping`](/src/Schema/
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AssociateFieldConfigurationsWithIssueTypesRequest](/docs/schema/associate-field-configurations-with-issue-types-request.md) |

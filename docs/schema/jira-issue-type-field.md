@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraIssueTypeField`](/src/Schema/JiraIssueTypeField
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

@@ -18,7 +18,7 @@ Source: [`Jira\Client\Schema\UserFilter`](/src/Schema/UserFilter.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValueForgeUserField](/docs/schema/custom-field-context-default-value-forge-user-field.md) |
 | [CustomFieldContextSingleUserPickerDefaults](/docs/schema/custom-field-context-single-user-picker-defaults.md) |

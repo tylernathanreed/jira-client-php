@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\FilterSubscriptionsList`](/src/Schema/FilterSubscri
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Filter](/docs/schema/filter.md) |

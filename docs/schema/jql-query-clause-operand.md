@@ -14,8 +14,8 @@ Source: [`Jira\Client\Schema\JqlQueryClauseOperand`](/src/Schema/JqlQueryClauseO
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FieldValueClause](/docs/schema/field-value-clause.md) |
 | [FieldWasClause](/docs/schema/field-was-clause.md) |
 | [JqlQueryClauseTimePredicate](/docs/schema/jql-query-clause-time-predicate.md) |

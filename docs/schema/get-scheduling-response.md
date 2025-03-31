@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\GetSchedulingResponse`](/src/Schema/GetSchedulingRe
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [GetPlanResponse](/docs/schema/get-plan-response.md) |

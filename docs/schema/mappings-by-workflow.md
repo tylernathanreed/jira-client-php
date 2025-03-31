@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\MappingsByWorkflow`](/src/Schema/MappingsByWorkflow
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowSchemeUpdateRequest](/docs/schema/workflow-scheme-update-request.md) |

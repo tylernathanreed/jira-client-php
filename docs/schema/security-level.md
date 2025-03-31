@@ -23,8 +23,8 @@ Source: [`Jira\Client\Schema\SecurityLevel`](/src/Schema/SecurityLevel.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanSecurityLevel](/docs/schema/page-bean-security-level.md) |
 | [ProjectIssueSecurityLevels](/docs/schema/project-issue-security-levels.md) |
 | [SecurityScheme](/docs/schema/security-scheme.md) |

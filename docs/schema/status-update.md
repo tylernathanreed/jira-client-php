@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\StatusUpdate`](/src/Schema/StatusUpdate.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [StatusUpdateRequest](/docs/schema/status-update-request.md) |

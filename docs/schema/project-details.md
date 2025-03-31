@@ -23,8 +23,8 @@ Source: [`Jira\Client\Schema\ProjectDetails`](/src/Schema/ProjectDetails.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanProjectDetails](/docs/schema/page-bean-project-details.md) |
 | [Scope](/docs/schema/scope.md) |
 | [Workflow](/docs/schema/workflow.md) |

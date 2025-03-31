@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\StatusLayoutUpdate`](/src/Schema/StatusLayoutUpdate
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCreate](/docs/schema/workflow-create.md) |
 | [WorkflowUpdate](/docs/schema/workflow-update.md) |

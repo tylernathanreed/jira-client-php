@@ -40,8 +40,8 @@ Source: [`Jira\Client\Schema\IssueLinkType`](/src/Schema/IssueLinkType.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueLink](/docs/schema/issue-link.md) |
 | [IssueLinkTypes](/docs/schema/issue-link-types.md) |
 | [LinkIssueRequestJsonBean](/docs/schema/link-issue-request-json-bean.md) |

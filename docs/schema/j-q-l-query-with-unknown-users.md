@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\JQLQueryWithUnknownUsers`](/src/Schema/JQLQueryWith
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ConvertedJQLQueries](/docs/schema/converted-j-q-l-queries.md) |

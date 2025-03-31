@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\ProjectUsagePage`](/src/Schema/ProjectUsagePage.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowProjectUsageDTO](/docs/schema/workflow-project-usage-d-t-o.md) |
 | [WorkflowSchemeProjectUsageDTO](/docs/schema/workflow-scheme-project-usage-d-t-o.md) |

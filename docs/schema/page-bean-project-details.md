@@ -24,6 +24,6 @@ Source: [`Jira\Client\Schema\PageBeanProjectDetails`](/src/Schema/PageBeanProjec
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PrioritySchemeWithPaginatedPrioritiesAndProjects](/docs/schema/priority-scheme-with-paginated-priorities-and-projects.md) |

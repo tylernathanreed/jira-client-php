@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\SuggestedIssue`](/src/Schema/SuggestedIssue.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssuePickerSuggestionsIssueType](/docs/schema/issue-picker-suggestions-issue-type.md) |

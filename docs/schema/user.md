@@ -53,8 +53,8 @@ Source: [`Jira\Client\Schema\User`](/src/Schema/User.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AttachmentMetadata](/docs/schema/attachment-metadata.md) |
 | [BulkOperationProgress](/docs/schema/bulk-operation-progress.md) |
 | [ComponentWithIssueCount](/docs/schema/component-with-issue-count.md) |

@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\CreatedIssue`](/src/Schema/CreatedIssue.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatedIssues](/docs/schema/created-issues.md) |

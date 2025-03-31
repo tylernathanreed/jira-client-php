@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\CreateSchedulingRequest`](/src/Schema/CreateSchedul
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatePlanRequest](/docs/schema/create-plan-request.md) |

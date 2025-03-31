@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\IssueTransitionStatus`](/src/Schema/IssueTransition
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SimplifiedIssueTransition](/docs/schema/simplified-issue-transition.md) |

@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\BulkTransitionSubmitInput`](/src/Schema/BulkTransit
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueBulkTransitionPayload](/docs/schema/issue-bulk-transition-payload.md) |

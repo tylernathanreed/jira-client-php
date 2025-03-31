@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\JqlQueryToSanitize`](/src/Schema/JqlQueryToSanitize
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueriesToSanitize](/docs/schema/jql-queries-to-sanitize.md) |

@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\LinkGroup`](/src/Schema/LinkGroup.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Operations](/docs/schema/operations.md) |

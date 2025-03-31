@@ -33,8 +33,8 @@ Source: [`Jira\Client\Schema\UserDetails`](/src/Schema/UserDetails.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Attachment](/docs/schema/attachment.md) |
 | [Changelog](/docs/schema/changelog.md) |
 | [Comment](/docs/schema/comment.md) |

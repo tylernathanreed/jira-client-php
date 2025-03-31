@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\BulkEditActionError`](/src/Schema/BulkEditActionErr
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkEditShareableEntityResponse](/docs/schema/bulk-edit-shareable-entity-response.md) |

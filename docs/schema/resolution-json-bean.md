@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\ResolutionJsonBean`](/src/Schema/ResolutionJsonBean
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanResolutionJsonBean](/docs/schema/page-bean-resolution-json-bean.md) |

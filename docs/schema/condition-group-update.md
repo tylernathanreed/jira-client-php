@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\ConditionGroupUpdate`](/src/Schema/ConditionGroupUp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [TransitionUpdateDTO](/docs/schema/transition-update-d-t-o.md) |

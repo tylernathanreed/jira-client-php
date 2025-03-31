@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\MandatoryFieldValue`](/src/Schema/MandatoryFieldVal
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [fields](/docs/schema/fields.md) |

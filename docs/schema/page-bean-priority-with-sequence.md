@@ -26,6 +26,6 @@ Source: [`Jira\Client\Schema\PageBeanPriorityWithSequence`](/src/Schema/PageBean
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PrioritySchemeWithPaginatedPrioritiesAndProjects](/docs/schema/priority-scheme-with-paginated-priorities-and-projects.md) |

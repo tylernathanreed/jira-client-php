@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ValidationOptionsForCreate`](/src/Schema/Validation
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCreateValidateRequest](/docs/schema/workflow-create-validate-request.md) |

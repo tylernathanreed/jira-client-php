@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\JiraMultipleVersionPickerField`](/src/Schema/JiraMu
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

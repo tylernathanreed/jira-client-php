@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsagePage`](/src/Schema/Statu
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [StatusProjectIssueTypeUsageDTO](/docs/schema/status-project-issue-type-usage-d-t-o.md) |

@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\CustomFieldContextOption`](/src/Schema/CustomFieldC
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldCreatedContextOptionsList](/docs/schema/custom-field-created-context-options-list.md) |
 | [PageBeanCustomFieldContextOption](/docs/schema/page-bean-custom-field-context-option.md) |

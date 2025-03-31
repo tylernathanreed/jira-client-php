@@ -28,7 +28,7 @@ Source: [`Jira\Client\Schema\TransitionUpdateDTO`](/src/Schema/TransitionUpdateD
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCreate](/docs/schema/workflow-create.md) |
 | [WorkflowUpdate](/docs/schema/workflow-update.md) |

@@ -26,6 +26,6 @@ Source: [`Jira\Client\Schema\Attachment`](/src/Schema/Attachment.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListAttachment](/docs/schema/legacy-jackson1-list-attachment.md) |

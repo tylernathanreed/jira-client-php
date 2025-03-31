@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\AssociatedItemBean`](/src/Schema/AssociatedItemBean
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AuditRecordBean](/docs/schema/audit-record-bean.md) |

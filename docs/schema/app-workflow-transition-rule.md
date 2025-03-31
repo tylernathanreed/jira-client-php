@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\AppWorkflowTransitionRule`](/src/Schema/AppWorkflow
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowTransitionRules](/docs/schema/workflow-transition-rules.md) |

@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\ProjectAndIssueTypePair`](/src/Schema/ProjectAndIss
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowElementReference](/docs/schema/workflow-element-reference.md) |
 | [WorkflowReadRequest](/docs/schema/workflow-read-request.md) |

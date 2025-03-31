@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\StatusScope`](/src/Schema/StatusScope.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraStatus](/docs/schema/jira-status.md) |
 | [StatusCreateRequest](/docs/schema/status-create-request.md) |

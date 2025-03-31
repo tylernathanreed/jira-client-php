@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\PublishedWorkflowId`](/src/Schema/PublishedWorkflow
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Workflow](/docs/schema/workflow.md) |

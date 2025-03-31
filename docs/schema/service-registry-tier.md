@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\ServiceRegistryTier`](/src/Schema/ServiceRegistryTi
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ServiceRegistry](/docs/schema/service-registry.md) |

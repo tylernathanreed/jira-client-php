@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\ParsedJqlQuery`](/src/Schema/ParsedJqlQuery.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ParsedJqlQueries](/docs/schema/parsed-jql-queries.md) |

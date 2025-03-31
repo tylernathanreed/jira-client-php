@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IssueTypeScreenSchemesProjects`](/src/Schema/IssueT
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanIssueTypeScreenSchemesProjects](/docs/schema/page-bean-issue-type-screen-schemes-projects.md) |

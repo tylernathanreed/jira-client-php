@@ -18,8 +18,8 @@ Source: [`Jira\Client\Schema\WorkflowRuleConfiguration`](/src/Schema/WorkflowRul
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ConditionGroupConfiguration](/docs/schema/condition-group-configuration.md) |
 | [ConditionGroupUpdate](/docs/schema/condition-group-update.md) |
 | [TransitionUpdateDTO](/docs/schema/transition-update-d-t-o.md) |

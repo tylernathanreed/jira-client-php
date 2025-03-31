@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\WorkflowSimpleCondition`](/src/Schema/WorkflowSimpl
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCondition](/docs/schema/workflow-condition.md) |

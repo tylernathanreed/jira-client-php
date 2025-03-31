@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\OldToNewSecurityLevelMappingsBean`](/src/Schema/Old
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AssociateSecuritySchemeWithProjectDetails](/docs/schema/associate-security-scheme-with-project-details.md) |

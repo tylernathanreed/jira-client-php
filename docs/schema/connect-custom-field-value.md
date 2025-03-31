@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\ConnectCustomFieldValue`](/src/Schema/ConnectCustom
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ConnectCustomFieldValues](/docs/schema/connect-custom-field-values.md) |

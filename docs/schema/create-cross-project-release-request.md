@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\CreateCrossProjectReleaseRequest`](/src/Schema/Crea
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatePlanRequest](/docs/schema/create-plan-request.md) |

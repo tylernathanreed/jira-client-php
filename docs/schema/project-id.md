@@ -16,8 +16,8 @@ Source: [`Jira\Client\Schema\ProjectId`](/src/Schema/ProjectId.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ProjectIssueTypes](/docs/schema/project-issue-types.md) |
 | [StatusScope](/docs/schema/status-scope.md) |
 | [WorkflowScope](/docs/schema/workflow-scope.md) |

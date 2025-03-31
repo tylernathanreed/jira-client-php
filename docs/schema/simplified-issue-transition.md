@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\SimplifiedIssueTransition`](/src/Schema/SimplifiedI
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueBulkTransitionForWorkflow](/docs/schema/issue-bulk-transition-for-workflow.md) |

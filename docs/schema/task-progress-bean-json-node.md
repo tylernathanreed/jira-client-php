@@ -28,7 +28,7 @@ Source: [`Jira\Client\Schema\TaskProgressBeanJsonNode`](/src/Schema/TaskProgress
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PrioritySchemeId](/docs/schema/priority-scheme-id.md) |
 | [UpdatePrioritySchemeResponseBean](/docs/schema/update-priority-scheme-response-bean.md) |

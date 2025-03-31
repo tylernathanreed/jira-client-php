@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\PriorityWithSequence`](/src/Schema/PriorityWithSequ
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanPriorityWithSequence](/docs/schema/page-bean-priority-with-sequence.md) |

@@ -31,8 +31,8 @@ Source: [`Jira\Client\Schema\Comment`](/src/Schema/Comment.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LinkIssueRequestJsonBean](/docs/schema/link-issue-request-json-bean.md) |
 | [PageBeanComment](/docs/schema/page-bean-comment.md) |
 | [PageOfComments](/docs/schema/page-of-comments.md) |

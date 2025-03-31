@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\AssociationContextObject`](/src/Schema/AssociationC
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FieldAssociationsRequest](/docs/schema/field-associations-request.md) |
 | [ProjectIdAssociationContext](/docs/schema/project-id-association-context.md) |

@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\PropertyKey`](/src/Schema/PropertyKey.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PropertyKeys](/docs/schema/property-keys.md) |

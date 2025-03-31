@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\AvailableWorkflowSystemRule`](/src/Schema/Available
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCapabilities](/docs/schema/workflow-capabilities.md) |

@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraColorInput`](/src/Schema/JiraColorInput.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraColorField](/docs/schema/jira-color-field.md) |

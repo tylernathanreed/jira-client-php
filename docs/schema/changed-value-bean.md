@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\ChangedValueBean`](/src/Schema/ChangedValueBean.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AuditRecordBean](/docs/schema/audit-record-bean.md) |

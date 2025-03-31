@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\ComponentJsonBean`](/src/Schema/ComponentJsonBean.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBean2ComponentJsonBean](/docs/schema/page-bean2-component-json-bean.md) |

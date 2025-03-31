@@ -50,8 +50,8 @@ Source: [`Jira\Client\Schema\JsonNode`](/src/Schema/JsonNode.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueEntityProperties](/docs/schema/issue-entity-properties.md) |
 | [IssueEntityPropertiesForMultiUpdate](/docs/schema/issue-entity-properties-for-multi-update.md) |
 | [TaskProgressBeanJsonNode](/docs/schema/task-progress-bean-json-node.md) |

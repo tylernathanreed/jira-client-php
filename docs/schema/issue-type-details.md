@@ -32,8 +32,8 @@ Source: [`Jira\Client\Schema\IssueTypeDetails`](/src/Schema/IssueTypeDetails.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Fields](/docs/schema/fields.md) |
 | [Project](/docs/schema/project.md) |
 | [WorkflowScheme](/docs/schema/workflow-scheme.md) |

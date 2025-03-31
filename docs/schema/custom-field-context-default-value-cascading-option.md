@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueCascadingOption`](/sr
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValue](/docs/schema/custom-field-context-default-value.md) |

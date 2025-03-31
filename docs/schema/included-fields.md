@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\IncludedFields`](/src/Schema/IncludedFields.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueBean](/docs/schema/issue-bean.md) |

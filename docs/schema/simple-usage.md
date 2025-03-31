@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\SimpleUsage`](/src/Schema/SimpleUsage.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowMetadataRestModel](/docs/schema/workflow-metadata-rest-model.md) |

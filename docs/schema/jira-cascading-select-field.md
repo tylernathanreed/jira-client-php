@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\JiraCascadingSelectField`](/src/Schema/JiraCascadin
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

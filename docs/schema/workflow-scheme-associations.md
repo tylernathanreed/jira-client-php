@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\WorkflowSchemeAssociations`](/src/Schema/WorkflowSc
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ContainerOfWorkflowSchemeAssociations](/docs/schema/container-of-workflow-scheme-associations.md) |

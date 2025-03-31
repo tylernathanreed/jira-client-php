@@ -18,7 +18,7 @@ Source: [`Jira\Client\Schema\FilterSubscription`](/src/Schema/FilterSubscription
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FilterDetails](/docs/schema/filter-details.md) |
 | [FilterSubscriptionsList](/docs/schema/filter-subscriptions-list.md) |

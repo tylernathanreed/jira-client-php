@@ -26,6 +26,6 @@ Source: [`Jira\Client\Schema\AuditRecordBean`](/src/Schema/AuditRecordBean.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AuditRecords](/docs/schema/audit-records.md) |

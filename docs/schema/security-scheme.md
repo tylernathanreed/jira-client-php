@@ -24,6 +24,6 @@ Source: [`Jira\Client\Schema\SecurityScheme`](/src/Schema/SecurityScheme.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SecuritySchemes](/docs/schema/security-schemes.md) |

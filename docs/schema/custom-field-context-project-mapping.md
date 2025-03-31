@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\CustomFieldContextProjectMapping`](/src/Schema/Cust
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanCustomFieldContextProjectMapping](/docs/schema/page-bean-custom-field-context-project-mapping.md) |

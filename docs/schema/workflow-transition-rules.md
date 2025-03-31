@@ -19,8 +19,8 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRules`](/src/Schema/WorkflowTrans
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanWorkflowTransitionRules](/docs/schema/page-bean-workflow-transition-rules.md) |
 | [WorkflowRulesSearchDetails](/docs/schema/workflow-rules-search-details.md) |
 | [WorkflowTransitionRulesUpdate](/docs/schema/workflow-transition-rules-update.md) |

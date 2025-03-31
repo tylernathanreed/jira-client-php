@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\GetPlanResponseForPage`](/src/Schema/GetPlanRespons
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageWithCursorGetPlanResponseForPage](/docs/schema/page-with-cursor-get-plan-response-for-page.md) |

@@ -18,7 +18,7 @@ Source: [`Jira\Client\Schema\KeywordOperand`](/src/Schema/KeywordOperand.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueryClauseOperand](/docs/schema/jql-query-clause-operand.md) |
 | [JqlQueryUnitaryOperand](/docs/schema/jql-query-unitary-operand.md) |

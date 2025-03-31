@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\IssueBulkTransitionForWorkflow`](/src/Schema/IssueB
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkTransitionGetAvailableTransitions](/docs/schema/bulk-transition-get-available-transitions.md) |

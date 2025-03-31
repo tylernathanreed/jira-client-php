@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\UserBeanAvatarUrls`](/src/Schema/UserBeanAvatarUrls
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [UserBean](/docs/schema/user-bean.md) |

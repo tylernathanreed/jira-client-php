@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\BulkOperationErrorResult`](/src/Schema/BulkOperatio
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatedIssues](/docs/schema/created-issues.md) |

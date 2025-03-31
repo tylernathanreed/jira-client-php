@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\RequiredMappingByIssueType`](/src/Schema/RequiredMa
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowSchemeUpdateRequiredMappingsResponse](/docs/schema/workflow-scheme-update-required-mappings-response.md) |

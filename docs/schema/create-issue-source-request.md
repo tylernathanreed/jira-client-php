@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\CreateIssueSourceRequest`](/src/Schema/CreateIssueS
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatePlanRequest](/docs/schema/create-plan-request.md) |

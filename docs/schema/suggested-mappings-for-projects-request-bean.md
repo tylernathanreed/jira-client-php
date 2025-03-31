@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\SuggestedMappingsForProjectsRequestBean`](/src/Sche
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SuggestedMappingsRequestBean](/docs/schema/suggested-mappings-request-bean.md) |

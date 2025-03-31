@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\FieldConfigurationIssueTypeItem`](/src/Schema/Field
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanFieldConfigurationIssueTypeItem](/docs/schema/page-bean-field-configuration-issue-type-item.md) |

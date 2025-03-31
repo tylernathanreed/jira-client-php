@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\IssueTypeScreenSchemeMapping`](/src/Schema/IssueTyp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueTypeScreenSchemeDetails](/docs/schema/issue-type-screen-scheme-details.md) |
 | [IssueTypeScreenSchemeMappingDetails](/docs/schema/issue-type-screen-scheme-mapping-details.md) |

@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\PrioritySchemeChangesWithoutMappings`](/src/Schema/
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [UpdatePrioritiesInSchemeRequestBean](/docs/schema/update-priorities-in-scheme-request-bean.md) |
 | [UpdateProjectsInSchemeRequestBean](/docs/schema/update-projects-in-scheme-request-bean.md) |

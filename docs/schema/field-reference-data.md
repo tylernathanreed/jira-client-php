@@ -29,6 +29,6 @@ Source: [`Jira\Client\Schema\FieldReferenceData`](/src/Schema/FieldReferenceData
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JQLReferenceData](/docs/schema/j-q-l-reference-data.md) |

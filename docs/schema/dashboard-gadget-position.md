@@ -17,8 +17,8 @@ Source: [`Jira\Client\Schema\DashboardGadgetPosition`](/src/Schema/DashboardGadg
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [DashboardGadget](/docs/schema/dashboard-gadget.md) |
 | [DashboardGadgetSettings](/docs/schema/dashboard-gadget-settings.md) |
 | [DashboardGadgetUpdateRequest](/docs/schema/dashboard-gadget-update-request.md) |

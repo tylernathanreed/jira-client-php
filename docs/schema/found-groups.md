@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\FoundGroups`](/src/Schema/FoundGroups.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FoundUsersAndGroups](/docs/schema/found-users-and-groups.md) |

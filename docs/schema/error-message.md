@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\ErrorMessage`](/src/Schema/ErrorMessage.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkOperationErrorResponse](/docs/schema/bulk-operation-error-response.md) |

@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\FieldValueClause`](/src/Schema/FieldValueClause.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueryClause](/docs/schema/jql-query-clause.md) |

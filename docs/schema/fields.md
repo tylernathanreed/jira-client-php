@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\Fields`](/src/Schema/Fields.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LinkedIssue](/docs/schema/linked-issue.md) |

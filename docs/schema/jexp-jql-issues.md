@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\JexpJqlIssues`](/src/Schema/JexpJqlIssues.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JexpIssues](/docs/schema/jexp-issues.md) |

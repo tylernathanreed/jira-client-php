@@ -28,6 +28,6 @@ Source: [`Jira\Client\Schema\FieldDetails`](/src/Schema/FieldDetails.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [EventNotification](/docs/schema/event-notification.md) |

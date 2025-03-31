@@ -13,6 +13,6 @@ Source: [`Jira\Client\Schema\IssueBulkOperationsFieldOption`](/src/Schema/IssueB
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueBulkEditField](/docs/schema/issue-bulk-edit-field.md) |

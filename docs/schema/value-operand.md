@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\ValueOperand`](/src/Schema/ValueOperand.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlQueryClauseOperand](/docs/schema/jql-query-clause-operand.md) |
 | [JqlQueryUnitaryOperand](/docs/schema/jql-query-unitary-operand.md) |

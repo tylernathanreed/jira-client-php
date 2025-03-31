@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\UserMigrationBean`](/src/Schema/UserMigrationBean.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListUserMigrationBean](/docs/schema/legacy-jackson1-list-user-migration-bean.md) |

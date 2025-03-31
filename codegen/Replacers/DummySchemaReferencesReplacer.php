@@ -36,7 +36,7 @@ class DummySchemaReferencesReplacer extends Replacer
             return str_replace('DummySchemaReferences', '*None*', $stub);
         }
 
-        $table = new Table(['Group', 'Operation']);
+        $table = new Table(['Schema']);
 
         foreach ($references as $reference) {
             [$_schema] = $reference;

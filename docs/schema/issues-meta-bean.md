@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\IssuesMetaBean`](/src/Schema/IssuesMetaBean.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionEvaluationMetaDataBean](/docs/schema/jira-expression-evaluation-meta-data-bean.md) |

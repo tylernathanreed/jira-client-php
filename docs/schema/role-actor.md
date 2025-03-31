@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\RoleActor`](/src/Schema/RoleActor.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ProjectRole](/docs/schema/project-role.md) |

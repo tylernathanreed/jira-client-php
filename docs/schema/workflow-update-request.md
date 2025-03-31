@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\WorkflowUpdateRequest`](/src/Schema/WorkflowUpdateR
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowUpdateValidateRequestBean](/docs/schema/workflow-update-validate-request-bean.md) |

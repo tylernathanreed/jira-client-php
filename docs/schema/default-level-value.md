@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\DefaultLevelValue`](/src/Schema/DefaultLevelValue.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SetDefaultLevelsRequest](/docs/schema/set-default-levels-request.md) |

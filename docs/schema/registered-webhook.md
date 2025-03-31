@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\RegisteredWebhook`](/src/Schema/RegisteredWebhook.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ContainerForRegisteredWebhooks](/docs/schema/container-for-registered-webhooks.md) |

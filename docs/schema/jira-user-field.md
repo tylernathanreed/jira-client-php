@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\JiraUserField`](/src/Schema/JiraUserField.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraMultipleSelectUserPickerField](/docs/schema/jira-multiple-select-user-picker-field.md) |
 | [JiraSingleSelectUserPickerField](/docs/schema/jira-single-select-user-picker-field.md) |

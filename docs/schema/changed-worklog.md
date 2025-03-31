@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\ChangedWorklog`](/src/Schema/ChangedWorklog.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ChangedWorklogs](/docs/schema/changed-worklogs.md) |

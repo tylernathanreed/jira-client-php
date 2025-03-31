@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\AttachmentArchiveItemReadable`](/src/Schema/Attachm
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AttachmentArchiveMetadataReadable](/docs/schema/attachment-archive-metadata-readable.md) |

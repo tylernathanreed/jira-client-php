@@ -25,6 +25,6 @@ Source: [`Jira\Client\Schema\ProjectType`](/src/Schema/ProjectType.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListProjectType](/docs/schema/legacy-jackson1-list-project-type.md) |

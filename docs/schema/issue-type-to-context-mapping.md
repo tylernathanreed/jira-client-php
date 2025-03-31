@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\IssueTypeToContextMapping`](/src/Schema/IssueTypeTo
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanIssueTypeToContextMapping](/docs/schema/page-bean-issue-type-to-context-mapping.md) |

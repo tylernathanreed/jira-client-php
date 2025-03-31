@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JiraExpressionsComplexityValueBean`](/src/Schema/Ji
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionsComplexityBean](/docs/schema/jira-expressions-complexity-bean.md) |

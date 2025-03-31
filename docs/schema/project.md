@@ -55,8 +55,8 @@ Source: [`Jira\Client\Schema\Project`](/src/Schema/Project.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListProject](/docs/schema/legacy-jackson1-list-project.md) |
 | [PageBeanProject](/docs/schema/page-bean-project.md) |
 | [SharePermission](/docs/schema/share-permission.md) |

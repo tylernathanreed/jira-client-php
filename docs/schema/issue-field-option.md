@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\IssueFieldOption`](/src/Schema/IssueFieldOption.php
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanIssueFieldOption](/docs/schema/page-bean-issue-field-option.md) |

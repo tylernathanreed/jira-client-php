@@ -27,8 +27,8 @@ Source: [`Jira\Client\Schema\IssueTypeIssueCreateMetadata`](/src/Schema/IssueTyp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageOfCreateMetaIssueTypes](/docs/schema/page-of-create-meta-issue-types.md) |
 | [PaginatedResponseIssueTypeIssueCreateMetadata](/docs/schema/paginated-response-issue-type-issue-create-metadata.md) |
 | [ProjectIssueCreateMetadata](/docs/schema/project-issue-create-metadata.md) |

@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\FieldConfigurationDetails`](/src/Schema/FieldConfig
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanFieldConfigurationDetails](/docs/schema/page-bean-field-configuration-details.md) |

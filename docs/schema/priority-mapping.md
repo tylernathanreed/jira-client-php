@@ -21,7 +21,7 @@ E.g. The current priority scheme has priority ID `10001`. Issues with priority I
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatePrioritySchemeDetails](/docs/schema/create-priority-scheme-details.md) |
 | [UpdatePrioritySchemeRequestBean](/docs/schema/update-priority-scheme-request-bean.md) |

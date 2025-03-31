@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\FailedWebhook`](/src/Schema/FailedWebhook.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FailedWebhooks](/docs/schema/failed-webhooks.md) |

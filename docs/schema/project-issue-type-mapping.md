@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ProjectIssueTypeMapping`](/src/Schema/ProjectIssueT
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ProjectIssueTypeMappings](/docs/schema/project-issue-type-mappings.md) |

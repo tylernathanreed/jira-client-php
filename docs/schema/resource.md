@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\Resource`](/src/Schema/Resource.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [MultipartFile](/docs/schema/multipart-file.md) |

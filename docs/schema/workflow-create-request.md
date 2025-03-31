@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\WorkflowCreateRequest`](/src/Schema/WorkflowCreateR
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCreateValidateRequest](/docs/schema/workflow-create-validate-request.md) |

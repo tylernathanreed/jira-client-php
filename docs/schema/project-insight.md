@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ProjectInsight`](/src/Schema/ProjectInsight.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Project](/docs/schema/project.md) |

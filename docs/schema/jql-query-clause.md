@@ -14,7 +14,7 @@ Source: [`Jira\Client\Schema\JqlQueryClause`](/src/Schema/JqlQueryClause.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CompoundClause](/docs/schema/compound-clause.md) |
 | [JqlQuery](/docs/schema/jql-query.md) |

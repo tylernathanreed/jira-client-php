@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\IssueBulkEditField`](/src/Schema/IssueBulkEditField
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkEditGetFields](/docs/schema/bulk-edit-get-fields.md) |

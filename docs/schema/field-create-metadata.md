@@ -26,7 +26,7 @@ Source: [`Jira\Client\Schema\FieldCreateMetadata`](/src/Schema/FieldCreateMetada
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageOfCreateMetaIssueTypeWithField](/docs/schema/page-of-create-meta-issue-type-with-field.md) |
 | [PaginatedResponseFieldCreateMetadata](/docs/schema/paginated-response-field-create-metadata.md) |

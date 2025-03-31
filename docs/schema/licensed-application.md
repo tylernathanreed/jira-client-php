@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\LicensedApplication`](/src/Schema/LicensedApplicati
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [License](/docs/schema/license.md) |

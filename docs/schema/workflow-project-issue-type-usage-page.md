@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsagePage`](/src/Schema/Wor
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowProjectIssueTypeUsageDTO](/docs/schema/workflow-project-issue-type-usage-d-t-o.md) |

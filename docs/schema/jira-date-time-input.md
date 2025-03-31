@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraDateTimeInput`](/src/Schema/JiraDateTimeInput.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraDateTimeField](/docs/schema/jira-date-time-field.md) |

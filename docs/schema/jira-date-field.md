@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JiraDateField`](/src/Schema/JiraDateField.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraDurationField`](/src/Schema/JiraDurationField.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

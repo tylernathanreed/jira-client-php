@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\Status`](/src/Schema/Status.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [RemoteObject](/docs/schema/remote-object.md) |

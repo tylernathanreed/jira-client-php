@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\AutoCompleteSuggestion`](/src/Schema/AutoCompleteSu
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AutoCompleteSuggestions](/docs/schema/auto-complete-suggestions.md) |

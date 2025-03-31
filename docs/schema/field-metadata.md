@@ -25,8 +25,8 @@ Source: [`Jira\Client\Schema\FieldMetadata`](/src/Schema/FieldMetadata.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueTransition](/docs/schema/issue-transition.md) |
 | [IssueTypeIssueCreateMetadata](/docs/schema/issue-type-issue-create-metadata.md) |
 | [IssueUpdateMetadata](/docs/schema/issue-update-metadata.md) |

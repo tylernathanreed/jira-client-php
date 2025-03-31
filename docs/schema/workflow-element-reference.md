@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\WorkflowElementReference`](/src/Schema/WorkflowElem
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowValidationError](/docs/schema/workflow-validation-error.md) |

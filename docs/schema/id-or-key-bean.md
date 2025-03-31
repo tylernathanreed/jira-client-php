@@ -16,7 +16,7 @@ Source: [`Jira\Client\Schema\IdOrKeyBean`](/src/Schema/IdOrKeyBean.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraExpressionEvalContextBean](/docs/schema/jira-expression-eval-context-bean.md) |
 | [JiraExpressionEvaluateContextBean](/docs/schema/jira-expression-evaluate-context-bean.md) |

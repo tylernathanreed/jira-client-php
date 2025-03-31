@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\FoundGroup`](/src/Schema/FoundGroup.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FoundGroups](/docs/schema/found-groups.md) |

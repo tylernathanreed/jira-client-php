@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\TimeTrackingConfiguration`](/src/Schema/TimeTrackin
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Configuration](/docs/schema/configuration.md) |

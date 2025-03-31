@@ -49,7 +49,7 @@ Optional when creating or updating a component. |
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListProjectComponent](/docs/schema/legacy-jackson1-list-project-component.md) |
 | [Project](/docs/schema/project.md) |

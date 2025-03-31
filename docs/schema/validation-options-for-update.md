@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ValidationOptionsForUpdate`](/src/Schema/Validation
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowUpdateValidateRequestBean](/docs/schema/workflow-update-validate-request-bean.md) |

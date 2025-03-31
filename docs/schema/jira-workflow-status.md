@@ -24,8 +24,8 @@ The `statuses.usages` expand is an optional parameter that can be used when read
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCreateResponse](/docs/schema/workflow-create-response.md) |
 | [WorkflowReadResponse](/docs/schema/workflow-read-response.md) |
 | [WorkflowSearchResponse](/docs/schema/workflow-search-response.md) |

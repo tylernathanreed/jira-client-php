@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\CreatePermissionHolderRequest`](/src/Schema/CreateP
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatePermissionRequest](/docs/schema/create-permission-request.md) |

@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\ScreenWithTab`](/src/Schema/ScreenWithTab.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanScreenWithTab](/docs/schema/page-bean-screen-with-tab.md) |

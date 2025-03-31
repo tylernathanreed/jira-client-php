@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\CreateWorkflowCondition`](/src/Schema/CreateWorkflo
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreateWorkflowTransitionRulesDetails](/docs/schema/create-workflow-transition-rules-details.md) |

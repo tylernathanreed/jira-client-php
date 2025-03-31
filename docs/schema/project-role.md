@@ -38,7 +38,7 @@ Source: [`Jira\Client\Schema\ProjectRole`](/src/Schema/ProjectRole.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [EventNotification](/docs/schema/event-notification.md) |
 | [SharePermission](/docs/schema/share-permission.md) |

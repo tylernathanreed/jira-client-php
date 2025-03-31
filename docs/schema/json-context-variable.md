@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\JsonContextVariable`](/src/Schema/JsonContextVariab
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomContextVariable](/docs/schema/custom-context-variable.md) |

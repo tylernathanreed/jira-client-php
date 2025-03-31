@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\Hierarchy`](/src/Schema/Hierarchy.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Project](/docs/schema/project.md) |

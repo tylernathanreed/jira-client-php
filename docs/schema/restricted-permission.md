@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\RestrictedPermission`](/src/Schema/RestrictedPermis
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [NotificationRecipientsRestrictions](/docs/schema/notification-recipients-restrictions.md) |

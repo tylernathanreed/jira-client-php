@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\GetExclusionRulesResponse`](/src/Schema/GetExclusio
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [GetPlanResponse](/docs/schema/get-plan-response.md) |

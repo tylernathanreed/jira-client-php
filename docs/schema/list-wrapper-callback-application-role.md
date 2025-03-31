@@ -13,6 +13,6 @@ Source: [`Jira\Client\Schema\ListWrapperCallbackApplicationRole`](/src/Schema/Li
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SimpleListWrapperApplicationRole](/docs/schema/simple-list-wrapper-application-role.md) |

@@ -38,6 +38,6 @@ Source: [`Jira\Client\Schema\ComponentWithIssueCount`](/src/Schema/ComponentWith
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanComponentWithIssueCount](/docs/schema/page-bean-component-with-issue-count.md) |

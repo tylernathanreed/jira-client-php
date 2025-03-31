@@ -20,7 +20,7 @@ Source: [`Jira\Client\Schema\RemoteObject`](/src/Schema/RemoteObject.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [RemoteIssueLink](/docs/schema/remote-issue-link.md) |
 | [RemoteIssueLinkRequest](/docs/schema/remote-issue-link-request.md) |

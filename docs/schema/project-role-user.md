@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\ProjectRoleUser`](/src/Schema/ProjectRoleUser.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [RoleActor](/docs/schema/role-actor.md) |

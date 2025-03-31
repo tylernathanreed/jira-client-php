@@ -22,7 +22,7 @@ Use the optional `workflows.usages` expand to get additional information about t
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowMetadataAndIssueTypeRestModel](/docs/schema/workflow-metadata-and-issue-type-rest-model.md) |
 | [WorkflowSchemeReadResponse](/docs/schema/workflow-scheme-read-response.md) |

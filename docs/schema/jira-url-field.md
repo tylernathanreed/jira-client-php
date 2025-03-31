@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JiraUrlField`](/src/Schema/JiraUrlField.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

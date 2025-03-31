@@ -33,7 +33,7 @@ Source: [`Jira\Client\Schema\Worklog`](/src/Schema/Worklog.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [LegacyJackson1ListWorklog](/docs/schema/legacy-jackson1-list-worklog.md) |
 | [PageOfWorklogs](/docs/schema/page-of-worklogs.md) |

@@ -18,7 +18,7 @@ Source: [`Jira\Client\Schema\CustomFieldOptionUpdate`](/src/Schema/CustomFieldOp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkCustomFieldOptionUpdateRequest](/docs/schema/bulk-custom-field-option-update-request.md) |
 | [CustomFieldUpdatedContextOptionsList](/docs/schema/custom-field-updated-context-options-list.md) |

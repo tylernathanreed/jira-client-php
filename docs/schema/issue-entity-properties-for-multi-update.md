@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\IssueEntityPropertiesForMultiUpdate`](/src/Schema/I
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [MultiIssueEntityProperties](/docs/schema/multi-issue-entity-properties.md) |

@@ -26,6 +26,6 @@ Source: [`Jira\Client\Schema\NotificationScheme`](/src/Schema/NotificationScheme
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanNotificationScheme](/docs/schema/page-bean-notification-scheme.md) |

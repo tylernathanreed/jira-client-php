@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\UserPickerUser`](/src/Schema/UserPickerUser.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FoundUsers](/docs/schema/found-users.md) |

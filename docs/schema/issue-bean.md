@@ -32,8 +32,8 @@ Source: [`Jira\Client\Schema\IssueBean`](/src/Schema/IssueBean.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkIssueResults](/docs/schema/bulk-issue-results.md) |
 | [SearchAndReconcileResults](/docs/schema/search-and-reconcile-results.md) |
 | [SearchResults](/docs/schema/search-results.md) |

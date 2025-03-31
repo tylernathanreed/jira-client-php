@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\AvailableWorkflowTriggerTypes`](/src/Schema/Availab
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AvailableWorkflowTriggers](/docs/schema/available-workflow-triggers.md) |

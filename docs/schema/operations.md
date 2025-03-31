@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\Operations`](/src/Schema/Operations.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [IssueBean](/docs/schema/issue-bean.md) |

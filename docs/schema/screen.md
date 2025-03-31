@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\Screen`](/src/Schema/Screen.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanScreen](/docs/schema/page-bean-screen.md) |

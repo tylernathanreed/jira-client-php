@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\RemoveOptionFromIssuesResult`](/src/Schema/RemoveOp
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [TaskProgressBeanRemoveOptionFromIssuesResult](/docs/schema/task-progress-bean-remove-option-from-issues-result.md) |

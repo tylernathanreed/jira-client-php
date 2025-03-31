@@ -21,8 +21,8 @@ Source: [`Jira\Client\Schema\ProjectIssueTypes`](/src/Schema/ProjectIssueTypes.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraStatus](/docs/schema/jira-status.md) |
 | [JiraWorkflow](/docs/schema/jira-workflow.md) |
 | [JiraWorkflowStatus](/docs/schema/jira-workflow-status.md) |

@@ -17,8 +17,8 @@ Source: [`Jira\Client\Schema\WorkflowScope`](/src/Schema/WorkflowScope.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraWorkflow](/docs/schema/jira-workflow.md) |
 | [JiraWorkflowStatus](/docs/schema/jira-workflow-status.md) |
 | [WorkflowCreateRequest](/docs/schema/workflow-create-request.md) |

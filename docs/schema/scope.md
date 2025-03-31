@@ -19,8 +19,8 @@ Source: [`Jira\Client\Schema\Scope`](/src/Schema/Scope.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Context](/docs/schema/context.md) |
 | [DeprecatedWorkflow](/docs/schema/deprecated-workflow.md) |
 | [FieldDetails](/docs/schema/field-details.md) |

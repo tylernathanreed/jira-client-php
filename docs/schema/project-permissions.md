@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\ProjectPermissions`](/src/Schema/ProjectPermissions
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Project](/docs/schema/project.md) |

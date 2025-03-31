@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\UpdateScreenTypes`](/src/Schema/UpdateScreenTypes.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [UpdateScreenSchemeDetails](/docs/schema/update-screen-scheme-details.md) |

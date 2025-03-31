@@ -51,7 +51,7 @@ Defaults to `false`. |
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanWorkflowScheme](/docs/schema/page-bean-workflow-scheme.md) |
 | [WorkflowSchemeAssociations](/docs/schema/workflow-scheme-associations.md) |

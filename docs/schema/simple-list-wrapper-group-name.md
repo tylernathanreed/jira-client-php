@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\SimpleListWrapperGroupName`](/src/Schema/SimpleList
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [User](/docs/schema/user.md) |

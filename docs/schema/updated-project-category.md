@@ -21,6 +21,6 @@ Source: [`Jira\Client\Schema\UpdatedProjectCategory`](/src/Schema/UpdatedProject
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ProjectDetails](/docs/schema/project-details.md) |

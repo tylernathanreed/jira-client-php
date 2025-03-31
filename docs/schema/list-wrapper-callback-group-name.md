@@ -13,6 +13,6 @@ Source: [`Jira\Client\Schema\ListWrapperCallbackGroupName`](/src/Schema/ListWrap
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [SimpleListWrapperGroupName](/docs/schema/simple-list-wrapper-group-name.md) |

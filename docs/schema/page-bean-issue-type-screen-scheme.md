@@ -24,6 +24,6 @@ Source: [`Jira\Client\Schema\PageBeanIssueTypeScreenScheme`](/src/Schema/PageBea
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ScreenScheme](/docs/schema/screen-scheme.md) |

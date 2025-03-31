@@ -28,6 +28,6 @@ Source: [`Jira\Client\Schema\Field`](/src/Schema/Field.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PageBeanField](/docs/schema/page-bean-field.md) |

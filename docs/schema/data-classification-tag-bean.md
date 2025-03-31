@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\DataClassificationTagBean`](/src/Schema/DataClassif
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [DataClassificationLevelsBean](/docs/schema/data-classification-levels-bean.md) |

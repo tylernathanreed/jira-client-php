@@ -22,6 +22,6 @@ Source: [`Jira\Client\Schema\ChangeDetails`](/src/Schema/ChangeDetails.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Changelog](/docs/schema/changelog.md) |

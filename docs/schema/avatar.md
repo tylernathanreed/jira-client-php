@@ -27,8 +27,8 @@ Source: [`Jira\Client\Schema\Avatar`](/src/Schema/Avatar.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Avatars](/docs/schema/avatars.md) |
 | [ProjectAvatars](/docs/schema/project-avatars.md) |
 | [SystemAvatars](/docs/schema/system-avatars.md) |

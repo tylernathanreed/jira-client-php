@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\UpdateProjectsInSchemeRequestBean`](/src/Schema/Upd
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [UpdatePrioritySchemeRequestBean](/docs/schema/update-priority-scheme-request-bean.md) |

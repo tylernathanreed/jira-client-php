@@ -20,6 +20,6 @@ Source: [`Jira\Client\Schema\CreateExclusionRulesRequest`](/src/Schema/CreateExc
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreatePlanRequest](/docs/schema/create-plan-request.md) |

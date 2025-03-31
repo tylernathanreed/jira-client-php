@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateBean`](/src/Schema/J
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JqlFunctionPrecomputationUpdateRequestBean](/docs/schema/jql-function-precomputation-update-request-bean.md) |

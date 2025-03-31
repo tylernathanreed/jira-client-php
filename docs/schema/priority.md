@@ -27,7 +27,7 @@ Source: [`Jira\Client\Schema\Priority`](/src/Schema/Priority.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Fields](/docs/schema/fields.md) |
 | [PageBeanPriority](/docs/schema/page-bean-priority.md) |

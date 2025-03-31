@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\HealthCheckResult`](/src/Schema/HealthCheckResult.p
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ServerInformation](/docs/schema/server-information.md) |

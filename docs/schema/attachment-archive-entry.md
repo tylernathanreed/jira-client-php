@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\AttachmentArchiveEntry`](/src/Schema/AttachmentArch
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [AttachmentArchive](/docs/schema/attachment-archive.md) |
 | [AttachmentArchiveImpl](/docs/schema/attachment-archive-impl.md) |

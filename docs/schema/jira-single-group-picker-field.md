@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\JiraSingleGroupPickerField`](/src/Schema/JiraSingle
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraIssueFields](/docs/schema/jira-issue-fields.md) |

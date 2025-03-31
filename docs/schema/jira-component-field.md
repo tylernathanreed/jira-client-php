@@ -15,6 +15,6 @@ Source: [`Jira\Client\Schema\JiraComponentField`](/src/Schema/JiraComponentField
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [JiraMultiSelectComponentField](/docs/schema/jira-multi-select-component-field.md) |

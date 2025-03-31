@@ -22,7 +22,7 @@ Source: [`Jira\Client\Schema\PermissionGrant`](/src/Schema/PermissionGrant.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [PermissionGrants](/docs/schema/permission-grants.md) |
 | [PermissionScheme](/docs/schema/permission-scheme.md) |

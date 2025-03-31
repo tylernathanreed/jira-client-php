@@ -19,6 +19,6 @@ Source: [`Jira\Client\Schema\CustomFieldContextSingleUserPickerDefaults`](/src/S
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CustomFieldContextDefaultValue](/docs/schema/custom-field-context-default-value.md) |

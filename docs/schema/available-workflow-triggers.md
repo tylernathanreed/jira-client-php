@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\AvailableWorkflowTriggers`](/src/Schema/AvailableWo
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowCapabilities](/docs/schema/workflow-capabilities.md) |

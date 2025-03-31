@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\WorkflowStatus`](/src/Schema/WorkflowStatus.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Workflow](/docs/schema/workflow.md) |

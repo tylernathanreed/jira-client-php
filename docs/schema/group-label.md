@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\GroupLabel`](/src/Schema/GroupLabel.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [FoundGroup](/docs/schema/found-group.md) |

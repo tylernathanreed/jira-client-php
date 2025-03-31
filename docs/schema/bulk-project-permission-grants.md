@@ -18,6 +18,6 @@ Source: [`Jira\Client\Schema\BulkProjectPermissionGrants`](/src/Schema/BulkProje
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [BulkPermissionGrants](/docs/schema/bulk-permission-grants.md) |

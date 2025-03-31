@@ -23,6 +23,6 @@ Source: [`Jira\Client\Schema\DashboardGadget`](/src/Schema/DashboardGadget.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [DashboardGadgetResponse](/docs/schema/dashboard-gadget-response.md) |

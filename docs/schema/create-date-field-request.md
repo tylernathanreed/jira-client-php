@@ -16,6 +16,6 @@ Source: [`Jira\Client\Schema\CreateDateFieldRequest`](/src/Schema/CreateDateFiel
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [CreateSchedulingRequest](/docs/schema/create-scheduling-request.md) |

@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUsagePage`](/src/Schema/WorkflowSchem
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [WorkflowSchemeUsageDTO](/docs/schema/workflow-scheme-usage-d-t-o.md) |

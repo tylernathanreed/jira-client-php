@@ -17,6 +17,6 @@ Source: [`Jira\Client\Schema\ProjectWithDataPolicy`](/src/Schema/ProjectWithData
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [ProjectDataPolicies](/docs/schema/project-data-policies.md) |

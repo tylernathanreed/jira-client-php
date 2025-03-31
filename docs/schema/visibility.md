@@ -18,7 +18,7 @@ Source: [`Jira\Client\Schema\Visibility`](/src/Schema/Visibility.php)
 
 ### Schema
 
-| Group | Operation |
-| --- | --- |
+| Schema |
+| --- |
 | [Comment](/docs/schema/comment.md) |
 | [Worklog](/docs/schema/worklog.md) |
