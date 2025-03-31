@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\NotificationRecipientsRestrictions`](/src/Schema/No
 | Property | Type | Description |
 | --- | --- | --- |
 | `groupIds` | `?list<string>` | List of groupId memberships required to receive the notification. |
-| `groups` | `?list<GroupName>` | List of group memberships required to receive the notification. |
-| `permissions` | `?list<RestrictedPermission>` | List of permissions required to receive the notification. |
+| `groups` | `?list<[GroupName](/src/Schema/GroupName.php)>` | List of group memberships required to receive the notification. |
+| `permissions` | `?list<[RestrictedPermission](/src/Schema/RestrictedPermission.php)>` | List of permissions required to receive the notification. |
 
 ## References
 

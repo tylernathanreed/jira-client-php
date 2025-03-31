@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\VersionIssueCounts`](/src/Schema/VersionIssueCounts
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `customFieldUsage` | `?list<VersionUsageInCustomField>` | List of custom fields using the version. |
+| `customFieldUsage` | `?list<[VersionUsageInCustomField](/src/Schema/VersionUsageInCustomField.php)>` | List of custom fields using the version. |
 | `issueCountWithCustomFieldsShowingVersion` | `int` | Count of issues where a version custom field is set to the version. |
 | `issuesAffectedCount` | `int` | Count of issues where the `affectedVersion` is set to the version. |
 | `issuesFixedCount` | `int` | Count of issues where the `fixVersion` is set to the version. |

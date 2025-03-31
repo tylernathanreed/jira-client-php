@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\AttachmentArchive`](/src/Schema/AttachmentArchive.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `entries` | `?list<AttachmentArchiveEntry>` |  |
+| `entries` | `?list<[AttachmentArchiveEntry](/src/Schema/AttachmentArchiveEntry.php)>` |  |
 | `moreAvailable` | `bool` |  |
 | `totalEntryCount` | `int` |  |
 | `totalNumberOfEntriesAvailable` | `int` |  |

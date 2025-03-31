@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\ApplicationRole`](/src/Schema/ApplicationRole.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `defaultGroups` | `?list<string>` | The groups that are granted default access for this application role. As a group's name can change, use of `defaultGroupsDetails` is recommended to identify a groups. |
-| `defaultGroupsDetails` | `?list<GroupName>` | The groups that are granted default access for this application role. |
+| `defaultGroupsDetails` | `?list<[GroupName](/src/Schema/GroupName.php)>` | The groups that are granted default access for this application role. |
 | `defined` | `bool` | Deprecated. |
-| `groupDetails` | `?list<GroupName>` | The groups associated with the application role. |
+| `groupDetails` | `?list<[GroupName](/src/Schema/GroupName.php)>` | The groups associated with the application role. |
 | `groups` | `?list<string>` | The groups associated with the application role. As a group's name can change, use of `groupDetails` is recommended to identify a groups. |
 | `hasUnlimitedSeats` | `bool` |  |
 | `key` | `string` | The key of the application role. |

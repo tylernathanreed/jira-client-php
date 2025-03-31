@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SecuritySchemeMembersRequest`](/src/Schema/Security
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `members` | `?list<SecuritySchemeLevelMemberBean>` | The list of level members which should be added to the issue security scheme level. |
+| `members` | `?list<[SecuritySchemeLevelMemberBean](/src/Schema/SecuritySchemeLevelMemberBean.php)>` | The list of level members which should be added to the issue security scheme level. |
 
 ## References
 

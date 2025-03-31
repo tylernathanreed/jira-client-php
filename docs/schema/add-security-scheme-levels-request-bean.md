@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\AddSecuritySchemeLevelsRequestBean`](/src/Schema/Ad
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `levels` | `?list<SecuritySchemeLevelBean>` | The list of scheme levels which should be added to the security scheme. |
+| `levels` | `?list<[SecuritySchemeLevelBean](/src/Schema/SecuritySchemeLevelBean.php)>` | The list of scheme levels which should be added to the security scheme. |
 
 ## References
 

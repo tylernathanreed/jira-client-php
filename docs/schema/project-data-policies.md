@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectDataPolicies`](/src/Schema/ProjectDataPolici
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `projectDataPolicies` | `?list<ProjectWithDataPolicy>` | List of projects with data policies. |
+| `projectDataPolicies` | `?list<[ProjectWithDataPolicy](/src/Schema/ProjectWithDataPolicy.php)>` | List of projects with data policies. |
 
 ## References
 

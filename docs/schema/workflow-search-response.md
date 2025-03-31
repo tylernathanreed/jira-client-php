@@ -11,9 +11,9 @@ Source: [`Jira\Client\Schema\WorkflowSearchResponse`](/src/Schema/WorkflowSearch
 | `nextPage` | `string` | If there is another page of results, the URL of the next page. |
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
-| `statuses` | `?list<JiraWorkflowStatus>` | List of statuses. |
+| `statuses` | `?list<[JiraWorkflowStatus](/src/Schema/JiraWorkflowStatus.php)>` | List of statuses. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<JiraWorkflow>` | List of workflows. |
+| `values` | `?list<[JiraWorkflow](/src/Schema/JiraWorkflow.php)>` | List of workflows. |
 
 ## References
 

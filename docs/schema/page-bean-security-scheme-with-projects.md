@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanSecuritySchemeWithProjects`](/src/Schema/Pa
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<SecuritySchemeWithProjects>` | The list of items. |
+| `values` | `?list<[SecuritySchemeWithProjects](/src/Schema/SecuritySchemeWithProjects.php)>` | The list of items. |
 
 ## References
 

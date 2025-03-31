@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\AttachmentArchiveMetadataReadable`](/src/Schema/Att
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `entries` | `?list<AttachmentArchiveItemReadable>` | The list of the items included in the archive. |
+| `entries` | `?list<[AttachmentArchiveItemReadable](/src/Schema/AttachmentArchiveItemReadable.php)>` | The list of the items included in the archive. |
 | `id` | `int` | The ID of the attachment. |
 | `mediaType` | `string` | The MIME type of the attachment. |
 | `name` | `string` | The name of the archive file. |

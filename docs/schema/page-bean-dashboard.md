@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanDashboard`](/src/Schema/PageBeanDashboard.p
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<Dashboard>` | The list of items. |
+| `values` | `?list<[Dashboard](/src/Schema/Dashboard.php)>` | The list of items. |
 
 ## References
 

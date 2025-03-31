@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ListOperand`](/src/Schema/ListOperand.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `values` | `list<JqlQueryUnitaryOperand>` | The list of operand values. |
+| `values` | `list<[JqlQueryUnitaryOperand](/src/Schema/JqlQueryUnitaryOperand.php)>` | The list of operand values. |
 | `encodedOperand` | `string` | Encoded operand, which can be used directly in a JQL query. |
 
 ## References

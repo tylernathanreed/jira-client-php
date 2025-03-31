@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\AuditRecordBean`](/src/Schema/AuditRecordBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `associatedItems` | `?list<AssociatedItemBean>` | The list of items associated with the changed record. |
+| `associatedItems` | `?list<[AssociatedItemBean](/src/Schema/AssociatedItemBean.php)>` | The list of items associated with the changed record. |
 | `authorKey` | `string` | Deprecated, use `authorAccountId` instead. The key of the user who created the audit record. |
 | `category` | `string` | The category of the audit record. For a list of these categories, see the help article [Auditing in Jira applications](https://confluence.atlassian.com/x/noXKM). |
-| `changedValues` | `?list<ChangedValueBean>` | The list of values changed in the record event. |
+| `changedValues` | `?list<[ChangedValueBean](/src/Schema/ChangedValueBean.php)>` | The list of values changed in the record event. |
 | `created` | `string` | The date and time on which the audit record was created. |
 | `description` | `string` | The description of the audit record. |
 | `eventSource` | `string` | The event the audit record originated from. |

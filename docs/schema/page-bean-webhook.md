@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanWebhook`](/src/Schema/PageBeanWebhook.php)
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<Webhook>` | The list of items. |
+| `values` | `?list<[Webhook](/src/Schema/Webhook.php)>` | The list of items. |
 
 ## References
 

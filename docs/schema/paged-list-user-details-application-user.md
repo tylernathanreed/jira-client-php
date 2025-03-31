@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\PagedListUserDetailsApplicationUser`](/src/Schema/P
 | Property | Type | Description |
 | --- | --- | --- |
 | `end-index` | `int` | The index of the last item returned on the page. |
-| `items` | `?list<UserDetails>` | The list of items. |
+| `items` | `?list<[UserDetails](/src/Schema/UserDetails.php)>` | The list of items. |
 | `max-results` | `int` | The maximum number of results that could be on the page. |
 | `size` | `int` | The number of items on the page. |
 | `start-index` | `int` | The index of the first item returned on the page. |

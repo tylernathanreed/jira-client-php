@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CreateWorkflowCondition`](/src/Schema/CreateWorkflo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `conditions` | `?list<CreateWorkflowCondition>` | The list of workflow conditions. |
+| `conditions` | `?list<[CreateWorkflowCondition](/src/Schema/CreateWorkflowCondition.php)>` | The list of workflow conditions. |
 | `configuration` | `array<string,mixed>` | EXPERIMENTAL. The configuration of the transition rule. |
 | `operator` | `'AND'\|'OR'\|null` | The compound condition operator. |
 | `type` | `string` | The type of the transition rule. |

@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\WorkflowRulesSearchDetails`](/src/Schema/WorkflowRu
 | Property | Type | Description |
 | --- | --- | --- |
 | `invalidRules` | `?list<string>` | List of workflow rule IDs that do not belong to the workflow or can not be found. |
-| `validRules` | `?list<WorkflowTransitionRules>` | List of valid workflow transition rules. |
+| `validRules` | `?list<[WorkflowTransitionRules](/src/Schema/WorkflowTransitionRules.php)>` | List of valid workflow transition rules. |
 | `workflowEntityId` | `string` | The workflow ID. |
 
 ## References

@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\AssociateSecuritySchemeWithProjectDetails`](/src/Sc
 | --- | --- | --- |
 | `projectId` | `string` | The ID of the project. |
 | `schemeId` | `string` | The ID of the issue security scheme. Providing null will clear the association with the issue security scheme. |
-| `oldToNewSecurityLevelMappings` | `?list<OldToNewSecurityLevelMappingsBean>` | The list of scheme levels which should be remapped to new levels of the issue security scheme. |
+| `oldToNewSecurityLevelMappings` | `?list<[OldToNewSecurityLevelMappingsBean](/src/Schema/OldToNewSecurityLevelMappingsBean.php)>` | The list of scheme levels which should be remapped to new levels of the issue security scheme. |
 
 ## References
 

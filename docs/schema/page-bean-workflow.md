@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanWorkflow`](/src/Schema/PageBeanWorkflow.php
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<Workflow>` | The list of items. |
+| `values` | `?list<[Workflow](/src/Schema/Workflow.php)>` | The list of items. |
 
 ## References
 

@@ -2,6 +2,7 @@
 
 namespace Jira\CodeGen\Replacers;
 
+use Jira\CodeGen\Markdown\Link;
 use Jira\CodeGen\Markdown\Table;
 use Jira\CodeGen\Schema\AbstractSchema;
 use Jira\CodeGen\Schema\Schema;
@@ -18,6 +19,16 @@ class DummyPropertiesTableReplacer extends Replacer
 
         foreach ($schema->properties as $property) {
             $type = str_replace('|', '\|', $property->getDocType() ?: $property->type ?: 'mixed');
+
+            if ($property->listableTypeIsRef) {
+                assert(is_string($property->listableType));
+
+                $type = str_replace(
+                    $property->listableType,
+                    new Link($property->listableType, '/src/Schema/' . $property->listableType . '.php'),
+                    $type
+                );
+            }
 
             $table->add([
                 "`{$property->name}`",

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PermissionSchemes`](/src/Schema/PermissionSchemes.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `permissionSchemes` | `?list<PermissionScheme>` | Permission schemes list. |
+| `permissionSchemes` | `?list<[PermissionScheme](/src/Schema/PermissionScheme.php)>` | Permission schemes list. |
 
 ## References
 

@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanCustomFieldContextProjectMapping`](/src/Sch
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<CustomFieldContextProjectMapping>` | The list of items. |
+| `values` | `?list<[CustomFieldContextProjectMapping](/src/Schema/CustomFieldContextProjectMapping.php)>` | The list of items. |
 
 ## References
 

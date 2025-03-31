@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PaginatedResponseIssueTypeIssueCreateMetadata`](/sr
 | Property | Type | Description |
 | --- | --- | --- |
 | `maxResults` | `int` |  |
-| `results` | `?list<IssueTypeIssueCreateMetadata>` |  |
+| `results` | `?list<[IssueTypeIssueCreateMetadata](/src/Schema/IssueTypeIssueCreateMetadata.php)>` |  |
 | `startAt` | `int` |  |
 | `total` | `int` |  |
 

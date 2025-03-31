@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBean2ComponentJsonBean`](/src/Schema/PageBean2C
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<ComponentJsonBean>` | The list of items. |
+| `values` | `?list<[ComponentJsonBean](/src/Schema/ComponentJsonBean.php)>` | The list of items. |
 
 ## References
 

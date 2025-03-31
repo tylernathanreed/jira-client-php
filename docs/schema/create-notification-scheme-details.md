@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\CreateNotificationSchemeDetails`](/src/Schema/Creat
 | --- | --- | --- |
 | `name` | `string` | The name of the notification scheme. Must be unique (case-insensitive). |
 | `description` | `string` | The description of the notification scheme. |
-| `notificationSchemeEvents` | `?list<NotificationSchemeEventDetails>` | The list of notifications which should be added to the notification scheme. |
+| `notificationSchemeEvents` | `?list<[NotificationSchemeEventDetails](/src/Schema/NotificationSchemeEventDetails.php)>` | The list of notifications which should be added to the notification scheme. |
 
 ## References
 

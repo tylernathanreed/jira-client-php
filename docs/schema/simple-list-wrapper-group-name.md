@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SimpleListWrapperGroupName`](/src/Schema/SimpleList
 | Property | Type | Description |
 | --- | --- | --- |
 | `callback` | `ListWrapperCallbackGroupName` |  |
-| `items` | `?list<GroupName>` |  |
+| `items` | `?list<[GroupName](/src/Schema/GroupName.php)>` |  |
 | `max-results` | `int` |  |
 | `pagingCallback` | `ListWrapperCallbackGroupName` |  |
 | `size` | `int` |  |

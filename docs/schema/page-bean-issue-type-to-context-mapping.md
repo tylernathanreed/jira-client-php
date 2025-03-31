@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanIssueTypeToContextMapping`](/src/Schema/Pag
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | `?list<IssueTypeToContextMapping>` | The list of items. |
+| `values` | `?list<[IssueTypeToContextMapping](/src/Schema/IssueTypeToContextMapping.php)>` | The list of items. |
 
 ## References
 

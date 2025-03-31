@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\BulkTransitionGetAvailableTransitions`](/src/Schema
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `availableTransitions` | `?list<IssueBulkTransitionForWorkflow>` | List of available transitions for bulk transition operation for requested issues grouped by workflow |
+| `availableTransitions` | `?list<[IssueBulkTransitionForWorkflow](/src/Schema/IssueBulkTransitionForWorkflow.php)>` | List of available transitions for bulk transition operation for requested issues grouped by workflow |
 | `endingBefore` | `string` | The end cursor for use in pagination. |
 | `startingAfter` | `string` | The start cursor for use in pagination. |
 

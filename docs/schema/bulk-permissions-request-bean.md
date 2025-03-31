@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\BulkPermissionsRequestBean`](/src/Schema/BulkPermis
 | --- | --- | --- |
 | `accountId` | `string` | The account ID of a user. |
 | `globalPermissions` | `?list<string>` | Global permissions to look up. |
-| `projectPermissions` | `?list<BulkProjectPermissions>` | Project permissions with associated projects and issues to look up. |
+| `projectPermissions` | `?list<[BulkProjectPermissions](/src/Schema/BulkProjectPermissions.php)>` | Project permissions with associated projects and issues to look up. |
 
 ## References
 
