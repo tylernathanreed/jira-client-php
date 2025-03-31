@@ -6,6 +6,7 @@ use Jira\CodeGen\Markdown\Link;
 use Jira\CodeGen\Markdown\Table;
 use Jira\CodeGen\Schema\AbstractSchema;
 use Jira\CodeGen\Schema\Schema;
+use Jira\CodeGen\Utils;
 
 class DummyPropertiesTableReplacer extends Replacer
 {
@@ -23,7 +24,7 @@ class DummyPropertiesTableReplacer extends Replacer
             if ($property->listableTypeIsRef) {
                 assert(is_string($property->listableType));
 
-                $type = new Link("`{$type}`", '/src/Schema/' . $property->listableType . '.php');
+                $type = new Link("`{$type}`", '/docs/schemas/' . Utils::kebab($property->listableType) . '.md');
             }
 
             $table->add([
