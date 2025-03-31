@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\BulkEditShareableEntityRequest`](/src/Schema/BulkEd
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `action` | `'changeOwner'|'changePermission'|'addPermission'|'removePermission'` | Allowed action for bulk edit shareable entity |
+| `action` | `'changeOwner'\|'changePermission'\|'addPermission'\|'removePermission'` | Allowed action for bulk edit shareable entity |
 | `entityIds` | `list<int>` | The id list of shareable entities to be changed. |
-| `changeOwnerDetails` | `` | The details of change owner action. |
-| `extendAdminPermissions` | `` | Whether the actions are executed by users with Administer Jira global permission. |
-| `permissionDetails` | `` | The permission details to be changed. |
+| `changeOwnerDetails` | `BulkChangeOwnerDetails` | The details of change owner action. |
+| `extendAdminPermissions` | `bool` | Whether the actions are executed by users with Administer Jira global permission. |
+| `permissionDetails` | `PermissionDetails` | The permission details to be changed. |
 
 ## References
 

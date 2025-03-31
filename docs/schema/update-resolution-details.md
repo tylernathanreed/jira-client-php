@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UpdateResolutionDetails`](/src/Schema/UpdateResolut
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the resolution. Must be unique. |
-| `description` | `` | The description of the resolution. |
+| `name` | `string` | The name of the resolution. Must be unique. |
+| `description` | `string` | The description of the resolution. |
 
 ## References
 

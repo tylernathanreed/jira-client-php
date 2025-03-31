@@ -8,9 +8,9 @@ Source: [`Jira\Client\Schema\IssueContextVariable`](/src/Schema/IssueContextVari
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` | Type of custom context variable. |
-| `id` | `` | The issue ID. |
-| `key` | `` | The issue key. |
+| `type` | `string` | Type of custom context variable. |
+| `id` | `int` | The issue ID. |
+| `key` | `string` | The issue key. |
 
 ## References
 

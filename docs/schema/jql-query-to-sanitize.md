@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\JqlQueryToSanitize`](/src/Schema/JqlQueryToSanitize
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `query` | `` | The query to sanitize. |
-| `accountId` | `` | The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*. |
+| `query` | `string` | The query to sanitize. |
+| `accountId` | `string` | The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*. |
 
 ## References
 

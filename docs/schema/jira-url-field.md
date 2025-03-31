@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraUrlField`](/src/Schema/JiraUrlField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `` |  |
-| `url` | `` |  |
+| `fieldId` | `string` |  |
+| `url` | `string` |  |
 
 ## References
 

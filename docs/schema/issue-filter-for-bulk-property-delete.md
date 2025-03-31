@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueFilterForBulkPropertyDelete`](/src/Schema/Issu
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `currentValue` | `` | The value of properties to perform the bulk operation on. |
+| `currentValue` | `mixed` | The value of properties to perform the bulk operation on. |
 | `entityIds` | `?list<int>` | List of issues to perform the bulk delete operation on. |
 
 ## References

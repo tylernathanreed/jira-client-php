@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\VersionRelatedWork`](/src/Schema/VersionRelatedWork
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `category` | `` | The category of the related work |
-| `issueId` | `` | The ID of the issue associated with the related work (if there is one). Cannot be updated via the Rest API. |
-| `relatedWorkId` | `` | The id of the related work. For the native release note related work item, this will be null, and Rest API does not support updating it. |
-| `title` | `` | The title of the related work |
-| `url` | `` | The URL of the related work. Will be null for the native release note related work item, but is otherwise required. |
+| `category` | `string` | The category of the related work |
+| `issueId` | `int` | The ID of the issue associated with the related work (if there is one). Cannot be updated via the Rest API. |
+| `relatedWorkId` | `string` | The id of the related work. For the native release note related work item, this will be null, and Rest API does not support updating it. |
+| `title` | `string` | The title of the related work |
+| `url` | `string` | The URL of the related work. Will be null for the native release note related work item, but is otherwise required. |
 
 ## References
 

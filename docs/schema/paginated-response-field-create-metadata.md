@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\PaginatedResponseFieldCreateMetadata`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `maxResults` | `` |  |
+| `maxResults` | `int` |  |
 | `results` | `?list<FieldCreateMetadata>` |  |
-| `startAt` | `` |  |
-| `total` | `` |  |
+| `startAt` | `int` |  |
+| `total` | `int` |  |
 
 ## References
 

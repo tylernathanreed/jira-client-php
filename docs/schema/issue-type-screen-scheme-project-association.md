@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueTypeScreenSchemeProjectAssociation`](/src/Sche
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeScreenSchemeId` | `` | The ID of the issue type screen scheme. |
-| `projectId` | `` | The ID of the project. |
+| `issueTypeScreenSchemeId` | `string` | The ID of the issue type screen scheme. |
+| `projectId` | `string` | The ID of the project. |
 
 ## References
 

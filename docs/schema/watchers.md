@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\Watchers`](/src/Schema/Watchers.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `isWatching` | `` | Whether the calling user is watching this issue. |
-| `self` | `` | The URL of these issue watcher details. |
-| `watchCount` | `` | The number of users watching this issue. |
+| `isWatching` | `bool` | Whether the calling user is watching this issue. |
+| `self` | `string` | The URL of these issue watcher details. |
+| `watchCount` | `int` | The number of users watching this issue. |
 | `watchers` | `?list<UserDetails>` | Details of the users watching this issue. |
 
 ## References

@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\IssueTypeScheme`](/src/Schema/IssueTypeScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the issue type scheme. |
-| `name` | `` | The name of the issue type scheme. |
-| `defaultIssueTypeId` | `` | The ID of the default issue type of the issue type scheme. |
-| `description` | `` | The description of the issue type scheme. |
-| `isDefault` | `` | Whether the issue type scheme is the default. |
+| `id` | `string` | The ID of the issue type scheme. |
+| `name` | `string` | The name of the issue type scheme. |
+| `defaultIssueTypeId` | `string` | The ID of the default issue type of the issue type scheme. |
+| `description` | `string` | The description of the issue type scheme. |
+| `isDefault` | `bool` | Whether the issue type scheme is the default. |
 
 ## References
 

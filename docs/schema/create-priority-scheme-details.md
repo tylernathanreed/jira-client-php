@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\CreatePrioritySchemeDetails`](/src/Schema/CreatePri
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultPriorityId` | `` | The ID of the default priority for the priority scheme. |
-| `name` | `` | The name of the priority scheme. Must be unique. |
+| `defaultPriorityId` | `int` | The ID of the default priority for the priority scheme. |
+| `name` | `string` | The name of the priority scheme. Must be unique. |
 | `priorityIds` | `list<int>` | The IDs of priorities in the scheme. |
-| `description` | `` | The description of the priority scheme. |
-| `mappings` | `` | Instructions to migrate the priorities of issues.
+| `description` | `string` | The description of the priority scheme. |
+| `mappings` | `PriorityMapping` | Instructions to migrate the priorities of issues.
 
 `in` mappings are used to migrate the priorities of issues to priorities used within the priority scheme.
 

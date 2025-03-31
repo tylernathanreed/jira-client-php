@@ -32,12 +32,12 @@ Examples:
 Multiple `fields` parameters can be included in a request.
 
 Note: All navigable fields are returned by default. This differs from [GET issue](#api-rest-api-3-issue-issueIdOrKey-get) where the default is all fields. |
-| `fieldsByKeys` | `` | Reference fields by their key (rather than ID). The default is `false`. |
-| `jql` | `` | A [JQL](https://confluence.atlassian.com/x/egORLQ) expression. |
-| `maxResults` | `` | The maximum number of items to return per page. |
+| `fieldsByKeys` | `bool` | Reference fields by their key (rather than ID). The default is `false`. |
+| `jql` | `string` | A [JQL](https://confluence.atlassian.com/x/egORLQ) expression. |
+| `maxResults` | `int` | The maximum number of items to return per page. |
 | `properties` | `?list<string>` | A list of up to 5 issue properties to include in the results. This parameter accepts a comma-separated list. |
-| `startAt` | `` | The index of the first item to return in the page of results (page offset). The base index is `0`. |
-| `validateQuery` | `'strict'|'warn'|'none'|'true'|'false'|null` | Determines how to validate the JQL query and treat the validation results. Supported values:
+| `startAt` | `int` | The index of the first item to return in the page of results (page offset). The base index is `0`. |
+| `validateQuery` | `'strict'\|'warn'\|'none'\|'true'\|'false'\|null` | Determines how to validate the JQL query and treat the validation results. Supported values:
 
  *  `strict` Returns a 400 response code if any errors are found, along with a list of all errors (and warnings).
  *  `warn` Returns all errors as warnings.

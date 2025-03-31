@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\LinkedIssue`](/src/Schema/LinkedIssue.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fields` | `` | The fields associated with the issue. |
-| `id` | `` | The ID of an issue. Required if `key` isn't provided. |
-| `key` | `` | The key of an issue. Required if `id` isn't provided. |
-| `self` | `` | The URL of the issue. |
+| `fields` | `Fields` | The fields associated with the issue. |
+| `id` | `string` | The ID of an issue. Required if `key` isn't provided. |
+| `key` | `string` | The key of an issue. Required if `id` isn't provided. |
+| `self` | `string` | The URL of the issue. |
 
 ## References
 

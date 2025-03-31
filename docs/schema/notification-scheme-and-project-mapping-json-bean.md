@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\NotificationSchemeAndProjectMappingJsonBean`](/src/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `notificationSchemeId` | `` |  |
-| `projectId` | `` |  |
+| `notificationSchemeId` | `string` |  |
+| `projectId` | `string` |  |
 
 ## References
 

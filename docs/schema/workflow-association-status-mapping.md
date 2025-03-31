@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowAssociationStatusMapping`](/src/Schema/Work
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `newStatusId` | `` | The ID of the status in the new workflow. |
-| `oldStatusId` | `` | The ID of the status in the old workflow that isn't present in the new workflow. |
+| `newStatusId` | `string` | The ID of the status in the new workflow. |
+| `oldStatusId` | `string` | The ID of the status in the old workflow that isn't present in the new workflow. |
 
 ## References
 

@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\SimpleUsage`](/src/Schema/SimpleUsage.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `issueTypeIds` | `list<string>` | The issue type IDs for the usage. |
-| `projectId` | `` | The project ID for the usage. |
+| `projectId` | `string` | The project ID for the usage. |
 
 ## References
 

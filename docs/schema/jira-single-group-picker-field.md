@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraSingleGroupPickerField`](/src/Schema/JiraSingle
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `` |  |
-| `group` | `` |  |
+| `fieldId` | `string` |  |
+| `group` | `JiraGroupInput` |  |
 
 ## References
 

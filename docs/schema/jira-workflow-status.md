@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\JiraWorkflowStatus`](/src/Schema/JiraWorkflowStatus
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The description of the status. |
-| `id` | `` | The ID of the status. |
-| `name` | `` | The name of the status. |
-| `scope` | `` |  |
-| `statusCategory` | `'TODO'|'IN_PROGRESS'|'DONE'|null` | The category of the status. |
-| `statusReference` | `` | The reference of the status. |
+| `description` | `string` | The description of the status. |
+| `id` | `string` | The ID of the status. |
+| `name` | `string` | The name of the status. |
+| `scope` | `WorkflowScope` |  |
+| `statusCategory` | `'TODO'\|'IN_PROGRESS'\|'DONE'\|null` | The category of the status. |
+| `statusReference` | `string` | The reference of the status. |
 | `usages` | `?list<ProjectIssueTypes>` | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 
 The `statuses.usages` expand is an optional parameter that can be used when reading and updating statuses in Jira. It provides additional information about the projects and issue types associated with the requested statuses. |

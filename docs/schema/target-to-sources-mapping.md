@@ -6,20 +6,20 @@ Source: [`Jira\Client\Schema\TargetToSourcesMapping`](/src/Schema/TargetToSource
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `inferClassificationDefaults` | `` | If `true`, when issues are moved into this target group, they will adopt the target project's default classification, if they don't have a classification already. If they do have a classification, it will be kept the same even after the move. Leave `targetClassification` empty when using this.
+| `inferClassificationDefaults` | `bool` | If `true`, when issues are moved into this target group, they will adopt the target project's default classification, if they don't have a classification already. If they do have a classification, it will be kept the same even after the move. Leave `targetClassification` empty when using this.
 
 If `false`, you must provide a `targetClassification` mapping for each classification associated with the selected issues.
 
 [Benefit from data classification](https://support.atlassian.com/security-and-access-policies/docs/what-is-data-classification/) |
-| `inferFieldDefaults` | `` | If `true`, values from the source issues will be retained for the mandatory fields in the field configuration of the destination project. The `targetMandatoryFields` property shouldn't be defined.
+| `inferFieldDefaults` | `bool` | If `true`, values from the source issues will be retained for the mandatory fields in the field configuration of the destination project. The `targetMandatoryFields` property shouldn't be defined.
 
 If `false`, the user is required to set values for mandatory fields present in the field configuration of the destination project. Provide input by defining the `targetMandatoryFields` property |
-| `inferStatusDefaults` | `` | If `true`, the statuses of issues being moved in this target group that are not present in the target workflow will be changed to the default status of the target workflow (see below). Leave `targetStatus` empty when using this.
+| `inferStatusDefaults` | `bool` | If `true`, the statuses of issues being moved in this target group that are not present in the target workflow will be changed to the default status of the target workflow (see below). Leave `targetStatus` empty when using this.
 
 If `false`, you must provide a `targetStatus` for each status not present in the target workflow.
 
 The default status in a workflow is referred to as the "initial status". Each workflow has its own unique initial status. When an issue is created, it is automatically assigned to this initial status. Read more about configuring initial statuses: [Configure the initial status | Atlassian Support.](https://support.atlassian.com/jira-cloud-administration/docs/configure-the-initial-status/) |
-| `inferSubtaskTypeDefault` | `` | When an issue is moved, its subtasks (if there are any) need to be moved with it. `inferSubtaskTypeDefault` helps with moving the subtasks by picking a random subtask type in the target project.
+| `inferSubtaskTypeDefault` | `bool` | When an issue is moved, its subtasks (if there are any) need to be moved with it. `inferSubtaskTypeDefault` helps with moving the subtasks by picking a random subtask type in the target project.
 
 If `true`, subtasks will automatically move to the same project as their parent.
 

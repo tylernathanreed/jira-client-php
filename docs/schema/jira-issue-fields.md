@@ -26,7 +26,7 @@ Source: [`Jira\Client\Schema\JiraIssueFields`](/src/Schema/JiraIssueFields.php)
 
  *  To add, specify the date and time in ISO format for `formattedDateTime`.
  *  To clear, provide an empty string for `formattedDateTime`. |
-| `issueType` | `` | Set the issue type field by providing an `issueTypeId`. |
+| `issueType` | `JiraIssueTypeField` | Set the issue type field by providing an `issueTypeId`. |
 | `labelsFields` | `?list<JiraLabelsField>` | Edit a labels field:
 
  *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
@@ -47,12 +47,12 @@ Source: [`Jira\Client\Schema\JiraIssueFields`](/src/Schema/JiraIssueFields.php)
 
  *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
  *  To clear the field, use the `REMOVE_ALL` option with an empty `versions` array. |
-| `multiselectComponents` | `` | Edit a multi select components field:
+| `multiselectComponents` | `JiraMultiSelectComponentField` | Edit a multi select components field:
 
  *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
  *  To clear, use the `REMOVE_ALL` option with an empty `components` array. |
-| `originalEstimateField` | `` | Edit the original estimate field. |
-| `priority` | `` | Set the priority of an issue by specifying a `priorityId`. |
+| `originalEstimateField` | `JiraDurationField` | Edit the original estimate field. |
+| `priority` | `JiraPriorityField` | Set the priority of an issue by specifying a `priorityId`. |
 | `richTextFields` | `?list<JiraRichTextField>` | Add or clear a rich text field:
 
  *  To add, provide `adfValue`. Note that rich text fields only support ADF values.
@@ -80,7 +80,7 @@ For ADF format details, refer to: [Atlassian Document Format](https://developer.
 
  *  To add, specify the version with a `versionId`.
  *  To clear, set `versionId` to `-1`. |
-| `timeTrackingField` | `` | Edit the time tracking field. |
+| `timeTrackingField` | `JiraTimeTrackingField` | Edit the time tracking field. |
 | `urlFields` | `?list<JiraUrlField>` | Add or clear a URL field:
 
  *  To add, provide the `url` with the desired URL value.

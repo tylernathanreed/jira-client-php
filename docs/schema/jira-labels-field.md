@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraLabelsField`](/src/Schema/JiraLabelsField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `bulkEditMultiSelectFieldOption` | `'ADD'|'REMOVE'|'REPLACE'|'REMOVE_ALL'` |  |
-| `fieldId` | `` |  |
+| `bulkEditMultiSelectFieldOption` | `'ADD'\|'REMOVE'\|'REPLACE'\|'REMOVE_ALL'` |  |
+| `fieldId` | `string` |  |
 | `labels` | `list<JiraLabelsInput>` |  |
 
 ## References

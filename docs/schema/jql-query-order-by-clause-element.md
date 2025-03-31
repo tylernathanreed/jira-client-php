@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\JqlQueryOrderByClauseElement`](/src/Schema/JqlQuery
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `field` | `` |  |
-| `direction` | `'asc'|'desc'|null` | The direction in which to order the results. |
+| `field` | `JqlQueryField` |  |
+| `direction` | `'asc'\|'desc'\|null` | The direction in which to order the results. |
 
 ## References
 

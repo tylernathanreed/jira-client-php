@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowTransition`](/src/Schema/WorkflowTransition
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The transition ID. |
-| `name` | `` | The transition name. |
+| `id` | `int` | The transition ID. |
+| `name` | `string` | The transition name. |
 
 ## References
 

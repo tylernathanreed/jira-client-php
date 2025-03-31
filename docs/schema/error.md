@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\Error`](/src/Schema/Error.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `count` | `` |  |
+| `count` | `int` |  |
 | `issueIdsOrKeys` | `?list<string>` |  |
-| `message` | `` |  |
+| `message` | `string` |  |
 
 ## References
 

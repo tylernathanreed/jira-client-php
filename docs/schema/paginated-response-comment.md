@@ -5,10 +5,10 @@ Source: [`Jira\Client\Schema\PaginatedResponseComment`](/src/Schema/PaginatedRes
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `maxResults` | `` |  |
+| `maxResults` | `int` |  |
 | `results` | `?list<Comment>` |  |
-| `startAt` | `` |  |
-| `total` | `` |  |
+| `startAt` | `int` |  |
+| `total` | `int` |  |
 
 ## References
 

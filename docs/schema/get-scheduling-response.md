@@ -5,11 +5,11 @@ Source: [`Jira\Client\Schema\GetSchedulingResponse`](/src/Schema/GetSchedulingRe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `dependencies` | `'Sequential'|'Concurrent'` | The dependencies for the plan. This is "Sequential" or "Concurrent". |
-| `endDate` | `` | The end date field for the plan. |
-| `estimation` | `'StoryPoints'|'Days'|'Hours'` | The estimation unit for the plan. This is "StoryPoints", "Days" or "Hours". |
-| `inferredDates` | `'None'|'SprintDates'|'ReleaseDates'` | The inferred dates for the plan. This is "None", "SprintDates" or "ReleaseDates". |
-| `startDate` | `` | The start date field for the plan. |
+| `dependencies` | `'Sequential'\|'Concurrent'` | The dependencies for the plan. This is "Sequential" or "Concurrent". |
+| `endDate` | `GetDateFieldResponse` | The end date field for the plan. |
+| `estimation` | `'StoryPoints'\|'Days'\|'Hours'` | The estimation unit for the plan. This is "StoryPoints", "Days" or "Hours". |
+| `inferredDates` | `'None'\|'SprintDates'\|'ReleaseDates'` | The inferred dates for the plan. This is "None", "SprintDates" or "ReleaseDates". |
+| `startDate` | `GetDateFieldResponse` | The start date field for the plan. |
 
 ## References
 

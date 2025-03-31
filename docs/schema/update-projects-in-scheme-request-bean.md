@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UpdateProjectsInSchemeRequestBean`](/src/Schema/Upd
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `add` | `` | Projects to add to a scheme |
-| `remove` | `` | Projects to remove from a scheme |
+| `add` | `PrioritySchemeChangesWithoutMappings` | Projects to add to a scheme |
+| `remove` | `PrioritySchemeChangesWithoutMappings` | Projects to remove from a scheme |
 
 ## References
 

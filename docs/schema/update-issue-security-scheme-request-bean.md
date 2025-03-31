@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\UpdateIssueSecuritySchemeRequestBean`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The description of the security scheme scheme. |
-| `name` | `` | The name of the security scheme scheme. Must be unique. |
+| `description` | `string` | The description of the security scheme scheme. |
+| `name` | `string` | The name of the security scheme scheme. Must be unique. |
 
 ## References
 

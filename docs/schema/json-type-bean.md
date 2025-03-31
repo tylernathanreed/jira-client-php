@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\JsonTypeBean`](/src/Schema/JsonTypeBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` | The data type of the field. |
+| `type` | `string` | The data type of the field. |
 | `configuration` | `array<string,mixed>` | If the field is a custom field, the configuration of the field. |
-| `custom` | `` | If the field is a custom field, the URI of the field. |
-| `customId` | `` | If the field is a custom field, the custom ID of the field. |
-| `items` | `` | When the data type is an array, the name of the field items within the array. |
-| `system` | `` | If the field is a system field, the name of the field. |
+| `custom` | `string` | If the field is a custom field, the URI of the field. |
+| `customId` | `int` | If the field is a custom field, the custom ID of the field. |
+| `items` | `string` | When the data type is an array, the name of the field items within the array. |
+| `system` | `string` | If the field is a system field, the name of the field. |
 
 ## References
 

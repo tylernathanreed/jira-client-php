@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectUsage`](/src/Schema/ProjectUsage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The project ID. |
+| `id` | `string` | The project ID. |
 
 ## References
 

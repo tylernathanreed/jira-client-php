@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeUserField`](/src
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `` | The ID of the default user. |
-| `contextId` | `` | The ID of the context. |
-| `type` | `` |  |
-| `userFilter` | `` |  |
+| `accountId` | `string` | The ID of the default user. |
+| `contextId` | `string` | The ID of the context. |
+| `type` | `string` |  |
+| `userFilter` | `UserFilter` |  |
 
 ## References
 

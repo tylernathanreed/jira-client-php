@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\ConnectWorkflowTransitionRule`](/src/Schema/Connect
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `configuration` | `` |  |
-| `id` | `` | The ID of the transition rule. |
-| `key` | `` | The key of the rule, as defined in the Connect app descriptor. |
-| `transition` | `` |  |
+| `configuration` | `RuleConfiguration` |  |
+| `id` | `string` | The ID of the transition rule. |
+| `key` | `string` | The key of the rule, as defined in the Connect app descriptor. |
+| `transition` | `WorkflowTransition` |  |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JsonContextVariable`](/src/Schema/JsonContextVariab
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` | Type of custom context variable. |
+| `type` | `string` | Type of custom context variable. |
 | `value` | `array<string,mixed>` | A JSON object containing custom content. |
 
 ## References

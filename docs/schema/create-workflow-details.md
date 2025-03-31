@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CreateWorkflowDetails`](/src/Schema/CreateWorkflowD
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the workflow. The name must be unique. The maximum length is 255 characters. Characters can be separated by a whitespace but the name cannot start or end with a whitespace. |
+| `name` | `string` | The name of the workflow. The name must be unique. The maximum length is 255 characters. Characters can be separated by a whitespace but the name cannot start or end with a whitespace. |
 | `statuses` | `list<CreateWorkflowStatusDetails>` | The statuses of the workflow. Any status that does not include a transition is added to the workflow without a transition. |
 | `transitions` | `list<CreateWorkflowTransitionDetails>` | The transitions of the workflow. For the request to be valid, these transitions must:
 
@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\CreateWorkflowDetails`](/src/Schema/CreateWorkflowD
  *  have a 'from' status on *directed* transitions.
 
 All the transition statuses must be included in `statuses`. |
-| `description` | `` | The description of the workflow. The maximum length is 1000 characters. |
+| `description` | `string` | The description of the workflow. The maximum length is 1000 characters. |
 
 ## References
 

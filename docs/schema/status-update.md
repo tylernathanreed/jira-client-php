@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\StatusUpdate`](/src/Schema/StatusUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the status. |
-| `name` | `` | The name of the status. |
-| `statusCategory` | `'TODO'|'IN_PROGRESS'|'DONE'` | The category of the status. |
-| `description` | `` | The description of the status. |
+| `id` | `string` | The ID of the status. |
+| `name` | `string` | The name of the status. |
+| `statusCategory` | `'TODO'\|'IN_PROGRESS'\|'DONE'` | The category of the status. |
+| `description` | `string` | The description of the status. |
 
 ## References
 

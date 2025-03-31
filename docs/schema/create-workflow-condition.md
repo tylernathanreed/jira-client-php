@@ -8,8 +8,8 @@ Source: [`Jira\Client\Schema\CreateWorkflowCondition`](/src/Schema/CreateWorkflo
 | --- | --- | --- |
 | `conditions` | `?list<CreateWorkflowCondition>` | The list of workflow conditions. |
 | `configuration` | `array<string,mixed>` | EXPERIMENTAL. The configuration of the transition rule. |
-| `operator` | `'AND'|'OR'|null` | The compound condition operator. |
-| `type` | `` | The type of the transition rule. |
+| `operator` | `'AND'\|'OR'\|null` | The compound condition operator. |
+| `type` | `string` | The type of the transition rule. |
 
 ## References
 

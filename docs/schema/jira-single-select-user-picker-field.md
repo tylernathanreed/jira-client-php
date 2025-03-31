@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraSingleSelectUserPickerField`](/src/Schema/JiraS
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `` |  |
-| `user` | `` |  |
+| `fieldId` | `string` |  |
+| `user` | `JiraUserField` |  |
 
 ## References
 

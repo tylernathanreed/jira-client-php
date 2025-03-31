@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueDateTime`](/src/Schem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` |  |
-| `dateTime` | `` | The default date-time in ISO format. Ignored if `useCurrent` is true. |
-| `useCurrent` | `` | Whether to use the current date. |
+| `type` | `string` |  |
+| `dateTime` | `string` | The default date-time in ISO format. Ignored if `useCurrent` is true. |
+| `useCurrent` | `bool` | Whether to use the current date. |
 
 ## References
 

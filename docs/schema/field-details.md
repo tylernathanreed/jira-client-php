@@ -7,15 +7,15 @@ Source: [`Jira\Client\Schema\FieldDetails`](/src/Schema/FieldDetails.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `clauseNames` | `?list<string>` | The names that can be used to reference the field in an advanced search. For more information, see [Advanced searching - fields reference](https://confluence.atlassian.com/x/gwORLQ). |
-| `custom` | `` | Whether the field is a custom field. |
-| `id` | `` | The ID of the field. |
-| `key` | `` | The key of the field. |
-| `name` | `` | The name of the field. |
-| `navigable` | `` | Whether the field can be used as a column on the issue navigator. |
-| `orderable` | `` | Whether the content of the field can be used to order lists. |
-| `schema` | `` | The data schema for the field. |
-| `scope` | `` | The scope of the field. |
-| `searchable` | `` | Whether the content of the field can be searched. |
+| `custom` | `bool` | Whether the field is a custom field. |
+| `id` | `string` | The ID of the field. |
+| `key` | `string` | The key of the field. |
+| `name` | `string` | The name of the field. |
+| `navigable` | `bool` | Whether the field can be used as a column on the issue navigator. |
+| `orderable` | `bool` | Whether the content of the field can be used to order lists. |
+| `schema` | `JsonTypeBean` | The data schema for the field. |
+| `scope` | `Scope` | The scope of the field. |
+| `searchable` | `bool` | Whether the content of the field can be searched. |
 
 ## References
 

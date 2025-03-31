@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\WorkflowStatusUpdate`](/src/Schema/WorkflowStatusUp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the status. |
-| `statusCategory` | `'TODO'|'IN_PROGRESS'|'DONE'` | The category of the status. |
-| `statusReference` | `` | The reference of the status. |
-| `description` | `` | The description of the status. |
-| `id` | `` | The ID of the status. |
+| `name` | `string` | The name of the status. |
+| `statusCategory` | `'TODO'\|'IN_PROGRESS'\|'DONE'` | The category of the status. |
+| `statusReference` | `string` | The reference of the status. |
+| `description` | `string` | The description of the status. |
+| `id` | `string` | The ID of the status. |
 
 ## References
 

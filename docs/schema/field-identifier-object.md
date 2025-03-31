@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\FieldIdentifierObject`](/src/Schema/FieldIdentifier
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` |  |
-| `identifier` | `` |  |
+| `type` | `string` |  |
+| `identifier` | `string` |  |
 
 ## References
 

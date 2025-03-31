@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\ArchiveIssueAsyncRequest`](/src/Schema/ArchiveIssue
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `jql` | `` |  |
+| `jql` | `string` |  |
 
 ## References
 

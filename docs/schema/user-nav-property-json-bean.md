@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\UserNavPropertyJsonBean`](/src/Schema/UserNavProper
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `key` | `` |  |
-| `value` | `` |  |
+| `key` | `string` |  |
+| `value` | `string` |  |
 
 ## References
 

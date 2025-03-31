@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\BulkProjectPermissionGrants`](/src/Schema/BulkProje
 | Property | Type | Description |
 | --- | --- | --- |
 | `issues` | `list<int>` | IDs of the issues the user has the permission for. |
-| `permission` | `` | A project permission, |
+| `permission` | `string` | A project permission, |
 | `projects` | `list<int>` | IDs of the projects the user has the permission for. |
 
 ## References

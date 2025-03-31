@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsage`](/src/Schema/StatusPro
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The issue type ID. |
+| `id` | `string` | The issue type ID. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowStatusLayout`](/src/Schema/WorkflowStatusLa
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `x` | `` | The x axis location. |
-| `y` | `` | The y axis location. |
+| `x` | `float` | The x axis location. |
+| `y` | `float` | The y axis location. |
 
 ## References
 

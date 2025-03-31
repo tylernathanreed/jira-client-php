@@ -11,8 +11,8 @@ Source: [`Jira\Client\Schema\WorkflowUsages`](/src/Schema/WorkflowUsages.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `workflowId` | `` | Workflow ID. |
-| `workflowName` | `` | Workflow name. |
+| `workflowId` | `string` | Workflow ID. |
+| `workflowName` | `string` | Workflow name. |
 
 ## References
 

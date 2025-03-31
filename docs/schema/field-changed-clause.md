@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\FieldChangedClause`](/src/Schema/FieldChangedClause
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `field` | `` |  |
+| `field` | `JqlQueryField` |  |
 | `operator` | `'changed'` | The operator applied to the field. |
 | `predicates` | `list<JqlQueryClauseTimePredicate>` | The list of time predicates. |
 

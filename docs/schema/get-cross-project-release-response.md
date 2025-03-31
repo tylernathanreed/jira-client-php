@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\GetCrossProjectReleaseResponse`](/src/Schema/GetCro
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The cross-project release name. |
+| `name` | `string` | The cross-project release name. |
 | `releaseIds` | `?list<int>` | The IDs of the releases included in the cross-project release. |
 
 ## References

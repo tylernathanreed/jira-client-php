@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueFloat`](/src/Schema/C
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `number` | `` | The default floating-point number. |
-| `type` | `` |  |
+| `number` | `float` | The default floating-point number. |
+| `type` | `string` |  |
 
 ## References
 

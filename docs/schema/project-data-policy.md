@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectDataPolicy`](/src/Schema/ProjectDataPolicy.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `anyContentBlocked` | `` | Whether the project contains any content inaccessible to the requesting application. |
+| `anyContentBlocked` | `bool` | Whether the project contains any content inaccessible to the requesting application. |
 
 ## References
 

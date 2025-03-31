@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\IssueTypeToContextMapping`](/src/Schema/IssueTypeTo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `` | The ID of the context. |
-| `isAnyIssueType` | `` | Whether the context is mapped to any issue type. |
-| `issueTypeId` | `` | The ID of the issue type. |
+| `contextId` | `string` | The ID of the context. |
+| `isAnyIssueType` | `bool` | Whether the context is mapped to any issue type. |
+| `issueTypeId` | `string` | The ID of the issue type. |
 
 ## References
 

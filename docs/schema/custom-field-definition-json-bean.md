@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\CustomFieldDefinitionJsonBean`](/src/Schema/CustomF
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the custom field, which is displayed in Jira. This is not the unique identifier. |
-| `type` | `` | The type of the custom field. These built-in custom field types are available:
+| `name` | `string` | The name of the custom field, which is displayed in Jira. This is not the unique identifier. |
+| `type` | `string` | The type of the custom field. These built-in custom field types are available:
 
  *  `cascadingselect`: Enables values to be selected from two levels of select lists (value: `com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect`)
  *  `datepicker`: Stores a date using a picker control (value: `com.atlassian.jira.plugin.system.customfieldtypes:datepicker`)
@@ -31,8 +31,8 @@ Source: [`Jira\Client\Schema\CustomFieldDefinitionJsonBean`](/src/Schema/CustomF
  *  `version`: Stores a version using a picker control (value: `com.atlassian.jira.plugin.system.customfieldtypes:version`)
 
 To create a field based on a [Forge custom field type](https://developer.atlassian.com/platform/forge/manifest-reference/modules/#jira-custom-field-type--beta-), use the ID of the Forge custom field type as the value. For example, `ari:cloud:ecosystem::extension/e62f20a2-4b61-4dbe-bfb9-9a88b5e3ac84/548c5df1-24aa-4f7c-bbbb-3038d947cb05/static/my-cf-type-key`. |
-| `description` | `` | The description of the custom field, which is displayed in Jira. |
-| `searcherKey` | `'com.atlassian.jira.plugin.system.customfieldtypes:cascadingselectsearcher'|'com.atlassian.jira.plugin.system.customfieldtypes:daterange'|'com.atlassian.jira.plugin.system.customfieldtypes:datetimerange'|'com.atlassian.jira.plugin.system.customfieldtypes:exactnumber'|'com.atlassian.jira.plugin.system.customfieldtypes:exacttextsearcher'|'com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher'|'com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher'|'com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher'|'com.atlassian.jira.plugin.system.customfieldtypes:numberrange'|'com.atlassian.jira.plugin.system.customfieldtypes:projectsearcher'|'com.atlassian.jira.plugin.system.customfieldtypes:textsearcher'|'com.atlassian.jira.plugin.system.customfieldtypes:userpickergroupsearcher'|'com.atlassian.jira.plugin.system.customfieldtypes:versionsearcher'|null` | The searcher defines the way the field is searched in Jira. For example, *com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher*.  
+| `description` | `string` | The description of the custom field, which is displayed in Jira. |
+| `searcherKey` | `'com.atlassian.jira.plugin.system.customfieldtypes:cascadingselectsearcher'\|'com.atlassian.jira.plugin.system.customfieldtypes:daterange'\|'com.atlassian.jira.plugin.system.customfieldtypes:datetimerange'\|'com.atlassian.jira.plugin.system.customfieldtypes:exactnumber'\|'com.atlassian.jira.plugin.system.customfieldtypes:exacttextsearcher'\|'com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher'\|'com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher'\|'com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher'\|'com.atlassian.jira.plugin.system.customfieldtypes:numberrange'\|'com.atlassian.jira.plugin.system.customfieldtypes:projectsearcher'\|'com.atlassian.jira.plugin.system.customfieldtypes:textsearcher'\|'com.atlassian.jira.plugin.system.customfieldtypes:userpickergroupsearcher'\|'com.atlassian.jira.plugin.system.customfieldtypes:versionsearcher'\|null` | The searcher defines the way the field is searched in Jira. For example, *com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher*.  
 The search UI (basic search and JQL search) will display different operations and values for the field, based on the field searcher. You must specify a searcher that is valid for the field type, as listed below (abbreviated values shown):
 
  *  `cascadingselect`: `cascadingselectsearcher`

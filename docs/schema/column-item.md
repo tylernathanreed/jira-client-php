@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ColumnItem`](/src/Schema/ColumnItem.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `label` | `` | The issue navigator column label. |
-| `value` | `` | The issue navigator column value. |
+| `label` | `string` | The issue navigator column label. |
+| `value` | `string` | The issue navigator column value. |
 
 ## References
 

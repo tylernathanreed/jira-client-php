@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeMultiGroupField`
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `` | The ID of the context. |
+| `contextId` | `string` | The ID of the context. |
 | `groupIds` | `list<string>` | The IDs of the default groups. |
-| `type` | `` |  |
+| `type` | `string` |  |
 
 ## References
 

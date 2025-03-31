@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\RemoteIssueLinkIdentifies`](/src/Schema/RemoteIssue
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the remote issue link, such as the ID of the item on the remote system. |
-| `self` | `` | The URL of the remote issue link. |
+| `id` | `int` | The ID of the remote issue link, such as the ID of the item on the remote system. |
+| `self` | `string` | The URL of the remote issue link. |
 
 ## References
 

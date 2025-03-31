@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\SecurityLevelMember`](/src/Schema/SecurityLevelMemb
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `holder` | `` | The user or group being granted the permission. It consists of a `type` and a type-dependent `parameter`. See [Holder object](../api-group-permission-schemes/#holder-object) in *Get all permission schemes* for more information. |
-| `id` | `` | The ID of the issue security level member. |
-| `issueSecurityLevelId` | `` | The ID of the issue security level. |
-| `issueSecuritySchemeId` | `` | The ID of the issue security scheme. |
-| `managed` | `` |  |
+| `holder` | `PermissionHolder` | The user or group being granted the permission. It consists of a `type` and a type-dependent `parameter`. See [Holder object](../api-group-permission-schemes/#holder-object) in *Get all permission schemes* for more information. |
+| `id` | `string` | The ID of the issue security level member. |
+| `issueSecurityLevelId` | `string` | The ID of the issue security level. |
+| `issueSecuritySchemeId` | `string` | The ID of the issue security scheme. |
+| `managed` | `bool` |  |
 
 ## References
 

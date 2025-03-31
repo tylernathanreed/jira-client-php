@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueURL`](/src/Schema/Cus
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `` | The ID of the context. |
-| `type` | `` |  |
-| `url` | `` | The default URL. |
+| `contextId` | `string` | The ID of the context. |
+| `type` | `string` |  |
+| `url` | `string` | The default URL. |
 
 ## References
 

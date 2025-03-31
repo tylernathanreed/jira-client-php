@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowTransitionProperty`](/src/Schema/WorkflowTr
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `value` | `` | The value of the transition property. |
-| `id` | `` | The ID of the transition property. |
-| `key` | `` | The key of the transition property. Also known as the name of the transition property. |
+| `value` | `string` | The value of the transition property. |
+| `id` | `string` | The ID of the transition property. |
+| `key` | `string` | The key of the transition property. Also known as the name of the transition property. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\BulkTransitionSubmitInput`](/src/Schema/BulkTransit
 | Property | Type | Description |
 | --- | --- | --- |
 | `selectedIssueIdsOrKeys` | `list<string>` | List of all the issue IDs or keys that are to be bulk transitioned. |
-| `transitionId` | `` | The ID of the transition that is to be performed on the issues. |
+| `transitionId` | `string` | The ID of the transition that is to be performed on the issues. |
 
 ## References
 

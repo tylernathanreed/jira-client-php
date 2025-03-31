@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\VersionMoveBean`](/src/Schema/VersionMoveBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `after` | `` | The URL (self link) of the version after which to place the moved version. Cannot be used with `position`. |
-| `position` | `'Earlier'|'Later'|'First'|'Last'|null` | An absolute position in which to place the moved version. Cannot be used with `after`. |
+| `after` | `string` | The URL (self link) of the version after which to place the moved version. Cannot be used with `position`. |
+| `position` | `'Earlier'\|'Later'\|'First'\|'Last'\|null` | An absolute position in which to place the moved version. Cannot be used with `after`. |
 
 ## References
 

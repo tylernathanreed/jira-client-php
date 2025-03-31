@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\NestedResponse`](/src/Schema/NestedResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errorCollection` | `` |  |
-| `status` | `` |  |
-| `warningCollection` | `` |  |
+| `errorCollection` | `ErrorCollection` |  |
+| `status` | `int` |  |
+| `warningCollection` | `WarningCollection` |  |
 
 ## References
 

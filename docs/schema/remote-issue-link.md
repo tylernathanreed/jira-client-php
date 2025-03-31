@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\RemoteIssueLink`](/src/Schema/RemoteIssueLink.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `application` | `` | Details of the remote application the linked item is in. |
-| `globalId` | `` | The global ID of the link, such as the ID of the item on the remote system. |
-| `id` | `` | The ID of the link. |
-| `object` | `` | Details of the item linked to. |
-| `relationship` | `` | Description of the relationship between the issue and the linked item. |
-| `self` | `` | The URL of the link. |
+| `application` | `Application` | Details of the remote application the linked item is in. |
+| `globalId` | `string` | The global ID of the link, such as the ID of the item on the remote system. |
+| `id` | `int` | The ID of the link. |
+| `object` | `RemoteObject` | Details of the item linked to. |
+| `relationship` | `string` | Description of the relationship between the issue and the linked item. |
+| `self` | `string` | The URL of the link. |
 
 ## References
 

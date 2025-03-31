@@ -5,11 +5,11 @@ Source: [`Jira\Client\Schema\PageWithCursorGetPlanResponseForPage`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `cursor` | `` |  |
-| `last` | `` |  |
-| `nextPageCursor` | `` |  |
-| `size` | `` |  |
-| `total` | `` |  |
+| `cursor` | `string` |  |
+| `last` | `bool` |  |
+| `nextPageCursor` | `string` |  |
+| `size` | `int` |  |
+| `total` | `int` |  |
 | `values` | `?list<GetPlanResponseForPage>` |  |
 
 ## References

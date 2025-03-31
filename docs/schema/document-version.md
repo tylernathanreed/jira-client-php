@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\DocumentVersion`](/src/Schema/DocumentVersion.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The version UUID. |
-| `versionNumber` | `` | The version number. |
+| `id` | `string` | The version UUID. |
+| `versionNumber` | `int` | The version number. |
 
 ## References
 

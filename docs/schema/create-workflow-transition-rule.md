@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionRule`](/src/Schema/CreateWo
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` | The type of the transition rule. |
+| `type` | `string` | The type of the transition rule. |
 | `configuration` | `array<string,mixed>` | EXPERIMENTAL. The configuration of the transition rule. |
 
 ## References

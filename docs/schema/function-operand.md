@@ -9,8 +9,8 @@ Source: [`Jira\Client\Schema\FunctionOperand`](/src/Schema/FunctionOperand.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `arguments` | `list<string>` | The list of function arguments. |
-| `function` | `` | The name of the function. |
-| `encodedOperand` | `` | Encoded operand, which can be used directly in a JQL query. |
+| `function` | `string` | The name of the function. |
+| `encodedOperand` | `string` | Encoded operand, which can be used directly in a JQL query. |
 
 ## References
 

@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\Context`](/src/Schema/Context.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the context. |
-| `name` | `` | The name of the context. |
-| `scope` | `` | The scope of the context. |
+| `id` | `int` | The ID of the context. |
+| `name` | `string` | The name of the context. |
+| `scope` | `Scope` | The scope of the context. |
 
 ## References
 

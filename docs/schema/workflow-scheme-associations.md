@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\WorkflowSchemeAssociations`](/src/Schema/WorkflowSc
 | Property | Type | Description |
 | --- | --- | --- |
 | `projectIds` | `list<string>` | The list of projects that use the workflow scheme. |
-| `workflowScheme` | `` | The workflow scheme. |
+| `workflowScheme` | `WorkflowScheme` | The workflow scheme. |
 
 ## References
 

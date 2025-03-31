@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PermissionGrants`](/src/Schema/PermissionGrants.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `expand` | `` | Expand options that include additional permission grant details in the response. |
+| `expand` | `string` | Expand options that include additional permission grant details in the response. |
 | `permissions` | `?list<PermissionGrant>` | Permission grants list. |
 
 ## References

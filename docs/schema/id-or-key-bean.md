@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\IdOrKeyBean`](/src/Schema/IdOrKeyBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the referenced item. |
-| `key` | `` | The key of the referenced item. |
+| `id` | `int` | The ID of the referenced item. |
+| `key` | `string` | The key of the referenced item. |
 
 ## References
 

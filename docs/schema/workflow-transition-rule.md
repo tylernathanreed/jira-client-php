@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRule`](/src/Schema/WorkflowTransi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` | The type of the transition rule. |
-| `configuration` | `` | EXPERIMENTAL. The configuration of the transition rule. |
+| `type` | `string` | The type of the transition rule. |
+| `configuration` | `mixed` | EXPERIMENTAL. The configuration of the transition rule. |
 
 ## References
 

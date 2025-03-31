@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\CustomFieldContext`](/src/Schema/CustomFieldContext
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The description of the context. |
-| `id` | `` | The ID of the context. |
-| `isAnyIssueType` | `` | Whether the context apply to all issue types. |
-| `isGlobalContext` | `` | Whether the context is global. |
-| `name` | `` | The name of the context. |
+| `description` | `string` | The description of the context. |
+| `id` | `string` | The ID of the context. |
+| `isAnyIssueType` | `bool` | Whether the context apply to all issue types. |
+| `isGlobalContext` | `bool` | Whether the context is global. |
+| `name` | `string` | The name of the context. |
 
 ## References
 

@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\WorkflowCreate`](/src/Schema/WorkflowCreate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the workflow to create. |
+| `name` | `string` | The name of the workflow to create. |
 | `statuses` | `list<StatusLayoutUpdate>` | The statuses associated with this workflow. |
 | `transitions` | `list<TransitionUpdateDTO>` | The transitions of this workflow. |
-| `description` | `` | The description of the workflow to create. |
-| `startPointLayout` | `` |  |
+| `description` | `string` | The description of the workflow to create. |
+| `startPointLayout` | `WorkflowLayout` |  |
 
 ## References
 

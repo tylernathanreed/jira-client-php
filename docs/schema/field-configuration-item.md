@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\FieldConfigurationItem`](/src/Schema/FieldConfigura
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the field within the field configuration. |
-| `description` | `` | The description of the field within the field configuration. |
-| `isHidden` | `` | Whether the field is hidden in the field configuration. |
-| `isRequired` | `` | Whether the field is required in the field configuration. |
-| `renderer` | `` | The renderer type for the field within the field configuration. |
+| `id` | `string` | The ID of the field within the field configuration. |
+| `description` | `string` | The description of the field within the field configuration. |
+| `isHidden` | `bool` | Whether the field is hidden in the field configuration. |
+| `isRequired` | `bool` | Whether the field is required in the field configuration. |
+| `renderer` | `string` | The renderer type for the field within the field configuration. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\NotificationSchemeNotificationDetails`](/src/Schema
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `notificationType` | `` | The notification type, e.g `CurrentAssignee`, `Group`, `EmailAddress`. |
-| `parameter` | `` | The value corresponding to the specified notification type. |
+| `notificationType` | `string` | The notification type, e.g `CurrentAssignee`, `Group`, `EmailAddress`. |
+| `parameter` | `string` | The value corresponding to the specified notification type. |
 
 ## References
 

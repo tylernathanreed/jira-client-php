@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\EntityProperty`](/src/Schema/EntityProperty.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `key` | `` | The key of the property. Required on create and update. |
-| `value` | `` | The value of the property. Required on create and update. |
+| `key` | `string` | The key of the property. Required on create and update. |
+| `value` | `mixed` | The value of the property. Required on create and update. |
 
 ## References
 

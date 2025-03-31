@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\VersionIssuesStatus`](/src/Schema/VersionIssuesStat
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `done` | `` | Count of issues with status *done*. |
-| `inProgress` | `` | Count of issues with status *in progress*. |
-| `toDo` | `` | Count of issues with status *to do*. |
-| `unmapped` | `` | Count of issues with a status other than *to do*, *in progress*, and *done*. |
+| `done` | `int` | Count of issues with status *done*. |
+| `inProgress` | `int` | Count of issues with status *in progress*. |
+| `toDo` | `int` | Count of issues with status *to do*. |
+| `unmapped` | `int` | Count of issues with a status other than *to do*, *in progress*, and *done*. |
 
 ## References
 

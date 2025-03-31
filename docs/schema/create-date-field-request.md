@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\CreateDateFieldRequest`](/src/Schema/CreateDateFiel
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `'DueDate'|'TargetStartDate'|'TargetEndDate'|'DateCustomField'` | The date field type. This must be "DueDate", "TargetStartDate", "TargetEndDate" or "DateCustomField". |
-| `dateCustomFieldId` | `` | A date custom field ID. This is required if the type is "DateCustomField". |
+| `type` | `'DueDate'\|'TargetStartDate'\|'TargetEndDate'\|'DateCustomField'` | The date field type. This must be "DueDate", "TargetStartDate", "TargetEndDate" or "DateCustomField". |
+| `dateCustomFieldId` | `int` | A date custom field ID. This is required if the type is "DateCustomField". |
 
 ## References
 

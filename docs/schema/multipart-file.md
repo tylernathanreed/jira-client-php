@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\MultipartFile`](/src/Schema/MultipartFile.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `bytes` | `?list<string>` |  |
-| `contentType` | `` |  |
-| `empty` | `` |  |
+| `contentType` | `string` |  |
+| `empty` | `bool` |  |
 | `inputStream` | `array<string,mixed>` |  |
-| `name` | `` |  |
-| `originalFilename` | `` |  |
-| `resource` | `` |  |
-| `size` | `` |  |
+| `name` | `string` |  |
+| `originalFilename` | `string` |  |
+| `resource` | `Resource` |  |
+| `size` | `int` |  |
 
 ## References
 

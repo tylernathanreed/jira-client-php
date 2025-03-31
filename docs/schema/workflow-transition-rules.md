@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowTransitionRules`](/src/Schema/WorkflowTrans
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `workflowId` | `` |  |
+| `workflowId` | `WorkflowId` |  |
 | `conditions` | `?list<AppWorkflowTransitionRule>` | The list of conditions within the workflow. |
 | `postFunctions` | `?list<AppWorkflowTransitionRule>` | The list of post functions within the workflow. |
 | `validators` | `?list<AppWorkflowTransitionRule>` | The list of validators within the workflow. |

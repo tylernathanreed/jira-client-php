@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\Resolution`](/src/Schema/Resolution.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The description of the issue resolution. |
-| `id` | `` | The ID of the issue resolution. |
-| `name` | `` | The name of the issue resolution. |
-| `self` | `` | The URL of the issue resolution. |
+| `description` | `string` | The description of the issue resolution. |
+| `id` | `string` | The ID of the issue resolution. |
+| `name` | `string` | The name of the issue resolution. |
+| `self` | `string` | The URL of the issue resolution. |
 
 ## References
 

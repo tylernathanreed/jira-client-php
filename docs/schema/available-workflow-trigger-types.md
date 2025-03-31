@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\AvailableWorkflowTriggerTypes`](/src/Schema/Availab
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The description of the trigger rule. |
-| `name` | `` | The name of the trigger rule. |
-| `type` | `` | The type identifier of trigger rule. |
+| `description` | `string` | The description of the trigger rule. |
+| `name` | `string` | The name of the trigger rule. |
+| `type` | `string` | The type identifier of trigger rule. |
 
 ## References
 

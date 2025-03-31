@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueTypeSchemeID`](/src/Schema/IssueTypeSchemeID.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeSchemeId` | `` | The ID of the issue type scheme. |
+| `issueTypeSchemeId` | `string` | The ID of the issue type scheme. |
 
 ## References
 

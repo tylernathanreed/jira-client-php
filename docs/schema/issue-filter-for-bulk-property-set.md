@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\IssueFilterForBulkPropertySet`](/src/Schema/IssueFi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `currentValue` | `` | The value of properties to perform the bulk operation on. |
+| `currentValue` | `mixed` | The value of properties to perform the bulk operation on. |
 | `entityIds` | `?list<int>` | List of issues to perform the bulk operation on. |
-| `hasProperty` | `` | Whether the bulk operation occurs only when the property is present on or absent from an issue. |
+| `hasProperty` | `bool` | Whether the bulk operation occurs only when the property is present on or absent from an issue. |
 
 ## References
 

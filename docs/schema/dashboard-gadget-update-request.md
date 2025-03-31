@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\DashboardGadgetUpdateRequest`](/src/Schema/Dashboar
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `color` | `` | The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`. |
-| `position` | `` | The position of the gadget. |
-| `title` | `` | The title of the gadget. |
+| `color` | `string` | The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`. |
+| `position` | `DashboardGadgetPosition` | The position of the gadget. |
+| `title` | `string` | The title of the gadget. |
 
 ## References
 

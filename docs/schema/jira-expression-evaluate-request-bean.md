@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\JiraExpressionEvaluateRequestBean`](/src/Schema/Jir
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `expression` | `` | The Jira expression to evaluate. |
-| `context` | `` | The context in which the Jira expression is evaluated. |
+| `expression` | `string` | The Jira expression to evaluate. |
+| `context` | `JiraExpressionEvaluateContextBean` | The context in which the Jira expression is evaluated. |
 
 ## References
 

@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\TimeTrackingDetails`](/src/Schema/TimeTrackingDetai
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `originalEstimate` | `` | The original estimate of time needed for this issue in readable format. |
-| `originalEstimateSeconds` | `` | The original estimate of time needed for this issue in seconds. |
-| `remainingEstimate` | `` | The remaining estimate of time needed for this issue in readable format. |
-| `remainingEstimateSeconds` | `` | The remaining estimate of time needed for this issue in seconds. |
-| `timeSpent` | `` | Time worked on this issue in readable format. |
-| `timeSpentSeconds` | `` | Time worked on this issue in seconds. |
+| `originalEstimate` | `string` | The original estimate of time needed for this issue in readable format. |
+| `originalEstimateSeconds` | `int` | The original estimate of time needed for this issue in seconds. |
+| `remainingEstimate` | `string` | The remaining estimate of time needed for this issue in readable format. |
+| `remainingEstimateSeconds` | `int` | The remaining estimate of time needed for this issue in seconds. |
+| `timeSpent` | `string` | Time worked on this issue in readable format. |
+| `timeSpentSeconds` | `int` | Time worked on this issue in seconds. |
 
 ## References
 

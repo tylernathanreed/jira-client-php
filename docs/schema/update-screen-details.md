@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UpdateScreenDetails`](/src/Schema/UpdateScreenDetai
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The description of the screen. The maximum length is 255 characters. |
-| `name` | `` | The name of the screen. The name must be unique. The maximum length is 255 characters. |
+| `description` | `string` | The description of the screen. The maximum length is 255 characters. |
+| `name` | `string` | The name of the screen. The name must be unique. The maximum length is 255 characters. |
 
 ## References
 

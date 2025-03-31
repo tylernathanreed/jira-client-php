@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\UpdateDefaultProjectClassificationBean`](/src/Schem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the project classification. |
+| `id` | `string` | The ID of the project classification. |
 
 ## References
 

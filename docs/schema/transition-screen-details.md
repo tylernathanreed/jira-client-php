@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\TransitionScreenDetails`](/src/Schema/TransitionScr
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the screen. |
-| `name` | `` | The name of the screen. |
+| `id` | `string` | The ID of the screen. |
+| `name` | `string` | The name of the screen. |
 
 ## References
 

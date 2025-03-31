@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\Avatar`](/src/Schema/Avatar.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the avatar. |
-| `fileName` | `` | The file name of the avatar icon. Returned for system avatars. |
-| `isDeletable` | `` | Whether the avatar can be deleted. |
-| `isSelected` | `` | Whether the avatar is used in Jira. For example, shown as a project's avatar. |
-| `isSystemAvatar` | `` | Whether the avatar is a system avatar. |
-| `owner` | `` | The owner of the avatar. For a system avatar the owner is null (and nothing is returned). For non-system avatars this is the appropriate identifier, such as the ID for a project or the account ID for a user. |
+| `id` | `string` | The ID of the avatar. |
+| `fileName` | `string` | The file name of the avatar icon. Returned for system avatars. |
+| `isDeletable` | `bool` | Whether the avatar can be deleted. |
+| `isSelected` | `bool` | Whether the avatar is used in Jira. For example, shown as a project's avatar. |
+| `isSystemAvatar` | `bool` | Whether the avatar is a system avatar. |
+| `owner` | `string` | The owner of the avatar. For a system avatar the owner is null (and nothing is returned). For non-system avatars this is the appropriate identifier, such as the ID for a project or the account ID for a user. |
 | `urls` | `array<string,string>` | The list of avatar icon URLs. |
 
 ## References

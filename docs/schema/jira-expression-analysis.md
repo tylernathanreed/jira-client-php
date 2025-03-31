@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\JiraExpressionAnalysis`](/src/Schema/JiraExpression
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `expression` | `` | The analysed expression. |
-| `valid` | `` | Whether the expression is valid and the interpreter will evaluate it. Note that the expression may fail at runtime (for example, if it executes too many expensive operations). |
-| `complexity` | `` |  |
+| `expression` | `string` | The analysed expression. |
+| `valid` | `bool` | Whether the expression is valid and the interpreter will evaluate it. Note that the expression may fail at runtime (for example, if it executes too many expensive operations). |
+| `complexity` | `JiraExpressionComplexity` |  |
 | `errors` | `?list<JiraExpressionValidationError>` | A list of validation errors. Not included if the expression is valid. |
-| `type` | `` | EXPERIMENTAL. The inferred type of the expression. |
+| `type` | `string` | EXPERIMENTAL. The inferred type of the expression. |
 
 ## References
 

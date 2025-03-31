@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\PageOfChangelogs`](/src/Schema/PageOfChangelogs.php
 | Property | Type | Description |
 | --- | --- | --- |
 | `histories` | `?list<Changelog>` | The list of changelogs. |
-| `maxResults` | `` | The maximum number of results that could be on the page. |
-| `startAt` | `` | The index of the first item returned on the page. |
-| `total` | `` | The number of results on the page. |
+| `maxResults` | `int` | The maximum number of results that could be on the page. |
+| `startAt` | `int` | The index of the first item returned on the page. |
+| `total` | `int` | The number of results on the page. |
 
 ## References
 

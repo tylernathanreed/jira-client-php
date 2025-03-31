@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\StatusWorkflowUsageDTO`](/src/Schema/StatusWorkflow
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statusId` | `` | The status ID. |
-| `workflows` | `` |  |
+| `statusId` | `string` | The status ID. |
+| `workflows` | `StatusWorkflowUsagePage` |  |
 
 ## References
 

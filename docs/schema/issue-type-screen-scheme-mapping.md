@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueTypeScreenSchemeMapping`](/src/Schema/IssueTyp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `` | The ID of the issue type or *default*. Only issue types used in classic projects are accepted. An entry for *default* must be provided and defines the mapping for all issue types without a screen scheme. |
-| `screenSchemeId` | `` | The ID of the screen scheme. Only screen schemes used in classic projects are accepted. |
+| `issueTypeId` | `string` | The ID of the issue type or *default*. Only issue types used in classic projects are accepted. An entry for *default* must be provided and defines the mapping for all issue types without a screen scheme. |
+| `screenSchemeId` | `string` | The ID of the screen scheme. Only screen schemes used in classic projects are accepted. |
 
 ## References
 

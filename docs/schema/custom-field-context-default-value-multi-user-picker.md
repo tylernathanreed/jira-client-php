@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultiUserPicker`](/sr
 | Property | Type | Description |
 | --- | --- | --- |
 | `accountIds` | `list<string>` | The IDs of the default users. |
-| `contextId` | `` | The ID of the context. |
-| `type` | `` |  |
+| `contextId` | `string` | The ID of the context. |
+| `type` | `string` |  |
 
 ## References
 

@@ -6,14 +6,14 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionDetails`](/src/Schema/Creat
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the transition. The maximum length is 60 characters. |
-| `to` | `` | The status the transition goes to. |
-| `type` | `'global'|'initial'|'directed'` | The type of the transition. |
-| `description` | `` | The description of the transition. The maximum length is 1000 characters. |
+| `name` | `string` | The name of the transition. The maximum length is 60 characters. |
+| `to` | `string` | The status the transition goes to. |
+| `type` | `'global'\|'initial'\|'directed'` | The type of the transition. |
+| `description` | `string` | The description of the transition. The maximum length is 1000 characters. |
 | `from` | `?list<string>` | The statuses the transition can start from. |
 | `properties` | `array<string,string>` | The properties of the transition. |
-| `rules` | `` | The rules of the transition. |
-| `screen` | `` | The screen of the transition. |
+| `rules` | `CreateWorkflowTransitionRulesDetails` | The rules of the transition. |
+| `screen` | `CreateWorkflowTransitionScreenDetails` | The screen of the transition. |
 
 ## References
 

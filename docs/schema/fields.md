@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\Fields`](/src/Schema/Fields.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `assignee` | `` | The assignee of the linked issue. |
-| `issueType` | `` | The type of the linked issue. |
-| `issuetype` | `` | The type of the linked issue. |
-| `priority` | `` | The priority of the linked issue. |
-| `status` | `` | The status of the linked issue. |
-| `summary` | `` | The summary description of the linked issue. |
-| `timetracking` | `` | The time tracking of the linked issue. |
+| `assignee` | `UserDetails` | The assignee of the linked issue. |
+| `issueType` | `IssueTypeDetails` | The type of the linked issue. |
+| `issuetype` | `IssueTypeDetails` | The type of the linked issue. |
+| `priority` | `Priority` | The priority of the linked issue. |
+| `status` | `StatusDetails` | The status of the linked issue. |
+| `summary` | `string` | The summary description of the linked issue. |
+| `timetracking` | `TimeTrackingDetails` | The time tracking of the linked issue. |
 
 ## References
 

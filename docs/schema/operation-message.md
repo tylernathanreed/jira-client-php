@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\OperationMessage`](/src/Schema/OperationMessage.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `message` | `` | The human-readable message that describes the result. |
-| `statusCode` | `` | The status code of the response. |
+| `message` | `string` | The human-readable message that describes the result. |
+| `statusCode` | `int` | The status code of the response. |
 
 ## References
 

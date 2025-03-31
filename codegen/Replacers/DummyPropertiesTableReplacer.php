@@ -17,9 +17,11 @@ class DummyPropertiesTableReplacer extends Replacer
         $table = new Table(['Property', 'Type', 'Description']);
 
         foreach ($schema->properties as $property) {
+            $type = str_replace('|', '\|', $property->getDocType() ?: $property->type ?: 'mixed');
+
             $table->add([
                 "`{$property->name}`",
-                "`{$property->getDocType()}`",
+                "`{$type}`",
                 $property->description,
             ]);
         }

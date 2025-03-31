@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\IssueSecurityLevelMember`](/src/Schema/IssueSecurit
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `holder` | `` | The user or group being granted the permission. It consists of a `type` and a type-dependent `parameter`. See [Holder object](../api-group-permission-schemes/#holder-object) in *Get all permission schemes* for more information. |
-| `id` | `` | The ID of the issue security level member. |
-| `issueSecurityLevelId` | `` | The ID of the issue security level. |
+| `holder` | `PermissionHolder` | The user or group being granted the permission. It consists of a `type` and a type-dependent `parameter`. See [Holder object](../api-group-permission-schemes/#holder-object) in *Get all permission schemes* for more information. |
+| `id` | `int` | The ID of the issue security level member. |
+| `issueSecurityLevelId` | `int` | The ID of the issue security level. |
 
 ## References
 

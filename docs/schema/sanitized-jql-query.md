@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\SanitizedJqlQuery`](/src/Schema/SanitizedJqlQuery.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `` | The account ID of the user for whom sanitization was performed. |
-| `errors` | `` | The list of errors. |
-| `initialQuery` | `` | The initial query. |
-| `sanitizedQuery` | `` | The sanitized query, if there were no errors. |
+| `accountId` | `string` | The account ID of the user for whom sanitization was performed. |
+| `errors` | `ErrorCollection` | The list of errors. |
+| `initialQuery` | `string` | The initial query. |
+| `sanitizedQuery` | `string` | The sanitized query, if there were no errors. |
 
 ## References
 

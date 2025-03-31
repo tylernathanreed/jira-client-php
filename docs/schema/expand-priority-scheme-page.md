@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\ExpandPrioritySchemePage`](/src/Schema/ExpandPriori
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `maxResults` | `` |  |
-| `startAt` | `` |  |
-| `total` | `` |  |
+| `maxResults` | `int` |  |
+| `startAt` | `int` |  |
+| `total` | `int` |  |
 
 ## References
 

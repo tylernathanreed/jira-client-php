@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\GetPermissionHolderResponse`](/src/Schema/GetPermis
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `'Group'|'AccountId'` | The permission holder type. This is "Group" or "AccountId". |
-| `value` | `` | The permission holder value. This is a group name if the type is "Group" or an account ID if the type is "AccountId". |
+| `type` | `'Group'\|'AccountId'` | The permission holder type. This is "Group" or "AccountId". |
+| `value` | `string` | The permission holder value. This is a group name if the type is "Group" or an account ID if the type is "AccountId". |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ProjectIdentifierBean`](/src/Schema/ProjectIdentifi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the project. |
-| `key` | `` | The key of the project. |
+| `id` | `int` | The ID of the project. |
+| `key` | `string` | The key of the project. |
 
 ## References
 

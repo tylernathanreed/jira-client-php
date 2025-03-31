@@ -6,14 +6,14 @@ Source: [`Jira\Client\Schema\NotificationScheme`](/src/Schema/NotificationScheme
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The description of the notification scheme. |
-| `expand` | `` | Expand options that include additional notification scheme details in the response. |
-| `id` | `` | The ID of the notification scheme. |
-| `name` | `` | The name of the notification scheme. |
+| `description` | `string` | The description of the notification scheme. |
+| `expand` | `string` | Expand options that include additional notification scheme details in the response. |
+| `id` | `int` | The ID of the notification scheme. |
+| `name` | `string` | The name of the notification scheme. |
 | `notificationSchemeEvents` | `?list<NotificationSchemeEvent>` | The notification events and associated recipients. |
 | `projects` | `?list<int>` | The list of project IDs associated with the notification scheme. |
-| `scope` | `` | The scope of the notification scheme. |
-| `self` | `` |  |
+| `scope` | `Scope` | The scope of the notification scheme. |
+| `self` | `string` |  |
 
 ## References
 

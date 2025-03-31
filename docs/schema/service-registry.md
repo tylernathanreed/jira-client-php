@@ -5,12 +5,12 @@ Source: [`Jira\Client\Schema\ServiceRegistry`](/src/Schema/ServiceRegistry.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | service description |
-| `id` | `` | service ID |
-| `name` | `` | service name |
-| `organizationId` | `` | organization ID |
-| `revision` | `` | service revision |
-| `serviceTier` | `` |  |
+| `description` | `string` | service description |
+| `id` | `string` | service ID |
+| `name` | `string` | service name |
+| `organizationId` | `string` | organization ID |
+| `revision` | `string` | service revision |
+| `serviceTier` | `ServiceRegistryTier` |  |
 
 ## References
 

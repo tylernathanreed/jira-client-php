@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\FieldConfigurationScheme`](/src/Schema/FieldConfigu
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the field configuration scheme. |
-| `name` | `` | The name of the field configuration scheme. |
-| `description` | `` | The description of the field configuration scheme. |
+| `id` | `string` | The ID of the field configuration scheme. |
+| `name` | `string` | The name of the field configuration scheme. |
+| `description` | `string` | The description of the field configuration scheme. |
 
 ## References
 

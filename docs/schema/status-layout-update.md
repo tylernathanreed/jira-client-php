@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\StatusLayoutUpdate`](/src/Schema/StatusLayoutUpdate
 | Property | Type | Description |
 | --- | --- | --- |
 | `properties` | `array<string,string>` | The properties for this status layout. |
-| `statusReference` | `` | A unique ID which the status will use to refer to this layout configuration. |
-| `approvalConfiguration` | `` |  |
-| `layout` | `` |  |
+| `statusReference` | `string` | A unique ID which the status will use to refer to this layout configuration. |
+| `approvalConfiguration` | `ApprovalConfiguration` |  |
+| `layout` | `WorkflowLayout` |  |
 
 ## References
 

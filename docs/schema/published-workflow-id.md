@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\PublishedWorkflowId`](/src/Schema/PublishedWorkflow
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the workflow. |
-| `entityId` | `` | The entity ID of the workflow. |
+| `name` | `string` | The name of the workflow. |
+| `entityId` | `string` | The entity ID of the workflow. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\UserFilter`](/src/Schema/UserFilter.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `enabled` | `` | Whether the filter is enabled. |
+| `enabled` | `bool` | Whether the filter is enabled. |
 | `groups` | `?list<string>` | User groups autocomplete suggestion users must belong to. If not provided, the default values are used. A maximum of 10 groups can be provided. |
 | `roleIds` | `?list<int>` | Roles that autocomplete suggestion users must belong to. If not provided, the default values are used. A maximum of 10 roles can be provided. |
 

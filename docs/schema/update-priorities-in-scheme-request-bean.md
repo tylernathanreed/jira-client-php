@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UpdatePrioritiesInSchemeRequestBean`](/src/Schema/U
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `add` | `` | Priorities to add to a scheme |
-| `remove` | `` | Priorities to remove from a scheme |
+| `add` | `PrioritySchemeChangesWithoutMappings` | Priorities to add to a scheme |
+| `remove` | `PrioritySchemeChangesWithoutMappings` | Priorities to remove from a scheme |
 
 ## References
 

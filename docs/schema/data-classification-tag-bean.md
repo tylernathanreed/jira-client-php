@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\DataClassificationTagBean`](/src/Schema/DataClassif
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the data classification object. |
-| `status` | `` | The status of the data classification object. |
-| `color` | `` | The color of the data classification object. |
-| `description` | `` | The description of the data classification object. |
-| `guideline` | `` | The guideline of the data classification object. |
-| `name` | `` | The name of the data classification object. |
-| `rank` | `` | The rank of the data classification object. |
+| `id` | `string` | The ID of the data classification object. |
+| `status` | `string` | The status of the data classification object. |
+| `color` | `string` | The color of the data classification object. |
+| `description` | `string` | The description of the data classification object. |
+| `guideline` | `string` | The guideline of the data classification object. |
+| `name` | `string` | The name of the data classification object. |
+| `rank` | `int` | The rank of the data classification object. |
 
 ## References
 

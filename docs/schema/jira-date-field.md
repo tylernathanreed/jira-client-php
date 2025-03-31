@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraDateField`](/src/Schema/JiraDateField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `` |  |
-| `date` | `` |  |
+| `fieldId` | `string` |  |
+| `date` | `JiraDateInput` |  |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkflowRules`](/src/Schema/WorkflowRules.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `conditionsTree` | `` |  |
+| `conditionsTree` | `WorkflowCondition` |  |
 | `postFunctions` | `?list<WorkflowTransitionRule>` | The workflow post functions. |
 | `validators` | `?list<WorkflowTransitionRule>` | The workflow validators. |
 

@@ -5,12 +5,12 @@ Source: [`Jira\Client\Schema\CreatePlanOnlyTeamRequest`](/src/Schema/CreatePlanO
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The plan-only team name. |
-| `planningStyle` | `'Scrum'|'Kanban'` | The planning style for the plan-only team. This must be "Scrum" or "Kanban". |
-| `capacity` | `` | The capacity for the plan-only team. |
-| `issueSourceId` | `` | The ID of the issue source for the plan-only team. |
+| `name` | `string` | The plan-only team name. |
+| `planningStyle` | `'Scrum'\|'Kanban'` | The planning style for the plan-only team. This must be "Scrum" or "Kanban". |
+| `capacity` | `float` | The capacity for the plan-only team. |
+| `issueSourceId` | `int` | The ID of the issue source for the plan-only team. |
 | `memberAccountIds` | `?list<string>` | The account IDs of the plan-only team members. |
-| `sprintLength` | `` | The sprint length for the plan-only team. |
+| `sprintLength` | `int` | The sprint length for the plan-only team. |
 
 ## References
 

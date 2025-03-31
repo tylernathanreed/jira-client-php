@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\GetCustomFieldResponse`](/src/Schema/GetCustomField
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `customFieldId` | `` | The custom field ID. |
-| `filter` | `` | Allows filtering issues based on their values for the custom field. |
+| `customFieldId` | `int` | The custom field ID. |
+| `filter` | `bool` | Allows filtering issues based on their values for the custom field. |
 
 ## References
 

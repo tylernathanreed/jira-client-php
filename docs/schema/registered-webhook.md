@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\RegisteredWebhook`](/src/Schema/RegisteredWebhook.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `createdWebhookId` | `` | The ID of the webhook. Returned if the webhook is created. |
+| `createdWebhookId` | `int` | The ID of the webhook. Returned if the webhook is created. |
 | `errors` | `?list<string>` | Error messages specifying why the webhook creation failed. |
 
 ## References

@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraRichTextField`](/src/Schema/JiraRichTextField.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `` |  |
-| `richText` | `` |  |
+| `fieldId` | `string` |  |
+| `richText` | `JiraRichTextInput` |  |
 
 ## References
 

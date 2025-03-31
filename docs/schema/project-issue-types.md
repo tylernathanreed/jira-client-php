@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\ProjectIssueTypes`](/src/Schema/ProjectIssueTypes.p
 | Property | Type | Description |
 | --- | --- | --- |
 | `issueTypes` | `?list<string>` | IDs of the issue types |
-| `project` | `` |  |
+| `project` | `ProjectId` |  |
 
 ## References
 

@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\FieldUpdateOperation`](/src/Schema/FieldUpdateOpera
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `add` | `` | The value to add to the field. |
-| `copy` | `` | The field value to copy from another issue. |
-| `edit` | `` | The value to edit in the field. |
-| `remove` | `` | The value to removed from the field. |
-| `set` | `` | The value to set in the field. |
+| `add` | `mixed` | The value to add to the field. |
+| `copy` | `mixed` | The field value to copy from another issue. |
+| `edit` | `mixed` | The value to edit in the field. |
+| `remove` | `mixed` | The value to removed from the field. |
+| `set` | `mixed` | The value to set in the field. |
 
 ## References
 

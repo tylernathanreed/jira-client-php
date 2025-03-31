@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\StatusMetadata`](/src/Schema/StatusMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `category` | `'TODO'|'IN_PROGRESS'|'DONE'|null` | The category of the status. |
-| `id` | `` | The ID of the status. |
-| `name` | `` | The name of the status. |
+| `category` | `'TODO'\|'IN_PROGRESS'\|'DONE'\|null` | The category of the status. |
+| `id` | `string` | The ID of the status. |
+| `name` | `string` | The name of the status. |
 
 ## References
 

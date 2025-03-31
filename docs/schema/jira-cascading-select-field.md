@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\JiraCascadingSelectField`](/src/Schema/JiraCascadin
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `` |  |
-| `parentOptionValue` | `` |  |
-| `childOptionValue` | `` |  |
+| `fieldId` | `string` |  |
+| `parentOptionValue` | `JiraSelectedOptionField` |  |
+| `childOptionValue` | `JiraSelectedOptionField` |  |
 
 ## References
 

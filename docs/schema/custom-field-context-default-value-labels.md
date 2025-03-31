@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueLabels`](/src/Schema/
 | Property | Type | Description |
 | --- | --- | --- |
 | `labels` | `list<string>` | The default labels value. |
-| `type` | `` |  |
+| `type` | `string` |  |
 
 ## References
 

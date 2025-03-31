@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\HistoryMetadataParticipant`](/src/Schema/HistoryMet
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `avatarUrl` | `` | The URL to an avatar for the user or system associated with a history record. |
-| `displayName` | `` | The display name of the user or system associated with a history record. |
-| `displayNameKey` | `` | The key of the display name of the user or system associated with a history record. |
-| `id` | `` | The ID of the user or system associated with a history record. |
-| `type` | `` | The type of the user or system associated with a history record. |
-| `url` | `` | The URL of the user or system associated with a history record. |
+| `avatarUrl` | `string` | The URL to an avatar for the user or system associated with a history record. |
+| `displayName` | `string` | The display name of the user or system associated with a history record. |
+| `displayNameKey` | `string` | The key of the display name of the user or system associated with a history record. |
+| `id` | `string` | The ID of the user or system associated with a history record. |
+| `type` | `string` | The type of the user or system associated with a history record. |
+| `url` | `string` | The URL of the user or system associated with a history record. |
 
 ## References
 

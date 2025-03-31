@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\DateRangeFilterRequest`](/src/Schema/DateRangeFilte
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `dateAfter` | `` | List issues archived after a specified date, passed in the YYYY-MM-DD format. |
-| `dateBefore` | `` | List issues archived before a specified date provided in the YYYY-MM-DD format. |
+| `dateAfter` | `string` | List issues archived after a specified date, passed in the YYYY-MM-DD format. |
+| `dateBefore` | `string` | List issues archived before a specified date provided in the YYYY-MM-DD format. |
 
 ## References
 

@@ -8,8 +8,8 @@ Source: [`Jira\Client\Schema\Scope`](/src/Schema/Scope.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `project` | `` | The project the item has scope in. |
-| `type` | `'PROJECT'|'TEMPLATE'|null` | The type of scope. |
+| `project` | `ProjectDetails` | The project the item has scope in. |
+| `type` | `'PROJECT'\|'TEMPLATE'\|null` | The type of scope. |
 
 ## References
 

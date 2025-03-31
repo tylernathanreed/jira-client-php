@@ -8,8 +8,8 @@ Source: [`Jira\Client\Schema\BulkChangelogRequestBean`](/src/Schema/BulkChangelo
 | --- | --- | --- |
 | `issueIdsOrKeys` | `list<string>` | List of issue IDs/keys to fetch changelogs for |
 | `fieldIds` | `?list<string>` | List of field IDs to filter changelogs |
-| `maxResults` | `` | The maximum number of items to return per page |
-| `nextPageToken` | `` | The cursor for pagination |
+| `maxResults` | `int` | The maximum number of items to return per page |
+| `nextPageToken` | `string` | The cursor for pagination |
 
 ## References
 

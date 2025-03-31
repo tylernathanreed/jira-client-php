@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\IssueBulkTransitionForWorkflow`](/src/Schema/IssueB
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `isTransitionsFiltered` | `` | Indicates whether all the transitions of this workflow are available in the transitions list or not. |
+| `isTransitionsFiltered` | `bool` | Indicates whether all the transitions of this workflow are available in the transitions list or not. |
 | `issues` | `?list<string>` | List of issue keys from the request which are associated with this workflow. |
 | `transitions` | `?list<SimplifiedIssueTransition>` | List of transitions available for issues from the request which are associated with this workflow.
 

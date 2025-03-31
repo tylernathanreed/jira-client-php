@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsageDTO`](/src/Schema/Work
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypes` | `` |  |
-| `projectId` | `` | The ID of the project. |
-| `workflowId` | `` | The ID of the workflow. |
+| `issueTypes` | `WorkflowProjectIssueTypeUsagePage` |  |
+| `projectId` | `string` | The ID of the project. |
+| `workflowId` | `string` | The ID of the workflow. |
 
 ## References
 

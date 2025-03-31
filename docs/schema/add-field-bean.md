@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\AddFieldBean`](/src/Schema/AddFieldBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `fieldId` | `` | The ID of the field to add. |
+| `fieldId` | `string` | The ID of the field to add. |
 
 ## References
 

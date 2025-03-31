@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\ArchivedIssuesFilterRequest`](/src/Schema/ArchivedI
 | Property | Type | Description |
 | --- | --- | --- |
 | `archivedBy` | `?list<string>` | List archived issues archived by a specified account ID. |
-| `archivedDateRange` | `` |  |
+| `archivedDateRange` | `DateRangeFilterRequest` |  |
 | `issueTypes` | `?list<string>` | List archived issues with a specified issue type ID. |
 | `projects` | `?list<string>` | List archived issues with a specified project key. |
 | `reporters` | `?list<string>` | List archived issues where the reporter is a specified account ID. |

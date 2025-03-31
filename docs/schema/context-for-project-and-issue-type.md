@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\ContextForProjectAndIssueType`](/src/Schema/Context
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `` | The ID of the issue type. |
-| `projectId` | `` | The ID of the project. |
-| `contextId` | `` | The ID of the custom field context. |
+| `issueTypeId` | `string` | The ID of the issue type. |
+| `projectId` | `string` | The ID of the project. |
+| `contextId` | `string` | The ID of the custom field context. |
 
 ## References
 

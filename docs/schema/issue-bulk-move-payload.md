@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueBulkMovePayload`](/src/Schema/IssueBulkMovePay
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `sendBulkNotification` | `` | A boolean value that indicates whether to send a bulk change notification when the issues are being moved.
+| `sendBulkNotification` | `bool` | A boolean value that indicates whether to send a bulk change notification when the issues are being moved.
 
 If `true`, dispatches a bulk notification email to users about the updates. |
 | `targetToSourcesMapping` | `array<string,TargetToSourcesMapping>` | An object representing the mapping of issues and data related to destination entities, like fields and statuses, that are required during a bulk move.

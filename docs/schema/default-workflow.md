@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\DefaultWorkflow`](/src/Schema/DefaultWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `workflow` | `` | The name of the workflow to set as the default workflow. |
-| `updateDraftIfNeeded` | `` | Whether a draft workflow scheme is created or updated when updating an active workflow scheme. The draft is updated with the new default workflow. Defaults to `false`. |
+| `workflow` | `string` | The name of the workflow to set as the default workflow. |
+| `updateDraftIfNeeded` | `bool` | Whether a draft workflow scheme is created or updated when updating an active workflow scheme. The draft is updated with the new default workflow. Defaults to `false`. |
 
 ## References
 

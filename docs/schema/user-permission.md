@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\UserPermission`](/src/Schema/UserPermission.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `deprecatedKey` | `` | Indicate whether the permission key is deprecated. Note that deprecated keys cannot be used in the `permissions parameter of Get my permissions. Deprecated keys are not returned by Get all permissions.` |
-| `description` | `` | The description of the permission. |
-| `havePermission` | `` | Whether the permission is available to the user in the queried context. |
-| `id` | `` | The ID of the permission. Either `id` or `key` must be specified. Use [Get all permissions](#api-rest-api-3-permissions-get) to get the list of permissions. |
-| `key` | `` | The key of the permission. Either `id` or `key` must be specified. Use [Get all permissions](#api-rest-api-3-permissions-get) to get the list of permissions. |
-| `name` | `` | The name of the permission. |
-| `type` | `'GLOBAL'|'PROJECT'|null` | The type of the permission. |
+| `deprecatedKey` | `bool` | Indicate whether the permission key is deprecated. Note that deprecated keys cannot be used in the `permissions parameter of Get my permissions. Deprecated keys are not returned by Get all permissions.` |
+| `description` | `string` | The description of the permission. |
+| `havePermission` | `bool` | Whether the permission is available to the user in the queried context. |
+| `id` | `string` | The ID of the permission. Either `id` or `key` must be specified. Use [Get all permissions](#api-rest-api-3-permissions-get) to get the list of permissions. |
+| `key` | `string` | The key of the permission. Either `id` or `key` must be specified. Use [Get all permissions](#api-rest-api-3-permissions-get) to get the list of permissions. |
+| `name` | `string` | The name of the permission. |
+| `type` | `'GLOBAL'\|'PROJECT'\|null` | The type of the permission. |
 
 ## References
 

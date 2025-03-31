@@ -5,11 +5,11 @@ Source: [`Jira\Client\Schema\SimpleListWrapperApplicationRole`](/src/Schema/Simp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `callback` | `` |  |
+| `callback` | `ListWrapperCallbackApplicationRole` |  |
 | `items` | `?list<ApplicationRole>` |  |
-| `max-results` | `` |  |
-| `pagingCallback` | `` |  |
-| `size` | `` |  |
+| `max-results` | `int` |  |
+| `pagingCallback` | `ListWrapperCallbackApplicationRole` |  |
+| `size` | `int` |  |
 
 ## References
 

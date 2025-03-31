@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ChangeFilterOwner`](/src/Schema/ChangeFilterOwner.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `accountId` | `` | The account ID of the new owner. |
+| `accountId` | `string` | The account ID of the new owner. |
 
 ## References
 

@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\SimpleLink`](/src/Schema/SimpleLink.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `href` | `` |  |
-| `iconClass` | `` |  |
-| `id` | `` |  |
-| `label` | `` |  |
-| `styleClass` | `` |  |
-| `title` | `` |  |
-| `weight` | `` |  |
+| `href` | `string` |  |
+| `iconClass` | `string` |  |
+| `id` | `string` |  |
+| `label` | `string` |  |
+| `styleClass` | `string` |  |
+| `title` | `string` |  |
+| `weight` | `int` |  |
 
 ## References
 

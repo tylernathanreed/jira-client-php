@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraSelectedOptionField`](/src/Schema/JiraSelectedO
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `optionId` | `` |  |
+| `optionId` | `int` |  |
 
 ## References
 

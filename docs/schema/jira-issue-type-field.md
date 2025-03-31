@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\JiraIssueTypeField`](/src/Schema/JiraIssueTypeField
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `` |  |
+| `issueTypeId` | `string` |  |
 
 ## References
 

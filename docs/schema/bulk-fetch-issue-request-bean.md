@@ -33,7 +33,7 @@ Examples:
 Multiple `fields` parameters can be included in a request.
 
 Note: All navigable fields are returned by default. This differs from [GET issue](#api-rest-api-3-issue-issueIdOrKey-get) where the default is all fields. |
-| `fieldsByKeys` | `` | Reference fields by their key (rather than ID). The default is `false`. |
+| `fieldsByKeys` | `bool` | Reference fields by their key (rather than ID). The default is `false`. |
 | `properties` | `?list<string>` | A list of issue property keys of issue properties to be included in the results. A maximum of 5 issue property keys can be specified. |
 
 ## References

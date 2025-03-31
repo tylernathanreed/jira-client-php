@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\TimeTrackingProvider`](/src/Schema/TimeTrackingProv
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `key` | `` | The key for the time tracking provider. For example, *JIRA*. |
-| `name` | `` | The name of the time tracking provider. For example, *JIRA provided time tracking*. |
-| `url` | `` | The URL of the configuration page for the time tracking provider app. For example, */example/config/url*. This property is only returned if the `adminPageKey` property is set in the module descriptor of the time tracking provider app. |
+| `key` | `string` | The key for the time tracking provider. For example, *JIRA*. |
+| `name` | `string` | The name of the time tracking provider. For example, *JIRA provided time tracking*. |
+| `url` | `string` | The URL of the configuration page for the time tracking provider app. For example, */example/config/url*. This property is only returned if the `adminPageKey` property is set in the module descriptor of the time tracking provider app. |
 
 ## References
 

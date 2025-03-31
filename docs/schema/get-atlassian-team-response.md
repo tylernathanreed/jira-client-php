@@ -5,11 +5,11 @@ Source: [`Jira\Client\Schema\GetAtlassianTeamResponse`](/src/Schema/GetAtlassian
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The Atlassian team ID. |
-| `planningStyle` | `'Scrum'|'Kanban'` | The planning style for the Atlassian team. This is "Scrum" or "Kanban". |
-| `capacity` | `` | The capacity for the Atlassian team. |
-| `issueSourceId` | `` | The ID of the issue source for the Atlassian team. |
-| `sprintLength` | `` | The sprint length for the Atlassian team. |
+| `id` | `string` | The Atlassian team ID. |
+| `planningStyle` | `'Scrum'\|'Kanban'` | The planning style for the Atlassian team. This is "Scrum" or "Kanban". |
+| `capacity` | `float` | The capacity for the Atlassian team. |
+| `issueSourceId` | `int` | The ID of the issue source for the Atlassian team. |
+| `sprintLength` | `int` | The sprint length for the Atlassian team. |
 
 ## References
 

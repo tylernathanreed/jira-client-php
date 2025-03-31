@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\BulkEditShareableEntityResponse`](/src/Schema/BulkE
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `action` | `'changeOwner'|'changePermission'|'addPermission'|'removePermission'` | Allowed action for bulk edit shareable entity |
+| `action` | `'changeOwner'\|'changePermission'\|'addPermission'\|'removePermission'` | Allowed action for bulk edit shareable entity |
 | `entityErrors` | `array<string,BulkEditActionError>` | The mapping dashboard id to errors if any. |
 
 ## References

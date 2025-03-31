@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultipleVersionPicker
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` |  |
+| `type` | `string` |  |
 | `versionIds` | `list<string>` | The IDs of the default versions. |
-| `versionOrder` | `` | The order the pickable versions are displayed in. If not provided, the released-first order is used. Available version orders are `"releasedFirst"` and `"unreleasedFirst"`. |
+| `versionOrder` | `string` | The order the pickable versions are displayed in. If not provided, the released-first order is used. Available version orders are `"releasedFirst"` and `"unreleasedFirst"`. |
 
 ## References
 

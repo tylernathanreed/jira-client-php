@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeMultiStringField
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` |  |
+| `type` | `string` |  |
 | `values` | `?list<string>` | List of string values. The maximum length for a value is 254 characters. |
 
 ## References

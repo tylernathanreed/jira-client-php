@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\CompoundClause`](/src/Schema/CompoundClause.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `clauses` | `list<JqlQueryClause>` | The list of nested clauses. |
-| `operator` | `'and'|'or'|'not'` | The operator between the clauses. |
+| `operator` | `'and'\|'or'\|'not'` | The operator between the clauses. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\DefaultLevelValue`](/src/Schema/DefaultLevelValue.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultLevelId` | `` | The ID of the issue security level to set as default for the specified scheme. Providing null will reset the default level. |
-| `issueSecuritySchemeId` | `` | The ID of the issue security scheme to set default level for. |
+| `defaultLevelId` | `string` | The ID of the issue security level to set as default for the specified scheme. Providing null will reset the default level. |
+| `issueSecuritySchemeId` | `string` | The ID of the issue security scheme to set default level for. |
 
 ## References
 

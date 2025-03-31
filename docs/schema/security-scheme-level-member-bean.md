@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\SecuritySchemeLevelMemberBean`](/src/Schema/Securit
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` | The issue security level member type, e.g `reporter`, `group`, `user`, `projectrole`, `applicationRole`. |
-| `parameter` | `` | The value corresponding to the specified member type. |
+| `type` | `string` | The issue security level member type, e.g `reporter`, `group`, `user`, `projectrole`, `applicationRole`. |
+| `parameter` | `string` | The value corresponding to the specified member type. |
 
 ## References
 

@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextProjectMapping`](/src/Schema/Cust
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `` | The ID of the context. |
-| `isGlobalContext` | `` | Whether context is global. |
-| `projectId` | `` | The ID of the project. |
+| `contextId` | `string` | The ID of the context. |
+| `isGlobalContext` | `bool` | Whether context is global. |
+| `projectId` | `string` | The ID of the project. |
 
 ## References
 

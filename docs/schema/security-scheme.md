@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\SecurityScheme`](/src/Schema/SecurityScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultSecurityLevelId` | `` | The ID of the default security level. |
-| `description` | `` | The description of the issue security scheme. |
-| `id` | `` | The ID of the issue security scheme. |
+| `defaultSecurityLevelId` | `int` | The ID of the default security level. |
+| `description` | `string` | The description of the issue security scheme. |
+| `id` | `int` | The ID of the issue security scheme. |
 | `levels` | `?list<SecurityLevel>` |  |
-| `name` | `` | The name of the issue security scheme. |
-| `self` | `` | The URL of the issue security scheme. |
+| `name` | `string` | The name of the issue security scheme. |
+| `self` | `string` | The URL of the issue security scheme. |
 
 ## References
 

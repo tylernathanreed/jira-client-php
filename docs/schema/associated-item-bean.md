@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\AssociatedItemBean`](/src/Schema/AssociatedItemBean
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the associated record. |
-| `name` | `` | The name of the associated record. |
-| `parentId` | `` | The ID of the associated parent record. |
-| `parentName` | `` | The name of the associated parent record. |
-| `typeName` | `` | The type of the associated record. |
+| `id` | `string` | The ID of the associated record. |
+| `name` | `string` | The name of the associated record. |
+| `parentId` | `string` | The ID of the associated parent record. |
+| `parentName` | `string` | The name of the associated parent record. |
+| `typeName` | `string` | The type of the associated record. |
 
 ## References
 

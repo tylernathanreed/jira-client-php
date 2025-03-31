@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorkspaceDataPolicy`](/src/Schema/WorkspaceDataPoli
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `anyContentBlocked` | `` | Whether the workspace contains any content inaccessible to the requesting application. |
+| `anyContentBlocked` | `bool` | Whether the workspace contains any content inaccessible to the requesting application. |
 
 ## References
 

@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\AddGroupBean`](/src/Schema/AddGroupBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the group. |
+| `name` | `string` | The name of the group. |
 
 ## References
 

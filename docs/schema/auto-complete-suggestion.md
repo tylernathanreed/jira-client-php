@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\AutoCompleteSuggestion`](/src/Schema/AutoCompleteSu
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `displayName` | `` | The display name of a suggested item. If `fieldValue` or `predicateValue` are provided, the matching text is highlighted with the HTML bold tag. |
-| `value` | `` | The value of a suggested item. |
+| `displayName` | `string` | The display name of a suggested item. If `fieldValue` or `predicateValue` are provided, the matching text is highlighted with the HTML bold tag. |
+| `value` | `string` | The value of a suggested item. |
 
 ## References
 

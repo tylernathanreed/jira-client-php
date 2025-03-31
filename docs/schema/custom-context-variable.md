@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\CustomContextVariable`](/src/Schema/CustomContextVa
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` | Type of custom context variable. |
+| `type` | `string` | Type of custom context variable. |
 
 ## References
 

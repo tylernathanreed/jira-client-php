@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ProjectEmailAddress`](/src/Schema/ProjectEmailAddre
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `emailAddress` | `` | The email address. |
+| `emailAddress` | `string` | The email address. |
 | `emailAddressStatus` | `?list<string>` | When using a custom domain, the status of the email address. |
 
 ## References

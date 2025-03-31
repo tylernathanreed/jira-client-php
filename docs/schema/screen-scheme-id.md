@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ScreenSchemeId`](/src/Schema/ScreenSchemeId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the screen scheme. |
+| `id` | `int` | The ID of the screen scheme. |
 
 ## References
 

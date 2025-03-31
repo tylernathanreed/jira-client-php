@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\UpdateScreenTypes`](/src/Schema/UpdateScreenTypes.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `create` | `` | The ID of the create screen. To remove the screen association, pass a null. |
-| `default` | `` | The ID of the default screen. When specified, must include a screen ID as a default screen is required. |
-| `edit` | `` | The ID of the edit screen. To remove the screen association, pass a null. |
-| `view` | `` | The ID of the view screen. To remove the screen association, pass a null. |
+| `create` | `string` | The ID of the create screen. To remove the screen association, pass a null. |
+| `default` | `string` | The ID of the default screen. When specified, must include a screen ID as a default screen is required. |
+| `edit` | `string` | The ID of the edit screen. To remove the screen association, pass a null. |
+| `view` | `string` | The ID of the view screen. To remove the screen association, pass a null. |
 
 ## References
 

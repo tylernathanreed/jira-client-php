@@ -5,7 +5,7 @@ Source: [`Jira\Client\Schema\GetExclusionRulesResponse`](/src/Schema/GetExclusio
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `numberOfDaysToShowCompletedIssues` | `` | Issues completed this number of days ago are excluded from the plan. |
+| `numberOfDaysToShowCompletedIssues` | `int` | Issues completed this number of days ago are excluded from the plan. |
 | `issueIds` | `?list<int>` | The IDs of the issues excluded from the plan. |
 | `issueTypeIds` | `?list<int>` | The IDs of the issue types excluded from the plan. |
 | `releaseIds` | `?list<int>` | The IDs of the releases excluded from the plan. |

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ProjectAndIssueTypePair`](/src/Schema/ProjectAndIss
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `` | The ID of the issue type. |
-| `projectId` | `` | The ID of the project. |
+| `issueTypeId` | `string` | The ID of the issue type. |
+| `projectId` | `string` | The ID of the project. |
 
 ## References
 

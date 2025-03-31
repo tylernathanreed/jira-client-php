@@ -6,11 +6,11 @@ Source: [`Jira\Client\Schema\IssueTypeWithStatus`](/src/Schema/IssueTypeWithStat
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the issue type. |
-| `name` | `` | The name of the issue type. |
-| `self` | `` | The URL of the issue type's status details. |
+| `id` | `string` | The ID of the issue type. |
+| `name` | `string` | The name of the issue type. |
+| `self` | `string` | The URL of the issue type's status details. |
 | `statuses` | `list<StatusDetails>` | List of status details for the issue type. |
-| `subtask` | `` | Whether this issue type represents subtasks. |
+| `subtask` | `bool` | Whether this issue type represents subtasks. |
 
 ## References
 

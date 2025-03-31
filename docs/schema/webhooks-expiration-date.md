@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WebhooksExpirationDate`](/src/Schema/WebhooksExpira
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `expirationDate` | `` | The expiration date of all the refreshed webhooks. |
+| `expirationDate` | `string` | The expiration date of all the refreshed webhooks. |
 
 ## References
 

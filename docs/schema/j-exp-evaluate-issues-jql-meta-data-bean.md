@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JExpEvaluateIssuesJqlMetaDataBean`](/src/Schema/JEx
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `nextPageToken` | `` | Next Page token for the next page of issues. |
+| `nextPageToken` | `string` | Next Page token for the next page of issues. |
 
 ## References
 

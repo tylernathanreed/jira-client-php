@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\VersionUsageInCustomField`](/src/Schema/VersionUsag
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `customFieldId` | `` | The ID of the custom field. |
-| `fieldName` | `` | The name of the custom field. |
-| `issueCountWithVersionInCustomField` | `` | Count of the issues where the custom field contains the version. |
+| `customFieldId` | `int` | The ID of the custom field. |
+| `fieldName` | `string` | The name of the custom field. |
+| `issueCountWithVersionInCustomField` | `int` | Count of the issues where the custom field contains the version. |
 
 ## References
 

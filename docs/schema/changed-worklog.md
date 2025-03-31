@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\ChangedWorklog`](/src/Schema/ChangedWorklog.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `properties` | `?list<EntityProperty>` | Details of properties associated with the change. |
-| `updatedTime` | `` | The datetime of the change. |
-| `worklogId` | `` | The ID of the worklog. |
+| `updatedTime` | `int` | The datetime of the change. |
+| `worklogId` | `int` | The ID of the worklog. |
 
 ## References
 

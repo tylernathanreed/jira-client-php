@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\IdSearchResults`](/src/Schema/IdSearchResults.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `issueIds` | `?list<int>` | The list of issue IDs found by the search. |
-| `nextPageToken` | `` | Continuation token to fetch the next page. If this result represents the last or the only page this token will be null. |
+| `nextPageToken` | `string` | Continuation token to fetch the next page. If this result represents the last or the only page this token will be null. |
 
 ## References
 

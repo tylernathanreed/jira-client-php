@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JExpEvaluateIssuesMetaBean`](/src/Schema/JExpEvalua
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `jql` | `` |  |
+| `jql` | `JExpEvaluateIssuesJqlMetaDataBean` |  |
 
 ## References
 

@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\IssueEntityPropertiesForMultiUpdate`](/src/Schema/I
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueID` | `` | The ID of the issue. |
+| `issueID` | `int` | The ID of the issue. |
 | `properties` | `array<string,JsonNode>` | Entity properties to set on the issue. The maximum length of an issue property value is 32768 characters. |
 
 ## References

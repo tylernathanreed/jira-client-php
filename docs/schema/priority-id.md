@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PriorityId`](/src/Schema/PriorityId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the issue priority. |
+| `id` | `string` | The ID of the issue priority. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\WorklogsMoveRequestBean`](/src/Schema/WorklogsMoveR
 | Property | Type | Description |
 | --- | --- | --- |
 | `ids` | `?list<int>` | A list of worklog IDs. |
-| `issueIdOrKey` | `` | The issue id or key of the destination issue |
+| `issueIdOrKey` | `string` | The issue id or key of the destination issue |
 
 ## References
 

@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\PageOfComments`](/src/Schema/PageOfComments.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `comments` | `?list<Comment>` | The list of comments. |
-| `maxResults` | `` | The maximum number of items that could be returned. |
-| `startAt` | `` | The index of the first item returned. |
-| `total` | `` | The number of items returned. |
+| `maxResults` | `int` | The maximum number of items that could be returned. |
+| `startAt` | `int` | The index of the first item returned. |
+| `total` | `int` | The number of items returned. |
 
 ## References
 

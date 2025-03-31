@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraExpressionsComplexityValueBean`](/src/Schema/Ji
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `limit` | `` | The maximum allowed complexity. The evaluation will fail if this value is exceeded. |
-| `value` | `` | The complexity value of the current expression. |
+| `limit` | `int` | The maximum allowed complexity. The evaluation will fail if this value is exceeded. |
+| `value` | `int` | The complexity value of the current expression. |
 
 ## References
 

@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\UpdateNotificationSchemeDetails`](/src/Schema/Updat
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The description of the notification scheme. |
-| `name` | `` | The name of the notification scheme. Must be unique. |
+| `description` | `string` | The description of the notification scheme. |
+| `name` | `string` | The name of the notification scheme. Must be unique. |
 
 ## References
 

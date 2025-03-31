@@ -5,8 +5,8 @@ Source: [`Jira\Client\Schema\JiraColorField`](/src/Schema/JiraColorField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `color` | `` |  |
-| `fieldId` | `` |  |
+| `color` | `JiraColorInput` |  |
+| `fieldId` | `string` |  |
 
 ## References
 

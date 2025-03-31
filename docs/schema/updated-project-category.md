@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\UpdatedProjectCategory`](/src/Schema/UpdatedProject
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | The name of the project category. |
-| `id` | `` | The ID of the project category. |
-| `name` | `` | The description of the project category. |
-| `self` | `` | The URL of the project category. |
+| `description` | `string` | The name of the project category. |
+| `id` | `string` | The ID of the project category. |
+| `name` | `string` | The description of the project category. |
+| `self` | `string` | The URL of the project category. |
 
 ## References
 

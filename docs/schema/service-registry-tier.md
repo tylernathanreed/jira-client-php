@@ -5,11 +5,11 @@ Source: [`Jira\Client\Schema\ServiceRegistryTier`](/src/Schema/ServiceRegistryTi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `description` | `` | tier description |
-| `id` | `` | tier ID |
-| `level` | `` | tier level |
-| `name` | `` | tier name |
-| `nameKey` | `` | name key of the tier |
+| `description` | `string` | tier description |
+| `id` | `string` | tier ID |
+| `level` | `int` | tier level |
+| `name` | `string` | tier name |
+| `nameKey` | `string` | name key of the tier |
 
 ## References
 

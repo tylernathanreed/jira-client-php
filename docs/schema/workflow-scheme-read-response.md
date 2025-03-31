@@ -5,17 +5,17 @@ Source: [`Jira\Client\Schema\WorkflowSchemeReadResponse`](/src/Schema/WorkflowSc
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `id` | `` | The ID of the workflow scheme. |
-| `name` | `` | The name of the workflow scheme. |
-| `scope` | `` |  |
-| `version` | `` |  |
+| `id` | `string` | The ID of the workflow scheme. |
+| `name` | `string` | The name of the workflow scheme. |
+| `scope` | `WorkflowScope` |  |
+| `version` | `DocumentVersion` |  |
 | `workflowsForIssueTypes` | `list<WorkflowMetadataAndIssueTypeRestModel>` | Mappings from workflows to issue types. |
-| `defaultWorkflow` | `` |  |
-| `description` | `` | The description of the workflow scheme. |
+| `defaultWorkflow` | `WorkflowMetadataRestModel` |  |
+| `description` | `string` | The description of the workflow scheme. |
 | `projectIdsUsingScheme` | `?list<string>` | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 
 The IDs of projects using the workflow scheme. |
-| `taskId` | `` | Indicates if there's an [asynchronous task](#async-operations) for this workflow scheme. |
+| `taskId` | `string` | Indicates if there's an [asynchronous task](#async-operations) for this workflow scheme. |
 
 ## References
 

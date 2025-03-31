@@ -7,16 +7,16 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationBean`](/src/Schema/JqlFunc
 | Property | Type | Description |
 | --- | --- | --- |
 | `arguments` | `?list<string>` | The list of arguments function was invoked with. |
-| `created` | `` | The timestamp of the precomputation creation. |
-| `error` | `` | The error message to be displayed to the user. |
-| `field` | `` | The field the function was executed against. |
-| `functionKey` | `` | The function key. |
-| `functionName` | `` | The name of the function. |
-| `id` | `` | The id of the precomputation. |
-| `operator` | `` | The operator in context of which function was executed. |
-| `updated` | `` | The timestamp of the precomputation last update. |
-| `used` | `` | The timestamp of the precomputation last usage. |
-| `value` | `` | The JQL fragment stored as the precomputation. |
+| `created` | `string` | The timestamp of the precomputation creation. |
+| `error` | `string` | The error message to be displayed to the user. |
+| `field` | `string` | The field the function was executed against. |
+| `functionKey` | `string` | The function key. |
+| `functionName` | `string` | The name of the function. |
+| `id` | `string` | The id of the precomputation. |
+| `operator` | `string` | The operator in context of which function was executed. |
+| `updated` | `string` | The timestamp of the precomputation last update. |
+| `used` | `string` | The timestamp of the precomputation last usage. |
+| `value` | `string` | The JQL fragment stored as the precomputation. |
 
 ## References
 

@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\MultipleCustomFieldValuesUpdate`](/src/Schema/Multi
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `customField` | `` | The ID or key of the custom field. For example, `customfield_10010`. |
+| `customField` | `string` | The ID or key of the custom field. For example, `customfield_10010`. |
 | `issueIds` | `list<int>` | The list of issue IDs. |
-| `value` | `` | The value for the custom field. The value must be compatible with the [custom field type](https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-custom-field/#data-types) as follows:
+| `value` | `mixed` | The value for the custom field. The value must be compatible with the [custom field type](https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-custom-field/#data-types) as follows:
 
  *  `string` the value must be a string.
  *  `number` the value must be a number.

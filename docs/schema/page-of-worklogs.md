@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\PageOfWorklogs`](/src/Schema/PageOfWorklogs.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `maxResults` | `` | The maximum number of results that could be on the page. |
-| `startAt` | `` | The index of the first item returned on the page. |
-| `total` | `` | The number of results on the page. |
+| `maxResults` | `int` | The maximum number of results that could be on the page. |
+| `startAt` | `int` | The index of the first item returned on the page. |
+| `total` | `int` | The number of results on the page. |
 | `worklogs` | `?list<Worklog>` | List of worklogs. |
 
 ## References

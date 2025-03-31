@@ -7,9 +7,9 @@ Source: [`Jira\Client\Schema\WorkflowCompoundCondition`](/src/Schema/WorkflowCom
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `conditions` | `list<WorkflowCompoundCondition|WorkflowSimpleCondition>` | The list of workflow conditions. |
-| `nodeType` | `` |  |
-| `operator` | `'AND'|'OR'` | The compound condition operator. |
+| `conditions` | `list<WorkflowCompoundCondition\|WorkflowSimpleCondition>` | The list of workflow conditions. |
+| `nodeType` | `string` |  |
+| `operator` | `'AND'\|'OR'` | The compound condition operator. |
 
 ## References
 

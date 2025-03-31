@@ -6,12 +6,12 @@ Source: [`Jira\Client\Schema\DashboardGadget`](/src/Schema/DashboardGadget.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `color` | `'blue'|'red'|'yellow'|'green'|'cyan'|'purple'|'gray'|'white'` | The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`. |
-| `id` | `` | The ID of the gadget instance. |
-| `position` | `` | The position of the gadget. |
-| `title` | `` | The title of the gadget. |
-| `moduleKey` | `` | The module key of the gadget type. |
-| `uri` | `` | The URI of the gadget type. |
+| `color` | `'blue'\|'red'\|'yellow'\|'green'\|'cyan'\|'purple'\|'gray'\|'white'` | The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`. |
+| `id` | `int` | The ID of the gadget instance. |
+| `position` | `DashboardGadgetPosition` | The position of the gadget. |
+| `title` | `string` | The title of the gadget. |
+| `moduleKey` | `string` | The module key of the gadget type. |
+| `uri` | `string` | The URI of the gadget type. |
 
 ## References
 

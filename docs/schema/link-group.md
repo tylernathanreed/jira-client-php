@@ -7,11 +7,11 @@ Source: [`Jira\Client\Schema\LinkGroup`](/src/Schema/LinkGroup.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `groups` | `?list<LinkGroup>` |  |
-| `header` | `` |  |
-| `id` | `` |  |
+| `header` | `SimpleLink` |  |
+| `id` | `string` |  |
 | `links` | `?list<SimpleLink>` |  |
-| `styleClass` | `` |  |
-| `weight` | `` |  |
+| `styleClass` | `string` |  |
+| `weight` | `int` |  |
 
 ## References
 

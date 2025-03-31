@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeNumberField`](/s
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `` | The ID of the context. |
-| `number` | `` | The default floating-point number. |
-| `type` | `` |  |
+| `contextId` | `string` | The ID of the context. |
+| `number` | `float` | The default floating-point number. |
+| `type` | `string` |  |
 
 ## References
 

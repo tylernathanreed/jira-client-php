@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ProjectInsight`](/src/Schema/ProjectInsight.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `lastIssueUpdateTime` | `` | The last issue update time. |
-| `totalIssueCount` | `` | Total issue count. |
+| `lastIssueUpdateTime` | `string` | The last issue update time. |
+| `totalIssueCount` | `int` | Total issue count. |
 
 ## References
 

@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\JexpEvaluateCtxIssues`](/src/Schema/JexpEvaluateCtx
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `jql` | `` | The JQL query that specifies the set of issues available in the Jira expression. |
+| `jql` | `JexpEvaluateCtxJqlIssues` | The JQL query that specifies the set of issues available in the Jira expression. |
 
 ## References
 

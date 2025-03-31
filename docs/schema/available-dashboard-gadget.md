@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\AvailableDashboardGadget`](/src/Schema/AvailableDas
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `title` | `` | The title of the gadget. |
-| `moduleKey` | `` | The module key of the gadget type. |
-| `uri` | `` | The URI of the gadget type. |
+| `title` | `string` | The title of the gadget. |
+| `moduleKey` | `string` | The module key of the gadget type. |
+| `uri` | `string` | The URI of the gadget type. |
 
 ## References
 

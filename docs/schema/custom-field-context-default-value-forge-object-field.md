@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeObjectField`](/s
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `type` | `` |  |
+| `type` | `string` |  |
 | `object` | `array<string,mixed>` | The default JSON object. |
 
 ## References

@@ -6,13 +6,13 @@ Source: [`Jira\Client\Schema\NotificationRecipients`](/src/Schema/NotificationRe
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `assignee` | `` | Whether the notification should be sent to the issue's assignees. |
+| `assignee` | `bool` | Whether the notification should be sent to the issue's assignees. |
 | `groupIds` | `?list<string>` | List of groupIds to receive the notification. |
 | `groups` | `?list<GroupName>` | List of groups to receive the notification. |
-| `reporter` | `` | Whether the notification should be sent to the issue's reporter. |
+| `reporter` | `bool` | Whether the notification should be sent to the issue's reporter. |
 | `users` | `?list<UserDetails>` | List of users to receive the notification. |
-| `voters` | `` | Whether the notification should be sent to the issue's voters. |
-| `watchers` | `` | Whether the notification should be sent to the issue's watchers. |
+| `voters` | `bool` | Whether the notification should be sent to the issue's voters. |
+| `watchers` | `bool` | Whether the notification should be sent to the issue's watchers. |
 
 ## References
 

@@ -5,9 +5,9 @@ Source: [`Jira\Client\Schema\SecuritySchemeLevelBean`](/src/Schema/SecuritySchem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `name` | `` | The name of the issue security scheme level. Must be unique. |
-| `description` | `` | The description of the issue security scheme level. |
-| `isDefault` | `` | Specifies whether the level is the default level. False by default. |
+| `name` | `string` | The name of the issue security scheme level. Must be unique. |
+| `description` | `string` | The description of the issue security scheme level. |
+| `isDefault` | `bool` | Specifies whether the level is the default level. False by default. |
 | `members` | `?list<SecuritySchemeLevelMemberBean>` | The list of level members which should be added to the issue security scheme level. |
 
 ## References

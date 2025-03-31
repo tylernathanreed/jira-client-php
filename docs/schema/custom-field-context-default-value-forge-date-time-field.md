@@ -6,10 +6,10 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeDateTimeField`](
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `contextId` | `` | The ID of the context. |
-| `type` | `` |  |
-| `dateTime` | `` | The default date-time in ISO format. Ignored if `useCurrent` is true. |
-| `useCurrent` | `` | Whether to use the current date. |
+| `contextId` | `string` | The ID of the context. |
+| `type` | `string` |  |
+| `dateTime` | `string` | The default date-time in ISO format. Ignored if `useCurrent` is true. |
+| `useCurrent` | `bool` | Whether to use the current date. |
 
 ## References
 

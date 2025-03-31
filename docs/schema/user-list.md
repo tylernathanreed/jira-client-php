@@ -7,11 +7,11 @@ Source: [`Jira\Client\Schema\UserList`](/src/Schema/UserList.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `end-index` | `` | The index of the last item returned on the page. |
+| `end-index` | `int` | The index of the last item returned on the page. |
 | `items` | `?list<User>` | The list of items. |
-| `max-results` | `` | The maximum number of results that could be on the page. |
-| `size` | `` | The number of items on the page. |
-| `start-index` | `` | The index of the first item returned on the page. |
+| `max-results` | `int` | The maximum number of results that could be on the page. |
+| `size` | `int` | The number of items on the page. |
+| `start-index` | `int` | The index of the first item returned on the page. |
 
 ## References
 

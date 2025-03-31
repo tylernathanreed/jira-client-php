@@ -7,10 +7,10 @@ Source: [`Jira\Client\Schema\AttachmentArchiveMetadataReadable`](/src/Schema/Att
 | Property | Type | Description |
 | --- | --- | --- |
 | `entries` | `?list<AttachmentArchiveItemReadable>` | The list of the items included in the archive. |
-| `id` | `` | The ID of the attachment. |
-| `mediaType` | `` | The MIME type of the attachment. |
-| `name` | `` | The name of the archive file. |
-| `totalEntryCount` | `` | The number of items included in the archive. |
+| `id` | `int` | The ID of the attachment. |
+| `mediaType` | `string` | The MIME type of the attachment. |
+| `name` | `string` | The name of the archive file. |
+| `totalEntryCount` | `int` | The number of items included in the archive. |
 
 ## References
 

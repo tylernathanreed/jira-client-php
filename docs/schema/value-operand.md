@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\ValueOperand`](/src/Schema/ValueOperand.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `value` | `` | The operand value. |
-| `encodedValue` | `` | Encoded value, which can be used directly in a JQL query. |
+| `value` | `string` | The operand value. |
+| `encodedValue` | `string` | Encoded value, which can be used directly in a JQL query. |
 
 ## References
 

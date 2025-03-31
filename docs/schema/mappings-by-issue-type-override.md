@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\MappingsByIssueTypeOverride`](/src/Schema/MappingsB
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueTypeId` | `` | The ID of the issue type for this mapping. |
+| `issueTypeId` | `string` | The ID of the issue type for this mapping. |
 | `statusMappings` | `list<WorkflowAssociationStatusMapping>` | The list of status mappings. |
 
 ## References

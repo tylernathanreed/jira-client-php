@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\IssueError`](/src/Schema/IssueError.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errorMessage` | `` | The error that occurred when fetching this issue. |
-| `id` | `` | The ID of the issue. |
+| `errorMessage` | `string` | The error that occurred when fetching this issue. |
+| `id` | `string` | The ID of the issue. |
 
 ## References
 
