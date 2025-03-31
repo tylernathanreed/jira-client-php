@@ -2,7 +2,7 @@
 
 Project ID details.
 
-Source: [`Jira\Client\Schema\ProjectId`](src/Schema/ProjectId.php)
+Source: [`Jira\Client\Schema\ProjectId`](/src/Schema/ProjectId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

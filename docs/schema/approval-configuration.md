@@ -3,7 +3,7 @@
 The approval configuration of a status within a workflow.
 Applies only to Jira Service Management approvals.
 
-Source: [`Jira\Client\Schema\ApprovalConfiguration`](src/Schema/ApprovalConfiguration.php)
+Source: [`Jira\Client\Schema\ApprovalConfiguration`](/src/Schema/ApprovalConfiguration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

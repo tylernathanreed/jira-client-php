@@ -1,7 +1,7 @@
 # Workflow Capabilities
 
 
-Source: [`Jira\Client\Schema\WorkflowCapabilities`](src/Schema/WorkflowCapabilities.php)
+Source: [`Jira\Client\Schema\WorkflowCapabilities`](/src/Schema/WorkflowCapabilities.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

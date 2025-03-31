@@ -2,7 +2,7 @@
 
 The result of a JQL search.
 
-Source: [`Jira\Client\Schema\SearchResults`](src/Schema/SearchResults.php)
+Source: [`Jira\Client\Schema\SearchResults`](/src/Schema/SearchResults.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

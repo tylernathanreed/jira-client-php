@@ -2,7 +2,7 @@
 
 Details of a gadget.
 
-Source: [`Jira\Client\Schema\DashboardGadget`](src/Schema/DashboardGadget.php)
+Source: [`Jira\Client\Schema\DashboardGadget`](/src/Schema/DashboardGadget.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

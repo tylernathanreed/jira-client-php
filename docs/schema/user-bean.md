@@ -1,7 +1,7 @@
 # User Bean
 
 
-Source: [`Jira\Client\Schema\UserBean`](src/Schema/UserBean.php)
+Source: [`Jira\Client\Schema\UserBean`](/src/Schema/UserBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

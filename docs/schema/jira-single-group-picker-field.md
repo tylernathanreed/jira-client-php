@@ -1,7 +1,7 @@
 # Jira Single Group Picker Field
 
 
-Source: [`Jira\Client\Schema\JiraSingleGroupPickerField`](src/Schema/JiraSingleGroupPickerField.php)
+Source: [`Jira\Client\Schema\JiraSingleGroupPickerField`](/src/Schema/JiraSingleGroupPickerField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

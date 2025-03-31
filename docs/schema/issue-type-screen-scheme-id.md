@@ -2,7 +2,7 @@
 
 The ID of an issue type screen scheme.
 
-Source: [`Jira\Client\Schema\IssueTypeScreenSchemeId`](src/Schema/IssueTypeScreenSchemeId.php)
+Source: [`Jira\Client\Schema\IssueTypeScreenSchemeId`](/src/Schema/IssueTypeScreenSchemeId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

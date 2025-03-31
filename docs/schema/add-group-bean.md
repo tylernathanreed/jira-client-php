@@ -1,7 +1,7 @@
 # Add Group Bean
 
 
-Source: [`Jira\Client\Schema\AddGroupBean`](src/Schema/AddGroupBean.php)
+Source: [`Jira\Client\Schema\AddGroupBean`](/src/Schema/AddGroupBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

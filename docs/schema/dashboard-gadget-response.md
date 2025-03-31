@@ -2,7 +2,7 @@
 
 The list of gadgets on the dashboard.
 
-Source: [`Jira\Client\Schema\DashboardGadgetResponse`](src/Schema/DashboardGadgetResponse.php)
+Source: [`Jira\Client\Schema\DashboardGadgetResponse`](/src/Schema/DashboardGadgetResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -3,7 +3,7 @@
 A "user" specified as an Atlassian account ID.
 See: https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#user
 
-Source: [`Jira\Client\Schema\UserContextVariable`](src/Schema/UserContextVariable.php)
+Source: [`Jira\Client\Schema\UserContextVariable`](/src/Schema/UserContextVariable.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

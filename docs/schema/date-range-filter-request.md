@@ -2,7 +2,7 @@
 
 List issues archived within a specified date range.
 
-Source: [`Jira\Client\Schema\DateRangeFilterRequest`](src/Schema/DateRangeFilterRequest.php)
+Source: [`Jira\Client\Schema\DateRangeFilterRequest`](/src/Schema/DateRangeFilterRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

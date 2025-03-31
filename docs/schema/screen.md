@@ -2,7 +2,7 @@
 
 A screen.
 
-Source: [`Jira\Client\Schema\Screen`](src/Schema/Screen.php)
+Source: [`Jira\Client\Schema\Screen`](/src/Schema/Screen.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A custom field and its new value with a list of issue to update.
 
-Source: [`Jira\Client\Schema\MultipleCustomFieldValuesUpdate`](src/Schema/MultipleCustomFieldValuesUpdate.php)
+Source: [`Jira\Client\Schema\MultipleCustomFieldValuesUpdate`](/src/Schema/MultipleCustomFieldValuesUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

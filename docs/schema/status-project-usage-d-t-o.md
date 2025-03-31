@@ -2,7 +2,7 @@
 
 The projects using this status.
 
-Source: [`Jira\Client\Schema\StatusProjectUsageDTO`](src/Schema/StatusProjectUsageDTO.php)
+Source: [`Jira\Client\Schema\StatusProjectUsageDTO`](/src/Schema/StatusProjectUsageDTO.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

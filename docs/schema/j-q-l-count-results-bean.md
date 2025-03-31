@@ -1,7 +1,7 @@
 # J Q L Count Results Bean
 
 
-Source: [`Jira\Client\Schema\JQLCountResultsBean`](src/Schema/JQLCountResultsBean.php)
+Source: [`Jira\Client\Schema\JQLCountResultsBean`](/src/Schema/JQLCountResultsBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

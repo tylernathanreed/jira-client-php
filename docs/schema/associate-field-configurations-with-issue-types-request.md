@@ -2,7 +2,7 @@
 
 Details of a field configuration to issue type mappings.
 
-Source: [`Jira\Client\Schema\AssociateFieldConfigurationsWithIssueTypesRequest`](src/Schema/AssociateFieldConfigurationsWithIssueTypesRequest.php)
+Source: [`Jira\Client\Schema\AssociateFieldConfigurationsWithIssueTypesRequest`](/src/Schema/AssociateFieldConfigurationsWithIssueTypesRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

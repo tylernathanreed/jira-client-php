@@ -2,7 +2,7 @@
 
 The list of issue types.
 
-Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsage`](src/Schema/StatusProjectIssueTypeUsage.php)
+Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsage`](/src/Schema/StatusProjectIssueTypeUsage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The ID of a priority scheme.
 
-Source: [`Jira\Client\Schema\PrioritySchemeId`](src/Schema/PrioritySchemeId.php)
+Source: [`Jira\Client\Schema\PrioritySchemeId`](/src/Schema/PrioritySchemeId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

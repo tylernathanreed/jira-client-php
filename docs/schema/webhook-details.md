@@ -2,7 +2,7 @@
 
 A list of webhooks.
 
-Source: [`Jira\Client\Schema\WebhookDetails`](src/Schema/WebhookDetails.php)
+Source: [`Jira\Client\Schema\WebhookDetails`](/src/Schema/WebhookDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

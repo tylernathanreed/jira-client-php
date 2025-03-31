@@ -3,7 +3,7 @@
 The request to evaluate a Jira expression.
 This bean will be replacing `JiraExpressionEvaluateRequest` as part of new `evaluate` endpoint
 
-Source: [`Jira\Client\Schema\JiraExpressionEvaluateRequestBean`](src/Schema/JiraExpressionEvaluateRequestBean.php)
+Source: [`Jira\Client\Schema\JiraExpressionEvaluateRequestBean`](/src/Schema/JiraExpressionEvaluateRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

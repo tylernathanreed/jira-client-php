@@ -2,7 +2,7 @@
 
 The ID of an event that is being mapped to notifications.
 
-Source: [`Jira\Client\Schema\NotificationSchemeEventTypeId`](src/Schema/NotificationSchemeEventTypeId.php)
+Source: [`Jira\Client\Schema\NotificationSchemeEventTypeId`](/src/Schema/NotificationSchemeEventTypeId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

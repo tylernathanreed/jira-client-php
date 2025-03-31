@@ -2,7 +2,7 @@
 
 The default text for a text custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueTextField`](src/Schema/CustomFieldContextDefaultValueTextField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueTextField`](/src/Schema/CustomFieldContextDefaultValueTextField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

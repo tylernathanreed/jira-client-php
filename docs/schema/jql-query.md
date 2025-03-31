@@ -2,7 +2,7 @@
 
 A parsed JQL query.
 
-Source: [`Jira\Client\Schema\JqlQuery`](src/Schema/JqlQuery.php)
+Source: [`Jira\Client\Schema\JqlQuery`](/src/Schema/JqlQuery.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

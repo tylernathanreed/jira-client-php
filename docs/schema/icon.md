@@ -6,7 +6,7 @@ If no icon is defined:
  - for a status icon, no status icon displays in Jira
  - for the remote object icon, the default link icon displays in Jira.
 
-Source: [`Jira\Client\Schema\Icon`](src/Schema/Icon.php)
+Source: [`Jira\Client\Schema\Icon`](/src/Schema/Icon.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

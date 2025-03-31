@@ -2,7 +2,7 @@
 
 List of project avatars.
 
-Source: [`Jira\Client\Schema\ProjectAvatars`](src/Schema/ProjectAvatars.php)
+Source: [`Jira\Client\Schema\ProjectAvatars`](/src/Schema/ProjectAvatars.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

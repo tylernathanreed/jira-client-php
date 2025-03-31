@@ -2,7 +2,7 @@
 
 Properties that identify a workflow.
 
-Source: [`Jira\Client\Schema\WorkflowId`](src/Schema/WorkflowId.php)
+Source: [`Jira\Client\Schema\WorkflowId`](/src/Schema/WorkflowId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

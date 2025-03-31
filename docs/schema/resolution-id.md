@@ -2,7 +2,7 @@
 
 The ID of an issue resolution.
 
-Source: [`Jira\Client\Schema\ResolutionId`](src/Schema/ResolutionId.php)
+Source: [`Jira\Client\Schema\ResolutionId`](/src/Schema/ResolutionId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

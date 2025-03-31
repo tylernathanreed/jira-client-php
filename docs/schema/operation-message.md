@@ -1,7 +1,7 @@
 # Operation Message
 
 
-Source: [`Jira\Client\Schema\OperationMessage`](src/Schema/OperationMessage.php)
+Source: [`Jira\Client\Schema\OperationMessage`](/src/Schema/OperationMessage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

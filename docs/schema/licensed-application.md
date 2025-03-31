@@ -2,7 +2,7 @@
 
 Details about a licensed Jira application.
 
-Source: [`Jira\Client\Schema\LicensedApplication`](src/Schema/LicensedApplication.php)
+Source: [`Jira\Client\Schema\LicensedApplication`](/src/Schema/LicensedApplication.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

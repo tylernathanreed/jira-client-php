@@ -2,7 +2,7 @@
 
 Identifier for a field for example FIELD\_ID.
 
-Source: [`Jira\Client\Schema\FieldIdentifierObject`](src/Schema/FieldIdentifierObject.php)
+Source: [`Jira\Client\Schema\FieldIdentifierObject`](/src/Schema/FieldIdentifierObject.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details about data policy.
 
-Source: [`Jira\Client\Schema\WorkspaceDataPolicy`](src/Schema/WorkspaceDataPolicy.php)
+Source: [`Jira\Client\Schema\WorkspaceDataPolicy`](/src/Schema/WorkspaceDataPolicy.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

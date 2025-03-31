@@ -2,7 +2,7 @@
 
 The metadata describing an issue field for createmeta.
 
-Source: [`Jira\Client\Schema\FieldCreateMetadata`](src/Schema/FieldCreateMetadata.php)
+Source: [`Jira\Client\Schema\FieldCreateMetadata`](/src/Schema/FieldCreateMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

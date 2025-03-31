@@ -1,7 +1,7 @@
 # Get Plan Response
 
 
-Source: [`Jira\Client\Schema\GetPlanResponse`](src/Schema/GetPlanResponse.php)
+Source: [`Jira\Client\Schema\GetPlanResponse`](/src/Schema/GetPlanResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details about the replacement for a deleted version.
 
-Source: [`Jira\Client\Schema\CustomFieldReplacement`](src/Schema/CustomFieldReplacement.php)
+Source: [`Jira\Client\Schema\CustomFieldReplacement`](/src/Schema/CustomFieldReplacement.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

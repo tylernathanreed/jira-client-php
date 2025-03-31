@@ -2,7 +2,7 @@
 
 Details of the options to update for a custom field.
 
-Source: [`Jira\Client\Schema\BulkCustomFieldOptionUpdateRequest`](src/Schema/BulkCustomFieldOptionUpdateRequest.php)
+Source: [`Jira\Client\Schema\BulkCustomFieldOptionUpdateRequest`](/src/Schema/BulkCustomFieldOptionUpdateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

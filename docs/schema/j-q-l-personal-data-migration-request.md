@@ -2,7 +2,7 @@
 
 The JQL queries to be converted.
 
-Source: [`Jira\Client\Schema\JQLPersonalDataMigrationRequest`](src/Schema/JQLPersonalDataMigrationRequest.php)
+Source: [`Jira\Client\Schema\JQLPersonalDataMigrationRequest`](/src/Schema/JQLPersonalDataMigrationRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

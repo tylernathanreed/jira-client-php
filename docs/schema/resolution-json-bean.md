@@ -1,7 +1,7 @@
 # Resolution Json Bean
 
 
-Source: [`Jira\Client\Schema\ResolutionJsonBean`](src/Schema/ResolutionJsonBean.php)
+Source: [`Jira\Client\Schema\ResolutionJsonBean`](/src/Schema/ResolutionJsonBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

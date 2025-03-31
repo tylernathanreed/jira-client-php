@@ -2,7 +2,7 @@
 
 The mapping of old to new status ID.
 
-Source: [`Jira\Client\Schema\StatusMigration`](src/Schema/StatusMigration.php)
+Source: [`Jira\Client\Schema\StatusMigration`](/src/Schema/StatusMigration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

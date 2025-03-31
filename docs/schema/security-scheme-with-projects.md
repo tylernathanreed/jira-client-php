@@ -2,7 +2,7 @@
 
 Details about an issue security scheme.
 
-Source: [`Jira\Client\Schema\SecuritySchemeWithProjects`](src/Schema/SecuritySchemeWithProjects.php)
+Source: [`Jira\Client\Schema\SecuritySchemeWithProjects`](/src/Schema/SecuritySchemeWithProjects.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

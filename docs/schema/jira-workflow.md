@@ -2,7 +2,7 @@
 
 Details of a workflow.
 
-Source: [`Jira\Client\Schema\JiraWorkflow`](src/Schema/JiraWorkflow.php)
+Source: [`Jira\Client\Schema\JiraWorkflow`](/src/Schema/JiraWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

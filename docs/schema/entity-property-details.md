@@ -1,7 +1,7 @@
 # Entity Property Details
 
 
-Source: [`Jira\Client\Schema\EntityPropertyDetails`](src/Schema/EntityPropertyDetails.php)
+Source: [`Jira\Client\Schema\EntityPropertyDetails`](/src/Schema/EntityPropertyDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

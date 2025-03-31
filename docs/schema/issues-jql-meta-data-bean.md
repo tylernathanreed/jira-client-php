@@ -2,7 +2,7 @@
 
 The description of the page of issues loaded by the provided JQL query.
 
-Source: [`Jira\Client\Schema\IssuesJqlMetaDataBean`](src/Schema/IssuesJqlMetaDataBean.php)
+Source: [`Jira\Client\Schema\IssuesJqlMetaDataBean`](/src/Schema/IssuesJqlMetaDataBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

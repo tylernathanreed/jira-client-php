@@ -6,7 +6,7 @@ The error details apply to the entire expression, unless the object includes:
  - `line` and `column`
  - `expression`
 
-Source: [`Jira\Client\Schema\JiraExpressionValidationError`](src/Schema/JiraExpressionValidationError.php)
+Source: [`Jira\Client\Schema\JiraExpressionValidationError`](/src/Schema/JiraExpressionValidationError.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

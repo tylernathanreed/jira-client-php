@@ -2,7 +2,7 @@
 
 Field mapping for mandatory fields in target
 
-Source: [`Jira\Client\Schema\TargetMandatoryFields`](src/Schema/TargetMandatoryFields.php)
+Source: [`Jira\Client\Schema\TargetMandatoryFields`](/src/Schema/TargetMandatoryFields.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

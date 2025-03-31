@@ -4,7 +4,7 @@ The JQL specifying the issues available in the evaluated Jira expression under t
 Not all issues returned by the JQL query are loaded, only those described by the `startAt` and `maxResults` properties.
 To determine whether it is necessary to iterate to ensure all the issues returned by the JQL query are evaluated, inspect `meta.issues.jql.count` in the response.
 
-Source: [`Jira\Client\Schema\JexpJqlIssues`](src/Schema/JexpJqlIssues.php)
+Source: [`Jira\Client\Schema\JexpJqlIssues`](/src/Schema/JexpJqlIssues.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

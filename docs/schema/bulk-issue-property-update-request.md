@@ -2,7 +2,7 @@
 
 Bulk issue property update request details.
 
-Source: [`Jira\Client\Schema\BulkIssuePropertyUpdateRequest`](src/Schema/BulkIssuePropertyUpdateRequest.php)
+Source: [`Jira\Client\Schema\BulkIssuePropertyUpdateRequest`](/src/Schema/BulkIssuePropertyUpdateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

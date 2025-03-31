@@ -1,7 +1,7 @@
 # Jira Issue Fields
 
 
-Source: [`Jira\Client\Schema\JiraIssueFields`](src/Schema/JiraIssueFields.php)
+Source: [`Jira\Client\Schema\JiraIssueFields`](/src/Schema/JiraIssueFields.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

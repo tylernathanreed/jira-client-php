@@ -2,7 +2,7 @@
 
 A page of changelogs which is designed to handle multiple issues
 
-Source: [`Jira\Client\Schema\BulkChangelogResponseBean`](src/Schema/BulkChangelogResponseBean.php)
+Source: [`Jira\Client\Schema\BulkChangelogResponseBean`](/src/Schema/BulkChangelogResponseBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

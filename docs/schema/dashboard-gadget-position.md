@@ -2,7 +2,7 @@
 
 Details of a gadget position.
 
-Source: [`Jira\Client\Schema\DashboardGadgetPosition`](src/Schema/DashboardGadgetPosition.php)
+Source: [`Jira\Client\Schema\DashboardGadgetPosition`](/src/Schema/DashboardGadgetPosition.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

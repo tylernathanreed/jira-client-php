@@ -2,7 +2,7 @@
 
 Details about the roles in a project.
 
-Source: [`Jira\Client\Schema\ProjectRole`](src/Schema/ProjectRole.php)
+Source: [`Jira\Client\Schema\ProjectRole`](/src/Schema/ProjectRole.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

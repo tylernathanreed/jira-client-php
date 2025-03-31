@@ -1,7 +1,7 @@
 # Version Move Bean
 
 
-Source: [`Jira\Client\Schema\VersionMoveBean`](src/Schema/VersionMoveBean.php)
+Source: [`Jira\Client\Schema\VersionMoveBean`](/src/Schema/VersionMoveBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

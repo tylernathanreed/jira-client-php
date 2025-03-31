@@ -2,7 +2,7 @@
 
 The default text for a read only custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueReadOnly`](src/Schema/CustomFieldContextDefaultValueReadOnly.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueReadOnly`](/src/Schema/CustomFieldContextDefaultValueReadOnly.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

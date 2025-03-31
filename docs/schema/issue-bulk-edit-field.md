@@ -1,7 +1,7 @@
 # Issue Bulk Edit Field
 
 
-Source: [`Jira\Client\Schema\IssueBulkEditField`](src/Schema/IssueBulkEditField.php)
+Source: [`Jira\Client\Schema\IssueBulkEditField`](/src/Schema/IssueBulkEditField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

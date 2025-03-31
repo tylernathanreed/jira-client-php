@@ -2,7 +2,7 @@
 
 Details about the operations available in this version.
 
-Source: [`Jira\Client\Schema\SimpleLink`](src/Schema/SimpleLink.php)
+Source: [`Jira\Client\Schema\SimpleLink`](/src/Schema/SimpleLink.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

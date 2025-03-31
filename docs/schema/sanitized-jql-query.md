@@ -2,7 +2,7 @@
 
 Details of the sanitized JQL query.
 
-Source: [`Jira\Client\Schema\SanitizedJqlQuery`](src/Schema/SanitizedJqlQuery.php)
+Source: [`Jira\Client\Schema\SanitizedJqlQuery`](/src/Schema/SanitizedJqlQuery.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

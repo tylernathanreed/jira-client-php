@@ -1,7 +1,7 @@
 # Worklogs Move Request Bean
 
 
-Source: [`Jira\Client\Schema\WorklogsMoveRequestBean`](src/Schema/WorklogsMoveRequestBean.php)
+Source: [`Jira\Client\Schema\WorklogsMoveRequestBean`](/src/Schema/WorklogsMoveRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

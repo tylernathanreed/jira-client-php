@@ -2,7 +2,7 @@
 
 Classification mapping for classifications in source issues to respective target classification.
 
-Source: [`Jira\Client\Schema\TargetClassification`](src/Schema/TargetClassification.php)
+Source: [`Jira\Client\Schema\TargetClassification`](/src/Schema/TargetClassification.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

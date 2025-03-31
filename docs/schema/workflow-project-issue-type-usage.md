@@ -2,7 +2,7 @@
 
 The issue type.
 
-Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsage`](src/Schema/WorkflowProjectIssueTypeUsage.php)
+Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsage`](/src/Schema/WorkflowProjectIssueTypeUsage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

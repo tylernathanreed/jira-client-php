@@ -2,7 +2,7 @@
 
 A list of issue IDs and the value to update a custom field to.
 
-Source: [`Jira\Client\Schema\CustomFieldValueUpdate`](src/Schema/CustomFieldValueUpdate.php)
+Source: [`Jira\Client\Schema\CustomFieldValueUpdate`](/src/Schema/CustomFieldValueUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of functions that can be used in advanced searches.
 
-Source: [`Jira\Client\Schema\FunctionReferenceData`](src/Schema/FunctionReferenceData.php)
+Source: [`Jira\Client\Schema\FunctionReferenceData`](/src/Schema/FunctionReferenceData.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

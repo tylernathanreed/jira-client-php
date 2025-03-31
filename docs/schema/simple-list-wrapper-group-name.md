@@ -1,7 +1,7 @@
 # Simple List Wrapper Group Name
 
 
-Source: [`Jira\Client\Schema\SimpleListWrapperGroupName`](src/Schema/SimpleListWrapperGroupName.php)
+Source: [`Jira\Client\Schema\SimpleListWrapperGroupName`](/src/Schema/SimpleListWrapperGroupName.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

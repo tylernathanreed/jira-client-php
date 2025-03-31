@@ -2,7 +2,7 @@
 
 Details of the scope of the default sharing for new filters and dashboards.
 
-Source: [`Jira\Client\Schema\DefaultShareScope`](src/Schema/DefaultShareScope.php)
+Source: [`Jira\Client\Schema\DefaultShareScope`](/src/Schema/DefaultShareScope.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

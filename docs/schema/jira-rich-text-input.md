@@ -1,7 +1,7 @@
 # Jira Rich Text Input
 
 
-Source: [`Jira\Client\Schema\JiraRichTextInput`](src/Schema/JiraRichTextInput.php)
+Source: [`Jira\Client\Schema\JiraRichTextInput`](/src/Schema/JiraRichTextInput.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

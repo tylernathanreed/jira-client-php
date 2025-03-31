@@ -1,7 +1,7 @@
 # Project Landing Page Info
 
 
-Source: [`Jira\Client\Schema\ProjectLandingPageInfo`](src/Schema/ProjectLandingPageInfo.php)
+Source: [`Jira\Client\Schema\ProjectLandingPageInfo`](/src/Schema/ProjectLandingPageInfo.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Share Permission Input Bean
 
 
-Source: [`Jira\Client\Schema\SharePermissionInputBean`](src/Schema/SharePermissionInputBean.php)
+Source: [`Jira\Client\Schema\SharePermissionInputBean`](/src/Schema/SharePermissionInputBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

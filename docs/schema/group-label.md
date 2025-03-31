@@ -2,7 +2,7 @@
 
 A group label.
 
-Source: [`Jira\Client\Schema\GroupLabel`](src/Schema/GroupLabel.php)
+Source: [`Jira\Client\Schema\GroupLabel`](/src/Schema/GroupLabel.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

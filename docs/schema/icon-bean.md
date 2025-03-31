@@ -2,7 +2,7 @@
 
 An icon.
 
-Source: [`Jira\Client\Schema\IconBean`](src/Schema/IconBean.php)
+Source: [`Jira\Client\Schema\IconBean`](/src/Schema/IconBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

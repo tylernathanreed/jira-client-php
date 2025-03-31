@@ -1,7 +1,7 @@
 # Jira Multiple Version Picker Field
 
 
-Source: [`Jira\Client\Schema\JiraMultipleVersionPickerField`](src/Schema/JiraMultipleVersionPickerField.php)
+Source: [`Jira\Client\Schema\JiraMultipleVersionPickerField`](/src/Schema/JiraMultipleVersionPickerField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

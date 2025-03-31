@@ -2,7 +2,7 @@
 
 The update workflows payload.
 
-Source: [`Jira\Client\Schema\WorkflowUpdateRequest`](src/Schema/WorkflowUpdateRequest.php)
+Source: [`Jira\Client\Schema\WorkflowUpdateRequest`](/src/Schema/WorkflowUpdateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Default value for a float (number) custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueFloat`](src/Schema/CustomFieldContextDefaultValueFloat.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueFloat`](/src/Schema/CustomFieldContextDefaultValueFloat.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

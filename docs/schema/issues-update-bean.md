@@ -1,7 +1,7 @@
 # Issues Update Bean
 
 
-Source: [`Jira\Client\Schema\IssuesUpdateBean`](src/Schema/IssuesUpdateBean.php)
+Source: [`Jira\Client\Schema\IssuesUpdateBean`](/src/Schema/IssuesUpdateBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

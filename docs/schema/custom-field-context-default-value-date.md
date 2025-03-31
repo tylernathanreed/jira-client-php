@@ -2,7 +2,7 @@
 
 The default value for a Date custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueDate`](src/Schema/CustomFieldContextDefaultValueDate.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueDate`](/src/Schema/CustomFieldContextDefaultValueDate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

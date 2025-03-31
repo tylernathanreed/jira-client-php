@@ -3,7 +3,7 @@
 Container for a list of registered webhooks.
 Webhook details are returned in the same order as the request.
 
-Source: [`Jira\Client\Schema\ContainerForRegisteredWebhooks`](src/Schema/ContainerForRegisteredWebhooks.php)
+Source: [`Jira\Client\Schema\ContainerForRegisteredWebhooks`](/src/Schema/ContainerForRegisteredWebhooks.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

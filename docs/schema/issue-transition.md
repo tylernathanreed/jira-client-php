@@ -2,7 +2,7 @@
 
 Details of an issue transition.
 
-Source: [`Jira\Client\Schema\IssueTransition`](src/Schema/IssueTransition.php)
+Source: [`Jira\Client\Schema\IssueTransition`](/src/Schema/IssueTransition.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of the operations that can be performed on the issue.
 
-Source: [`Jira\Client\Schema\Operations`](src/Schema/Operations.php)
+Source: [`Jira\Client\Schema\Operations`](/src/Schema/Operations.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

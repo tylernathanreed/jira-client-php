@@ -2,7 +2,7 @@
 
 Details of a priority scheme.
 
-Source: [`Jira\Client\Schema\UpdatePrioritySchemeRequestBean`](src/Schema/UpdatePrioritySchemeRequestBean.php)
+Source: [`Jira\Client\Schema\UpdatePrioritySchemeRequestBean`](/src/Schema/UpdatePrioritySchemeRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

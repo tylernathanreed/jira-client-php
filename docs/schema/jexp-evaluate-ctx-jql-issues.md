@@ -4,7 +4,7 @@ The JQL specifying the issues available in the evaluated Jira expression under t
 Not all issues returned by the JQL query are loaded, only those described by the `nextPageToken` and `maxResults` properties.
 This bean will be replacing JexpJqlIssues bean as part of new `evaluate` endpoint
 
-Source: [`Jira\Client\Schema\JexpEvaluateCtxJqlIssues`](src/Schema/JexpEvaluateCtxJqlIssues.php)
+Source: [`Jira\Client\Schema\JexpEvaluateCtxJqlIssues`](/src/Schema/JexpEvaluateCtxJqlIssues.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

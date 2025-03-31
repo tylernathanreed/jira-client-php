@@ -2,7 +2,7 @@
 
 An element of the order-by JQL clause.
 
-Source: [`Jira\Client\Schema\JqlQueryOrderByClauseElement`](src/Schema/JqlQueryOrderByClauseElement.php)
+Source: [`Jira\Client\Schema\JqlQueryOrderByClauseElement`](/src/Schema/JqlQueryOrderByClauseElement.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanIssueTypeScreenSchemeItem`](src/Schema/PageBeanIssueTypeScreenSchemeItem.php)
+Source: [`Jira\Client\Schema\PageBeanIssueTypeScreenSchemeItem`](/src/Schema/PageBeanIssueTypeScreenSchemeItem.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

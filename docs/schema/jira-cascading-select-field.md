@@ -1,7 +1,7 @@
 # Jira Cascading Select Field
 
 
-Source: [`Jira\Client\Schema\JiraCascadingSelectField`](src/Schema/JiraCascadingSelectField.php)
+Source: [`Jira\Client\Schema\JiraCascadingSelectField`](/src/Schema/JiraCascadingSelectField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

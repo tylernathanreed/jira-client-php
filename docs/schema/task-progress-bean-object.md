@@ -2,7 +2,7 @@
 
 Details about a task.
 
-Source: [`Jira\Client\Schema\TaskProgressBeanObject`](src/Schema/TaskProgressBeanObject.php)
+Source: [`Jira\Client\Schema\TaskProgressBeanObject`](/src/Schema/TaskProgressBeanObject.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

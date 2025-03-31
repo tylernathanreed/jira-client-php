@@ -2,7 +2,7 @@
 
 Details of an issue type screen scheme.
 
-Source: [`Jira\Client\Schema\IssueTypeScreenScheme`](src/Schema/IssueTypeScreenScheme.php)
+Source: [`Jira\Client\Schema\IssueTypeScreenScheme`](/src/Schema/IssueTypeScreenScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

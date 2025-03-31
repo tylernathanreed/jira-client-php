@@ -2,7 +2,7 @@
 
 The default value for a multiple group picker custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultipleGroupPicker`](src/Schema/CustomFieldContextDefaultValueMultipleGroupPicker.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultipleGroupPicker`](/src/Schema/CustomFieldContextDefaultValueMultipleGroupPicker.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

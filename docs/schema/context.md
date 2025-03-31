@@ -2,7 +2,7 @@
 
 A context.
 
-Source: [`Jira\Client\Schema\Context`](src/Schema/Context.php)
+Source: [`Jira\Client\Schema\Context`](/src/Schema/Context.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

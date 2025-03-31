@@ -1,7 +1,7 @@
 # Simplified Issue Transition
 
 
-Source: [`Jira\Client\Schema\SimplifiedIssueTransition`](src/Schema/SimplifiedIssueTransition.php)
+Source: [`Jira\Client\Schema\SimplifiedIssueTransition`](/src/Schema/SimplifiedIssueTransition.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Create Exclusion Rules Request
 
 
-Source: [`Jira\Client\Schema\CreateExclusionRulesRequest`](src/Schema/CreateExclusionRulesRequest.php)
+Source: [`Jira\Client\Schema\CreateExclusionRulesRequest`](/src/Schema/CreateExclusionRulesRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

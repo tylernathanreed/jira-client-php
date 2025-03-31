@@ -2,7 +2,7 @@
 
 The field configuration to issue type mapping.
 
-Source: [`Jira\Client\Schema\FieldConfigurationToIssueTypeMapping`](src/Schema/FieldConfigurationToIssueTypeMapping.php)
+Source: [`Jira\Client\Schema\FieldConfigurationToIssueTypeMapping`](/src/Schema/FieldConfigurationToIssueTypeMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

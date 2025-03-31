@@ -2,7 +2,7 @@
 
 Count of issues assigned to a component.
 
-Source: [`Jira\Client\Schema\ComponentIssuesCount`](src/Schema/ComponentIssuesCount.php)
+Source: [`Jira\Client\Schema\ComponentIssuesCount`](/src/Schema/ComponentIssuesCount.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

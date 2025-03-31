@@ -1,7 +1,7 @@
 # Id Bean
 
 
-Source: [`Jira\Client\Schema\IdBean`](src/Schema/IdBean.php)
+Source: [`Jira\Client\Schema\IdBean`](/src/Schema/IdBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

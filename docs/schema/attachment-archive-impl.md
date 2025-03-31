@@ -1,7 +1,7 @@
 # Attachment Archive Impl
 
 
-Source: [`Jira\Client\Schema\AttachmentArchiveImpl`](src/Schema/AttachmentArchiveImpl.php)
+Source: [`Jira\Client\Schema\AttachmentArchiveImpl`](/src/Schema/AttachmentArchiveImpl.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Field association for example PROJECT\_ID.
 
-Source: [`Jira\Client\Schema\AssociationContextObject`](src/Schema/AssociationContextObject.php)
+Source: [`Jira\Client\Schema\AssociationContextObject`](/src/Schema/AssociationContextObject.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

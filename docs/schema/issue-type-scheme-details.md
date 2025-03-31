@@ -2,7 +2,7 @@
 
 Details of an issue type scheme and its associated issue types.
 
-Source: [`Jira\Client\Schema\IssueTypeSchemeDetails`](src/Schema/IssueTypeSchemeDetails.php)
+Source: [`Jira\Client\Schema\IssueTypeSchemeDetails`](/src/Schema/IssueTypeSchemeDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Result of updating JQL Function precomputations.
 
-Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateResponse`](src/Schema/JqlFunctionPrecomputationUpdateResponse.php)
+Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateResponse`](/src/Schema/JqlFunctionPrecomputationUpdateResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

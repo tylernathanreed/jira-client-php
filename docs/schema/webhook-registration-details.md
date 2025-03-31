@@ -2,7 +2,7 @@
 
 Details of webhooks to register.
 
-Source: [`Jira\Client\Schema\WebhookRegistrationDetails`](src/Schema/WebhookRegistrationDetails.php)
+Source: [`Jira\Client\Schema\WebhookRegistrationDetails`](/src/Schema/WebhookRegistrationDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The group or role to which this item is visible.
 
-Source: [`Jira\Client\Schema\Visibility`](src/Schema/Visibility.php)
+Source: [`Jira\Client\Schema\Visibility`](/src/Schema/Visibility.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

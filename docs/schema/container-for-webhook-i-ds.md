@@ -2,7 +2,7 @@
 
 Container for a list of webhook IDs.
 
-Source: [`Jira\Client\Schema\ContainerForWebhookIDs`](src/Schema/ContainerForWebhookIDs.php)
+Source: [`Jira\Client\Schema\ContainerForWebhookIDs`](/src/Schema/ContainerForWebhookIDs.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

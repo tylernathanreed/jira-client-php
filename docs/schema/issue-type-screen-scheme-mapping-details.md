@@ -2,7 +2,7 @@
 
 A list of issue type screen scheme mappings.
 
-Source: [`Jira\Client\Schema\IssueTypeScreenSchemeMappingDetails`](src/Schema/IssueTypeScreenSchemeMappingDetails.php)
+Source: [`Jira\Client\Schema\IssueTypeScreenSchemeMappingDetails`](/src/Schema/IssueTypeScreenSchemeMappingDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

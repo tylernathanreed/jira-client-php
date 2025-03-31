@@ -2,7 +2,7 @@
 
 Details about a user assigned to a project role.
 
-Source: [`Jira\Client\Schema\RoleActor`](src/Schema/RoleActor.php)
+Source: [`Jira\Client\Schema\RoleActor`](/src/Schema/RoleActor.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

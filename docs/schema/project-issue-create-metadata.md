@@ -2,7 +2,7 @@
 
 Details of the issue creation metadata for a project.
 
-Source: [`Jira\Client\Schema\ProjectIssueCreateMetadata`](src/Schema/ProjectIssueCreateMetadata.php)
+Source: [`Jira\Client\Schema\ProjectIssueCreateMetadata`](/src/Schema/ProjectIssueCreateMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

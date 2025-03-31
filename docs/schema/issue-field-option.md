@@ -2,7 +2,7 @@
 
 Details of the options for a select list issue field.
 
-Source: [`Jira\Client\Schema\IssueFieldOption`](src/Schema/IssueFieldOption.php)
+Source: [`Jira\Client\Schema\IssueFieldOption`](/src/Schema/IssueFieldOption.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

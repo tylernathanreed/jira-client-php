@@ -1,7 +1,7 @@
 # Create Plan Request
 
 
-Source: [`Jira\Client\Schema\CreatePlanRequest`](src/Schema/CreatePlanRequest.php)
+Source: [`Jira\Client\Schema\CreatePlanRequest`](/src/Schema/CreatePlanRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

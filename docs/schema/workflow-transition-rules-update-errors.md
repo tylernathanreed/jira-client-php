@@ -2,7 +2,7 @@
 
 Details of any errors encountered while updating workflow transition rules.
 
-Source: [`Jira\Client\Schema\WorkflowTransitionRulesUpdateErrors`](src/Schema/WorkflowTransitionRulesUpdateErrors.php)
+Source: [`Jira\Client\Schema\WorkflowTransitionRulesUpdateErrors`](/src/Schema/WorkflowTransitionRulesUpdateErrors.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

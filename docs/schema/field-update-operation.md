@@ -2,7 +2,7 @@
 
 Details of an operation to perform on a field.
 
-Source: [`Jira\Client\Schema\FieldUpdateOperation`](src/Schema/FieldUpdateOperation.php)
+Source: [`Jira\Client\Schema\FieldUpdateOperation`](/src/Schema/FieldUpdateOperation.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

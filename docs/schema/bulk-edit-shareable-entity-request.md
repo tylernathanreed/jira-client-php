@@ -2,7 +2,7 @@
 
 Details of a request to bulk edit shareable entity.
 
-Source: [`Jira\Client\Schema\BulkEditShareableEntityRequest`](src/Schema/BulkEditShareableEntityRequest.php)
+Source: [`Jira\Client\Schema\BulkEditShareableEntityRequest`](/src/Schema/BulkEditShareableEntityRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Paginated Response Comment
 
 
-Source: [`Jira\Client\Schema\PaginatedResponseComment`](src/Schema/PaginatedResponseComment.php)
+Source: [`Jira\Client\Schema\PaginatedResponseComment`](/src/Schema/PaginatedResponseComment.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

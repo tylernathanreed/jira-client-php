@@ -2,7 +2,7 @@
 
 Key fields from the linked issue.
 
-Source: [`Jira\Client\Schema\Fields`](src/Schema/Fields.php)
+Source: [`Jira\Client\Schema\Fields`](/src/Schema/Fields.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

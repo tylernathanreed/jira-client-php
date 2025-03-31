@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanPriority`](src/Schema/PageBeanPriority.php)
+Source: [`Jira\Client\Schema\PageBeanPriority`](/src/Schema/PageBeanPriority.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

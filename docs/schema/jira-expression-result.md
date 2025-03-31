@@ -2,7 +2,7 @@
 
 The result of evaluating a Jira expression.
 
-Source: [`Jira\Client\Schema\JiraExpressionResult`](src/Schema/JiraExpressionResult.php)
+Source: [`Jira\Client\Schema\JiraExpressionResult`](/src/Schema/JiraExpressionResult.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

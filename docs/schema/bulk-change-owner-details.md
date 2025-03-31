@@ -2,7 +2,7 @@
 
 Details for changing owners of shareable entities
 
-Source: [`Jira\Client\Schema\BulkChangeOwnerDetails`](src/Schema/BulkChangeOwnerDetails.php)
+Source: [`Jira\Client\Schema\BulkChangeOwnerDetails`](/src/Schema/BulkChangeOwnerDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

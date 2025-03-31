@@ -1,7 +1,7 @@
 # Jira Single Version Picker Field
 
 
-Source: [`Jira\Client\Schema\JiraSingleVersionPickerField`](src/Schema/JiraSingleVersionPickerField.php)
+Source: [`Jira\Client\Schema\JiraSingleVersionPickerField`](/src/Schema/JiraSingleVersionPickerField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

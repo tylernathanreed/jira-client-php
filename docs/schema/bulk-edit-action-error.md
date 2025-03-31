@@ -2,7 +2,7 @@
 
 Errors of bulk edit action.
 
-Source: [`Jira\Client\Schema\BulkEditActionError`](src/Schema/BulkEditActionError.php)
+Source: [`Jira\Client\Schema\BulkEditActionError`](/src/Schema/BulkEditActionError.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

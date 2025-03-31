@@ -1,7 +1,7 @@
 # Multipart File
 
 
-Source: [`Jira\Client\Schema\MultipartFile`](src/Schema/MultipartFile.php)
+Source: [`Jira\Client\Schema\MultipartFile`](/src/Schema/MultipartFile.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

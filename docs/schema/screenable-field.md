@@ -2,7 +2,7 @@
 
 A screen tab field.
 
-Source: [`Jira\Client\Schema\ScreenableField`](src/Schema/ScreenableField.php)
+Source: [`Jira\Client\Schema\ScreenableField`](/src/Schema/ScreenableField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

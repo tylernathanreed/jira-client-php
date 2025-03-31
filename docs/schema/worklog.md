@@ -2,7 +2,7 @@
 
 Details of a worklog.
 
-Source: [`Jira\Client\Schema\Worklog`](src/Schema/Worklog.php)
+Source: [`Jira\Client\Schema\Worklog`](/src/Schema/Worklog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The IDs of the screens for the screen types of the screen scheme.
 
-Source: [`Jira\Client\Schema\ScreenTypes`](src/Schema/ScreenTypes.php)
+Source: [`Jira\Client\Schema\ScreenTypes`](/src/Schema/ScreenTypes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Get Exclusion Rules Response
 
 
-Source: [`Jira\Client\Schema\GetExclusionRulesResponse`](src/Schema/GetExclusionRulesResponse.php)
+Source: [`Jira\Client\Schema\GetExclusionRulesResponse`](/src/Schema/GetExclusionRulesResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

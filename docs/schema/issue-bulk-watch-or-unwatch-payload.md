@@ -2,7 +2,7 @@
 
 Issue Bulk Watch Or Unwatch Payload
 
-Source: [`Jira\Client\Schema\IssueBulkWatchOrUnwatchPayload`](src/Schema/IssueBulkWatchOrUnwatchPayload.php)
+Source: [`Jira\Client\Schema\IssueBulkWatchOrUnwatchPayload`](/src/Schema/IssueBulkWatchOrUnwatchPayload.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

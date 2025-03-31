@@ -1,7 +1,7 @@
 # Bulk Operation Progress
 
 
-Source: [`Jira\Client\Schema\BulkOperationProgress`](src/Schema/BulkOperationProgress.php)
+Source: [`Jira\Client\Schema\BulkOperationProgress`](/src/Schema/BulkOperationProgress.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

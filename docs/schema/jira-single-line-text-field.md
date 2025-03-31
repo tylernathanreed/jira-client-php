@@ -1,7 +1,7 @@
 # Jira Single Line Text Field
 
 
-Source: [`Jira\Client\Schema\JiraSingleLineTextField`](src/Schema/JiraSingleLineTextField.php)
+Source: [`Jira\Client\Schema\JiraSingleLineTextField`](/src/Schema/JiraSingleLineTextField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

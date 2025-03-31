@@ -5,7 +5,7 @@ For example, `status WAS "Resolved" BY currentUser() BEFORE "2019/02/02"`.
 See "WAS" for more information about the WAS operator.
 See: https://confluence.atlassian.com/x/dgiiLQ#Advancedsearching-operatorsreference-WASWAS
 
-Source: [`Jira\Client\Schema\FieldWasClause`](src/Schema/FieldWasClause.php)
+Source: [`Jira\Client\Schema\FieldWasClause`](/src/Schema/FieldWasClause.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Issue types associated with the workflow for a project.
 
-Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsageDTO`](src/Schema/WorkflowProjectIssueTypeUsageDTO.php)
+Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsageDTO`](/src/Schema/WorkflowProjectIssueTypeUsageDTO.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

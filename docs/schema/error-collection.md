@@ -2,7 +2,7 @@
 
 Error messages from an operation.
 
-Source: [`Jira\Client\Schema\ErrorCollection`](src/Schema/ErrorCollection.php)
+Source: [`Jira\Client\Schema\ErrorCollection`](/src/Schema/ErrorCollection.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -3,7 +3,7 @@
 A log of changes made to issue fields.
 Changelogs related to workflow associations are currently being deprecated.
 
-Source: [`Jira\Client\Schema\Changelog`](src/Schema/Changelog.php)
+Source: [`Jira\Client\Schema\Changelog`](/src/Schema/Changelog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

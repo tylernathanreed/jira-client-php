@@ -2,7 +2,7 @@
 
 The scope of the workflow.
 
-Source: [`Jira\Client\Schema\WorkflowScope`](src/Schema/WorkflowScope.php)
+Source: [`Jira\Client\Schema\WorkflowScope`](/src/Schema/WorkflowScope.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

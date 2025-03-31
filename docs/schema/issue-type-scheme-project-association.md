@@ -2,7 +2,7 @@
 
 Details of the association between an issue type scheme and project.
 
-Source: [`Jira\Client\Schema\IssueTypeSchemeProjectAssociation`](src/Schema/IssueTypeSchemeProjectAssociation.php)
+Source: [`Jira\Client\Schema\IssueTypeSchemeProjectAssociation`](/src/Schema/IssueTypeSchemeProjectAssociation.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

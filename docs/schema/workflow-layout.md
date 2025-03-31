@@ -2,7 +2,7 @@
 
 The starting point for the statuses in the workflow.
 
-Source: [`Jira\Client\Schema\WorkflowLayout`](src/Schema/WorkflowLayout.php)
+Source: [`Jira\Client\Schema\WorkflowLayout`](/src/Schema/WorkflowLayout.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The ID of an issue priority.
 
-Source: [`Jira\Client\Schema\PriorityId`](src/Schema/PriorityId.php)
+Source: [`Jira\Client\Schema\PriorityId`](/src/Schema/PriorityId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

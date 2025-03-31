@@ -1,7 +1,7 @@
 # User Nav Property Json Bean
 
 
-Source: [`Jira\Client\Schema\UserNavPropertyJsonBean`](src/Schema/UserNavPropertyJsonBean.php)
+Source: [`Jira\Client\Schema\UserNavPropertyJsonBean`](/src/Schema/UserNavPropertyJsonBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

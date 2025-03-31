@@ -2,7 +2,7 @@
 
 ID of a registered webhook or error messages explaining why a webhook wasn't registered.
 
-Source: [`Jira\Client\Schema\RegisteredWebhook`](src/Schema/RegisteredWebhook.php)
+Source: [`Jira\Client\Schema\RegisteredWebhook`](/src/Schema/RegisteredWebhook.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

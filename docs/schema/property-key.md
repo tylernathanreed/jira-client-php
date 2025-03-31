@@ -2,7 +2,7 @@
 
 Property key details.
 
-Source: [`Jira\Client\Schema\PropertyKey`](src/Schema/PropertyKey.php)
+Source: [`Jira\Client\Schema\PropertyKey`](/src/Schema/PropertyKey.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

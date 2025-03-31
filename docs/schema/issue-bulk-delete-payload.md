@@ -2,7 +2,7 @@
 
 Issue Bulk Delete Payload
 
-Source: [`Jira\Client\Schema\IssueBulkDeletePayload`](src/Schema/IssueBulkDeletePayload.php)
+Source: [`Jira\Client\Schema\IssueBulkDeletePayload`](/src/Schema/IssueBulkDeletePayload.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

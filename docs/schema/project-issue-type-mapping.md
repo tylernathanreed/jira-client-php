@@ -2,7 +2,7 @@
 
 The project and issue type mapping.
 
-Source: [`Jira\Client\Schema\ProjectIssueTypeMapping`](src/Schema/ProjectIssueTypeMapping.php)
+Source: [`Jira\Client\Schema\ProjectIssueTypeMapping`](/src/Schema/ProjectIssueTypeMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

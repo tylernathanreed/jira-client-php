@@ -2,7 +2,7 @@
 
 JQL queries that contained users that could not be found
 
-Source: [`Jira\Client\Schema\JQLQueryWithUnknownUsers`](src/Schema/JQLQueryWithUnknownUsers.php)
+Source: [`Jira\Client\Schema\JQLQueryWithUnknownUsers`](/src/Schema/JQLQueryWithUnknownUsers.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

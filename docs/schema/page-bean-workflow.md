@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanWorkflow`](src/Schema/PageBeanWorkflow.php)
+Source: [`Jira\Client\Schema\PageBeanWorkflow`](/src/Schema/PageBeanWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanSecurityLevelMember`](src/Schema/PageBeanSecurityLevelMember.php)
+Source: [`Jira\Client\Schema\PageBeanSecurityLevelMember`](/src/Schema/PageBeanSecurityLevelMember.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

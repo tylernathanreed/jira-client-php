@@ -1,7 +1,7 @@
 # Workflow Update Response
 
 
-Source: [`Jira\Client\Schema\WorkflowUpdateResponse`](src/Schema/WorkflowUpdateResponse.php)
+Source: [`Jira\Client\Schema\WorkflowUpdateResponse`](/src/Schema/WorkflowUpdateResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

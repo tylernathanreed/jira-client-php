@@ -2,7 +2,7 @@
 
 Issue type screen scheme with a list of the projects that use it.
 
-Source: [`Jira\Client\Schema\IssueTypeScreenSchemesProjects`](src/Schema/IssueTypeScreenSchemesProjects.php)
+Source: [`Jira\Client\Schema\IssueTypeScreenSchemesProjects`](/src/Schema/IssueTypeScreenSchemesProjects.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

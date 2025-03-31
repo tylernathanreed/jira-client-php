@@ -2,7 +2,7 @@
 
 Details about a component with a count of the issues it contains.
 
-Source: [`Jira\Client\Schema\ComponentWithIssueCount`](src/Schema/ComponentWithIssueCount.php)
+Source: [`Jira\Client\Schema\ComponentWithIssueCount`](/src/Schema/ComponentWithIssueCount.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

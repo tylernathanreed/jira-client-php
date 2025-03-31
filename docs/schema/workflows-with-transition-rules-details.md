@@ -2,7 +2,7 @@
 
 Details of workflows and their transition rules to delete.
 
-Source: [`Jira\Client\Schema\WorkflowsWithTransitionRulesDetails`](src/Schema/WorkflowsWithTransitionRulesDetails.php)
+Source: [`Jira\Client\Schema\WorkflowsWithTransitionRulesDetails`](/src/Schema/WorkflowsWithTransitionRulesDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

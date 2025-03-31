@@ -4,7 +4,7 @@ The status mappings by workflows.
 Status mappings are required when the new workflow for an issue type doesn't contain all statuses that the old workflow has.
 Status mappings can be provided by a combination of `statusMappingsByWorkflows` and `statusMappingsByIssueTypeOverride`.
 
-Source: [`Jira\Client\Schema\MappingsByWorkflow`](src/Schema/MappingsByWorkflow.php)
+Source: [`Jira\Client\Schema\MappingsByWorkflow`](/src/Schema/MappingsByWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Bulk Edit Get Fields Response.
 
-Source: [`Jira\Client\Schema\BulkEditGetFields`](src/Schema/BulkEditGetFields.php)
+Source: [`Jira\Client\Schema\BulkEditGetFields`](/src/Schema/BulkEditGetFields.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

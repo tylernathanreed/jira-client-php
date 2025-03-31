@@ -2,7 +2,7 @@
 
 Details of the instance's attachment settings.
 
-Source: [`Jira\Client\Schema\AttachmentSettings`](src/Schema/AttachmentSettings.php)
+Source: [`Jira\Client\Schema\AttachmentSettings`](/src/Schema/AttachmentSettings.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

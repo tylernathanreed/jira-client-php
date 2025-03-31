@@ -1,7 +1,7 @@
 # Nested Response
 
 
-Source: [`Jira\Client\Schema\NestedResponse`](src/Schema/NestedResponse.php)
+Source: [`Jira\Client\Schema\NestedResponse`](/src/Schema/NestedResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

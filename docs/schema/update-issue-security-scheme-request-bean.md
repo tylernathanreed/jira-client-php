@@ -1,7 +1,7 @@
 # Update Issue Security Scheme Request Bean
 
 
-Source: [`Jira\Client\Schema\UpdateIssueSecuritySchemeRequestBean`](src/Schema/UpdateIssueSecuritySchemeRequestBean.php)
+Source: [`Jira\Client\Schema\UpdateIssueSecuritySchemeRequestBean`](/src/Schema/UpdateIssueSecuritySchemeRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 List of users and groups found in a search.
 
-Source: [`Jira\Client\Schema\FoundUsersAndGroups`](src/Schema/FoundUsersAndGroups.php)
+Source: [`Jira\Client\Schema\FoundUsersAndGroups`](/src/Schema/FoundUsersAndGroups.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

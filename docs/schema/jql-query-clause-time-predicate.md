@@ -2,7 +2,7 @@
 
 A time predicate for a temporal JQL clause.
 
-Source: [`Jira\Client\Schema\JqlQueryClauseTimePredicate`](src/Schema/JqlQueryClauseTimePredicate.php)
+Source: [`Jira\Client\Schema\JqlQueryClauseTimePredicate`](/src/Schema/JqlQueryClauseTimePredicate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

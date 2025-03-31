@@ -2,7 +2,7 @@
 
 The list of issue type IDs.
 
-Source: [`Jira\Client\Schema\IssueTypeIds`](src/Schema/IssueTypeIds.php)
+Source: [`Jira\Client\Schema\IssueTypeIds`](/src/Schema/IssueTypeIds.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

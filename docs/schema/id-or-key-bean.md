@@ -1,7 +1,7 @@
 # Id Or Key Bean
 
 
-Source: [`Jira\Client\Schema\IdOrKeyBean`](src/Schema/IdOrKeyBean.php)
+Source: [`Jira\Client\Schema\IdOrKeyBean`](/src/Schema/IdOrKeyBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

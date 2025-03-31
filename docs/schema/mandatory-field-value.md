@@ -2,7 +2,7 @@
 
 List of string of inputs
 
-Source: [`Jira\Client\Schema\MandatoryFieldValue`](src/Schema/MandatoryFieldValue.php)
+Source: [`Jira\Client\Schema\MandatoryFieldValue`](/src/Schema/MandatoryFieldValue.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

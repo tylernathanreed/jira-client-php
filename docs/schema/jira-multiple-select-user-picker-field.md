@@ -1,7 +1,7 @@
 # Jira Multiple Select User Picker Field
 
 
-Source: [`Jira\Client\Schema\JiraMultipleSelectUserPickerField`](src/Schema/JiraMultipleSelectUserPickerField.php)
+Source: [`Jira\Client\Schema\JiraMultipleSelectUserPickerField`](/src/Schema/JiraMultipleSelectUserPickerField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

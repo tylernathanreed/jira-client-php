@@ -2,7 +2,7 @@
 
 A paginated list of subscriptions to a filter.
 
-Source: [`Jira\Client\Schema\FilterSubscriptionsList`](src/Schema/FilterSubscriptionsList.php)
+Source: [`Jira\Client\Schema\FilterSubscriptionsList`](/src/Schema/FilterSubscriptionsList.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

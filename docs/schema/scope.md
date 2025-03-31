@@ -4,7 +4,7 @@ The projects the item is associated with.
 Indicated for items associated with "next-gen projects".
 See: https://confluence.atlassian.com/x/loMyO
 
-Source: [`Jira\Client\Schema\Scope`](src/Schema/Scope.php)
+Source: [`Jira\Client\Schema\Scope`](/src/Schema/Scope.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

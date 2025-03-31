@@ -2,7 +2,7 @@
 
 Details about the issues created and the errors for requests that failed.
 
-Source: [`Jira\Client\Schema\CreatedIssues`](src/Schema/CreatedIssues.php)
+Source: [`Jira\Client\Schema\CreatedIssues`](/src/Schema/CreatedIssues.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

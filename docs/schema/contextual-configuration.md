@@ -2,7 +2,7 @@
 
 Details of the contextual configuration for a custom field.
 
-Source: [`Jira\Client\Schema\ContextualConfiguration`](src/Schema/ContextualConfiguration.php)
+Source: [`Jira\Client\Schema\ContextualConfiguration`](/src/Schema/ContextualConfiguration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

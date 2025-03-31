@@ -2,7 +2,7 @@
 
 The default value for a multi-select custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultipleOption`](src/Schema/CustomFieldContextDefaultValueMultipleOption.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultipleOption`](/src/Schema/CustomFieldContextDefaultValueMultipleOption.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

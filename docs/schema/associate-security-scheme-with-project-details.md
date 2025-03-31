@@ -2,7 +2,7 @@
 
 Issue security scheme, project, and remapping details.
 
-Source: [`Jira\Client\Schema\AssociateSecuritySchemeWithProjectDetails`](src/Schema/AssociateSecuritySchemeWithProjectDetails.php)
+Source: [`Jira\Client\Schema\AssociateSecuritySchemeWithProjectDetails`](/src/Schema/AssociateSecuritySchemeWithProjectDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

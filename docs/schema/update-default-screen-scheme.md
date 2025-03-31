@@ -2,7 +2,7 @@
 
 The ID of a screen scheme.
 
-Source: [`Jira\Client\Schema\UpdateDefaultScreenScheme`](src/Schema/UpdateDefaultScreenScheme.php)
+Source: [`Jira\Client\Schema\UpdateDefaultScreenScheme`](/src/Schema/UpdateDefaultScreenScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

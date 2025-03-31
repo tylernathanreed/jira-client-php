@@ -1,7 +1,7 @@
 # Avatar Urls Bean
 
 
-Source: [`Jira\Client\Schema\AvatarUrlsBean`](src/Schema/AvatarUrlsBean.php)
+Source: [`Jira\Client\Schema\AvatarUrlsBean`](/src/Schema/AvatarUrlsBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

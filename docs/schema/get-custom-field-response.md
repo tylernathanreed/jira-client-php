@@ -1,7 +1,7 @@
 # Get Custom Field Response
 
 
-Source: [`Jira\Client\Schema\GetCustomFieldResponse`](src/Schema/GetCustomFieldResponse.php)
+Source: [`Jira\Client\Schema\GetCustomFieldResponse`](/src/Schema/GetCustomFieldResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

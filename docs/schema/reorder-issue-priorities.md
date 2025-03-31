@@ -2,7 +2,7 @@
 
 Change the order of issue priorities.
 
-Source: [`Jira\Client\Schema\ReorderIssuePriorities`](src/Schema/ReorderIssuePriorities.php)
+Source: [`Jira\Client\Schema\ReorderIssuePriorities`](/src/Schema/ReorderIssuePriorities.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

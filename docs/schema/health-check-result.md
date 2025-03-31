@@ -3,7 +3,7 @@
 Jira instance health check results.
 Deprecated and no longer returned.
 
-Source: [`Jira\Client\Schema\HealthCheckResult`](src/Schema/HealthCheckResult.php)
+Source: [`Jira\Client\Schema\HealthCheckResult`](/src/Schema/HealthCheckResult.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

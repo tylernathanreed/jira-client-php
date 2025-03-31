@@ -2,7 +2,7 @@
 
 Paginated list of worklog details
 
-Source: [`Jira\Client\Schema\PageOfWorklogs`](src/Schema/PageOfWorklogs.php)
+Source: [`Jira\Client\Schema\PageOfWorklogs`](/src/Schema/PageOfWorklogs.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

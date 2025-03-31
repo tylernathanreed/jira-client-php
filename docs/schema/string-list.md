@@ -1,7 +1,7 @@
 # String List
 
 
-Source: [`Jira\Client\Schema\StringList`](src/Schema/StringList.php)
+Source: [`Jira\Client\Schema\StringList`](/src/Schema/StringList.php)
 
 *None*
 

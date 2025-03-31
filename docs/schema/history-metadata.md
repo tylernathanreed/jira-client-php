@@ -2,7 +2,7 @@
 
 Details of issue history metadata.
 
-Source: [`Jira\Client\Schema\HistoryMetadata`](src/Schema/HistoryMetadata.php)
+Source: [`Jira\Client\Schema\HistoryMetadata`](/src/Schema/HistoryMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The details of the workflows to create.
 
-Source: [`Jira\Client\Schema\WorkflowCreate`](src/Schema/WorkflowCreate.php)
+Source: [`Jira\Client\Schema\WorkflowCreate`](/src/Schema/WorkflowCreate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

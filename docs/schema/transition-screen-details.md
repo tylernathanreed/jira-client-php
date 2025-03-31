@@ -2,7 +2,7 @@
 
 The details of a transition screen.
 
-Source: [`Jira\Client\Schema\TransitionScreenDetails`](src/Schema/TransitionScreenDetails.php)
+Source: [`Jira\Client\Schema\TransitionScreenDetails`](/src/Schema/TransitionScreenDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of an issue update request.
 
-Source: [`Jira\Client\Schema\IssueUpdateDetails`](src/Schema/IssueUpdateDetails.php)
+Source: [`Jira\Client\Schema\IssueUpdateDetails`](/src/Schema/IssueUpdateDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

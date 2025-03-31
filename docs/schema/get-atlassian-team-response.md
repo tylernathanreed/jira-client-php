@@ -1,7 +1,7 @@
 # Get Atlassian Team Response
 
 
-Source: [`Jira\Client\Schema\GetAtlassianTeamResponse`](src/Schema/GetAtlassianTeamResponse.php)
+Source: [`Jira\Client\Schema\GetAtlassianTeamResponse`](/src/Schema/GetAtlassianTeamResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

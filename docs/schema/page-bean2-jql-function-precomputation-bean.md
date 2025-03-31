@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBean2JqlFunctionPrecomputationBean`](src/Schema/PageBean2JqlFunctionPrecomputationBean.php)
+Source: [`Jira\Client\Schema\PageBean2JqlFunctionPrecomputationBean`](/src/Schema/PageBean2JqlFunctionPrecomputationBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

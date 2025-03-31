@@ -2,7 +2,7 @@
 
 Details of changes to a priority scheme's priorities that require suggested priority mappings.
 
-Source: [`Jira\Client\Schema\SuggestedMappingsForPrioritiesRequestBean`](src/Schema/SuggestedMappingsForPrioritiesRequestBean.php)
+Source: [`Jira\Client\Schema\SuggestedMappingsForPrioritiesRequestBean`](/src/Schema/SuggestedMappingsForPrioritiesRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

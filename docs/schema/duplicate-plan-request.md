@@ -1,7 +1,7 @@
 # Duplicate Plan Request
 
 
-Source: [`Jira\Client\Schema\DuplicatePlanRequest`](src/Schema/DuplicatePlanRequest.php)
+Source: [`Jira\Client\Schema\DuplicatePlanRequest`](/src/Schema/DuplicatePlanRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Security Scheme Level Member Bean
 
 
-Source: [`Jira\Client\Schema\SecuritySchemeLevelMemberBean`](src/Schema/SecuritySchemeLevelMemberBean.php)
+Source: [`Jira\Client\Schema\SecuritySchemeLevelMemberBean`](/src/Schema/SecuritySchemeLevelMemberBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

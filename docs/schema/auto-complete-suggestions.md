@@ -2,7 +2,7 @@
 
 The results from a JQL query.
 
-Source: [`Jira\Client\Schema\AutoCompleteSuggestions`](src/Schema/AutoCompleteSuggestions.php)
+Source: [`Jira\Client\Schema\AutoCompleteSuggestions`](/src/Schema/AutoCompleteSuggestions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

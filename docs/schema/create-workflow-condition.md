@@ -2,7 +2,7 @@
 
 A workflow transition condition.
 
-Source: [`Jira\Client\Schema\CreateWorkflowCondition`](src/Schema/CreateWorkflowCondition.php)
+Source: [`Jira\Client\Schema\CreateWorkflowCondition`](/src/Schema/CreateWorkflowCondition.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

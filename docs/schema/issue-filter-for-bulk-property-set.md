@@ -2,7 +2,7 @@
 
 Bulk operation filter details.
 
-Source: [`Jira\Client\Schema\IssueFilterForBulkPropertySet`](src/Schema/IssueFilterForBulkPropertySet.php)
+Source: [`Jira\Client\Schema\IssueFilterForBulkPropertySet`](/src/Schema/IssueFilterForBulkPropertySet.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

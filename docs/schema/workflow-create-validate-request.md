@@ -1,7 +1,7 @@
 # Workflow Create Validate Request
 
 
-Source: [`Jira\Client\Schema\WorkflowCreateValidateRequest`](src/Schema/WorkflowCreateValidateRequest.php)
+Source: [`Jira\Client\Schema\WorkflowCreateValidateRequest`](/src/Schema/WorkflowCreateValidateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

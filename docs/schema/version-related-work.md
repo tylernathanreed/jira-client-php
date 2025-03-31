@@ -2,7 +2,7 @@
 
 Associated related work to a version
 
-Source: [`Jira\Client\Schema\VersionRelatedWork`](src/Schema/VersionRelatedWork.php)
+Source: [`Jira\Client\Schema\VersionRelatedWork`](/src/Schema/VersionRelatedWork.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

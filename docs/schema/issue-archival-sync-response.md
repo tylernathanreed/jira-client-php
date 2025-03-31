@@ -2,7 +2,7 @@
 
 Number of archived/unarchived issues and list of errors that occurred during the action, if any.
 
-Source: [`Jira\Client\Schema\IssueArchivalSyncResponse`](src/Schema/IssueArchivalSyncResponse.php)
+Source: [`Jira\Client\Schema\IssueArchivalSyncResponse`](/src/Schema/IssueArchivalSyncResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

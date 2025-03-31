@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanNotificationScheme`](src/Schema/PageBeanNotificationScheme.php)
+Source: [`Jira\Client\Schema\PageBeanNotificationScheme`](/src/Schema/PageBeanNotificationScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

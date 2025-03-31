@@ -2,7 +2,7 @@
 
 Issue type scheme with a list of the projects that use it.
 
-Source: [`Jira\Client\Schema\IssueTypeSchemeProjects`](src/Schema/IssueTypeSchemeProjects.php)
+Source: [`Jira\Client\Schema\IssueTypeSchemeProjects`](/src/Schema/IssueTypeSchemeProjects.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

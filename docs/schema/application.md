@@ -2,7 +2,7 @@
 
 The application the linked item is in.
 
-Source: [`Jira\Client\Schema\Application`](src/Schema/Application.php)
+Source: [`Jira\Client\Schema\Application`](/src/Schema/Application.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

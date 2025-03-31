@@ -2,7 +2,7 @@
 
 A JQL query clause.
 
-Source: [`Jira\Client\Schema\JqlQueryClause`](src/Schema/JqlQueryClause.php)
+Source: [`Jira\Client\Schema\JqlQueryClause`](/src/Schema/JqlQueryClause.php)
 
 *None*
 

@@ -2,7 +2,7 @@
 
 The list of statuses that will be updated.
 
-Source: [`Jira\Client\Schema\StatusUpdateRequest`](src/Schema/StatusUpdateRequest.php)
+Source: [`Jira\Client\Schema\StatusUpdateRequest`](/src/Schema/StatusUpdateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

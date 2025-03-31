@@ -2,7 +2,7 @@
 
 A list of matched issues or errors for each JQL query, in the order the JQL queries were passed.
 
-Source: [`Jira\Client\Schema\IssueMatches`](src/Schema/IssueMatches.php)
+Source: [`Jira\Client\Schema\IssueMatches`](/src/Schema/IssueMatches.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

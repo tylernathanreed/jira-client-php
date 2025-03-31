@@ -2,7 +2,7 @@
 
 Details of Jira expressions for analysis.
 
-Source: [`Jira\Client\Schema\JiraExpressionForAnalysis`](src/Schema/JiraExpressionForAnalysis.php)
+Source: [`Jira\Client\Schema\JiraExpressionForAnalysis`](/src/Schema/JiraExpressionForAnalysis.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

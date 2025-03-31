@@ -2,7 +2,7 @@
 
 Details of a custom field context.
 
-Source: [`Jira\Client\Schema\CustomFieldContextUpdateDetails`](src/Schema/CustomFieldContextUpdateDetails.php)
+Source: [`Jira\Client\Schema\CustomFieldContextUpdateDetails`](/src/Schema/CustomFieldContextUpdateDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

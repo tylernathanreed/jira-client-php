@@ -2,7 +2,7 @@
 
 Details about the mapping from a status to a new status for an issue type.
 
-Source: [`Jira\Client\Schema\StatusMapping`](src/Schema/StatusMapping.php)
+Source: [`Jira\Client\Schema\StatusMapping`](/src/Schema/StatusMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

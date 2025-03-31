@@ -2,7 +2,7 @@
 
 Details of updates for a custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldValueUpdateDetails`](src/Schema/CustomFieldValueUpdateDetails.php)
+Source: [`Jira\Client\Schema\CustomFieldValueUpdateDetails`](/src/Schema/CustomFieldValueUpdateDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

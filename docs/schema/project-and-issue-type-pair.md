@@ -2,7 +2,7 @@
 
 A project and issueType ID pair that identifies a status mapping.
 
-Source: [`Jira\Client\Schema\ProjectAndIssueTypePair`](src/Schema/ProjectAndIssueTypePair.php)
+Source: [`Jira\Client\Schema\ProjectAndIssueTypePair`](/src/Schema/ProjectAndIssueTypePair.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

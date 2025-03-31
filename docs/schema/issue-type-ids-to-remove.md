@@ -2,7 +2,7 @@
 
 The list of issue type IDs to be removed from the field configuration scheme.
 
-Source: [`Jira\Client\Schema\IssueTypeIdsToRemove`](src/Schema/IssueTypeIdsToRemove.php)
+Source: [`Jira\Client\Schema\IssueTypeIdsToRemove`](/src/Schema/IssueTypeIdsToRemove.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

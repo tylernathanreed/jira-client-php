@@ -2,7 +2,7 @@
 
 Details of user or system associated with a issue history metadata item.
 
-Source: [`Jira\Client\Schema\HistoryMetadataParticipant`](src/Schema/HistoryMetadataParticipant.php)
+Source: [`Jira\Client\Schema\HistoryMetadataParticipant`](/src/Schema/HistoryMetadataParticipant.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

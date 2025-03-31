@@ -2,7 +2,7 @@
 
 A project category.
 
-Source: [`Jira\Client\Schema\ProjectCategory`](src/Schema/ProjectCategory.php)
+Source: [`Jira\Client\Schema\ProjectCategory`](/src/Schema/ProjectCategory.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Create Permission Holder Request
 
 
-Source: [`Jira\Client\Schema\CreatePermissionHolderRequest`](src/Schema/CreatePermissionHolderRequest.php)
+Source: [`Jira\Client\Schema\CreatePermissionHolderRequest`](/src/Schema/CreatePermissionHolderRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Status details for an issue type.
 
-Source: [`Jira\Client\Schema\IssueTypeWithStatus`](src/Schema/IssueTypeWithStatus.php)
+Source: [`Jira\Client\Schema\IssueTypeWithStatus`](/src/Schema/IssueTypeWithStatus.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

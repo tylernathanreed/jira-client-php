@@ -2,7 +2,7 @@
 
 Details of a screen.
 
-Source: [`Jira\Client\Schema\ScreenDetails`](src/Schema/ScreenDetails.php)
+Source: [`Jira\Client\Schema\ScreenDetails`](/src/Schema/ScreenDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

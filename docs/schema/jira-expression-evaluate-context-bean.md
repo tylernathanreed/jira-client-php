@@ -1,7 +1,7 @@
 # Jira Expression Evaluate Context Bean
 
 
-Source: [`Jira\Client\Schema\JiraExpressionEvaluateContextBean`](src/Schema/JiraExpressionEvaluateContextBean.php)
+Source: [`Jira\Client\Schema\JiraExpressionEvaluateContextBean`](/src/Schema/JiraExpressionEvaluateContextBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

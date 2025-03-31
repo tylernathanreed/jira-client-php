@@ -1,7 +1,7 @@
 # Jira Group Input
 
 
-Source: [`Jira\Client\Schema\JiraGroupInput`](src/Schema/JiraGroupInput.php)
+Source: [`Jira\Client\Schema\JiraGroupInput`](/src/Schema/JiraGroupInput.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

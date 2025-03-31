@@ -2,7 +2,7 @@
 
 Defaults for a User Picker (single) custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextSingleUserPickerDefaults`](src/Schema/CustomFieldContextSingleUserPickerDefaults.php)
+Source: [`Jira\Client\Schema\CustomFieldContextSingleUserPickerDefaults`](/src/Schema/CustomFieldContextSingleUserPickerDefaults.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

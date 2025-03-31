@@ -2,7 +2,7 @@
 
 The default value for a cascading select custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueCascadingOption`](src/Schema/CustomFieldContextDefaultValueCascadingOption.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueCascadingOption`](/src/Schema/CustomFieldContextDefaultValueCascadingOption.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

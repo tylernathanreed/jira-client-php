@@ -2,7 +2,7 @@
 
 The list of required status mappings by workflow.
 
-Source: [`Jira\Client\Schema\RequiredMappingByWorkflows`](src/Schema/RequiredMappingByWorkflows.php)
+Source: [`Jira\Client\Schema\RequiredMappingByWorkflows`](/src/Schema/RequiredMappingByWorkflows.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

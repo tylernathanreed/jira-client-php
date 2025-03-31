@@ -2,7 +2,7 @@
 
 The workflow metadata and issue type IDs which use this workflow.
 
-Source: [`Jira\Client\Schema\WorkflowMetadataAndIssueTypeRestModel`](src/Schema/WorkflowMetadataAndIssueTypeRestModel.php)
+Source: [`Jira\Client\Schema\WorkflowMetadataAndIssueTypeRestModel`](/src/Schema/WorkflowMetadataAndIssueTypeRestModel.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

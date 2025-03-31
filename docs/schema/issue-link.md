@@ -2,7 +2,7 @@
 
 Details of a link between issues.
 
-Source: [`Jira\Client\Schema\IssueLink`](src/Schema/IssueLink.php)
+Source: [`Jira\Client\Schema\IssueLink`](/src/Schema/IssueLink.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

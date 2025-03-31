@@ -1,7 +1,7 @@
 # Page Of Statuses
 
 
-Source: [`Jira\Client\Schema\PageOfStatuses`](src/Schema/PageOfStatuses.php)
+Source: [`Jira\Client\Schema\PageOfStatuses`](/src/Schema/PageOfStatuses.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

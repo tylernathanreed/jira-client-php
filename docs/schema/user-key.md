@@ -2,7 +2,7 @@
 
 List of user account IDs.
 
-Source: [`Jira\Client\Schema\UserKey`](src/Schema/UserKey.php)
+Source: [`Jira\Client\Schema\UserKey`](/src/Schema/UserKey.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

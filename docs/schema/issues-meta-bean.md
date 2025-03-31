@@ -2,7 +2,7 @@
 
 Meta data describing the `issues` context variable.
 
-Source: [`Jira\Client\Schema\IssuesMetaBean`](src/Schema/IssuesMetaBean.php)
+Source: [`Jira\Client\Schema\IssuesMetaBean`](/src/Schema/IssuesMetaBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Link Issue Request Json Bean
 
 
-Source: [`Jira\Client\Schema\LinkIssueRequestJsonBean`](src/Schema/LinkIssueRequestJsonBean.php)
+Source: [`Jira\Client\Schema\LinkIssueRequestJsonBean`](/src/Schema/LinkIssueRequestJsonBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

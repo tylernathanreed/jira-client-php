@@ -2,7 +2,7 @@
 
 Details of an application property.
 
-Source: [`Jira\Client\Schema\ApplicationProperty`](src/Schema/ApplicationProperty.php)
+Source: [`Jira\Client\Schema\ApplicationProperty`](/src/Schema/ApplicationProperty.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

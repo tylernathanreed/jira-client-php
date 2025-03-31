@@ -2,7 +2,7 @@
 
 The details of a transition status.
 
-Source: [`Jira\Client\Schema\CreateWorkflowStatusDetails`](src/Schema/CreateWorkflowStatusDetails.php)
+Source: [`Jira\Client\Schema\CreateWorkflowStatusDetails`](/src/Schema/CreateWorkflowStatusDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

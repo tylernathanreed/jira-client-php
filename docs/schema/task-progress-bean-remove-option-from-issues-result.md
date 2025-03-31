@@ -2,7 +2,7 @@
 
 Details about a task.
 
-Source: [`Jira\Client\Schema\TaskProgressBeanRemoveOptionFromIssuesResult`](src/Schema/TaskProgressBeanRemoveOptionFromIssuesResult.php)
+Source: [`Jira\Client\Schema\TaskProgressBeanRemoveOptionFromIssuesResult`](/src/Schema/TaskProgressBeanRemoveOptionFromIssuesResult.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

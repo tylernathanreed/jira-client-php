@@ -2,7 +2,7 @@
 
 Details of the group associated with the role.
 
-Source: [`Jira\Client\Schema\ProjectRoleGroup`](src/Schema/ProjectRoleGroup.php)
+Source: [`Jira\Client\Schema\ProjectRoleGroup`](/src/Schema/ProjectRoleGroup.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A page containing dashboard details.
 
-Source: [`Jira\Client\Schema\PageOfDashboards`](src/Schema/PageOfDashboards.php)
+Source: [`Jira\Client\Schema\PageOfDashboards`](/src/Schema/PageOfDashboards.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

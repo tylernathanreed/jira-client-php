@@ -2,7 +2,7 @@
 
 Details of the settings for a dashboard gadget.
 
-Source: [`Jira\Client\Schema\DashboardGadgetSettings`](src/Schema/DashboardGadgetSettings.php)
+Source: [`Jira\Client\Schema\DashboardGadgetSettings`](/src/Schema/DashboardGadgetSettings.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

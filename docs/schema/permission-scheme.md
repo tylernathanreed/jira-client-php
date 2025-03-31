@@ -2,7 +2,7 @@
 
 Details of a permission scheme.
 
-Source: [`Jira\Client\Schema\PermissionScheme`](src/Schema/PermissionScheme.php)
+Source: [`Jira\Client\Schema\PermissionScheme`](/src/Schema/PermissionScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

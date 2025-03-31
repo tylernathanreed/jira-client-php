@@ -2,7 +2,7 @@
 
 An associated workflow scheme and project.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeProjectAssociation`](src/Schema/WorkflowSchemeProjectAssociation.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeProjectAssociation`](/src/Schema/WorkflowSchemeProjectAssociation.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

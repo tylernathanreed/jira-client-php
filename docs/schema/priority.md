@@ -2,7 +2,7 @@
 
 An issue priority.
 
-Source: [`Jira\Client\Schema\Priority`](src/Schema/Priority.php)
+Source: [`Jira\Client\Schema\Priority`](/src/Schema/Priority.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The default value for a single select custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueSingleOption`](src/Schema/CustomFieldContextDefaultValueSingleOption.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueSingleOption`](/src/Schema/CustomFieldContextDefaultValueSingleOption.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Associated field configuration scheme and project.
 
-Source: [`Jira\Client\Schema\FieldConfigurationSchemeProjectAssociation`](src/Schema/FieldConfigurationSchemeProjectAssociation.php)
+Source: [`Jira\Client\Schema\FieldConfigurationSchemeProjectAssociation`](/src/Schema/FieldConfigurationSchemeProjectAssociation.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

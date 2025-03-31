@@ -2,7 +2,7 @@
 
 Details of an item associated with the changed record.
 
-Source: [`Jira\Client\Schema\AssociatedItemBean`](src/Schema/AssociatedItemBean.php)
+Source: [`Jira\Client\Schema\AssociatedItemBean`](/src/Schema/AssociatedItemBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

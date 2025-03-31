@@ -1,7 +1,7 @@
 # User Migration Bean
 
 
-Source: [`Jira\Client\Schema\UserMigrationBean`](src/Schema/UserMigrationBean.php)
+Source: [`Jira\Client\Schema\UserMigrationBean`](/src/Schema/UserMigrationBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

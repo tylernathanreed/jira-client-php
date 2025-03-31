@@ -2,7 +2,7 @@
 
 Details of issue security scheme level new members.
 
-Source: [`Jira\Client\Schema\SecuritySchemeMembersRequest`](src/Schema/SecuritySchemeMembersRequest.php)
+Source: [`Jira\Client\Schema\SecuritySchemeMembersRequest`](/src/Schema/SecuritySchemeMembersRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

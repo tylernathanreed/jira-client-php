@@ -2,7 +2,7 @@
 
 Count of a version's unresolved issues.
 
-Source: [`Jira\Client\Schema\VersionUnresolvedIssuesCount`](src/Schema/VersionUnresolvedIssuesCount.php)
+Source: [`Jira\Client\Schema\VersionUnresolvedIssuesCount`](/src/Schema/VersionUnresolvedIssuesCount.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

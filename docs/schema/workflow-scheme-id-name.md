@@ -2,7 +2,7 @@
 
 The ID and the name of the workflow scheme.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeIdName`](src/Schema/WorkflowSchemeIdName.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeIdName`](/src/Schema/WorkflowSchemeIdName.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

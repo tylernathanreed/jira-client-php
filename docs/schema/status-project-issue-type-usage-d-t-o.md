@@ -2,7 +2,7 @@
 
 The issue types using this status in a project.
 
-Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsageDTO`](src/Schema/StatusProjectIssueTypeUsageDTO.php)
+Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsageDTO`](/src/Schema/StatusProjectIssueTypeUsageDTO.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

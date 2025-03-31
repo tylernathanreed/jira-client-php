@@ -5,7 +5,7 @@ A "Connect module" in the same format as in the
 See: https://developer.atlassian.com/cloud/jira/platform/about-jira-modules/
 See: https://developer.atlassian.com/cloud/jira/platform/app-descriptor/
 
-Source: [`Jira\Client\Schema\ConnectModule`](src/Schema/ConnectModule.php)
+Source: [`Jira\Client\Schema\ConnectModule`](/src/Schema/ConnectModule.php)
 
 *None*
 

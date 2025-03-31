@@ -2,7 +2,7 @@
 
 Details about a license for the Jira instance.
 
-Source: [`Jira\Client\Schema\License`](src/Schema/License.php)
+Source: [`Jira\Client\Schema\License`](/src/Schema/License.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Jira Component Field
 
 
-Source: [`Jira\Client\Schema\JiraComponentField`](src/Schema/JiraComponentField.php)
+Source: [`Jira\Client\Schema\JiraComponentField`](/src/Schema/JiraComponentField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

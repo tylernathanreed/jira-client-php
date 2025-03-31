@@ -2,7 +2,7 @@
 
 List of issues and JQL queries.
 
-Source: [`Jira\Client\Schema\IssuesAndJQLQueries`](src/Schema/IssuesAndJQLQueries.php)
+Source: [`Jira\Client\Schema\IssuesAndJQLQueries`](/src/Schema/IssuesAndJQLQueries.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

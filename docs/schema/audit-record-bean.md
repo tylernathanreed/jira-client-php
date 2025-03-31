@@ -2,7 +2,7 @@
 
 An audit record.
 
-Source: [`Jira\Client\Schema\AuditRecordBean`](src/Schema/AuditRecordBean.php)
+Source: [`Jira\Client\Schema\AuditRecordBean`](/src/Schema/AuditRecordBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

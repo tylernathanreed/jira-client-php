@@ -1,7 +1,7 @@
 # Jira Multi Select Component Field
 
 
-Source: [`Jira\Client\Schema\JiraMultiSelectComponentField`](src/Schema/JiraMultiSelectComponentField.php)
+Source: [`Jira\Client\Schema\JiraMultiSelectComponentField`](/src/Schema/JiraMultiSelectComponentField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

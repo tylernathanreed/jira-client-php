@@ -2,7 +2,7 @@
 
 Details of the status being updated.
 
-Source: [`Jira\Client\Schema\WorkflowStatusUpdate`](src/Schema/WorkflowStatusUpdate.php)
+Source: [`Jira\Client\Schema\WorkflowStatusUpdate`](/src/Schema/WorkflowStatusUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

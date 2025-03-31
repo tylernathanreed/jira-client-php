@@ -1,7 +1,7 @@
 # Move Field Bean
 
 
-Source: [`Jira\Client\Schema\MoveFieldBean`](src/Schema/MoveFieldBean.php)
+Source: [`Jira\Client\Schema\MoveFieldBean`](/src/Schema/MoveFieldBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

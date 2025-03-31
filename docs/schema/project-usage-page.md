@@ -2,7 +2,7 @@
 
 A page of projects.
 
-Source: [`Jira\Client\Schema\ProjectUsagePage`](src/Schema/ProjectUsagePage.php)
+Source: [`Jira\Client\Schema\ProjectUsagePage`](/src/Schema/ProjectUsagePage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The default text for a Forge string custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeStringField`](src/Schema/CustomFieldContextDefaultValueForgeStringField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeStringField`](/src/Schema/CustomFieldContextDefaultValueForgeStringField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

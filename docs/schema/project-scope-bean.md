@@ -1,7 +1,7 @@
 # Project Scope Bean
 
 
-Source: [`Jira\Client\Schema\ProjectScopeBean`](src/Schema/ProjectScopeBean.php)
+Source: [`Jira\Client\Schema\ProjectScopeBean`](/src/Schema/ProjectScopeBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

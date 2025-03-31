@@ -1,7 +1,7 @@
 # Jira Rich Text Field
 
 
-Source: [`Jira\Client\Schema\JiraRichTextField`](src/Schema/JiraRichTextField.php)
+Source: [`Jira\Client\Schema\JiraRichTextField`](/src/Schema/JiraRichTextField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

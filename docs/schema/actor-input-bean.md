@@ -1,7 +1,7 @@
 # Actor Input Bean
 
 
-Source: [`Jira\Client\Schema\ActorInputBean`](src/Schema/ActorInputBean.php)
+Source: [`Jira\Client\Schema\ActorInputBean`](/src/Schema/ActorInputBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

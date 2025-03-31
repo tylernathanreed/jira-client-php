@@ -2,7 +2,7 @@
 
 The trigger configuration associated with a workflow.
 
-Source: [`Jira\Client\Schema\WorkflowTrigger`](src/Schema/WorkflowTrigger.php)
+Source: [`Jira\Client\Schema\WorkflowTrigger`](/src/Schema/WorkflowTrigger.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

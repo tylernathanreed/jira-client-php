@@ -1,7 +1,7 @@
 # Id Search Request Bean
 
 
-Source: [`Jira\Client\Schema\IdSearchRequestBean`](src/Schema/IdSearchRequestBean.php)
+Source: [`Jira\Client\Schema\IdSearchRequestBean`](/src/Schema/IdSearchRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

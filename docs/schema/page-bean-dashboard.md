@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanDashboard`](src/Schema/PageBeanDashboard.php)
+Source: [`Jira\Client\Schema\PageBeanDashboard`](/src/Schema/PageBeanDashboard.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

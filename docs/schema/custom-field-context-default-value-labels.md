@@ -2,7 +2,7 @@
 
 Default value for a labels custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueLabels`](src/Schema/CustomFieldContextDefaultValueLabels.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueLabels`](/src/Schema/CustomFieldContextDefaultValueLabels.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

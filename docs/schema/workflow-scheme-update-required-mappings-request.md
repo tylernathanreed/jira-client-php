@@ -2,7 +2,7 @@
 
 The request payload to get the required mappings for updating a workflow scheme.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeUpdateRequiredMappingsRequest`](src/Schema/WorkflowSchemeUpdateRequiredMappingsRequest.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeUpdateRequiredMappingsRequest`](/src/Schema/WorkflowSchemeUpdateRequiredMappingsRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

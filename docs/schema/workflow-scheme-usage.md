@@ -2,7 +2,7 @@
 
 The worflow scheme.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeUsage`](src/Schema/WorkflowSchemeUsage.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeUsage`](/src/Schema/WorkflowSchemeUsage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

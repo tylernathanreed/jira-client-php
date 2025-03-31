@@ -2,7 +2,7 @@
 
 The default value for a Forge group custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeGroupField`](src/Schema/CustomFieldContextDefaultValueForgeGroupField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeGroupField`](/src/Schema/CustomFieldContextDefaultValueForgeGroupField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Input Stream Source
 
 
-Source: [`Jira\Client\Schema\InputStreamSource`](src/Schema/InputStreamSource.php)
+Source: [`Jira\Client\Schema\InputStreamSource`](/src/Schema/InputStreamSource.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

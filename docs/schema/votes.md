@@ -2,7 +2,7 @@
 
 The details of votes on an issue.
 
-Source: [`Jira\Client\Schema\Votes`](src/Schema/Votes.php)
+Source: [`Jira\Client\Schema\Votes`](/src/Schema/Votes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

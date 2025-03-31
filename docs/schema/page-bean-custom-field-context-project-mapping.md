@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanCustomFieldContextProjectMapping`](src/Schema/PageBeanCustomFieldContextProjectMapping.php)
+Source: [`Jira\Client\Schema\PageBeanCustomFieldContextProjectMapping`](/src/Schema/PageBeanCustomFieldContextProjectMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

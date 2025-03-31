@@ -2,7 +2,7 @@
 
 A rule configuration.
 
-Source: [`Jira\Client\Schema\RuleConfiguration`](src/Schema/RuleConfiguration.php)
+Source: [`Jira\Client\Schema\RuleConfiguration`](/src/Schema/RuleConfiguration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

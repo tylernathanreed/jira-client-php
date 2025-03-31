@@ -2,7 +2,7 @@
 
 Metadata for an archive (for example a zip) and its contents.
 
-Source: [`Jira\Client\Schema\AttachmentArchiveMetadataReadable`](src/Schema/AttachmentArchiveMetadataReadable.php)
+Source: [`Jira\Client\Schema\AttachmentArchiveMetadataReadable`](/src/Schema/AttachmentArchiveMetadataReadable.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

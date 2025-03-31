@@ -2,7 +2,7 @@
 
 List of system avatars.
 
-Source: [`Jira\Client\Schema\SystemAvatars`](src/Schema/SystemAvatars.php)
+Source: [`Jira\Client\Schema\SystemAvatars`](/src/Schema/SystemAvatars.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

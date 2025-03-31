@@ -2,7 +2,7 @@
 
 Request bean for bulk changelog retrieval
 
-Source: [`Jira\Client\Schema\BulkChangelogRequestBean`](src/Schema/BulkChangelogRequestBean.php)
+Source: [`Jira\Client\Schema\BulkChangelogRequestBean`](/src/Schema/BulkChangelogRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of a screen scheme.
 
-Source: [`Jira\Client\Schema\UpdateScreenSchemeDetails`](src/Schema/UpdateScreenSchemeDetails.php)
+Source: [`Jira\Client\Schema\UpdateScreenSchemeDetails`](/src/Schema/UpdateScreenSchemeDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

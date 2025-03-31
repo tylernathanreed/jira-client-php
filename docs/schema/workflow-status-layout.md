@@ -2,7 +2,7 @@
 
 The x and y location of the status in the workflow.
 
-Source: [`Jira\Client\Schema\WorkflowStatusLayout`](src/Schema/WorkflowStatusLayout.php)
+Source: [`Jira\Client\Schema\WorkflowStatusLayout`](/src/Schema/WorkflowStatusLayout.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

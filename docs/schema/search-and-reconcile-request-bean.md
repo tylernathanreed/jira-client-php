@@ -1,7 +1,7 @@
 # Search And Reconcile Request Bean
 
 
-Source: [`Jira\Client\Schema\SearchAndReconcileRequestBean`](src/Schema/SearchAndReconcileRequestBean.php)
+Source: [`Jira\Client\Schema\SearchAndReconcileRequestBean`](/src/Schema/SearchAndReconcileRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

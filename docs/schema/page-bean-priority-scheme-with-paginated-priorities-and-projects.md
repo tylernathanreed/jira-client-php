@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanPrioritySchemeWithPaginatedPrioritiesAndProjects`](src/Schema/PageBeanPrioritySchemeWithPaginatedPrioritiesAndProjects.php)
+Source: [`Jira\Client\Schema\PageBeanPrioritySchemeWithPaginatedPrioritiesAndProjects`](/src/Schema/PageBeanPrioritySchemeWithPaginatedPrioritiesAndProjects.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

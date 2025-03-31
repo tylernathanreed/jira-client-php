@@ -2,7 +2,7 @@
 
 Details of the projects the option is available in.
 
-Source: [`Jira\Client\Schema\IssueFieldOptionConfiguration`](src/Schema/IssueFieldOptionConfiguration.php)
+Source: [`Jira\Client\Schema\IssueFieldOptionConfiguration`](/src/Schema/IssueFieldOptionConfiguration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

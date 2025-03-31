@@ -2,7 +2,7 @@
 
 The default value for a version picker custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueSingleVersionPicker`](src/Schema/CustomFieldContextDefaultValueSingleVersionPicker.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueSingleVersionPicker`](/src/Schema/CustomFieldContextDefaultValueSingleVersionPicker.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of a custom field option to create.
 
-Source: [`Jira\Client\Schema\CustomFieldOptionCreate`](src/Schema/CustomFieldOptionCreate.php)
+Source: [`Jira\Client\Schema\CustomFieldOptionCreate`](/src/Schema/CustomFieldOptionCreate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

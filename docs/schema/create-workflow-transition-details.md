@@ -2,7 +2,7 @@
 
 The details of a workflow transition.
 
-Source: [`Jira\Client\Schema\CreateWorkflowTransitionDetails`](src/Schema/CreateWorkflowTransitionDetails.php)
+Source: [`Jira\Client\Schema\CreateWorkflowTransitionDetails`](/src/Schema/CreateWorkflowTransitionDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

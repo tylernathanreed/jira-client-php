@@ -2,7 +2,7 @@
 
 Lists of JQL reference data.
 
-Source: [`Jira\Client\Schema\JQLReferenceData`](src/Schema/JQLReferenceData.php)
+Source: [`Jira\Client\Schema\JQLReferenceData`](/src/Schema/JQLReferenceData.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

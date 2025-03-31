@@ -1,7 +1,7 @@
 # Archive Issue Async Request
 
 
-Source: [`Jira\Client\Schema\ArchiveIssueAsyncRequest`](src/Schema/ArchiveIssueAsyncRequest.php)
+Source: [`Jira\Client\Schema\ArchiveIssueAsyncRequest`](/src/Schema/ArchiveIssueAsyncRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

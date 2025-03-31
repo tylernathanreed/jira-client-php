@@ -2,7 +2,7 @@
 
 A JSON object with custom content.
 
-Source: [`Jira\Client\Schema\JsonContextVariable`](src/Schema/JsonContextVariable.php)
+Source: [`Jira\Client\Schema\JsonContextVariable`](/src/Schema/JsonContextVariable.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Jira Selected Option Field
 
 
-Source: [`Jira\Client\Schema\JiraSelectedOptionField`](src/Schema/JiraSelectedOptionField.php)
+Source: [`Jira\Client\Schema\JiraSelectedOptionField`](/src/Schema/JiraSelectedOptionField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

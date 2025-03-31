@@ -1,7 +1,7 @@
 # Bulk Operation Error Response
 
 
-Source: [`Jira\Client\Schema\BulkOperationErrorResponse`](src/Schema/BulkOperationErrorResponse.php)
+Source: [`Jira\Client\Schema\BulkOperationErrorResponse`](/src/Schema/BulkOperationErrorResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

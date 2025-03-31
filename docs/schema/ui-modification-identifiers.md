@@ -2,7 +2,7 @@
 
 Identifiers for a UI modification.
 
-Source: [`Jira\Client\Schema\UiModificationIdentifiers`](src/Schema/UiModificationIdentifiers.php)
+Source: [`Jira\Client\Schema\UiModificationIdentifiers`](/src/Schema/UiModificationIdentifiers.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

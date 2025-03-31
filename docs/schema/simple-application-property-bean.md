@@ -1,7 +1,7 @@
 # Simple Application Property Bean
 
 
-Source: [`Jira\Client\Schema\SimpleApplicationPropertyBean`](src/Schema/SimpleApplicationPropertyBean.php)
+Source: [`Jira\Client\Schema\SimpleApplicationPropertyBean`](/src/Schema/SimpleApplicationPropertyBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

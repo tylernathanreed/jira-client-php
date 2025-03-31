@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanFilterDetails`](src/Schema/PageBeanFilterDetails.php)
+Source: [`Jira\Client\Schema\PageBeanFilterDetails`](/src/Schema/PageBeanFilterDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

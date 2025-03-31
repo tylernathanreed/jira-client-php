@@ -2,7 +2,7 @@
 
 Details about a project type.
 
-Source: [`Jira\Client\Schema\ProjectType`](src/Schema/ProjectType.php)
+Source: [`Jira\Client\Schema\ProjectType`](/src/Schema/ProjectType.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

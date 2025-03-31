@@ -2,7 +2,7 @@
 
 Details about data policies for a project.
 
-Source: [`Jira\Client\Schema\ProjectWithDataPolicy`](src/Schema/ProjectWithDataPolicy.php)
+Source: [`Jira\Client\Schema\ProjectWithDataPolicy`](/src/Schema/ProjectWithDataPolicy.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

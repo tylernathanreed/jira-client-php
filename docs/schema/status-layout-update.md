@@ -2,7 +2,7 @@
 
 The statuses associated with this workflow.
 
-Source: [`Jira\Client\Schema\StatusLayoutUpdate`](src/Schema/StatusLayoutUpdate.php)
+Source: [`Jira\Client\Schema\StatusLayoutUpdate`](/src/Schema/StatusLayoutUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

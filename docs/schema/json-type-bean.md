@@ -2,7 +2,7 @@
 
 The schema of a field.
 
-Source: [`Jira\Client\Schema\JsonTypeBean`](src/Schema/JsonTypeBean.php)
+Source: [`Jira\Client\Schema\JsonTypeBean`](/src/Schema/JsonTypeBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

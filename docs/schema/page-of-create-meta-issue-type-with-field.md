@@ -2,7 +2,7 @@
 
 A page of CreateMetaIssueType with Field.
 
-Source: [`Jira\Client\Schema\PageOfCreateMetaIssueTypeWithField`](src/Schema/PageOfCreateMetaIssueTypeWithField.php)
+Source: [`Jira\Client\Schema\PageOfCreateMetaIssueTypeWithField`](/src/Schema/PageOfCreateMetaIssueTypeWithField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

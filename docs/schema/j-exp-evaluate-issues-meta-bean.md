@@ -2,7 +2,7 @@
 
 Meta data describing the `issues` context variable.This bean will be replacing IssuesMetaBean bean as part of new `evaluate` endpoint
 
-Source: [`Jira\Client\Schema\JExpEvaluateIssuesMetaBean`](src/Schema/JExpEvaluateIssuesMetaBean.php)
+Source: [`Jira\Client\Schema\JExpEvaluateIssuesMetaBean`](/src/Schema/JExpEvaluateIssuesMetaBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

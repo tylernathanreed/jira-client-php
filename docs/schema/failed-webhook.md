@@ -2,7 +2,7 @@
 
 Details about a failed webhook.
 
-Source: [`Jira\Client\Schema\FailedWebhook`](src/Schema/FailedWebhook.php)
+Source: [`Jira\Client\Schema\FailedWebhook`](/src/Schema/FailedWebhook.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

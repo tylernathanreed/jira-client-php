@@ -1,7 +1,7 @@
 # Jira Labels Field
 
 
-Source: [`Jira\Client\Schema\JiraLabelsField`](src/Schema/JiraLabelsField.php)
+Source: [`Jira\Client\Schema\JiraLabelsField`](/src/Schema/JiraLabelsField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

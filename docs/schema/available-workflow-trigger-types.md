@@ -2,7 +2,7 @@
 
 The list of available trigger types.
 
-Source: [`Jira\Client\Schema\AvailableWorkflowTriggerTypes`](src/Schema/AvailableWorkflowTriggerTypes.php)
+Source: [`Jira\Client\Schema\AvailableWorkflowTriggerTypes`](/src/Schema/AvailableWorkflowTriggerTypes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

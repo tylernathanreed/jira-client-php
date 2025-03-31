@@ -1,7 +1,7 @@
 # Get Scheduling Response
 
 
-Source: [`Jira\Client\Schema\GetSchedulingResponse`](src/Schema/GetSchedulingResponse.php)
+Source: [`Jira\Client\Schema\GetSchedulingResponse`](/src/Schema/GetSchedulingResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

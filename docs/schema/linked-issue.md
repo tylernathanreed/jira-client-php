@@ -2,7 +2,7 @@
 
 The ID or key of a linked issue.
 
-Source: [`Jira\Client\Schema\LinkedIssue`](src/Schema/LinkedIssue.php)
+Source: [`Jira\Client\Schema\LinkedIssue`](/src/Schema/LinkedIssue.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

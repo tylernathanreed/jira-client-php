@@ -2,7 +2,7 @@
 
 The Connect provided ecosystem rules available.
 
-Source: [`Jira\Client\Schema\AvailableWorkflowConnectRule`](src/Schema/AvailableWorkflowConnectRule.php)
+Source: [`Jira\Client\Schema\AvailableWorkflowConnectRule`](/src/Schema/AvailableWorkflowConnectRule.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

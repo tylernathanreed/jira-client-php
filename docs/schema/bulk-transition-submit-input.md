@@ -1,7 +1,7 @@
 # Bulk Transition Submit Input
 
 
-Source: [`Jira\Client\Schema\BulkTransitionSubmitInput`](src/Schema/BulkTransitionSubmitInput.php)
+Source: [`Jira\Client\Schema\BulkTransitionSubmitInput`](/src/Schema/BulkTransitionSubmitInput.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

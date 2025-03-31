@@ -2,7 +2,7 @@
 
 The sanitized JQL queries for the given account IDs.
 
-Source: [`Jira\Client\Schema\SanitizedJqlQueries`](src/Schema/SanitizedJqlQueries.php)
+Source: [`Jira\Client\Schema\SanitizedJqlQueries`](/src/Schema/SanitizedJqlQueries.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

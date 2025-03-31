@@ -2,7 +2,7 @@
 
 List of pairs (id and value) for precomputation updates.
 
-Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateRequestBean`](src/Schema/JqlFunctionPrecomputationUpdateRequestBean.php)
+Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateRequestBean`](/src/Schema/JqlFunctionPrecomputationUpdateRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

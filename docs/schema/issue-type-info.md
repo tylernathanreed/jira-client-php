@@ -2,7 +2,7 @@
 
 Details of an issue type.
 
-Source: [`Jira\Client\Schema\IssueTypeInfo`](src/Schema/IssueTypeInfo.php)
+Source: [`Jira\Client\Schema\IssueTypeInfo`](/src/Schema/IssueTypeInfo.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

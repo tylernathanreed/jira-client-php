@@ -2,7 +2,7 @@
 
 Details of a field that can be used in advanced searches.
 
-Source: [`Jira\Client\Schema\FieldReferenceData`](src/Schema/FieldReferenceData.php)
+Source: [`Jira\Client\Schema\FieldReferenceData`](/src/Schema/FieldReferenceData.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

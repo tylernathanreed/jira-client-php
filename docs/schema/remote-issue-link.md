@@ -2,7 +2,7 @@
 
 Details of an issue remote link.
 
-Source: [`Jira\Client\Schema\RemoteIssueLink`](src/Schema/RemoteIssueLink.php)
+Source: [`Jira\Client\Schema\RemoteIssueLink`](/src/Schema/RemoteIssueLink.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

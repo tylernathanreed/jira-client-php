@@ -2,7 +2,7 @@
 
 A screen tab.
 
-Source: [`Jira\Client\Schema\ScreenableTab`](src/Schema/ScreenableTab.php)
+Source: [`Jira\Client\Schema\ScreenableTab`](/src/Schema/ScreenableTab.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Simple List Wrapper Application Role
 
 
-Source: [`Jira\Client\Schema\SimpleListWrapperApplicationRole`](src/Schema/SimpleListWrapperApplicationRole.php)
+Source: [`Jira\Client\Schema\SimpleListWrapperApplicationRole`](/src/Schema/SimpleListWrapperApplicationRole.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

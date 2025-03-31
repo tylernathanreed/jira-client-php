@@ -1,7 +1,7 @@
 # Issue Transition Status
 
 
-Source: [`Jira\Client\Schema\IssueTransitionStatus`](src/Schema/IssueTransitionStatus.php)
+Source: [`Jira\Client\Schema\IssueTransitionStatus`](/src/Schema/IssueTransitionStatus.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

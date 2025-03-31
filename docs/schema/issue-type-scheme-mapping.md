@@ -2,7 +2,7 @@
 
 Issue type scheme item.
 
-Source: [`Jira\Client\Schema\IssueTypeSchemeMapping`](src/Schema/IssueTypeSchemeMapping.php)
+Source: [`Jira\Client\Schema\IssueTypeSchemeMapping`](/src/Schema/IssueTypeSchemeMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

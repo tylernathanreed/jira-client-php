@@ -2,7 +2,7 @@
 
 The description of the page of issues loaded by the provided JQL query.This bean will be replacing IssuesJqlMetaDataBean bean as part of new `evaluate` endpoint
 
-Source: [`Jira\Client\Schema\JExpEvaluateIssuesJqlMetaDataBean`](src/Schema/JExpEvaluateIssuesJqlMetaDataBean.php)
+Source: [`Jira\Client\Schema\JExpEvaluateIssuesJqlMetaDataBean`](/src/Schema/JExpEvaluateIssuesJqlMetaDataBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

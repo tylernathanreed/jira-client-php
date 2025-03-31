@@ -2,7 +2,7 @@
 
 A metric that provides insight into the active licence details
 
-Source: [`Jira\Client\Schema\LicenseMetric`](src/Schema/LicenseMetric.php)
+Source: [`Jira\Client\Schema\LicenseMetric`](/src/Schema/LicenseMetric.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

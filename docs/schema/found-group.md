@@ -2,7 +2,7 @@
 
 A group found in a search.
 
-Source: [`Jira\Client\Schema\FoundGroup`](src/Schema/FoundGroup.php)
+Source: [`Jira\Client\Schema\FoundGroup`](/src/Schema/FoundGroup.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Update projects in a scheme
 
-Source: [`Jira\Client\Schema\UpdateProjectsInSchemeRequestBean`](src/Schema/UpdateProjectsInSchemeRequestBean.php)
+Source: [`Jira\Client\Schema\UpdateProjectsInSchemeRequestBean`](/src/Schema/UpdateProjectsInSchemeRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The data classification.
 
-Source: [`Jira\Client\Schema\DataClassificationTagBean`](src/Schema/DataClassificationTagBean.php)
+Source: [`Jira\Client\Schema\DataClassificationTagBean`](/src/Schema/DataClassificationTagBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

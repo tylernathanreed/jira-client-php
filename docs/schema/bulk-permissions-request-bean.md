@@ -2,7 +2,7 @@
 
 Details of global permissions to look up and project permissions with associated projects and issues to look up.
 
-Source: [`Jira\Client\Schema\BulkPermissionsRequestBean`](src/Schema/BulkPermissionsRequestBean.php)
+Source: [`Jira\Client\Schema\BulkPermissionsRequestBean`](/src/Schema/BulkPermissionsRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

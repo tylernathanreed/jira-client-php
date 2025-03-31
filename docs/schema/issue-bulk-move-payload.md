@@ -2,7 +2,7 @@
 
 Issue Bulk Move Payload
 
-Source: [`Jira\Client\Schema\IssueBulkMovePayload`](src/Schema/IssueBulkMovePayload.php)
+Source: [`Jira\Client\Schema\IssueBulkMovePayload`](/src/Schema/IssueBulkMovePayload.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

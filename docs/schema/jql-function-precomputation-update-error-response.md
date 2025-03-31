@@ -2,7 +2,7 @@
 
 Error response returned updating JQL Function precomputations fails.
 
-Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateErrorResponse`](src/Schema/JqlFunctionPrecomputationUpdateErrorResponse.php)
+Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateErrorResponse`](/src/Schema/JqlFunctionPrecomputationUpdateErrorResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

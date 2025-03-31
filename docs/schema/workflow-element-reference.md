@@ -3,7 +3,7 @@
 A reference to the location of the error.
 This will be null if the error does not refer to a specific element.
 
-Source: [`Jira\Client\Schema\WorkflowElementReference`](src/Schema/WorkflowElementReference.php)
+Source: [`Jira\Client\Schema\WorkflowElementReference`](/src/Schema/WorkflowElementReference.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

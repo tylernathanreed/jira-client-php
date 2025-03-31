@@ -2,7 +2,7 @@
 
 A list of project IDs.
 
-Source: [`Jira\Client\Schema\ProjectIds`](src/Schema/ProjectIds.php)
+Source: [`Jira\Client\Schema\ProjectIds`](/src/Schema/ProjectIds.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The details of the gadget to update.
 
-Source: [`Jira\Client\Schema\DashboardGadgetUpdateRequest`](src/Schema/DashboardGadgetUpdateRequest.php)
+Source: [`Jira\Client\Schema\DashboardGadgetUpdateRequest`](/src/Schema/DashboardGadgetUpdateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

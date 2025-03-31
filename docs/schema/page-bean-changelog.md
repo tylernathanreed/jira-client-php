@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanChangelog`](src/Schema/PageBeanChangelog.php)
+Source: [`Jira\Client\Schema\PageBeanChangelog`](/src/Schema/PageBeanChangelog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

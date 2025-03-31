@@ -2,7 +2,7 @@
 
 A list of issue IDs.
 
-Source: [`Jira\Client\Schema\IssueList`](src/Schema/IssueList.php)
+Source: [`Jira\Client\Schema\IssueList`](/src/Schema/IssueList.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

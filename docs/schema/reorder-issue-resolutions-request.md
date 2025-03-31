@@ -2,7 +2,7 @@
 
 Change the order of issue resolutions.
 
-Source: [`Jira\Client\Schema\ReorderIssueResolutionsRequest`](src/Schema/ReorderIssueResolutionsRequest.php)
+Source: [`Jira\Client\Schema\ReorderIssueResolutionsRequest`](/src/Schema/ReorderIssueResolutionsRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

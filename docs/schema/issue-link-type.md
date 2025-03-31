@@ -6,7 +6,7 @@ This object is used as follows:
 Find a list of issue link types with "Get issue link types"
  - In the " issueLinkType" resource it defines and reports on issue link types.
 
-Source: [`Jira\Client\Schema\IssueLinkType`](src/Schema/IssueLinkType.php)
+Source: [`Jira\Client\Schema\IssueLinkType`](/src/Schema/IssueLinkType.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

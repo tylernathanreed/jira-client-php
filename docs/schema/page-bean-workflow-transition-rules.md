@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanWorkflowTransitionRules`](src/Schema/PageBeanWorkflowTransitionRules.php)
+Source: [`Jira\Client\Schema\PageBeanWorkflowTransitionRules`](/src/Schema/PageBeanWorkflowTransitionRules.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

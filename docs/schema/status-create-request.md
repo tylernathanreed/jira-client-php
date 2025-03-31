@@ -2,7 +2,7 @@
 
 Details of the statuses being created and their scope.
 
-Source: [`Jira\Client\Schema\StatusCreateRequest`](src/Schema/StatusCreateRequest.php)
+Source: [`Jira\Client\Schema\StatusCreateRequest`](/src/Schema/StatusCreateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

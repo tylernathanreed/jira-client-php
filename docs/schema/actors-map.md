@@ -1,7 +1,7 @@
 # Actors Map
 
 
-Source: [`Jira\Client\Schema\ActorsMap`](src/Schema/ActorsMap.php)
+Source: [`Jira\Client\Schema\ActorsMap`](/src/Schema/ActorsMap.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

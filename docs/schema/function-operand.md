@@ -4,7 +4,7 @@ An operand that is a function.
 See "Advanced searching - functions reference" for more information about JQL functions.
 See: https://confluence.atlassian.com/x/dwiiLQ
 
-Source: [`Jira\Client\Schema\FunctionOperand`](src/Schema/FunctionOperand.php)
+Source: [`Jira\Client\Schema\FunctionOperand`](/src/Schema/FunctionOperand.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

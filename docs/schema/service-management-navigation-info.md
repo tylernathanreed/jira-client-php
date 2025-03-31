@@ -1,7 +1,7 @@
 # Service Management Navigation Info
 
 
-Source: [`Jira\Client\Schema\ServiceManagementNavigationInfo`](src/Schema/ServiceManagementNavigationInfo.php)
+Source: [`Jira\Client\Schema\ServiceManagementNavigationInfo`](/src/Schema/ServiceManagementNavigationInfo.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

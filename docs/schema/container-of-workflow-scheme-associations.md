@@ -2,7 +2,7 @@
 
 A container for a list of workflow schemes together with the projects they are associated with.
 
-Source: [`Jira\Client\Schema\ContainerOfWorkflowSchemeAssociations`](src/Schema/ContainerOfWorkflowSchemeAssociations.php)
+Source: [`Jira\Client\Schema\ContainerOfWorkflowSchemeAssociations`](/src/Schema/ContainerOfWorkflowSchemeAssociations.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

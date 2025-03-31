@@ -2,7 +2,7 @@
 
 An ordered list of custom field option IDs and information on where to move them.
 
-Source: [`Jira\Client\Schema\OrderOfCustomFieldOptions`](src/Schema/OrderOfCustomFieldOptions.php)
+Source: [`Jira\Client\Schema\OrderOfCustomFieldOptions`](/src/Schema/OrderOfCustomFieldOptions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanWebhook`](src/Schema/PageBeanWebhook.php)
+Source: [`Jira\Client\Schema\PageBeanWebhook`](/src/Schema/PageBeanWebhook.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

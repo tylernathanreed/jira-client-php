@@ -2,7 +2,7 @@
 
 The statuses associated with each workflow.
 
-Source: [`Jira\Client\Schema\StatusesPerWorkflow`](src/Schema/StatusesPerWorkflow.php)
+Source: [`Jira\Client\Schema\StatusesPerWorkflow`](/src/Schema/StatusesPerWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

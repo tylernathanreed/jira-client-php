@@ -1,7 +1,7 @@
 # Delete And Replace Version Bean
 
 
-Source: [`Jira\Client\Schema\DeleteAndReplaceVersionBean`](src/Schema/DeleteAndReplaceVersionBean.php)
+Source: [`Jira\Client\Schema\DeleteAndReplaceVersionBean`](/src/Schema/DeleteAndReplaceVersionBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

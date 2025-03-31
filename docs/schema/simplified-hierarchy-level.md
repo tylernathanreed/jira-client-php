@@ -1,7 +1,7 @@
 # Simplified Hierarchy Level
 
 
-Source: [`Jira\Client\Schema\SimplifiedHierarchyLevel`](src/Schema/SimplifiedHierarchyLevel.php)
+Source: [`Jira\Client\Schema\SimplifiedHierarchyLevel`](/src/Schema/SimplifiedHierarchyLevel.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

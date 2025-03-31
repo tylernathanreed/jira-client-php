@@ -2,7 +2,7 @@
 
 A status category.
 
-Source: [`Jira\Client\Schema\StatusCategory`](src/Schema/StatusCategory.php)
+Source: [`Jira\Client\Schema\StatusCategory`](/src/Schema/StatusCategory.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

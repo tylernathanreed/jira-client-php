@@ -1,7 +1,7 @@
 # Get Plan Only Team Response
 
 
-Source: [`Jira\Client\Schema\GetPlanOnlyTeamResponse`](src/Schema/GetPlanOnlyTeamResponse.php)
+Source: [`Jira\Client\Schema\GetPlanOnlyTeamResponse`](/src/Schema/GetPlanOnlyTeamResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

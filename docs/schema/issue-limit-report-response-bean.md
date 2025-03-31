@@ -1,7 +1,7 @@
 # Issue Limit Report Response Bean
 
 
-Source: [`Jira\Client\Schema\IssueLimitReportResponseBean`](src/Schema/IssueLimitReportResponseBean.php)
+Source: [`Jira\Client\Schema\IssueLimitReportResponseBean`](/src/Schema/IssueLimitReportResponseBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Issue Type Create Bean
 
 
-Source: [`Jira\Client\Schema\IssueTypeCreateBean`](src/Schema/IssueTypeCreateBean.php)
+Source: [`Jira\Client\Schema\IssueTypeCreateBean`](/src/Schema/IssueTypeCreateBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

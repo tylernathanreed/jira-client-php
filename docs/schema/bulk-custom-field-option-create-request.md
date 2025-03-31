@@ -2,7 +2,7 @@
 
 Details of the options to create for a custom field.
 
-Source: [`Jira\Client\Schema\BulkCustomFieldOptionCreateRequest`](src/Schema/BulkCustomFieldOptionCreateRequest.php)
+Source: [`Jira\Client\Schema\BulkCustomFieldOptionCreateRequest`](/src/Schema/BulkCustomFieldOptionCreateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

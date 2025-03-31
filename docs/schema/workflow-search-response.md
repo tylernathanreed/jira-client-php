@@ -2,7 +2,7 @@
 
 Page of items, including workflows and related statuses.
 
-Source: [`Jira\Client\Schema\WorkflowSearchResponse`](src/Schema/WorkflowSearchResponse.php)
+Source: [`Jira\Client\Schema\WorkflowSearchResponse`](/src/Schema/WorkflowSearchResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

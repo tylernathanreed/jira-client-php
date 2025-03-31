@@ -2,7 +2,7 @@
 
 The create workflows payload.
 
-Source: [`Jira\Client\Schema\WorkflowCreateRequest`](src/Schema/WorkflowCreateRequest.php)
+Source: [`Jira\Client\Schema\WorkflowCreateRequest`](/src/Schema/WorkflowCreateRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details about an issue event.
 
-Source: [`Jira\Client\Schema\IssueEvent`](src/Schema/IssueEvent.php)
+Source: [`Jira\Client\Schema\IssueEvent`](/src/Schema/IssueEvent.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

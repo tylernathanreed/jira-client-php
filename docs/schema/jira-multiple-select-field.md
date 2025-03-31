@@ -1,7 +1,7 @@
 # Jira Multiple Select Field
 
 
-Source: [`Jira\Client\Schema\JiraMultipleSelectField`](src/Schema/JiraMultipleSelectField.php)
+Source: [`Jira\Client\Schema\JiraMultipleSelectField`](/src/Schema/JiraMultipleSelectField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

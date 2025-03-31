@@ -4,7 +4,7 @@ Details of a user, group, field, or project role that holds a permission.
 See "Holder object" in *Get all permission schemes* for more information.
 See: ../api-group-permission-schemes/#holder-object
 
-Source: [`Jira\Client\Schema\PermissionHolder`](src/Schema/PermissionHolder.php)
+Source: [`Jira\Client\Schema\PermissionHolder`](/src/Schema/PermissionHolder.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

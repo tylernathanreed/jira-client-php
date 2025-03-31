@@ -1,7 +1,7 @@
 # Submitted Bulk Operation
 
 
-Source: [`Jira\Client\Schema\SubmittedBulkOperation`](src/Schema/SubmittedBulkOperation.php)
+Source: [`Jira\Client\Schema\SubmittedBulkOperation`](/src/Schema/SubmittedBulkOperation.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

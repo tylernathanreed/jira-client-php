@@ -1,7 +1,7 @@
 # Get Permission Response
 
 
-Source: [`Jira\Client\Schema\GetPermissionResponse`](src/Schema/GetPermissionResponse.php)
+Source: [`Jira\Client\Schema\GetPermissionResponse`](/src/Schema/GetPermissionResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

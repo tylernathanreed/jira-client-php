@@ -3,7 +3,7 @@
 Contains information about the expression evaluation.
 This bean will be replacing `JiraExpressionEvaluationMetaDataBean` bean as part of new `evaluate` endpoint
 
-Source: [`Jira\Client\Schema\JExpEvaluateMetaDataBean`](src/Schema/JExpEvaluateMetaDataBean.php)
+Source: [`Jira\Client\Schema\JExpEvaluateMetaDataBean`](/src/Schema/JExpEvaluateMetaDataBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

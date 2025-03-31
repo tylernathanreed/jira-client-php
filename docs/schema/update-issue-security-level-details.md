@@ -2,7 +2,7 @@
 
 Details of issue security scheme level.
 
-Source: [`Jira\Client\Schema\UpdateIssueSecurityLevelDetails`](src/Schema/UpdateIssueSecurityLevelDetails.php)
+Source: [`Jira\Client\Schema\UpdateIssueSecurityLevelDetails`](/src/Schema/UpdateIssueSecurityLevelDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

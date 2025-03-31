@@ -2,7 +2,7 @@
 
 Details of new default levels.
 
-Source: [`Jira\Client\Schema\SetDefaultLevelsRequest`](src/Schema/SetDefaultLevelsRequest.php)
+Source: [`Jira\Client\Schema\SetDefaultLevelsRequest`](/src/Schema/SetDefaultLevelsRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

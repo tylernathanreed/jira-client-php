@@ -2,7 +2,7 @@
 
 Details of a dashboard.
 
-Source: [`Jira\Client\Schema\DashboardDetails`](src/Schema/DashboardDetails.php)
+Source: [`Jira\Client\Schema\DashboardDetails`](/src/Schema/DashboardDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

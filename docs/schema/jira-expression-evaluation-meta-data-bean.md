@@ -1,7 +1,7 @@
 # Jira Expression Evaluation Meta Data Bean
 
 
-Source: [`Jira\Client\Schema\JiraExpressionEvaluationMetaDataBean`](src/Schema/JiraExpressionEvaluationMetaDataBean.php)
+Source: [`Jira\Client\Schema\JiraExpressionEvaluationMetaDataBean`](/src/Schema/JiraExpressionEvaluationMetaDataBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

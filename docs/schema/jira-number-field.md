@@ -1,7 +1,7 @@
 # Jira Number Field
 
 
-Source: [`Jira\Client\Schema\JiraNumberField`](src/Schema/JiraNumberField.php)
+Source: [`Jira\Client\Schema\JiraNumberField`](/src/Schema/JiraNumberField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

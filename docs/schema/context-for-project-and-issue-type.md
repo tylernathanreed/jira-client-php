@@ -2,7 +2,7 @@
 
 The project and issue type mapping with a matching custom field context.
 
-Source: [`Jira\Client\Schema\ContextForProjectAndIssueType`](src/Schema/ContextForProjectAndIssueType.php)
+Source: [`Jira\Client\Schema\ContextForProjectAndIssueType`](/src/Schema/ContextForProjectAndIssueType.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

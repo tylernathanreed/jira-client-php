@@ -1,7 +1,7 @@
 # Jira Expression Eval Request Bean
 
 
-Source: [`Jira\Client\Schema\JiraExpressionEvalRequestBean`](src/Schema/JiraExpressionEvalRequestBean.php)
+Source: [`Jira\Client\Schema\JiraExpressionEvalRequestBean`](/src/Schema/JiraExpressionEvalRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

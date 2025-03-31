@@ -2,7 +2,7 @@
 
 Details about a permission granted to a user or group.
 
-Source: [`Jira\Client\Schema\PermissionGrant`](src/Schema/PermissionGrant.php)
+Source: [`Jira\Client\Schema\PermissionGrant`](/src/Schema/PermissionGrant.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

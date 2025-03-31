@@ -2,7 +2,7 @@
 
 Update priorities in a scheme
 
-Source: [`Jira\Client\Schema\UpdatePrioritiesInSchemeRequestBean`](src/Schema/UpdatePrioritiesInSchemeRequestBean.php)
+Source: [`Jira\Client\Schema\UpdatePrioritiesInSchemeRequestBean`](/src/Schema/UpdatePrioritiesInSchemeRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

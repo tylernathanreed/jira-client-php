@@ -2,7 +2,7 @@
 
 Jql function precomputation.
 
-Source: [`Jira\Client\Schema\JqlFunctionPrecomputationBean`](src/Schema/JqlFunctionPrecomputationBean.php)
+Source: [`Jira\Client\Schema\JqlFunctionPrecomputationBean`](/src/Schema/JqlFunctionPrecomputationBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

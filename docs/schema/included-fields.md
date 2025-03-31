@@ -1,7 +1,7 @@
 # Included Fields
 
 
-Source: [`Jira\Client\Schema\IncludedFields`](src/Schema/IncludedFields.php)
+Source: [`Jira\Client\Schema\IncludedFields`](/src/Schema/IncludedFields.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of the order-by JQL clause.
 
-Source: [`Jira\Client\Schema\JqlQueryOrderByClause`](src/Schema/JqlQueryOrderByClause.php)
+Source: [`Jira\Client\Schema\JqlQueryOrderByClause`](/src/Schema/JqlQueryOrderByClause.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

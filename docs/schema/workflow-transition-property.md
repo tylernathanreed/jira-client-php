@@ -2,7 +2,7 @@
 
 Details about the server Jira is running on.
 
-Source: [`Jira\Client\Schema\WorkflowTransitionProperty`](src/Schema/WorkflowTransitionProperty.php)
+Source: [`Jira\Client\Schema\WorkflowTransitionProperty`](/src/Schema/WorkflowTransitionProperty.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

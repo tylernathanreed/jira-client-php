@@ -2,7 +2,7 @@
 
 Details about a workflow.
 
-Source: [`Jira\Client\Schema\DeprecatedWorkflow`](src/Schema/DeprecatedWorkflow.php)
+Source: [`Jira\Client\Schema\DeprecatedWorkflow`](/src/Schema/DeprecatedWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

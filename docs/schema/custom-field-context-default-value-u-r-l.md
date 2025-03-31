@@ -2,7 +2,7 @@
 
 The default value for a URL custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueURL`](src/Schema/CustomFieldContextDefaultValueURL.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueURL`](/src/Schema/CustomFieldContextDefaultValueURL.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

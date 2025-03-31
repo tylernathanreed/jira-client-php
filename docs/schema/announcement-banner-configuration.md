@@ -2,7 +2,7 @@
 
 Announcement banner configuration.
 
-Source: [`Jira\Client\Schema\AnnouncementBannerConfiguration`](src/Schema/AnnouncementBannerConfiguration.php)
+Source: [`Jira\Client\Schema\AnnouncementBannerConfiguration`](/src/Schema/AnnouncementBannerConfiguration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

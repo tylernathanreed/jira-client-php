@@ -2,7 +2,7 @@
 
 Metadata for an issue attachment.
 
-Source: [`Jira\Client\Schema\AttachmentMetadata`](src/Schema/AttachmentMetadata.php)
+Source: [`Jira\Client\Schema\AttachmentMetadata`](/src/Schema/AttachmentMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

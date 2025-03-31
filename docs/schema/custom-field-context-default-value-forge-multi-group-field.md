@@ -2,7 +2,7 @@
 
 The default value for a Forge collection of groups custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeMultiGroupField`](src/Schema/CustomFieldContextDefaultValueForgeMultiGroupField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeMultiGroupField`](/src/Schema/CustomFieldContextDefaultValueForgeMultiGroupField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

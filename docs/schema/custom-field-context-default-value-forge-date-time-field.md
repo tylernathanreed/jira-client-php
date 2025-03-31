@@ -2,7 +2,7 @@
 
 The default value for a Forge date time custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeDateTimeField`](src/Schema/CustomFieldContextDefaultValueForgeDateTimeField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeDateTimeField`](/src/Schema/CustomFieldContextDefaultValueForgeDateTimeField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

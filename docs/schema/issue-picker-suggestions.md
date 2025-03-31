@@ -2,7 +2,7 @@
 
 A list of issues suggested for use in auto-completion.
 
-Source: [`Jira\Client\Schema\IssuePickerSuggestions`](src/Schema/IssuePickerSuggestions.php)
+Source: [`Jira\Client\Schema\IssuePickerSuggestions`](/src/Schema/IssuePickerSuggestions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

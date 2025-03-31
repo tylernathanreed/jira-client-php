@@ -1,7 +1,7 @@
 # Error Collections
 
 
-Source: [`Jira\Client\Schema\ErrorCollections`](src/Schema/ErrorCollections.php)
+Source: [`Jira\Client\Schema\ErrorCollections`](/src/Schema/ErrorCollections.php)
 
 *None*
 

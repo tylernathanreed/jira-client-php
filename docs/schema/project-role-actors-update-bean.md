@@ -1,7 +1,7 @@
 # Project Role Actors Update Bean
 
 
-Source: [`Jira\Client\Schema\ProjectRoleActorsUpdateBean`](src/Schema/ProjectRoleActorsUpdateBean.php)
+Source: [`Jira\Client\Schema\ProjectRoleActorsUpdateBean`](/src/Schema/ProjectRoleActorsUpdateBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

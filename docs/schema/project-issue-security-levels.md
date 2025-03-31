@@ -2,7 +2,7 @@
 
 List of issue level security items in a project.
 
-Source: [`Jira\Client\Schema\ProjectIssueSecurityLevels`](src/Schema/ProjectIssueSecurityLevels.php)
+Source: [`Jira\Client\Schema\ProjectIssueSecurityLevels`](/src/Schema/ProjectIssueSecurityLevels.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

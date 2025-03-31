@@ -2,7 +2,7 @@
 
 A page of issue types.
 
-Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsagePage`](src/Schema/StatusProjectIssueTypeUsagePage.php)
+Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsagePage`](/src/Schema/StatusProjectIssueTypeUsagePage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

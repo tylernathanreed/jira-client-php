@@ -2,7 +2,7 @@
 
 A workflow transition rule.
 
-Source: [`Jira\Client\Schema\WorkflowTransitionRule`](src/Schema/WorkflowTransitionRule.php)
+Source: [`Jira\Client\Schema\WorkflowTransitionRule`](/src/Schema/WorkflowTransitionRule.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

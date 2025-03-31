@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanScreenWithTab`](src/Schema/PageBeanScreenWithTab.php)
+Source: [`Jira\Client\Schema\PageBeanScreenWithTab`](/src/Schema/PageBeanScreenWithTab.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

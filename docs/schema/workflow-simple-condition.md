@@ -3,7 +3,7 @@
 A workflow transition rule condition.
 This object returns `nodeType` as `simple`.
 
-Source: [`Jira\Client\Schema\WorkflowSimpleCondition`](src/Schema/WorkflowSimpleCondition.php)
+Source: [`Jira\Client\Schema\WorkflowSimpleCondition`](/src/Schema/WorkflowSimpleCondition.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

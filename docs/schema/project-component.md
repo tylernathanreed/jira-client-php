@@ -2,7 +2,7 @@
 
 Details about a project component.
 
-Source: [`Jira\Client\Schema\ProjectComponent`](src/Schema/ProjectComponent.php)
+Source: [`Jira\Client\Schema\ProjectComponent`](/src/Schema/ProjectComponent.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

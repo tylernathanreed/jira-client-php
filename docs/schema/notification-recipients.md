@@ -2,7 +2,7 @@
 
 Details of the users and groups to receive the notification.
 
-Source: [`Jira\Client\Schema\NotificationRecipients`](src/Schema/NotificationRecipients.php)
+Source: [`Jira\Client\Schema\NotificationRecipients`](/src/Schema/NotificationRecipients.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The Atlassian provided system rules available.
 
-Source: [`Jira\Client\Schema\AvailableWorkflowSystemRule`](src/Schema/AvailableWorkflowSystemRule.php)
+Source: [`Jira\Client\Schema\AvailableWorkflowSystemRule`](/src/Schema/AvailableWorkflowSystemRule.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

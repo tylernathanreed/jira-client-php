@@ -2,7 +2,7 @@
 
 The workflow transition rule conditions tree.
 
-Source: [`Jira\Client\Schema\WorkflowCondition`](src/Schema/WorkflowCondition.php)
+Source: [`Jira\Client\Schema\WorkflowCondition`](/src/Schema/WorkflowCondition.php)
 
 *None*
 

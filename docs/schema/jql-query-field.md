@@ -4,7 +4,7 @@ A field used in a JQL query.
 See "Advanced searching - fields reference" for more information about fields in JQL queries.
 See: https://confluence.atlassian.com/x/dAiiLQ
 
-Source: [`Jira\Client\Schema\JqlQueryField`](src/Schema/JqlQueryField.php)
+Source: [`Jira\Client\Schema\JqlQueryField`](/src/Schema/JqlQueryField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

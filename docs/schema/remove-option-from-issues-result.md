@@ -1,7 +1,7 @@
 # Remove Option From Issues Result
 
 
-Source: [`Jira\Client\Schema\RemoveOptionFromIssuesResult`](src/Schema/RemoveOptionFromIssuesResult.php)
+Source: [`Jira\Client\Schema\RemoveOptionFromIssuesResult`](/src/Schema/RemoveOptionFromIssuesResult.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

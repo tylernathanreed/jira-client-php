@@ -1,7 +1,7 @@
 # Create Scheduling Request
 
 
-Source: [`Jira\Client\Schema\CreateSchedulingRequest`](src/Schema/CreateSchedulingRequest.php)
+Source: [`Jira\Client\Schema\CreateSchedulingRequest`](/src/Schema/CreateSchedulingRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

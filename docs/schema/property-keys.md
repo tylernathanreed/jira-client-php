@@ -2,7 +2,7 @@
 
 List of property keys.
 
-Source: [`Jira\Client\Schema\PropertyKeys`](src/Schema/PropertyKeys.php)
+Source: [`Jira\Client\Schema\PropertyKeys`](/src/Schema/PropertyKeys.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

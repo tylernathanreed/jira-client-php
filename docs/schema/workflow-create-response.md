@@ -2,7 +2,7 @@
 
 Details of the created workflows and statuses.
 
-Source: [`Jira\Client\Schema\WorkflowCreateResponse`](src/Schema/WorkflowCreateResponse.php)
+Source: [`Jira\Client\Schema\WorkflowCreateResponse`](/src/Schema/WorkflowCreateResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

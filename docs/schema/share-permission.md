@@ -2,7 +2,7 @@
 
 Details of a share permission for the filter.
 
-Source: [`Jira\Client\Schema\SharePermission`](src/Schema/SharePermission.php)
+Source: [`Jira\Client\Schema\SharePermission`](/src/Schema/SharePermission.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

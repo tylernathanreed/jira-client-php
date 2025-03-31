@@ -3,7 +3,7 @@
 The JQL query to sanitize for the account ID.
 If the account ID is null, sanitizing is performed for an anonymous user.
 
-Source: [`Jira\Client\Schema\JqlQueryToSanitize`](src/Schema/JqlQueryToSanitize.php)
+Source: [`Jira\Client\Schema\JqlQueryToSanitize`](/src/Schema/JqlQueryToSanitize.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

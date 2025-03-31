@@ -2,7 +2,7 @@
 
 Various counts of issues within a version.
 
-Source: [`Jira\Client\Schema\VersionIssueCounts`](src/Schema/VersionIssueCounts.php)
+Source: [`Jira\Client\Schema\VersionIssueCounts`](/src/Schema/VersionIssueCounts.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

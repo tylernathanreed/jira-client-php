@@ -1,7 +1,7 @@
 # Add Atlassian Team Request
 
 
-Source: [`Jira\Client\Schema\AddAtlassianTeamRequest`](src/Schema/AddAtlassianTeamRequest.php)
+Source: [`Jira\Client\Schema\AddAtlassianTeamRequest`](/src/Schema/AddAtlassianTeamRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

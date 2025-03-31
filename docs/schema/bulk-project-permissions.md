@@ -2,7 +2,7 @@
 
 Details of project permissions and associated issues and projects to look up.
 
-Source: [`Jira\Client\Schema\BulkProjectPermissions`](src/Schema/BulkProjectPermissions.php)
+Source: [`Jira\Client\Schema\BulkProjectPermissions`](/src/Schema/BulkProjectPermissions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

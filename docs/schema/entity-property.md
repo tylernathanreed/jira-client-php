@@ -3,7 +3,7 @@
 An entity property, for more information see "Entity properties".
 See: https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
 
-Source: [`Jira\Client\Schema\EntityProperty`](src/Schema/EntityProperty.php)
+Source: [`Jira\Client\Schema\EntityProperty`](/src/Schema/EntityProperty.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

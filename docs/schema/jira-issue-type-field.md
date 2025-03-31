@@ -1,7 +1,7 @@
 # Jira Issue Type Field
 
 
-Source: [`Jira\Client\Schema\JiraIssueTypeField`](src/Schema/JiraIssueTypeField.php)
+Source: [`Jira\Client\Schema\JiraIssueTypeField`](/src/Schema/JiraIssueTypeField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

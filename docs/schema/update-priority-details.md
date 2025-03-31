@@ -2,7 +2,7 @@
 
 Details of an issue priority.
 
-Source: [`Jira\Client\Schema\UpdatePriorityDetails`](src/Schema/UpdatePriorityDetails.php)
+Source: [`Jira\Client\Schema\UpdatePriorityDetails`](/src/Schema/UpdatePriorityDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

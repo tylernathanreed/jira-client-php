@@ -1,7 +1,7 @@
 # Resource
 
 
-Source: [`Jira\Client\Schema\Resource`](src/Schema/Resource.php)
+Source: [`Jira\Client\Schema\Resource`](/src/Schema/Resource.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

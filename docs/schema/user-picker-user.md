@@ -2,7 +2,7 @@
 
 A user found in a search.
 
-Source: [`Jira\Client\Schema\UserPickerUser`](src/Schema/UserPickerUser.php)
+Source: [`Jira\Client\Schema\UserPickerUser`](/src/Schema/UserPickerUser.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

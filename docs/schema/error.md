@@ -1,7 +1,7 @@
 # Error
 
 
-Source: [`Jira\Client\Schema\Error`](src/Schema/Error.php)
+Source: [`Jira\Client\Schema\Error`](/src/Schema/Error.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

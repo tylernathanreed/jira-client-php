@@ -1,7 +1,7 @@
 # Create Cross Project Release Request
 
 
-Source: [`Jira\Client\Schema\CreateCrossProjectReleaseRequest`](src/Schema/CreateCrossProjectReleaseRequest.php)
+Source: [`Jira\Client\Schema\CreateCrossProjectReleaseRequest`](/src/Schema/CreateCrossProjectReleaseRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

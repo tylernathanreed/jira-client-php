@@ -2,7 +2,7 @@
 
 Details of an avatar.
 
-Source: [`Jira\Client\Schema\Avatar`](src/Schema/Avatar.php)
+Source: [`Jira\Client\Schema\Avatar`](/src/Schema/Avatar.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

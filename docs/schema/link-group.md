@@ -2,7 +2,7 @@
 
 Details a link group, which defines issue operations.
 
-Source: [`Jira\Client\Schema\LinkGroup`](src/Schema/LinkGroup.php)
+Source: [`Jira\Client\Schema\LinkGroup`](/src/Schema/LinkGroup.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

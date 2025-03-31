@@ -2,7 +2,7 @@
 
 The identifiers for a project.
 
-Source: [`Jira\Client\Schema\ProjectIdentifierBean`](src/Schema/ProjectIdentifierBean.php)
+Source: [`Jira\Client\Schema\ProjectIdentifierBean`](/src/Schema/ProjectIdentifierBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details about the default workflow.
 
-Source: [`Jira\Client\Schema\DefaultWorkflow`](src/Schema/DefaultWorkflow.php)
+Source: [`Jira\Client\Schema\DefaultWorkflow`](/src/Schema/DefaultWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

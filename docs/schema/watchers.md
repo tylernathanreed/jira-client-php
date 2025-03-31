@@ -2,7 +2,7 @@
 
 The details of watchers on an issue.
 
-Source: [`Jira\Client\Schema\Watchers`](src/Schema/Watchers.php)
+Source: [`Jira\Client\Schema\Watchers`](/src/Schema/Watchers.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

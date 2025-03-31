@@ -2,7 +2,7 @@
 
 List of updates for a custom fields.
 
-Source: [`Jira\Client\Schema\MultipleCustomFieldValuesUpdateDetails`](src/Schema/MultipleCustomFieldValuesUpdateDetails.php)
+Source: [`Jira\Client\Schema\MultipleCustomFieldValuesUpdateDetails`](/src/Schema/MultipleCustomFieldValuesUpdateDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The wrapper for the issue creation metadata for a list of projects.
 
-Source: [`Jira\Client\Schema\IssueCreateMetadata`](src/Schema/IssueCreateMetadata.php)
+Source: [`Jira\Client\Schema\IssueCreateMetadata`](/src/Schema/IssueCreateMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The list of required status mappings by issue type.
 
-Source: [`Jira\Client\Schema\RequiredMappingByIssueType`](src/Schema/RequiredMappingByIssueType.php)
+Source: [`Jira\Client\Schema\RequiredMappingByIssueType`](/src/Schema/RequiredMappingByIssueType.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

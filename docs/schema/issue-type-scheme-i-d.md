@@ -2,7 +2,7 @@
 
 The ID of an issue type scheme.
 
-Source: [`Jira\Client\Schema\IssueTypeSchemeID`](src/Schema/IssueTypeSchemeID.php)
+Source: [`Jira\Client\Schema\IssueTypeSchemeID`](/src/Schema/IssueTypeSchemeID.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

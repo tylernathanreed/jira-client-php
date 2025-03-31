@@ -1,7 +1,7 @@
 # Jira Priority Field
 
 
-Source: [`Jira\Client\Schema\JiraPriorityField`](src/Schema/JiraPriorityField.php)
+Source: [`Jira\Client\Schema\JiraPriorityField`](/src/Schema/JiraPriorityField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Service Registry Tier
 
 
-Source: [`Jira\Client\Schema\ServiceRegistryTier`](src/Schema/ServiceRegistryTier.php)
+Source: [`Jira\Client\Schema\ServiceRegistryTier`](/src/Schema/ServiceRegistryTier.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details about a workflow configuration update request.
 
-Source: [`Jira\Client\Schema\WorkflowTransitionRulesUpdate`](src/Schema/WorkflowTransitionRulesUpdate.php)
+Source: [`Jira\Client\Schema\WorkflowTransitionRulesUpdate`](/src/Schema/WorkflowTransitionRulesUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

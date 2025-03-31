@@ -2,7 +2,7 @@
 
 The Forge provided ecosystem rules available.
 
-Source: [`Jira\Client\Schema\AvailableWorkflowForgeRule`](src/Schema/AvailableWorkflowForgeRule.php)
+Source: [`Jira\Client\Schema\AvailableWorkflowForgeRule`](/src/Schema/AvailableWorkflowForgeRule.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

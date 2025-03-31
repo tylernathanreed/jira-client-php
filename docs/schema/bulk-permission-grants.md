@@ -2,7 +2,7 @@
 
 Details of global and project permissions granted to the user.
 
-Source: [`Jira\Client\Schema\BulkPermissionGrants`](src/Schema/BulkPermissionGrants.php)
+Source: [`Jira\Client\Schema\BulkPermissionGrants`](/src/Schema/BulkPermissionGrants.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

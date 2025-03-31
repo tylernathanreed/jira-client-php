@@ -1,7 +1,7 @@
 # Simple Error Collection
 
 
-Source: [`Jira\Client\Schema\SimpleErrorCollection`](src/Schema/SimpleErrorCollection.php)
+Source: [`Jira\Client\Schema\SimpleErrorCollection`](/src/Schema/SimpleErrorCollection.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

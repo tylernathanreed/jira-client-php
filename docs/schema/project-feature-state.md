@@ -2,7 +2,7 @@
 
 Details of the feature state.
 
-Source: [`Jira\Client\Schema\ProjectFeatureState`](src/Schema/ProjectFeatureState.php)
+Source: [`Jira\Client\Schema\ProjectFeatureState`](/src/Schema/ProjectFeatureState.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

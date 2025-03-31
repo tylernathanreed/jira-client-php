@@ -2,7 +2,7 @@
 
 The list of requested issues & fields.
 
-Source: [`Jira\Client\Schema\BulkIssueResults`](src/Schema/BulkIssueResults.php)
+Source: [`Jira\Client\Schema\BulkIssueResults`](/src/Schema/BulkIssueResults.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

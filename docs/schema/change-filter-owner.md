@@ -2,7 +2,7 @@
 
 The account ID of the new owner.
 
-Source: [`Jira\Client\Schema\ChangeFilterOwner`](src/Schema/ChangeFilterOwner.php)
+Source: [`Jira\Client\Schema\ChangeFilterOwner`](/src/Schema/ChangeFilterOwner.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

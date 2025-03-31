@@ -2,7 +2,7 @@
 
 The worflow.
 
-Source: [`Jira\Client\Schema\StatusWorkflowUsageWorkflow`](src/Schema/StatusWorkflowUsageWorkflow.php)
+Source: [`Jira\Client\Schema\StatusWorkflowUsageWorkflow`](/src/Schema/StatusWorkflowUsageWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

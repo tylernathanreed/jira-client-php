@@ -2,7 +2,7 @@
 
 An issue suggested for use in the issue picker auto-completion.
 
-Source: [`Jira\Client\Schema\SuggestedIssue`](src/Schema/SuggestedIssue.php)
+Source: [`Jira\Client\Schema\SuggestedIssue`](/src/Schema/SuggestedIssue.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

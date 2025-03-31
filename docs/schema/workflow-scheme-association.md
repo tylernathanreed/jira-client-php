@@ -2,7 +2,7 @@
 
 The explicit association between issue types and a workflow in a workflow scheme.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeAssociation`](src/Schema/WorkflowSchemeAssociation.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeAssociation`](/src/Schema/WorkflowSchemeAssociation.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

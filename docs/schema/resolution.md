@@ -2,7 +2,7 @@
 
 Details of an issue resolution.
 
-Source: [`Jira\Client\Schema\Resolution`](src/Schema/Resolution.php)
+Source: [`Jira\Client\Schema\Resolution`](/src/Schema/Resolution.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

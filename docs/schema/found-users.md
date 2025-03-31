@@ -2,7 +2,7 @@
 
 The list of users found in a search, including header text (Showing X of Y matching users) and total of matched users.
 
-Source: [`Jira\Client\Schema\FoundUsers`](src/Schema/FoundUsers.php)
+Source: [`Jira\Client\Schema\FoundUsers`](/src/Schema/FoundUsers.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

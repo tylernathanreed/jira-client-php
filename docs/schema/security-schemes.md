@@ -2,7 +2,7 @@
 
 List of security schemes.
 
-Source: [`Jira\Client\Schema\SecuritySchemes`](src/Schema/SecuritySchemes.php)
+Source: [`Jira\Client\Schema\SecuritySchemes`](/src/Schema/SecuritySchemes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

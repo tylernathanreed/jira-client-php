@@ -3,7 +3,7 @@
 The JQL specifying the issues available in the evaluated Jira expression under the `issues` context variable.
 This bean will be replacing `JexpIssues` bean as part of new `evaluate` endpoint
 
-Source: [`Jira\Client\Schema\JexpEvaluateCtxIssues`](src/Schema/JexpEvaluateCtxIssues.php)
+Source: [`Jira\Client\Schema\JexpEvaluateCtxIssues`](/src/Schema/JexpEvaluateCtxIssues.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Issue Bulk Transition Payload
 
-Source: [`Jira\Client\Schema\IssueBulkTransitionPayload`](src/Schema/IssueBulkTransitionPayload.php)
+Source: [`Jira\Client\Schema\IssueBulkTransitionPayload`](/src/Schema/IssueBulkTransitionPayload.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

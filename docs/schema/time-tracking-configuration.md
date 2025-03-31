@@ -2,7 +2,7 @@
 
 Details of the time tracking configuration.
 
-Source: [`Jira\Client\Schema\TimeTrackingConfiguration`](src/Schema/TimeTrackingConfiguration.php)
+Source: [`Jira\Client\Schema\TimeTrackingConfiguration`](/src/Schema/TimeTrackingConfiguration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

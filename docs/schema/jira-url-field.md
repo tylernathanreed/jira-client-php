@@ -1,7 +1,7 @@
 # Jira Url Field
 
 
-Source: [`Jira\Client\Schema\JiraUrlField`](src/Schema/JiraUrlField.php)
+Source: [`Jira\Client\Schema\JiraUrlField`](/src/Schema/JiraUrlField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

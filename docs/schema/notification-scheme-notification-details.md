@@ -2,7 +2,7 @@
 
 Details of a notification within a notification scheme.
 
-Source: [`Jira\Client\Schema\NotificationSchemeNotificationDetails`](src/Schema/NotificationSchemeNotificationDetails.php)
+Source: [`Jira\Client\Schema\NotificationSchemeNotificationDetails`](/src/Schema/NotificationSchemeNotificationDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

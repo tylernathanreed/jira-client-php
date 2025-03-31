@@ -2,7 +2,7 @@
 
 The list of status mappings.
 
-Source: [`Jira\Client\Schema\WorkflowAssociationStatusMapping`](src/Schema/WorkflowAssociationStatusMapping.php)
+Source: [`Jira\Client\Schema\WorkflowAssociationStatusMapping`](/src/Schema/WorkflowAssociationStatusMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

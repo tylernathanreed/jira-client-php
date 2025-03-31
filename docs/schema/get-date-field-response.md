@@ -1,7 +1,7 @@
 # Get Date Field Response
 
 
-Source: [`Jira\Client\Schema\GetDateFieldResponse`](src/Schema/GetDateFieldResponse.php)
+Source: [`Jira\Client\Schema\GetDateFieldResponse`](/src/Schema/GetDateFieldResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

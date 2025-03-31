@@ -2,7 +2,7 @@
 
 The IDs of the screen schemes for the issue type IDs.
 
-Source: [`Jira\Client\Schema\IssueTypeScreenSchemeMapping`](src/Schema/IssueTypeScreenSchemeMapping.php)
+Source: [`Jira\Client\Schema\IssueTypeScreenSchemeMapping`](/src/Schema/IssueTypeScreenSchemeMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

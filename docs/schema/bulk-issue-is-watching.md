@@ -2,7 +2,7 @@
 
 A container for the watch status of a list of issues.
 
-Source: [`Jira\Client\Schema\BulkIssueIsWatching`](src/Schema/BulkIssueIsWatching.php)
+Source: [`Jira\Client\Schema\BulkIssueIsWatching`](/src/Schema/BulkIssueIsWatching.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Notification Scheme And Project Mapping Json Bean
 
 
-Source: [`Jira\Client\Schema\NotificationSchemeAndProjectMappingJsonBean`](src/Schema/NotificationSchemeAndProjectMappingJsonBean.php)
+Source: [`Jira\Client\Schema\NotificationSchemeAndProjectMappingJsonBean`](/src/Schema/NotificationSchemeAndProjectMappingJsonBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

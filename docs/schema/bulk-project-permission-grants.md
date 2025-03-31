@@ -2,7 +2,7 @@
 
 List of project permissions and the projects and issues those permissions grant access to.
 
-Source: [`Jira\Client\Schema\BulkProjectPermissionGrants`](src/Schema/BulkProjectPermissionGrants.php)
+Source: [`Jira\Client\Schema\BulkProjectPermissionGrants`](/src/Schema/BulkProjectPermissionGrants.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

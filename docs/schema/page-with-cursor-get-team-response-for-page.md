@@ -1,7 +1,7 @@
 # Page With Cursor Get Team Response For Page
 
 
-Source: [`Jira\Client\Schema\PageWithCursorGetTeamResponseForPage`](src/Schema/PageWithCursorGetTeamResponseForPage.php)
+Source: [`Jira\Client\Schema\PageWithCursorGetTeamResponseForPage`](/src/Schema/PageWithCursorGetTeamResponseForPage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # List Wrapper Callback Application Role
 
 
-Source: [`Jira\Client\Schema\ListWrapperCallbackApplicationRole`](src/Schema/ListWrapperCallbackApplicationRole.php)
+Source: [`Jira\Client\Schema\ListWrapperCallbackApplicationRole`](/src/Schema/ListWrapperCallbackApplicationRole.php)
 
 *None*
 

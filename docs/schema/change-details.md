@@ -2,7 +2,7 @@
 
 A change item.
 
-Source: [`Jira\Client\Schema\ChangeDetails`](src/Schema/ChangeDetails.php)
+Source: [`Jira\Client\Schema\ChangeDetails`](/src/Schema/ChangeDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

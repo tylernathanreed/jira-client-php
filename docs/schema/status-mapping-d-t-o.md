@@ -2,7 +2,7 @@
 
 The mapping of old to new status ID for a specific project and issue type.
 
-Source: [`Jira\Client\Schema\StatusMappingDTO`](src/Schema/StatusMappingDTO.php)
+Source: [`Jira\Client\Schema\StatusMappingDTO`](/src/Schema/StatusMappingDTO.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of a custom option for a field.
 
-Source: [`Jira\Client\Schema\CustomFieldOption`](src/Schema/CustomFieldOption.php)
+Source: [`Jira\Client\Schema\CustomFieldOption`](/src/Schema/CustomFieldOption.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

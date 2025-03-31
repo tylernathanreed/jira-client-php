@@ -2,7 +2,7 @@
 
 The default value for a group picker custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueSingleGroupPicker`](src/Schema/CustomFieldContextDefaultValueSingleGroupPicker.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueSingleGroupPicker`](/src/Schema/CustomFieldContextDefaultValueSingleGroupPicker.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

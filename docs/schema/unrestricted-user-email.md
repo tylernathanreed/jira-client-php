@@ -1,7 +1,7 @@
 # Unrestricted User Email
 
 
-Source: [`Jira\Client\Schema\UnrestrictedUserEmail`](src/Schema/UnrestrictedUserEmail.php)
+Source: [`Jira\Client\Schema\UnrestrictedUserEmail`](/src/Schema/UnrestrictedUserEmail.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

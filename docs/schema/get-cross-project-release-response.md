@@ -1,7 +1,7 @@
 # Get Cross Project Release Response
 
 
-Source: [`Jira\Client\Schema\GetCrossProjectReleaseResponse`](src/Schema/GetCrossProjectReleaseResponse.php)
+Source: [`Jira\Client\Schema\GetCrossProjectReleaseResponse`](/src/Schema/GetCrossProjectReleaseResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

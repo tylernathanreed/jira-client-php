@@ -2,7 +2,7 @@
 
 The default text for a Forge collection of strings custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeMultiStringField`](src/Schema/CustomFieldContextDefaultValueForgeMultiStringField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeMultiStringField`](/src/Schema/CustomFieldContextDefaultValueForgeMultiStringField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

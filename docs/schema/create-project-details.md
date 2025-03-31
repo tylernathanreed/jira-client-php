@@ -2,7 +2,7 @@
 
 Details about the project.
 
-Source: [`Jira\Client\Schema\CreateProjectDetails`](src/Schema/CreateProjectDetails.php)
+Source: [`Jira\Client\Schema\CreateProjectDetails`](/src/Schema/CreateProjectDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

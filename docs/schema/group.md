@@ -1,7 +1,7 @@
 # Group
 
 
-Source: [`Jira\Client\Schema\Group`](src/Schema/Group.php)
+Source: [`Jira\Client\Schema\Group`](/src/Schema/Group.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The ID of the issue security scheme.
 
-Source: [`Jira\Client\Schema\SecuritySchemeId`](src/Schema/SecuritySchemeId.php)
+Source: [`Jira\Client\Schema\SecuritySchemeId`](/src/Schema/SecuritySchemeId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

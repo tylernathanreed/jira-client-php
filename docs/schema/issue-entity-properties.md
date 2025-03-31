@@ -4,7 +4,7 @@ Lists of issues and entity properties.
 See "Entity properties" for more information.
 See: https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
 
-Source: [`Jira\Client\Schema\IssueEntityProperties`](src/Schema/IssueEntityProperties.php)
+Source: [`Jira\Client\Schema\IssueEntityProperties`](/src/Schema/IssueEntityProperties.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

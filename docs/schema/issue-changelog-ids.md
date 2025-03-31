@@ -2,7 +2,7 @@
 
 A list of changelog IDs.
 
-Source: [`Jira\Client\Schema\IssueChangelogIds`](src/Schema/IssueChangelogIds.php)
+Source: [`Jira\Client\Schema\IssueChangelogIds`](/src/Schema/IssueChangelogIds.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

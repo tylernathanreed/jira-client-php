@@ -2,7 +2,7 @@
 
 Details of a locale.
 
-Source: [`Jira\Client\Schema\Locale`](src/Schema/Locale.php)
+Source: [`Jira\Client\Schema\Locale`](/src/Schema/Locale.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

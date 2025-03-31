@@ -2,7 +2,7 @@
 
 Details of workflows and related statuses.
 
-Source: [`Jira\Client\Schema\WorkflowReadResponse`](src/Schema/WorkflowReadResponse.php)
+Source: [`Jira\Client\Schema\WorkflowReadResponse`](/src/Schema/WorkflowReadResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of the group membership or permissions needed to receive the notification.
 
-Source: [`Jira\Client\Schema\NotificationRecipientsRestrictions`](src/Schema/NotificationRecipientsRestrictions.php)
+Source: [`Jira\Client\Schema\NotificationRecipientsRestrictions`](/src/Schema/NotificationRecipientsRestrictions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

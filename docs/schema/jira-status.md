@@ -2,7 +2,7 @@
 
 Details of a status.
 
-Source: [`Jira\Client\Schema\JiraStatus`](src/Schema/JiraStatus.php)
+Source: [`Jira\Client\Schema\JiraStatus`](/src/Schema/JiraStatus.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

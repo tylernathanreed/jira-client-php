@@ -2,7 +2,7 @@
 
 Default values to update.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueUpdate`](src/Schema/CustomFieldContextDefaultValueUpdate.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueUpdate`](/src/Schema/CustomFieldContextDefaultValueUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

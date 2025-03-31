@@ -1,7 +1,7 @@
 # Custom Context Variable
 
 
-Source: [`Jira\Client\Schema\CustomContextVariable`](src/Schema/CustomContextVariable.php)
+Source: [`Jira\Client\Schema\CustomContextVariable`](/src/Schema/CustomContextVariable.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Custom Field Context Default Value
 
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValue`](src/Schema/CustomFieldContextDefaultValue.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValue`](/src/Schema/CustomFieldContextDefaultValue.php)
 
 *None*
 

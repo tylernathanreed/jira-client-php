@@ -1,7 +1,7 @@
 # Get Issue Source Response
 
 
-Source: [`Jira\Client\Schema\GetIssueSourceResponse`](src/Schema/GetIssueSourceResponse.php)
+Source: [`Jira\Client\Schema\GetIssueSourceResponse`](/src/Schema/GetIssueSourceResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

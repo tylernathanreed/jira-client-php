@@ -1,7 +1,7 @@
 # Component Json Bean
 
 
-Source: [`Jira\Client\Schema\ComponentJsonBean`](src/Schema/ComponentJsonBean.php)
+Source: [`Jira\Client\Schema\ComponentJsonBean`](/src/Schema/ComponentJsonBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

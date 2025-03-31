@@ -2,7 +2,7 @@
 
 Details of the user associated with the role.
 
-Source: [`Jira\Client\Schema\ProjectRoleUser`](src/Schema/ProjectRoleUser.php)
+Source: [`Jira\Client\Schema\ProjectRoleUser`](/src/Schema/ProjectRoleUser.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

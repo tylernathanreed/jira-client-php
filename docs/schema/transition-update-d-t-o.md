@@ -2,7 +2,7 @@
 
 The transition update data.
 
-Source: [`Jira\Client\Schema\TransitionUpdateDTO`](src/Schema/TransitionUpdateDTO.php)
+Source: [`Jira\Client\Schema\TransitionUpdateDTO`](/src/Schema/TransitionUpdateDTO.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

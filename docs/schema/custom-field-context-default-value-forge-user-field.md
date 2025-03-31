@@ -2,7 +2,7 @@
 
 Defaults for a Forge user custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeUserField`](src/Schema/CustomFieldContextDefaultValueForgeUserField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeUserField`](/src/Schema/CustomFieldContextDefaultValueForgeUserField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

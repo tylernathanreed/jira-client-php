@@ -6,7 +6,7 @@ See the "deprecation notice" for details
 Use the optional `workflows.usages` expand to get additional information about the projects and issue types associated with the requested workflows.
 See: https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
 
-Source: [`Jira\Client\Schema\ProjectIssueTypes`](src/Schema/ProjectIssueTypes.php)
+Source: [`Jira\Client\Schema\ProjectIssueTypes`](/src/Schema/ProjectIssueTypes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

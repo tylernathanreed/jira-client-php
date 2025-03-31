@@ -2,7 +2,7 @@
 
 Container for a list of audit records.
 
-Source: [`Jira\Client\Schema\AuditRecords`](src/Schema/AuditRecords.php)
+Source: [`Jira\Client\Schema\AuditRecords`](/src/Schema/AuditRecords.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

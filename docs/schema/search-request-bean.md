@@ -1,7 +1,7 @@
 # Search Request Bean
 
 
-Source: [`Jira\Client\Schema\SearchRequestBean`](src/Schema/SearchRequestBean.php)
+Source: [`Jira\Client\Schema\SearchRequestBean`](/src/Schema/SearchRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

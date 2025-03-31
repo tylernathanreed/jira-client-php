@@ -1,7 +1,7 @@
 # Workflow Scheme Read Response
 
 
-Source: [`Jira\Client\Schema\WorkflowSchemeReadResponse`](src/Schema/WorkflowSchemeReadResponse.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeReadResponse`](/src/Schema/WorkflowSchemeReadResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

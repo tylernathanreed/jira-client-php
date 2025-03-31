@@ -2,7 +2,7 @@
 
 An operand that is a list of values.
 
-Source: [`Jira\Client\Schema\ListOperand`](src/Schema/ListOperand.php)
+Source: [`Jira\Client\Schema\ListOperand`](/src/Schema/ListOperand.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The ID of a notification scheme.
 
-Source: [`Jira\Client\Schema\NotificationSchemeId`](src/Schema/NotificationSchemeId.php)
+Source: [`Jira\Client\Schema\NotificationSchemeId`](/src/Schema/NotificationSchemeId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

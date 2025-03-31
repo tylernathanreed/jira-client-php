@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanUserKey`](src/Schema/PageBeanUserKey.php)
+Source: [`Jira\Client\Schema\PageBeanUserKey`](/src/Schema/PageBeanUserKey.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

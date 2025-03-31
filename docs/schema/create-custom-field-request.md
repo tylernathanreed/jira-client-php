@@ -1,7 +1,7 @@
 # Create Custom Field Request
 
 
-Source: [`Jira\Client\Schema\CreateCustomFieldRequest`](src/Schema/CreateCustomFieldRequest.php)
+Source: [`Jira\Client\Schema\CreateCustomFieldRequest`](/src/Schema/CreateCustomFieldRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

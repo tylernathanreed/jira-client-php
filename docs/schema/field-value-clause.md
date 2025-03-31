@@ -3,7 +3,7 @@
 A clause that asserts the current value of a field.
 For example, `summary ~ test`.
 
-Source: [`Jira\Client\Schema\FieldValueClause`](src/Schema/FieldValueClause.php)
+Source: [`Jira\Client\Schema\FieldValueClause`](/src/Schema/FieldValueClause.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

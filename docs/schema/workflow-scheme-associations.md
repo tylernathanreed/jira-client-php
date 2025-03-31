@@ -2,7 +2,7 @@
 
 A workflow scheme along with a list of projects that use it.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeAssociations`](src/Schema/WorkflowSchemeAssociations.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeAssociations`](/src/Schema/WorkflowSchemeAssociations.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

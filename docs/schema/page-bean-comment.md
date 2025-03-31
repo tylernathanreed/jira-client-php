@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanComment`](src/Schema/PageBeanComment.php)
+Source: [`Jira\Client\Schema\PageBeanComment`](/src/Schema/PageBeanComment.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

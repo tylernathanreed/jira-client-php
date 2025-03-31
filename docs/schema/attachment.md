@@ -2,7 +2,7 @@
 
 Details about an attachment.
 
-Source: [`Jira\Client\Schema\Attachment`](src/Schema/Attachment.php)
+Source: [`Jira\Client\Schema\Attachment`](/src/Schema/Attachment.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

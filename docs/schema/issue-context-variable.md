@@ -4,7 +4,7 @@ An "issue" specified by ID or key.
 All the fields of the issue object are available in the Jira expression.
 See: https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#issue
 
-Source: [`Jira\Client\Schema\IssueContextVariable`](src/Schema/IssueContextVariable.php)
+Source: [`Jira\Client\Schema\IssueContextVariable`](/src/Schema/IssueContextVariable.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

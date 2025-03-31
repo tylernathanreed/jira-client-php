@@ -1,7 +1,7 @@
 # Jira Color Input
 
 
-Source: [`Jira\Client\Schema\JiraColorInput`](src/Schema/JiraColorInput.php)
+Source: [`Jira\Client\Schema\JiraColorInput`](/src/Schema/JiraColorInput.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

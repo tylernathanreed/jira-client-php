@@ -1,7 +1,7 @@
 # Streaming Response Body
 
 
-Source: [`Jira\Client\Schema\StreamingResponseBody`](src/Schema/StreamingResponseBody.php)
+Source: [`Jira\Client\Schema\StreamingResponseBody`](/src/Schema/StreamingResponseBody.php)
 
 *None*
 

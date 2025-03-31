@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanComponentWithIssueCount`](src/Schema/PageBeanComponentWithIssueCount.php)
+Source: [`Jira\Client\Schema\PageBeanComponentWithIssueCount`](/src/Schema/PageBeanComponentWithIssueCount.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

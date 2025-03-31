@@ -1,7 +1,7 @@
 # Add Security Scheme Levels Request Bean
 
 
-Source: [`Jira\Client\Schema\AddSecuritySchemeLevelsRequestBean`](src/Schema/AddSecuritySchemeLevelsRequestBean.php)
+Source: [`Jira\Client\Schema\AddSecuritySchemeLevelsRequestBean`](/src/Schema/AddSecuritySchemeLevelsRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

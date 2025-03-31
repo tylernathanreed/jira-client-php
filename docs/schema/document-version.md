@@ -2,7 +2,7 @@
 
 The current version details of this workflow scheme.
 
-Source: [`Jira\Client\Schema\DocumentVersion`](src/Schema/DocumentVersion.php)
+Source: [`Jira\Client\Schema\DocumentVersion`](/src/Schema/DocumentVersion.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

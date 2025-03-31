@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanSecurityLevel`](src/Schema/PageBeanSecurityLevel.php)
+Source: [`Jira\Client\Schema\PageBeanSecurityLevel`](/src/Schema/PageBeanSecurityLevel.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of names changed in the record event.
 
-Source: [`Jira\Client\Schema\ChangedValueBean`](src/Schema/ChangedValueBean.php)
+Source: [`Jira\Client\Schema\ChangedValueBean`](/src/Schema/ChangedValueBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

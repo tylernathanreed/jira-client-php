@@ -1,7 +1,7 @@
 # Create Plan Only Team Request
 
 
-Source: [`Jira\Client\Schema\CreatePlanOnlyTeamRequest`](src/Schema/CreatePlanOnlyTeamRequest.php)
+Source: [`Jira\Client\Schema\CreatePlanOnlyTeamRequest`](/src/Schema/CreatePlanOnlyTeamRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

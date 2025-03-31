@@ -2,7 +2,7 @@
 
 The details about a workflow validation error.
 
-Source: [`Jira\Client\Schema\WorkflowValidationError`](src/Schema/WorkflowValidationError.php)
+Source: [`Jira\Client\Schema\WorkflowValidationError`](/src/Schema/WorkflowValidationError.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

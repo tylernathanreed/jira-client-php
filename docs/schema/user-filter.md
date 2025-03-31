@@ -2,7 +2,7 @@
 
 Filter for a User Picker (single) custom field.
 
-Source: [`Jira\Client\Schema\UserFilter`](src/Schema/UserFilter.php)
+Source: [`Jira\Client\Schema\UserFilter`](/src/Schema/UserFilter.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details about a filter.
 
-Source: [`Jira\Client\Schema\Filter`](src/Schema/Filter.php)
+Source: [`Jira\Client\Schema\Filter`](/src/Schema/Filter.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

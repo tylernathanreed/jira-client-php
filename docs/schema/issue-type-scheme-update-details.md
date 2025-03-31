@@ -2,7 +2,7 @@
 
 Details of the name, description, and default issue type for an issue type scheme.
 
-Source: [`Jira\Client\Schema\IssueTypeSchemeUpdateDetails`](src/Schema/IssueTypeSchemeUpdateDetails.php)
+Source: [`Jira\Client\Schema\IssueTypeSchemeUpdateDetails`](/src/Schema/IssueTypeSchemeUpdateDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Contains details about a version approver.
 
-Source: [`Jira\Client\Schema\VersionApprover`](src/Schema/VersionApprover.php)
+Source: [`Jira\Client\Schema\VersionApprover`](/src/Schema/VersionApprover.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

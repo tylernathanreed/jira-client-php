@@ -2,7 +2,7 @@
 
 A field auto-complete suggestion.
 
-Source: [`Jira\Client\Schema\AutoCompleteSuggestion`](src/Schema/AutoCompleteSuggestion.php)
+Source: [`Jira\Client\Schema\AutoCompleteSuggestion`](/src/Schema/AutoCompleteSuggestion.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

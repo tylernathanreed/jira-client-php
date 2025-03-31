@@ -2,7 +2,7 @@
 
 Metadata for an item in an attachment archive.
 
-Source: [`Jira\Client\Schema\AttachmentArchiveItemReadable`](src/Schema/AttachmentArchiveItemReadable.php)
+Source: [`Jira\Client\Schema\AttachmentArchiveItemReadable`](/src/Schema/AttachmentArchiveItemReadable.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

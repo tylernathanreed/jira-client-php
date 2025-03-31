@@ -1,7 +1,7 @@
 # Add Field Bean
 
 
-Source: [`Jira\Client\Schema\AddFieldBean`](src/Schema/AddFieldBean.php)
+Source: [`Jira\Client\Schema\AddFieldBean`](/src/Schema/AddFieldBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

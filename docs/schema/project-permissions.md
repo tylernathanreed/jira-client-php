@@ -2,7 +2,7 @@
 
 Permissions which a user has on a project.
 
-Source: [`Jira\Client\Schema\ProjectPermissions`](src/Schema/ProjectPermissions.php)
+Source: [`Jira\Client\Schema\ProjectPermissions`](/src/Schema/ProjectPermissions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Workflow metadata and usage detail.
 
-Source: [`Jira\Client\Schema\WorkflowMetadataRestModel`](src/Schema/WorkflowMetadataRestModel.php)
+Source: [`Jira\Client\Schema\WorkflowMetadataRestModel`](/src/Schema/WorkflowMetadataRestModel.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

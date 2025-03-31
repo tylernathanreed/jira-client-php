@@ -2,7 +2,7 @@
 
 A list of custom field details.
 
-Source: [`Jira\Client\Schema\ConnectCustomFieldValue`](src/Schema/ConnectCustomFieldValue.php)
+Source: [`Jira\Client\Schema\ConnectCustomFieldValue`](/src/Schema/ConnectCustomFieldValue.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

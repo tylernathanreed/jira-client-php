@@ -2,7 +2,7 @@
 
 The statuses the transition can start from, and the mapping of ports between the statuses.
 
-Source: [`Jira\Client\Schema\WorkflowTransitionLinks`](src/Schema/WorkflowTransitionLinks.php)
+Source: [`Jira\Client\Schema\WorkflowTransitionLinks`](/src/Schema/WorkflowTransitionLinks.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

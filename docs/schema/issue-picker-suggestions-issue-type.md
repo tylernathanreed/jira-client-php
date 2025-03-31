@@ -2,7 +2,7 @@
 
 A type of issue suggested for use in auto-completion.
 
-Source: [`Jira\Client\Schema\IssuePickerSuggestionsIssueType`](src/Schema/IssuePickerSuggestionsIssueType.php)
+Source: [`Jira\Client\Schema\IssuePickerSuggestionsIssueType`](/src/Schema/IssuePickerSuggestionsIssueType.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

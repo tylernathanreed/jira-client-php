@@ -2,7 +2,7 @@
 
 A priority scheme with paginated priorities and projects.
 
-Source: [`Jira\Client\Schema\PrioritySchemeWithPaginatedPrioritiesAndProjects`](src/Schema/PrioritySchemeWithPaginatedPrioritiesAndProjects.php)
+Source: [`Jira\Client\Schema\PrioritySchemeWithPaginatedPrioritiesAndProjects`](/src/Schema/PrioritySchemeWithPaginatedPrioritiesAndProjects.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

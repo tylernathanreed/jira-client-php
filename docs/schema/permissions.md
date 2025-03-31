@@ -2,7 +2,7 @@
 
 Details about permissions.
 
-Source: [`Jira\Client\Schema\Permissions`](src/Schema/Permissions.php)
+Source: [`Jira\Client\Schema\Permissions`](/src/Schema/Permissions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

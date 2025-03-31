@@ -2,7 +2,7 @@
 
 Details about the time tracking provider.
 
-Source: [`Jira\Client\Schema\TimeTrackingProvider`](src/Schema/TimeTrackingProvider.php)
+Source: [`Jira\Client\Schema\TimeTrackingProvider`](/src/Schema/TimeTrackingProvider.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

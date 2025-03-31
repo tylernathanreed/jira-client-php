@@ -2,7 +2,7 @@
 
 A list of projects in which a user is granted permissions.
 
-Source: [`Jira\Client\Schema\PermittedProjects`](src/Schema/PermittedProjects.php)
+Source: [`Jira\Client\Schema\PermittedProjects`](/src/Schema/PermittedProjects.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

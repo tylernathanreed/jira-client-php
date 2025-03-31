@@ -1,7 +1,7 @@
 # Software Navigation Info
 
 
-Source: [`Jira\Client\Schema\SoftwareNavigationInfo`](src/Schema/SoftwareNavigationInfo.php)
+Source: [`Jira\Client\Schema\SoftwareNavigationInfo`](/src/Schema/SoftwareNavigationInfo.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

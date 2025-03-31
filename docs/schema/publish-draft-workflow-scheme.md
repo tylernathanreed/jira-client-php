@@ -2,7 +2,7 @@
 
 Details about the status mappings for publishing a draft workflow scheme.
 
-Source: [`Jira\Client\Schema\PublishDraftWorkflowScheme`](src/Schema/PublishDraftWorkflowScheme.php)
+Source: [`Jira\Client\Schema\PublishDraftWorkflowScheme`](/src/Schema/PublishDraftWorkflowScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Create Permission Request
 
 
-Source: [`Jira\Client\Schema\CreatePermissionRequest`](src/Schema/CreatePermissionRequest.php)
+Source: [`Jira\Client\Schema\CreatePermissionRequest`](/src/Schema/CreatePermissionRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

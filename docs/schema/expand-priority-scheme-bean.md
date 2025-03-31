@@ -2,7 +2,7 @@
 
 A priority scheme with less fields to be used in for an API expand response.
 
-Source: [`Jira\Client\Schema\ExpandPrioritySchemeBean`](src/Schema/ExpandPrioritySchemeBean.php)
+Source: [`Jira\Client\Schema\ExpandPrioritySchemeBean`](/src/Schema/ExpandPrioritySchemeBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

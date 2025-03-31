@@ -2,7 +2,7 @@
 
 Details about a task.
 
-Source: [`Jira\Client\Schema\TaskProgressBeanJsonNode`](src/Schema/TaskProgressBeanJsonNode.php)
+Source: [`Jira\Client\Schema\TaskProgressBeanJsonNode`](/src/Schema/TaskProgressBeanJsonNode.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

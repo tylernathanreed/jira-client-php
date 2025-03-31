@@ -16,7 +16,7 @@ class DummySourceReplacer extends Replacer
 
         $link = new Link(
             "`Jira\Client\Schema\\{$schema->name}`",
-            "src/Schema/{$schema->name}.php",
+            "/src/Schema/{$schema->name}.php",
         );
 
         return str_replace('DummySource', $link, $stub);

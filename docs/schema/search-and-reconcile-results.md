@@ -2,7 +2,7 @@
 
 The result of a JQL search with issues reconsilation.
 
-Source: [`Jira\Client\Schema\SearchAndReconcileResults`](src/Schema/SearchAndReconcileResults.php)
+Source: [`Jira\Client\Schema\SearchAndReconcileResults`](/src/Schema/SearchAndReconcileResults.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

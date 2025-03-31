@@ -4,7 +4,7 @@ A list of issues and their respective properties to set or update.
 See "Entity properties" for more information.
 See: https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
 
-Source: [`Jira\Client\Schema\MultiIssueEntityProperties`](src/Schema/MultiIssueEntityProperties.php)
+Source: [`Jira\Client\Schema\MultiIssueEntityProperties`](/src/Schema/MultiIssueEntityProperties.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

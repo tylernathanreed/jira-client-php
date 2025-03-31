@@ -2,7 +2,7 @@
 
 Details about a security scheme.
 
-Source: [`Jira\Client\Schema\SecurityScheme`](src/Schema/SecurityScheme.php)
+Source: [`Jira\Client\Schema\SecurityScheme`](/src/Schema/SecurityScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

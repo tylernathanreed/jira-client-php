@@ -2,7 +2,7 @@
 
 Represents a usage of an entity by a project ID and related issue type IDs.
 
-Source: [`Jira\Client\Schema\SimpleUsage`](src/Schema/SimpleUsage.php)
+Source: [`Jira\Client\Schema\SimpleUsage`](/src/Schema/SimpleUsage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

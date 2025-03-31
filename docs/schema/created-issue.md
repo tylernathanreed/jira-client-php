@@ -2,7 +2,7 @@
 
 Details about a created issue or subtask.
 
-Source: [`Jira\Client\Schema\CreatedIssue`](src/Schema/CreatedIssue.php)
+Source: [`Jira\Client\Schema\CreatedIssue`](/src/Schema/CreatedIssue.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

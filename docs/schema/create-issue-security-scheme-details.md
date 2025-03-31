@@ -2,7 +2,7 @@
 
 Issue security scheme and it's details
 
-Source: [`Jira\Client\Schema\CreateIssueSecuritySchemeDetails`](src/Schema/CreateIssueSecuritySchemeDetails.php)
+Source: [`Jira\Client\Schema\CreateIssueSecuritySchemeDetails`](/src/Schema/CreateIssueSecuritySchemeDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A list of editable field details.
 
-Source: [`Jira\Client\Schema\IssueUpdateMetadata`](src/Schema/IssueUpdateMetadata.php)
+Source: [`Jira\Client\Schema\IssueUpdateMetadata`](/src/Schema/IssueUpdateMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

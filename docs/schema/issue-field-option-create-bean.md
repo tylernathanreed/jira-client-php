@@ -1,7 +1,7 @@
 # Issue Field Option Create Bean
 
 
-Source: [`Jira\Client\Schema\IssueFieldOptionCreateBean`](src/Schema/IssueFieldOptionCreateBean.php)
+Source: [`Jira\Client\Schema\IssueFieldOptionCreateBean`](/src/Schema/IssueFieldOptionCreateBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

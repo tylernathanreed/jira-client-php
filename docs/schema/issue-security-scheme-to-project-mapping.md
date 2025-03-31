@@ -2,7 +2,7 @@
 
 Details about an project using security scheme mapping.
 
-Source: [`Jira\Client\Schema\IssueSecuritySchemeToProjectMapping`](src/Schema/IssueSecuritySchemeToProjectMapping.php)
+Source: [`Jira\Client\Schema\IssueSecuritySchemeToProjectMapping`](/src/Schema/IssueSecuritySchemeToProjectMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

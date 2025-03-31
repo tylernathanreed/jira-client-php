@@ -2,7 +2,7 @@
 
 Issue security level member.
 
-Source: [`Jira\Client\Schema\SecurityLevelMember`](src/Schema/SecurityLevelMember.php)
+Source: [`Jira\Client\Schema\SecurityLevelMember`](/src/Schema/SecurityLevelMember.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

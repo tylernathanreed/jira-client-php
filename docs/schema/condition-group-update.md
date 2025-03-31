@@ -2,7 +2,7 @@
 
 The conditions group associated with the transition.
 
-Source: [`Jira\Client\Schema\ConditionGroupUpdate`](src/Schema/ConditionGroupUpdate.php)
+Source: [`Jira\Client\Schema\ConditionGroupUpdate`](/src/Schema/ConditionGroupUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

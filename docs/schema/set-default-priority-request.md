@@ -2,7 +2,7 @@
 
 The new default issue priority.
 
-Source: [`Jira\Client\Schema\SetDefaultPriorityRequest`](src/Schema/SetDefaultPriorityRequest.php)
+Source: [`Jira\Client\Schema\SetDefaultPriorityRequest`](/src/Schema/SetDefaultPriorityRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

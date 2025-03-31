@@ -2,7 +2,7 @@
 
 Issue Bulk Edit Payload
 
-Source: [`Jira\Client\Schema\IssueBulkEditPayload`](src/Schema/IssueBulkEditPayload.php)
+Source: [`Jira\Client\Schema\IssueBulkEditPayload`](/src/Schema/IssueBulkEditPayload.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

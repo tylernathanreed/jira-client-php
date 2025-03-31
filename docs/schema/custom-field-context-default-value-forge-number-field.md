@@ -2,7 +2,7 @@
 
 Default value for a Forge number custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeNumberField`](src/Schema/CustomFieldContextDefaultValueForgeNumberField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeNumberField`](/src/Schema/CustomFieldContextDefaultValueForgeNumberField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

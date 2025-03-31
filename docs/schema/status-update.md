@@ -2,7 +2,7 @@
 
 Details of the status being updated.
 
-Source: [`Jira\Client\Schema\StatusUpdate`](src/Schema/StatusUpdate.php)
+Source: [`Jira\Client\Schema\StatusUpdate`](/src/Schema/StatusUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

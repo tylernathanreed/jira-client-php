@@ -1,7 +1,7 @@
 # Jira Color Field
 
 
-Source: [`Jira\Client\Schema\JiraColorField`](src/Schema/JiraColorField.php)
+Source: [`Jira\Client\Schema\JiraColorField`](/src/Schema/JiraColorField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

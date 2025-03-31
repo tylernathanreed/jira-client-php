@@ -2,7 +2,7 @@
 
 A list of custom field options for a context.
 
-Source: [`Jira\Client\Schema\CustomFieldCreatedContextOptionsList`](src/Schema/CustomFieldCreatedContextOptionsList.php)
+Source: [`Jira\Client\Schema\CustomFieldCreatedContextOptionsList`](/src/Schema/CustomFieldCreatedContextOptionsList.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

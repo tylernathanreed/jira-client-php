@@ -2,7 +2,7 @@
 
 Project list with assigned field configuration schema.
 
-Source: [`Jira\Client\Schema\FieldConfigurationSchemeProjects`](src/Schema/FieldConfigurationSchemeProjects.php)
+Source: [`Jira\Client\Schema\FieldConfigurationSchemeProjects`](/src/Schema/FieldConfigurationSchemeProjects.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -4,7 +4,7 @@ An issue ID with entity property values.
 See "Entity properties" for more information.
 See: https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
 
-Source: [`Jira\Client\Schema\IssueEntityPropertiesForMultiUpdate`](src/Schema/IssueEntityPropertiesForMultiUpdate.php)
+Source: [`Jira\Client\Schema\IssueEntityPropertiesForMultiUpdate`](/src/Schema/IssueEntityPropertiesForMultiUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 The response for status request for a running/completed export task.
 
-Source: [`Jira\Client\Schema\ExportArchivedIssuesTaskProgressResponse`](src/Schema/ExportArchivedIssuesTaskProgressResponse.php)
+Source: [`Jira\Client\Schema\ExportArchivedIssuesTaskProgressResponse`](/src/Schema/ExportArchivedIssuesTaskProgressResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

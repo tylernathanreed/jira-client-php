@@ -1,7 +1,7 @@
 # Create Issue Source Request
 
 
-Source: [`Jira\Client\Schema\CreateIssueSourceRequest`](src/Schema/CreateIssueSourceRequest.php)
+Source: [`Jira\Client\Schema\CreateIssueSourceRequest`](/src/Schema/CreateIssueSourceRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

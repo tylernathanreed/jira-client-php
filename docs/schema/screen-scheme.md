@@ -2,7 +2,7 @@
 
 A screen scheme.
 
-Source: [`Jira\Client\Schema\ScreenScheme`](src/Schema/ScreenScheme.php)
+Source: [`Jira\Client\Schema\ScreenScheme`](/src/Schema/ScreenScheme.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

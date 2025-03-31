@@ -1,7 +1,7 @@
 # Service Registry
 
 
-Source: [`Jira\Client\Schema\ServiceRegistry`](src/Schema/ServiceRegistry.php)
+Source: [`Jira\Client\Schema\ServiceRegistry`](/src/Schema/ServiceRegistry.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

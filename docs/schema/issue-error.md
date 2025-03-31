@@ -2,7 +2,7 @@
 
 Describes the error that occurred when retrieving data for a particular issue.
 
-Source: [`Jira\Client\Schema\IssueError`](src/Schema/IssueError.php)
+Source: [`Jira\Client\Schema\IssueError`](/src/Schema/IssueError.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Identifiers for a project.
 
-Source: [`Jira\Client\Schema\ProjectIdentifiers`](src/Schema/ProjectIdentifiers.php)
+Source: [`Jira\Client\Schema\ProjectIdentifiers`](/src/Schema/ProjectIdentifiers.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

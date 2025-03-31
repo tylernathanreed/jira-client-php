@@ -2,7 +2,7 @@
 
 A field within a field configuration.
 
-Source: [`Jira\Client\Schema\FieldConfigurationItem`](src/Schema/FieldConfigurationItem.php)
+Source: [`Jira\Client\Schema\FieldConfigurationItem`](/src/Schema/FieldConfigurationItem.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

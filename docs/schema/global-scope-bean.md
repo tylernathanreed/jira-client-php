@@ -1,7 +1,7 @@
 # Global Scope Bean
 
 
-Source: [`Jira\Client\Schema\GlobalScopeBean`](src/Schema/GlobalScopeBean.php)
+Source: [`Jira\Client\Schema\GlobalScopeBean`](/src/Schema/GlobalScopeBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

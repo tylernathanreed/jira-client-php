@@ -2,7 +2,7 @@
 
 The configuration of the rule.
 
-Source: [`Jira\Client\Schema\WorkflowRuleConfiguration`](src/Schema/WorkflowRuleConfiguration.php)
+Source: [`Jira\Client\Schema\WorkflowRuleConfiguration`](/src/Schema/WorkflowRuleConfiguration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

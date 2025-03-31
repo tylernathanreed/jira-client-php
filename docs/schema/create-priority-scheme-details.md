@@ -2,7 +2,7 @@
 
 Details of a new priority scheme
 
-Source: [`Jira\Client\Schema\CreatePrioritySchemeDetails`](src/Schema/CreatePrioritySchemeDetails.php)
+Source: [`Jira\Client\Schema\CreatePrioritySchemeDetails`](/src/Schema/CreatePrioritySchemeDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

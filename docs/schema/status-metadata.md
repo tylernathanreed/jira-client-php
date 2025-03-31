@@ -2,7 +2,7 @@
 
 The details of the statuses in the associated workflows.
 
-Source: [`Jira\Client\Schema\StatusMetadata`](src/Schema/StatusMetadata.php)
+Source: [`Jira\Client\Schema\StatusMetadata`](/src/Schema/StatusMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

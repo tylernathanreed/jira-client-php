@@ -2,7 +2,7 @@
 
 Details of scheme and new default level.
 
-Source: [`Jira\Client\Schema\DefaultLevelValue`](src/Schema/DefaultLevelValue.php)
+Source: [`Jira\Client\Schema\DefaultLevelValue`](/src/Schema/DefaultLevelValue.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

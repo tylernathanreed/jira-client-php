@@ -1,7 +1,7 @@
 # Workflow Read Request
 
 
-Source: [`Jira\Client\Schema\WorkflowReadRequest`](src/Schema/WorkflowReadRequest.php)
+Source: [`Jira\Client\Schema\WorkflowReadRequest`](/src/Schema/WorkflowReadRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

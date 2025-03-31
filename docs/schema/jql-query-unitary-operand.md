@@ -2,7 +2,7 @@
 
 An operand that can be part of a list operand.
 
-Source: [`Jira\Client\Schema\JqlQueryUnitaryOperand`](src/Schema/JqlQueryUnitaryOperand.php)
+Source: [`Jira\Client\Schema\JqlQueryUnitaryOperand`](/src/Schema/JqlQueryUnitaryOperand.php)
 
 *None*
 

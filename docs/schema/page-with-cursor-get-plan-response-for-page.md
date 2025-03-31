@@ -1,7 +1,7 @@
 # Page With Cursor Get Plan Response For Page
 
 
-Source: [`Jira\Client\Schema\PageWithCursorGetPlanResponseForPage`](src/Schema/PageWithCursorGetPlanResponseForPage.php)
+Source: [`Jira\Client\Schema\PageWithCursorGetPlanResponseForPage`](/src/Schema/PageWithCursorGetPlanResponseForPage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

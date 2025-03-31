@@ -2,7 +2,7 @@
 
 Details about system and custom avatars.
 
-Source: [`Jira\Client\Schema\Avatars`](src/Schema/Avatars.php)
+Source: [`Jira\Client\Schema\Avatars`](/src/Schema/Avatars.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

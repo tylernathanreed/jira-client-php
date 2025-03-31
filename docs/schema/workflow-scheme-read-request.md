@@ -2,7 +2,7 @@
 
 The workflow scheme read request body.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeReadRequest`](src/Schema/WorkflowSchemeReadRequest.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeReadRequest`](/src/Schema/WorkflowSchemeReadRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

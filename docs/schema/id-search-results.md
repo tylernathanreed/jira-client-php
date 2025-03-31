@@ -3,7 +3,7 @@
 Result of your JQL search.
 Returns a list of issue IDs and a token to fetch the next page if one exists.
 
-Source: [`Jira\Client\Schema\IdSearchResults`](src/Schema/IdSearchResults.php)
+Source: [`Jira\Client\Schema\IdSearchResults`](/src/Schema/IdSearchResults.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

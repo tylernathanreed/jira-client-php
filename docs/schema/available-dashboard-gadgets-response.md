@@ -2,7 +2,7 @@
 
 The list of available gadgets.
 
-Source: [`Jira\Client\Schema\AvailableDashboardGadgetsResponse`](src/Schema/AvailableDashboardGadgetsResponse.php)
+Source: [`Jira\Client\Schema\AvailableDashboardGadgetsResponse`](/src/Schema/AvailableDashboardGadgetsResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

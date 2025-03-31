@@ -2,7 +2,7 @@
 
 The default value for a Forge object custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeObjectField`](src/Schema/CustomFieldContextDefaultValueForgeObjectField.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueForgeObjectField`](/src/Schema/CustomFieldContextDefaultValueForgeObjectField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

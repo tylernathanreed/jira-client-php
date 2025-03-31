@@ -2,7 +2,7 @@
 
 Mapping of an issue type to a context.
 
-Source: [`Jira\Client\Schema\IssueTypeToContextMapping`](src/Schema/IssueTypeToContextMapping.php)
+Source: [`Jira\Client\Schema\IssueTypeToContextMapping`](/src/Schema/IssueTypeToContextMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

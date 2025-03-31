@@ -2,7 +2,7 @@
 
 Status mapping for statuses in source workflow to respective target status in target workflow.
 
-Source: [`Jira\Client\Schema\TargetStatus`](src/Schema/TargetStatus.php)
+Source: [`Jira\Client\Schema\TargetStatus`](/src/Schema/TargetStatus.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

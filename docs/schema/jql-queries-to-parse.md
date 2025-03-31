@@ -2,7 +2,7 @@
 
 A list of JQL queries to parse.
 
-Source: [`Jira\Client\Schema\JqlQueriesToParse`](src/Schema/JqlQueriesToParse.php)
+Source: [`Jira\Client\Schema\JqlQueriesToParse`](/src/Schema/JqlQueriesToParse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Jira Date Field
 
 
-Source: [`Jira\Client\Schema\JiraDateField`](src/Schema/JiraDateField.php)
+Source: [`Jira\Client\Schema\JiraDateField`](/src/Schema/JiraDateField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

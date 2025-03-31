@@ -2,7 +2,7 @@
 
 Details of an issue navigator column item.
 
-Source: [`Jira\Client\Schema\ColumnItem`](src/Schema/ColumnItem.php)
+Source: [`Jira\Client\Schema\ColumnItem`](/src/Schema/ColumnItem.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

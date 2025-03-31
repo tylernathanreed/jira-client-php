@@ -2,7 +2,7 @@
 
 The project.
 
-Source: [`Jira\Client\Schema\StatusProjectUsage`](src/Schema/StatusProjectUsage.php)
+Source: [`Jira\Client\Schema\StatusProjectUsage`](/src/Schema/StatusProjectUsage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Jira Version Field
 
 
-Source: [`Jira\Client\Schema\JiraVersionField`](src/Schema/JiraVersionField.php)
+Source: [`Jira\Client\Schema\JiraVersionField`](/src/Schema/JiraVersionField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

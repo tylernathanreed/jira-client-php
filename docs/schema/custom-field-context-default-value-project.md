@@ -2,7 +2,7 @@
 
 The default value for a project custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueProject`](src/Schema/CustomFieldContextDefaultValueProject.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueProject`](/src/Schema/CustomFieldContextDefaultValueProject.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

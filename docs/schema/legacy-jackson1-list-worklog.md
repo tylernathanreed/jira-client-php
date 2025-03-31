@@ -1,7 +1,7 @@
 # Legacy Jackson1 List Worklog
 
 
-Source: [`Jira\Client\Schema\LegacyJackson1ListWorklog`](src/Schema/LegacyJackson1ListWorklog.php)
+Source: [`Jira\Client\Schema\LegacyJackson1ListWorklog`](/src/Schema/LegacyJackson1ListWorklog.php)
 
 *None*
 

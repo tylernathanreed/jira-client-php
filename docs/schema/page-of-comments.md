@@ -2,7 +2,7 @@
 
 A page of comments.
 
-Source: [`Jira\Client\Schema\PageOfComments`](src/Schema/PageOfComments.php)
+Source: [`Jira\Client\Schema\PageOfComments`](/src/Schema/PageOfComments.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

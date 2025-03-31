@@ -2,7 +2,7 @@
 
 Details about the Jira instance.
 
-Source: [`Jira\Client\Schema\ServerInformation`](src/Schema/ServerInformation.php)
+Source: [`Jira\Client\Schema\ServerInformation`](/src/Schema/ServerInformation.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

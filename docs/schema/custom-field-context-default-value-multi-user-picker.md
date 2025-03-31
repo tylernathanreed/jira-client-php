@@ -2,7 +2,7 @@
 
 The default value for a User Picker (multiple) custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultiUserPicker`](src/Schema/CustomFieldContextDefaultValueMultiUserPicker.php)
+Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueMultiUserPicker`](/src/Schema/CustomFieldContextDefaultValueMultiUserPicker.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

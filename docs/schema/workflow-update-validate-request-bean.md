@@ -1,7 +1,7 @@
 # Workflow Update Validate Request Bean
 
 
-Source: [`Jira\Client\Schema\WorkflowUpdateValidateRequestBean`](src/Schema/WorkflowUpdateValidateRequestBean.php)
+Source: [`Jira\Client\Schema\WorkflowUpdateValidateRequestBean`](/src/Schema/WorkflowUpdateValidateRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

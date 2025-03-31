@@ -2,7 +2,7 @@
 
 The date the refreshed webhooks expire.
 
-Source: [`Jira\Client\Schema\WebhooksExpirationDate`](src/Schema/WebhooksExpirationDate.php)
+Source: [`Jira\Client\Schema\WebhooksExpirationDate`](/src/Schema/WebhooksExpirationDate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

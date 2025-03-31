@@ -2,7 +2,7 @@
 
 Workflows using the status.
 
-Source: [`Jira\Client\Schema\StatusWorkflowUsageDTO`](src/Schema/StatusWorkflowUsageDTO.php)
+Source: [`Jira\Client\Schema\StatusWorkflowUsageDTO`](/src/Schema/StatusWorkflowUsageDTO.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

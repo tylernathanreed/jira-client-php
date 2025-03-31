@@ -2,7 +2,7 @@
 
 A page of workflows.
 
-Source: [`Jira\Client\Schema\StatusWorkflowUsagePage`](src/Schema/StatusWorkflowUsagePage.php)
+Source: [`Jira\Client\Schema\StatusWorkflowUsagePage`](/src/Schema/StatusWorkflowUsagePage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

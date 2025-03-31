@@ -2,7 +2,7 @@
 
 Details for permissions of shareable entities
 
-Source: [`Jira\Client\Schema\PermissionDetails`](src/Schema/PermissionDetails.php)
+Source: [`Jira\Client\Schema\PermissionDetails`](/src/Schema/PermissionDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

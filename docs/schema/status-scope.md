@@ -2,7 +2,7 @@
 
 The scope of the status.
 
-Source: [`Jira\Client\Schema\StatusScope`](src/Schema/StatusScope.php)
+Source: [`Jira\Client\Schema\StatusScope`](/src/Schema/StatusScope.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

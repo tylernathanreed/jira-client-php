@@ -2,7 +2,7 @@
 
 A page of workflow schemes.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeUsagePage`](src/Schema/WorkflowSchemeUsagePage.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeUsagePage`](/src/Schema/WorkflowSchemeUsagePage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

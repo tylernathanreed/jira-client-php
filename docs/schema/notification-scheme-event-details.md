@@ -2,7 +2,7 @@
 
 Details of a notification scheme event.
 
-Source: [`Jira\Client\Schema\NotificationSchemeEventDetails`](src/Schema/NotificationSchemeEventDetails.php)
+Source: [`Jira\Client\Schema\NotificationSchemeEventDetails`](/src/Schema/NotificationSchemeEventDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

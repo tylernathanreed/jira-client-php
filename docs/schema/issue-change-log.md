@@ -2,7 +2,7 @@
 
 List of changelogs that belong to single issue
 
-Source: [`Jira\Client\Schema\IssueChangeLog`](src/Schema/IssueChangeLog.php)
+Source: [`Jira\Client\Schema\IssueChangeLog`](/src/Schema/IssueChangeLog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

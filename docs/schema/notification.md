@@ -2,7 +2,7 @@
 
 Details about a notification.
 
-Source: [`Jira\Client\Schema\Notification`](src/Schema/Notification.php)
+Source: [`Jira\Client\Schema\Notification`](/src/Schema/Notification.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Security Scheme Level Bean
 
 
-Source: [`Jira\Client\Schema\SecuritySchemeLevelBean`](src/Schema/SecuritySchemeLevelBean.php)
+Source: [`Jira\Client\Schema\SecuritySchemeLevelBean`](/src/Schema/SecuritySchemeLevelBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A screen with tab details.
 
-Source: [`Jira\Client\Schema\ScreenWithTab`](src/Schema/ScreenWithTab.php)
+Source: [`Jira\Client\Schema\ScreenWithTab`](/src/Schema/ScreenWithTab.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 List of issue transitions.
 
-Source: [`Jira\Client\Schema\Transitions`](src/Schema/Transitions.php)
+Source: [`Jira\Client\Schema\Transitions`](/src/Schema/Transitions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

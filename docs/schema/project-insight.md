@@ -2,7 +2,7 @@
 
 Additional details about a project.
 
-Source: [`Jira\Client\Schema\ProjectInsight`](src/Schema/ProjectInsight.php)
+Source: [`Jira\Client\Schema\ProjectInsight`](/src/Schema/ProjectInsight.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

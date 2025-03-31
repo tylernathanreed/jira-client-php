@@ -1,7 +1,7 @@
 # User Column Request Body
 
 
-Source: [`Jira\Client\Schema\UserColumnRequestBody`](src/Schema/UserColumnRequestBody.php)
+Source: [`Jira\Client\Schema\UserColumnRequestBody`](/src/Schema/UserColumnRequestBody.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details about a group.
 
-Source: [`Jira\Client\Schema\GroupName`](src/Schema/GroupName.php)
+Source: [`Jira\Client\Schema\GroupName`](/src/Schema/GroupName.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

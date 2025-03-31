@@ -2,7 +2,7 @@
 
 Details about the configuration of Jira.
 
-Source: [`Jira\Client\Schema\Configuration`](src/Schema/Configuration.php)
+Source: [`Jira\Client\Schema\Configuration`](/src/Schema/Configuration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

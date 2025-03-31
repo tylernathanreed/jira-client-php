@@ -1,7 +1,7 @@
 # Jira Single Select User Picker Field
 
 
-Source: [`Jira\Client\Schema\JiraSingleSelectUserPickerField`](src/Schema/JiraSingleSelectUserPickerField.php)
+Source: [`Jira\Client\Schema\JiraSingleSelectUserPickerField`](/src/Schema/JiraSingleSelectUserPickerField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

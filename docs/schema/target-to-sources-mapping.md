@@ -2,7 +2,7 @@
 
 An object representing the mapping of issues and data related to destination entities, like fields and statuses, that are required during a bulk move.
 
-Source: [`Jira\Client\Schema\TargetToSourcesMapping`](src/Schema/TargetToSourcesMapping.php)
+Source: [`Jira\Client\Schema\TargetToSourcesMapping`](/src/Schema/TargetToSourcesMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

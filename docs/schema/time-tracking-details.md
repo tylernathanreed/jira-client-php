@@ -2,7 +2,7 @@
 
 Time tracking details.
 
-Source: [`Jira\Client\Schema\TimeTrackingDetails`](src/Schema/TimeTrackingDetails.php)
+Source: [`Jira\Client\Schema\TimeTrackingDetails`](/src/Schema/TimeTrackingDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

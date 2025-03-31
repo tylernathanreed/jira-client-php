@@ -2,7 +2,7 @@
 
 Details about the complexity of the analysed Jira expression.
 
-Source: [`Jira\Client\Schema\JiraExpressionComplexity`](src/Schema/JiraExpressionComplexity.php)
+Source: [`Jira\Client\Schema\JiraExpressionComplexity`](/src/Schema/JiraExpressionComplexity.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

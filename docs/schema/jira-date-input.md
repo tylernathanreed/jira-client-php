@@ -1,7 +1,7 @@
 # Jira Date Input
 
 
-Source: [`Jira\Client\Schema\JiraDateInput`](src/Schema/JiraDateInput.php)
+Source: [`Jira\Client\Schema\JiraDateInput`](/src/Schema/JiraDateInput.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

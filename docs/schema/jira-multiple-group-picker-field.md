@@ -1,7 +1,7 @@
 # Jira Multiple Group Picker Field
 
 
-Source: [`Jira\Client\Schema\JiraMultipleGroupPickerField`](src/Schema/JiraMultipleGroupPickerField.php)
+Source: [`Jira\Client\Schema\JiraMultipleGroupPickerField`](/src/Schema/JiraMultipleGroupPickerField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

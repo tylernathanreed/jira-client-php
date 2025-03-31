@@ -2,7 +2,7 @@
 
 Details of how to filter and list search auto complete information.
 
-Source: [`Jira\Client\Schema\SearchAutoCompleteFilter`](src/Schema/SearchAutoCompleteFilter.php)
+Source: [`Jira\Client\Schema\SearchAutoCompleteFilter`](/src/Schema/SearchAutoCompleteFilter.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

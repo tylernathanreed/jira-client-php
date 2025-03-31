@@ -2,7 +2,7 @@
 
 Operations allowed on a workflow
 
-Source: [`Jira\Client\Schema\WorkflowOperations`](src/Schema/WorkflowOperations.php)
+Source: [`Jira\Client\Schema\WorkflowOperations`](/src/Schema/WorkflowOperations.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

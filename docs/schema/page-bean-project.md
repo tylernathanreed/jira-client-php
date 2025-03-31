@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanProject`](src/Schema/PageBeanProject.php)
+Source: [`Jira\Client\Schema\PageBeanProject`](/src/Schema/PageBeanProject.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

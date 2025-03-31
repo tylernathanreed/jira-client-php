@@ -1,7 +1,7 @@
 # Old To New Security Level Mappings Bean
 
 
-Source: [`Jira\Client\Schema\OldToNewSecurityLevelMappingsBean`](src/Schema/OldToNewSecurityLevelMappingsBean.php)
+Source: [`Jira\Client\Schema\OldToNewSecurityLevelMappingsBean`](/src/Schema/OldToNewSecurityLevelMappingsBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

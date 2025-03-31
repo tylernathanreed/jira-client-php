@@ -1,7 +1,7 @@
 # Create Update Role Request Bean
 
 
-Source: [`Jira\Client\Schema\CreateUpdateRoleRequestBean`](src/Schema/CreateUpdateRoleRequestBean.php)
+Source: [`Jira\Client\Schema\CreateUpdateRoleRequestBean`](/src/Schema/CreateUpdateRoleRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

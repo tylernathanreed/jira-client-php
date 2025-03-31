@@ -2,7 +2,7 @@
 
 The metadata describing an issue field.
 
-Source: [`Jira\Client\Schema\FieldMetadata`](src/Schema/FieldMetadata.php)
+Source: [`Jira\Client\Schema\FieldMetadata`](/src/Schema/FieldMetadata.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

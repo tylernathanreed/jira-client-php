@@ -1,7 +1,7 @@
 # Update User To Group Bean
 
 
-Source: [`Jira\Client\Schema\UpdateUserToGroupBean`](src/Schema/UpdateUserToGroupBean.php)
+Source: [`Jira\Client\Schema\UpdateUserToGroupBean`](/src/Schema/UpdateUserToGroupBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

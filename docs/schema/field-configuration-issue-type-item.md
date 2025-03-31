@@ -2,7 +2,7 @@
 
 The field configuration for an issue type.
 
-Source: [`Jira\Client\Schema\FieldConfigurationIssueTypeItem`](src/Schema/FieldConfigurationIssueTypeItem.php)
+Source: [`Jira\Client\Schema\FieldConfigurationIssueTypeItem`](/src/Schema/FieldConfigurationIssueTypeItem.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

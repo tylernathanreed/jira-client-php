@@ -1,7 +1,7 @@
 # Attachment Archive Entry
 
 
-Source: [`Jira\Client\Schema\AttachmentArchiveEntry`](src/Schema/AttachmentArchiveEntry.php)
+Source: [`Jira\Client\Schema\AttachmentArchiveEntry`](/src/Schema/AttachmentArchiveEntry.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

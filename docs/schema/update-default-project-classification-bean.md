@@ -2,7 +2,7 @@
 
 The request for updating the default project classification level.
 
-Source: [`Jira\Client\Schema\UpdateDefaultProjectClassificationBean`](src/Schema/UpdateDefaultProjectClassificationBean.php)
+Source: [`Jira\Client\Schema\UpdateDefaultProjectClassificationBean`](/src/Schema/UpdateDefaultProjectClassificationBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

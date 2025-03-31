@@ -2,7 +2,7 @@
 
 The hierarchy of issue types within a project.
 
-Source: [`Jira\Client\Schema\ProjectIssueTypeHierarchy`](src/Schema/ProjectIssueTypeHierarchy.php)
+Source: [`Jira\Client\Schema\ProjectIssueTypeHierarchy`](/src/Schema/ProjectIssueTypeHierarchy.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

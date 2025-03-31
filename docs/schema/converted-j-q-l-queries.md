@@ -2,7 +2,7 @@
 
 The converted JQL queries.
 
-Source: [`Jira\Client\Schema\ConvertedJQLQueries`](src/Schema/ConvertedJQLQueries.php)
+Source: [`Jira\Client\Schema\ConvertedJQLQueries`](/src/Schema/ConvertedJQLQueries.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of a context to project association.
 
-Source: [`Jira\Client\Schema\CustomFieldContextProjectMapping`](src/Schema/CustomFieldContextProjectMapping.php)
+Source: [`Jira\Client\Schema\CustomFieldContextProjectMapping`](/src/Schema/CustomFieldContextProjectMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of notifications which should be added to the notification scheme.
 
-Source: [`Jira\Client\Schema\AddNotificationsDetails`](src/Schema/AddNotificationsDetails.php)
+Source: [`Jira\Client\Schema\AddNotificationsDetails`](/src/Schema/AddNotificationsDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

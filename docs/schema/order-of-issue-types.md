@@ -2,7 +2,7 @@
 
 An ordered list of issue type IDs and information about where to move them.
 
-Source: [`Jira\Client\Schema\OrderOfIssueTypes`](src/Schema/OrderOfIssueTypes.php)
+Source: [`Jira\Client\Schema\OrderOfIssueTypes`](/src/Schema/OrderOfIssueTypes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

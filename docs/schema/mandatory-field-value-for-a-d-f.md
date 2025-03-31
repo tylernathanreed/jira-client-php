@@ -2,7 +2,7 @@
 
 An object notation input
 
-Source: [`Jira\Client\Schema\MandatoryFieldValueForADF`](src/Schema/MandatoryFieldValueForADF.php)
+Source: [`Jira\Client\Schema\MandatoryFieldValueForADF`](/src/Schema/MandatoryFieldValueForADF.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

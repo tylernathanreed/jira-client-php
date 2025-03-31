@@ -2,7 +2,7 @@
 
 List of Issue Ids Or Keys that are to be archived or unarchived
 
-Source: [`Jira\Client\Schema\IssueArchivalSyncRequest`](src/Schema/IssueArchivalSyncRequest.php)
+Source: [`Jira\Client\Schema\IssueArchivalSyncRequest`](/src/Schema/IssueArchivalSyncRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

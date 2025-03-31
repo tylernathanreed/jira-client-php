@@ -2,7 +2,7 @@
 
 The list of features on a project.
 
-Source: [`Jira\Client\Schema\ContainerForProjectFeatures`](src/Schema/ContainerForProjectFeatures.php)
+Source: [`Jira\Client\Schema\ContainerForProjectFeatures`](/src/Schema/ContainerForProjectFeatures.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

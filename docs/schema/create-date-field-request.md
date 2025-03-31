@@ -1,7 +1,7 @@
 # Create Date Field Request
 
 
-Source: [`Jira\Client\Schema\CreateDateFieldRequest`](src/Schema/CreateDateFieldRequest.php)
+Source: [`Jira\Client\Schema\CreateDateFieldRequest`](/src/Schema/CreateDateFieldRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

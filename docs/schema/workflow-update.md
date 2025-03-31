@@ -2,7 +2,7 @@
 
 The details of the workflows to update.
 
-Source: [`Jira\Client\Schema\WorkflowUpdate`](src/Schema/WorkflowUpdate.php)
+Source: [`Jira\Client\Schema\WorkflowUpdate`](/src/Schema/WorkflowUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

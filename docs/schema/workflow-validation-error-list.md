@@ -1,7 +1,7 @@
 # Workflow Validation Error List
 
 
-Source: [`Jira\Client\Schema\WorkflowValidationErrorList`](src/Schema/WorkflowValidationErrorList.php)
+Source: [`Jira\Client\Schema\WorkflowValidationErrorList`](/src/Schema/WorkflowValidationErrorList.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A project's sender email address.
 
-Source: [`Jira\Client\Schema\ProjectEmailAddress`](src/Schema/ProjectEmailAddress.php)
+Source: [`Jira\Client\Schema\ProjectEmailAddress`](/src/Schema/ProjectEmailAddress.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

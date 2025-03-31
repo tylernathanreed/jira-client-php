@@ -1,7 +1,7 @@
 # Permissions Keys Bean
 
 
-Source: [`Jira\Client\Schema\PermissionsKeysBean`](src/Schema/PermissionsKeysBean.php)
+Source: [`Jira\Client\Schema\PermissionsKeysBean`](/src/Schema/PermissionsKeysBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

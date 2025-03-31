@@ -2,7 +2,7 @@
 
 Details of the identifiers for a created or updated remote issue link.
 
-Source: [`Jira\Client\Schema\RemoteIssueLinkIdentifies`](src/Schema/RemoteIssueLinkIdentifies.php)
+Source: [`Jira\Client\Schema\RemoteIssueLinkIdentifies`](/src/Schema/RemoteIssueLinkIdentifies.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

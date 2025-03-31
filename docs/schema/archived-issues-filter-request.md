@@ -2,7 +2,7 @@
 
 Details of a filter for exporting archived issues.
 
-Source: [`Jira\Client\Schema\ArchivedIssuesFilterRequest`](src/Schema/ArchivedIssuesFilterRequest.php)
+Source: [`Jira\Client\Schema\ArchivedIssuesFilterRequest`](/src/Schema/ArchivedIssuesFilterRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

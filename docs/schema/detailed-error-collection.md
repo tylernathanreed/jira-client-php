@@ -1,7 +1,7 @@
 # Detailed Error Collection
 
 
-Source: [`Jira\Client\Schema\DetailedErrorCollection`](src/Schema/DetailedErrorCollection.php)
+Source: [`Jira\Client\Schema\DetailedErrorCollection`](/src/Schema/DetailedErrorCollection.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

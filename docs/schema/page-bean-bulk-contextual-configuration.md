@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanBulkContextualConfiguration`](src/Schema/PageBeanBulkContextualConfiguration.php)
+Source: [`Jira\Client\Schema\PageBeanBulkContextualConfiguration`](/src/Schema/PageBeanBulkContextualConfiguration.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

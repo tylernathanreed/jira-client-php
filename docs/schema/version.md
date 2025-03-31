@@ -2,7 +2,7 @@
 
 Details about a project version.
 
-Source: [`Jira\Client\Schema\Version`](src/Schema/Version.php)
+Source: [`Jira\Client\Schema\Version`](/src/Schema/Version.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

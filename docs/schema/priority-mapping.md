@@ -2,7 +2,7 @@
 
 Mapping of issue priorities for changes in priority schemes.
 
-Source: [`Jira\Client\Schema\PriorityMapping`](src/Schema/PriorityMapping.php)
+Source: [`Jira\Client\Schema\PriorityMapping`](/src/Schema/PriorityMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

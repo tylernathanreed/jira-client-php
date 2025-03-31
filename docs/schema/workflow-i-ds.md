@@ -2,7 +2,7 @@
 
 The classic workflow identifiers.
 
-Source: [`Jira\Client\Schema\WorkflowIDs`](src/Schema/WorkflowIDs.php)
+Source: [`Jira\Client\Schema\WorkflowIDs`](/src/Schema/WorkflowIDs.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

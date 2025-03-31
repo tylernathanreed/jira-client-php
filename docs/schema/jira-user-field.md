@@ -1,7 +1,7 @@
 # Jira User Field
 
 
-Source: [`Jira\Client\Schema\JiraUserField`](src/Schema/JiraUserField.php)
+Source: [`Jira\Client\Schema\JiraUserField`](/src/Schema/JiraUserField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

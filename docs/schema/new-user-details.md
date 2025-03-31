@@ -2,7 +2,7 @@
 
 The user details.
 
-Source: [`Jira\Client\Schema\NewUserDetails`](src/Schema/NewUserDetails.php)
+Source: [`Jira\Client\Schema\NewUserDetails`](/src/Schema/NewUserDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

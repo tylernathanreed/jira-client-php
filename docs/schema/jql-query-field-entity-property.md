@@ -2,7 +2,7 @@
 
 Details of an entity property.
 
-Source: [`Jira\Client\Schema\JqlQueryFieldEntityProperty`](src/Schema/JqlQueryFieldEntityProperty.php)
+Source: [`Jira\Client\Schema\JqlQueryFieldEntityProperty`](/src/Schema/JqlQueryFieldEntityProperty.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

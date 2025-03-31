@@ -3,7 +3,7 @@
 A compound workflow transition rule condition.
 This object returns `nodeType` as `compound`.
 
-Source: [`Jira\Client\Schema\WorkflowCompoundCondition`](src/Schema/WorkflowCompoundCondition.php)
+Source: [`Jira\Client\Schema\WorkflowCompoundCondition`](/src/Schema/WorkflowCompoundCondition.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

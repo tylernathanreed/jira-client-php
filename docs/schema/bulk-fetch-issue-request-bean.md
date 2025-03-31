@@ -1,7 +1,7 @@
 # Bulk Fetch Issue Request Bean
 
 
-Source: [`Jira\Client\Schema\BulkFetchIssueRequestBean`](src/Schema/BulkFetchIssueRequestBean.php)
+Source: [`Jira\Client\Schema\BulkFetchIssueRequestBean`](/src/Schema/BulkFetchIssueRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

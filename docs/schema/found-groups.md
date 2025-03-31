@@ -2,7 +2,7 @@
 
 The list of groups found in a search, including header text (Showing X of Y matching groups) and total of matched groups.
 
-Source: [`Jira\Client\Schema\FoundGroups`](src/Schema/FoundGroups.php)
+Source: [`Jira\Client\Schema\FoundGroups`](/src/Schema/FoundGroups.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

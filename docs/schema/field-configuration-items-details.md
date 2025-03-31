@@ -2,7 +2,7 @@
 
 Details of field configuration items.
 
-Source: [`Jira\Client\Schema\FieldConfigurationItemsDetails`](src/Schema/FieldConfigurationItemsDetails.php)
+Source: [`Jira\Client\Schema\FieldConfigurationItemsDetails`](/src/Schema/FieldConfigurationItemsDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

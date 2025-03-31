@@ -2,7 +2,7 @@
 
 Workflow schemes using the workflow.
 
-Source: [`Jira\Client\Schema\WorkflowSchemeUsageDTO`](src/Schema/WorkflowSchemeUsageDTO.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeUsageDTO`](/src/Schema/WorkflowSchemeUsageDTO.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

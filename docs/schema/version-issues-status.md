@@ -2,7 +2,7 @@
 
 Counts of the number of issues in various statuses.
 
-Source: [`Jira\Client\Schema\VersionIssuesStatus`](src/Schema/VersionIssuesStatus.php)
+Source: [`Jira\Client\Schema\VersionIssuesStatus`](/src/Schema/VersionIssuesStatus.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

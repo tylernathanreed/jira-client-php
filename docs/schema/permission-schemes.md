@@ -2,7 +2,7 @@
 
 List of all permission schemes.
 
-Source: [`Jira\Client\Schema\PermissionSchemes`](src/Schema/PermissionSchemes.php)
+Source: [`Jira\Client\Schema\PermissionSchemes`](/src/Schema/PermissionSchemes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

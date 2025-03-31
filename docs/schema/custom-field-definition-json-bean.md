@@ -1,7 +1,7 @@
 # Custom Field Definition Json Bean
 
 
-Source: [`Jira\Client\Schema\CustomFieldDefinitionJsonBean`](src/Schema/CustomFieldDefinitionJsonBean.php)
+Source: [`Jira\Client\Schema\CustomFieldDefinitionJsonBean`](/src/Schema/CustomFieldDefinitionJsonBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

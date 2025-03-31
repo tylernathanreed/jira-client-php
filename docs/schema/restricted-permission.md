@@ -2,7 +2,7 @@
 
 Details of the permission.
 
-Source: [`Jira\Client\Schema\RestrictedPermission`](src/Schema/RestrictedPermission.php)
+Source: [`Jira\Client\Schema\RestrictedPermission`](/src/Schema/RestrictedPermission.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

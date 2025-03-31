@@ -2,7 +2,7 @@
 
 Projects using the workflow.
 
-Source: [`Jira\Client\Schema\WorkflowProjectUsageDTO`](src/Schema/WorkflowProjectUsageDTO.php)
+Source: [`Jira\Client\Schema\WorkflowProjectUsageDTO`](/src/Schema/WorkflowProjectUsageDTO.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

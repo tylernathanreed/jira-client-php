@@ -2,7 +2,7 @@
 
 List of changed worklogs.
 
-Source: [`Jira\Client\Schema\ChangedWorklogs`](src/Schema/ChangedWorklogs.php)
+Source: [`Jira\Client\Schema\ChangedWorklogs`](/src/Schema/ChangedWorklogs.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

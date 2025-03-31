@@ -2,7 +2,7 @@
 
 Details of an application role.
 
-Source: [`Jira\Client\Schema\ApplicationRole`](src/Schema/ApplicationRole.php)
+Source: [`Jira\Client\Schema\ApplicationRole`](/src/Schema/ApplicationRole.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

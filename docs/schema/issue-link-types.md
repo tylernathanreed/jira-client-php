@@ -2,7 +2,7 @@
 
 A list of issue link type beans.
 
-Source: [`Jira\Client\Schema\IssueLinkTypes`](src/Schema/IssueLinkTypes.php)
+Source: [`Jira\Client\Schema\IssueLinkTypes`](/src/Schema/IssueLinkTypes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

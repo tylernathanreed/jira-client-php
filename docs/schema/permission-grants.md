@@ -2,7 +2,7 @@
 
 List of permission grants.
 
-Source: [`Jira\Client\Schema\PermissionGrants`](src/Schema/PermissionGrants.php)
+Source: [`Jira\Client\Schema\PermissionGrants`](/src/Schema/PermissionGrants.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

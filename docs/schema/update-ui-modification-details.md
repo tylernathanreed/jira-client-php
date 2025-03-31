@@ -2,7 +2,7 @@
 
 The details of a UI modification.
 
-Source: [`Jira\Client\Schema\UpdateUiModificationDetails`](src/Schema/UpdateUiModificationDetails.php)
+Source: [`Jira\Client\Schema\UpdateUiModificationDetails`](/src/Schema/UpdateUiModificationDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

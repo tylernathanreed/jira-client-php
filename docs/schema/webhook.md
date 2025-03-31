@@ -2,7 +2,7 @@
 
 A webhook.
 
-Source: [`Jira\Client\Schema\Webhook`](src/Schema/Webhook.php)
+Source: [`Jira\Client\Schema\Webhook`](/src/Schema/Webhook.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Information about the most recent use of a field.
 
-Source: [`Jira\Client\Schema\FieldLastUsed`](src/Schema/FieldLastUsed.php)
+Source: [`Jira\Client\Schema\FieldLastUsed`](/src/Schema/FieldLastUsed.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

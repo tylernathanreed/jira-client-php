@@ -2,7 +2,7 @@
 
 Details about the mapping between issue types and a workflow.
 
-Source: [`Jira\Client\Schema\IssueTypesWorkflowMapping`](src/Schema/IssueTypesWorkflowMapping.php)
+Source: [`Jira\Client\Schema\IssueTypesWorkflowMapping`](/src/Schema/IssueTypesWorkflowMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

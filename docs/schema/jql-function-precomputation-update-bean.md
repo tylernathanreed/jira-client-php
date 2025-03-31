@@ -2,7 +2,7 @@
 
 Precomputation id and its new value.
 
-Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateBean`](src/Schema/JqlFunctionPrecomputationUpdateBean.php)
+Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateBean`](/src/Schema/JqlFunctionPrecomputationUpdateBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

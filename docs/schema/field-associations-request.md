@@ -2,7 +2,7 @@
 
 Details of field associations with projects.
 
-Source: [`Jira\Client\Schema\FieldAssociationsRequest`](src/Schema/FieldAssociationsRequest.php)
+Source: [`Jira\Client\Schema\FieldAssociationsRequest`](/src/Schema/FieldAssociationsRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

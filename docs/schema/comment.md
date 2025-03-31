@@ -2,7 +2,7 @@
 
 A comment.
 
-Source: [`Jira\Client\Schema\Comment`](src/Schema/Comment.php)
+Source: [`Jira\Client\Schema\Comment`](/src/Schema/Comment.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

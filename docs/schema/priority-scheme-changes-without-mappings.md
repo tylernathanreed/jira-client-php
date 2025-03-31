@@ -1,7 +1,7 @@
 # Priority Scheme Changes Without Mappings
 
 
-Source: [`Jira\Client\Schema\PrioritySchemeChangesWithoutMappings`](src/Schema/PrioritySchemeChangesWithoutMappings.php)
+Source: [`Jira\Client\Schema\PrioritySchemeChangesWithoutMappings`](/src/Schema/PrioritySchemeChangesWithoutMappings.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

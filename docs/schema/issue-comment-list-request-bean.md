@@ -1,7 +1,7 @@
 # Issue Comment List Request Bean
 
 
-Source: [`Jira\Client\Schema\IssueCommentListRequestBean`](src/Schema/IssueCommentListRequestBean.php)
+Source: [`Jira\Client\Schema\IssueCommentListRequestBean`](/src/Schema/IssueCommentListRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

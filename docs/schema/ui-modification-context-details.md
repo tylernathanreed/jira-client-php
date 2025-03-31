@@ -2,7 +2,7 @@
 
 The details of a UI modification's context, which define where to activate the UI modification.
 
-Source: [`Jira\Client\Schema\UiModificationContextDetails`](src/Schema/UiModificationContextDetails.php)
+Source: [`Jira\Client\Schema\UiModificationContextDetails`](/src/Schema/UiModificationContextDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

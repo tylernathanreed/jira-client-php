@@ -2,7 +2,7 @@
 
 An issue priority with sequence information.
 
-Source: [`Jira\Client\Schema\PriorityWithSequence`](src/Schema/PriorityWithSequence.php)
+Source: [`Jira\Client\Schema\PriorityWithSequence`](/src/Schema/PriorityWithSequence.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

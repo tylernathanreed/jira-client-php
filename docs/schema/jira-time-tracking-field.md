@@ -1,7 +1,7 @@
 # Jira Time Tracking Field
 
 
-Source: [`Jira\Client\Schema\JiraTimeTrackingField`](src/Schema/JiraTimeTrackingField.php)
+Source: [`Jira\Client\Schema\JiraTimeTrackingField`](/src/Schema/JiraTimeTrackingField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

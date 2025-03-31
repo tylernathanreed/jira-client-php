@@ -2,7 +2,7 @@
 
 An operand that is a user-provided value.
 
-Source: [`Jira\Client\Schema\ValueOperand`](src/Schema/ValueOperand.php)
+Source: [`Jira\Client\Schema\ValueOperand`](/src/Schema/ValueOperand.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

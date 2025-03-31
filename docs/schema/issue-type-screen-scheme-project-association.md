@@ -2,7 +2,7 @@
 
 Associated issue type screen scheme and project.
 
-Source: [`Jira\Client\Schema\IssueTypeScreenSchemeProjectAssociation`](src/Schema/IssueTypeScreenSchemeProjectAssociation.php)
+Source: [`Jira\Client\Schema\IssueTypeScreenSchemeProjectAssociation`](/src/Schema/IssueTypeScreenSchemeProjectAssociation.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

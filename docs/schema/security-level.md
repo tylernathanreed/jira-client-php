@@ -2,7 +2,7 @@
 
 Details of an issue level security item.
 
-Source: [`Jira\Client\Schema\SecurityLevel`](src/Schema/SecurityLevel.php)
+Source: [`Jira\Client\Schema\SecurityLevel`](/src/Schema/SecurityLevel.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

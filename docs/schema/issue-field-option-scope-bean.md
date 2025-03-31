@@ -1,7 +1,7 @@
 # Issue Field Option Scope Bean
 
 
-Source: [`Jira\Client\Schema\IssueFieldOptionScopeBean`](src/Schema/IssueFieldOptionScopeBean.php)
+Source: [`Jira\Client\Schema\IssueFieldOptionScopeBean`](/src/Schema/IssueFieldOptionScopeBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

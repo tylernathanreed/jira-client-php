@@ -1,7 +1,7 @@
 # Json Node
 
 
-Source: [`Jira\Client\Schema\JsonNode`](src/Schema/JsonNode.php)
+Source: [`Jira\Client\Schema\JsonNode`](/src/Schema/JsonNode.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

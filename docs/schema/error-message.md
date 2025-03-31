@@ -1,7 +1,7 @@
 # Error Message
 
 
-Source: [`Jira\Client\Schema\ErrorMessage`](src/Schema/ErrorMessage.php)
+Source: [`Jira\Client\Schema\ErrorMessage`](/src/Schema/ErrorMessage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Jira Expression Eval Context Bean
 
 
-Source: [`Jira\Client\Schema\JiraExpressionEvalContextBean`](src/Schema/JiraExpressionEvalContextBean.php)
+Source: [`Jira\Client\Schema\JiraExpressionEvalContextBean`](/src/Schema/JiraExpressionEvalContextBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

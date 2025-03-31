@@ -2,7 +2,7 @@
 
 The project issue type hierarchy.
 
-Source: [`Jira\Client\Schema\Hierarchy`](src/Schema/Hierarchy.php)
+Source: [`Jira\Client\Schema\Hierarchy`](/src/Schema/Hierarchy.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

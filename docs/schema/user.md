@@ -10,7 +10,7 @@ In this case, `accountId` returns *unknown* and all other parameters have fallba
  - User record unavailable: This usually occurs due to an internal service outage.
 In this case, all parameters have fallback values.
 
-Source: [`Jira\Client\Schema\User`](src/Schema/User.php)
+Source: [`Jira\Client\Schema\User`](/src/Schema/User.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

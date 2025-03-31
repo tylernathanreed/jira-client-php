@@ -2,7 +2,7 @@
 
 The statuses referenced in the workflow.
 
-Source: [`Jira\Client\Schema\WorkflowReferenceStatus`](src/Schema/WorkflowReferenceStatus.php)
+Source: [`Jira\Client\Schema\WorkflowReferenceStatus`](/src/Schema/WorkflowReferenceStatus.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

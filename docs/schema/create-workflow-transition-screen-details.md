@@ -2,7 +2,7 @@
 
 The details of a transition screen.
 
-Source: [`Jira\Client\Schema\CreateWorkflowTransitionScreenDetails`](src/Schema/CreateWorkflowTransitionScreenDetails.php)
+Source: [`Jira\Client\Schema\CreateWorkflowTransitionScreenDetails`](/src/Schema/CreateWorkflowTransitionScreenDetails.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

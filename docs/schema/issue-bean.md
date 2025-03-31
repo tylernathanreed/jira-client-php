@@ -2,7 +2,7 @@
 
 Details about an issue.
 
-Source: [`Jira\Client\Schema\IssueBean`](src/Schema/IssueBean.php)
+Source: [`Jira\Client\Schema\IssueBean`](/src/Schema/IssueBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

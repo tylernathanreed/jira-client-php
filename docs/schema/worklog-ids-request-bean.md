@@ -1,7 +1,7 @@
 # Worklog Ids Request Bean
 
 
-Source: [`Jira\Client\Schema\WorklogIdsRequestBean`](src/Schema/WorklogIdsRequestBean.php)
+Source: [`Jira\Client\Schema\WorklogIdsRequestBean`](/src/Schema/WorklogIdsRequestBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

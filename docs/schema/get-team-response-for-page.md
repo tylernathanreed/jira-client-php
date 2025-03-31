@@ -1,7 +1,7 @@
 # Get Team Response For Page
 
 
-Source: [`Jira\Client\Schema\GetTeamResponseForPage`](src/Schema/GetTeamResponseForPage.php)
+Source: [`Jira\Client\Schema\GetTeamResponseForPage`](/src/Schema/GetTeamResponseForPage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

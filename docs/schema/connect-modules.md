@@ -1,7 +1,7 @@
 # Connect Modules
 
 
-Source: [`Jira\Client\Schema\ConnectModules`](src/Schema/ConnectModules.php)
+Source: [`Jira\Client\Schema\ConnectModules`](/src/Schema/ConnectModules.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

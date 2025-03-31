@@ -2,7 +2,7 @@
 
 A page of items.
 
-Source: [`Jira\Client\Schema\PageBeanIssueTypeToContextMapping`](src/Schema/PageBeanIssueTypeToContextMapping.php)
+Source: [`Jira\Client\Schema\PageBeanIssueTypeToContextMapping`](/src/Schema/PageBeanIssueTypeToContextMapping.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

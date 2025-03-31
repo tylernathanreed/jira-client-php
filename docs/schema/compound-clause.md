@@ -6,7 +6,7 @@ Note that, where nesting is not defined, the parser nests JQL clauses based on t
 For example, "A OR B AND C" is parsed as "(A OR B) AND C".
 See Setting the precedence of operators for more information about precedence in JQL queries.`
 
-Source: [`Jira\Client\Schema\CompoundClause`](src/Schema/CompoundClause.php)
+Source: [`Jira\Client\Schema\CompoundClause`](/src/Schema/CompoundClause.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

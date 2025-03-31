@@ -2,7 +2,7 @@
 
 Properties that identify a published workflow.
 
-Source: [`Jira\Client\Schema\PublishedWorkflowId`](src/Schema/PublishedWorkflowId.php)
+Source: [`Jira\Client\Schema\PublishedWorkflowId`](/src/Schema/PublishedWorkflowId.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

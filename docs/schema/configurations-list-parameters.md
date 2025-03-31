@@ -2,7 +2,7 @@
 
 List of custom fields identifiers which will be used to filter configurations
 
-Source: [`Jira\Client\Schema\ConfigurationsListParameters`](src/Schema/ConfigurationsListParameters.php)
+Source: [`Jira\Client\Schema\ConfigurationsListParameters`](/src/Schema/ConfigurationsListParameters.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of configurations for a custom field.
 
-Source: [`Jira\Client\Schema\CustomFieldConfigurations`](src/Schema/CustomFieldConfigurations.php)
+Source: [`Jira\Client\Schema\CustomFieldConfigurations`](/src/Schema/CustomFieldConfigurations.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

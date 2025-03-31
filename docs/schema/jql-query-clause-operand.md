@@ -2,7 +2,7 @@
 
 Details of an operand in a JQL clause.
 
-Source: [`Jira\Client\Schema\JqlQueryClauseOperand`](src/Schema/JqlQueryClauseOperand.php)
+Source: [`Jira\Client\Schema\JqlQueryClauseOperand`](/src/Schema/JqlQueryClauseOperand.php)
 
 *None*
 

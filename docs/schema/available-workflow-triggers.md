@@ -2,7 +2,7 @@
 
 The trigger rules available.
 
-Source: [`Jira\Client\Schema\AvailableWorkflowTriggers`](src/Schema/AvailableWorkflowTriggers.php)
+Source: [`Jira\Client\Schema\AvailableWorkflowTriggers`](/src/Schema/AvailableWorkflowTriggers.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

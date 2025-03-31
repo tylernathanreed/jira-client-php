@@ -1,7 +1,7 @@
 # Jira Duration Field
 
 
-Source: [`Jira\Client\Schema\JiraDurationField`](src/Schema/JiraDurationField.php)
+Source: [`Jira\Client\Schema\JiraDurationField`](/src/Schema/JiraDurationField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

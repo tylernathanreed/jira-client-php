@@ -2,7 +2,7 @@
 
 Bulk Transition Get Available Transitions Response.
 
-Source: [`Jira\Client\Schema\BulkTransitionGetAvailableTransitions`](src/Schema/BulkTransitionGetAvailableTransitions.php)
+Source: [`Jira\Client\Schema\BulkTransitionGetAvailableTransitions`](/src/Schema/BulkTransitionGetAvailableTransitions.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

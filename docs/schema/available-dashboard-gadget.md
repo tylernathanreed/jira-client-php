@@ -2,7 +2,7 @@
 
 The details of the available dashboard gadget.
 
-Source: [`Jira\Client\Schema\AvailableDashboardGadget`](src/Schema/AvailableDashboardGadget.php)
+Source: [`Jira\Client\Schema\AvailableDashboardGadget`](/src/Schema/AvailableDashboardGadget.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

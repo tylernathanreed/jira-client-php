@@ -2,7 +2,7 @@
 
 The new default issue resolution.
 
-Source: [`Jira\Client\Schema\SetDefaultResolutionRequest`](src/Schema/SetDefaultResolutionRequest.php)
+Source: [`Jira\Client\Schema\SetDefaultResolutionRequest`](/src/Schema/SetDefaultResolutionRequest.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Get precomputations by ID response.
 
-Source: [`Jira\Client\Schema\JqlFunctionPrecomputationGetByIdResponse`](src/Schema/JqlFunctionPrecomputationGetByIdResponse.php)
+Source: [`Jira\Client\Schema\JqlFunctionPrecomputationGetByIdResponse`](/src/Schema/JqlFunctionPrecomputationGetByIdResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

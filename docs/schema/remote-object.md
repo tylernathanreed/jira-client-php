@@ -2,7 +2,7 @@
 
 The linked item.
 
-Source: [`Jira\Client\Schema\RemoteObject`](src/Schema/RemoteObject.php)
+Source: [`Jira\Client\Schema\RemoteObject`](/src/Schema/RemoteObject.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

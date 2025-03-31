@@ -1,7 +1,7 @@
 # Get Permission Holder Response
 
 
-Source: [`Jira\Client\Schema\GetPermissionHolderResponse`](src/Schema/GetPermissionHolderResponse.php)
+Source: [`Jira\Client\Schema\GetPermissionHolderResponse`](/src/Schema/GetPermissionHolderResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

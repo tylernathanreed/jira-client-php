@@ -1,7 +1,7 @@
 # Workflow Scheme Update Required Mappings Response
 
 
-Source: [`Jira\Client\Schema\WorkflowSchemeUpdateRequiredMappingsResponse`](src/Schema/WorkflowSchemeUpdateRequiredMappingsResponse.php)
+Source: [`Jira\Client\Schema\WorkflowSchemeUpdateRequiredMappingsResponse`](/src/Schema/WorkflowSchemeUpdateRequiredMappingsResponse.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

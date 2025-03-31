@@ -1,7 +1,7 @@
 # Issue Bulk Transition For Workflow
 
 
-Source: [`Jira\Client\Schema\IssueBulkTransitionForWorkflow`](src/Schema/IssueBulkTransitionForWorkflow.php)
+Source: [`Jira\Client\Schema\IssueBulkTransitionForWorkflow`](/src/Schema/IssueBulkTransitionForWorkflow.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

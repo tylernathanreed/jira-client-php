@@ -2,7 +2,7 @@
 
 The project.
 
-Source: [`Jira\Client\Schema\ProjectUsage`](src/Schema/ProjectUsage.php)
+Source: [`Jira\Client\Schema\ProjectUsage`](/src/Schema/ProjectUsage.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

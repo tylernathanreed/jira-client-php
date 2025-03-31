@@ -2,7 +2,7 @@
 
 Details of a permission and its availability to a user.
 
-Source: [`Jira\Client\Schema\UserPermission`](src/Schema/UserPermission.php)
+Source: [`Jira\Client\Schema\UserPermission`](/src/Schema/UserPermission.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

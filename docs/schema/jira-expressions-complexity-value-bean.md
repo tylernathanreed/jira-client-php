@@ -1,7 +1,7 @@
 # Jira Expressions Complexity Value Bean
 
 
-Source: [`Jira\Client\Schema\JiraExpressionsComplexityValueBean`](src/Schema/JiraExpressionsComplexityValueBean.php)
+Source: [`Jira\Client\Schema\JiraExpressionsComplexityValueBean`](/src/Schema/JiraExpressionsComplexityValueBean.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

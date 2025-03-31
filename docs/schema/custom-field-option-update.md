@@ -2,7 +2,7 @@
 
 Details of a custom field option for a context.
 
-Source: [`Jira\Client\Schema\CustomFieldOptionUpdate`](src/Schema/CustomFieldOptionUpdate.php)
+Source: [`Jira\Client\Schema\CustomFieldOptionUpdate`](/src/Schema/CustomFieldOptionUpdate.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 Details of a user or group subscribing to a filter.
 
-Source: [`Jira\Client\Schema\FilterSubscription`](src/Schema/FilterSubscription.php)
+Source: [`Jira\Client\Schema\FilterSubscription`](/src/Schema/FilterSubscription.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

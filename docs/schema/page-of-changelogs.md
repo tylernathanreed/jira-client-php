@@ -2,7 +2,7 @@
 
 A page of changelogs.
 
-Source: [`Jira\Client\Schema\PageOfChangelogs`](src/Schema/PageOfChangelogs.php)
+Source: [`Jira\Client\Schema\PageOfChangelogs`](/src/Schema/PageOfChangelogs.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

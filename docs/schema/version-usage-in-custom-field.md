@@ -2,7 +2,7 @@
 
 List of custom fields using the version.
 
-Source: [`Jira\Client\Schema\VersionUsageInCustomField`](src/Schema/VersionUsageInCustomField.php)
+Source: [`Jira\Client\Schema\VersionUsageInCustomField`](/src/Schema/VersionUsageInCustomField.php)
 
 | Property | Type | Description |
 | --- | --- | --- |

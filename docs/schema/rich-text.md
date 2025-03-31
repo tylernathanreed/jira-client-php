@@ -1,7 +1,7 @@
 # Rich Text
 
 
-Source: [`Jira\Client\Schema\RichText`](src/Schema/RichText.php)
+Source: [`Jira\Client\Schema\RichText`](/src/Schema/RichText.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
