@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PaginatedResponseIssueTypeIssueCreateMetadata`](/sr
 | Property | Type | Description |
 | --- | --- | --- |
 | `maxResults` | `int` |  |
-| `results` | [`?list<IssueTypeIssueCreateMetadata>`](/docs/schemas/issue-type-issue-create-metadata.md) |  |
+| `results` | [`?list<IssueTypeIssueCreateMetadata>`](/docs/schema/issue-type-issue-create-metadata.md) |  |
 | `startAt` | `int` |  |
 | `total` | `int` |  |
 

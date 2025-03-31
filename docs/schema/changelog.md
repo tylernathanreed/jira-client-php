@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\Changelog`](/src/Schema/Changelog.php)
 | `created` | `string` | The date on which the change took place. |
 | `historyMetadata` | `HistoryMetadata` | The history metadata associated with the changed. |
 | `id` | `string` | The ID of the changelog. |
-| `items` | [`?list<ChangeDetails>`](/docs/schemas/change-details.md) | The list of items changed. |
+| `items` | [`?list<ChangeDetails>`](/docs/schema/change-details.md) | The list of items changed. |
 
 ## References
 

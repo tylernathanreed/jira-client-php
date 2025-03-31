@@ -19,7 +19,7 @@ Source: [`Jira\Client\Schema\IssueBean`](/src/Schema/IssueBean.php)
 | `renderedFields` | `array<string,mixed>` | The rendered value of each field present on the issue. |
 | `schema` | `array<string,JsonTypeBean>` | The schema describing each field present on the issue. |
 | `self` | `string` | The URL of the issue details. |
-| `transitions` | [`?list<IssueTransition>`](/docs/schemas/issue-transition.md) | The transitions that can be performed on the issue. |
+| `transitions` | [`?list<IssueTransition>`](/docs/schema/issue-transition.md) | The transitions that can be performed on the issue. |
 | `versionedRepresentations` | `array<string,object>` | The versions of each field on the issue. |
 
 ## References

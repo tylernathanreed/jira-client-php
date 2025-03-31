@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SecuritySchemes`](/src/Schema/SecuritySchemes.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `issueSecuritySchemes` | [`?list<SecurityScheme>`](/docs/schemas/security-scheme.md) | List of security schemes. |
+| `issueSecuritySchemes` | [`?list<SecurityScheme>`](/docs/schema/security-scheme.md) | List of security schemes. |
 
 ## References
 

@@ -31,16 +31,16 @@ When they move:
 
 If `false`, you must manually move the subtasks. They will retain the parent which they had in the current project after being moved. |
 | `issueIdsOrKeys` | `?list<string>` | List of issue IDs or keys to be moved. These issues must be from the same project, have the same issue type, and be from the same parent (if they’re subtasks). |
-| `targetClassification` | [`?list<TargetClassification>`](/docs/schemas/target-classification.md) | List of the objects containing classifications in the source issues and their new values which need to be set during the bulk move operation.
+| `targetClassification` | [`?list<TargetClassification>`](/docs/schema/target-classification.md) | List of the objects containing classifications in the source issues and their new values which need to be set during the bulk move operation.
 
  *  **You should only define this property when `inferClassificationDefaults` is `false`.**
  *  **In order to provide mapping for issues which don't have a classification, use `"-1"`.** |
-| `targetMandatoryFields` | [`?list<TargetMandatoryFields>`](/docs/schemas/target-mandatory-fields.md) | List of objects containing mandatory fields in the target field configuration and new values that need to be set during the bulk move operation.
+| `targetMandatoryFields` | [`?list<TargetMandatoryFields>`](/docs/schema/target-mandatory-fields.md) | List of objects containing mandatory fields in the target field configuration and new values that need to be set during the bulk move operation.
 
 The new values will only be applied if the field is mandatory in the target project and at least one issue from the source has that field empty, or if the field context is different in the target project (e.g. project-scoped version fields).
 
 **You should only define this property when `inferFieldDefaults` is `false`.** |
-| `targetStatus` | [`?list<TargetStatus>`](/docs/schemas/target-status.md) | List of the objects containing statuses in the source workflow and their new values which need to be set during the bulk move operation.
+| `targetStatus` | [`?list<TargetStatus>`](/docs/schema/target-status.md) | List of the objects containing statuses in the source workflow and their new values which need to be set during the bulk move operation.
 
 The new values will only be applied if the source status is invalid for the target project and issue type.
 

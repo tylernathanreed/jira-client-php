@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanPrioritySchemeWithPaginatedPrioritiesAndPro
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<PrioritySchemeWithPaginatedPrioritiesAndProjects>`](/docs/schemas/priority-scheme-with-paginated-priorities-and-projects.md) | The list of items. |
+| `values` | [`?list<PrioritySchemeWithPaginatedPrioritiesAndProjects>`](/docs/schema/priority-scheme-with-paginated-priorities-and-projects.md) | The list of items. |
 
 ## References
 

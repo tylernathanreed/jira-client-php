@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\MultipleCustomFieldValuesUpdateDetails`](/src/Schem
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `updates` | [`?list<MultipleCustomFieldValuesUpdate>`](/docs/schemas/multiple-custom-field-values-update.md) |  |
+| `updates` | [`?list<MultipleCustomFieldValuesUpdate>`](/docs/schema/multiple-custom-field-values-update.md) |  |
 
 ## References
 

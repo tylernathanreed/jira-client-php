@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\Project`](/src/Schema/Project.php)
 | `archivedDate` | `string` | The date when the project was archived. |
 | `assigneeType` | `'PROJECT_LEAD'\|'UNASSIGNED'\|null` | The default assignee when creating issues for this project. |
 | `avatarUrls` | `AvatarUrlsBean` | The URLs of the project's avatars. |
-| `components` | [`?list<ProjectComponent>`](/docs/schemas/project-component.md) | List of the components contained in the project. |
+| `components` | [`?list<ProjectComponent>`](/docs/schema/project-component.md) | List of the components contained in the project. |
 | `deleted` | `bool` | Whether the project is marked as deleted. |
 | `deletedBy` | `User` | The user who marked the project as deleted. |
 | `deletedDate` | `string` | The date when the project was marked as deleted. |
@@ -23,7 +23,7 @@ Source: [`Jira\Client\Schema\Project`](/src/Schema/Project.php)
 | `insight` | `ProjectInsight` | Insights about the project. |
 | `isPrivate` | `bool` | Whether the project is private from the user's perspective. This means the user can't see the project or any associated issues. |
 | `issueTypeHierarchy` | `Hierarchy` | The issue type hierarchy for the project. |
-| `issueTypes` | [`?list<IssueTypeDetails>`](/docs/schemas/issue-type-details.md) | List of the issue types available in the project. |
+| `issueTypes` | [`?list<IssueTypeDetails>`](/docs/schema/issue-type-details.md) | List of the issue types available in the project. |
 | `key` | `string` | The key of the project. |
 | `landingPageInfo` | `ProjectLandingPageInfo` | The project landing page info. |
 | `lead` | `User` | The username of the project lead. |
@@ -39,7 +39,7 @@ Source: [`Jira\Client\Schema\Project`](/src/Schema/Project.php)
 | `style` | `'classic'\|'next-gen'\|null` | The type of the project. |
 | `url` | `string` | A link to information about this project, such as project documentation. |
 | `uuid` | `string` | Unique ID for next-gen projects. |
-| `versions` | [`?list<Version>`](/docs/schemas/version.md) | The versions defined in the project. For more information, see [Create version](#api-rest-api-3-version-post). |
+| `versions` | [`?list<Version>`](/docs/schema/version.md) | The versions defined in the project. For more information, see [Create version](#api-rest-api-3-version-post). |
 
 ## References
 

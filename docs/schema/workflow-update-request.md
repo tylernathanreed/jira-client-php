@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowUpdateRequest`](/src/Schema/WorkflowUpdateR
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statuses` | [`?list<WorkflowStatusUpdate>`](/docs/schemas/workflow-status-update.md) | The statuses to associate with the workflows. |
-| `workflows` | [`?list<WorkflowUpdate>`](/docs/schemas/workflow-update.md) | The details of the workflows to update. |
+| `statuses` | [`?list<WorkflowStatusUpdate>`](/docs/schema/workflow-status-update.md) | The statuses to associate with the workflows. |
+| `workflows` | [`?list<WorkflowUpdate>`](/docs/schema/workflow-update.md) | The details of the workflows to update. |
 
 ## References
 

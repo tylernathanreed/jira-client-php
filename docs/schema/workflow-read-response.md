@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\WorkflowReadResponse`](/src/Schema/WorkflowReadResp
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `statuses` | [`?list<JiraWorkflowStatus>`](/docs/schemas/jira-workflow-status.md) | List of statuses. |
-| `workflows` | [`?list<JiraWorkflow>`](/docs/schemas/jira-workflow.md) | List of workflows. |
+| `statuses` | [`?list<JiraWorkflowStatus>`](/docs/schema/jira-workflow-status.md) | List of statuses. |
+| `workflows` | [`?list<JiraWorkflow>`](/docs/schema/jira-workflow.md) | List of workflows. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SimpleListWrapperApplicationRole`](/src/Schema/Simp
 | Property | Type | Description |
 | --- | --- | --- |
 | `callback` | `ListWrapperCallbackApplicationRole` |  |
-| `items` | [`?list<ApplicationRole>`](/docs/schemas/application-role.md) |  |
+| `items` | [`?list<ApplicationRole>`](/docs/schema/application-role.md) |  |
 | `max-results` | `int` |  |
 | `pagingCallback` | `ListWrapperCallbackApplicationRole` |  |
 | `size` | `int` |  |

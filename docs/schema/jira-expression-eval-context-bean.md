@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JiraExpressionEvalContextBean`](/src/Schema/JiraExp
 | Property | Type | Description |
 | --- | --- | --- |
 | `board` | `int` | The ID of the board that is available under the `board` variable when evaluating the expression. |
-| `custom` | [`?list<IssueContextVariable\|JsonContextVariable\|UserContextVariable>`](/docs/schemas/custom-context-variable.md) | Custom context variables and their types. These variable types are available for use in a custom context:
+| `custom` | [`?list<IssueContextVariable\|JsonContextVariable\|UserContextVariable>`](/docs/schema/custom-context-variable.md) | Custom context variables and their types. These variable types are available for use in a custom context:
 
  *  `user`: A [user](https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#user) specified as an Atlassian account ID.
  *  `issue`: An [issue](https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#issue) specified by ID or key. All the fields of the issue object are available in the Jira expression.

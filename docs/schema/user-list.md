@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\UserList`](/src/Schema/UserList.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `end-index` | `int` | The index of the last item returned on the page. |
-| `items` | [`?list<User>`](/docs/schemas/user.md) | The list of items. |
+| `items` | [`?list<User>`](/docs/schema/user.md) | The list of items. |
 | `max-results` | `int` | The maximum number of results that could be on the page. |
 | `size` | `int` | The number of items on the page. |
 | `start-index` | `int` | The index of the first item returned on the page. |

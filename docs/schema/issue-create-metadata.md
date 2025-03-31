@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\IssueCreateMetadata`](/src/Schema/IssueCreateMetada
 | Property | Type | Description |
 | --- | --- | --- |
 | `expand` | `string` | Expand options that include additional project details in the response. |
-| `projects` | [`?list<ProjectIssueCreateMetadata>`](/docs/schemas/project-issue-create-metadata.md) | List of projects and their issue creation metadata. |
+| `projects` | [`?list<ProjectIssueCreateMetadata>`](/docs/schema/project-issue-create-metadata.md) | List of projects and their issue creation metadata. |
 
 ## References
 

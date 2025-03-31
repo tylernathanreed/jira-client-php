@@ -11,7 +11,7 @@ Source: [`Jira\Client\Schema\Worklog`](/src/Schema/Worklog.php)
 | `created` | `string` | The datetime on which the worklog was created. |
 | `id` | `string` | The ID of the worklog record. |
 | `issueId` | `string` | The ID of the issue this worklog is for. |
-| `properties` | [`?list<EntityProperty>`](/docs/schemas/entity-property.md) | Details of properties for the worklog. Optional when creating or updating a worklog. |
+| `properties` | [`?list<EntityProperty>`](/docs/schema/entity-property.md) | Details of properties for the worklog. Optional when creating or updating a worklog. |
 | `self` | `string` | The URL of the worklog item. |
 | `started` | `string` | The datetime on which the worklog effort was started. Required when creating a worklog. Optional when updating a worklog. |
 | `timeSpent` | `string` | The time spent working on the issue as days (\#d), hours (\#h), or minutes (\#m or \#). Required when creating a worklog if `timeSpentSeconds` isn't provided. Optional when updating a worklog. Cannot be provided if `timeSpentSecond` is provided. |

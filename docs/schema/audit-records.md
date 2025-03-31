@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\AuditRecords`](/src/Schema/AuditRecords.php)
 | --- | --- | --- |
 | `limit` | `int` | The requested or default limit on the number of audit items to be returned. |
 | `offset` | `int` | The number of audit items skipped before the first item in this list. |
-| `records` | [`?list<AuditRecordBean>`](/docs/schemas/audit-record-bean.md) | The list of audit items. |
+| `records` | [`?list<AuditRecordBean>`](/docs/schema/audit-record-bean.md) | The list of audit items. |
 | `total` | `int` | The total number of audit items returned. |
 
 ## References

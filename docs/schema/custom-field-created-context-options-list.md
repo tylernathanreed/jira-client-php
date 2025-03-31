@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CustomFieldCreatedContextOptionsList`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `options` | [`?list<CustomFieldContextOption>`](/docs/schemas/custom-field-context-option.md) | The created custom field options. |
+| `options` | [`?list<CustomFieldContextOption>`](/docs/schema/custom-field-context-option.md) | The created custom field options. |
 
 ## References
 

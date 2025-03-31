@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\AutoCompleteSuggestions`](/src/Schema/AutoCompleteS
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `results` | [`?list<AutoCompleteSuggestion>`](/docs/schemas/auto-complete-suggestion.md) | The list of suggested item. |
+| `results` | [`?list<AutoCompleteSuggestion>`](/docs/schema/auto-complete-suggestion.md) | The list of suggested item. |
 
 ## References
 

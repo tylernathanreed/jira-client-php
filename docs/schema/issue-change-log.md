@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueChangeLog`](/src/Schema/IssueChangeLog.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `changeHistories` | [`?list<Changelog>`](/docs/schemas/changelog.md) | List of changelogs that belongs to given issueId. |
+| `changeHistories` | [`?list<Changelog>`](/docs/schema/changelog.md) | List of changelogs that belongs to given issueId. |
 | `issueId` | `string` | The ID of the issue. |
 
 ## References

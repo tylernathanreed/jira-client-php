@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\StatusProjectUsagePage`](/src/Schema/StatusProjectU
 | Property | Type | Description |
 | --- | --- | --- |
 | `nextPageToken` | `string` | Page token for the next page of issue type usages. |
-| `values` | [`?list<StatusProjectUsage>`](/docs/schemas/status-project-usage.md) | The list of projects. |
+| `values` | [`?list<StatusProjectUsage>`](/docs/schema/status-project-usage.md) | The list of projects. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ConvertedJQLQueries`](/src/Schema/ConvertedJQLQueri
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queriesWithUnknownUsers` | [`?list<JQLQueryWithUnknownUsers>`](/docs/schemas/j-q-l-query-with-unknown-users.md) | List of queries containing user information that could not be mapped to an existing user |
+| `queriesWithUnknownUsers` | [`?list<JQLQueryWithUnknownUsers>`](/docs/schema/j-q-l-query-with-unknown-users.md) | List of queries containing user information that could not be mapped to an existing user |
 | `queryStrings` | `?list<string>` | The list of converted query strings with account IDs in place of user identifiers. |
 
 ## References

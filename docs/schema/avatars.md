@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\Avatars`](/src/Schema/Avatars.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `custom` | [`?list<Avatar>`](/docs/schemas/avatar.md) | Custom avatars list. |
-| `system` | [`?list<Avatar>`](/docs/schemas/avatar.md) | System avatars list. |
+| `custom` | [`?list<Avatar>`](/docs/schema/avatar.md) | Custom avatars list. |
+| `system` | [`?list<Avatar>`](/docs/schema/avatar.md) | System avatars list. |
 
 ## References
 

@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanChangelog`](/src/Schema/PageBeanChangelog.p
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<Changelog>`](/docs/schemas/changelog.md) | The list of items. |
+| `values` | [`?list<Changelog>`](/docs/schema/changelog.md) | The list of items. |
 
 ## References
 

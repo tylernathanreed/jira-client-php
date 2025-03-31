@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\DataClassificationLevelsBean`](/src/Schema/DataClas
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `classifications` | [`?list<DataClassificationTagBean>`](/docs/schemas/data-classification-tag-bean.md) | The data classifications. |
+| `classifications` | [`?list<DataClassificationTagBean>`](/docs/schema/data-classification-tag-bean.md) | The data classifications. |
 
 ## References
 

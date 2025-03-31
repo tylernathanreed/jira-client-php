@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\FilterSubscriptionsList`](/src/Schema/FilterSubscri
 | Property | Type | Description |
 | --- | --- | --- |
 | `end-index` | `int` | The index of the last item returned on the page. |
-| `items` | [`?list<FilterSubscription>`](/docs/schemas/filter-subscription.md) | The list of items. |
+| `items` | [`?list<FilterSubscription>`](/docs/schema/filter-subscription.md) | The list of items. |
 | `max-results` | `int` | The maximum number of results that could be on the page. |
 | `size` | `int` | The number of items on the page. |
 | `start-index` | `int` | The index of the first item returned on the page. |

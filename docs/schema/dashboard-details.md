@@ -6,9 +6,9 @@ Source: [`Jira\Client\Schema\DashboardDetails`](/src/Schema/DashboardDetails.php
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `editPermissions` | [`list<SharePermission>`](/docs/schemas/share-permission.md) | The edit permissions for the dashboard. |
+| `editPermissions` | [`list<SharePermission>`](/docs/schema/share-permission.md) | The edit permissions for the dashboard. |
 | `name` | `string` | The name of the dashboard. |
-| `sharePermissions` | [`list<SharePermission>`](/docs/schemas/share-permission.md) | The share permissions for the dashboard. |
+| `sharePermissions` | [`list<SharePermission>`](/docs/schema/share-permission.md) | The share permissions for the dashboard. |
 | `description` | `string` | The description of the dashboard. |
 
 ## References

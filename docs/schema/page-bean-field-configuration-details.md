@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanFieldConfigurationDetails`](/src/Schema/Pag
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<FieldConfigurationDetails>`](/docs/schemas/field-configuration-details.md) | The list of items. |
+| `values` | [`?list<FieldConfigurationDetails>`](/docs/schema/field-configuration-details.md) | The list of items. |
 
 ## References
 

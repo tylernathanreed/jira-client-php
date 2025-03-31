@@ -8,9 +8,9 @@ Source: [`Jira\Client\Schema\NotificationRecipients`](/src/Schema/NotificationRe
 | --- | --- | --- |
 | `assignee` | `bool` | Whether the notification should be sent to the issue's assignees. |
 | `groupIds` | `?list<string>` | List of groupIds to receive the notification. |
-| `groups` | [`?list<GroupName>`](/docs/schemas/group-name.md) | List of groups to receive the notification. |
+| `groups` | [`?list<GroupName>`](/docs/schema/group-name.md) | List of groups to receive the notification. |
 | `reporter` | `bool` | Whether the notification should be sent to the issue's reporter. |
-| `users` | [`?list<UserDetails>`](/docs/schemas/user-details.md) | List of users to receive the notification. |
+| `users` | [`?list<UserDetails>`](/docs/schema/user-details.md) | List of users to receive the notification. |
 | `voters` | `bool` | Whether the notification should be sent to the issue's voters. |
 | `watchers` | `bool` | Whether the notification should be sent to the issue's watchers. |
 

@@ -24,7 +24,7 @@ class DummyPropertiesTableReplacer extends Replacer
             if ($property->listableTypeIsRef) {
                 assert(is_string($property->listableType));
 
-                $type = new Link("`{$type}`", '/docs/schemas/' . Utils::kebab($property->listableType) . '.md');
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->listableType) . '.md');
             }
 
             $table->add([

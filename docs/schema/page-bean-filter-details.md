@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanFilterDetails`](/src/Schema/PageBeanFilterD
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<FilterDetails>`](/docs/schemas/filter-details.md) | The list of items. |
+| `values` | [`?list<FilterDetails>`](/docs/schema/filter-details.md) | The list of items. |
 
 ## References
 

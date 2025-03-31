@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\PermissionScheme`](/src/Schema/PermissionScheme.php
 | `description` | `string` | A description for the permission scheme. |
 | `expand` | `string` | The expand options available for the permission scheme. |
 | `id` | `int` | The ID of the permission scheme. |
-| `permissions` | [`?list<PermissionGrant>`](/docs/schemas/permission-grant.md) | The permission scheme to create or update. See [About permission schemes and grants](../api-group-permission-schemes/#about-permission-schemes-and-grants) for more information. |
+| `permissions` | [`?list<PermissionGrant>`](/docs/schema/permission-grant.md) | The permission scheme to create or update. See [About permission schemes and grants](../api-group-permission-schemes/#about-permission-schemes-and-grants) for more information. |
 | `scope` | `Scope` | The scope of the permission scheme. |
 | `self` | `string` | The URL of the permission scheme. |
 

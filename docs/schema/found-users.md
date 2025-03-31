@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\FoundUsers`](/src/Schema/FoundUsers.php)
 | --- | --- | --- |
 | `header` | `string` | Header text indicating the number of users in the response and the total number of users found in the search. |
 | `total` | `int` | The total number of users found in the search. |
-| `users` | [`?list<UserPickerUser>`](/docs/schemas/user-picker-user.md) |  |
+| `users` | [`?list<UserPickerUser>`](/docs/schema/user-picker-user.md) |  |
 
 ## References
 

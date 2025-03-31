@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JiraExpressionsAnalysis`](/src/Schema/JiraExpressio
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `results` | [`list<JiraExpressionAnalysis>`](/docs/schemas/jira-expression-analysis.md) | The results of Jira expressions analysis. |
+| `results` | [`list<JiraExpressionAnalysis>`](/docs/schema/jira-expression-analysis.md) | The results of Jira expressions analysis. |
 
 ## References
 

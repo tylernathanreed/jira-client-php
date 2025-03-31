@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ConnectCustomFieldValues`](/src/Schema/ConnectCusto
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `updateValueList` | [`?list<ConnectCustomFieldValue>`](/docs/schemas/connect-custom-field-value.md) | The list of custom field update details. |
+| `updateValueList` | [`?list<ConnectCustomFieldValue>`](/docs/schema/connect-custom-field-value.md) | The list of custom field update details. |
 
 ## References
 

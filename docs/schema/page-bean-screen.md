@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanScreen`](/src/Schema/PageBeanScreen.php)
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<Screen>`](/docs/schemas/screen.md) | The list of items. |
+| `values` | [`?list<Screen>`](/docs/schema/screen.md) | The list of items. |
 
 ## References
 

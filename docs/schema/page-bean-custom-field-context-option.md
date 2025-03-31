@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanCustomFieldContextOption`](/src/Schema/Page
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<CustomFieldContextOption>`](/docs/schemas/custom-field-context-option.md) | The list of items. |
+| `values` | [`?list<CustomFieldContextOption>`](/docs/schema/custom-field-context-option.md) | The list of items. |
 
 ## References
 

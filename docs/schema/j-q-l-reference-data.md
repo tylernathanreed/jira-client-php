@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\JQLReferenceData`](/src/Schema/JQLReferenceData.php
 | Property | Type | Description |
 | --- | --- | --- |
 | `jqlReservedWords` | `?list<string>` | List of JQL query reserved words. |
-| `visibleFieldNames` | [`?list<FieldReferenceData>`](/docs/schemas/field-reference-data.md) | List of fields usable in JQL queries. |
-| `visibleFunctionNames` | [`?list<FunctionReferenceData>`](/docs/schemas/function-reference-data.md) | List of functions usable in JQL queries. |
+| `visibleFieldNames` | [`?list<FieldReferenceData>`](/docs/schema/field-reference-data.md) | List of fields usable in JQL queries. |
+| `visibleFunctionNames` | [`?list<FunctionReferenceData>`](/docs/schema/function-reference-data.md) | List of functions usable in JQL queries. |
 
 ## References
 

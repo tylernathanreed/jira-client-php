@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\ProjectIssueTypesHierarchyLevel`](/src/Schema/Proje
 | Property | Type | Description |
 | --- | --- | --- |
 | `entityId` | `string` | The ID of the issue type hierarchy level. This property is deprecated, see [Change notice: Removing hierarchy level IDs from next-gen APIs](https://developer.atlassian.com/cloud/jira/platform/change-notice-removing-hierarchy-level-ids-from-next-gen-apis/). |
-| `issueTypes` | [`?list<IssueTypeInfo>`](/docs/schemas/issue-type-info.md) | The list of issue types in the hierarchy level. |
+| `issueTypes` | [`?list<IssueTypeInfo>`](/docs/schema/issue-type-info.md) | The list of issue types in the hierarchy level. |
 | `level` | `int` | The level of the issue type hierarchy level. |
 | `name` | `string` | The name of the issue type hierarchy level. |
 

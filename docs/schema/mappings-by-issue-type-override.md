@@ -9,7 +9,7 @@ Source: [`Jira\Client\Schema\MappingsByIssueTypeOverride`](/src/Schema/MappingsB
 | Property | Type | Description |
 | --- | --- | --- |
 | `issueTypeId` | `string` | The ID of the issue type for this mapping. |
-| `statusMappings` | [`list<WorkflowAssociationStatusMapping>`](/docs/schemas/workflow-association-status-mapping.md) | The list of status mappings. |
+| `statusMappings` | [`list<WorkflowAssociationStatusMapping>`](/docs/schema/workflow-association-status-mapping.md) | The list of status mappings. |
 
 ## References
 

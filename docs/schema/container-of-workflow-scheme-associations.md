@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ContainerOfWorkflowSchemeAssociations`](/src/Schema
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `values` | [`list<WorkflowSchemeAssociations>`](/docs/schemas/workflow-scheme-associations.md) | A list of workflow schemes together with projects they are associated with. |
+| `values` | [`list<WorkflowSchemeAssociations>`](/docs/schema/workflow-scheme-associations.md) | A list of workflow schemes together with projects they are associated with. |
 
 ## References
 

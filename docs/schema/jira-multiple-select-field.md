@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\JiraMultipleSelectField`](/src/Schema/JiraMultipleS
 | Property | Type | Description |
 | --- | --- | --- |
 | `fieldId` | `string` |  |
-| `options` | [`list<JiraSelectedOptionField>`](/docs/schemas/jira-selected-option-field.md) |  |
+| `options` | [`list<JiraSelectedOptionField>`](/docs/schema/jira-selected-option-field.md) |  |
 
 ## References
 

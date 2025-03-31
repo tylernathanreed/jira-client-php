@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PaginatedResponseComment`](/src/Schema/PaginatedRes
 | Property | Type | Description |
 | --- | --- | --- |
 | `maxResults` | `int` |  |
-| `results` | [`?list<Comment>`](/docs/schemas/comment.md) |  |
+| `results` | [`?list<Comment>`](/docs/schema/comment.md) |  |
 | `startAt` | `int` |  |
 | `total` | `int` |  |
 

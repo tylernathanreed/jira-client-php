@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanProjectDetails`](/src/Schema/PageBeanProjec
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<ProjectDetails>`](/docs/schemas/project-details.md) | The list of items. |
+| `values` | [`?list<ProjectDetails>`](/docs/schema/project-details.md) | The list of items. |
 
 ## References
 

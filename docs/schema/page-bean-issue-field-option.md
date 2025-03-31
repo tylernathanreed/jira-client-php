@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanIssueFieldOption`](/src/Schema/PageBeanIssu
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<IssueFieldOption>`](/docs/schemas/issue-field-option.md) | The list of items. |
+| `values` | [`?list<IssueFieldOption>`](/docs/schema/issue-field-option.md) | The list of items. |
 
 ## References
 

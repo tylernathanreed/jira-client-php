@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanVersion`](/src/Schema/PageBeanVersion.php)
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<Version>`](/docs/schemas/version.md) | The list of items. |
+| `values` | [`?list<Version>`](/docs/schema/version.md) | The list of items. |
 
 ## References
 

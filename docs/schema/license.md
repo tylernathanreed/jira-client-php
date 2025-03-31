@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\License`](/src/Schema/License.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `applications` | [`list<LicensedApplication>`](/docs/schemas/licensed-application.md) | The applications under this license. |
+| `applications` | [`list<LicensedApplication>`](/docs/schema/licensed-application.md) | The applications under this license. |
 
 ## References
 

@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanField`](/src/Schema/PageBeanField.php)
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<Field>`](/docs/schemas/field.md) | The list of items. |
+| `values` | [`?list<Field>`](/docs/schema/field.md) | The list of items. |
 
 ## References
 

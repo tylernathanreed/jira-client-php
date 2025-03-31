@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\WorkflowRules`](/src/Schema/WorkflowRules.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `conditionsTree` | `WorkflowCondition` |  |
-| `postFunctions` | [`?list<WorkflowTransitionRule>`](/docs/schemas/workflow-transition-rule.md) | The workflow post functions. |
-| `validators` | [`?list<WorkflowTransitionRule>`](/docs/schemas/workflow-transition-rule.md) | The workflow validators. |
+| `postFunctions` | [`?list<WorkflowTransitionRule>`](/docs/schema/workflow-transition-rule.md) | The workflow post functions. |
+| `validators` | [`?list<WorkflowTransitionRule>`](/docs/schema/workflow-transition-rule.md) | The workflow validators. |
 
 ## References
 

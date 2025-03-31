@@ -6,8 +6,8 @@ Source: [`Jira\Client\Schema\CreatedIssues`](/src/Schema/CreatedIssues.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `errors` | [`?list<BulkOperationErrorResult>`](/docs/schemas/bulk-operation-error-result.md) | Error details for failed issue creation requests. |
-| `issues` | [`?list<CreatedIssue>`](/docs/schemas/created-issue.md) | Details of the issues created. |
+| `errors` | [`?list<BulkOperationErrorResult>`](/docs/schema/bulk-operation-error-result.md) | Error details for failed issue creation requests. |
+| `issues` | [`?list<CreatedIssue>`](/docs/schema/created-issue.md) | Details of the issues created. |
 
 ## References
 

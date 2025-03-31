@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanSecurityLevel`](/src/Schema/PageBeanSecurit
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<SecurityLevel>`](/docs/schemas/security-level.md) | The list of items. |
+| `values` | [`?list<SecurityLevel>`](/docs/schema/security-level.md) | The list of items. |
 
 ## References
 

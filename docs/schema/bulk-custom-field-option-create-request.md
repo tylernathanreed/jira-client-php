@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\BulkCustomFieldOptionCreateRequest`](/src/Schema/Bu
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `options` | [`?list<CustomFieldOptionCreate>`](/docs/schemas/custom-field-option-create.md) | Details of options to create. |
+| `options` | [`?list<CustomFieldOptionCreate>`](/docs/schema/custom-field-option-create.md) | Details of options to create. |
 
 ## References
 

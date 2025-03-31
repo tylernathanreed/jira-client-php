@@ -7,8 +7,8 @@ Source: [`Jira\Client\Schema\CreateWorkflowDetails`](/src/Schema/CreateWorkflowD
 | Property | Type | Description |
 | --- | --- | --- |
 | `name` | `string` | The name of the workflow. The name must be unique. The maximum length is 255 characters. Characters can be separated by a whitespace but the name cannot start or end with a whitespace. |
-| `statuses` | [`list<CreateWorkflowStatusDetails>`](/docs/schemas/create-workflow-status-details.md) | The statuses of the workflow. Any status that does not include a transition is added to the workflow without a transition. |
-| `transitions` | [`list<CreateWorkflowTransitionDetails>`](/docs/schemas/create-workflow-transition-details.md) | The transitions of the workflow. For the request to be valid, these transitions must:
+| `statuses` | [`list<CreateWorkflowStatusDetails>`](/docs/schema/create-workflow-status-details.md) | The statuses of the workflow. Any status that does not include a transition is added to the workflow without a transition. |
+| `transitions` | [`list<CreateWorkflowTransitionDetails>`](/docs/schema/create-workflow-transition-details.md) | The transitions of the workflow. For the request to be valid, these transitions must:
 
  *  include one *initial* transition.
  *  not use the same name for a *global* and *directed* transition.

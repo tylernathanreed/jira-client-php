@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\SetDefaultLevelsRequest`](/src/Schema/SetDefaultLev
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultValues` | [`list<DefaultLevelValue>`](/docs/schemas/default-level-value.md) | List of objects with issue security scheme ID and new default level ID. |
+| `defaultValues` | [`list<DefaultLevelValue>`](/docs/schema/default-level-value.md) | List of objects with issue security scheme ID and new default level ID. |
 
 ## References
 

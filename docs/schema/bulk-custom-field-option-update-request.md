@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\BulkCustomFieldOptionUpdateRequest`](/src/Schema/Bu
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `options` | [`?list<CustomFieldOptionUpdate>`](/docs/schemas/custom-field-option-update.md) | Details of the options to update. |
+| `options` | [`?list<CustomFieldOptionUpdate>`](/docs/schema/custom-field-option-update.md) | Details of the options to update. |
 
 ## References
 

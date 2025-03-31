@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\PaginatedResponseFieldCreateMetadata`](/src/Schema/
 | Property | Type | Description |
 | --- | --- | --- |
 | `maxResults` | `int` |  |
-| `results` | [`?list<FieldCreateMetadata>`](/docs/schemas/field-create-metadata.md) |  |
+| `results` | [`?list<FieldCreateMetadata>`](/docs/schema/field-create-metadata.md) |  |
 | `startAt` | `int` |  |
 | `total` | `int` |  |
 

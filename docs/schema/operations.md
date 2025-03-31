@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\Operations`](/src/Schema/Operations.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `linkGroups` | [`?list<LinkGroup>`](/docs/schemas/link-group.md) | Details of the link groups defining issue operations. |
+| `linkGroups` | [`?list<LinkGroup>`](/docs/schema/link-group.md) | Details of the link groups defining issue operations. |
 
 ## References
 

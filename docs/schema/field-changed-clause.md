@@ -10,7 +10,7 @@ Source: [`Jira\Client\Schema\FieldChangedClause`](/src/Schema/FieldChangedClause
 | --- | --- | --- |
 | `field` | `JqlQueryField` |  |
 | `operator` | `'changed'` | The operator applied to the field. |
-| `predicates` | [`list<JqlQueryClauseTimePredicate>`](/docs/schemas/jql-query-clause-time-predicate.md) | The list of time predicates. |
+| `predicates` | [`list<JqlQueryClauseTimePredicate>`](/docs/schema/jql-query-clause-time-predicate.md) | The list of time predicates. |
 
 ## References
 

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\DashboardGadgetResponse`](/src/Schema/DashboardGadg
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `gadgets` | [`list<DashboardGadget>`](/docs/schemas/dashboard-gadget.md) | The list of gadgets. |
+| `gadgets` | [`list<DashboardGadget>`](/docs/schema/dashboard-gadget.md) | The list of gadgets. |
 
 ## References
 

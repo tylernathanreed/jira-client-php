@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanUiModificationDetails`](/src/Schema/PageBea
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<UiModificationDetails>`](/docs/schemas/ui-modification-details.md) | The list of items. |
+| `values` | [`?list<UiModificationDetails>`](/docs/schema/ui-modification-details.md) | The list of items. |
 
 ## References
 

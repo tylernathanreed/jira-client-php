@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\JiraWorkflowStatus`](/src/Schema/JiraWorkflowStatus
 | `scope` | `WorkflowScope` |  |
 | `statusCategory` | `'TODO'\|'IN_PROGRESS'\|'DONE'\|null` | The category of the status. |
 | `statusReference` | `string` | The reference of the status. |
-| `usages` | [`?list<ProjectIssueTypes>`](/docs/schemas/project-issue-types.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
+| `usages` | [`?list<ProjectIssueTypes>`](/docs/schema/project-issue-types.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
 
 The `statuses.usages` expand is an optional parameter that can be used when reading and updating statuses in Jira. It provides additional information about the projects and issue types associated with the requested statuses. |
 

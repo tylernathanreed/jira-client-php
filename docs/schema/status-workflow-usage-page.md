@@ -7,7 +7,7 @@ Source: [`Jira\Client\Schema\StatusWorkflowUsagePage`](/src/Schema/StatusWorkflo
 | Property | Type | Description |
 | --- | --- | --- |
 | `nextPageToken` | `string` | Page token for the next page of issue type usages. |
-| `values` | [`?list<StatusWorkflowUsageWorkflow>`](/docs/schemas/status-workflow-usage-workflow.md) | The list of statuses. |
+| `values` | [`?list<StatusWorkflowUsageWorkflow>`](/docs/schema/status-workflow-usage-workflow.md) | The list of statuses. |
 
 ## References
 

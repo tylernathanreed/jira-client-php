@@ -12,7 +12,7 @@ Source: [`Jira\Client\Schema\PageBeanFieldConfigurationIssueTypeItem`](/src/Sche
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<FieldConfigurationIssueTypeItem>`](/docs/schemas/field-configuration-issue-type-item.md) | The list of items. |
+| `values` | [`?list<FieldConfigurationIssueTypeItem>`](/docs/schema/field-configuration-issue-type-item.md) | The list of items. |
 
 ## References
 

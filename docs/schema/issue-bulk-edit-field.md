@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\IssueBulkEditField`](/src/Schema/IssueBulkEditField
 | Property | Type | Description |
 | --- | --- | --- |
 | `description` | `string` | Description of the field. |
-| `fieldOptions` | [`?list<IssueBulkOperationsFieldOption>`](/docs/schemas/issue-bulk-operations-field-option.md) | A list of options related to the field, applicable in contexts where multiple selections are allowed. |
+| `fieldOptions` | [`?list<IssueBulkOperationsFieldOption>`](/docs/schema/issue-bulk-operations-field-option.md) | A list of options related to the field, applicable in contexts where multiple selections are allowed. |
 | `id` | `string` | The unique ID of the field. |
 | `isRequired` | `bool` | Indicates whether the field is mandatory for the operation. |
 | `multiSelectFieldOptions` | `?list<string>` | Specifies supported actions (like add, replace, remove) on multi-select fields via an enum. |

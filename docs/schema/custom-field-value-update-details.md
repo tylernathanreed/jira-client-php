@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CustomFieldValueUpdateDetails`](/src/Schema/CustomF
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `updates` | [`?list<CustomFieldValueUpdate>`](/docs/schemas/custom-field-value-update.md) | The list of custom field update details. |
+| `updates` | [`?list<CustomFieldValueUpdate>`](/docs/schema/custom-field-value-update.md) | The list of custom field update details. |
 
 ## References
 
