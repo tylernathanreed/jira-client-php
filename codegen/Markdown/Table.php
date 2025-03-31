@@ -2,8 +2,6 @@
 
 namespace Jira\CodeGen\Markdown;
 
-use Jira\CodeGen\Markdown\Element;
-
 class Table extends Element
 {
     public function __construct(
@@ -12,7 +10,6 @@ class Table extends Element
 
         /** @var list<list<?string>> */
         public array $rows = [],
-
         public string $empty = '*None*',
     ) {
     }

@@ -45,6 +45,6 @@ class SchemaGenerator extends Generator implements SupportsReadmeGenerator
 
     public function getReadmeGenerator(): ReadmeGenerator
     {
-        return new SchemaReadmeGenerator;
+        return new SchemaReadmeGenerator();
     }
 }
