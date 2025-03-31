@@ -11,12 +11,8 @@ Source: [`Jira\Client\Schema\JiraStatus`](/src/Schema/JiraStatus.php)
 | `name` | `string` | The name of the status. |
 | `scope` | [`StatusScope`](/docs/schema/status-scope.md) |  |
 | `statusCategory` | `'TODO'\|'IN_PROGRESS'\|'DONE'\|null` | The category of the status. |
-| `usages` | [`?list<ProjectIssueTypes>`](/docs/schema/project-issue-types.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
-
-Projects and issue types where the status is used. Only available if the `usages` expand is requested. |
-| `workflowUsages` | [`?list<WorkflowUsages>`](/docs/schema/workflow-usages.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.
-
-The workflows that use this status. Only available if the `workflowUsages` expand is requested. |
+| `usages` | [`?list<ProjectIssueTypes>`](/docs/schema/project-issue-types.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.<br/><br/>Projects and issue types where the status is used. Only available if the `usages` expand is requested. |
+| `workflowUsages` | [`?list<WorkflowUsages>`](/docs/schema/workflow-usages.md) | Deprecated. See the [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298) for details.<br/><br/>The workflows that use this status. Only available if the `workflowUsages` expand is requested. |
 
 ## References
 

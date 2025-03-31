@@ -6,11 +6,7 @@ Source: [`Jira\Client\Schema\DefaultShareScope`](/src/Schema/DefaultShareScope.p
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `scope` | `'GLOBAL'\|'AUTHENTICATED'\|'PRIVATE'` | The scope of the default sharing for new filters and dashboards:
-
- *  `AUTHENTICATED` Shared with all logged-in users.
- *  `GLOBAL` Shared with all logged-in users. This shows as `AUTHENTICATED` in the response.
- *  `PRIVATE` Not shared with any users. |
+| `scope` | `'GLOBAL'\|'AUTHENTICATED'\|'PRIVATE'` | The scope of the default sharing for new filters and dashboards:<br/><br/> *  `AUTHENTICATED` Shared with all logged-in users.<br/> *  `GLOBAL` Shared with all logged-in users. This shows as `AUTHENTICATED` in the response.<br/> *  `PRIVATE` Not shared with any users. |
 
 ## References
 

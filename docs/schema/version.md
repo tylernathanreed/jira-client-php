@@ -10,14 +10,7 @@ Source: [`Jira\Client\Schema\Version`](/src/Schema/Version.php)
 | `archived` | `bool` | Indicates that the version is archived. Optional when creating or updating a version. |
 | `description` | `string` | The description of the version. Optional when creating or updating a version. The maximum size is 16,384 bytes. |
 | `driver` | `string` | If the expand option `driver` is used, returns the Atlassian account ID of the driver. |
-| `expand` | `string` | Use [expand](em>#expansion) to include additional information about version in the response. This parameter accepts a comma-separated list. Expand options include:
-
- *  `operations` Returns the list of operations available for this version.
- *  `issuesstatus` Returns the count of issues in this version for each of the status categories *to do*, *in progress*, *done*, and *unmapped*. The *unmapped* property contains a count of issues with a status other than *to do*, *in progress*, and *done*.
- *  `driver` Returns the Atlassian account ID of the version driver.
- *  `approvers` Returns a list containing approvers for this version.
-
-Optional for create and update. |
+| `expand` | `string` | Use [expand](em>#expansion) to include additional information about version in the response. This parameter accepts a comma-separated list. Expand options include:<br/><br/> *  `operations` Returns the list of operations available for this version.<br/> *  `issuesstatus` Returns the count of issues in this version for each of the status categories *to do*, *in progress*, *done*, and *unmapped*. The *unmapped* property contains a count of issues with a status other than *to do*, *in progress*, and *done*.<br/> *  `driver` Returns the Atlassian account ID of the version driver.<br/> *  `approvers` Returns a list containing approvers for this version.<br/><br/>Optional for create and update. |
 | `id` | `string` | The ID of the version. |
 | `issuesStatusForFixVersion` | [`VersionIssuesStatus`](/docs/schema/version-issues-status.md) | If the expand option `issuesstatus` is used, returns the count of issues in this version for each of the status categories *to do*, *in progress*, *done*, and *unmapped*. The *unmapped* property contains a count of issues with a status other than *to do*, *in progress*, and *done*. |
 | `moveUnfixedIssuesTo` | `string` | The URL of the self link to the version to which all unfixed issues are moved when a version is released. Not applicable when creating a version. Optional when updating a version. |

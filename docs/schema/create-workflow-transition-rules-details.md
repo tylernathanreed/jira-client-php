@@ -7,65 +7,8 @@ Source: [`Jira\Client\Schema\CreateWorkflowTransitionRulesDetails`](/src/Schema/
 | Property | Type | Description |
 | --- | --- | --- |
 | `conditions` | [`CreateWorkflowCondition`](/docs/schema/create-workflow-condition.md) | The workflow conditions. |
-| `postFunctions` | [`?list<CreateWorkflowTransitionRule>`](/docs/schema/create-workflow-transition-rule.md) | The workflow post functions.
-
-**Note:** The default post functions are always added to the *initial* transition, as in:
-
-    "postFunctions": [
-        {
-            "type": "IssueCreateFunction"
-        },
-        {
-            "type": "IssueReindexFunction"
-        },
-        {
-            "type": "FireIssueEventFunction",
-            "configuration": {
-                "event": {
-                    "id": "1",
-                    "name": "issue_created"
-                }
-            }
-        }
-    ]
-
-**Note:** The default post functions are always added to the *global* and *directed* transitions, as in:
-
-    "postFunctions": [
-        {
-            "type": "UpdateIssueStatusFunction"
-        },
-        {
-            "type": "CreateCommentFunction"
-        },
-        {
-            "type": "GenerateChangeHistoryFunction"
-        },
-        {
-            "type": "IssueReindexFunction"
-        },
-        {
-            "type": "FireIssueEventFunction",
-            "configuration": {
-                "event": {
-                    "id": "13",
-                    "name": "issue_generic"
-                }
-            }
-        }
-    ] |
-| `validators` | [`?list<CreateWorkflowTransitionRule>`](/docs/schema/create-workflow-transition-rule.md) | The workflow validators.
-
-**Note:** The default permission validator is always added to the *initial* transition, as in:
-
-    "validators": [
-        {
-            "type": "PermissionValidator",
-            "configuration": {
-                "permissionKey": "CREATE_ISSUES"
-            }
-        }
-    ] |
+| `postFunctions` | [`?list<CreateWorkflowTransitionRule>`](/docs/schema/create-workflow-transition-rule.md) | The workflow post functions.<br/><br/>**Note:** The default post functions are always added to the *initial* transition, as in:<br/><br/>    "postFunctions": [<br/>        {<br/>            "type": "IssueCreateFunction"<br/>        },<br/>        {<br/>            "type": "IssueReindexFunction"<br/>        },<br/>        {<br/>            "type": "FireIssueEventFunction",<br/>            "configuration": {<br/>                "event": {<br/>                    "id": "1",<br/>                    "name": "issue_created"<br/>                }<br/>            }<br/>        }<br/>    ]<br/><br/>**Note:** The default post functions are always added to the *global* and *directed* transitions, as in:<br/><br/>    "postFunctions": [<br/>        {<br/>            "type": "UpdateIssueStatusFunction"<br/>        },<br/>        {<br/>            "type": "CreateCommentFunction"<br/>        },<br/>        {<br/>            "type": "GenerateChangeHistoryFunction"<br/>        },<br/>        {<br/>            "type": "IssueReindexFunction"<br/>        },<br/>        {<br/>            "type": "FireIssueEventFunction",<br/>            "configuration": {<br/>                "event": {<br/>                    "id": "13",<br/>                    "name": "issue_generic"<br/>                }<br/>            }<br/>        }<br/>    ] |
+| `validators` | [`?list<CreateWorkflowTransitionRule>`](/docs/schema/create-workflow-transition-rule.md) | The workflow validators.<br/><br/>**Note:** The default permission validator is always added to the *initial* transition, as in:<br/><br/>    "validators": [<br/>        {<br/>            "type": "PermissionValidator",<br/>            "configuration": {<br/>                "permissionKey": "CREATE_ISSUES"<br/>            }<br/>        }<br/>    ] |
 
 ## References
 

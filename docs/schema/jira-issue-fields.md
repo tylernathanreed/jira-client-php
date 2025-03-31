@@ -5,86 +5,28 @@ Source: [`Jira\Client\Schema\JiraIssueFields`](/src/Schema/JiraIssueFields.php)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `cascadingSelectFields` | [`?list<JiraCascadingSelectField>`](/docs/schema/jira-cascading-select-field.md) | Add or clear a cascading select field:
-
- *  To add, specify `optionId` for both parent and child.
- *  To clear the child, set its `optionId` to null.
- *  To clear both, set the parent's `optionId` to null. |
-| `clearableNumberFields` | [`?list<JiraNumberField>`](/docs/schema/jira-number-field.md) | Add or clear a number field:
-
- *  To add, specify a numeric `value`.
- *  To clear, set `value` to `null`. |
-| `colorFields` | [`?list<JiraColorField>`](/docs/schema/jira-color-field.md) | Add or clear a color field:
-
- *  To add, specify the color `name`. Available colors are: `purple`, `blue`, `green`, `teal`, `yellow`, `orange`, `grey`, `dark purple`, `dark blue`, `dark green`, `dark teal`, `dark yellow`, `dark orange`, `dark grey`.
- *  To clear, set the color `name` to an empty string. |
-| `datePickerFields` | [`?list<JiraDateField>`](/docs/schema/jira-date-field.md) | Add or clear a date picker field:
-
- *  To add, specify the date in `d/mmm/yy` format or ISO format `dd-mm-yyyy`.
- *  To clear, set `formattedDate` to an empty string. |
-| `dateTimePickerFields` | [`?list<JiraDateTimeField>`](/docs/schema/jira-date-time-field.md) | Add or clear the planned start date and time:
-
- *  To add, specify the date and time in ISO format for `formattedDateTime`.
- *  To clear, provide an empty string for `formattedDateTime`. |
+| `cascadingSelectFields` | [`?list<JiraCascadingSelectField>`](/docs/schema/jira-cascading-select-field.md) | Add or clear a cascading select field:<br/><br/> *  To add, specify `optionId` for both parent and child.<br/> *  To clear the child, set its `optionId` to null.<br/> *  To clear both, set the parent's `optionId` to null. |
+| `clearableNumberFields` | [`?list<JiraNumberField>`](/docs/schema/jira-number-field.md) | Add or clear a number field:<br/><br/> *  To add, specify a numeric `value`.<br/> *  To clear, set `value` to `null`. |
+| `colorFields` | [`?list<JiraColorField>`](/docs/schema/jira-color-field.md) | Add or clear a color field:<br/><br/> *  To add, specify the color `name`. Available colors are: `purple`, `blue`, `green`, `teal`, `yellow`, `orange`, `grey`, `dark purple`, `dark blue`, `dark green`, `dark teal`, `dark yellow`, `dark orange`, `dark grey`.<br/> *  To clear, set the color `name` to an empty string. |
+| `datePickerFields` | [`?list<JiraDateField>`](/docs/schema/jira-date-field.md) | Add or clear a date picker field:<br/><br/> *  To add, specify the date in `d/mmm/yy` format or ISO format `dd-mm-yyyy`.<br/> *  To clear, set `formattedDate` to an empty string. |
+| `dateTimePickerFields` | [`?list<JiraDateTimeField>`](/docs/schema/jira-date-time-field.md) | Add or clear the planned start date and time:<br/><br/> *  To add, specify the date and time in ISO format for `formattedDateTime`.<br/> *  To clear, provide an empty string for `formattedDateTime`. |
 | `issueType` | [`JiraIssueTypeField`](/docs/schema/jira-issue-type-field.md) | Set the issue type field by providing an `issueTypeId`. |
-| `labelsFields` | [`?list<JiraLabelsField>`](/docs/schema/jira-labels-field.md) | Edit a labels field:
-
- *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
- *  To clear labels, use the `REMOVE_ALL` option with an empty `labels` array. |
-| `multipleGroupPickerFields` | [`?list<JiraMultipleGroupPickerField>`](/docs/schema/jira-multiple-group-picker-field.md) | Add or clear a multi-group picker field:
-
- *  To add groups, provide an array of groups with `groupName`s.
- *  To clear all groups, use an empty `groups` array. |
-| `multipleSelectClearableUserPickerFields` | [`?list<JiraMultipleSelectUserPickerField>`](/docs/schema/jira-multiple-select-user-picker-field.md) | Assign or unassign multiple users to/from a field:
-
- *  To assign, provide an array of user `accountId`s.
- *  To clear, set `users` to `null`. |
-| `multipleSelectFields` | [`?list<JiraMultipleSelectField>`](/docs/schema/jira-multiple-select-field.md) | Add or clear a multi-select field:
-
- *  To add, provide an array of options with `optionId`s.
- *  To clear, use an empty `options` array. |
-| `multipleVersionPickerFields` | [`?list<JiraMultipleVersionPickerField>`](/docs/schema/jira-multiple-version-picker-field.md) | Edit a multi-version picker field like Fix Versions/Affects Versions:
-
- *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
- *  To clear the field, use the `REMOVE_ALL` option with an empty `versions` array. |
-| `multiselectComponents` | [`JiraMultiSelectComponentField`](/docs/schema/jira-multi-select-component-field.md) | Edit a multi select components field:
-
- *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.
- *  To clear, use the `REMOVE_ALL` option with an empty `components` array. |
+| `labelsFields` | [`?list<JiraLabelsField>`](/docs/schema/jira-labels-field.md) | Edit a labels field:<br/><br/> *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.<br/> *  To clear labels, use the `REMOVE_ALL` option with an empty `labels` array. |
+| `multipleGroupPickerFields` | [`?list<JiraMultipleGroupPickerField>`](/docs/schema/jira-multiple-group-picker-field.md) | Add or clear a multi-group picker field:<br/><br/> *  To add groups, provide an array of groups with `groupName`s.<br/> *  To clear all groups, use an empty `groups` array. |
+| `multipleSelectClearableUserPickerFields` | [`?list<JiraMultipleSelectUserPickerField>`](/docs/schema/jira-multiple-select-user-picker-field.md) | Assign or unassign multiple users to/from a field:<br/><br/> *  To assign, provide an array of user `accountId`s.<br/> *  To clear, set `users` to `null`. |
+| `multipleSelectFields` | [`?list<JiraMultipleSelectField>`](/docs/schema/jira-multiple-select-field.md) | Add or clear a multi-select field:<br/><br/> *  To add, provide an array of options with `optionId`s.<br/> *  To clear, use an empty `options` array. |
+| `multipleVersionPickerFields` | [`?list<JiraMultipleVersionPickerField>`](/docs/schema/jira-multiple-version-picker-field.md) | Edit a multi-version picker field like Fix Versions/Affects Versions:<br/><br/> *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.<br/> *  To clear the field, use the `REMOVE_ALL` option with an empty `versions` array. |
+| `multiselectComponents` | [`JiraMultiSelectComponentField`](/docs/schema/jira-multi-select-component-field.md) | Edit a multi select components field:<br/><br/> *  Options include `ADD`, `REPLACE`, `REMOVE`, or `REMOVE_ALL` for bulk edits.<br/> *  To clear, use the `REMOVE_ALL` option with an empty `components` array. |
 | `originalEstimateField` | [`JiraDurationField`](/docs/schema/jira-duration-field.md) | Edit the original estimate field. |
 | `priority` | [`JiraPriorityField`](/docs/schema/jira-priority-field.md) | Set the priority of an issue by specifying a `priorityId`. |
-| `richTextFields` | [`?list<JiraRichTextField>`](/docs/schema/jira-rich-text-field.md) | Add or clear a rich text field:
-
- *  To add, provide `adfValue`. Note that rich text fields only support ADF values.
- *  To clear, use an empty `richText` object.
-
-For ADF format details, refer to: [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure). |
-| `singleGroupPickerFields` | [`?list<JiraSingleGroupPickerField>`](/docs/schema/jira-single-group-picker-field.md) | Add or clear a single group picker field:
-
- *  To add, specify the group with `groupName`.
- *  To clear, set `groupName` to an empty string. |
-| `singleLineTextFields` | [`?list<JiraSingleLineTextField>`](/docs/schema/jira-single-line-text-field.md) | Add or clear a single line text field:
-
- *  To add, provide the `text` value.
- *  To clear, set `text` to an empty string. |
-| `singleSelectClearableUserPickerFields` | [`?list<JiraSingleSelectUserPickerField>`](/docs/schema/jira-single-select-user-picker-field.md) | Edit assignment for single select user picker fields like Assignee/Reporter:
-
- *  To assign an issue, specify the user's `accountId`.
- *  To unassign an issue, set `user` to `null`.
- *  For automatic assignment, set `accountId` to `-1`. |
-| `singleSelectFields` | [`?list<JiraSingleSelectField>`](/docs/schema/jira-single-select-field.md) | Add or clear a single select field:
-
- *  To add, specify the option with an `optionId`.
- *  To clear, pass an option with `optionId` as `-1`. |
-| `singleVersionPickerFields` | [`?list<JiraSingleVersionPickerField>`](/docs/schema/jira-single-version-picker-field.md) | Add or clear a single version picker field:
-
- *  To add, specify the version with a `versionId`.
- *  To clear, set `versionId` to `-1`. |
+| `richTextFields` | [`?list<JiraRichTextField>`](/docs/schema/jira-rich-text-field.md) | Add or clear a rich text field:<br/><br/> *  To add, provide `adfValue`. Note that rich text fields only support ADF values.<br/> *  To clear, use an empty `richText` object.<br/><br/>For ADF format details, refer to: [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure). |
+| `singleGroupPickerFields` | [`?list<JiraSingleGroupPickerField>`](/docs/schema/jira-single-group-picker-field.md) | Add or clear a single group picker field:<br/><br/> *  To add, specify the group with `groupName`.<br/> *  To clear, set `groupName` to an empty string. |
+| `singleLineTextFields` | [`?list<JiraSingleLineTextField>`](/docs/schema/jira-single-line-text-field.md) | Add or clear a single line text field:<br/><br/> *  To add, provide the `text` value.<br/> *  To clear, set `text` to an empty string. |
+| `singleSelectClearableUserPickerFields` | [`?list<JiraSingleSelectUserPickerField>`](/docs/schema/jira-single-select-user-picker-field.md) | Edit assignment for single select user picker fields like Assignee/Reporter:<br/><br/> *  To assign an issue, specify the user's `accountId`.<br/> *  To unassign an issue, set `user` to `null`.<br/> *  For automatic assignment, set `accountId` to `-1`. |
+| `singleSelectFields` | [`?list<JiraSingleSelectField>`](/docs/schema/jira-single-select-field.md) | Add or clear a single select field:<br/><br/> *  To add, specify the option with an `optionId`.<br/> *  To clear, pass an option with `optionId` as `-1`. |
+| `singleVersionPickerFields` | [`?list<JiraSingleVersionPickerField>`](/docs/schema/jira-single-version-picker-field.md) | Add or clear a single version picker field:<br/><br/> *  To add, specify the version with a `versionId`.<br/> *  To clear, set `versionId` to `-1`. |
 | `timeTrackingField` | [`JiraTimeTrackingField`](/docs/schema/jira-time-tracking-field.md) | Edit the time tracking field. |
-| `urlFields` | [`?list<JiraUrlField>`](/docs/schema/jira-url-field.md) | Add or clear a URL field:
-
- *  To add, provide the `url` with the desired URL value.
- *  To clear, set `url` to an empty string. |
+| `urlFields` | [`?list<JiraUrlField>`](/docs/schema/jira-url-field.md) | Add or clear a URL field:<br/><br/> *  To add, provide the `url` with the desired URL value.<br/> *  To clear, set `url` to an empty string. |
 
 ## References
 

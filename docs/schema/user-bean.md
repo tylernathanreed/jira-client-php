@@ -9,10 +9,8 @@ Source: [`Jira\Client\Schema\UserBean`](/src/Schema/UserBean.php)
 | `active` | `bool` | Whether the user is active. |
 | `avatarUrls` | [`UserBeanAvatarUrls`](/docs/schema/user-bean-avatar-urls.md) | The avatars of the user. |
 | `displayName` | `string` | The display name of the user. Depending on the user’s privacy setting, this may return an alternative value. |
-| `key` | `string` | This property is deprecated in favor of `accountId` because of privacy changes. See the [migration guide](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details.  
-The key of the user. |
-| `name` | `string` | This property is deprecated in favor of `accountId` because of privacy changes. See the [migration guide](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details.  
-The username of the user. |
+| `key` | `string` | This property is deprecated in favor of `accountId` because of privacy changes. See the [migration guide](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details.  <br/>The key of the user. |
+| `name` | `string` | This property is deprecated in favor of `accountId` because of privacy changes. See the [migration guide](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/) for details.  <br/>The username of the user. |
 | `self` | `string` | The URL of the user. |
 
 ## References

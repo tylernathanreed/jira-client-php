@@ -36,7 +36,7 @@ class DummyPropertiesTableReplacer extends Replacer
             $table->add([
                 "`{$property->name}`",
                 $type instanceof Link ? $type : "`{$type}`",
-                $property->description,
+                str_replace("\n", '<br/>', (string) $property->description),
             ]);
         }
 

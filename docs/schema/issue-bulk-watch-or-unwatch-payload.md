@@ -7,9 +7,7 @@ Source: [`Jira\Client\Schema\IssueBulkWatchOrUnwatchPayload`](/src/Schema/IssueB
 | Property | Type | Description |
 | --- | --- | --- |
 | `selectedIssueIdsOrKeys` | `list<string>` | List of issue IDs or keys which are to be bulk watched or unwatched. These IDs or keys can be from different projects and issue types. |
-| `sendBulkNotification` | `bool` | A boolean value that indicates whether to send a bulk change notification when the issues are being watched or unwatched.
-
-If `true`, dispatches a bulk notification email to users about the updates. |
+| `sendBulkNotification` | `bool` | A boolean value that indicates whether to send a bulk change notification when the issues are being watched or unwatched.<br/><br/>If `true`, dispatches a bulk notification email to users about the updates. |
 
 ## References
 
