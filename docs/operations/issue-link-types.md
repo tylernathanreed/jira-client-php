@@ -1,7 +1,5 @@
 # Issue Link Types
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueLinkTypes`](/src/Operations/IssueLinkTypes.php)
 
 ## Operations

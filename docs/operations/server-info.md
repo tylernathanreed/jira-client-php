@@ -1,7 +1,5 @@
 # Server Info
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ServerInfo`](/src/Operations/ServerInfo.php)
 
 ## Operations

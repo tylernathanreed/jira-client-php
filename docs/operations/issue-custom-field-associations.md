@@ -1,7 +1,5 @@
 # Issue Custom Field Associations
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueCustomFieldAssociations`](/src/Operations/IssueCustomFieldAssociations.php)
 
 ## Operations

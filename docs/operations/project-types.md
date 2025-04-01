@@ -1,7 +1,5 @@
 # Project Types
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectTypes`](/src/Operations/ProjectTypes.php)
 
 ## Operations

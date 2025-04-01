@@ -1,7 +1,5 @@
 # Issue Worklogs
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueWorklogs`](/src/Operations/IssueWorklogs.php)
 
 ## Operations

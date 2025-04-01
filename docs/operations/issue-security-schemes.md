@@ -1,7 +1,5 @@
 # Issue Security Schemes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueSecuritySchemes`](/src/Operations/IssueSecuritySchemes.php)
 
 ## Operations

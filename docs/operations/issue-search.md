@@ -1,7 +1,5 @@
 # Issue Search
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueSearch`](/src/Operations/IssueSearch.php)
 
 ## Operations

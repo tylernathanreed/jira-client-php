@@ -1,7 +1,5 @@
 # Audit Records
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\AuditRecords`](/src/Operations/AuditRecords.php)
 
 ## Operations

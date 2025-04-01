@@ -1,7 +1,5 @@
 # Projects
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Projects`](/src/Operations/Projects.php)
 
 ## Operations

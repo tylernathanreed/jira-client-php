@@ -1,7 +1,5 @@
 # Users
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Users`](/src/Operations/Users.php)
 
 ## Operations

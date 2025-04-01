@@ -1,7 +1,5 @@
 # Issue Attachments
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueAttachments`](/src/Operations/IssueAttachments.php)
 
 ## Operations

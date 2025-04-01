@@ -1,7 +1,5 @@
 # JQL Functions Apps
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\JQLFunctionsApps`](/src/Operations/JQLFunctionsApps.php)
 
 ## Operations

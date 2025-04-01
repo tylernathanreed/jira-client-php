@@ -1,7 +1,5 @@
 # Project Classification Levels
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectClassificationLevels`](/src/Operations/ProjectClassificationLevels.php)
 
 ## Operations

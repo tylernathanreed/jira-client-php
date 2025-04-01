@@ -1,7 +1,5 @@
 # Myself
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Myself`](/src/Operations/Myself.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Teams In Plan
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\TeamsInPlan`](/src/Operations/TeamsInPlan.php)
 
 ## Operations

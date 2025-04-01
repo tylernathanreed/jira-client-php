@@ -1,7 +1,5 @@
 # Jira Expressions
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\JiraExpressions`](/src/Operations/JiraExpressions.php)
 
 ## Operations

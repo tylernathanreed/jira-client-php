@@ -1,7 +1,5 @@
 # Groups
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Groups`](/src/Operations/Groups.php)
 
 ## Operations

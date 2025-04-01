@@ -1,7 +1,5 @@
 # UI Modifications Apps
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\UIModificationsApps`](/src/Operations/UIModificationsApps.php)
 
 ## Operations

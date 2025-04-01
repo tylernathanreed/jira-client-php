@@ -1,7 +1,5 @@
 # Workflow Status Categories
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\WorkflowStatusCategories`](/src/Operations/WorkflowStatusCategories.php)
 
 ## Operations

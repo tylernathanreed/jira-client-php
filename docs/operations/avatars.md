@@ -1,7 +1,5 @@
 # Avatars
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Avatars`](/src/Operations/Avatars.php)
 
 ## Operations

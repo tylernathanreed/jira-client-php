@@ -1,7 +1,5 @@
 # Issue Comments
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueComments`](/src/Operations/IssueComments.php)
 
 ## Operations

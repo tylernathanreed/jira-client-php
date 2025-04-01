@@ -1,7 +1,5 @@
 # Usernavproperties
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Usernavproperties`](/src/Operations/Usernavproperties.php)
 
 ## Operations

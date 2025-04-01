@@ -1,7 +1,5 @@
 # Issue Resolutions
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueResolutions`](/src/Operations/IssueResolutions.php)
 
 ## Operations

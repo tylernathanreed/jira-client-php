@@ -1,7 +1,5 @@
 # DummyTitle
 
-DummyDescription
-
 Source: DummySource
 
 ## Operations

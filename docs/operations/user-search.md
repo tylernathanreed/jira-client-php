@@ -1,7 +1,5 @@
 # User Search
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\UserSearch`](/src/Operations/UserSearch.php)
 
 ## Operations

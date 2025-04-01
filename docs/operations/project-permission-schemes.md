@@ -1,7 +1,5 @@
 # Project Permission Schemes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectPermissionSchemes`](/src/Operations/ProjectPermissionSchemes.php)
 
 ## Operations

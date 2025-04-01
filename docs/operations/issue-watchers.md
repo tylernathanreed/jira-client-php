@@ -1,7 +1,5 @@
 # Issue Watchers
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueWatchers`](/src/Operations/IssueWatchers.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Issue Type Screen Schemes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueTypeScreenSchemes`](/src/Operations/IssueTypeScreenSchemes.php)
 
 ## Operations

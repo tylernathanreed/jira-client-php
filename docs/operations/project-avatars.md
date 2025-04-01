@@ -1,7 +1,5 @@
 # Project Avatars
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectAvatars`](/src/Operations/ProjectAvatars.php)
 
 ## Operations

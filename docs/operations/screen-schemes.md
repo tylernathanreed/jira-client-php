@@ -1,7 +1,5 @@
 # Screen Schemes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ScreenSchemes`](/src/Operations/ScreenSchemes.php)
 
 ## Operations

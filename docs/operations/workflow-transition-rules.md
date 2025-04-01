@@ -1,7 +1,5 @@
 # Workflow Transition Rules
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\WorkflowTransitionRules`](/src/Operations/WorkflowTransitionRules.php)
 
 ## Operations

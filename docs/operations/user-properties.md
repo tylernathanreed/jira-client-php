@@ -1,7 +1,5 @@
 # User Properties
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\UserProperties`](/src/Operations/UserProperties.php)
 
 ## Operations

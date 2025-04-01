@@ -1,7 +1,5 @@
 # Workflow Scheme Project Associations
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\WorkflowSchemeProjectAssociations`](/src/Operations/WorkflowSchemeProjectAssociations.php)
 
 ## Operations

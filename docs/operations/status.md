@@ -1,7 +1,5 @@
 # Status
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Status`](/src/Operations/Status.php)
 
 ## Operations

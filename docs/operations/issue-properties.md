@@ -1,7 +1,5 @@
 # Issue Properties
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueProperties`](/src/Operations/IssueProperties.php)
 
 ## Operations

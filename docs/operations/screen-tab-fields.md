@@ -1,7 +1,5 @@
 # Screen Tab Fields
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ScreenTabFields`](/src/Operations/ScreenTabFields.php)
 
 ## Operations

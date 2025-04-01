@@ -1,7 +1,5 @@
 # Webhooks
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Webhooks`](/src/Operations/Webhooks.php)
 
 ## Operations

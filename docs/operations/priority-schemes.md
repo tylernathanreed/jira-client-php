@@ -1,7 +1,5 @@
 # Priority Schemes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\PrioritySchemes`](/src/Operations/PrioritySchemes.php)
 
 ## Operations

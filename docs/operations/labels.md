@@ -1,7 +1,5 @@
 # Labels
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Labels`](/src/Operations/Labels.php)
 
 ## Operations

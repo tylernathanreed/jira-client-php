@@ -1,7 +1,5 @@
 # Classification Levels
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ClassificationLevels`](/src/Operations/ClassificationLevels.php)
 
 ## Operations

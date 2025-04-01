@@ -1,7 +1,5 @@
 # Issue Priorities
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssuePriorities`](/src/Operations/IssuePriorities.php)
 
 ## Operations

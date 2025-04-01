@@ -1,7 +1,5 @@
 # Tasks
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Tasks`](/src/Operations/Tasks.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Project Key And Name Validation
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectKeyAndNameValidation`](/src/Operations/ProjectKeyAndNameValidation.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Project Components
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectComponents`](/src/Operations/ProjectComponents.php)
 
 ## Operations

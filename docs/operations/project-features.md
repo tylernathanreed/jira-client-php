@@ -1,7 +1,5 @@
 # Project Features
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectFeatures`](/src/Operations/ProjectFeatures.php)
 
 ## Operations

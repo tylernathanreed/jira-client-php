@@ -1,7 +1,5 @@
 # Screens
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Screens`](/src/Operations/Screens.php)
 
 ## Operations

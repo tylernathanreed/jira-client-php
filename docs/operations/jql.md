@@ -1,7 +1,5 @@
 # JQL 
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\JQL`](/src/Operations/JQL.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Screen Tabs
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ScreenTabs`](/src/Operations/ScreenTabs.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Issue Custom Field Contexts
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueCustomFieldContexts`](/src/Operations/IssueCustomFieldContexts.php)
 
 ## Operations

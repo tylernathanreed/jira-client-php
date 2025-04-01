@@ -1,7 +1,5 @@
 # Workflows
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Workflows`](/src/Operations/Workflows.php)
 
 ## Operations

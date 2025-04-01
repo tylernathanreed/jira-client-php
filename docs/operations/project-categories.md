@@ -1,7 +1,5 @@
 # Project Categories
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectCategories`](/src/Operations/ProjectCategories.php)
 
 ## Operations

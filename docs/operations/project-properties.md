@@ -1,7 +1,5 @@
 # Project Properties
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectProperties`](/src/Operations/ProjectProperties.php)
 
 ## Operations

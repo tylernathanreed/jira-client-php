@@ -1,7 +1,5 @@
 # Time Tracking
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\TimeTracking`](/src/Operations/TimeTracking.php)
 
 ## Operations

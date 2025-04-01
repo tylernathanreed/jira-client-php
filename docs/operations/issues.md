@@ -1,7 +1,5 @@
 # Issues
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Issues`](/src/Operations/Issues.php)
 
 ## Operations

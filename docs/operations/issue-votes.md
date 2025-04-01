@@ -1,7 +1,5 @@
 # Issue Votes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueVotes`](/src/Operations/IssueVotes.php)
 
 ## Operations

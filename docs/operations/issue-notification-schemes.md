@@ -1,7 +1,5 @@
 # Issue Notification Schemes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueNotificationSchemes`](/src/Operations/IssueNotificationSchemes.php)
 
 ## Operations

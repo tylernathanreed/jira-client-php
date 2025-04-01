@@ -1,7 +1,5 @@
 # App Data Policies
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\AppDataPolicies`](/src/Operations/AppDataPolicies.php)
 
 ## Operations

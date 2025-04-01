@@ -1,7 +1,5 @@
 # App Migration
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\AppMigration`](/src/Operations/AppMigration.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Jira Settings
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\JiraSettings`](/src/Operations/JiraSettings.php)
 
 ## Operations

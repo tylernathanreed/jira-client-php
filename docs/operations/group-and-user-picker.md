@@ -1,7 +1,5 @@
 # Group And User Picker
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\GroupAndUserPicker`](/src/Operations/GroupAndUserPicker.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Announcement Banner
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\AnnouncementBanner`](/src/Operations/AnnouncementBanner.php)
 
 ## Operations

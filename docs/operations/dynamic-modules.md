@@ -1,7 +1,5 @@
 # Dynamic Modules
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\DynamicModules`](/src/Operations/DynamicModules.php)
 
 ## Operations

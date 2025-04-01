@@ -1,7 +1,5 @@
 # Issue Comment Properties
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueCommentProperties`](/src/Operations/IssueCommentProperties.php)
 
 ## Operations

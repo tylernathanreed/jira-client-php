@@ -1,7 +1,5 @@
 # Issue Navigator Settings
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueNavigatorSettings`](/src/Operations/IssueNavigatorSettings.php)
 
 ## Operations

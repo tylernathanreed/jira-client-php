@@ -1,7 +1,5 @@
 # Issue Security Level
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueSecurityLevel`](/src/Operations/IssueSecurityLevel.php)
 
 ## Operations

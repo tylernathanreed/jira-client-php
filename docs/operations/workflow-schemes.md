@@ -1,7 +1,5 @@
 # Workflow Schemes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\WorkflowSchemes`](/src/Operations/WorkflowSchemes.php)
 
 ## Operations

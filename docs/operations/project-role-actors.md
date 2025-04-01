@@ -1,7 +1,5 @@
 # Project Role Actors
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectRoleActors`](/src/Operations/ProjectRoleActors.php)
 
 ## Operations

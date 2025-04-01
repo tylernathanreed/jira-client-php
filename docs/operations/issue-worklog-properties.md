@@ -1,7 +1,5 @@
 # Issue Worklog Properties
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueWorklogProperties`](/src/Operations/IssueWorklogProperties.php)
 
 ## Operations

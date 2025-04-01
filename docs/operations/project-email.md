@@ -1,7 +1,5 @@
 # Project Email
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectEmail`](/src/Operations/ProjectEmail.php)
 
 ## Operations

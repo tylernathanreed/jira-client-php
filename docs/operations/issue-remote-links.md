@@ -1,7 +1,5 @@
 # Issue Remote Links
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueRemoteLinks`](/src/Operations/IssueRemoteLinks.php)
 
 ## Operations

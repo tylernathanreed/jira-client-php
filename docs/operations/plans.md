@@ -1,7 +1,5 @@
 # Plans
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Plans`](/src/Operations/Plans.php)
 
 ## Operations

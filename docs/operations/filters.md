@@ -1,7 +1,5 @@
 # Filters
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Filters`](/src/Operations/Filters.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # App Properties
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\AppProperties`](/src/Operations/AppProperties.php)
 
 ## Operations

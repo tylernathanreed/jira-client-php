@@ -1,7 +1,5 @@
 # Issue Bulk Operations
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueBulkOperations`](/src/Operations/IssueBulkOperations.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # Project Versions
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectVersions`](/src/Operations/ProjectVersions.php)
 
 ## Operations

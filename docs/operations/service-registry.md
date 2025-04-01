@@ -1,7 +1,5 @@
 # Service Registry
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ServiceRegistry`](/src/Operations/ServiceRegistry.php)
 
 ## Operations

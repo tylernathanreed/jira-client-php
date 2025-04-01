@@ -1,7 +1,5 @@
 # Issue Fields
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueFields`](/src/Operations/IssueFields.php)
 
 ## Operations

@@ -1,7 +1,5 @@
 # License Metrics
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\LicenseMetrics`](/src/Operations/LicenseMetrics.php)
 
 ## Operations

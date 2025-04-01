@@ -1,7 +1,5 @@
 # Workflow Statuses
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\WorkflowStatuses`](/src/Operations/WorkflowStatuses.php)
 
 ## Operations

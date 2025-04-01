@@ -1,7 +1,5 @@
 # Issue Type Schemes
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueTypeSchemes`](/src/Operations/IssueTypeSchemes.php)
 
 ## Operations

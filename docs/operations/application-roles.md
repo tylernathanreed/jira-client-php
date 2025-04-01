@@ -1,7 +1,5 @@
 # Application Roles
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ApplicationRoles`](/src/Operations/ApplicationRoles.php)
 
 ## Operations

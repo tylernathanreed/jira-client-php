@@ -1,7 +1,5 @@
 # Workflow Transition Properties
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\WorkflowTransitionProperties`](/src/Operations/WorkflowTransitionProperties.php)
 
 ## Operations

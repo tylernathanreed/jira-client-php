@@ -1,7 +1,5 @@
 # Permissions
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Permissions`](/src/Operations/Permissions.php)
 
 ## Operations

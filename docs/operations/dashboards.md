@@ -1,7 +1,5 @@
 # Dashboards
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\Dashboards`](/src/Operations/Dashboards.php)
 
 ## Operations

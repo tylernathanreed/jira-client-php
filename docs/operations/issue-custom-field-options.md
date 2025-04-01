@@ -1,7 +1,5 @@
 # Issue Custom Field Options
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueCustomFieldOptions`](/src/Operations/IssueCustomFieldOptions.php)
 
 ## Operations

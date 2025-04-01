@@ -1,7 +1,5 @@
 # Filter Sharing
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\FilterSharing`](/src/Operations/FilterSharing.php)
 
 ## Operations

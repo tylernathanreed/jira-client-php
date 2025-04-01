@@ -1,7 +1,5 @@
 # Issue Links
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueLinks`](/src/Operations/IssueLinks.php)
 
 ## Operations

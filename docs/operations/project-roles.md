@@ -1,7 +1,5 @@
 # Project Roles
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\ProjectRoles`](/src/Operations/ProjectRoles.php)
 
 ## Operations

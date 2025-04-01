@@ -1,7 +1,5 @@
 # Issue Custom Field Configuration Apps
 
-DummyDescription
-
 Source: [`Jira\Client\Operations\IssueCustomFieldConfigurationApps`](/src/Operations/IssueCustomFieldConfigurationApps.php)
 
 ## Operations
