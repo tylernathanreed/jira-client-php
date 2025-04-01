@@ -92,9 +92,9 @@ trait ProjectAvatars
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The ID or (case-sensitive) key of the project.
-     * @param int $x The X coordinate of the top-left corner of the crop region.
-     * @param int $y The Y coordinate of the top-left corner of the crop region.
-     * @param int $size The length of each side of the crop region.
+     * @param ?int $x The X coordinate of the top-left corner of the crop region.
+     * @param ?int $y The Y coordinate of the top-left corner of the crop region.
+     * @param ?int $size The length of each side of the crop region.
      */
     public function createProjectAvatar(
         string $projectIdOrKey,

@@ -18,14 +18,14 @@ trait ProjectComponents
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param ?list<string> $projectIdsOrKeys The project IDs and/or project keys (case sensitive).
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param 'description'|'-description'|'+description'|'name'|'-name'|'+name'|null $orderBy
      *        "Order" the results by a field:
      *         - `description` Sorts by the component description
      *         - `name` Sorts by component name.
-     * @param string $query Filter the results using a literal string.
-     *                      Components with a matching `name` or `description` are returned (case insensitive).
+     * @param ?string $query Filter the results using a literal string.
+     *                       Components with a matching `name` or `description` are returned (case insensitive).
      */
     public function findComponentsForProjects(
         ?array $projectIdsOrKeys = null,
@@ -129,8 +129,8 @@ trait ProjectComponents
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $id The ID of the component.
-     * @param string $moveIssuesTo The ID of the component to replace the deleted component.
-     *                             If this value is null no replacement is made.
+     * @param ?string $moveIssuesTo The ID of the component to replace the deleted component.
+     *                              If this value is null no replacement is made.
      */
     public function deleteComponent(
         string $id,
@@ -185,8 +185,8 @@ trait ProjectComponents
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param 'description'|'-description'|'+description'|'issueCount'|'-issueCount'|'+issueCount'|'lead'|'-lead'|'+lead'|'name'|'-name'|'+name'|null $orderBy
      *        "Order" the results by a field:
      *         - `description` Sorts by the component description
@@ -198,8 +198,8 @@ trait ProjectComponents
      *        Can be `jira` (default), `compass` or `auto`.
      *        When `auto` is specified, the API will return connected Compass components if the project is opted into Compass, otherwise it will return Jira components.
      *        Defaults to `jira`.
-     * @param string $query Filter the results using a literal string.
-     *                      Components with a matching `name` or `description` are returned (case insensitive).
+     * @param ?string $query Filter the results using a literal string.
+     *                       Components with a matching `name` or `description` are returned (case insensitive).
      */
     public function getProjectComponentsPaginated(
         string $projectIdOrKey,

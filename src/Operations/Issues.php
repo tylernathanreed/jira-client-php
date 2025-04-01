@@ -76,9 +76,9 @@ trait Issues
      * 
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
-     * @param bool $updateHistory Whether the project in which the issue is created is added to the user's **Recently viewed** project list, as shown under **Projects** in Jira.
-     *                            When provided, the issue type and request type are added to the user's history for a project.
-     *                            These values are then used to provide defaults on the issue create screen.
+     * @param ?bool $updateHistory Whether the project in which the issue is created is added to the user's **Recently viewed** project list, as shown under **Projects** in Jira.
+     *                             When provided, the issue type and request type are added to the user's history for a project.
+     *                             These values are then used to provide defaults on the issue create screen.
      */
     public function createIssue(
         Schema\IssueUpdateDetails $request,
@@ -260,10 +260,10 @@ trait Issues
      *                                      Multiple issue type names can also be provided using an ampersand-separated list.
      *                                      For example, `issuetypeNames=name1,name2&issuetypeNames=name3`.
      *                                      This parameter may be provided with `issuetypeIds`.
-     * @param string $expand Use "expand" to include additional information about issue metadata in the response.
-     *                       This parameter accepts `projects.issuetypes.fields`, which returns information about the fields in the issue creation screen for each issue type.
-     *                       Fields hidden from the screen are not returned.
-     *                       Use the information to populate the `fields` and `update` fields in "Create issue" and "Create issues".
+     * @param ?string $expand Use "expand" to include additional information about issue metadata in the response.
+     *                        This parameter accepts `projects.issuetypes.fields`, which returns information about the fields in the issue creation screen for each issue type.
+     *                        Fields hidden from the screen are not returned.
+     *                        Use the information to populate the `fields` and `update` fields in "Create issue" and "Create issues".
      */
     public function getCreateIssueMeta(
         ?array $projectIds = null,
@@ -292,8 +292,8 @@ trait Issues
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The ID or key of the project.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getCreateIssueMetaIssueTypes(
         string $projectIdOrKey,
@@ -322,8 +322,8 @@ trait Issues
      * 
      * @param string $projectIdOrKey The ID or key of the project.
      * @param string $issueTypeId The issuetype ID.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getCreateIssueMetaIssueTypeId(
         string $projectIdOrKey,
@@ -353,8 +353,8 @@ trait Issues
      * @link https://confluence.atlassian.com/x/yodKLg
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param bool $isReturningKeys Return issue keys instead of issue ids in the response
-     *                              Usage: Add `?isReturningKeys=true` to the end of the path to request issue keys.
+     * @param ?bool $isReturningKeys Return issue keys instead of issue ids in the response
+     *                               Usage: Add `?isReturningKeys=true` to the end of the path to request issue keys.
      */
     public function getIssueLimitReport(
         ?bool $isReturningKeys = false,
@@ -431,19 +431,19 @@ trait Issues
      *                              For example, `fields=field1,field2& fields=field3`
      *                              Note: All fields are returned by default.
      *                              This differs from "Search for issues using JQL (GET)" and "Search for issues using JQL (POST)" where the default is all navigable fields.
-     * @param bool $fieldsByKeys Whether fields in `fields` are referenced by keys rather than IDs.
-     *                           This parameter is useful where fields have been added by a connect app and a field's key may differ from its ID.
-     * @param string $expand Use "expand" to include additional information about the issues in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `renderedFields` Returns field values rendered in HTML format
-     *                        - `names` Returns the display name of each field
-     *                        - `schema` Returns the schema describing a field type
-     *                        - `transitions` Returns all possible transitions for the issue
-     *                        - `editmeta` Returns information about how each field can be edited
-     *                        - `changelog` Returns a list of recent updates to an issue, sorted by date, starting from the most recent
-     *                        - `versionedRepresentations` Returns a JSON array for each version of a field's value, with the highest number representing the most recent version.
-     *                       Note: When included in the request, the `fields` parameter is ignored.
+     * @param ?bool $fieldsByKeys Whether fields in `fields` are referenced by keys rather than IDs.
+     *                            This parameter is useful where fields have been added by a connect app and a field's key may differ from its ID.
+     * @param ?string $expand Use "expand" to include additional information about the issues in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `renderedFields` Returns field values rendered in HTML format
+     *                         - `names` Returns the display name of each field
+     *                         - `schema` Returns the schema describing a field type
+     *                         - `transitions` Returns all possible transitions for the issue
+     *                         - `editmeta` Returns information about how each field can be edited
+     *                         - `changelog` Returns a list of recent updates to an issue, sorted by date, starting from the most recent
+     *                         - `versionedRepresentations` Returns a JSON array for each version of a field's value, with the highest number representing the most recent version.
+     *                        Note: When included in the request, the `fields` parameter is ignored.
      * @param ?list<string> $properties A list of issue properties to return for the issue.
      *                                  This parameter accepts a comma-separated list.
      *                                  Allowed values:
@@ -455,12 +455,12 @@ trait Issues
      *                                   - `prop1,prop2` Returns `prop1` and `prop2` properties
      *                                  This parameter may be specified multiple times.
      *                                  For example, `properties=prop1,prop2& properties=prop3`.
-     * @param bool $updateHistory Whether the project in which the issue is created is added to the user's **Recently viewed** project list, as shown under **Projects** in Jira.
-     *                            This also populates the "JQL issues search" `lastViewed` field.
-     * @param bool $failFast Whether to fail the request quickly in case of an error while loading fields for an issue.
-     *                       For `failFast=true`, if one field fails, the entire operation fails.
-     *                       For `failFast=false`, the operation will continue even if a field fails.
-     *                       It will return a valid response, but without values for the failed field(s).
+     * @param ?bool $updateHistory Whether the project in which the issue is created is added to the user's **Recently viewed** project list, as shown under **Projects** in Jira.
+     *                             This also populates the "JQL issues search" `lastViewed` field.
+     * @param ?bool $failFast Whether to fail the request quickly in case of an error while loading fields for an issue.
+     *                        For `failFast=true`, if one field fails, the entire operation fails.
+     *                        For `failFast=false`, the operation will continue even if a field fails.
+     *                        It will return a valid response, but without values for the failed field(s).
      */
     public function getIssue(
         string $issueIdOrKey,
@@ -509,18 +509,18 @@ trait Issues
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
-     * @param bool $notifyUsers Whether a notification email about the issue update is sent to all watchers.
-     *                          To disable the notification, administer Jira or administer project permissions are required.
-     *                          If the user doesn't have the necessary permission the request is ignored.
-     * @param bool $overrideScreenSecurity Whether screen security is overridden to enable hidden fields to be edited.
-     *                                     Available to Connect app users with *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
-     *                                     @link https://confluence.atlassian.com/x/x4dKLg
-     * @param bool $overrideEditableFlag Whether screen security is overridden to enable uneditable fields to be edited.
-     *                                   Available to Connect app users with *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
-     *                                   @link https://confluence.atlassian.com/x/x4dKLg
-     * @param bool $returnIssue Whether the response should contain the issue with fields edited in this request.
-     *                          The returned issue will have the same format as in the "Get issue API".
-     * @param string $expand The Get issue API expand parameter to use in the response if the `returnIssue` parameter is `true`.
+     * @param ?bool $notifyUsers Whether a notification email about the issue update is sent to all watchers.
+     *                           To disable the notification, administer Jira or administer project permissions are required.
+     *                           If the user doesn't have the necessary permission the request is ignored.
+     * @param ?bool $overrideScreenSecurity Whether screen security is overridden to enable hidden fields to be edited.
+     *                                      Available to Connect app users with *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
+     *                                      @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?bool $overrideEditableFlag Whether screen security is overridden to enable uneditable fields to be edited.
+     *                                    Available to Connect app users with *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
+     *                                    @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?bool $returnIssue Whether the response should contain the issue with fields edited in this request.
+     *                           The returned issue will have the same format as in the "Get issue API".
+     * @param ?string $expand The Get issue API expand parameter to use in the response if the `returnIssue` parameter is `true`.
      */
     public function editIssue(
         Schema\IssueUpdateDetails $request,
@@ -626,8 +626,8 @@ trait Issues
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getChangeLogs(
         string $issueIdOrKey,
@@ -737,12 +737,12 @@ trait Issues
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
-     * @param bool $overrideScreenSecurity Whether hidden fields are returned.
-     *                                     Available to Connect app users with *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
-     *                                     @link https://confluence.atlassian.com/x/x4dKLg
-     * @param bool $overrideEditableFlag Whether non-editable fields are returned.
-     *                                   Available to Connect app users with *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
-     *                                   @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?bool $overrideScreenSecurity Whether hidden fields are returned.
+     *                                      Available to Connect app users with *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
+     *                                      @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?bool $overrideEditableFlag Whether non-editable fields are returned.
+     *                                    Available to Connect app users with *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
+     *                                    @link https://confluence.atlassian.com/x/x4dKLg
      */
     public function getEditIssueMeta(
         string $issueIdOrKey,
@@ -805,14 +805,14 @@ trait Issues
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
-     * @param string $expand Use "expand" to include additional information about transitions in the response.
-     *                       This parameter accepts `transitions.fields`, which returns information about the fields in the transition screen for each transition.
-     *                       Fields hidden from the screen are not returned.
-     *                       Use this information to populate the `fields` and `update` fields in "Transition issue".
-     * @param string $transitionId The ID of the transition.
-     * @param bool $skipRemoteOnlyCondition Whether transitions with the condition *Hide From User Condition* are included in the response.
-     * @param bool $includeUnavailableTransitions Whether details of transitions that fail a condition are included in the response
-     * @param bool $sortByOpsBarAndStatus Whether the transitions are sorted by ops-bar sequence value first then category order (Todo, In Progress, Done) or only by ops-bar sequence value.
+     * @param ?string $expand Use "expand" to include additional information about transitions in the response.
+     *                        This parameter accepts `transitions.fields`, which returns information about the fields in the transition screen for each transition.
+     *                        Fields hidden from the screen are not returned.
+     *                        Use this information to populate the `fields` and `update` fields in "Transition issue".
+     * @param ?string $transitionId The ID of the transition.
+     * @param ?bool $skipRemoteOnlyCondition Whether transitions with the condition *Hide From User Condition* are included in the response.
+     * @param ?bool $includeUnavailableTransitions Whether details of transitions that fail a condition are included in the response
+     * @param ?bool $sortByOpsBarAndStatus Whether the transitions are sorted by ops-bar sequence value first then category order (Todo, In Progress, Done) or only by ops-bar sequence value.
      */
     public function getTransitions(
         string $issueIdOrKey,

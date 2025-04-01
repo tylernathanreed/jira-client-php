@@ -22,11 +22,11 @@ trait IssueComments
      * @link https://confluence.atlassian.com/x/yodKLg
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
-     * @param string $expand Use "expand" to include additional information about comments in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `renderedBody` Returns the comment body rendered in HTML
-     *                        - `properties` Returns the comment's properties.
+     * @param ?string $expand Use "expand" to include additional information about comments in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `renderedBody` Returns the comment body rendered in HTML
+     *                         - `properties` Returns the comment's properties.
      */
     public function getCommentsByIds(
         Schema\IssueCommentListRequestBean $request,
@@ -57,13 +57,13 @@ trait IssueComments
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param 'created'|'-created'|'+created'|null $orderBy
      *        "Order" the results by a field.
      *        Accepts *created* to sort comments by their created date.
-     * @param string $expand Use "expand" to include additional information about comments in the response.
-     *                       This parameter accepts `renderedBody`, which returns the comment body rendered in HTML.
+     * @param ?string $expand Use "expand" to include additional information about comments in the response.
+     *                        This parameter accepts `renderedBody`, which returns the comment body rendered in HTML.
      */
     public function getComments(
         string $issueIdOrKey,
@@ -96,8 +96,8 @@ trait IssueComments
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
-     * @param string $expand Use "expand" to include additional information about comments in the response.
-     *                       This parameter accepts `renderedBody`, which returns the comment body rendered in HTML.
+     * @param ?string $expand Use "expand" to include additional information about comments in the response.
+     *                        This parameter accepts `renderedBody`, which returns the comment body rendered in HTML.
      */
     public function addComment(
         Schema\Comment $request,
@@ -131,8 +131,8 @@ trait IssueComments
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
      * @param string $id The ID of the comment.
-     * @param string $expand Use "expand" to include additional information about comments in the response.
-     *                       This parameter accepts `renderedBody`, which returns the comment body rendered in HTML.
+     * @param ?string $expand Use "expand" to include additional information about comments in the response.
+     *                        This parameter accepts `renderedBody`, which returns the comment body rendered in HTML.
      */
     public function getComment(
         string $issueIdOrKey,
@@ -167,12 +167,12 @@ trait IssueComments
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
      * @param string $id The ID of the comment.
-     * @param bool $notifyUsers Whether users are notified when a comment is updated.
-     * @param bool $overrideEditableFlag Whether screen security is overridden to enable uneditable fields to be edited.
-     *                                   Available to Connect app users with the *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
-     *                                   @link https://confluence.atlassian.com/x/x4dKLg
-     * @param string $expand Use "expand" to include additional information about comments in the response.
-     *                       This parameter accepts `renderedBody`, which returns the comment body rendered in HTML.
+     * @param ?bool $notifyUsers Whether users are notified when a comment is updated.
+     * @param ?bool $overrideEditableFlag Whether screen security is overridden to enable uneditable fields to be edited.
+     *                                    Available to Connect app users with the *Administer Jira* "global permission" and Forge apps acting on behalf of users with *Administer Jira* "global permission".
+     *                                    @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?string $expand Use "expand" to include additional information about comments in the response.
+     *                        This parameter accepts `renderedBody`, which returns the comment body rendered in HTML.
      */
     public function updateComment(
         Schema\Comment $request,

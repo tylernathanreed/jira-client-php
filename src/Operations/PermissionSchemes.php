@@ -121,16 +121,16 @@ trait PermissionSchemes
      * @link https://developer.atlassian.com/cloud/jira/platform/modules/project-permission/
      * @link https://developer.atlassian.com/cloud/jira/platform/modules/global-permission/
      * 
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that permissions are included when you specify any value.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about the custom field granted the permission
-     *                        - `group` Returns information about the group that is granted the permission
-     *                        - `permissions` Returns all permission grants for each permission scheme
-     *                        - `projectRole` Returns information about the project role granted the permission
-     *                        - `user` Returns information about the user who is granted the permission.
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that permissions are included when you specify any value.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about the custom field granted the permission
+     *                         - `group` Returns information about the group that is granted the permission
+     *                         - `permissions` Returns all permission grants for each permission scheme
+     *                         - `projectRole` Returns information about the project role granted the permission
+     *                         - `user` Returns information about the user who is granted the permission.
      */
     public function getAllPermissionSchemes(
         ?string $expand = null,
@@ -152,16 +152,16 @@ trait PermissionSchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that permissions are always included when you specify any value.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about the custom field granted the permission
-     *                        - `group` Returns information about the group that is granted the permission
-     *                        - `permissions` Returns all permission grants for each permission scheme
-     *                        - `projectRole` Returns information about the project role granted the permission
-     *                        - `user` Returns information about the user who is granted the permission.
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that permissions are always included when you specify any value.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about the custom field granted the permission
+     *                         - `group` Returns information about the group that is granted the permission
+     *                         - `permissions` Returns all permission grants for each permission scheme
+     *                         - `projectRole` Returns information about the project role granted the permission
+     *                         - `user` Returns information about the user who is granted the permission.
      */
     public function createPermissionScheme(
         Schema\PermissionScheme $request,
@@ -183,16 +183,16 @@ trait PermissionSchemes
      * **"Permissions" required:** Permission to access Jira.
      * 
      * @param int $schemeId The ID of the permission scheme to return.
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that permissions are included when you specify any value.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about the custom field granted the permission
-     *                        - `group` Returns information about the group that is granted the permission
-     *                        - `permissions` Returns all permission grants for each permission scheme
-     *                        - `projectRole` Returns information about the project role granted the permission
-     *                        - `user` Returns information about the user who is granted the permission.
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that permissions are included when you specify any value.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about the custom field granted the permission
+     *                         - `group` Returns information about the group that is granted the permission
+     *                         - `permissions` Returns all permission grants for each permission scheme
+     *                         - `projectRole` Returns information about the project role granted the permission
+     *                         - `user` Returns information about the user who is granted the permission.
      */
     public function getPermissionScheme(
         int $schemeId,
@@ -226,16 +226,16 @@ trait PermissionSchemes
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $schemeId The ID of the permission scheme to update.
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that permissions are always included when you specify any value.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about the custom field granted the permission
-     *                        - `group` Returns information about the group that is granted the permission
-     *                        - `permissions` Returns all permission grants for each permission scheme
-     *                        - `projectRole` Returns information about the project role granted the permission
-     *                        - `user` Returns information about the user who is granted the permission.
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that permissions are always included when you specify any value.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about the custom field granted the permission
+     *                         - `group` Returns information about the group that is granted the permission
+     *                         - `permissions` Returns all permission grants for each permission scheme
+     *                         - `projectRole` Returns information about the project role granted the permission
+     *                         - `user` Returns information about the user who is granted the permission.
      */
     public function updatePermissionScheme(
         Schema\PermissionScheme $request,
@@ -280,16 +280,16 @@ trait PermissionSchemes
      * **"Permissions" required:** Permission to access Jira.
      * 
      * @param int $schemeId The ID of the permission scheme.
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that permissions are always included when you specify any value.
-     *                       Expand options include:
-     *                        - `permissions` Returns all permission grants for each permission scheme
-     *                        - `user` Returns information about the user who is granted the permission
-     *                        - `group` Returns information about the group that is granted the permission
-     *                        - `projectRole` Returns information about the project role granted the permission
-     *                        - `field` Returns information about the custom field granted the permission
-     *                        - `all` Returns all expandable information.
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that permissions are always included when you specify any value.
+     *                        Expand options include:
+     *                         - `permissions` Returns all permission grants for each permission scheme
+     *                         - `user` Returns information about the user who is granted the permission
+     *                         - `group` Returns information about the group that is granted the permission
+     *                         - `projectRole` Returns information about the project role granted the permission
+     *                         - `field` Returns information about the custom field granted the permission
+     *                         - `all` Returns all expandable information.
      */
     public function getPermissionSchemeGrants(
         int $schemeId,
@@ -313,16 +313,16 @@ trait PermissionSchemes
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $schemeId The ID of the permission scheme in which to create a new permission grant.
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that permissions are always included when you specify any value.
-     *                       Expand options include:
-     *                        - `permissions` Returns all permission grants for each permission scheme
-     *                        - `user` Returns information about the user who is granted the permission
-     *                        - `group` Returns information about the group that is granted the permission
-     *                        - `projectRole` Returns information about the project role granted the permission
-     *                        - `field` Returns information about the custom field granted the permission
-     *                        - `all` Returns all expandable information.
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that permissions are always included when you specify any value.
+     *                        Expand options include:
+     *                         - `permissions` Returns all permission grants for each permission scheme
+     *                         - `user` Returns information about the user who is granted the permission
+     *                         - `group` Returns information about the group that is granted the permission
+     *                         - `projectRole` Returns information about the project role granted the permission
+     *                         - `field` Returns information about the custom field granted the permission
+     *                         - `all` Returns all expandable information.
      */
     public function createPermissionGrant(
         Schema\PermissionGrant $request,
@@ -347,16 +347,16 @@ trait PermissionSchemes
      * 
      * @param int $schemeId The ID of the permission scheme.
      * @param int $permissionId The ID of the permission grant.
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that permissions are always included when you specify any value.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about the custom field granted the permission
-     *                        - `group` Returns information about the group that is granted the permission
-     *                        - `permissions` Returns all permission grants for each permission scheme
-     *                        - `projectRole` Returns information about the project role granted the permission
-     *                        - `user` Returns information about the user who is granted the permission.
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that permissions are always included when you specify any value.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about the custom field granted the permission
+     *                         - `group` Returns information about the group that is granted the permission
+     *                         - `permissions` Returns all permission grants for each permission scheme
+     *                         - `projectRole` Returns information about the project role granted the permission
+     *                         - `user` Returns information about the user who is granted the permission.
      */
     public function getPermissionSchemeGrant(
         int $schemeId,

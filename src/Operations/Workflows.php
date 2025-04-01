@@ -19,8 +19,8 @@ trait Workflows
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $workflowName The name of the workflow to be returned.
-     *                             Only one workflow can be specified.
+     * @param ?string $workflowName The name of the workflow to be returned.
+     *                              Only one workflow can be specified.
      * 
      * @return list<Schema\DeprecatedWorkflow>
      */
@@ -839,34 +839,34 @@ trait Workflows
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<string> $workflowName The name of a workflow to return.
      *                                    To include multiple workflows, provide an ampersand-separated list.
      *                                    For example, `workflowName=name1&workflowName=name2`.
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `transitions` For each workflow, returns information about the transitions inside the workflow
-     *                        - `transitions.rules` For each workflow transition, returns information about its rules.
-     *                       Transitions are included automatically if this expand is requested
-     *                        - `transitions.properties` For each workflow transition, returns information about its properties.
-     *                       Transitions are included automatically if this expand is requested
-     *                        - `statuses` For each workflow, returns information about the statuses inside the workflow
-     *                        - `statuses.properties` For each workflow status, returns information about its properties.
-     *                       Statuses are included automatically if this expand is requested
-     *                        - `default` For each workflow, returns information about whether this is the default workflow
-     *                        - `schemes` For each workflow, returns information about the workflow schemes the workflow is assigned to
-     *                        - `projects` For each workflow, returns information about the projects the workflow is assigned to, through workflow schemes
-     *                        - `hasDraftWorkflow` For each workflow, returns information about whether the workflow has a draft version
-     *                        - `operations` For each workflow, returns information about the actions that can be undertaken on the workflow.
-     * @param string $queryString String used to perform a case-insensitive partial match with workflow name.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `transitions` For each workflow, returns information about the transitions inside the workflow
+     *                         - `transitions.rules` For each workflow transition, returns information about its rules.
+     *                        Transitions are included automatically if this expand is requested
+     *                         - `transitions.properties` For each workflow transition, returns information about its properties.
+     *                        Transitions are included automatically if this expand is requested
+     *                         - `statuses` For each workflow, returns information about the statuses inside the workflow
+     *                         - `statuses.properties` For each workflow status, returns information about its properties.
+     *                        Statuses are included automatically if this expand is requested
+     *                         - `default` For each workflow, returns information about whether this is the default workflow
+     *                         - `schemes` For each workflow, returns information about the workflow schemes the workflow is assigned to
+     *                         - `projects` For each workflow, returns information about the projects the workflow is assigned to, through workflow schemes
+     *                         - `hasDraftWorkflow` For each workflow, returns information about whether the workflow has a draft version
+     *                         - `operations` For each workflow, returns information about the actions that can be undertaken on the workflow.
+     * @param ?string $queryString String used to perform a case-insensitive partial match with workflow name.
      * @param 'name'|'-name'|'+name'|'created'|'-created'|'+created'|'updated'|'+updated'|'-updated'|null $orderBy
      *        "Order" the results by a field:
      *         - `name` Sorts by workflow name
      *         - `created` Sorts by create time
      *         - `updated` Sorts by update time.
-     * @param bool $isActive Filters active and inactive workflows.
+     * @param ?bool $isActive Filters active and inactive workflows.
      */
     public function getWorkflowsPaginated(
         ?int $startAt = 0,
@@ -919,9 +919,9 @@ trait Workflows
      * 
      * @param string $workflowId The workflow ID
      * @param int $projectId The project ID
-     * @param string $nextPageToken The cursor for pagination
-     * @param int $maxResults The maximum number of results to return.
-     *                        Must be an integer between 1 and 200.
+     * @param ?string $nextPageToken The cursor for pagination
+     * @param ?int $maxResults The maximum number of results to return.
+     *                         Must be an integer between 1 and 200.
      */
     public function getWorkflowProjectIssueTypeUsages(
         string $workflowId,
@@ -943,9 +943,9 @@ trait Workflows
      * Returns a page of projects using a given workflow.
      * 
      * @param string $workflowId The workflow ID
-     * @param string $nextPageToken The cursor for pagination
-     * @param int $maxResults The maximum number of results to return.
-     *                        Must be an integer between 1 and 200.
+     * @param ?string $nextPageToken The cursor for pagination
+     * @param ?int $maxResults The maximum number of results to return.
+     *                         Must be an integer between 1 and 200.
      */
     public function getProjectUsagesForWorkflow(
         string $workflowId,
@@ -966,9 +966,9 @@ trait Workflows
      * Returns a page of workflow schemes using a given workflow.
      * 
      * @param string $workflowId The workflow ID
-     * @param string $nextPageToken The cursor for pagination
-     * @param int $maxResults The maximum number of results to return.
-     *                        Must be an integer between 1 and 200.
+     * @param ?string $nextPageToken The cursor for pagination
+     * @param ?int $maxResults The maximum number of results to return.
+     *                         Must be an integer between 1 and 200.
      */
     public function getWorkflowSchemeUsagesForWorkflow(
         string $workflowId,
@@ -993,15 +993,15 @@ trait Workflows
      *  - *Administer Jira* global permission to access all, including project-scoped, workflows
      *  - At least one of the *Administer projects* and *View (read-only) workflow* project permissions to access project-scoped workflows
      * 
-     * @param string $expand Deprecated.
-     *                       See the "deprecation notice" for details
-     *                       Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `workflows.usages` Returns the project and issue types that each workflow is associated with
-     *                        - `statuses.usages` Returns the project and issue types that each status is associated with.
-     *                       @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
-     * @param bool $useApprovalConfiguration Return the new field `approvalConfiguration` instead of the deprecated status properties for approval configuration.
+     * @param ?string $expand Deprecated.
+     *                        See the "deprecation notice" for details
+     *                        Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `workflows.usages` Returns the project and issue types that each workflow is associated with
+     *                         - `statuses.usages` Returns the project and issue types that each status is associated with.
+     *                        @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
+     * @param ?bool $useApprovalConfiguration Return the new field `approvalConfiguration` instead of the deprecated status properties for approval configuration.
      */
     public function readWorkflows(
         Schema\WorkflowReadRequest $request,
@@ -1603,9 +1603,9 @@ trait Workflows
      * 
      * @link https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-permission-schemes/#built-in-permissions
      * 
-     * @param string $workflowId 
-     * @param string $projectId 
-     * @param string $issueTypeId 
+     * @param ?string $workflowId 
+     * @param ?string $projectId 
+     * @param ?string $issueTypeId 
      */
     public function workflowCapabilities(
         ?string $workflowId = null,
@@ -1671,20 +1671,20 @@ trait Workflows
      *  - *Administer Jira* global permission to access all, including project-scoped, workflows
      *  - At least one of the *Administer projects* and *View (read-only) workflow* project permissions to access project-scoped workflows
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `values.transitions` Returns the transitions that each workflow is associated with.
-     * @param string $queryString String used to perform a case-insensitive partial match with workflow name.
-     * @param string $orderBy "Order" the results by a field:
-     *                         - `name` Sorts by workflow name
-     *                         - `created` Sorts by create time
-     *                         - `updated` Sorts by update time.
-     * @param string $scope The scope of the workflow.
-     *                      Global for company-managed projects and Project for team-managed projects.
-     * @param bool $isActive Filters active and inactive workflows.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `values.transitions` Returns the transitions that each workflow is associated with.
+     * @param ?string $queryString String used to perform a case-insensitive partial match with workflow name.
+     * @param ?string $orderBy "Order" the results by a field:
+     *                          - `name` Sorts by workflow name
+     *                          - `created` Sorts by create time
+     *                          - `updated` Sorts by update time.
+     * @param ?string $scope The scope of the workflow.
+     *                       Global for company-managed projects and Project for team-managed projects.
+     * @param ?bool $isActive Filters active and inactive workflows.
      */
     public function searchWorkflows(
         ?int $startAt = null,
@@ -1712,11 +1712,11 @@ trait Workflows
      *  - *Administer Jira* project permission to create all, including global-scoped, workflows
      *  - *Administer projects* project permissions to create project-scoped workflows
      * 
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `workflows.usages` Returns the project and issue types that each workflow is associated with
-     *                        - `statuses.usages` Returns the project and issue types that each status is associated with.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `workflows.usages` Returns the project and issue types that each workflow is associated with
+     *                         - `statuses.usages` Returns the project and issue types that each status is associated with.
      */
     public function updateWorkflows(
         Schema\WorkflowUpdateRequest $request,

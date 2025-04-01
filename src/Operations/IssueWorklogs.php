@@ -27,12 +27,12 @@ trait IssueWorklogs
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param int $startedAfter The worklog start date and time, as a UNIX timestamp in milliseconds, after which worklogs are returned.
-     * @param int $startedBefore The worklog start date and time, as a UNIX timestamp in milliseconds, before which worklogs are returned.
-     * @param string $expand Use "expand" to include additional information about worklogs in the response.
-     *                       This parameter accepts`properties`, which returns worklog properties.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?int $startedAfter The worklog start date and time, as a UNIX timestamp in milliseconds, after which worklogs are returned.
+     * @param ?int $startedBefore The worklog start date and time, as a UNIX timestamp in milliseconds, before which worklogs are returned.
+     * @param ?string $expand Use "expand" to include additional information about worklogs in the response.
+     *                        This parameter accepts`properties`, which returns worklog properties.
      */
     public function getIssueWorklog(
         string $issueIdOrKey,
@@ -70,25 +70,25 @@ trait IssueWorklogs
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key the issue.
-     * @param bool $notifyUsers Whether users watching the issue are notified by email.
+     * @param ?bool $notifyUsers Whether users watching the issue are notified by email.
      * @param 'new'|'leave'|'manual'|'auto'|null $adjustEstimate
      *        Defines how to update the issue's time estimate, the options are:
      *         - `new` Sets the estimate to a specific value, defined in `newEstimate`
      *         - `leave` Leaves the estimate unchanged
      *         - `manual` Reduces the estimate by amount specified in `reduceBy`
      *         - `auto` Reduces the estimate by the value of `timeSpent` in the worklog.
-     * @param string $newEstimate The value to set as the issue's remaining time estimate, as days (\#d), hours (\#h), or minutes (\#m or \#).
-     *                            For example, *2d*.
-     *                            Required when `adjustEstimate` is `new`.
-     * @param string $reduceBy The amount to reduce the issue's remaining estimate by, as days (\#d), hours (\#h), or minutes (\#m).
-     *                         For example, *2d*.
-     *                         Required when `adjustEstimate` is `manual`.
-     * @param string $expand Use "expand" to include additional information about work logs in the response.
-     *                       This parameter accepts `properties`, which returns worklog properties.
-     * @param bool $overrideEditableFlag Whether the worklog entry should be added to the issue even if the issue is not editable, because jira.issue.editable set to false or missing.
-     *                                   For example, the issue is closed.
-     *                                   Connect and Forge app users with *Administer Jira* "global permission" can use this flag.
-     *                                   @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?string $newEstimate The value to set as the issue's remaining time estimate, as days (\#d), hours (\#h), or minutes (\#m or \#).
+     *                             For example, *2d*.
+     *                             Required when `adjustEstimate` is `new`.
+     * @param ?string $reduceBy The amount to reduce the issue's remaining estimate by, as days (\#d), hours (\#h), or minutes (\#m).
+     *                          For example, *2d*.
+     *                          Required when `adjustEstimate` is `manual`.
+     * @param ?string $expand Use "expand" to include additional information about work logs in the response.
+     *                        This parameter accepts `properties`, which returns worklog properties.
+     * @param ?bool $overrideEditableFlag Whether the worklog entry should be added to the issue even if the issue is not editable, because jira.issue.editable set to false or missing.
+     *                                    For example, the issue is closed.
+     *                                    Connect and Forge app users with *Administer Jira* "global permission" can use this flag.
+     *                                    @link https://confluence.atlassian.com/x/x4dKLg
      */
     public function addWorklog(
         Schema\Worklog $request,
@@ -138,9 +138,9 @@ trait IssueWorklogs
      *        Defines how to update the issue's time estimate, the options are:
      *         - `leave` Leaves the estimate unchanged
      *         - `auto` Reduces the estimate by the aggregate value of `timeSpent` across all worklogs being deleted.
-     * @param bool $overrideEditableFlag Whether the work log entries should be removed to the issue even if the issue is not editable, because jira.issue.editable set to false or missing.
-     *                                   For example, the issue is closed.
-     *                                   Connect and Forge app users with admin permission can use this flag.
+     * @param ?bool $overrideEditableFlag Whether the work log entries should be removed to the issue even if the issue is not editable, because jira.issue.editable set to false or missing.
+     *                                    For example, the issue is closed.
+     *                                    Connect and Forge app users with admin permission can use this flag.
      */
     public function bulkDeleteWorklogs(
         Schema\WorklogIdsRequestBean $request,
@@ -190,9 +190,9 @@ trait IssueWorklogs
      *        Defines how to update the issues' time estimate, the options are:
      *         - `leave` Leaves the estimate unchanged
      *         - `auto` Reduces the estimate by the aggregate value of `timeSpent` across all worklogs being moved in the source issue, and increases it in the destination issue.
-     * @param bool $overrideEditableFlag Whether the work log entry should be moved to and from the issues even if the issues are not editable, because jira.issue.editable set to false or missing.
-     *                                   For example, the issue is closed.
-     *                                   Connect and Forge app users with admin permission can use this flag.
+     * @param ?bool $overrideEditableFlag Whether the work log entry should be moved to and from the issues even if the issues are not editable, because jira.issue.editable set to false or missing.
+     *                                    For example, the issue is closed.
+     *                                    Connect and Forge app users with admin permission can use this flag.
      */
     public function bulkMoveWorklogs(
         Schema\WorklogsMoveRequestBean $request,
@@ -231,9 +231,9 @@ trait IssueWorklogs
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
      * @param string $id The ID of the worklog.
-     * @param string $expand Use "expand" to include additional information about work logs in the response.
-     *                       This parameter accepts
-     *                       `properties`, which returns worklog properties.
+     * @param ?string $expand Use "expand" to include additional information about work logs in the response.
+     *                        This parameter accepts
+     *                        `properties`, which returns worklog properties.
      */
     public function getWorklog(
         string $issueIdOrKey,
@@ -272,21 +272,21 @@ trait IssueWorklogs
      * 
      * @param string $issueIdOrKey The ID or key the issue.
      * @param string $id The ID of the worklog.
-     * @param bool $notifyUsers Whether users watching the issue are notified by email.
+     * @param ?bool $notifyUsers Whether users watching the issue are notified by email.
      * @param 'new'|'leave'|'manual'|'auto'|null $adjustEstimate
      *        Defines how to update the issue's time estimate, the options are:
      *         - `new` Sets the estimate to a specific value, defined in `newEstimate`
      *         - `leave` Leaves the estimate unchanged
      *         - `auto` Updates the estimate by the difference between the original and updated value of `timeSpent` or `timeSpentSeconds`.
-     * @param string $newEstimate The value to set as the issue's remaining time estimate, as days (\#d), hours (\#h), or minutes (\#m or \#).
-     *                            For example, *2d*.
-     *                            Required when `adjustEstimate` is `new`.
-     * @param string $expand Use "expand" to include additional information about worklogs in the response.
-     *                       This parameter accepts `properties`, which returns worklog properties.
-     * @param bool $overrideEditableFlag Whether the worklog should be added to the issue even if the issue is not editable.
-     *                                   For example, because the issue is closed.
-     *                                   Connect and Forge app users with *Administer Jira* "global permission" can use this flag.
-     *                                   @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?string $newEstimate The value to set as the issue's remaining time estimate, as days (\#d), hours (\#h), or minutes (\#m or \#).
+     *                             For example, *2d*.
+     *                             Required when `adjustEstimate` is `new`.
+     * @param ?string $expand Use "expand" to include additional information about worklogs in the response.
+     *                        This parameter accepts `properties`, which returns worklog properties.
+     * @param ?bool $overrideEditableFlag Whether the worklog should be added to the issue even if the issue is not editable.
+     *                                    For example, because the issue is closed.
+     *                                    Connect and Forge app users with *Administer Jira* "global permission" can use this flag.
+     *                                    @link https://confluence.atlassian.com/x/x4dKLg
      */
     public function updateWorklog(
         Schema\Worklog $request,
@@ -331,22 +331,22 @@ trait IssueWorklogs
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
      * @param string $id The ID of the worklog.
-     * @param bool $notifyUsers Whether users watching the issue are notified by email.
+     * @param ?bool $notifyUsers Whether users watching the issue are notified by email.
      * @param 'new'|'leave'|'manual'|'auto'|null $adjustEstimate
      *        Defines how to update the issue's time estimate, the options are:
      *         - `new` Sets the estimate to a specific value, defined in `newEstimate`
      *         - `leave` Leaves the estimate unchanged
      *         - `manual` Increases the estimate by amount specified in `increaseBy`
      *         - `auto` Reduces the estimate by the value of `timeSpent` in the worklog.
-     * @param string $newEstimate The value to set as the issue's remaining time estimate, as days (\#d), hours (\#h), or minutes (\#m or \#).
+     * @param ?string $newEstimate The value to set as the issue's remaining time estimate, as days (\#d), hours (\#h), or minutes (\#m or \#).
+     *                             For example, *2d*.
+     *                             Required when `adjustEstimate` is `new`.
+     * @param ?string $increaseBy The amount to increase the issue's remaining estimate by, as days (\#d), hours (\#h), or minutes (\#m or \#).
      *                            For example, *2d*.
-     *                            Required when `adjustEstimate` is `new`.
-     * @param string $increaseBy The amount to increase the issue's remaining estimate by, as days (\#d), hours (\#h), or minutes (\#m or \#).
-     *                           For example, *2d*.
-     *                           Required when `adjustEstimate` is `manual`.
-     * @param bool $overrideEditableFlag Whether the work log entry should be added to the issue even if the issue is not editable, because jira.issue.editable set to false or missing.
-     *                                   For example, the issue is closed.
-     *                                   Connect and Forge app users with admin permission can use this flag.
+     *                            Required when `adjustEstimate` is `manual`.
+     * @param ?bool $overrideEditableFlag Whether the work log entry should be added to the issue even if the issue is not editable, because jira.issue.editable set to false or missing.
+     *                                    For example, the issue is closed.
+     *                                    Connect and Forge app users with admin permission can use this flag.
      */
     public function deleteWorklog(
         string $issueIdOrKey,
@@ -380,7 +380,7 @@ trait IssueWorklogs
      * 
      * **"Permissions" required:** Permission to access Jira.
      * 
-     * @param int $since The date and time, as a UNIX timestamp in milliseconds, after which deleted worklogs are returned.
+     * @param ?int $since The date and time, as a UNIX timestamp in milliseconds, after which deleted worklogs are returned.
      */
     public function getIdsOfWorklogsDeletedSince(
         ?int $since = 0,
@@ -404,8 +404,8 @@ trait IssueWorklogs
      *  - the worklog is set as *Viewable by All Users*
      *  - the user is a member of a project role or group with permission to view the worklog.
      * 
-     * @param string $expand Use "expand" to include additional information about worklogs in the response.
-     *                       This parameter accepts `properties` that returns the properties of each worklog.
+     * @param ?string $expand Use "expand" to include additional information about worklogs in the response.
+     *                        This parameter accepts `properties` that returns the properties of each worklog.
      * 
      * @return list<Schema\Worklog>
      */
@@ -439,9 +439,9 @@ trait IssueWorklogs
      *  - the worklog is set as *Viewable by All Users*
      *  - the user is a member of a project role or group with permission to view the worklog.
      * 
-     * @param int $since The date and time, as a UNIX timestamp in milliseconds, after which updated worklogs are returned.
-     * @param string $expand Use "expand" to include additional information about worklogs in the response.
-     *                       This parameter accepts `properties` that returns the properties of each worklog.
+     * @param ?int $since The date and time, as a UNIX timestamp in milliseconds, after which updated worklogs are returned.
+     * @param ?string $expand Use "expand" to include additional information about worklogs in the response.
+     *                        This parameter accepts `properties` that returns the properties of each worklog.
      */
     public function getIdsOfWorklogsModifiedSince(
         ?int $since = 0,

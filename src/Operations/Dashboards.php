@@ -21,8 +21,8 @@ trait Dashboards
      *        Valid values are:
      *         - `favourite` Returns dashboards the user has marked as favorite
      *         - `my` Returns dashboards owned by the user.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getAllDashboards(
         ?string $filter = null,
@@ -43,9 +43,9 @@ trait Dashboards
      * 
      * **"Permissions" required:** None.
      * 
-     * @param bool $extendAdminPermissions Whether admin level permissions are used.
-     *                                     It should only be true if the user has *Administer Jira* "global permission"
-     *                                     @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?bool $extendAdminPermissions Whether admin level permissions are used.
+     *                                      It should only be true if the user has *Administer Jira* "global permission"
+     *                                      @link https://confluence.atlassian.com/x/x4dKLg
      */
     public function createDashboard(
         Schema\DashboardDetails $request,
@@ -115,21 +115,21 @@ trait Dashboards
      *  - Dashboards shared with a public project
      *  - Dashboards shared with the public.
      * 
-     * @param string $dashboardName String used to perform a case-insensitive partial match with `name`.
-     * @param string $accountId User account ID used to return dashboards with the matching `owner.accountId`.
-     *                          This parameter cannot be used with the `owner` parameter.
-     * @param string $owner This parameter is deprecated because of privacy changes.
-     *                      Use `accountId` instead.
-     *                      See the "migration guide" for details.
-     *                      User name used to return dashboards with the matching `owner.name`.
-     *                      This parameter cannot be used with the `accountId` parameter.
-     *                      @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $groupname As a group's name can change, use of `groupId` is recommended.
-     *                          Group name used to return dashboards that are shared with a group that matches `sharePermissions.group.name`.
-     *                          This parameter cannot be used with the `groupId` parameter.
-     * @param string $groupId Group ID used to return dashboards that are shared with a group that matches `sharePermissions.group.groupId`.
-     *                        This parameter cannot be used with the `groupname` parameter.
-     * @param int $projectId Project ID used to returns dashboards that are shared with a project that matches `sharePermissions.project.id`.
+     * @param ?string $dashboardName String used to perform a case-insensitive partial match with `name`.
+     * @param ?string $accountId User account ID used to return dashboards with the matching `owner.accountId`.
+     *                           This parameter cannot be used with the `owner` parameter.
+     * @param ?string $owner This parameter is deprecated because of privacy changes.
+     *                       Use `accountId` instead.
+     *                       See the "migration guide" for details.
+     *                       User name used to return dashboards with the matching `owner.name`.
+     *                       This parameter cannot be used with the `accountId` parameter.
+     *                       @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $groupname As a group's name can change, use of `groupId` is recommended.
+     *                           Group name used to return dashboards that are shared with a group that matches `sharePermissions.group.name`.
+     *                           This parameter cannot be used with the `groupId` parameter.
+     * @param ?string $groupId Group ID used to return dashboards that are shared with a group that matches `sharePermissions.group.groupId`.
+     *                         This parameter cannot be used with the `groupname` parameter.
+     * @param ?int $projectId Project ID used to returns dashboards that are shared with a project that matches `sharePermissions.project.id`.
      * @param 'description'|'-description'|'+description'|'favorite_count'|'-favorite_count'|'+favorite_count'|'id'|'-id'|'+id'|'is_favorite'|'-is_favorite'|'+is_favorite'|'name'|'-name'|'+name'|'owner'|'-owner'|'+owner'|null $orderBy
      *        "Order" the results by a field:
      *         - `description` Sorts by dashboard description.
@@ -139,22 +139,22 @@ trait Dashboards
      *         - `is_favourite` Sorts by whether the dashboard is marked as a favorite
      *         - `name` Sorts by dashboard name
      *         - `owner` Sorts by dashboard owner name.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param 'active'|'archived'|'deleted'|null $status
      *        The status to filter by.
      *        It may be active, archived or deleted.
-     * @param string $expand Use "expand" to include additional information about dashboard in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `description` Returns the description of the dashboard
-     *                        - `owner` Returns the owner of the dashboard
-     *                        - `viewUrl` Returns the URL that is used to view the dashboard
-     *                        - `favourite` Returns `isFavourite`, an indicator of whether the user has set the dashboard as a favorite
-     *                        - `favouritedCount` Returns `popularity`, a count of how many users have set this dashboard as a favorite
-     *                        - `sharePermissions` Returns details of the share permissions defined for the dashboard
-     *                        - `editPermissions` Returns details of the edit permissions defined for the dashboard
-     *                        - `isWritable` Returns whether the current user has permission to edit the dashboard.
+     * @param ?string $expand Use "expand" to include additional information about dashboard in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `description` Returns the description of the dashboard
+     *                         - `owner` Returns the owner of the dashboard
+     *                         - `viewUrl` Returns the URL that is used to view the dashboard
+     *                         - `favourite` Returns `isFavourite`, an indicator of whether the user has set the dashboard as a favorite
+     *                         - `favouritedCount` Returns `popularity`, a count of how many users have set this dashboard as a favorite
+     *                         - `sharePermissions` Returns details of the share permissions defined for the dashboard
+     *                         - `editPermissions` Returns details of the edit permissions defined for the dashboard
+     *                         - `isWritable` Returns whether the current user has permission to edit the dashboard.
      */
     public function getDashboardsPaginated(
         ?string $dashboardName = null,
@@ -465,9 +465,9 @@ trait Dashboards
      * The dashboard to be updated must be owned by the user.
      * 
      * @param string $id The ID of the dashboard to update.
-     * @param bool $extendAdminPermissions Whether admin level permissions are used.
-     *                                     It should only be true if the user has *Administer Jira* "global permission"
-     *                                     @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?bool $extendAdminPermissions Whether admin level permissions are used.
+     *                                      It should only be true if the user has *Administer Jira* "global permission"
+     *                                      @link https://confluence.atlassian.com/x/x4dKLg
      */
     public function updateDashboard(
         Schema\DashboardDetails $request,
@@ -515,9 +515,9 @@ trait Dashboards
      * The dashboard to be copied must be owned by or shared with the user.
      * 
      * @param string $id 
-     * @param bool $extendAdminPermissions Whether admin level permissions are used.
-     *                                     It should only be true if the user has *Administer Jira* "global permission"
-     *                                     @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?bool $extendAdminPermissions Whether admin level permissions are used.
+     *                                      It should only be true if the user has *Administer Jira* "global permission"
+     *                                      @link https://confluence.atlassian.com/x/x4dKLg
      */
     public function copyDashboard(
         Schema\DashboardDetails $request,

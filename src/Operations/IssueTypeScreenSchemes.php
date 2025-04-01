@@ -17,18 +17,18 @@ trait IssueTypeScreenSchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $id The list of issue type screen scheme IDs.
      *                       To include multiple IDs, provide an ampersand-separated list.
      *                       For example, `id=10000&id=10001`.
-     * @param string $queryString String used to perform a case-insensitive partial match with issue type screen scheme name.
+     * @param ?string $queryString String used to perform a case-insensitive partial match with issue type screen scheme name.
      * @param 'name'|'-name'|'+name'|'id'|'-id'|'+id'|null $orderBy
      *        "Order" the results by a field:
      *         - `name` Sorts by issue type screen scheme name
      *         - `id` Sorts by issue type screen scheme ID.
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts `projects` that, for each issue type screen schemes, returns information about the projects the issue type screen scheme is assigned to.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts `projects` that, for each issue type screen schemes, returns information about the projects the issue type screen scheme is assigned to.
      */
     public function getIssueTypeScreenSchemes(
         ?int $startAt = 0,
@@ -75,8 +75,8 @@ trait IssueTypeScreenSchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $issueTypeScreenSchemeId The list of issue type screen scheme IDs.
      *                                            To include multiple issue type screen schemes, separate IDs with ampersand: `issueTypeScreenSchemeId=10000&issueTypeScreenSchemeId=10001`.
      */
@@ -105,8 +105,8 @@ trait IssueTypeScreenSchemes
      * 
      * @param list<int> $projectId The list of project IDs.
      *                             To include multiple projects, separate IDs with ampersand: `projectId=10000&projectId=10001`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getIssueTypeScreenSchemeProjectAssociations(
         array $projectId,
@@ -267,9 +267,9 @@ trait IssueTypeScreenSchemes
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $issueTypeScreenSchemeId The ID of the issue type screen scheme.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param string $query 
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?string $query 
      */
     public function getProjectsForIssueTypeScreenScheme(
         int $issueTypeScreenSchemeId,

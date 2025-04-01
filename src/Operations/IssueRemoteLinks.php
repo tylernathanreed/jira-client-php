@@ -28,7 +28,7 @@ trait IssueRemoteLinks
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdOrKey The ID or key of the issue.
-     * @param string $globalId The global ID of the remote issue link.
+     * @param ?string $globalId The global ID of the remote issue link.
      */
     public function getRemoteIssueLinks(
         string $issueIdOrKey,

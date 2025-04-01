@@ -4,6 +4,11 @@ namespace Jira\CodeGen;
 
 class Utils
 {
+    public static function slug(string $value): string
+    {
+        return str_replace(['{', '}'], '', str_replace(['/', '(', ')'], '-', static::kebab($value)));
+    }
+
     public static function kebab(string $value): string
     {
         return static::snake($value, '-');

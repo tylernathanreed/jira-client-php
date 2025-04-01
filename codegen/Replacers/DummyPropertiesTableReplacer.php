@@ -2,11 +2,8 @@
 
 namespace Jira\CodeGen\Replacers;
 
-use Jira\CodeGen\Markdown\Link;
-use Jira\CodeGen\Markdown\Table;
 use Jira\CodeGen\Schema\AbstractSchema;
 use Jira\CodeGen\Schema\Schema;
-use Jira\CodeGen\Utils;
 
 class DummyPropertiesTableReplacer extends Replacer
 {
@@ -16,40 +13,6 @@ class DummyPropertiesTableReplacer extends Replacer
             return $stub;
         }
 
-        $table = new Table(['Property', 'Type', 'Description']);
-
-        foreach ($schema->properties as $property) {
-            $type = str_replace('|', '\|', $property->getDocType() ?: $property->type ?: 'mixed');
-
-            if ($property->typeIsRef) {
-                assert(is_string($property->type));
-
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->type) . '.md');
-            }
-
-            if ($property->listableTypeIsRef) {
-                assert(is_string($property->listableType));
-
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->listableType) . '.md');
-            }
-
-            if ($property->associativeTypeIsRef) {
-                assert(is_string($property->associativeType));
-
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->associativeType) . '.md');
-            }
-
-            if (is_string($type) && strlen($type) > 40) {
-                $type = str_replace('|', '|`<br/>`', $type);
-            }
-
-            $table->add([
-                "`{$property->name}`",
-                $type instanceof Link ? $type : "`{$type}`",
-                str_replace("\n", '<br/>', (string) $property->description),
-            ]);
-        }
-
-        return str_replace('DummyPropertiesTable', $table, $stub);
+        return str_replace('DummyPropertiesTable', $schema->getPropertiesMarkdown(), $stub);
     }
 }

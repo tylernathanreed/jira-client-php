@@ -21,7 +21,7 @@ trait ScreenTabFields
      * 
      * @param int $screenId The ID of the screen.
      * @param int $tabId The ID of the screen tab.
-     * @param string $projectKey The key of the project.
+     * @param ?string $projectKey The key of the project.
      * 
      * @return list<Schema\ScreenableField>
      */

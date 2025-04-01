@@ -22,8 +22,8 @@ trait AppDataPolicies
     /**
      * Returns data policies for the projects specified in the request.
      * 
-     * @param string $ids A list of project identifiers.
-     *                    This parameter accepts a comma-separated list.
+     * @param ?string $ids A list of project identifiers.
+     *                     This parameter accepts a comma-separated list.
      */
     public function getPolicies(
         ?string $ids = null,

@@ -16,11 +16,11 @@ trait TeamsInPlan
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $planId The ID of the plan.
-     * @param string $cursor The cursor to start from.
-     *                       If not provided, the first page will be returned.
-     * @param int $maxResults The maximum number of plan teams to return per page.
-     *                        The maximum value is 50.
-     *                        The default value is 50.
+     * @param ?string $cursor The cursor to start from.
+     *                        If not provided, the first page will be returned.
+     * @param ?int $maxResults The maximum number of plan teams to return per page.
+     *                         The maximum value is 50.
+     *                         The default value is 50.
      */
     public function getTeams(
         int $planId,

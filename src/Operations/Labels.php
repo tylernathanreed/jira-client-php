@@ -11,8 +11,8 @@ trait Labels
     /**
      * Returns a "paginated" list of labels.
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getAllLabels(
         ?int $startAt = 0,

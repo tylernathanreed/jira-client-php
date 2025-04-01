@@ -21,14 +21,14 @@ trait UserProperties
      * @link https://confluence.atlassian.com/x/8YxjL
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     * @param string $userKey This parameter is no longer available and will be removed from the documentation soon.
-     *                        See the "deprecation notice" for details.
-     *                        @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $username This parameter is no longer available and will be removed from the documentation soon.
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $userKey This parameter is no longer available and will be removed from the documentation soon.
      *                         See the "deprecation notice" for details.
      *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $username This parameter is no longer available and will be removed from the documentation soon.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
      */
     public function getUserPropertyKeys(
         ?string $accountId = null,
@@ -59,14 +59,14 @@ trait UserProperties
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $propertyKey The key of the user's property.
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     * @param string $userKey This parameter is no longer available and will be removed from the documentation soon.
-     *                        See the "deprecation notice" for details.
-     *                        @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $username This parameter is no longer available and will be removed from the documentation soon.
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $userKey This parameter is no longer available and will be removed from the documentation soon.
      *                         See the "deprecation notice" for details.
      *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $username This parameter is no longer available and will be removed from the documentation soon.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
      */
     public function getUserProperty(
         string $propertyKey,
@@ -100,14 +100,14 @@ trait UserProperties
      * 
      * @param string $propertyKey The key of the user's property.
      *                            The maximum length is 255 characters.
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     * @param string $userKey This parameter is no longer available and will be removed from the documentation soon.
-     *                        See the "deprecation notice" for details.
-     *                        @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $username This parameter is no longer available and will be removed from the documentation soon.
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $userKey This parameter is no longer available and will be removed from the documentation soon.
      *                         See the "deprecation notice" for details.
      *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $username This parameter is no longer available and will be removed from the documentation soon.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
      */
     public function setUserProperty(
         string $propertyKey,
@@ -139,14 +139,14 @@ trait UserProperties
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $propertyKey The key of the user's property.
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     * @param string $userKey This parameter is no longer available and will be removed from the documentation soon.
-     *                        See the "deprecation notice" for details.
-     *                        @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $username This parameter is no longer available and will be removed from the documentation soon.
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $userKey This parameter is no longer available and will be removed from the documentation soon.
      *                         See the "deprecation notice" for details.
      *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $username This parameter is no longer available and will be removed from the documentation soon.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
      */
     public function deleteUserProperty(
         string $propertyKey,

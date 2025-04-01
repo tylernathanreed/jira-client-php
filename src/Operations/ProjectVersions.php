@@ -19,8 +19,8 @@ trait ProjectVersions
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param 'description'|'-description'|'+description'|'name'|'-name'|'+name'|'releaseDate'|'-releaseDate'|'+releaseDate'|'sequence'|'-sequence'|'+sequence'|'startDate'|'-startDate'|'+startDate'|null $orderBy
      *        "Order" the results by a field:
      *         - `description` Sorts by version description
@@ -30,18 +30,18 @@ trait ProjectVersions
      *         - `sequence` Sorts by the order of appearance in the user interface
      *         - `startDate` Sorts by start date, starting with the oldest date.
      *        Versions with no start date are listed last.
-     * @param string $query Filter the results using a literal string.
-     *                      Versions with matching `name` or `description` are returned (case insensitive).
-     * @param string $status A list of status values used to filter the results by version status.
-     *                       This parameter accepts a comma-separated list.
-     *                       The status values are `released`, `unreleased`, and `archived`.
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `issuesstatus` Returns the number of issues in each status category for each version
-     *                        - `operations` Returns actions that can be performed on the specified version
-     *                        - `driver` Returns the Atlassian account ID of the version driver
-     *                        - `approvers` Returns a list containing the approvers for this version.
+     * @param ?string $query Filter the results using a literal string.
+     *                       Versions with matching `name` or `description` are returned (case insensitive).
+     * @param ?string $status A list of status values used to filter the results by version status.
+     *                        This parameter accepts a comma-separated list.
+     *                        The status values are `released`, `unreleased`, and `archived`.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `issuesstatus` Returns the number of issues in each status category for each version
+     *                         - `operations` Returns actions that can be performed on the specified version
+     *                         - `driver` Returns the Atlassian account ID of the version driver
+     *                         - `approvers` Returns a list containing the approvers for this version.
      */
     public function getProjectVersionsPaginated(
         string $projectIdOrKey,
@@ -74,8 +74,8 @@ trait ProjectVersions
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts `operations`, which returns actions that can be performed on the version.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts `operations`, which returns actions that can be performed on the version.
      * 
      * @return list<Schema\Version>
      */
@@ -125,14 +125,14 @@ trait ProjectVersions
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $id The ID of the version.
-     * @param string $expand Use "expand" to include additional information about version in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `operations` Returns the list of operations available for this version
-     *                        - `issuesstatus` Returns the count of issues in this version for each of the status categories *to do*, *in progress*, *done*, and *unmapped*.
-     *                       The *unmapped* property represents the number of issues with a status other than *to do*, *in progress*, and *done*
-     *                        - `driver` Returns the Atlassian account ID of the version driver
-     *                        - `approvers` Returns a list containing the Atlassian account IDs of approvers for this version.
+     * @param ?string $expand Use "expand" to include additional information about version in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `operations` Returns the list of operations available for this version
+     *                         - `issuesstatus` Returns the count of issues in this version for each of the status categories *to do*, *in progress*, *done*, and *unmapped*.
+     *                        The *unmapped* property represents the number of issues with a status other than *to do*, *in progress*, and *done*
+     *                         - `driver` Returns the Atlassian account ID of the version driver
+     *                         - `approvers` Returns a list containing the Atlassian account IDs of approvers for this version.
      */
     public function getVersion(
         string $id,
@@ -190,10 +190,10 @@ trait ProjectVersions
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $id The ID of the version.
-     * @param string $moveFixIssuesTo The ID of the version to update `fixVersion` to when the field contains the deleted version.
-     *                                The replacement version must be in the same project as the version being deleted and cannot be the version being deleted.
-     * @param string $moveAffectedIssuesTo The ID of the version to update `affectedVersion` to when the field contains the deleted version.
-     *                                     The replacement version must be in the same project as the version being deleted and cannot be the version being deleted.
+     * @param ?string $moveFixIssuesTo The ID of the version to update `fixVersion` to when the field contains the deleted version.
+     *                                 The replacement version must be in the same project as the version being deleted and cannot be the version being deleted.
+     * @param ?string $moveAffectedIssuesTo The ID of the version to update `affectedVersion` to when the field contains the deleted version.
+     *                                      The replacement version must be in the same project as the version being deleted and cannot be the version being deleted.
      */
     public function deleteVersion(
         string $id,

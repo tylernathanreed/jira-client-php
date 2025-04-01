@@ -76,12 +76,12 @@ trait JQL
      * 
      * **"Permissions" required:** None.
      * 
-     * @param string $fieldName The name of the field.
-     * @param string $fieldValue The partial field item name entered by the user.
-     * @param string $predicateName The name of the " CHANGED operator predicate" for which the suggestions are generated.
-     *                              The valid predicate operators are *by*, *from*, and *to*.
-     *                              @link https://confluence.atlassian.com/x/hQORLQ#Advancedsearching-operatorsreference-CHANGEDCHANGED
-     * @param string $predicateValue The partial predicate item name entered by the user.
+     * @param ?string $fieldName The name of the field.
+     * @param ?string $fieldValue The partial field item name entered by the user.
+     * @param ?string $predicateName The name of the " CHANGED operator predicate" for which the suggestions are generated.
+     *                               The valid predicate operators are *by*, *from*, and *to*.
+     *                               @link https://confluence.atlassian.com/x/hQORLQ#Advancedsearching-operatorsreference-CHANGEDCHANGED
+     * @param ?string $predicateValue The partial predicate item name entered by the user.
      */
     public function getFieldAutoCompleteForQueryString(
         ?string $fieldName = null,

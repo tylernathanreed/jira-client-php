@@ -22,7 +22,7 @@ trait IssueCustomFieldValuesApps
      * @link https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-custom-field/
      * @link https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-custom-field-type/
      * 
-     * @param bool $generateChangelog Whether to generate a changelog for this update.
+     * @param ?bool $generateChangelog Whether to generate a changelog for this update.
      */
     public function updateMultipleCustomFieldValues(
         Schema\MultipleCustomFieldValuesUpdateDetails $request,
@@ -53,7 +53,7 @@ trait IssueCustomFieldValuesApps
      * 
      * @param string $fieldIdOrKey The ID or key of the custom field.
      *                             For example, `customfield_10010`.
-     * @param bool $generateChangelog Whether to generate a changelog for this update.
+     * @param ?bool $generateChangelog Whether to generate a changelog for this update.
      */
     public function updateCustomFieldValue(
         Schema\CustomFieldValueUpdateDetails $request,

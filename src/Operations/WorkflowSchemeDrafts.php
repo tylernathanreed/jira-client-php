@@ -258,7 +258,7 @@ trait WorkflowSchemeDrafts
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $id The ID of the workflow scheme that the draft belongs to.
-     * @param bool $validateOnly Whether the request only performs a validation.
+     * @param ?bool $validateOnly Whether the request only performs a validation.
      */
     public function publishDraftWorkflowScheme(
         Schema\PublishDraftWorkflowScheme $request,
@@ -284,8 +284,8 @@ trait WorkflowSchemeDrafts
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $id The ID of the workflow scheme that the draft belongs to.
-     * @param string $workflowName The name of a workflow in the scheme.
-     *                             Limits the results to the workflow-issue type mapping for the specified workflow.
+     * @param ?string $workflowName The name of a workflow in the scheme.
+     *                              Limits the results to the workflow-issue type mapping for the specified workflow.
      */
     public function getDraftWorkflow(
         int $id,

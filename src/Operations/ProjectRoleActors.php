@@ -83,12 +83,12 @@ trait ProjectRoleActors
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
      * @param int $id The ID of the project role.
      *                Use "Get all project roles" to get a list of project role IDs.
-     * @param string $user The user account ID of the user to remove from the project role.
-     * @param string $group The name of the group to remove from the project role.
-     *                      This parameter cannot be used with the `groupId` parameter.
-     *                      As a group's name can change, use of `groupId` is recommended.
-     * @param string $groupId The ID of the group to remove from the project role.
-     *                        This parameter cannot be used with the `group` parameter.
+     * @param ?string $user The user account ID of the user to remove from the project role.
+     * @param ?string $group The name of the group to remove from the project role.
+     *                       This parameter cannot be used with the `groupId` parameter.
+     *                       As a group's name can change, use of `groupId` is recommended.
+     * @param ?string $groupId The ID of the group to remove from the project role.
+     *                         This parameter cannot be used with the `group` parameter.
      */
     public function deleteActor(
         string $projectIdOrKey,
@@ -168,11 +168,11 @@ trait ProjectRoleActors
      * 
      * @param int $id The ID of the project role.
      *                Use "Get all project roles" to get a list of project role IDs.
-     * @param string $user The user account ID of the user to remove as a default actor.
-     * @param string $groupId The group ID of the group to be removed as a default actor.
-     *                        This parameter cannot be used with the `group` parameter.
-     * @param string $group The group name of the group to be removed as a default actor.This parameter cannot be used with the `groupId` parameter.
-     *                      As a group's name can change, use of `groupId` is recommended.
+     * @param ?string $user The user account ID of the user to remove as a default actor.
+     * @param ?string $groupId The group ID of the group to be removed as a default actor.
+     *                         This parameter cannot be used with the `group` parameter.
+     * @param ?string $group The group name of the group to be removed as a default actor.This parameter cannot be used with the `groupId` parameter.
+     *                       As a group's name can change, use of `groupId` is recommended.
      */
     public function deleteProjectRoleActorsFromRole(
         int $id,

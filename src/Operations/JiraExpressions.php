@@ -111,11 +111,11 @@ trait JiraExpressions
      * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#user
      * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#issue
      * 
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts `meta.complexity` that returns information about the expression complexity.
-     *                       For example, the number of expensive operations used by the expression and how close the expression is to reaching the "complexity limit".
-     *                       Useful when designing and debugging your expressions.
-     *                       @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#restrictions
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts `meta.complexity` that returns information about the expression complexity.
+     *                        For example, the number of expensive operations used by the expression and how close the expression is to reaching the "complexity limit".
+     *                        Useful when designing and debugging your expressions.
+     *                        @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#restrictions
      */
     public function evaluateJiraExpression(
         Schema\JiraExpressionEvalRequestBean $request,
@@ -199,11 +199,11 @@ trait JiraExpressions
      * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#user
      * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#issue
      * 
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts `meta.complexity` that returns information about the expression complexity.
-     *                       For example, the number of expensive operations used by the expression and how close the expression is to reaching the "complexity limit".
-     *                       Useful when designing and debugging your expressions.
-     *                       @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#restrictions
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts `meta.complexity` that returns information about the expression complexity.
+     *                        For example, the number of expensive operations used by the expression and how close the expression is to reaching the "complexity limit".
+     *                        Useful when designing and debugging your expressions.
+     *                        @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#restrictions
      */
     public function evaluateJSISJiraExpression(
         Schema\JiraExpressionEvaluateRequestBean $request,

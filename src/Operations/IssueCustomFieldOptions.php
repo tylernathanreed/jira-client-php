@@ -51,10 +51,10 @@ trait IssueCustomFieldOptions
      * 
      * @param string $fieldId The ID of the custom field.
      * @param int $contextId The ID of the context.
-     * @param int $optionId The ID of the option.
-     * @param bool $onlyOptions Whether only options are returned.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $optionId The ID of the option.
+     * @param ?bool $onlyOptions Whether only options are returned.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getOptionsForContext(
         string $fieldId,
@@ -205,9 +205,9 @@ trait IssueCustomFieldOptions
      * @param string $fieldId The ID of the custom field.
      * @param int $optionId The ID of the option to be deselected.
      * @param int $contextId The ID of the context.
-     * @param int $replaceWith The ID of the option that will replace the currently selected option.
-     * @param string $jql A JQL query that specifies the issues to be updated.
-     *                    For example, *project=10000*.
+     * @param ?int $replaceWith The ID of the option that will replace the currently selected option.
+     * @param ?string $jql A JQL query that specifies the issues to be updated.
+     *                     For example, *project=10000*.
      */
     public function replaceCustomFieldOption(
         string $fieldId,

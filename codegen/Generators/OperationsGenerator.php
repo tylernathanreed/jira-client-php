@@ -2,6 +2,7 @@
 
 namespace Jira\CodeGen\Generators;
 
+use Jira\CodeGen\Contracts\SupportsReadmeGenerator;
 use Jira\CodeGen\Contracts\SupportsTestGenerator;
 use Jira\CodeGen\Replacers\DummyMethodsReplacer;
 use Jira\CodeGen\Replacers\DummyTraitReplacer;
@@ -12,8 +13,9 @@ use Override;
 /**
  * @extends Generator<OperationGroup>
  * @implements SupportsTestGenerator<OperationGroup>
+ * @implements SupportsReadmeGenerator<OperationGroup>
  */
-class OperationsGenerator extends Generator implements SupportsTestGenerator
+class OperationsGenerator extends Generator implements SupportsTestGenerator, SupportsReadmeGenerator
 {
     /** {@inheritDoc} */
     protected $replacers = [
@@ -34,6 +36,11 @@ class OperationsGenerator extends Generator implements SupportsTestGenerator
     public function getTestGenerator(): TestGenerator
     {
         return new OperationsTestGenerator();
+    }
+
+    public function getReadmeGenerator(): ReadmeGenerator
+    {
+        return new OperationsReadmeGenerator();
     }
 
     #[Override]

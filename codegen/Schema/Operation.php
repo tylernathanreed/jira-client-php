@@ -2,6 +2,9 @@
 
 namespace Jira\CodeGen\Schema;
 
+use Jira\CodeGen\Markdown\Link;
+use Jira\CodeGen\Markdown\Table;
+use Jira\CodeGen\Utils;
 use Stringable;
 
 /**
@@ -16,7 +19,9 @@ final class Operation extends AbstractSchema implements Stringable
         public readonly string $id,
         public readonly string $uri,
         public readonly string $method,
+        public readonly string $group,
         public readonly Description $description,
+        public readonly string $summary,
         public readonly int $successCode,
 
         /** @var array{0:string}|string|true */
@@ -74,7 +79,9 @@ final class Operation extends AbstractSchema implements Stringable
             id: $operation['id'],
             uri: $operation['uri'],
             method: $operation['method'],
+            group: $operation['group'],
             description: new Description($op['description'] ?? null),
+            summary: ucwords($op['summary'] ?? $operation['id']),
             deprecated: $op['deprecated'] ?? false,
             successCode: $successCode,
             successSchema: $successSchema,
@@ -430,5 +437,235 @@ final class Operation extends AbstractSchema implements Stringable
                 );
             }
         CODE;
+    }
+
+    public function toMarkdown(): string
+    {
+        $markdown = '## ' . $this->summary . "\n";
+
+        $markdown .= '<a name="' . $this->id . '"></a>' . "\n\n";
+
+        $markdown .= 'Official Documentation: ' . $this->getDocumentationLink() . "\n\n";
+
+        $markdown .= $this->description->toMarkdown() . "\n\n";
+
+        if (! empty($example = $this->getExampleMarkdown())) {
+            $markdown .= "### Example\n\n{$example}\n";
+        }
+
+        if (! empty($this->bodySchema) || ! empty($this->successSchema)) {
+            $markdown .= "\n### Request\n\n";
+        }
+
+        if (! empty($this->bodySchema)) {
+            $markdown .= "#### Request Body\n\n";
+
+            $markdown .= 'Source: ' . new Link(
+                "`Jira\Client\Schema\\{$this->bodySchema}`",
+                '/docs/schema/' . Utils::slug($this->bodySchema) . '.md',
+            ) . "\n\n";
+
+            $schema = Specification::getComponentSchema($this->bodySchema);
+
+            if ($schema->description->description) {
+                $markdown .= $schema->description->toMarkdown() . "\n\n";
+            }
+
+            if (! empty($properties = $schema->getPropertiesMarkdown())) {
+                $markdown .= $properties . "\n\n";
+            }
+        }
+
+        if (! empty($this->parameters)) {
+            $markdown .= "#### Query Parameters\n\n";
+
+            $markdown .= $this->getParametersMarkdown() . "\n\n";
+        }
+
+        if (! empty($this->successSchema)) {
+            $markdown .= "#### Response\n\n";
+
+            if ($this->successSchema === true) {
+                $markdown .= '`true`';
+            } elseif (is_string($this->successSchema)) {
+                $markdown .= 'Source: ' . new Link(
+                    "`Jira\Client\Schema\\{$this->successSchema}`",
+                    '/docs/schema/' . Utils::slug($this->successSchema) . '.md',
+                ) . "\n\n";
+
+                $schema = Specification::getComponentSchema($this->successSchema);
+
+                if ($schema->description->description) {
+                    $markdown .= $schema->description->toMarkdown() . "\n\n";
+                }
+
+                if (! empty($properties = $schema->getPropertiesMarkdown())) {
+                    $markdown .= $properties . "\n\n";
+                }
+            }
+        }
+
+        return $markdown;
+    }
+
+    protected function getExampleMarkdown(): ?string
+    {
+        $returnType = $this->successSchema === true
+            ? 'true'
+            : (
+                is_array($this->successSchema)
+                ? 'array'
+                : "Schema\\{$this->successSchema}"
+            );
+
+        $parameters = [];
+
+        if ($this->bodySchema) {
+            $parameters[] = '        Schema\\' . $this->bodySchema . ' $request,';
+
+            $argString = empty($this->parameters)
+                ? "new Schema\\{$this->bodySchema}(\n"
+                : "\n    request: new Schema\\{$this->bodySchema}(\n";
+
+            $setupStr = "\nuse Jira\Client\Schema;\n";
+
+            $escape = function ($value) use (&$escape): string|array {
+                if (is_array($value)) {
+                    foreach ($value as $k => $v) {
+                        /** @var scalar|array<string,mixed> $v */
+                        $value[$k] = $escape($v);
+                    }
+
+                    return $value;
+                }
+
+                /** @var scalar $value */
+                return str_replace('\'', '\\\'', (string) $value);
+            };
+
+            foreach ((array) $this->bodyExample as $key => $value) {
+                if (is_null($value)) {
+                    $value = 'null';
+                } elseif (is_bool($value)) {
+                    $value = $value ? 'true' : 'false';
+                } elseif (is_array($value)) {
+                    $isList = array_is_list($value);
+
+                    $value = $escape($value);
+
+                    $value = str_replace(
+                        search: ['array (', ')', " => \n", '  ', "\n"],
+                        replace: ['[', ']', ' => ', '    ', "\n" . str_repeat(' ', 12)],
+                        subject: var_export($value, true)
+                    );
+
+                    $value = preg_replace("/ => +\[/", ' => [', $value) ?: '';
+
+                    if ($isList) {
+                        $value = preg_replace("/\d+ => /", '', $value);
+                    }
+                } else {
+                    // @phpstan-ignore cast.string (mixed to string)
+                    $value = (string) $value;
+
+                    $value = $escape($value);
+
+                    assert(is_string($value));
+
+                    $value = '\'' . $value . '\'';
+                }
+
+                $argString .= str_repeat(' ', empty($this->parameters) ? 4 : 8) . "{$key}: {$value},\n";
+            }
+
+            $argString .= empty($this->parameters)
+                ? ')'
+                : str_repeat(' ', 4) . ")\n";
+
+            if (empty($this->bodyExample)) {
+                return null;
+            }
+        }
+
+        if (! empty($this->parameters) && isset($argString)) {
+            $argString = rtrim($argString);
+        } elseif (! isset($argString)) {
+            $argString = '';
+        }
+
+        foreach ($this->parameters as $param) {
+            $parameters[] = $param->getDefinition();
+
+            $argString .= "\n" . str_repeat(' ', 4) . "{$param->getSafeName()}: {$param->getAssignmentValue()},";
+        }
+
+        if (! empty($this->parameters)) {
+            $argString .= "\n";
+        }
+
+        $setupStr ??= '';
+
+        if (is_null($this->successExample) && $this->successCode !== 204) {
+            return null;
+        }
+
+        return <<<CODE
+        ```php{$setupStr}
+        /** @var {$returnType} \$response */
+        \$response = \$client->{$this->id}({$argString});
+        ```
+        CODE;
+    }
+
+    protected function getParametersMarkdown(): string
+    {
+        $table = new Table(['Property', 'Type', 'Description']);
+
+        foreach ($this->parameters as $parameter) {
+            $type = str_replace('|', '\|', $parameter->getDocType() ?: (
+                ($parameter->required ? '' : '?') .
+                $parameter->type
+             ) ?: 'mixed');
+
+            if ($parameter->typeIsRef) {
+                assert(is_string($parameter->type));
+
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($parameter->type) . '.md');
+            }
+
+            if ($parameter->listableTypeIsRef) {
+                assert(is_string($parameter->listableType));
+
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($parameter->listableType) . '.md');
+            }
+
+            if ($parameter->associativeTypeIsRef) {
+                assert(is_string($parameter->associativeType));
+
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($parameter->associativeType) . '.md');
+            }
+
+            if (is_string($type) && strlen($type) > 40) {
+                $type = str_replace('|', '|`<br/>`', $type);
+            }
+
+            $table->add([
+                "`{$parameter->name}`",
+                $type instanceof Link ? $type : "`{$type}`",
+                str_replace("\n", '<br/>', (string) $parameter->description),
+            ]);
+        }
+
+        return (string) $table;
+    }
+
+    public function getDocumentationLink(): string
+    {
+        return sprintf(
+            'https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-%s/#api-%s-%s',
+            Utils::slug($this->group),
+            Utils::slug(ltrim($this->uri, '/')),
+            $this->method,
+        );
     }
 }

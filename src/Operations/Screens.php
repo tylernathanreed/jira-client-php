@@ -16,10 +16,10 @@ trait Screens
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $fieldId The ID of the field to return screens for.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param string $expand Use "expand" to include additional information about screens in the response.
-     *                       This parameter accepts `tab` which returns details about the screen tabs the field is used in.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?string $expand Use "expand" to include additional information about screens in the response.
+     *                        This parameter accepts `tab` which returns details about the screen tabs the field is used in.
      */
     public function getScreensForField(
         string $fieldId,
@@ -44,12 +44,12 @@ trait Screens
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $id The list of screen IDs.
      *                       To include multiple IDs, provide an ampersand-separated list.
      *                       For example, `id=10000&id=10001`.
-     * @param string $queryString String used to perform a case-insensitive partial match with screen name.
+     * @param ?string $queryString String used to perform a case-insensitive partial match with screen name.
      * @param ?list<'GLOBAL'|'TEMPLATE'|'PROJECT'> $scope The scope filter string.
      *                                                    To filter by multiple scope, provide an ampersand-separated list.
      *                                                    For example, `scope=GLOBAL&scope=PROJECT`.

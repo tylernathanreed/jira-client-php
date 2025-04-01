@@ -103,8 +103,8 @@ trait Avatars
      *        The avatar type.
      * @param string $entityId The ID of the item the avatar is associated with.
      * @param int $size The length of each side of the crop region.
-     * @param int $x The X coordinate of the top-left corner of the crop region.
-     * @param int $y The Y coordinate of the top-left corner of the crop region.
+     * @param ?int $x The X coordinate of the top-left corner of the crop region.
+     * @param ?int $y The Y coordinate of the top-left corner of the crop region.
      */
     public function storeAvatar(
         string $type,

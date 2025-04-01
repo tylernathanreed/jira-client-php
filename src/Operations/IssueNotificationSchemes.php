@@ -17,23 +17,23 @@ trait IssueNotificationSchemes
      * 
      * @link https://confluence.atlassian.com/x/8YdKLg
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<string> $id The list of notification schemes IDs to be filtered by
      * @param ?list<string> $projectId The list of projects IDs to be filtered by
-     * @param bool $onlyDefault When set to true, returns only the default notification scheme.
-     *                          If you provide project IDs not associated with the default, returns an empty page.
-     *                          The default value is false.
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about any custom fields assigned to receive an event
-     *                        - `group` Returns information about any groups assigned to receive an event
-     *                        - `notificationSchemeEvents` Returns a list of event associations.
-     *                       This list is returned for all expandable information
-     *                        - `projectRole` Returns information about any project roles assigned to receive an event
-     *                        - `user` Returns information about any users assigned to receive an event
+     * @param ?bool $onlyDefault When set to true, returns only the default notification scheme.
+     *                           If you provide project IDs not associated with the default, returns an empty page.
+     *                           The default value is false.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about any custom fields assigned to receive an event
+     *                         - `group` Returns information about any groups assigned to receive an event
+     *                         - `notificationSchemeEvents` Returns a list of event associations.
+     *                        This list is returned for all expandable information
+     *                         - `projectRole` Returns information about any project roles assigned to receive an event
+     *                         - `user` Returns information about any users assigned to receive an event
      */
     public function getNotificationSchemes(
         ?string $startAt = '0',
@@ -82,8 +82,8 @@ trait IssueNotificationSchemes
      * 
      * **"Permissions" required:** Permission to access Jira.
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<string> $notificationSchemeId The list of notifications scheme IDs to be filtered out
      * @param ?list<string> $projectId The list of project IDs to be filtered out
      */
@@ -111,16 +111,16 @@ trait IssueNotificationSchemes
      * 
      * @param int $id The ID of the notification scheme.
      *                Use "Get notification schemes paginated" to get a list of notification scheme IDs.
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about any custom fields assigned to receive an event
-     *                        - `group` Returns information about any groups assigned to receive an event
-     *                        - `notificationSchemeEvents` Returns a list of event associations.
-     *                       This list is returned for all expandable information
-     *                        - `projectRole` Returns information about any project roles assigned to receive an event
-     *                        - `user` Returns information about any users assigned to receive an event
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about any custom fields assigned to receive an event
+     *                         - `group` Returns information about any groups assigned to receive an event
+     *                         - `notificationSchemeEvents` Returns a list of event associations.
+     *                        This list is returned for all expandable information
+     *                         - `projectRole` Returns information about any project roles assigned to receive an event
+     *                         - `user` Returns information about any users assigned to receive an event
      */
     public function getNotificationScheme(
         int $id,

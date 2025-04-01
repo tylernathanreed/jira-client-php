@@ -100,18 +100,18 @@ trait IssuePriorities
      * 
      * **"Permissions" required:** Permission to access Jira.
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<string> $id The list of priority IDs.
      *                          To include multiple IDs, provide an ampersand-separated list.
      *                          For example, `id=2&id=3`.
      * @param ?list<string> $projectId The list of projects IDs.
      *                                 To include multiple IDs, provide an ampersand-separated list.
      *                                 For example, `projectId=10010&projectId=10111`.
-     * @param string $priorityName The name of priority to search for.
-     * @param bool $onlyDefault Whether only the default priority is returned.
-     * @param string $expand Use `schemes` to return the associated priority schemes for each priority.
-     *                       Limited to returning first 15 priority schemes per priority.
+     * @param ?string $priorityName The name of priority to search for.
+     * @param ?bool $onlyDefault Whether only the default priority is returned.
+     * @param ?string $expand Use `schemes` to return the associated priority schemes for each priority.
+     *                        Limited to returning first 15 priority schemes per priority.
      */
     public function searchPriorities(
         ?string $startAt = '0',

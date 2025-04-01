@@ -20,20 +20,20 @@ trait Users
      * @link https://developer.atlassian.com/cloud/jira/platform/profile-visibility/
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     *                          Required.
-     * @param string $username This parameter is no longer available.
-     *                         See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $key This parameter is no longer available.
-     *                    See the "deprecation notice" for details.
-     *                    @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $expand Use "expand" to include additional information about users in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `groups` includes all groups and nested groups to which the user belongs
-     *                        - `applicationRoles` includes details of all the applications to which the user has access.
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
+     *                           Required.
+     * @param ?string $username This parameter is no longer available.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $key This parameter is no longer available.
+     *                     See the "deprecation notice" for details.
+     *                     @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $expand Use "expand" to include additional information about users in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `groups` includes all groups and nested groups to which the user belongs
+     *                         - `applicationRoles` includes details of all the applications to which the user has access.
      */
     public function getUser(
         ?string $accountId = null,
@@ -85,12 +85,12 @@ trait Users
      * 
      * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
      *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     * @param string $username This parameter is no longer available.
-     *                         See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $key This parameter is no longer available.
-     *                    See the "deprecation notice" for details.
-     *                    @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $username This parameter is no longer available.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $key This parameter is no longer available.
+     *                     See the "deprecation notice" for details.
+     *                     @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
      */
     public function removeUser(
         string $accountId,
@@ -114,8 +114,8 @@ trait Users
      * @param list<string> $accountId The account ID of a user.
      *                                To specify multiple users, pass multiple `accountId` parameters.
      *                                For example, `accountId=5b10a2844c20165700ede21g&accountId=5b10ac8d82e05b22cc7d4ef5`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<string> $username This parameter is no longer available and will be removed from the documentation soon.
      *                                See the "deprecation notice" for details.
      *                                @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
@@ -145,8 +145,8 @@ trait Users
      * 
      * **"Permissions" required:** Permission to access Jira.
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<string> $username Username of a user.
      *                                To specify multiple users, pass multiple copies of this parameter.
      *                                For example, `username=fred&username=barney`.
@@ -187,10 +187,10 @@ trait Users
      * @link https://confluence.atlassian.com/x/XYdKLg
      * @link https://confluence.atlassian.com/x/x4dKLgl
      * 
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     * @param string $username This parameter is no longer available See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $username This parameter is no longer available See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
      * 
      * @return list<Schema\ColumnItem>
      */
@@ -225,8 +225,8 @@ trait Users
      * @link https://confluence.atlassian.com/x/XYdKLg
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
      */
     public function setUserColumns(
         ?string $accountId = null,
@@ -252,11 +252,11 @@ trait Users
      * @link https://confluence.atlassian.com/x/XYdKLg
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     * @param string $username This parameter is no longer available.
-     *                         See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $username This parameter is no longer available.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
      */
     public function resetUserColumns(
         ?string $accountId = null,
@@ -326,12 +326,12 @@ trait Users
      * 
      * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
      *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
-     * @param string $username This parameter is no longer available.
-     *                         See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $key This parameter is no longer available.
-     *                    See the "deprecation notice" for details.
-     *                    @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $username This parameter is no longer available.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $key This parameter is no longer available.
+     *                     See the "deprecation notice" for details.
+     *                     @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
      * 
      * @return list<Schema\GroupName>
      */
@@ -361,8 +361,8 @@ trait Users
      * @link https://developer.atlassian.com/cloud/jira/platform/profile-visibility/
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return.
-     * @param int $maxResults The maximum number of items to return.
+     * @param ?int $startAt The index of the first item to return.
+     * @param ?int $maxResults The maximum number of items to return.
      * 
      * @return list<Schema\User>
      */
@@ -391,8 +391,8 @@ trait Users
      * @link https://developer.atlassian.com/cloud/jira/platform/profile-visibility/
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return.
-     * @param int $maxResults The maximum number of items to return.
+     * @param ?int $startAt The index of the first item to return.
+     * @param ?int $maxResults The maximum number of items to return.
      * 
      * @return list<Schema\User>
      */

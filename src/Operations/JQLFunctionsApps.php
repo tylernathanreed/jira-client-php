@@ -20,13 +20,13 @@ trait JQLFunctionsApps
      * @param ?list<string> $functionKey The function key in format:
      *                                    - Forge: `ari:cloud:ecosystem::extension/[App ID]/[Environment ID]/static/[Function key from manifest]`
      *                                    - Connect: `[App key]__[Module key]`
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param string $orderBy "Order" the results by a field:
-     *                         - `functionKey` Sorts by the functionKey
-     *                         - `used` Sorts by the used timestamp
-     *                         - `created` Sorts by the created timestamp
-     *                         - `updated` Sorts by the updated timestamp.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?string $orderBy "Order" the results by a field:
+     *                          - `functionKey` Sorts by the functionKey
+     *                          - `used` Sorts by the used timestamp
+     *                          - `created` Sorts by the created timestamp
+     *                          - `updated` Sorts by the updated timestamp.
      */
     public function getPrecomputations(
         ?array $functionKey = null,
@@ -51,7 +51,7 @@ trait JQLFunctionsApps
      * The new `write:app-data:jira` OAuth scope is 100% optional now, and not using it won't break your app.
      * However, we recommend adding it to your app's scope list because we will eventually make it mandatory.
      * 
-     * @param bool $skipNotFoundPrecomputations 
+     * @param ?bool $skipNotFoundPrecomputations 
      */
     public function updatePrecomputations(
         Schema\JqlFunctionPrecomputationUpdateRequestBean $request,
@@ -76,11 +76,11 @@ trait JQLFunctionsApps
      * The new `read:app-data:jira` OAuth scope is 100% optional now, and not using it won't break your app.
      * However, we recommend adding it to your app's scope list because we will eventually make it mandatory.
      * 
-     * @param string $orderBy "Order" the results by a field:
-     *                         - `functionKey` Sorts by the functionKey
-     *                         - `used` Sorts by the used timestamp
-     *                         - `created` Sorts by the created timestamp
-     *                         - `updated` Sorts by the updated timestamp.
+     * @param ?string $orderBy "Order" the results by a field:
+     *                          - `functionKey` Sorts by the functionKey
+     *                          - `used` Sorts by the used timestamp
+     *                          - `created` Sorts by the created timestamp
+     *                          - `updated` Sorts by the updated timestamp.
      */
     public function getPrecomputationsByID(
         Schema\JqlFunctionPrecomputationGetByIdRequest $request,

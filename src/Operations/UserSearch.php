@@ -28,17 +28,17 @@ trait UserSearch
      * 
      * @param string $projectKeys A list of project keys (case sensitive).
      *                            This parameter accepts a comma-separated list.
-     * @param string $query A query string that is matched against user attributes, such as `displayName` and `emailAddress`, to find relevant users.
-     *                      The string can match the prefix of the attribute's value.
-     *                      For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
-     *                      Required, unless `accountId` is specified.
-     * @param string $username This parameter is no longer available.
-     *                         See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $accountId A query string that is matched exactly against user `accountId`.
-     *                          Required, unless `query` is specified.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?string $query A query string that is matched against user attributes, such as `displayName` and `emailAddress`, to find relevant users.
+     *                       The string can match the prefix of the attribute's value.
+     *                       For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
+     *                       Required, unless `accountId` is specified.
+     * @param ?string $username This parameter is no longer available.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $accountId A query string that is matched exactly against user `accountId`.
+     *                           Required, unless `query` is specified.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * 
      * @return list<Schema\User>
      */
@@ -85,29 +85,29 @@ trait UserSearch
      * @link https://confluence.atlassian.com/x/x4dKLg
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
-     * @param string $query A query string that is matched against user attributes, such as `displayName`, and `emailAddress`, to find relevant users.
-     *                      The string can match the prefix of the attribute's value.
-     *                      For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
-     *                      Required, unless `username` or `accountId` is specified.
-     * @param string $sessionId The sessionId of this request.
-     *                          SessionId is the same until the assignee is set.
-     * @param string $username This parameter is no longer available.
-     *                         See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $accountId A query string that is matched exactly against user `accountId`.
-     *                          Required, unless `query` is specified.
-     * @param string $project The project ID or project key (case sensitive).
-     *                        Required, unless `issueKey` or `issueId` is specified.
-     * @param string $issueKey The key of the issue.
-     *                         Required, unless `issueId` or `project` is specified.
-     * @param string $issueId The ID of the issue.
-     *                        Required, unless `issueKey` or `project` is specified.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return.
-     *                        This operation may return less than the maximum number of items even if more are available.
-     *                        The operation fetches users up to the maximum and then, from the fetched users, returns only the users that can be assigned to the issue.
-     * @param int $actionDescriptorId The ID of the transition.
-     * @param bool $recommend 
+     * @param ?string $query A query string that is matched against user attributes, such as `displayName`, and `emailAddress`, to find relevant users.
+     *                       The string can match the prefix of the attribute's value.
+     *                       For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
+     *                       Required, unless `username` or `accountId` is specified.
+     * @param ?string $sessionId The sessionId of this request.
+     *                           SessionId is the same until the assignee is set.
+     * @param ?string $username This parameter is no longer available.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $accountId A query string that is matched exactly against user `accountId`.
+     *                           Required, unless `query` is specified.
+     * @param ?string $project The project ID or project key (case sensitive).
+     *                         Required, unless `issueKey` or `issueId` is specified.
+     * @param ?string $issueKey The key of the issue.
+     *                          Required, unless `issueId` or `project` is specified.
+     * @param ?string $issueId The ID of the issue.
+     *                         Required, unless `issueKey` or `project` is specified.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return.
+     *                         This operation may return less than the maximum number of items even if more are available.
+     *                         The operation fetches users up to the maximum and then, from the fetched users, returns only the users that can be assigned to the issue.
+     * @param ?int $actionDescriptorId The ID of the transition.
+     * @param ?bool $recommend 
      * 
      * @return list<Schema\User>
      */
@@ -198,19 +198,19 @@ trait UserSearch
      *                                 - WORKLOG\_EDIT\_ALL
      *                                 - WORKLOG\_EDIT\_OWN
      *                                 - WORK\_ISSUE
-     * @param string $query A query string that is matched against user attributes, such as `displayName` and `emailAddress`, to find relevant users.
-     *                      The string can match the prefix of the attribute's value.
-     *                      For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
-     *                      Required, unless `accountId` is specified.
-     * @param string $username This parameter is no longer available.
-     *                         See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $accountId A query string that is matched exactly against user `accountId`.
-     *                          Required, unless `query` is specified.
-     * @param string $issueKey The issue key for the issue.
-     * @param string $projectKey The project key for the project (case sensitive).
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?string $query A query string that is matched against user attributes, such as `displayName` and `emailAddress`, to find relevant users.
+     *                       The string can match the prefix of the attribute's value.
+     *                       For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
+     *                       Required, unless `accountId` is specified.
+     * @param ?string $username This parameter is no longer available.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $accountId A query string that is matched exactly against user `accountId`.
+     *                           Required, unless `query` is specified.
+     * @param ?string $issueKey The issue key for the issue.
+     * @param ?string $projectKey The project key for the project (case sensitive).
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * 
      * @return list<Schema\User>
      */
@@ -257,9 +257,9 @@ trait UserSearch
      * @param string $query A query string that is matched against user attributes, such as `displayName`, and `emailAddress`, to find relevant users.
      *                      The string can match the prefix of the attribute's value.
      *                      For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
-     * @param int $maxResults The maximum number of items to return.
-     *                        The total number of matched users is returned in `total`.
-     * @param bool $showAvatar Include the URI to the user's avatar.
+     * @param ?int $maxResults The maximum number of items to return.
+     *                         The total number of matched users is returned in `total`.
+     * @param ?bool $showAvatar Include the URI to the user's avatar.
      * @param ?list<string> $exclude This parameter is no longer available.
      *                               See the "deprecation notice" for details.
      *                               @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
@@ -268,8 +268,8 @@ trait UserSearch
      *                                         Multiple account IDs can also be provided using an ampersand-separated list.
      *                                         For example, `excludeAccountIds=5b10a2844c20165700ede21g,5b10a0effa615349cb016cd8&excludeAccountIds=5b10ac8d82e05b22cc7d4ef5`.
      *                                         Cannot be provided with `exclude`.
-     * @param string $avatarSize 
-     * @param bool $excludeConnectUsers 
+     * @param ?string $avatarSize 
+     * @param ?bool $excludeConnectUsers 
      */
     public function findUsersForPicker(
         string $query,
@@ -307,20 +307,20 @@ trait UserSearch
      * @link https://developer.atlassian.com/cloud/jira/platform/profile-visibility/
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $query A query string that is matched against user attributes ( `displayName`, and `emailAddress`) to find relevant users.
-     *                      The string can match the prefix of the attribute's value.
-     *                      For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
-     *                      Required, unless `accountId` or `property` is specified.
-     * @param string $username 
-     * @param string $accountId A query string that is matched exactly against a user `accountId`.
-     *                          Required, unless `query` or `property` is specified.
-     * @param int $startAt The index of the first item to return in a page of filtered results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param string $property A query string used to search properties.
-     *                         Property keys are specified by path, so property keys containing dot (.) or equals (=) characters cannot be used.
-     *                         The query string cannot be specified using a JSON object.
-     *                         Example: To search for the value of `nested` from `{"something":{"nested":1,"other":2}}` use `thepropertykey.something.nested=1`.
-     *                         Required, unless `accountId` or `query` is specified.
+     * @param ?string $query A query string that is matched against user attributes ( `displayName`, and `emailAddress`) to find relevant users.
+     *                       The string can match the prefix of the attribute's value.
+     *                       For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
+     *                       Required, unless `accountId` or `property` is specified.
+     * @param ?string $username 
+     * @param ?string $accountId A query string that is matched exactly against a user `accountId`.
+     *                           Required, unless `query` or `property` is specified.
+     * @param ?int $startAt The index of the first item to return in a page of filtered results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?string $property A query string used to search properties.
+     *                          Property keys are specified by path, so property keys containing dot (.) or equals (=) characters cannot be used.
+     *                          The query string cannot be specified using a JSON object.
+     *                          Example: To search for the value of `nested` from `{"something":{"nested":1,"other":2}}` use `thepropertykey.something.nested=1`.
+     *                          Required, unless `accountId` or `query` is specified.
      * 
      * @return list<Schema\User>
      */
@@ -372,8 +372,8 @@ trait UserSearch
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $query The search query.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function findUsersByQuery(
         string $query,
@@ -420,8 +420,8 @@ trait UserSearch
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $query The search query.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResult The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResult The maximum number of items to return per page.
      */
     public function findUserKeysByQuery(
         string $query,
@@ -464,21 +464,21 @@ trait UserSearch
      * @link https://developer.atlassian.com/cloud/jira/platform/profile-visibility/
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $query A query string that is matched against user attributes, such as `displayName` and `emailAddress`, to find relevant users.
-     *                      The string can match the prefix of the attribute's value.
-     *                      For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
-     *                      Required, unless `accountId` is specified.
-     * @param string $username This parameter is no longer available.
-     *                         See the "deprecation notice" for details.
-     *                         @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
-     * @param string $accountId A query string that is matched exactly against user `accountId`.
-     *                          Required, unless `query` is specified.
-     * @param string $issueKey The issue key for the issue.
-     *                         Required, unless `projectKey` is specified.
-     * @param string $projectKey The project key for the project (case sensitive).
-     *                           Required, unless `issueKey` is specified.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?string $query A query string that is matched against user attributes, such as `displayName` and `emailAddress`, to find relevant users.
+     *                       The string can match the prefix of the attribute's value.
+     *                       For example, *query=john* matches a user with a `displayName` of *John Smith* and a user with an `emailAddress` of *johnson@example.com*.
+     *                       Required, unless `accountId` is specified.
+     * @param ?string $username This parameter is no longer available.
+     *                          See the "deprecation notice" for details.
+     *                          @link https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide
+     * @param ?string $accountId A query string that is matched exactly against user `accountId`.
+     *                           Required, unless `query` is specified.
+     * @param ?string $issueKey The issue key for the issue.
+     *                          Required, unless `projectKey` is specified.
+     * @param ?string $projectKey The project key for the project (case sensitive).
+     *                            Required, unless `issueKey` is specified.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * 
      * @return list<Schema\User>
      */

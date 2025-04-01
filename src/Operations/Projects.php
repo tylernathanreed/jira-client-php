@@ -18,16 +18,16 @@ trait Projects
      * 
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expanded options include:
-     *                        - `description` Returns the project description
-     *                        - `issueTypes` Returns all issue types associated with the project
-     *                        - `lead` Returns information about the project lead
-     *                        - `projectKeys` Returns all project keys associated with the project.
-     * @param int $recent Returns the user's most recently accessed projects.
-     *                    You may specify the number of results to return up to a maximum of 20.
-     *                    If access is anonymous, then the recently accessed projects are based on the current HTTP session.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expanded options include:
+     *                         - `description` Returns the project description
+     *                         - `issueTypes` Returns all issue types associated with the project
+     *                         - `lead` Returns information about the project lead
+     *                         - `projectKeys` Returns all project keys associated with the project.
+     * @param ?int $recent Returns the user's most recently accessed projects.
+     *                     You may specify the number of results to return up to a maximum of 20.
+     *                     If access is anonymous, then the recently accessed projects are based on the current HTTP session.
      * @param ?list<string> $properties A list of project properties to return for the project.
      *                                  This parameter accepts a comma-separated list.
      * 
@@ -96,18 +96,18 @@ trait Projects
      * @link https://confluence.atlassian.com/x/yodKLg
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expanded options include:
-     *                        - `description` Returns the project description
-     *                        - `projectKeys` Returns all project keys associated with a project
-     *                        - `lead` Returns information about the project lead
-     *                        - `issueTypes` Returns all issue types associated with the project
-     *                        - `url` Returns the URL associated with the project
-     *                        - `permissions` Returns the permissions associated with the project
-     *                        - `insight` EXPERIMENTAL.
-     *                       Returns the insight details of total issue count and last issue update time for the project
-     *                        - `*` Returns the project with all available expand options.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expanded options include:
+     *                         - `description` Returns the project description
+     *                         - `projectKeys` Returns all project keys associated with a project
+     *                         - `lead` Returns information about the project lead
+     *                         - `issueTypes` Returns all issue types associated with the project
+     *                         - `url` Returns the URL associated with the project
+     *                         - `permissions` Returns the permissions associated with the project
+     *                         - `insight` EXPERIMENTAL.
+     *                        Returns the insight details of total issue count and last issue update time for the project
+     *                         - `*` Returns the project with all available expand options.
      * @param ?list<Schema\StringList> $properties EXPERIMENTAL.
      *                                             A list of project properties to return for the project.
      *                                             This parameter accepts a comma-separated list.
@@ -142,8 +142,8 @@ trait Projects
      * @link https://confluence.atlassian.com/x/yodKLg
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param 'category'|'-category'|'+category'|'key'|'-key'|'+key'|'name'|'-name'|'+name'|'owner'|'-owner'|'+owner'|'issueCount'|'-issueCount'|'+issueCount'|'lastIssueUpdatedDate'|'-lastIssueUpdatedDate'|'+lastIssueUpdatedDate'|'archivedDate'|'+archivedDate'|'-archivedDate'|'deletedDate'|'+deletedDate'|'-deletedDate'|null $orderBy
      *        "Order" the results by a field
      *         - `category` Sorts by project category.
@@ -165,14 +165,14 @@ trait Projects
      *                            To include multiple keys, provide an ampersand-separated list.
      *                            For example, `keys=PA&keys=PB`.
      *                            Up to 50 project keys can be provided.
-     * @param string $query Filter the results using a literal string.
-     *                      Projects with a matching `key` or `name` are returned (case insensitive).
-     * @param string $typeKey Orders results by the "project type".
-     *                        This parameter accepts a comma-separated list.
-     *                        Valid values are `business`, `service_desk`, and `software`.
-     *                        @link https://confluence.atlassian.com/x/GwiiLQ#Jiraapplicationsoverview-Productfeaturesandprojecttypes
-     * @param int $categoryId The ID of the project's category.
-     *                        A complete list of category IDs is found using the "Get all project categories" operation.
+     * @param ?string $query Filter the results using a literal string.
+     *                       Projects with a matching `key` or `name` are returned (case insensitive).
+     * @param ?string $typeKey Orders results by the "project type".
+     *                         This parameter accepts a comma-separated list.
+     *                         Valid values are `business`, `service_desk`, and `software`.
+     *                         @link https://confluence.atlassian.com/x/GwiiLQ#Jiraapplicationsoverview-Productfeaturesandprojecttypes
+     * @param ?int $categoryId The ID of the project's category.
+     *                         A complete list of category IDs is found using the "Get all project categories" operation.
      * @param 'view'|'browse'|'edit'|'create'|null $action
      *        Filter results by projects for which the user can:
      *         - `view` the project, meaning that they have one of the following permissions:
@@ -188,16 +188,16 @@ trait Projects
      *         - `create` the project, meaning that they have the *Create issues* "project permission" for the project in which the issue is created.
      *        @link https://confluence.atlassian.com/x/yodKLg
      *        @link https://confluence.atlassian.com/x/x4dKLg
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expanded options include:
-     *                        - `description` Returns the project description
-     *                        - `projectKeys` Returns all project keys associated with a project
-     *                        - `lead` Returns information about the project lead
-     *                        - `issueTypes` Returns all issue types associated with the project
-     *                        - `url` Returns the URL associated with the project
-     *                        - `insight` EXPERIMENTAL.
-     *                       Returns the insight details of total issue count and last issue update time for the project.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expanded options include:
+     *                         - `description` Returns the project description
+     *                         - `projectKeys` Returns all project keys associated with a project
+     *                         - `lead` Returns information about the project lead
+     *                         - `issueTypes` Returns all issue types associated with the project
+     *                         - `url` Returns the URL associated with the project
+     *                         - `insight` EXPERIMENTAL.
+     *                        Returns the insight details of total issue count and last issue update time for the project.
      * @param ?list<'live'|'archived'|'deleted'> $status EXPERIMENTAL.
      *                                                   Filter results by project status:
      *                                                    - `live` Search live projects
@@ -206,12 +206,12 @@ trait Projects
      * @param ?list<Schema\StringList> $properties EXPERIMENTAL.
      *                                             A list of project properties to return for the project.
      *                                             This parameter accepts a comma-separated list.
-     * @param string $propertyQuery EXPERIMENTAL.
-     *                              A query string used to search properties.
-     *                              The query string cannot be specified using a JSON object.
-     *                              For example, to search for the value of `nested` from `{"something":{"nested":1,"other":2}}` use `[thepropertykey].something.nested=1`.
-     *                              Note that the propertyQuery key is enclosed in square brackets to enable searching where the propertyQuery key includes dot (.) or equals (=) characters.
-     *                              Note that `thepropertykey` is only returned when included in `properties`.
+     * @param ?string $propertyQuery EXPERIMENTAL.
+     *                               A query string used to search properties.
+     *                               The query string cannot be specified using a JSON object.
+     *                               For example, to search for the value of `nested` from `{"something":{"nested":1,"other":2}}` use `[thepropertykey].something.nested=1`.
+     *                               Note that the propertyQuery key is enclosed in square brackets to enable searching where the propertyQuery key includes dot (.) or equals (=) characters.
+     *                               Note that `thepropertykey` is only returned when included in `properties`.
      */
     public function searchProjects(
         ?int $startAt = 0,
@@ -248,15 +248,15 @@ trait Projects
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that the project description, issue types, and project lead are included in all responses by default.
-     *                       Expand options include:
-     *                        - `description` The project description
-     *                        - `issueTypes` The issue types associated with the project
-     *                        - `lead` The project lead
-     *                        - `projectKeys` All project keys associated with the project
-     *                        - `issueTypeHierarchy` The project issue type hierarchy.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that the project description, issue types, and project lead are included in all responses by default.
+     *                        Expand options include:
+     *                         - `description` The project description
+     *                         - `issueTypes` The issue types associated with the project
+     *                         - `lead` The project lead
+     *                         - `projectKeys` All project keys associated with the project
+     *                         - `issueTypeHierarchy` The project issue type hierarchy.
      * @param ?list<string> $properties A list of project properties to return for the project.
      *                                  This parameter accepts a comma-separated list.
      */
@@ -290,14 +290,14 @@ trait Projects
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Note that the project description, issue types, and project lead are included in all responses by default.
-     *                       Expand options include:
-     *                        - `description` The project description
-     *                        - `issueTypes` The issue types associated with the project
-     *                        - `lead` The project lead
-     *                        - `projectKeys` All project keys associated with the project.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Note that the project description, issue types, and project lead are included in all responses by default.
+     *                        Expand options include:
+     *                         - `description` The project description
+     *                         - `issueTypes` The issue types associated with the project
+     *                         - `lead` The project lead
+     *                         - `projectKeys` All project keys associated with the project.
      */
     public function updateProject(
         Schema\UpdateProjectDetails $request,
@@ -327,7 +327,7 @@ trait Projects
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
-     * @param bool $enableUndo Whether this project is placed in the Jira recycle bin where it will be available for restoration.
+     * @param ?bool $enableUndo Whether this project is placed in the Jira recycle bin where it will be available for restoration.
      */
     public function deleteProject(
         string $projectIdOrKey,
@@ -485,16 +485,16 @@ trait Projects
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectKeyOrId The project ID or project key (case sensitive).
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about any custom fields assigned to receive an event
-     *                        - `group` Returns information about any groups assigned to receive an event
-     *                        - `notificationSchemeEvents` Returns a list of event associations.
-     *                       This list is returned for all expandable information
-     *                        - `projectRole` Returns information about any project roles assigned to receive an event
-     *                        - `user` Returns information about any users assigned to receive an event
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about any custom fields assigned to receive an event
+     *                         - `group` Returns information about any groups assigned to receive an event
+     *                         - `notificationSchemeEvents` Returns a list of event associations.
+     *                        This list is returned for all expandable information
+     *                         - `projectRole` Returns information about any project roles assigned to receive an event
+     *                         - `user` Returns information about any users assigned to receive an event
      */
     public function getNotificationSchemeForProject(
         string $projectKeyOrId,

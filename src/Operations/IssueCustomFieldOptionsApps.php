@@ -27,8 +27,8 @@ trait IssueCustomFieldOptionsApps
      *                         **app-key** can also be found in the app listing in the Atlassian Universal Plugin Manager
      *                          - run "Get fields" and in the field details the value is returned in `key`.
      *                         For example, `"key": "teams-add-on__team-issue-field"`
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getAllIssueFieldOptions(
         string $fieldKey,
@@ -93,9 +93,9 @@ trait IssueCustomFieldOptionsApps
      *                         **app-key** can also be found in the app listing in the Atlassian Universal Plugin Manager
      *                          - run "Get fields" and in the field details the value is returned in `key`.
      *                         For example, `"key": "teams-add-on__team-issue-field"`
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param int $projectId Filters the results to options that are only available in the specified project.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?int $projectId Filters the results to options that are only available in the specified project.
      */
     public function getSelectableIssueFieldOptions(
         string $fieldKey,
@@ -127,9 +127,9 @@ trait IssueCustomFieldOptionsApps
      *                         **app-key** can also be found in the app listing in the Atlassian Universal Plugin Manager
      *                          - run "Get fields" and in the field details the value is returned in `key`.
      *                         For example, `"key": "teams-add-on__team-issue-field"`
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param int $projectId Filters the results to options that are only available in the specified project.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?int $projectId Filters the results to options that are only available in the specified project.
      */
     public function getVisibleIssueFieldOptions(
         string $fieldKey,
@@ -272,14 +272,14 @@ trait IssueCustomFieldOptionsApps
      *                          - run "Get fields" and in the field details the value is returned in `key`.
      *                         For example, `"key": "teams-add-on__team-issue-field"`
      * @param int $optionId The ID of the option to be deselected.
-     * @param int $replaceWith The ID of the option that will replace the currently selected option.
-     * @param string $jql A JQL query that specifies the issues to be updated.
-     *                    For example, *project=10000*.
-     * @param bool $overrideScreenSecurity Whether screen security is overridden to enable hidden fields to be edited.
-     *                                     Available to Connect and Forge app users with admin permission.
-     * @param bool $overrideEditableFlag Whether screen security is overridden to enable uneditable fields to be edited.
-     *                                   Available to Connect and Forge app users with *Administer Jira* "global permission".
-     *                                   @link https://confluence.atlassian.com/x/x4dKLg
+     * @param ?int $replaceWith The ID of the option that will replace the currently selected option.
+     * @param ?string $jql A JQL query that specifies the issues to be updated.
+     *                     For example, *project=10000*.
+     * @param ?bool $overrideScreenSecurity Whether screen security is overridden to enable hidden fields to be edited.
+     *                                      Available to Connect and Forge app users with admin permission.
+     * @param ?bool $overrideEditableFlag Whether screen security is overridden to enable uneditable fields to be edited.
+     *                                    Available to Connect and Forge app users with *Administer Jira* "global permission".
+     *                                    @link https://confluence.atlassian.com/x/x4dKLg
      */
     public function replaceIssueFieldOption(
         string $fieldKey,

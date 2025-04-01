@@ -23,9 +23,9 @@ trait ScreenTabs
      * @param ?list<int> $tabId The list of tab IDs.
      *                          To include multiple tab IDs, provide an ampersand-separated list.
      *                          For example, `tabId=10000&tabId=10001`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResult The maximum number of items to return per page.
-     *                       The maximum number is 100,
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResult The maximum number of items to return per page.
+     *                        The maximum number is 100,
      */
     public function getBulkScreenTabs(
         ?array $screenId = null,
@@ -54,7 +54,7 @@ trait ScreenTabs
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param int $screenId The ID of the screen.
-     * @param string $projectKey The key of the project.
+     * @param ?string $projectKey The key of the project.
      * 
      * @return list<Schema\ScreenableTab>
      */

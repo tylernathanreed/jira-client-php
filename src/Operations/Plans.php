@@ -15,13 +15,13 @@ trait Plans
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param bool $includeTrashed Whether to include trashed plans in the results.
-     * @param bool $includeArchived Whether to include archived plans in the results.
-     * @param string $cursor The cursor to start from.
-     *                       If not provided, the first page will be returned.
-     * @param int $maxResults The maximum number of plans to return per page.
-     *                        The maximum value is 50.
-     *                        The default value is 50.
+     * @param ?bool $includeTrashed Whether to include trashed plans in the results.
+     * @param ?bool $includeArchived Whether to include archived plans in the results.
+     * @param ?string $cursor The cursor to start from.
+     *                        If not provided, the first page will be returned.
+     * @param ?int $maxResults The maximum number of plans to return per page.
+     *                         The maximum value is 50.
+     *                         The default value is 50.
      */
     public function getPlans(
         ?bool $includeTrashed = false,
@@ -45,8 +45,8 @@ trait Plans
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param bool $useGroupId Whether to accept group IDs instead of group names.
-     *                         Group names are deprecated.
+     * @param ?bool $useGroupId Whether to accept group IDs instead of group names.
+     *                          Group names are deprecated.
      */
     public function createPlan(
         Schema\CreatePlanRequest $request,
@@ -70,8 +70,8 @@ trait Plans
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $planId The ID of the plan.
-     * @param bool $useGroupId Whether to return group IDs instead of group names.
-     *                         Group names are deprecated.
+     * @param ?bool $useGroupId Whether to return group IDs instead of group names.
+     *                          Group names are deprecated.
      */
     public function getPlan(
         int $planId,
@@ -142,8 +142,8 @@ trait Plans
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $planId The ID of the plan.
-     * @param bool $useGroupId Whether to accept group IDs instead of group names.
-     *                         Group names are deprecated.
+     * @param ?bool $useGroupId Whether to accept group IDs instead of group names.
+     *                          Group names are deprecated.
      */
     public function updatePlan(
         int $planId,

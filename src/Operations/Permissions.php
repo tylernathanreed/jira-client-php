@@ -38,18 +38,18 @@ trait Permissions
      * 
      * @link https://support.atlassian.com/jira-cloud-administration/docs/customize-jira-service-management-permissions/
      * 
-     * @param string $projectKey The key of project.
-     *                           Ignored if `projectId` is provided.
-     * @param string $projectId The ID of project.
-     * @param string $issueKey The key of the issue.
-     *                         Ignored if `issueId` is provided.
-     * @param string $issueId The ID of the issue.
-     * @param string $permissions A list of permission keys.
-     *                            (Required) This parameter accepts a comma-separated list.
-     *                            To get the list of available permissions, use "Get all permissions".
-     * @param string $projectUuid 
-     * @param string $projectConfigurationUuid 
-     * @param string $commentId The ID of the comment.
+     * @param ?string $projectKey The key of project.
+     *                            Ignored if `projectId` is provided.
+     * @param ?string $projectId The ID of project.
+     * @param ?string $issueKey The key of the issue.
+     *                          Ignored if `issueId` is provided.
+     * @param ?string $issueId The ID of the issue.
+     * @param ?string $permissions A list of permission keys.
+     *                             (Required) This parameter accepts a comma-separated list.
+     *                             To get the list of available permissions, use "Get all permissions".
+     * @param ?string $projectUuid 
+     * @param ?string $projectConfigurationUuid 
+     * @param ?string $commentId The ID of the comment.
      */
     public function getMyPermissions(
         ?string $projectKey = null,

@@ -13,7 +13,7 @@ trait ProjectKeyAndNameValidation
      * 
      * **"Permissions" required:** None.
      * 
-     * @param string $key The project key.
+     * @param ?string $key The project key.
      */
     public function validateProjectKey(
         ?string $key = null,
@@ -32,7 +32,7 @@ trait ProjectKeyAndNameValidation
      * 
      * **"Permissions" required:** None.
      * 
-     * @param string $key The project key.
+     * @param ?string $key The project key.
      */
     public function getValidProjectKey(
         ?string $key = null,

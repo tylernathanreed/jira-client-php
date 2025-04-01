@@ -21,8 +21,8 @@ trait Usernavproperties
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $propertyKey The key of the user's property.
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
      */
     public function getUserNavProperty(
         string $propertyKey,
@@ -51,8 +51,8 @@ trait Usernavproperties
      * 
      * @param string $propertyKey The key of the nav property.
      *                            The maximum length is 255 characters.
-     * @param string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
-     *                          For example, *5b10ac8d82e05b22cc7d4ef5*.
+     * @param ?string $accountId The account ID of the user, which uniquely identifies the user across all Atlassian products.
+     *                           For example, *5b10ac8d82e05b22cc7d4ef5*.
      */
     public function setUserNavProperty(
         string $propertyKey,

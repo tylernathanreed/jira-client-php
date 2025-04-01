@@ -33,17 +33,17 @@ trait IssueCustomFieldConfigurationApps
      * @param ?list<int> $fieldContextId The list of field context IDs.
      *                                   To include multiple field contexts, separate IDs with an ampersand: `fieldContextId=10000&fieldContextId=10001`.
      *                                   Can't be provided with `id`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
-     * @param int $issueId The ID of the issue to filter results by.
-     *                     If the issue doesn't exist, an empty list is returned.
-     *                     Can't be provided with `projectKeyOrId`, or `issueTypeId`.
-     * @param string $projectKeyOrId The ID or key of the project to filter results by.
-     *                               Must be provided with `issueTypeId`.
-     *                               Can't be provided with `issueId`.
-     * @param string $issueTypeId The ID of the issue type to filter results by.
-     *                            Must be provided with `projectKeyOrId`.
-     *                            Can't be provided with `issueId`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $issueId The ID of the issue to filter results by.
+     *                      If the issue doesn't exist, an empty list is returned.
+     *                      Can't be provided with `projectKeyOrId`, or `issueTypeId`.
+     * @param ?string $projectKeyOrId The ID or key of the project to filter results by.
+     *                                Must be provided with `issueTypeId`.
+     *                                Can't be provided with `issueId`.
+     * @param ?string $issueTypeId The ID of the issue type to filter results by.
+     *                             Must be provided with `projectKeyOrId`.
+     *                             Can't be provided with `issueId`.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getCustomFieldsConfigurations(
         Schema\ConfigurationsListParameters $request,
@@ -91,17 +91,17 @@ trait IssueCustomFieldConfigurationApps
      * @param ?list<int> $fieldContextId The list of field context IDs.
      *                                   To include multiple field contexts, separate IDs with an ampersand: `fieldContextId=10000&fieldContextId=10001`.
      *                                   Can't be provided with `id`, `issueId`, `projectKeyOrId`, or `issueTypeId`.
-     * @param int $issueId The ID of the issue to filter results by.
-     *                     If the issue doesn't exist, an empty list is returned.
-     *                     Can't be provided with `projectKeyOrId`, or `issueTypeId`.
-     * @param string $projectKeyOrId The ID or key of the project to filter results by.
-     *                               Must be provided with `issueTypeId`.
-     *                               Can't be provided with `issueId`.
-     * @param string $issueTypeId The ID of the issue type to filter results by.
-     *                            Must be provided with `projectKeyOrId`.
-     *                            Can't be provided with `issueId`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $issueId The ID of the issue to filter results by.
+     *                      If the issue doesn't exist, an empty list is returned.
+     *                      Can't be provided with `projectKeyOrId`, or `issueTypeId`.
+     * @param ?string $projectKeyOrId The ID or key of the project to filter results by.
+     *                                Must be provided with `issueTypeId`.
+     *                                Can't be provided with `issueId`.
+     * @param ?string $issueTypeId The ID of the issue type to filter results by.
+     *                             Must be provided with `projectKeyOrId`.
+     *                             Can't be provided with `issueId`.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getCustomFieldConfiguration(
         string $fieldIdOrKey,

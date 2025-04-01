@@ -92,11 +92,11 @@ trait IssueResolutions
      * 
      * **"Permissions" required:** Permission to access Jira.
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<string> $id The list of resolutions IDs to be filtered out
-     * @param bool $onlyDefault When set to true, return default only, when IDs provided, if none of them is default, return empty page.
-     *                          Default value is false
+     * @param ?bool $onlyDefault When set to true, return default only, when IDs provided, if none of them is default, return empty page.
+     *                           Default value is false
      */
     public function searchResolutions(
         ?string $startAt = '0',

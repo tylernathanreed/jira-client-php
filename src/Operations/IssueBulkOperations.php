@@ -53,9 +53,9 @@ trait IssueBulkOperations
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdsOrKeys The IDs or keys of the issues to get editable fields from.
-     * @param string $searchText (Optional)The text to search for in the editable fields.
-     * @param string $endingBefore (Optional)The end cursor for use in pagination.
-     * @param string $startingAfter (Optional)The start cursor for use in pagination.
+     * @param ?string $searchText (Optional)The text to search for in the editable fields.
+     * @param ?string $endingBefore (Optional)The end cursor for use in pagination.
+     * @param ?string $startingAfter (Optional)The start cursor for use in pagination.
      */
     public function getBulkEditableFields(
         string $issueIdsOrKeys,
@@ -173,8 +173,8 @@ trait IssueBulkOperations
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $issueIdsOrKeys Comma (,) separated Ids or keys of the issues to get transitions available for them.
-     * @param string $endingBefore (Optional)The end cursor for use in pagination.
-     * @param string $startingAfter (Optional)The start cursor for use in pagination.
+     * @param ?string $endingBefore (Optional)The end cursor for use in pagination.
+     * @param ?string $startingAfter (Optional)The start cursor for use in pagination.
      */
     public function getAvailableTransitions(
         string $issueIdsOrKeys,

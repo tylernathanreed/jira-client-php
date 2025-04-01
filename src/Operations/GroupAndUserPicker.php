@@ -45,10 +45,10 @@ trait GroupAndUserPicker
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $query The search string.
-     * @param int $maxResults The maximum number of items to return in each list.
-     * @param bool $showAvatar Whether the user avatar should be returned.
-     *                         If an invalid value is provided, the default value is used.
-     * @param string $fieldId The custom field ID of the field this request is for.
+     * @param ?int $maxResults The maximum number of items to return in each list.
+     * @param ?bool $showAvatar Whether the user avatar should be returned.
+     *                          If an invalid value is provided, the default value is used.
+     * @param ?string $fieldId The custom field ID of the field this request is for.
      * @param ?list<string> $projectId The ID of a project that returned users and groups must have permission to view.
      *                                 To include multiple projects, provide an ampersand-separated list.
      *                                 For example, `projectId=10000&projectId=10001`.
@@ -61,9 +61,9 @@ trait GroupAndUserPicker
      * @param 'xsmall'|'xsmall@2x'|'xsmall@3x'|'small'|'small@2x'|'small@3x'|'medium'|'medium@2x'|'medium@3x'|'large'|'large@2x'|'large@3x'|'xlarge'|'xlarge@2x'|'xlarge@3x'|'xxlarge'|'xxlarge@2x'|'xxlarge@3x'|'xxxlarge'|'xxxlarge@2x'|'xxxlarge@3x'|null $avatarSize
      *        The size of the avatar to return.
      *        If an invalid value is provided, the default value is used.
-     * @param bool $caseInsensitive Whether the search for groups should be case insensitive.
-     * @param bool $excludeConnectAddons Whether Connect app users and groups should be excluded from the search results.
-     *                                   If an invalid value is provided, the default value is used.
+     * @param ?bool $caseInsensitive Whether the search for groups should be case insensitive.
+     * @param ?bool $excludeConnectAddons Whether Connect app users and groups should be excluded from the search results.
+     *                                    If an invalid value is provided, the default value is used.
      */
     public function findUsersAndGroups(
         string $query,

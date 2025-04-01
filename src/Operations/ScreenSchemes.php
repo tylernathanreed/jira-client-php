@@ -17,14 +17,14 @@ trait ScreenSchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $id The list of screen scheme IDs.
      *                       To include multiple IDs, provide an ampersand-separated list.
      *                       For example, `id=10000&id=10001`.
-     * @param string $expand Use "expand" include additional information in the response.
-     *                       This parameter accepts `issueTypeScreenSchemes` that, for each screen schemes, returns information about the issue type screen scheme the screen scheme is assigned to.
-     * @param string $queryString String used to perform a case-insensitive partial match with screen scheme name.
+     * @param ?string $expand Use "expand" include additional information in the response.
+     *                        This parameter accepts `issueTypeScreenSchemes` that, for each screen schemes, returns information about the issue type screen scheme the screen scheme is assigned to.
+     * @param ?string $queryString String used to perform a case-insensitive partial match with screen scheme name.
      * @param 'name'|'-name'|'+name'|'id'|'-id'|'+id'|null $orderBy
      *        "Order" the results by a field:
      *         - `id` Sorts by screen scheme ID

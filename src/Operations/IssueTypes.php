@@ -63,11 +63,11 @@ trait IssueTypes
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $projectId The ID of the project.
-     * @param int $level The level of the issue type to filter by.
-     *                   Use:
-     *                    - `-1` for Subtask
-     *                    - `0` for Base
-     *                    - `1` for Epic.
+     * @param ?int $level The level of the issue type to filter by.
+     *                    Use:
+     *                     - `-1` for Subtask
+     *                     - `0` for Base
+     *                     - `1` for Epic.
      * 
      * @return list<Schema\IssueTypeDetails>
      */
@@ -141,7 +141,7 @@ trait IssueTypes
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $id The ID of the issue type.
-     * @param string $alternativeIssueTypeId The ID of the replacement issue type.
+     * @param ?string $alternativeIssueTypeId The ID of the replacement issue type.
      */
     public function deleteIssueType(
         string $id,
@@ -207,8 +207,8 @@ trait IssueTypes
      * 
      * @param string $id The ID of the issue type.
      * @param int $size The length of each side of the crop region.
-     * @param int $x The X coordinate of the top-left corner of the crop region.
-     * @param int $y The Y coordinate of the top-left corner of the crop region.
+     * @param ?int $x The X coordinate of the top-left corner of the crop region.
+     * @param ?int $y The Y coordinate of the top-left corner of the crop region.
      */
     public function createIssueTypeAvatar(
         string $id,

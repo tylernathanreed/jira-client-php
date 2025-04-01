@@ -28,8 +28,8 @@ trait IssueAttachments
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $id The ID of the attachment.
-     * @param bool $redirect Whether a redirect is provided for the attachment download.
-     *                       Clients that do not automatically follow redirects can set this to `false` to avoid making multiple requests to download the attachment.
+     * @param ?bool $redirect Whether a redirect is provided for the attachment download.
+     *                        Clients that do not automatically follow redirects can set this to `false` to avoid making multiple requests to download the attachment.
      */
     public function getAttachmentContent(
         string $id,
@@ -83,11 +83,11 @@ trait IssueAttachments
      * @link https://confluence.atlassian.com/x/J4lKLg
      * 
      * @param string $id The ID of the attachment.
-     * @param bool $redirect Whether a redirect is provided for the attachment download.
-     *                       Clients that do not automatically follow redirects can set this to `false` to avoid making multiple requests to download the attachment.
-     * @param bool $fallbackToDefault Whether a default thumbnail is returned when the requested thumbnail is not found.
-     * @param int $width The maximum width to scale the thumbnail to.
-     * @param int $height The maximum height to scale the thumbnail to.
+     * @param ?bool $redirect Whether a redirect is provided for the attachment download.
+     *                        Clients that do not automatically follow redirects can set this to `false` to avoid making multiple requests to download the attachment.
+     * @param ?bool $fallbackToDefault Whether a default thumbnail is returned when the requested thumbnail is not found.
+     * @param ?int $width The maximum width to scale the thumbnail to.
+     * @param ?int $height The maximum height to scale the thumbnail to.
      */
     public function getAttachmentThumbnail(
         string $id,

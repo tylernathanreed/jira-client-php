@@ -17,13 +17,13 @@ trait UIModificationsApps
      * The new `read:app-data:jira` OAuth scope is 100% optional now, and not using it won't break your app.
      * However, we recommend adding it to your app's scope list because we will eventually make it mandatory.
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `data` Returns UI modification data
-     *                        - `contexts` Returns UI modification contexts.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `data` Returns UI modification data
+     *                         - `contexts` Returns UI modification contexts.
      */
     public function getUiModifications(
         ?int $startAt = 0,

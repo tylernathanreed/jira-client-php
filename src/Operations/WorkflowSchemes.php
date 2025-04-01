@@ -15,8 +15,8 @@ trait WorkflowSchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getAllWorkflowSchemes(
         ?int $startAt = 0,
@@ -58,13 +58,13 @@ trait WorkflowSchemes
      *  - *Administer Jira* global permission to access all, including project-scoped, workflow schemes
      *  - *Administer projects* project permissions to access project-scoped workflow schemes
      * 
-     * @param string $expand Deprecated.
-     *                       See the "deprecation notice" for details
-     *                       Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `workflows.usages` Returns the project and issue types that each workflow in the workflow scheme is associated with.
-     *                       @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
+     * @param ?string $expand Deprecated.
+     *                        See the "deprecation notice" for details
+     *                        Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `workflows.usages` Returns the project and issue types that each workflow in the workflow scheme is associated with.
+     *                        @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
      * 
      * @return list<Schema\WorkflowSchemeReadResponse>
      */
@@ -137,8 +137,8 @@ trait WorkflowSchemes
      *                Find this ID by editing the desired workflow scheme in Jira.
      *                The ID is shown in the URL as `schemeId`.
      *                For example, *schemeId=10301*.
-     * @param bool $returnDraftIfExists Returns the workflow scheme's draft rather than scheme itself, if set to true.
-     *                                  If the workflow scheme does not have a draft, then the workflow scheme is returned.
+     * @param ?bool $returnDraftIfExists Returns the workflow scheme's draft rather than scheme itself, if set to true.
+     *                                   If the workflow scheme does not have a draft, then the workflow scheme is returned.
      */
     public function getWorkflowScheme(
         int $id,
@@ -216,8 +216,8 @@ trait WorkflowSchemes
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $id The ID of the workflow scheme.
-     * @param bool $returnDraftIfExists Set to `true` to return the default workflow for the workflow scheme's draft rather than scheme itself.
-     *                                  If the workflow scheme does not have a draft, then the default workflow for the workflow scheme is returned.
+     * @param ?bool $returnDraftIfExists Set to `true` to return the default workflow for the workflow scheme's draft rather than scheme itself.
+     *                                   If the workflow scheme does not have a draft, then the default workflow for the workflow scheme is returned.
      */
     public function getDefaultWorkflow(
         int $id,
@@ -273,8 +273,8 @@ trait WorkflowSchemes
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $id The ID of the workflow scheme.
-     * @param bool $updateDraftIfNeeded Set to true to create or update the draft of a workflow scheme and delete the mapping from the draft, when the workflow scheme cannot be edited.
-     *                                  Defaults to `false`.
+     * @param ?bool $updateDraftIfNeeded Set to true to create or update the draft of a workflow scheme and delete the mapping from the draft, when the workflow scheme cannot be edited.
+     *                                   Defaults to `false`.
      */
     public function deleteDefaultWorkflow(
         int $id,
@@ -299,8 +299,8 @@ trait WorkflowSchemes
      * 
      * @param int $id The ID of the workflow scheme.
      * @param string $issueType The ID of the issue type.
-     * @param bool $returnDraftIfExists Returns the mapping from the workflow scheme's draft rather than the workflow scheme, if set to true.
-     *                                  If no draft exists, the mapping from the workflow scheme is returned.
+     * @param ?bool $returnDraftIfExists Returns the mapping from the workflow scheme's draft rather than the workflow scheme, if set to true.
+     *                                   If no draft exists, the mapping from the workflow scheme is returned.
      */
     public function getWorkflowSchemeIssueType(
         int $id,
@@ -359,8 +359,8 @@ trait WorkflowSchemes
      * 
      * @param int $id The ID of the workflow scheme.
      * @param string $issueType The ID of the issue type.
-     * @param bool $updateDraftIfNeeded Set to true to create or update the draft of a workflow scheme and update the mapping in the draft, when the workflow scheme cannot be edited.
-     *                                  Defaults to `false`.
+     * @param ?bool $updateDraftIfNeeded Set to true to create or update the draft of a workflow scheme and update the mapping in the draft, when the workflow scheme cannot be edited.
+     *                                   Defaults to `false`.
      */
     public function deleteWorkflowSchemeIssueType(
         int $id,
@@ -385,10 +385,10 @@ trait WorkflowSchemes
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $id The ID of the workflow scheme.
-     * @param string $workflowName The name of a workflow in the scheme.
-     *                             Limits the results to the workflow-issue type mapping for the specified workflow.
-     * @param bool $returnDraftIfExists Returns the mapping from the workflow scheme's draft rather than the workflow scheme, if set to true.
-     *                                  If no draft exists, the mapping from the workflow scheme is returned.
+     * @param ?string $workflowName The name of a workflow in the scheme.
+     *                              Limits the results to the workflow-issue type mapping for the specified workflow.
+     * @param ?bool $returnDraftIfExists Returns the mapping from the workflow scheme's draft rather than the workflow scheme, if set to true.
+     *                                   If no draft exists, the mapping from the workflow scheme is returned.
      */
     public function getWorkflow(
         int $id,
@@ -450,8 +450,8 @@ trait WorkflowSchemes
      * 
      * @param int $id The ID of the workflow scheme.
      * @param string $workflowName The name of the workflow.
-     * @param bool $updateDraftIfNeeded Set to true to create or update the draft of a workflow scheme and delete the mapping from the draft, when the workflow scheme cannot be edited.
-     *                                  Defaults to `false`.
+     * @param ?bool $updateDraftIfNeeded Set to true to create or update the draft of a workflow scheme and delete the mapping from the draft, when the workflow scheme cannot be edited.
+     *                                   Defaults to `false`.
      */
     public function deleteWorkflowMapping(
         int $id,
@@ -472,9 +472,9 @@ trait WorkflowSchemes
      * Returns a page of projects using a given workflow scheme.
      * 
      * @param string $workflowSchemeId The workflow scheme ID
-     * @param string $nextPageToken The cursor for pagination
-     * @param int $maxResults The maximum number of results to return.
-     *                        Must be an integer between 1 and 200.
+     * @param ?string $nextPageToken The cursor for pagination
+     * @param ?int $maxResults The maximum number of results to return.
+     *                         Must be an integer between 1 and 200.
      */
     public function getProjectUsagesForWorkflowScheme(
         string $workflowSchemeId,

@@ -17,8 +17,8 @@ trait IssueTypeSchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $id The list of issue type schemes IDs.
      *                       To include multiple IDs, provide an ampersand-separated list.
      *                       For example, `id=10000&id=10001`.
@@ -26,12 +26,12 @@ trait IssueTypeSchemes
      *        "Order" the results by a field:
      *         - `name` Sorts by issue type scheme name
      *         - `id` Sorts by issue type scheme ID.
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `projects` For each issue type schemes, returns information about the projects the issue type scheme is assigned to
-     *                        - `issueTypes` For each issue type schemes, returns information about the issueTypes the issue type scheme have.
-     * @param string $queryString String used to perform a case-insensitive partial match with issue type scheme name.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `projects` For each issue type schemes, returns information about the projects the issue type scheme is assigned to
+     *                         - `issueTypes` For each issue type schemes, returns information about the issueTypes the issue type scheme have.
+     * @param ?string $queryString String used to perform a case-insensitive partial match with issue type scheme name.
      */
     public function getAllIssueTypeSchemes(
         ?int $startAt = 0,
@@ -78,8 +78,8 @@ trait IssueTypeSchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $issueTypeSchemeId The list of issue type scheme IDs.
      *                                      To include multiple IDs, provide an ampersand-separated list.
      *                                      For example, `issueTypeSchemeId=10000&issueTypeSchemeId=10001`.
@@ -110,8 +110,8 @@ trait IssueTypeSchemes
      * @param list<int> $projectId The list of project IDs.
      *                             To include multiple project IDs, provide an ampersand-separated list.
      *                             For example, `projectId=10000&projectId=10001`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getIssueTypeSchemeForProjects(
         array $projectId,

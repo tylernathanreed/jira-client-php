@@ -22,14 +22,14 @@ trait Status
      *                         To include multiple IDs, provide an ampersand-separated list.
      *                         For example, id=10000&id=10001
      *                         Min items `1`, Max items `50`
-     * @param string $expand Deprecated.
-     *                       See the "deprecation notice" for details
-     *                       Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `usages` Returns the project and issue types that use the status in their workflow
-     *                        - `workflowUsages` Returns the workflows that use the status.
-     *                       @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
+     * @param ?string $expand Deprecated.
+     *                        See the "deprecation notice" for details
+     *                        Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `usages` Returns the project and issue types that use the status in their workflow
+     *                         - `workflowUsages` Returns the workflows that use the status.
+     *                        @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
      * 
      * @return list<Schema\JiraStatus>
      */
@@ -130,20 +130,20 @@ trait Status
      * @link https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
-     * @param string $expand Deprecated.
-     *                       See the "deprecation notice" for details
-     *                       Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `usages` Returns the project and issue types that use the status in their workflow
-     *                        - `workflowUsages` Returns the workflows that use the status.
-     *                       @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
-     * @param string $projectId The project the status is part of or null for global statuses.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
-     * @param string $searchString Term to match status names against or null to search for all statuses in the search scope.
-     * @param string $statusCategory Category of the status to filter by.
-     *                               The supported values are: `TODO`, `IN_PROGRESS`, and `DONE`.
+     * @param ?string $expand Deprecated.
+     *                        See the "deprecation notice" for details
+     *                        Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `usages` Returns the project and issue types that use the status in their workflow
+     *                         - `workflowUsages` Returns the workflows that use the status.
+     *                        @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
+     * @param ?string $projectId The project the status is part of or null for global statuses.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
+     * @param ?string $searchString Term to match status names against or null to search for all statuses in the search scope.
+     * @param ?string $statusCategory Category of the status to filter by.
+     *                                The supported values are: `TODO`, `IN_PROGRESS`, and `DONE`.
      */
     public function search(
         ?string $expand = null,
@@ -167,9 +167,9 @@ trait Status
      * 
      * @param string $statusId The statusId to fetch issue type usages for
      * @param string $projectId The projectId to fetch issue type usages for
-     * @param string $nextPageToken The cursor for pagination
-     * @param int $maxResults The maximum number of results to return.
-     *                        Must be an integer between 1 and 200.
+     * @param ?string $nextPageToken The cursor for pagination
+     * @param ?int $maxResults The maximum number of results to return.
+     *                         Must be an integer between 1 and 200.
      */
     public function getProjectIssueTypeUsagesForStatus(
         string $statusId,
@@ -191,9 +191,9 @@ trait Status
      * Returns a page of projects using a given status.
      * 
      * @param string $statusId The statusId to fetch project usages for
-     * @param string $nextPageToken The cursor for pagination
-     * @param int $maxResults The maximum number of results to return.
-     *                        Must be an integer between 1 and 200.
+     * @param ?string $nextPageToken The cursor for pagination
+     * @param ?int $maxResults The maximum number of results to return.
+     *                         Must be an integer between 1 and 200.
      */
     public function getProjectUsagesForStatus(
         string $statusId,
@@ -214,9 +214,9 @@ trait Status
      * Returns a page of workflows using a given status.
      * 
      * @param string $statusId The statusId to fetch workflow usages for
-     * @param string $nextPageToken The cursor for pagination
-     * @param int $maxResults The maximum number of results to return.
-     *                        Must be an integer between 1 and 200.
+     * @param ?string $nextPageToken The cursor for pagination
+     * @param ?int $maxResults The maximum number of results to return.
+     *                         Must be an integer between 1 and 200.
      */
     public function getWorkflowUsagesForStatus(
         string $statusId,

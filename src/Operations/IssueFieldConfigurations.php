@@ -22,13 +22,13 @@ trait IssueFieldConfigurations
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $id The list of field configuration IDs.
      *                       To include multiple IDs, provide an ampersand-separated list.
      *                       For example, `id=10000&id=10001`.
-     * @param bool $isDefault If *true* returns default field configurations only.
-     * @param string $query The query string used to match against field configuration names and descriptions.
+     * @param ?bool $isDefault If *true* returns default field configurations only.
+     * @param ?string $query The query string used to match against field configuration names and descriptions.
      */
     public function getAllFieldConfigurations(
         ?int $startAt = 0,
@@ -127,8 +127,8 @@ trait IssueFieldConfigurations
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param int $id The ID of the field configuration.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getFieldConfigurationItems(
         int $id,
@@ -183,8 +183,8 @@ trait IssueFieldConfigurations
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $id The list of field configuration scheme IDs.
      *                       To include multiple IDs, provide an ampersand-separated list.
      *                       For example, `id=10000&id=10001`.
@@ -233,8 +233,8 @@ trait IssueFieldConfigurations
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<int> $fieldConfigurationSchemeId The list of field configuration scheme IDs.
      *                                               To include multiple field configuration schemes separate IDs with ampersand: `fieldConfigurationSchemeId=10000&fieldConfigurationSchemeId=10001`.
      */
@@ -266,8 +266,8 @@ trait IssueFieldConfigurations
      * 
      * @param list<int> $projectId The list of project IDs.
      *                             To include multiple projects, separate IDs with ampersand: `projectId=10000&projectId=10001`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getFieldConfigurationSchemeProjectMapping(
         array $projectId,

@@ -53,7 +53,7 @@ trait ProjectRoles
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
      * @param int $id The ID of the project role.
      *                Use "Get all project roles" to get a list of project role IDs.
-     * @param bool $excludeInactiveUsers Exclude inactive users.
+     * @param ?bool $excludeInactiveUsers Exclude inactive users.
      */
     public function getProjectRole(
         string $projectIdOrKey,
@@ -83,8 +83,8 @@ trait ProjectRoles
      * @link https://confluence.atlassian.com/x/yodKLg
      * 
      * @param string $projectIdOrKey The project ID or project key (case sensitive).
-     * @param bool $currentMember Whether the roles should be filtered to include only those the user is assigned to.
-     * @param bool $excludeConnectAddons 
+     * @param ?bool $currentMember Whether the roles should be filtered to include only those the user is assigned to.
+     * @param ?bool $excludeConnectAddons 
      * 
      * @return list<Schema\ProjectRoleDetails>
      */
@@ -250,8 +250,8 @@ trait ProjectRoles
      * 
      * @param int $id The ID of the project role to delete.
      *                Use "Get all project roles" to get a list of project role IDs.
-     * @param int $swap The ID of the project role that will replace the one being deleted.
-     *                  The swap will attempt to swap the role in schemes (notifications, permissions, issue security), workflows, worklogs and comments.
+     * @param ?int $swap The ID of the project role that will replace the one being deleted.
+     *                   The swap will attempt to swap the role in schemes (notifications, permissions, issue security), workflows, worklogs and comments.
      */
     public function deleteProjectRole(
         int $id,

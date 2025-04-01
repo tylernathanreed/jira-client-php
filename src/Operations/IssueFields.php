@@ -69,27 +69,27 @@ trait IssueFields
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<'custom'|'system'> $type The type of fields to search.
      * @param ?list<string> $id The IDs of the custom fields to return or, where `query` is specified, filter.
-     * @param string $query String used to perform a case-insensitive partial match with field names or descriptions.
+     * @param ?string $query String used to perform a case-insensitive partial match with field names or descriptions.
      * @param 'contextsCount'|'-contextsCount'|'+contextsCount'|'lastUsed'|'-lastUsed'|'+lastUsed'|'name'|'-name'|'+name'|'screensCount'|'-screensCount'|'+screensCount'|'projectsCount'|'-projectsCount'|'+projectsCount'|null $orderBy
      *        "Order" the results by:
      *         - `contextsCount` sorts by the number of contexts related to a field
      *         - `lastUsed` sorts by the date when the value of the field last changed
      *         - `name` sorts by the field name
      *         - `screensCount` sorts by the number of screens related to a field
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `key` returns the key for each field
-     *                        - `stableId` returns the stableId for each field
-     *                        - `lastUsed` returns the date when the value of the field last changed
-     *                        - `screensCount` returns the number of screens related to a field
-     *                        - `contextsCount` returns the number of contexts related to a field
-     *                        - `isLocked` returns information about whether the field is locked
-     *                        - `searcherKey` returns the searcher key for each custom field
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `key` returns the key for each field
+     *                         - `stableId` returns the stableId for each field
+     *                         - `lastUsed` returns the date when the value of the field last changed
+     *                         - `screensCount` returns the number of screens related to a field
+     *                         - `contextsCount` returns the number of contexts related to a field
+     *                         - `isLocked` returns information about whether the field is locked
+     *                         - `searcherKey` returns the searcher key for each custom field
      * @param ?list<int> $projectIds 
      */
     public function getFieldsPaginated(
@@ -121,16 +121,16 @@ trait IssueFields
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<string> $id 
-     * @param string $query String used to perform a case-insensitive partial match with field names or descriptions.
+     * @param ?string $query String used to perform a case-insensitive partial match with field names or descriptions.
      * @param 'name'|'-name'|'+name'|'trashDate'|'-trashDate'|'+trashDate'|'plannedDeletionDate'|'-plannedDeletionDate'|'+plannedDeletionDate'|'projectsCount'|'-projectsCount'|'+projectsCount'|null $expand
      *        
-     * @param string $orderBy "Order" the results by a field:
-     *                         - `name` sorts by the field name
-     *                         - `trashDate` sorts by the date the field was moved to the trash
-     *                         - `plannedDeletionDate` sorts by the planned deletion date
+     * @param ?string $orderBy "Order" the results by a field:
+     *                          - `name` sorts by the field name
+     *                          - `trashDate` sorts by the date the field was moved to the trash
+     *                          - `plannedDeletionDate` sorts by the planned deletion date
      */
     public function getTrashedFieldsPaginated(
         ?int $startAt = 0,
@@ -181,8 +181,8 @@ trait IssueFields
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $fieldId The ID of the field to return contexts for.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getContextsForFieldDeprecated(
         string $fieldId,

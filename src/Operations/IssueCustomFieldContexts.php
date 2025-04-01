@@ -23,12 +23,12 @@ trait IssueCustomFieldContexts
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $fieldId The ID of the custom field.
-     * @param bool $isAnyIssueType Whether to return contexts that apply to all issue types.
-     * @param bool $isGlobalContext Whether to return contexts that apply to all projects.
+     * @param ?bool $isAnyIssueType Whether to return contexts that apply to all issue types.
+     * @param ?bool $isGlobalContext Whether to return contexts that apply to all projects.
      * @param ?list<int> $contextId The list of context IDs.
      *                              To include multiple contexts, separate IDs with ampersand: `contextId=10000&contextId=10001`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getContextsForField(
         string $fieldId,
@@ -120,8 +120,8 @@ trait IssueCustomFieldContexts
      * 
      * @param string $fieldId The ID of the custom field, for example `customfield\_10000`.
      * @param ?list<int> $contextId The IDs of the contexts.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getDefaultValues(
         string $fieldId,
@@ -211,8 +211,8 @@ trait IssueCustomFieldContexts
      * @param ?list<int> $contextId The ID of the context.
      *                              To include multiple contexts, provide an ampersand-separated list.
      *                              For example, `contextId=10001&contextId=10002`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getIssueTypeMappingsForContexts(
         string $fieldId,
@@ -246,8 +246,8 @@ trait IssueCustomFieldContexts
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
      * @param string $fieldId The ID of the custom field.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getCustomFieldContextsForProjectsAndIssueTypes(
         Schema\ProjectIssueTypeMappings $request,
@@ -279,8 +279,8 @@ trait IssueCustomFieldContexts
      * @param string $fieldId The ID of the custom field, for example `customfield\_10000`.
      * @param ?list<int> $contextId The list of context IDs.
      *                              To include multiple context, separate IDs with ampersand: `contextId=10000&contextId=10001`.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      */
     public function getProjectContextMapping(
         string $fieldId,

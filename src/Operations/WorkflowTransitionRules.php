@@ -26,15 +26,15 @@ trait WorkflowTransitionRules
      * @link https://developer.atlassian.com/cloud/jira/platform/index/#forge-apps
      * 
      * @param list<'postfunction'|'condition'|'validator'> $types The types of the transition rules to return.
-     * @param int $startAt The index of the first item to return in a page of results (page offset).
-     * @param int $maxResults The maximum number of items to return per page.
+     * @param ?int $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?int $maxResults The maximum number of items to return per page.
      * @param ?list<string> $keys The transition rule class keys, as defined in the Connect or the Forge app descriptor, of the transition rules to return.
      * @param ?list<string> $workflowNames The list of workflow names to filter by.
      * @param ?list<string> $withTags The list of `tags` to filter by.
-     * @param bool $draft Whether draft or published workflows are returned.
-     *                    If not provided, both workflow types are returned.
-     * @param string $expand Use "expand" to include additional information in the response.
-     *                       This parameter accepts `transition`, which, for each rule, returns information about the transition the rule is assigned to.
+     * @param ?bool $draft Whether draft or published workflows are returned.
+     *                     If not provided, both workflow types are returned.
+     * @param ?string $expand Use "expand" to include additional information in the response.
+     *                        This parameter accepts `transition`, which, for each rule, returns information about the transition the rule is assigned to.
      */
     public function getWorkflowTransitionRuleConfigurations(
         array $types,

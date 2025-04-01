@@ -57,15 +57,15 @@ trait IssueSecuritySchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<string> $id The list of issue security scheme level IDs.
      *                          To include multiple issue security levels, separate IDs with an ampersand: `id=10000&id=10001`.
      * @param ?list<string> $schemeId The list of issue security scheme IDs.
      *                                To include multiple issue security schemes, separate IDs with an ampersand: `schemeId=10000&schemeId=10001`.
-     * @param bool $onlyDefault When set to true, returns multiple default levels for each security scheme containing a default.
-     *                          If you provide scheme and level IDs not associated with the default, returns an empty page.
-     *                          The default value is false.
+     * @param ?bool $onlyDefault When set to true, returns multiple default levels for each security scheme containing a default.
+     *                           If you provide scheme and level IDs not associated with the default, returns an empty page.
+     *                           The default value is false.
      */
     public function getSecurityLevels(
         ?string $startAt = '0',
@@ -113,22 +113,22 @@ trait IssueSecuritySchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<string> $id The list of issue security level member IDs.
      *                          To include multiple issue security level members separate IDs with an ampersand: `id=10000&id=10001`.
      * @param ?list<string> $schemeId The list of issue security scheme IDs.
      *                                To include multiple issue security schemes separate IDs with an ampersand: `schemeId=10000&schemeId=10001`.
      * @param ?list<string> $levelId The list of issue security level IDs.
      *                               To include multiple issue security levels separate IDs with an ampersand: `levelId=10000&levelId=10001`.
-     * @param string $expand Use expand to include additional information in the response.
-     *                       This parameter accepts a comma-separated list.
-     *                       Expand options include:
-     *                        - `all` Returns all expandable information
-     *                        - `field` Returns information about the custom field granted the permission
-     *                        - `group` Returns information about the group that is granted the permission
-     *                        - `projectRole` Returns information about the project role granted the permission
-     *                        - `user` Returns information about the user who is granted the permission
+     * @param ?string $expand Use expand to include additional information in the response.
+     *                        This parameter accepts a comma-separated list.
+     *                        Expand options include:
+     *                         - `all` Returns all expandable information
+     *                         - `field` Returns information about the custom field granted the permission
+     *                         - `group` Returns information about the group that is granted the permission
+     *                         - `projectRole` Returns information about the project role granted the permission
+     *                         - `user` Returns information about the user who is granted the permission
      */
     public function getSecurityLevelMembers(
         ?string $startAt = '0',
@@ -156,8 +156,8 @@ trait IssueSecuritySchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<string> $issueSecuritySchemeId The list of security scheme IDs to be filtered out.
      * @param ?list<string> $projectId The list of project IDs to be filtered out.
      */
@@ -210,8 +210,8 @@ trait IssueSecuritySchemes
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<string> $id The list of issue security scheme IDs.
      *                          To include multiple issue security scheme IDs, separate IDs with an ampersand: `id=10000&id=10001`.
      * @param ?list<string> $projectId The list of project IDs.
@@ -363,7 +363,7 @@ trait IssueSecuritySchemes
      * 
      * @param string $schemeId The ID of the issue security scheme.
      * @param string $levelId The ID of the issue security level to remove.
-     * @param string $replaceWith The ID of the issue security level that will replace the currently selected level.
+     * @param ?string $replaceWith The ID of the issue security level that will replace the currently selected level.
      */
     public function removeLevel(
         string $schemeId,

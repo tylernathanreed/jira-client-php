@@ -13,22 +13,22 @@ trait PrioritySchemes
      * 
      * **"Permissions" required:** Permission to access Jira.
      * 
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<int> $priorityId A set of priority IDs to filter by.
      *                               To include multiple IDs, provide an ampersand-separated list.
      *                               For example, `priorityId=10000&priorityId=10001`.
      * @param ?list<int> $schemeId A set of priority scheme IDs.
      *                             To include multiple IDs, provide an ampersand-separated list.
      *                             For example, `schemeId=10000&schemeId=10001`.
-     * @param string $schemeName The name of scheme to search for.
-     * @param bool $onlyDefault Whether only the default priority is returned.
+     * @param ?string $schemeName The name of scheme to search for.
+     * @param ?bool $onlyDefault Whether only the default priority is returned.
      * @param 'name'|'+name'|'-name'|null $orderBy
      *        The ordering to return the priority schemes by.
-     * @param string $expand A comma separated list of additional information to return.
-     *                       "priorities" will return priorities associated with the priority scheme.
-     *                       "projects" will return projects associated with the priority scheme.
-     *                       `expand=priorities,projects`.
+     * @param ?string $expand A comma separated list of additional information to return.
+     *                        "priorities" will return priorities associated with the priority scheme.
+     *                        "projects" will return projects associated with the priority scheme.
+     *                        `expand=priorities,projects`.
      */
     public function getPrioritySchemes(
         ?string $startAt = '0',
@@ -91,9 +91,9 @@ trait PrioritySchemes
      * **"Permissions" required:** Permission to access Jira.
      * 
      * @param string $schemeId The priority scheme ID.
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
-     * @param string $query The string to query priorities on by name.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
+     * @param ?string $query The string to query priorities on by name.
      * @param ?list<string> $exclude A list of priority IDs to exclude from the results.
      */
     public function getAvailablePrioritiesByPriorityScheme(
@@ -166,8 +166,8 @@ trait PrioritySchemes
      * **"Permissions" required:** Permission to access Jira.
      * 
      * @param string $schemeId The priority scheme ID.
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      */
     public function getPrioritiesByPriorityScheme(
         string $schemeId,
@@ -190,11 +190,11 @@ trait PrioritySchemes
      * **"Permissions" required:** Permission to access Jira.
      * 
      * @param string $schemeId The priority scheme ID.
-     * @param string $startAt The index of the first item to return in a page of results (page offset).
-     * @param string $maxResults The maximum number of items to return per page.
+     * @param ?string $startAt The index of the first item to return in a page of results (page offset).
+     * @param ?string $maxResults The maximum number of items to return per page.
      * @param ?list<int> $projectId The project IDs to filter by.
      *                              For example, `projectId=10000&projectId=10001`.
-     * @param string $query The string to query projects on by name.
+     * @param ?string $query The string to query projects on by name.
      */
     public function getProjectsByPriorityScheme(
         string $schemeId,
