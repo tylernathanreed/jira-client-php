@@ -1,4 +1,4 @@
-# Issues And J Q L Queries
+# Issues And JQL Queries
 
 List of issues and JQL queries.
 

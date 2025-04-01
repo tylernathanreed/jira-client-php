@@ -95,7 +95,7 @@ $response = $client->matchIssues(new Schema\IssuesAndJQLQueries(
 
 #### Request Body
 
-Source: [`Jira\Client\Schema\IssuesAndJQLQueries`](/docs/schema/issues-and-j-q-l-queries.md)
+Source: [`Jira\Client\Schema\IssuesAndJQLQueries`](/docs/schema/issues-and-jql-queries.md)
 
 List of issues and JQL queries.
 
@@ -112,7 +112,7 @@ A list of matched issues or errors for each JQL query, in the order the JQL quer
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `matches` | [`list<IssueMatchesForJQL>`](/docs/schema/issue-matches-for-j-q-l.md) |  |
+| `matches` | [`list<IssueMatchesForJQL>`](/docs/schema/issue-matches-for-jql.md) |  |
 
 
 ## Search For Issues Using JQL (GET)
@@ -297,7 +297,7 @@ $response = $client->countIssues(new Schema\JQLCountRequestBean(
 
 #### Request Body
 
-Source: [`Jira\Client\Schema\JQLCountRequestBean`](/docs/schema/j-q-l-count-request-bean.md)
+Source: [`Jira\Client\Schema\JQLCountRequestBean`](/docs/schema/jql-count-request-bean.md)
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -305,7 +305,7 @@ Source: [`Jira\Client\Schema\JQLCountRequestBean`](/docs/schema/j-q-l-count-requ
 
 #### Response
 
-Source: [`Jira\Client\Schema\JQLCountResultsBean`](/docs/schema/j-q-l-count-results-bean.md)
+Source: [`Jira\Client\Schema\JQLCountResultsBean`](/docs/schema/jql-count-results-bean.md)
 
 | Property | Type | Description |
 | --- | --- | --- |

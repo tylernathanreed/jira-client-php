@@ -17,10 +17,10 @@ Source: [`Jira\Client\Schema\IssueTypesWorkflowMapping`](/src/Schema/IssueTypesW
 
 | Group | Operation |
 | --- | --- |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [getWorkflow](/docs/operations/workflow-schemes.md#get-workflow) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateWorkflowMapping](/docs/operations/workflow-schemes.md#update-workflow-mapping) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [getDraftWorkflow](/docs/operations/workflow-scheme-drafts.md#get-draft-workflow) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [updateDraftWorkflowMapping](/docs/operations/workflow-scheme-drafts.md#update-draft-workflow-mapping) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [getWorkflow](/docs/operations/workflow-schemes.md#get-workflow) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateWorkflowMapping](/docs/operations/workflow-schemes.md#update-workflow-mapping) |
 
 ### Schema
 

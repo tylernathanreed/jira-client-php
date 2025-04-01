@@ -37,15 +37,15 @@ Source: [`Jira\Client\Schema\User`](/src/Schema/User.php)
 | --- | --- |
 | [Issues](/docs/operations/issues.md) | [assignIssue](/docs/operations/issues.md#assign-issue) |
 | [Myself](/docs/operations/myself.md) | [getCurrentUser](/docs/operations/myself.md#get-current-user) |
-| [Users](/docs/operations/users.md) | [getUser](/docs/operations/users.md#get-user) |
-| [Users](/docs/operations/users.md) | [createUser](/docs/operations/users.md#create-user) |
-| [Users](/docs/operations/users.md) | [getAllUsersDefault](/docs/operations/users.md#get-all-users-default) |
-| [Users](/docs/operations/users.md) | [getAllUsers](/docs/operations/users.md#get-all-users) |
 | [UserSearch](/docs/operations/user-search.md) | [findBulkAssignableUsers](/docs/operations/user-search.md#find-bulk-assignable-users) |
 | [UserSearch](/docs/operations/user-search.md) | [findAssignableUsers](/docs/operations/user-search.md#find-assignable-users) |
 | [UserSearch](/docs/operations/user-search.md) | [findUsersWithAllPermissions](/docs/operations/user-search.md#find-users-with-all-permissions) |
 | [UserSearch](/docs/operations/user-search.md) | [findUsers](/docs/operations/user-search.md#find-users) |
 | [UserSearch](/docs/operations/user-search.md) | [findUsersWithBrowsePermission](/docs/operations/user-search.md#find-users-with-browse-permission) |
+| [Users](/docs/operations/users.md) | [getUser](/docs/operations/users.md#get-user) |
+| [Users](/docs/operations/users.md) | [createUser](/docs/operations/users.md#create-user) |
+| [Users](/docs/operations/users.md) | [getAllUsersDefault](/docs/operations/users.md#get-all-users-default) |
+| [Users](/docs/operations/users.md) | [getAllUsers](/docs/operations/users.md#get-all-users) |
 
 ### Schema
 

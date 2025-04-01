@@ -20,5 +20,5 @@ Source: [`Jira\Client\Schema\WorkflowTransitionLinks`](/src/Schema/WorkflowTrans
 
 | Schema |
 | --- |
-| [TransitionUpdateDTO](/docs/schema/transition-update-d-t-o.md) |
+| [TransitionUpdateDTO](/docs/schema/transition-update-dto.md) |
 | [WorkflowTransitions](/docs/schema/workflow-transitions.md) |

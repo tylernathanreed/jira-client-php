@@ -14,7 +14,7 @@ Source: [`Jira\Client\Schema\SanitizedJqlQueries`](/src/Schema/SanitizedJqlQueri
 
 | Group | Operation |
 | --- | --- |
-| [JQL](/docs/operations/j-q-l.md) | [sanitiseJqlQueries](/docs/operations/j-q-l.md#sanitise-jql-queries) |
+| [JQL](/docs/operations/jql.md) | [sanitiseJqlQueries](/docs/operations/jql.md#sanitise-jql-queries) |
 
 ### Schema
 

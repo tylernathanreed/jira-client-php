@@ -16,8 +16,8 @@ abstract class ReadmeGenerator extends AbstractSchemaGenerator
     {
         return strtr('{basePath}/docs/{type}/{name}.md', [
             '{basePath}' => realpath('./'),
-            '{type}' => Utils::kebab($this->type()),
-            '{name}' => Utils::kebab($name),
+            '{type}' => Utils::slug($this->type()),
+            '{name}' => Utils::slug($name),
         ]);
     }
 
@@ -25,7 +25,7 @@ abstract class ReadmeGenerator extends AbstractSchemaGenerator
     {
         return strtr('{basePath}/stubs/{type}.stub.md', [
             '{basePath}' => realpath(__DIR__ . '/../../'),
-            '{type}' => Utils::kebab($this->type()),
+            '{type}' => Utils::slug($this->type()),
         ]);
     }
 

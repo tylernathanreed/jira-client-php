@@ -118,7 +118,7 @@ Details of an issue type scheme and its associated issue types.
 
 #### Response
 
-Source: [`Jira\Client\Schema\IssueTypeSchemeID`](/docs/schema/issue-type-scheme-i-d.md)
+Source: [`Jira\Client\Schema\IssueTypeSchemeID`](/docs/schema/issue-type-scheme-id.md)
 
 The ID of an issue type scheme.
 

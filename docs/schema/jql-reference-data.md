@@ -1,4 +1,4 @@
-# J Q L Reference Data
+# JQL Reference Data
 
 Lists of JQL reference data.
 
@@ -16,8 +16,8 @@ Source: [`Jira\Client\Schema\JQLReferenceData`](/src/Schema/JQLReferenceData.php
 
 | Group | Operation |
 | --- | --- |
-| [JQL](/docs/operations/j-q-l.md) | [getAutoComplete](/docs/operations/j-q-l.md#get-auto-complete) |
-| [JQL](/docs/operations/j-q-l.md) | [getAutoCompletePost](/docs/operations/j-q-l.md#get-auto-complete-post) |
+| [JQL](/docs/operations/jql.md) | [getAutoComplete](/docs/operations/jql.md#get-auto-complete) |
+| [JQL](/docs/operations/jql.md) | [getAutoCompletePost](/docs/operations/jql.md#get-auto-complete-post) |
 
 ### Schema
 

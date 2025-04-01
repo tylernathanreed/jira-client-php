@@ -1100,7 +1100,7 @@ $response = $client->getWorkflowProjectIssueTypeUsages(
 
 #### Response
 
-Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsageDTO`](/docs/schema/workflow-project-issue-type-usage-d-t-o.md)
+Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsageDTO`](/docs/schema/workflow-project-issue-type-usage-dto.md)
 
 Issue types associated with the workflow for a project.
 
@@ -1141,7 +1141,7 @@ $response = $client->getProjectUsagesForWorkflow(
 
 #### Response
 
-Source: [`Jira\Client\Schema\WorkflowProjectUsageDTO`](/docs/schema/workflow-project-usage-d-t-o.md)
+Source: [`Jira\Client\Schema\WorkflowProjectUsageDTO`](/docs/schema/workflow-project-usage-dto.md)
 
 Projects using the workflow.
 
@@ -1181,7 +1181,7 @@ $response = $client->getWorkflowSchemeUsagesForWorkflow(
 
 #### Response
 
-Source: [`Jira\Client\Schema\WorkflowSchemeUsageDTO`](/docs/schema/workflow-scheme-usage-d-t-o.md)
+Source: [`Jira\Client\Schema\WorkflowSchemeUsageDTO`](/docs/schema/workflow-scheme-usage-dto.md)
 
 Workflow schemes using the workflow.
 

@@ -14,7 +14,7 @@ Source: [`Jira\Client\Schema\ParsedJqlQueries`](/src/Schema/ParsedJqlQueries.php
 
 | Group | Operation |
 | --- | --- |
-| [JQL](/docs/operations/j-q-l.md) | [parseJqlQueries](/docs/operations/j-q-l.md#parse-jql-queries) |
+| [JQL](/docs/operations/jql.md) | [parseJqlQueries](/docs/operations/jql.md#parse-jql-queries) |
 
 ### Schema
 

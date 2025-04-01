@@ -27,4 +27,4 @@ Source: [`Jira\Client\Schema\FieldReferenceData`](/src/Schema/FieldReferenceData
 
 | Schema |
 | --- |
-| [JQLReferenceData](/docs/schema/j-q-l-reference-data.md) |
+| [JQLReferenceData](/docs/schema/jql-reference-data.md) |

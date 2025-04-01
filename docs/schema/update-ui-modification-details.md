@@ -17,7 +17,7 @@ Source: [`Jira\Client\Schema\UpdateUiModificationDetails`](/src/Schema/UpdateUiM
 
 | Group | Operation |
 | --- | --- |
-| [UIModificationsApps](/docs/operations/u-i-modifications-apps.md) | [updateUiModification](/docs/operations/u-i-modifications-apps.md#update-ui-modification) |
+| [UIModificationsApps](/docs/operations/ui-modifications-apps.md) | [updateUiModification](/docs/operations/ui-modifications-apps.md#update-ui-modification) |
 
 ### Schema
 

@@ -15,10 +15,10 @@ Source: [`Jira\Client\Schema\DefaultWorkflow`](/src/Schema/DefaultWorkflow.php)
 
 | Group | Operation |
 | --- | --- |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [getDefaultWorkflow](/docs/operations/workflow-schemes.md#get-default-workflow) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateDefaultWorkflow](/docs/operations/workflow-schemes.md#update-default-workflow) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [getDraftDefaultWorkflow](/docs/operations/workflow-scheme-drafts.md#get-draft-default-workflow) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [updateDraftDefaultWorkflow](/docs/operations/workflow-scheme-drafts.md#update-draft-default-workflow) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [getDefaultWorkflow](/docs/operations/workflow-schemes.md#get-default-workflow) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateDefaultWorkflow](/docs/operations/workflow-schemes.md#update-default-workflow) |
 
 ### Schema
 

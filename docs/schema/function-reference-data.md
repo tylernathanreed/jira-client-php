@@ -22,4 +22,4 @@ Source: [`Jira\Client\Schema\FunctionReferenceData`](/src/Schema/FunctionReferen
 
 | Schema |
 | --- |
-| [JQLReferenceData](/docs/schema/j-q-l-reference-data.md) |
+| [JQLReferenceData](/docs/schema/jql-reference-data.md) |

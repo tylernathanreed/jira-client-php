@@ -995,7 +995,7 @@ $response = $client->getProjectUsagesForWorkflowScheme(
 
 #### Response
 
-Source: [`Jira\Client\Schema\WorkflowSchemeProjectUsageDTO`](/docs/schema/workflow-scheme-project-usage-d-t-o.md)
+Source: [`Jira\Client\Schema\WorkflowSchemeProjectUsageDTO`](/docs/schema/workflow-scheme-project-usage-dto.md)
 
 Projects using the workflow scheme.
 

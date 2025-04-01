@@ -1,4 +1,4 @@
-# J Q L Count Results Bean
+# JQL Count Results Bean
 
 
 Source: [`Jira\Client\Schema\JQLCountResultsBean`](/src/Schema/JQLCountResultsBean.php)

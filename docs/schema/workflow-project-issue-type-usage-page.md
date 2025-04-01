@@ -19,4 +19,4 @@ Source: [`Jira\Client\Schema\WorkflowProjectIssueTypeUsagePage`](/src/Schema/Wor
 
 | Schema |
 | --- |
-| [WorkflowProjectIssueTypeUsageDTO](/docs/schema/workflow-project-issue-type-usage-d-t-o.md) |
+| [WorkflowProjectIssueTypeUsageDTO](/docs/schema/workflow-project-issue-type-usage-dto.md) |

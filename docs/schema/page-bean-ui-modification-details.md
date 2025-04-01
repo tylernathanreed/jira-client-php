@@ -20,7 +20,7 @@ Source: [`Jira\Client\Schema\PageBeanUiModificationDetails`](/src/Schema/PageBea
 
 | Group | Operation |
 | --- | --- |
-| [UIModificationsApps](/docs/operations/u-i-modifications-apps.md) | [getUiModifications](/docs/operations/u-i-modifications-apps.md#get-ui-modifications) |
+| [UIModificationsApps](/docs/operations/ui-modifications-apps.md) | [getUiModifications](/docs/operations/ui-modifications-apps.md#get-ui-modifications) |
 
 ### Schema
 

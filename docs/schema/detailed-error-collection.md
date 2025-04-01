@@ -15,8 +15,8 @@ Source: [`Jira\Client\Schema\DetailedErrorCollection`](/src/Schema/DetailedError
 
 | Group | Operation |
 | --- | --- |
-| [UIModificationsApps](/docs/operations/u-i-modifications-apps.md) | [createUiModification](/docs/operations/u-i-modifications-apps.md#create-ui-modification) |
-| [UIModificationsApps](/docs/operations/u-i-modifications-apps.md) | [updateUiModification](/docs/operations/u-i-modifications-apps.md#update-ui-modification) |
+| [UIModificationsApps](/docs/operations/ui-modifications-apps.md) | [createUiModification](/docs/operations/ui-modifications-apps.md#create-ui-modification) |
+| [UIModificationsApps](/docs/operations/ui-modifications-apps.md) | [updateUiModification](/docs/operations/ui-modifications-apps.md#update-ui-modification) |
 
 ### Schema
 

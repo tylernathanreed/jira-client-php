@@ -141,9 +141,9 @@ By following the OpenAPI specification, this package supports 100% of all operat
 ### 1. Operations
 <a name="operations"></a>
 
-{{ OperationList }}
+DummyOperationsList
 
 ### 2. Schema
 <a name="schema"></a>
 
-{{ SchemaList }}
+DummySchemaList

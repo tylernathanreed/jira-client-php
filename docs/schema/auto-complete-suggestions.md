@@ -14,7 +14,7 @@ Source: [`Jira\Client\Schema\AutoCompleteSuggestions`](/src/Schema/AutoCompleteS
 
 | Group | Operation |
 | --- | --- |
-| [JQL](/docs/operations/j-q-l.md) | [getFieldAutoCompleteForQueryString](/docs/operations/j-q-l.md#get-field-auto-complete-for-query-string) |
+| [JQL](/docs/operations/jql.md) | [getFieldAutoCompleteForQueryString](/docs/operations/jql.md#get-field-auto-complete-for-query-string) |
 
 ### Schema
 

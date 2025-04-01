@@ -20,7 +20,7 @@ Source: [`Jira\Client\Schema\PageBean2JqlFunctionPrecomputationBean`](/src/Schem
 
 | Group | Operation |
 | --- | --- |
-| [JQLFunctionsApps](/docs/operations/j-q-l-functions-apps.md) | [getPrecomputations](/docs/operations/j-q-l-functions-apps.md#get-precomputations) |
+| [JQLFunctionsApps](/docs/operations/jql-functions-apps.md) | [getPrecomputations](/docs/operations/jql-functions-apps.md#get-precomputations) |
 
 ### Schema
 

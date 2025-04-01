@@ -1,4 +1,4 @@
-# J Q L Query With Unknown Users
+# JQL Query With Unknown Users
 
 JQL queries that contained users that could not be found
 
@@ -19,4 +19,4 @@ Source: [`Jira\Client\Schema\JQLQueryWithUnknownUsers`](/src/Schema/JQLQueryWith
 
 | Schema |
 | --- |
-| [ConvertedJQLQueries](/docs/schema/converted-j-q-l-queries.md) |
+| [ConvertedJQLQueries](/docs/schema/converted-jql-queries.md) |

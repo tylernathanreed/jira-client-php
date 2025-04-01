@@ -27,6 +27,5 @@ Source: [`Jira\Client\Schema\StatusDetails`](/src/Schema/StatusDetails.php)
 
 | Schema |
 | --- |
-| [Fields](/docs/schema/fields.md) |
 | [IssueTransition](/docs/schema/issue-transition.md) |
 | [IssueTypeWithStatus](/docs/schema/issue-type-with-status.md) |

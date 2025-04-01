@@ -1,4 +1,4 @@
-# J Q L
+# JQL 
 
 DummyDescription
 
@@ -16,7 +16,7 @@ Source: [`Jira\Client\Operations\JQL`](/src/Operations/JQL.php)
 ## Get Field Reference Data (GET)
 <a name="getAutoComplete"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l/#api-rest-api-3-jql-autocompletedata-get
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql/#api-rest-api-3-jql-autocompletedata-get
 
 Returns reference data for JQL searches.
 This is a downloadable version of the documentation provided in "Advanced searching - fields reference" and "Advanced searching - functions reference", along with a list of JQL-reserved words.
@@ -41,7 +41,7 @@ $response = $client->getAutoComplete();
 
 #### Response
 
-Source: [`Jira\Client\Schema\JQLReferenceData`](/docs/schema/j-q-l-reference-data.md)
+Source: [`Jira\Client\Schema\JQLReferenceData`](/docs/schema/jql-reference-data.md)
 
 Lists of JQL reference data.
 
@@ -55,7 +55,7 @@ Lists of JQL reference data.
 ## Get Field Reference Data (POST)
 <a name="getAutoCompletePost"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l/#api-rest-api-3-jql-autocompletedata-post
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql/#api-rest-api-3-jql-autocompletedata-post
 
 Returns reference data for JQL searches.
 This is a downloadable version of the documentation provided in "Advanced searching - fields reference" and "Advanced searching - functions reference", along with a list of JQL-reserved words.
@@ -104,7 +104,7 @@ Details of how to filter and list search auto complete information.
 
 #### Response
 
-Source: [`Jira\Client\Schema\JQLReferenceData`](/docs/schema/j-q-l-reference-data.md)
+Source: [`Jira\Client\Schema\JQLReferenceData`](/docs/schema/jql-reference-data.md)
 
 Lists of JQL reference data.
 
@@ -118,7 +118,7 @@ Lists of JQL reference data.
 ## Get Field Auto Complete Suggestions
 <a name="getFieldAutoCompleteForQueryString"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l/#api-rest-api-3-jql-autocompletedata-suggestions-get
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql/#api-rest-api-3-jql-autocompletedata-suggestions-get
 
 Returns the JQL search auto complete suggestions for a field
 
@@ -170,7 +170,7 @@ The results from a JQL query.
 ## Parse JQL Query
 <a name="parseJqlQueries"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l/#api-rest-api-3-jql-parse-post
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql/#api-rest-api-3-jql-parse-post
 
 Parses and validates JQL queries
 
@@ -234,7 +234,7 @@ A list of parsed JQL queries.
 ## Convert User Identifiers To Account IDs In JQL Queries
 <a name="migrateQueries"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l/#api-rest-api-3-jql-pdcleaner-post
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql/#api-rest-api-3-jql-pdcleaner-post
 
 Converts one or more JQL queries with user identifiers (username or user key) to equivalent JQL queries with account IDs
 
@@ -262,7 +262,7 @@ $response = $client->migrateQueries(new Schema\JQLPersonalDataMigrationRequest(
 
 #### Request Body
 
-Source: [`Jira\Client\Schema\JQLPersonalDataMigrationRequest`](/docs/schema/j-q-l-personal-data-migration-request.md)
+Source: [`Jira\Client\Schema\JQLPersonalDataMigrationRequest`](/docs/schema/jql-personal-data-migration-request.md)
 
 The JQL queries to be converted.
 
@@ -272,20 +272,20 @@ The JQL queries to be converted.
 
 #### Response
 
-Source: [`Jira\Client\Schema\ConvertedJQLQueries`](/docs/schema/converted-j-q-l-queries.md)
+Source: [`Jira\Client\Schema\ConvertedJQLQueries`](/docs/schema/converted-jql-queries.md)
 
 The converted JQL queries.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queriesWithUnknownUsers` | [`?list<JQLQueryWithUnknownUsers>`](/docs/schema/j-q-l-query-with-unknown-users.md) | List of queries containing user information that could not be mapped to an existing user |
+| `queriesWithUnknownUsers` | [`?list<JQLQueryWithUnknownUsers>`](/docs/schema/jql-query-with-unknown-users.md) | List of queries containing user information that could not be mapped to an existing user |
 | `queryStrings` | `?list<string>` | The list of converted query strings with account IDs in place of user identifiers. |
 
 
 ## Sanitize JQL Queries
 <a name="sanitiseJqlQueries"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l/#api-rest-api-3-jql-sanitize-post
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql/#api-rest-api-3-jql-sanitize-post
 
 Sanitizes one or more JQL queries by converting readable details into IDs where a user doesn't have permission to view the entity
 

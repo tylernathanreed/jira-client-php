@@ -1,4 +1,4 @@
-# Converted J Q L Queries
+# Converted JQL Queries
 
 The converted JQL queries.
 
@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\ConvertedJQLQueries`](/src/Schema/ConvertedJQLQueri
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `queriesWithUnknownUsers` | [`?list<JQLQueryWithUnknownUsers>`](/docs/schema/j-q-l-query-with-unknown-users.md) | List of queries containing user information that could not be mapped to an existing user |
+| `queriesWithUnknownUsers` | [`?list<JQLQueryWithUnknownUsers>`](/docs/schema/jql-query-with-unknown-users.md) | List of queries containing user information that could not be mapped to an existing user |
 | `queryStrings` | `?list<string>` | The list of converted query strings with account IDs in place of user identifiers. |
 
 ## References
@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\ConvertedJQLQueries`](/src/Schema/ConvertedJQLQueri
 
 | Group | Operation |
 | --- | --- |
-| [JQL](/docs/operations/j-q-l.md) | [migrateQueries](/docs/operations/j-q-l.md#migrate-queries) |
+| [JQL](/docs/operations/jql.md) | [migrateQueries](/docs/operations/jql.md#migrate-queries) |
 
 ### Schema
 

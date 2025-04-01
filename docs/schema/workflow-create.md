@@ -8,7 +8,7 @@ Source: [`Jira\Client\Schema\WorkflowCreate`](/src/Schema/WorkflowCreate.php)
 | --- | --- | --- |
 | `name` | `string` | The name of the workflow to create. |
 | `statuses` | [`list<StatusLayoutUpdate>`](/docs/schema/status-layout-update.md) | The statuses associated with this workflow. |
-| `transitions` | [`list<TransitionUpdateDTO>`](/docs/schema/transition-update-d-t-o.md) | The transitions of this workflow. |
+| `transitions` | [`list<TransitionUpdateDTO>`](/docs/schema/transition-update-dto.md) | The transitions of this workflow. |
 | `description` | `string` | The description of the workflow to create. |
 | `startPointLayout` | [`WorkflowLayout`](/docs/schema/workflow-layout.md) |  |
 

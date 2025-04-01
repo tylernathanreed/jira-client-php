@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationUpdateErrorResponse`](/src
 
 | Group | Operation |
 | --- | --- |
-| [JQLFunctionsApps](/docs/operations/j-q-l-functions-apps.md) | [updatePrecomputations](/docs/operations/j-q-l-functions-apps.md#update-precomputations) |
+| [JQLFunctionsApps](/docs/operations/jql-functions-apps.md) | [updatePrecomputations](/docs/operations/jql-functions-apps.md#update-precomputations) |
 
 ### Schema
 

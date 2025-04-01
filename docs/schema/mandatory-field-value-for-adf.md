@@ -1,4 +1,4 @@
-# Mandatory Field Value For A D F
+# Mandatory Field Value For ADF 
 
 An object notation input
 
@@ -20,4 +20,4 @@ Source: [`Jira\Client\Schema\MandatoryFieldValueForADF`](/src/Schema/MandatoryFi
 
 | Schema |
 | --- |
-| [fields](/docs/schema/fields.md) |
+| [Fields](/docs/schema/fields.md) |

@@ -19,5 +19,5 @@ Source: [`Jira\Client\Schema\StatusMigration`](/src/Schema/StatusMigration.php)
 
 | Schema |
 | --- |
-| [StatusMappingDTO](/docs/schema/status-mapping-d-t-o.md) |
+| [StatusMappingDTO](/docs/schema/status-mapping-dto.md) |
 | [WorkflowUpdate](/docs/schema/workflow-update.md) |

@@ -630,19 +630,19 @@ final class Operation extends AbstractSchema implements Stringable
             if ($parameter->typeIsRef) {
                 assert(is_string($parameter->type));
 
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($parameter->type) . '.md');
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::slug($parameter->type) . '.md');
             }
 
             if ($parameter->listableTypeIsRef) {
                 assert(is_string($parameter->listableType));
 
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($parameter->listableType) . '.md');
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::slug($parameter->listableType) . '.md');
             }
 
             if ($parameter->associativeTypeIsRef) {
                 assert(is_string($parameter->associativeType));
 
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($parameter->associativeType) . '.md');
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::slug($parameter->associativeType) . '.md');
             }
 
             if (is_string($type) && strlen($type) > 40) {

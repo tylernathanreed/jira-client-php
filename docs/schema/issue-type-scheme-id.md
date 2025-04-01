@@ -1,4 +1,4 @@
-# Issue Type Scheme I D
+# Issue Type Scheme ID 
 
 The ID of an issue type scheme.
 

@@ -269,7 +269,7 @@ $response = $client->getProjectIssueTypeUsagesForStatus(
 
 #### Response
 
-Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsageDTO`](/docs/schema/status-project-issue-type-usage-d-t-o.md)
+Source: [`Jira\Client\Schema\StatusProjectIssueTypeUsageDTO`](/docs/schema/status-project-issue-type-usage-dto.md)
 
 The issue types using this status in a project.
 
@@ -310,7 +310,7 @@ $response = $client->getProjectUsagesForStatus(
 
 #### Response
 
-Source: [`Jira\Client\Schema\StatusProjectUsageDTO`](/docs/schema/status-project-usage-d-t-o.md)
+Source: [`Jira\Client\Schema\StatusProjectUsageDTO`](/docs/schema/status-project-usage-dto.md)
 
 The projects using this status.
 
@@ -350,7 +350,7 @@ $response = $client->getWorkflowUsagesForStatus(
 
 #### Response
 
-Source: [`Jira\Client\Schema\StatusWorkflowUsageDTO`](/docs/schema/status-workflow-usage-d-t-o.md)
+Source: [`Jira\Client\Schema\StatusWorkflowUsageDTO`](/docs/schema/status-workflow-usage-dto.md)
 
 Workflows using the status.
 

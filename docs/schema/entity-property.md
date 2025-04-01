@@ -16,14 +16,14 @@ Source: [`Jira\Client\Schema\EntityProperty`](/src/Schema/EntityProperty.php)
 
 | Group | Operation |
 | --- | --- |
-| [IssueCommentProperties](/docs/operations/issue-comment-properties.md) | [getCommentProperty](/docs/operations/issue-comment-properties.md#get-comment-property) |
+| [AppProperties](/docs/operations/app-properties.md) | [AddonPropertiesResource.getAddonProperty_get](/docs/operations/app-properties.md#addon-properties-resource.get-addon-property_get) |
 | [Dashboards](/docs/operations/dashboards.md) | [getDashboardItemProperty](/docs/operations/dashboards.md#get-dashboard-item-property) |
+| [IssueCommentProperties](/docs/operations/issue-comment-properties.md) | [getCommentProperty](/docs/operations/issue-comment-properties.md#get-comment-property) |
 | [IssueProperties](/docs/operations/issue-properties.md) | [getIssueProperty](/docs/operations/issue-properties.md#get-issue-property) |
-| [IssueWorklogProperties](/docs/operations/issue-worklog-properties.md) | [getWorklogProperty](/docs/operations/issue-worklog-properties.md#get-worklog-property) |
 | [IssueTypeProperties](/docs/operations/issue-type-properties.md) | [getIssueTypeProperty](/docs/operations/issue-type-properties.md#get-issue-type-property) |
+| [IssueWorklogProperties](/docs/operations/issue-worklog-properties.md) | [getWorklogProperty](/docs/operations/issue-worklog-properties.md#get-worklog-property) |
 | [ProjectProperties](/docs/operations/project-properties.md) | [getProjectProperty](/docs/operations/project-properties.md#get-project-property) |
 | [UserProperties](/docs/operations/user-properties.md) | [getUserProperty](/docs/operations/user-properties.md#get-user-property) |
-| [AppProperties](/docs/operations/app-properties.md) | [AddonPropertiesResource.getAddonProperty_get](/docs/operations/app-properties.md#addon-properties-resource.get-addon-property_get) |
 
 ### Schema
 

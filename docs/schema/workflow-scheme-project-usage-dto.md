@@ -1,4 +1,4 @@
-# Workflow Scheme Project Usage D T O
+# Workflow Scheme Project Usage DTO 
 
 Projects using the workflow scheme.
 

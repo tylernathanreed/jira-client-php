@@ -39,11 +39,11 @@ class DummyOperationReferencesReplacer extends Replacer
         foreach ($references as $reference) {
             [$group, $operation] = $reference;
 
-            $base = '/docs/operations/' . Utils::kebab($group) . '.md';
+            $base = '/docs/operations/' . Utils::slug($group) . '.md';
 
             $table->add([
                 new Link($group, $base),
-                new Link($operation, $base . '#' . Utils::kebab($operation)),
+                new Link($operation, $base . '#' . Utils::slug($operation)),
             ]);
         }
 

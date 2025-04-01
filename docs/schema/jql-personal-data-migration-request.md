@@ -1,4 +1,4 @@
-# J Q L Personal Data Migration Request
+# JQL Personal Data Migration Request
 
 The JQL queries to be converted.
 
@@ -14,7 +14,7 @@ Source: [`Jira\Client\Schema\JQLPersonalDataMigrationRequest`](/src/Schema/JQLPe
 
 | Group | Operation |
 | --- | --- |
-| [JQL](/docs/operations/j-q-l.md) | [migrateQueries](/docs/operations/j-q-l.md#migrate-queries) |
+| [JQL](/docs/operations/jql.md) | [migrateQueries](/docs/operations/jql.md#migrate-queries) |
 
 ### Schema
 

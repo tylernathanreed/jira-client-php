@@ -20,4 +20,4 @@ Source: [`Jira\Client\Schema\ConditionGroupUpdate`](/src/Schema/ConditionGroupUp
 
 | Schema |
 | --- |
-| [TransitionUpdateDTO](/docs/schema/transition-update-d-t-o.md) |
+| [TransitionUpdateDTO](/docs/schema/transition-update-dto.md) |

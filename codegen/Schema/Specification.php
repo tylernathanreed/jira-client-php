@@ -179,11 +179,13 @@ final class Specification
         /** @var array<string,TSchema> */
         $schemas = $spec['components']['schemas'] ?? [];
 
-        if (! isset($schemas[$name])) {
+        $schema = $schemas[$name] ?? $schemas[lcfirst($name)] ?? null;
+
+        if (is_null($schema)) {
             throw new MissingSpecificationException('Schema', $name);
         }
 
-        return Schema::make(ucfirst($name), $schemas[$name]);
+        return Schema::make($name, $schema);
     }
 
     public static function getOperationGroup(string $name): OperationGroup
@@ -203,7 +205,24 @@ final class Specification
         $spec = Specification::getSpecification();
 
         /** @var array<string,TSchema> */
-        return $spec['components']['schemas'] ?? [];
+        $schemas = $spec['components']['schemas'] ?? [];
+
+        $corrections = [];
+
+        foreach ($schemas as $name => $schema) {
+            if (ucfirst($name) !== $name) {
+                $corrections[$name] = ucfirst($name);
+            }
+        }
+
+        foreach ($corrections as $original => $corrected) {
+            $schemas[$corrected] = $schemas[$original];
+            unset($schemas[$original]);
+        }
+
+        ksort($schemas);
+
+        return $schemas;
     }
 
     /** @return TCompiledOperations */
@@ -240,6 +259,8 @@ final class Specification
                 $operations[$group][$id] = compact('id', 'group', 'uri', 'method', 'operation');
             }
         }
+
+        ksort($operations);
 
         return $operations;
     }

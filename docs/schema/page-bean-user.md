@@ -20,8 +20,8 @@ Source: [`Jira\Client\Schema\PageBeanUser`](/src/Schema/PageBeanUser.php)
 
 | Group | Operation |
 | --- | --- |
-| [Users](/docs/operations/users.md) | [bulkGetUsers](/docs/operations/users.md#bulk-get-users) |
 | [UserSearch](/docs/operations/user-search.md) | [findUsersByQuery](/docs/operations/user-search.md#find-users-by-query) |
+| [Users](/docs/operations/users.md) | [bulkGetUsers](/docs/operations/users.md#bulk-get-users) |
 
 ### Schema
 

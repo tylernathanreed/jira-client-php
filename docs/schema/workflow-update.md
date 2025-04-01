@@ -8,12 +8,12 @@ Source: [`Jira\Client\Schema\WorkflowUpdate`](/src/Schema/WorkflowUpdate.php)
 | --- | --- | --- |
 | `id` | `string` | The ID of this workflow. |
 | `statuses` | [`list<StatusLayoutUpdate>`](/docs/schema/status-layout-update.md) | The statuses associated with this workflow. |
-| `transitions` | [`list<TransitionUpdateDTO>`](/docs/schema/transition-update-d-t-o.md) | The transitions of this workflow. |
+| `transitions` | [`list<TransitionUpdateDTO>`](/docs/schema/transition-update-dto.md) | The transitions of this workflow. |
 | `version` | [`DocumentVersion`](/docs/schema/document-version.md) |  |
 | `defaultStatusMappings` | [`?list<StatusMigration>`](/docs/schema/status-migration.md) | The mapping of old to new status ID. |
 | `description` | `string` | The new description for this workflow. |
 | `startPointLayout` | [`WorkflowLayout`](/docs/schema/workflow-layout.md) |  |
-| `statusMappings` | [`?list<StatusMappingDTO>`](/docs/schema/status-mapping-d-t-o.md) | The mapping of old to new status ID for a specific project and issue type. |
+| `statusMappings` | [`?list<StatusMappingDTO>`](/docs/schema/status-mapping-dto.md) | The mapping of old to new status ID for a specific project and issue type. |
 
 ## References
 

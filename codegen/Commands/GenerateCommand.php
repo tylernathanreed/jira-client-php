@@ -9,6 +9,7 @@ use Jira\CodeGen\Exceptions\ClassGenerationException;
 use Jira\CodeGen\Exceptions\CommandFailedException;
 use Jira\CodeGen\Generators\AbstractSchemaGenerator;
 use Jira\CodeGen\Generators\Generator;
+use Jira\CodeGen\Generators\RepositoryReadmeGenerator;
 use Override;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;
@@ -24,6 +25,12 @@ class GenerateCommand extends Command
     #[Override]
     public function handle(): int
     {
+        if ($this->argument('type') === 'readme') {
+            $this->generateRepositoryReadmeFile();
+
+            return 0;
+        }
+
         [$type, $name] = $this->validated();
 
         $this->generate($type, $name);
@@ -180,6 +187,15 @@ class GenerateCommand extends Command
         foreach (GeneratorType::cases() as $type) {
             $this->generateType($type);
         }
+
+        $this->generateRepositoryReadmeFile();
+    }
+
+    protected function generateRepositoryReadmeFile(): void
+    {
+        (new RepositoryReadmeGenerator)->generate();
+
+        $this->success('Repository README created successfully.');
     }
 
     /** @param AbstractSchemaGenerator<*> $generator */

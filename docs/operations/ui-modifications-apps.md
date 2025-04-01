@@ -1,4 +1,4 @@
-# U I Modifications Apps
+# UI Modifications Apps
 
 DummyDescription
 
@@ -14,7 +14,7 @@ Source: [`Jira\Client\Operations\UIModificationsApps`](/src/Operations/UIModific
 ## Get UI Modifications
 <a name="getUiModifications"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-u-i-modifications-apps/#api-rest-api-3-ui-modifications-get
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications-apps/#api-rest-api-3-ui-modifications-get
 
 Gets UI modifications.
 UI modifications can only be retrieved by Forge apps
@@ -65,7 +65,7 @@ A page of items.
 ## Create UI Modification
 <a name="createUiModification"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-u-i-modifications-apps/#api-rest-api-3-ui-modifications-post
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications-apps/#api-rest-api-3-ui-modifications-post
 
 Creates a UI modification.
 UI modification can only be created by Forge apps
@@ -148,7 +148,7 @@ Identifiers for a UI modification.
 ## Update UI Modification
 <a name="updateUiModification"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-u-i-modifications-apps/#api-rest-api-3-ui-modifications-ui-modification-id-put
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications-apps/#api-rest-api-3-ui-modifications-ui-modification-id-put
 
 Updates a UI modification.
 UI modification can only be updated by Forge apps
@@ -224,7 +224,7 @@ The details of a UI modification.
 ## Delete UI Modification
 <a name="deleteUiModification"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-u-i-modifications-apps/#api-rest-api-3-ui-modifications-ui-modification-id-delete
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications-apps/#api-rest-api-3-ui-modifications-ui-modification-id-delete
 
 Deletes a UI modification.
 All the contexts that belong to the UI modification are deleted too.

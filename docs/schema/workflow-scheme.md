@@ -26,14 +26,6 @@ Source: [`Jira\Client\Schema\WorkflowScheme`](/src/Schema/WorkflowScheme.php)
 
 | Group | Operation |
 | --- | --- |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [createWorkflowScheme](/docs/operations/workflow-schemes.md#create-workflow-scheme) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [getWorkflowScheme](/docs/operations/workflow-schemes.md#get-workflow-scheme) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateWorkflowScheme](/docs/operations/workflow-schemes.md#update-workflow-scheme) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateDefaultWorkflow](/docs/operations/workflow-schemes.md#update-default-workflow) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [deleteDefaultWorkflow](/docs/operations/workflow-schemes.md#delete-default-workflow) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [setWorkflowSchemeIssueType](/docs/operations/workflow-schemes.md#set-workflow-scheme-issue-type) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [deleteWorkflowSchemeIssueType](/docs/operations/workflow-schemes.md#delete-workflow-scheme-issue-type) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateWorkflowMapping](/docs/operations/workflow-schemes.md#update-workflow-mapping) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [createWorkflowSchemeDraftFromParent](/docs/operations/workflow-scheme-drafts.md#create-workflow-scheme-draft-from-parent) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [getWorkflowSchemeDraft](/docs/operations/workflow-scheme-drafts.md#get-workflow-scheme-draft) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [updateWorkflowSchemeDraft](/docs/operations/workflow-scheme-drafts.md#update-workflow-scheme-draft) |
@@ -42,6 +34,14 @@ Source: [`Jira\Client\Schema\WorkflowScheme`](/src/Schema/WorkflowScheme.php)
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [setWorkflowSchemeDraftIssueType](/docs/operations/workflow-scheme-drafts.md#set-workflow-scheme-draft-issue-type) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [deleteWorkflowSchemeDraftIssueType](/docs/operations/workflow-scheme-drafts.md#delete-workflow-scheme-draft-issue-type) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [updateDraftWorkflowMapping](/docs/operations/workflow-scheme-drafts.md#update-draft-workflow-mapping) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [createWorkflowScheme](/docs/operations/workflow-schemes.md#create-workflow-scheme) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [getWorkflowScheme](/docs/operations/workflow-schemes.md#get-workflow-scheme) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateWorkflowScheme](/docs/operations/workflow-schemes.md#update-workflow-scheme) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateDefaultWorkflow](/docs/operations/workflow-schemes.md#update-default-workflow) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [deleteDefaultWorkflow](/docs/operations/workflow-schemes.md#delete-default-workflow) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [setWorkflowSchemeIssueType](/docs/operations/workflow-schemes.md#set-workflow-scheme-issue-type) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [deleteWorkflowSchemeIssueType](/docs/operations/workflow-schemes.md#delete-workflow-scheme-issue-type) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [updateWorkflowMapping](/docs/operations/workflow-schemes.md#update-workflow-mapping) |
 
 ### Schema
 

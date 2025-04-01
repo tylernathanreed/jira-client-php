@@ -15,9 +15,9 @@ Source: [`Jira\Client\Schema\ScreenableField`](/src/Schema/ScreenableField.php)
 
 | Group | Operation |
 | --- | --- |
-| [Screens](/docs/operations/screens.md) | [getAvailableScreenFields](/docs/operations/screens.md#get-available-screen-fields) |
 | [ScreenTabFields](/docs/operations/screen-tab-fields.md) | [getAllScreenTabFields](/docs/operations/screen-tab-fields.md#get-all-screen-tab-fields) |
 | [ScreenTabFields](/docs/operations/screen-tab-fields.md) | [addScreenTabField](/docs/operations/screen-tab-fields.md#add-screen-tab-field) |
+| [Screens](/docs/operations/screens.md) | [getAvailableScreenFields](/docs/operations/screens.md#get-available-screen-fields) |
 
 ### Schema
 

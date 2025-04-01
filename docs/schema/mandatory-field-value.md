@@ -20,4 +20,4 @@ Source: [`Jira\Client\Schema\MandatoryFieldValue`](/src/Schema/MandatoryFieldVal
 
 | Schema |
 | --- |
-| [fields](/docs/schema/fields.md) |
+| [Fields](/docs/schema/fields.md) |

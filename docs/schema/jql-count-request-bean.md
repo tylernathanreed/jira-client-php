@@ -1,4 +1,4 @@
-# J Q L Count Request Bean
+# JQL Count Request Bean
 
 
 Source: [`Jira\Client\Schema\JQLCountRequestBean`](/src/Schema/JQLCountRequestBean.php)

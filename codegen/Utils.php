@@ -6,7 +6,15 @@ class Utils
 {
     public static function slug(string $value): string
     {
-        return str_replace(['{', '}'], '', str_replace(['/', '(', ')'], '-', static::kebab($value)));
+        $value = static::title($value);
+
+        $value = static::kebab(strtolower($value));
+
+        $value = str_replace(['/', '(', ')'], '-', $value);
+
+        $value = str_replace(['{', '}'], '', $value);
+
+        return $value;
     }
 
     public static function kebab(string $value): string
@@ -27,10 +35,18 @@ class Utils
 
     public static function title(string $value): string
     {
-        return mb_convert_case(
+        $title = mb_convert_case(
             static::snake($value, ' '),
             MB_CASE_TITLE,
             'UTF-8'
         );
+
+        do {
+            $newTitle = preg_replace('/([A-Z]) ([A-Z])(?: |$)/', '$1$2 ', $title) ?: '';
+            $updated = $newTitle !== $title;
+            $title = $newTitle;
+        } while ($updated);
+
+        return $title;
     }
 }

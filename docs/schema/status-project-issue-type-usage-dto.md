@@ -1,4 +1,4 @@
-# Status Project Issue Type Usage D T O
+# Status Project Issue Type Usage DTO 
 
 The issue types using this status in a project.
 

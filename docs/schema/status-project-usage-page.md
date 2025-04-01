@@ -19,4 +19,4 @@ Source: [`Jira\Client\Schema\StatusProjectUsagePage`](/src/Schema/StatusProjectU
 
 | Schema |
 | --- |
-| [StatusProjectUsageDTO](/docs/schema/status-project-usage-d-t-o.md) |
+| [StatusProjectUsageDTO](/docs/schema/status-project-usage-dto.md) |

@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\JqlFunctionPrecomputationGetByIdResponse`](/src/Sch
 
 | Group | Operation |
 | --- | --- |
-| [JQLFunctionsApps](/docs/operations/j-q-l-functions-apps.md) | [getPrecomputationsByID](/docs/operations/j-q-l-functions-apps.md#get-precomputations-by-i-d) |
+| [JQLFunctionsApps](/docs/operations/jql-functions-apps.md) | [getPrecomputationsByID](/docs/operations/jql-functions-apps.md#get-precomputations-by-id) |
 
 ### Schema
 

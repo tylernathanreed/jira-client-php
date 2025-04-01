@@ -19,4 +19,4 @@ Source: [`Jira\Client\Schema\WorkflowSchemeUsagePage`](/src/Schema/WorkflowSchem
 
 | Schema |
 | --- |
-| [WorkflowSchemeUsageDTO](/docs/schema/workflow-scheme-usage-d-t-o.md) |
+| [WorkflowSchemeUsageDTO](/docs/schema/workflow-scheme-usage-dto.md) |

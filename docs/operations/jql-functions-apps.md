@@ -1,4 +1,4 @@
-# J Q L Functions Apps
+# JQL Functions Apps
 
 DummyDescription
 
@@ -13,7 +13,7 @@ Source: [`Jira\Client\Operations\JQLFunctionsApps`](/src/Operations/JQLFunctions
 ## Get Precomputations (apps)
 <a name="getPrecomputations"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l-functions-apps/#api-rest-api-3-jql-function-computation-get
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql-functions-apps/#api-rest-api-3-jql-function-computation-get
 
 Returns the list of a function's precomputations along with information about when they were created, updated, and last used.
 Each precomputation has a `value` \- the JQL fragment to replace the custom function clause with
@@ -66,7 +66,7 @@ A page of items.
 ## Update Precomputations (apps)
 <a name="updatePrecomputations"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l-functions-apps/#api-rest-api-3-jql-function-computation-post
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql-functions-apps/#api-rest-api-3-jql-function-computation-post
 
 Update the precomputation value of a function created by a Forge/Connect app
 
@@ -108,7 +108,7 @@ Result of updating JQL Function precomputations.
 ## Get Precomputations By ID (apps)
 <a name="getPrecomputationsByID"></a>
 
-Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-j-q-l-functions-apps/#api-rest-api-3-jql-function-computation-search-post
+Official Documentation: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jql-functions-apps/#api-rest-api-3-jql-function-computation-search-post
 
 Returns function precomputations by IDs, along with information about when they were created, updated, and last used.
 Each precomputation has a `value` \- the JQL fragment to replace the custom function clause with

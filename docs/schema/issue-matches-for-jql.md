@@ -1,4 +1,4 @@
-# Issue Matches For J Q L
+# Issue Matches For JQL 
 
 A list of the issues matched to a JQL query or details of errors encountered during matching.
 

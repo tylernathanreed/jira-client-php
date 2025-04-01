@@ -42,7 +42,7 @@ class DummySchemaReferencesReplacer extends Replacer
             [$_schema] = $reference;
 
             $table->add([
-                new Link($_schema, '/docs/schema/' . Utils::kebab($_schema) . '.md'),
+                new Link($_schema, '/docs/schema/' . Utils::slug($_schema) . '.md'),
             ]);
         }
 

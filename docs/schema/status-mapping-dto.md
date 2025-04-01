@@ -1,4 +1,4 @@
-# Status Mapping D T O
+# Status Mapping DTO 
 
 The mapping of old to new status ID for a specific project and issue type.
 

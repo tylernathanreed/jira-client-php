@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\UiModificationIdentifiers`](/src/Schema/UiModificat
 
 | Group | Operation |
 | --- | --- |
-| [UIModificationsApps](/docs/operations/u-i-modifications-apps.md) | [createUiModification](/docs/operations/u-i-modifications-apps.md#create-ui-modification) |
+| [UIModificationsApps](/docs/operations/ui-modifications-apps.md) | [createUiModification](/docs/operations/ui-modifications-apps.md#create-ui-modification) |
 
 ### Schema
 

@@ -39,7 +39,6 @@ Source: [`Jira\Client\Schema\UserDetails`](/src/Schema/UserDetails.php)
 | [Changelog](/docs/schema/changelog.md) |
 | [Comment](/docs/schema/comment.md) |
 | [EventNotification](/docs/schema/event-notification.md) |
-| [Fields](/docs/schema/fields.md) |
 | [NotificationRecipients](/docs/schema/notification-recipients.md) |
 | [PageBeanUserDetails](/docs/schema/page-bean-user-details.md) |
 | [PagedListUserDetailsApplicationUser](/docs/schema/paged-list-user-details-application-user.md) |

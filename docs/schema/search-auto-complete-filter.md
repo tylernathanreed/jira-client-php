@@ -15,7 +15,7 @@ Source: [`Jira\Client\Schema\SearchAutoCompleteFilter`](/src/Schema/SearchAutoCo
 
 | Group | Operation |
 | --- | --- |
-| [JQL](/docs/operations/j-q-l.md) | [getAutoCompletePost](/docs/operations/j-q-l.md#get-auto-complete-post) |
+| [JQL](/docs/operations/jql.md) | [getAutoCompletePost](/docs/operations/jql.md#get-auto-complete-post) |
 
 ### Schema
 

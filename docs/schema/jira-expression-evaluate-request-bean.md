@@ -16,7 +16,7 @@ Source: [`Jira\Client\Schema\JiraExpressionEvaluateRequestBean`](/src/Schema/Jir
 
 | Group | Operation |
 | --- | --- |
-| [JiraExpressions](/docs/operations/jira-expressions.md) | [evaluateJSISJiraExpression](/docs/operations/jira-expressions.md#evaluate-j-s-i-s-jira-expression) |
+| [JiraExpressions](/docs/operations/jira-expressions.md) | [evaluateJSISJiraExpression](/docs/operations/jira-expressions.md#evaluate-js-is-jira-expression) |
 
 ### Schema
 

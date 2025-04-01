@@ -21,6 +21,4 @@ Source: [`Jira\Client\Schema\TimeTrackingDetails`](/src/Schema/TimeTrackingDetai
 
 ### Schema
 
-| Schema |
-| --- |
-| [Fields](/docs/schema/fields.md) |
+*None*

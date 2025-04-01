@@ -1,4 +1,4 @@
-# Workflow Project Issue Type Usage D T O
+# Workflow Project Issue Type Usage DTO 
 
 Issue types associated with the workflow for a project.
 

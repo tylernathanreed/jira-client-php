@@ -184,19 +184,19 @@ final class Schema extends AbstractSchema
             if ($property->typeIsRef) {
                 assert(is_string($property->type));
 
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->type) . '.md');
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::slug($property->type) . '.md');
             }
 
             if ($property->listableTypeIsRef) {
                 assert(is_string($property->listableType));
 
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->listableType) . '.md');
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::slug($property->listableType) . '.md');
             }
 
             if ($property->associativeTypeIsRef) {
                 assert(is_string($property->associativeType));
 
-                $type = new Link("`{$type}`", '/docs/schema/' . Utils::kebab($property->associativeType) . '.md');
+                $type = new Link("`{$type}`", '/docs/schema/' . Utils::slug($property->associativeType) . '.md');
             }
 
             if (is_string($type) && strlen($type) > 40) {

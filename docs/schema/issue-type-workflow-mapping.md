@@ -16,10 +16,10 @@ Source: [`Jira\Client\Schema\IssueTypeWorkflowMapping`](/src/Schema/IssueTypeWor
 
 | Group | Operation |
 | --- | --- |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [getWorkflowSchemeIssueType](/docs/operations/workflow-schemes.md#get-workflow-scheme-issue-type) |
-| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [setWorkflowSchemeIssueType](/docs/operations/workflow-schemes.md#set-workflow-scheme-issue-type) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [getWorkflowSchemeDraftIssueType](/docs/operations/workflow-scheme-drafts.md#get-workflow-scheme-draft-issue-type) |
 | [WorkflowSchemeDrafts](/docs/operations/workflow-scheme-drafts.md) | [setWorkflowSchemeDraftIssueType](/docs/operations/workflow-scheme-drafts.md#set-workflow-scheme-draft-issue-type) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [getWorkflowSchemeIssueType](/docs/operations/workflow-schemes.md#get-workflow-scheme-issue-type) |
+| [WorkflowSchemes](/docs/operations/workflow-schemes.md) | [setWorkflowSchemeIssueType](/docs/operations/workflow-schemes.md#set-workflow-scheme-issue-type) |
 
 ### Schema
 
