@@ -625,7 +625,7 @@ final class Operation extends AbstractSchema implements Stringable
             $type = str_replace('|', '\|', $parameter->getDocType() ?: (
                 ($parameter->required ? '' : '?') .
                 $parameter->type
-             ) ?: 'mixed');
+            ) ?: 'mixed');
 
             if ($parameter->typeIsRef) {
                 assert(is_string($parameter->type));
