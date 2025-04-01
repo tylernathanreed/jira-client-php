@@ -47,9 +47,11 @@ $client = new Client(new Configuration(
 ));
 ```
 
-Note that [Basic Auth for REST APIs](https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/) is not as secure as other methods. Atlassian recommends only using Basic Auth for simple scripts and manual calls to the REST APIs.
+**Important Note:** Basic Authentication using cookie-based authentication (e.g. your website password) was disabled by Atlassian on June 3rd, 2019, in accordance with their [deprecation notice](https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-basic-auth-and-cookie-based-auth/). Basic Authentication is still fully supported, but the password must be an [API Token](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/). As of December 13th, 2025, API Tokens are set to expire in one year. You will need to rotate your API Tokens prior to expiration.
 
-#### ii. OAuth/Token Authentication
+Atlassian recommends only using [Basic Auth for REST APIs](https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/) for simple scripts, bots, and ad-hoc execution of the REST APIs. The expectation is that you will configure a single "admin/server" user account, and make calls to the API on behalf of this system-configured entity. If you intend to make calls to the API on behalf of an actual user, it is recommended that you use [OAuth 2.0 (3LO) Apps](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/) instead.
+
+#### ii. OAuth 2.0 (3LO) App Authentication
 
 ```php
 use Jira\Client\Client;
@@ -62,7 +64,7 @@ $client = new Client(new Configuration(
 ));
 ```
 
-Note that Atlassian has a security policy for [API Tokens](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) that cause them to expire within one year. You'll need a process to rotate API Tokens if you authenticate in this manner.
+Atlassian recommends using [OAuth 2.0 (3LO) Apps](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/) for apps created and managed in their [developer console](https://developer.atlassian.com/console/myapps/). The expectation is that you will be making API calls on behalf of an actual user. If you intend to make calls to the API on behalf of a system-configured admin-like entity, it is recommended that you use [Basic Authentication](https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/) instead.
 
 ### 2. Laravel
 <a name="laravel"></a>
