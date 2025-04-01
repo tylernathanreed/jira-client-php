@@ -50,7 +50,7 @@ class RepositoryReadmeGenerator
             foreach ($group as $id => $operation) {
                 $contents .= '- ' . new Link(
                     Utils::title($operation['operation']['summary'] ?? $operation['id']),
-                    '/docs/operations/' . Utils::slug($name) . '#' . $id
+                    '/docs/operations/' . Utils::slug($name) . '.md#' . $id
                 ) . "\n";
             }
         }
