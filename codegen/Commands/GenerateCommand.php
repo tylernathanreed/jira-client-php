@@ -193,7 +193,7 @@ class GenerateCommand extends Command
 
     protected function generateRepositoryReadmeFile(): void
     {
-        (new RepositoryReadmeGenerator)->generate();
+        (new RepositoryReadmeGenerator())->generate();
 
         $this->success('Repository README created successfully.');
     }
