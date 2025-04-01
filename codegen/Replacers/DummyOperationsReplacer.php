@@ -2,7 +2,6 @@
 
 namespace Jira\CodeGen\Replacers;
 
-use Jira\CodeGen\Markdown\Link;
 use Jira\CodeGen\Schema\AbstractSchema;
 use Jira\CodeGen\Schema\OperationGroup;
 

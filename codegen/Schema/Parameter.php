@@ -277,19 +277,19 @@ final class Parameter extends AbstractSchema
                 if ($this->type === 'string') {
                     return '\'foo\'';
                 }
-                
+
                 if ($this->type === 'int') {
                     return '1234';
                 }
-                
+
                 if ($this->type === 'array' && $this->listableType === 'int') {
                     return '[1234]';
                 }
-                
+
                 if ($this->type === 'array' && $this->listableType === 'string') {
                     return '[\'foo\']';
                 }
-                
+
                 if ($this->type === 'array' && ! empty($this->listableEnum)) {
                     return '[\'' . $this->listableEnum[0] . '\']';
                 }
@@ -297,15 +297,15 @@ final class Parameter extends AbstractSchema
 
             return 'null';
         }
-        
+
         if (is_bool($value)) {
             return $value ? 'true' : 'false';
         }
-        
+
         if (is_numeric($value)) {
             return (string) $value;
         }
-        
+
         if (is_array($value)) {
             return 'json_decode(\'' . json_encode($value) . '\', true)';
         }
