@@ -1,21 +1,64 @@
-# Jira Client
+# Jira Client for Cloud REST API
 
 [![Tests](https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml)
 [![Lint](https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml)
 [![Static Analysis](https://github.com/tylernathanreed/jira-client-php/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/static-analysis.yml)
 [![Code Coverage](https://coveralls.io/repos/github/tylernathanreed/jira-client-php/badge.svg?branch=master)](https://coveralls.io/github/tylernathanreed/jira-client-php?branch=master)
 
-This package provides an HTTP Client to interact with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#version).
+This package provides an HTTP Client to interact with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest).
 
 ## Table of Contents
 
 - [Introduction](#introduction)
+  - [1. Jira Cloud vs Jira Software Cloud](#jira-cloud-vs-jira-software-cloud)
+- [Installation](#installation)
+  - [1. Requirements](#requirements)
 - [Configuration](#configuration)
   - [1. Authentication](#authentication)
   - [2. Laravel](#laravel)
 - [Usage](#usage)
   - [1. Operations](#operations)
   - [2. Schema](#schema)
+
+## Introduction
+
+This package makes working with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest) simple and reliable, by providing a lightweight, well-tested PHP client generated from the official OpenAPI spec and designed for a seamless developer experience.
+
+There are other solutions that offer a client for the Jira Cloud REST API, but I found them to be incomplete or lacking of a strong testing foundation. This client is generated from the official [OpenAPI Specification of the Jira Cloud REST API](https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json), which means that all operations are supported. Additionally, the code generator is custom built to include tests to ensure that the examples provided by the OpenAPI specification actually work.
+
+### 1. Jira Cloud vs Jira Software Cloud
+<a name="jira-cloud-vs-jira-software-cloud"></a>
+
+The [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest) and [Jira Software Cloud REST API](https://developer.atlassian.com/cloud/jira/software/rest) are closely related, but they serve different scopes within the Atlassian ecosystem.
+
+#### i. Jira Cloud REST API
+
+The [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#version) acts as the core API, allowing you to interact with **fundamental Jira features** that are available in **all** Jira Cloud products.
+
+Examples of key features and use cases include:
+- Creating, editing, deleting issues
+- Managing users, groups, and permissions
+- Browsing projects
+- Working with custom fields, workflows, and screens
+- Querying issues with JQL (Jira Query Language)
+- Automating ticket creation or updates
+- Building dashboards
+- Managing users or project settings
+
+#### ii. Jira Software Cloud REST API
+
+The [Jira Software Cloud REST API](https://developer.atlassian.com/cloud/jira/software/rest) acts as an extension to the core API, allowing you to interact with **Jira Software-specificfeatures** that are only available if Jira Software is installed and enabled.
+
+Examples of key features and use cases include:
+- Agile and Scrum tools (boards, sprints, backlogs)
+- Working with epics, versions, and estimation
+- Managing board configurations
+- Sprint reports and velocity charts
+- Creating or modifying sprints
+- Querying sprint or board data for reporting
+- Automatically moving issues across boards
+
+This package does not yet support the Jira Software Cloud REST API, and recommends [lesstif/jira-cloud-restapi](https://github.com/lesstif/php-JiraCloud-RESTAPI) if you need these specific features. Note that `lesstif/jira-cloud-restapi` does not support the Jira Cloud REST API (only the Jira Software Cloud REST API), but you may use both that package and this one without conflicts.
 
 ## Installation
 <a name="installation"></a>
@@ -25,6 +68,12 @@ Install this package using [Composer](https://getcomposer.org/):
 ```bash
 composer require jira/client
 ```
+
+### 1. Requirements
+<a name="requirements"></a>
+
+- [PHP](https://www.php.net/): 8.3+
+- [Guzzle](https://github.com/guzzle/guzzle): 7.8+
 
 ## Configuration
 <a name="configuration"></a>

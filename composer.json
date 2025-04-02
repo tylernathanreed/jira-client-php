@@ -3,10 +3,9 @@
     "description": "Provides an HTTP Client to interact with the Jira Cloud REST API",
     "keywords": [
         "jira",
-        "cloud",
-        "api",
-        "client",
-        "sdk"
+        "jira-php",
+        "jira-cloud",
+        "jira-rest"
     ],
     "authors": [
         {
