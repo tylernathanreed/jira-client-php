@@ -1,6 +1,10 @@
 name: Coverage
 
-on: ["push", "pull_request"]
+on:
+  push:
+    branches-ignore:
+      - auto-update-**
+  pull_request:
 
 jobs:
   build:
