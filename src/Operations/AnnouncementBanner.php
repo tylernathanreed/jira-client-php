@@ -8,13 +8,6 @@ use Jira\Client\Schema;
 /** @phpstan-require-extends Client */
 trait AnnouncementBanner
 {
-    /**
-     * Returns the current announcement banner configuration
-     * 
-     * **"Permissions" required:** *Administer Jira* "global permission".
-     * 
-     * @link https://confluence.atlassian.com/x/x4dKLg
-     */
     public function getBanner(): Schema\AnnouncementBannerConfiguration
     {
         return $this->call(
