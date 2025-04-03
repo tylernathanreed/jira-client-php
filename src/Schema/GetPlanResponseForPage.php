@@ -13,6 +13,9 @@ final readonly class GetPlanResponseForPage extends Dto
         /** The plan name. */
         public string $name,
 
+        /** Default scenario ID. */
+        public string $scenarioId,
+
         /**
          * The plan status.
          * This is "Active", "Trashed" or "Archived".
