@@ -38,15 +38,19 @@ jobs:
             echo "Changes detected."
           fi
 
+      - name: Set Formatted Date
+        id: set_date
+        run: echo "formatted_date=$(date +'%B %Y')" >> $GITHUB_OUTPUT
+
       - name: Create Pull Request
         if: env.skip_pr != 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          title: "Monthly Jira Client Update [$(date +'%B\ %Y')]"
+          title: "Monthly Jira Client Update [${{ steps.set_date.outputs.formatted_date }}]"
           body: "Automated update of the Jira Cloud API client based on the latest Open API Specification."
           branch: "auto-update"
           branch-suffix: "short-commit-hash"
-          commit-message: "chore: Monthly Jira Client updates for $(date +'%B\ %Y')"
+          commit-message: "chore: Monthly Jira Client updates for ${{ steps.set_date.outputs.formatted_date }}"
           base: master
           labels: auto-update
       
