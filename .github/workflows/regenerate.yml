@@ -1,0 +1,60 @@
+name: Regenerate Jira Client
+
+on:
+  schedule:
+    - cron: '0 0 1 * *' # Run at the start of every month
+  workflow_dispatch:    # Allow Manual Triggering
+
+jobs:
+  update-jira-client:
+    name: Update Jira Client from OAS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+
+      - name: Install dependencies
+        uses: nick-invision/retry@v3
+        with:
+          timeout_minutes: 5
+          max_attempts: 2
+          command:  composer update --prefer-stable --prefer-dist --no-interaction --no-progress
+
+      - name: Generate Jira Client
+        run: ./bin/jira generate
+
+      - name: Configure Git
+        run: |
+          git confug user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create PR Branch
+        id: create_pr_branch
+        run: |
+          BRANCH="update-$(date + '%Y-%m')"
+          git checkout -b "$BRANCH"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            echo "skip_pr=true" >> $GITHUB_ENV
+            exit 0
+          fi
+          git commit -m "chore: Monthly Jira Client updates for $(date + '%B %Y')"
+          git push origin "$BRANCH"
+          echo "branch_name=$BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request
+        if: env.skip_pr != 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: "Monthly Jira Client Update [$(date + '%B %Y')]"
+          body: "Automated update of the Jira Cloud API client based on the latest Open API Specification."
+          head: ${{ steps.create_pr_branch.outputs.branch_name }}
+          base: master
+          labels: auto-update
+      
