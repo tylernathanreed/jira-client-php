@@ -28,13 +28,24 @@ jobs:
       - name: Generate Jira Client
         run: ./bin/jira generate
 
+      - name: Check for changes
+        run: |
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes detected."
+            echo "skip_pr=true" >> $GITHUB_ENV
+          else
+            echo "Changes detected."
+          fi
+
       - name: Create Pull Request
         if: env.skip_pr != 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           title: "Monthly Jira Client Update [$(date +'%B\ %Y')]"
           body: "Automated update of the Jira Cloud API client based on the latest Open API Specification."
-          branch: "update-$(date +'%Y-%m')"
+          branch: "auto-update"
+          branch-suffix: "short-commit-hash"
           commit-message: "chore: Monthly Jira Client updates for $(date +'%B\ %Y')"
           base: master
           labels: auto-update
