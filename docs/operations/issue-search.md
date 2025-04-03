@@ -421,7 +421,7 @@ $response = $client->searchAndReconsileIssuesUsingJql(
 | `properties` | `?list<string>` | A list of up to 5 issue properties to include in the results. This parameter accepts a comma-separated list. |
 | `fieldsByKeys` | `?bool` | Reference fields by their key (rather than ID). The default is `false`. |
 | `failFast` | `?bool` | Fail this request early if we can't retrieve all field data. |
-| `reconcileIssues` | `?list<int>` | Strong consistency issue ids to be reconciled with search results. Accepts max 50 ids. All issues must exist. |
+| `reconcileIssues` | `?list<int>` | Strong consistency issue ids to be reconciled with search results. Accepts max 50 ids |
 
 #### Response
 
@@ -472,7 +472,7 @@ Source: [`Jira\Client\Schema\SearchAndReconcileRequestBean`](/docs/schema/search
 | `maxResults` | `int` | The maximum number of items to return per page. To manage page size, API may return fewer items per page where a large number of fields are requested. The greatest number of items returned per page is achieved when requesting `id` or `key` only. It returns max 5000 issues. |
 | `nextPageToken` | `string` | The token for a page to fetch that is not the first page. The first page has a `nextPageToken` of `null`. Use the `nextPageToken` to fetch the next page of issues. |
 | `properties` | `?list<string>` | A list of up to 5 issue properties to include in the results. This parameter accepts a comma-separated list. |
-| `reconcileIssues` | `?list<int>` | Strong consistency issue ids to be reconciled with search results. Accepts max 50 ids. All issues must exist. |
+| `reconcileIssues` | `?list<int>` | Strong consistency issue ids to be reconciled with search results. Accepts max 50 ids |
 
 #### Response
 

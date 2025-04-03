@@ -29,7 +29,7 @@ class PlansTest extends OperationsTestCase
                 $cursor,
                 $maxResults,
             ],
-            response: '{"cursor":"","isLast":true,"maxResults":2,"nextPageCursor":"2","total":10,"values":[{"id":"100","issueSources":[{"type":"Project","value":10000}],"name":"Plan 1","status":"Active"},{"id":"200","issueSources":[{"type":"Board","value":20000}],"name":"Plan 2","status":"Trashed"}]}',
+            response: '{"cursor":"","isLast":true,"maxResults":2,"nextPageCursor":"2","total":10,"values":[{"id":"100","issueSources":[{"type":"Project","value":10000}],"name":"Plan 1","scenarioId":"200","status":"Active"},{"id":"200","issueSources":[{"type":"Board","value":20000}],"name":"Plan 2","scenarioId":"300","status":"Trashed"}]}',
         );
     }
 

@@ -7,6 +7,7 @@ Source: [`Jira\Client\Schema\GetPlanResponseForPage`](/src/Schema/GetPlanRespons
 | --- | --- | --- |
 | `id` | `string` | The plan ID. |
 | `name` | `string` | The plan name. |
+| `scenarioId` | `string` | Default scenario ID. |
 | `status` | `'Active'\|'Trashed'\|'Archived'` | The plan status. This is "Active", "Trashed" or "Archived". |
 | `issueSources` | [`?list<GetIssueSourceResponse>`](/docs/schema/get-issue-source-response.md) | The issue sources included in the plan. |
 
