@@ -3,7 +3,7 @@
 namespace Jira\Client\Schema;
 
 use DateTimeImmutable;
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The date the refreshed webhooks expire. */
 final readonly class WebhooksExpirationDate extends Dto

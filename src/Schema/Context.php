@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** A context. */
 final readonly class Context extends Dto

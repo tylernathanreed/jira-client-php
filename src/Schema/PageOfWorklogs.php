@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Paginated list of worklog details */
 final readonly class PageOfWorklogs extends Dto

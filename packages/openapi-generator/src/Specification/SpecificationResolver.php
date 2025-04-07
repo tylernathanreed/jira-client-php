@@ -27,7 +27,7 @@ class SpecificationResolver
      */
     public function fix(array $spec): array
     {
-        $path = realpath(__DIR__ . '/../../fixes') . '/*.json';
+        $path = realpath(__DIR__ . '/../../../../fixes') . '/*.json';
 
         $files = glob($path);
 

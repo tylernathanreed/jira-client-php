@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** A list of projects in which a user is granted permissions. */
 final readonly class PermittedProjects extends Dto

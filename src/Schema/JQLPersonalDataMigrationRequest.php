@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The JQL queries to be converted. */
 final readonly class JQLPersonalDataMigrationRequest extends Dto

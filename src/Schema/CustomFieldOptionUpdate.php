@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of a custom field option for a context. */
 final readonly class CustomFieldOptionUpdate extends Dto

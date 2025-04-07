@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The results from a JQL query. */
 final readonly class AutoCompleteSuggestions extends Dto

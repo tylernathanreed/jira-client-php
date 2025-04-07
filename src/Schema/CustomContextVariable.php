@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\PolymorphicDto;
+use Reedware\OpenApi\Client\PolymorphicDto;
 
 final readonly class CustomContextVariable extends PolymorphicDto
 {

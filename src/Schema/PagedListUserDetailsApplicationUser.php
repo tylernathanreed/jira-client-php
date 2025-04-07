@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Attributes\MapName;
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Attributes\MapName;
+use Reedware\OpenApi\Client\Dto;
 
 /**
  * A paged list.

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The statuses the transition can start from, and the mapping of ports between the statuses. */
 final readonly class WorkflowTransitionLinks extends Dto

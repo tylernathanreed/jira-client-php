@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Announcement banner configuration. */
 final readonly class AnnouncementBannerConfiguration extends Dto

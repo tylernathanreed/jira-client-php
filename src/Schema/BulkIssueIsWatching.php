@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** A container for the watch status of a list of issues. */
 final readonly class BulkIssueIsWatching extends Dto

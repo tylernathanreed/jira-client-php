@@ -3,7 +3,7 @@
 namespace Jira\Client\Schema;
 
 use DateTimeImmutable;
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 final readonly class BulkOperationProgress extends Dto
 {

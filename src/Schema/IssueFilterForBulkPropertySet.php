@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Bulk operation filter details. */
 final readonly class IssueFilterForBulkPropertySet extends Dto

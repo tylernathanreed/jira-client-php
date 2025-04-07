@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** List of changelogs that belong to single issue */
 final readonly class IssueChangeLog extends Dto

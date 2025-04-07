@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The default text for a text custom field. */
 final readonly class CustomFieldContextDefaultValueTextField extends Dto

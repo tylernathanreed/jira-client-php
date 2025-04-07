@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** An ordered list of issue type IDs and information about where to move them. */
 final readonly class OrderOfIssueTypes extends Dto

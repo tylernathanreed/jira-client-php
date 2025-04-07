@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The trigger configuration associated with a workflow. */
 final readonly class WorkflowTrigger extends Dto

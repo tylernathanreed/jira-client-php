@@ -3,7 +3,7 @@
 namespace Jira\Client\Schema;
 
 use DateTimeImmutable;
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details about a filter. */
 final readonly class Filter extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Default value for a labels custom field. */
 final readonly class CustomFieldContextDefaultValueLabels extends Dto

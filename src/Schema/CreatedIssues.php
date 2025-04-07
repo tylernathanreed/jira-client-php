@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details about the issues created and the errors for requests that failed. */
 final readonly class CreatedIssues extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The default value for a version picker custom field. */
 final readonly class CustomFieldContextDefaultValueSingleVersionPicker extends Dto

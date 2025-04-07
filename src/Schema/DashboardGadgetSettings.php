@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of the settings for a dashboard gadget. */
 final readonly class DashboardGadgetSettings extends Dto

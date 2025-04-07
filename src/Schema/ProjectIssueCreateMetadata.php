@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of the issue creation metadata for a project. */
 final readonly class ProjectIssueCreateMetadata extends Dto

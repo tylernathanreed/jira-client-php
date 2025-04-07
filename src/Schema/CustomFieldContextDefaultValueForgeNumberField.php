@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Default value for a Forge number custom field. */
 final readonly class CustomFieldContextDefaultValueForgeNumberField extends Dto

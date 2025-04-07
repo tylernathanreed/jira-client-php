@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** ID of a registered webhook or error messages explaining why a webhook wasn't registered. */
 final readonly class RegisteredWebhook extends Dto

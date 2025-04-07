@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The new default issue resolution. */
 final readonly class SetDefaultResolutionRequest extends Dto

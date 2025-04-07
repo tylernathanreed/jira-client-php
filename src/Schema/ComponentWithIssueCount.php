@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details about a component with a count of the issues it contains. */
 final readonly class ComponentWithIssueCount extends Dto

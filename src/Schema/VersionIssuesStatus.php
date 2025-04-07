@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Counts of the number of issues in various statuses. */
 final readonly class VersionIssuesStatus extends Dto

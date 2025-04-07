@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 final readonly class GetPlanResponseForPage extends Dto
 {
@@ -12,6 +12,9 @@ final readonly class GetPlanResponseForPage extends Dto
 
         /** The plan name. */
         public string $name,
+
+        /** Default scenario ID. */
+        public string $scenarioId,
 
         /**
          * The plan status.

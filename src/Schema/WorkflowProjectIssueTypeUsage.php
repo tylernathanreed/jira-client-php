@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The issue type. */
 final readonly class WorkflowProjectIssueTypeUsage extends Dto

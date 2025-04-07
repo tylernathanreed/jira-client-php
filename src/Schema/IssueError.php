@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Describes the error that occurred when retrieving data for a particular issue. */
 final readonly class IssueError extends Dto

@@ -2,15 +2,13 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Attributes\PolymorphicList;
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Default values to update. */
 final readonly class CustomFieldContextDefaultValueUpdate extends Dto
 {
     public function __construct(
-        /** @var ?list<CustomFieldContextDefaultValueDate|CustomFieldContextDefaultValueDateTime|CustomFieldContextDefaultValueFloat|CustomFieldContextDefaultValueForgeDateTimeField|CustomFieldContextDefaultValueForgeGroupField|CustomFieldContextDefaultValueForgeMultiGroupField|CustomFieldContextDefaultValueForgeNumberField|CustomFieldContextDefaultValueForgeObjectField|CustomFieldContextDefaultValueForgeStringField|CustomFieldContextDefaultValueForgeMultiStringField|CustomFieldContextDefaultValueForgeUserField|CustomFieldContextDefaultValueForgeMultiUserField|CustomFieldContextDefaultValueMultipleGroupPicker|CustomFieldContextDefaultValueSingleGroupPicker|CustomFieldContextDefaultValueLabels|CustomFieldContextDefaultValueMultiUserPicker|CustomFieldContextDefaultValueCascadingOption|CustomFieldContextDefaultValueMultipleOption|CustomFieldContextDefaultValueSingleOption|CustomFieldContextDefaultValueProject|CustomFieldContextDefaultValueReadOnly|CustomFieldContextSingleUserPickerDefaults|CustomFieldContextDefaultValueTextArea|CustomFieldContextDefaultValueTextField|CustomFieldContextDefaultValueURL|CustomFieldContextDefaultValueMultipleVersionPicker|CustomFieldContextDefaultValueSingleVersionPicker> */
-        #[PolymorphicList(CustomFieldContextDefaultValue::class)]
+        /** @var ?list<CustomFieldContextDefaultValue> */
         public ?array $defaultValues = null,
     ) {
     }

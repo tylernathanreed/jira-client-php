@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Workflows using the status. */
 final readonly class StatusWorkflowUsageDTO extends Dto

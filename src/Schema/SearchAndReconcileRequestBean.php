@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 final readonly class SearchAndReconcileRequestBean extends Dto
 {
@@ -97,8 +97,7 @@ final readonly class SearchAndReconcileRequestBean extends Dto
 
         /**
          * Strong consistency issue ids to be reconciled with search results.
-         * Accepts max 50 ids.
-         * All issues must exist.
+         * Accepts max 50 ids
          * 
          * @var ?list<int>
          */

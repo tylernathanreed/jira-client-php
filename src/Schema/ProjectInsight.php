@@ -3,7 +3,7 @@
 namespace Jira\Client\Schema;
 
 use DateTimeImmutable;
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Additional details about a project. */
 final readonly class ProjectInsight extends Dto

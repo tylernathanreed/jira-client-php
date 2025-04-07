@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Filter for a User Picker (single) custom field. */
 final readonly class UserFilter extends Dto

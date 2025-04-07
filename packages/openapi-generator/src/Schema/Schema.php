@@ -1,11 +1,11 @@
 <?php
 
-namespace Jira\CodeGen\Schema;
+namespace Reedware\OpenApi\Schema;
 
 use Attribute;
-use Jira\CodeGen\Markdown\Link;
-use Jira\CodeGen\Markdown\Table;
-use Jira\CodeGen\Utils;
+use Reedware\OpenApi\Markdown\Link;
+use Reedware\OpenApi\Markdown\Table;
+use Reedware\OpenApi\Utils;
 use RuntimeException;
 use Throwable;
 

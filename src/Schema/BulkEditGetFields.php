@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Bulk Edit Get Fields Response. */
 final readonly class BulkEditGetFields extends Dto

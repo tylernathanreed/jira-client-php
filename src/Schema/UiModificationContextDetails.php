@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The details of a UI modification's context, which define where to activate the UI modification. */
 final readonly class UiModificationContextDetails extends Dto

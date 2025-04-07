@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** A time predicate for a temporal JQL clause. */
 final readonly class JqlQueryClauseTimePredicate extends Dto

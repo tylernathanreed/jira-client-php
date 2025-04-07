@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The issue types using this status in a project. */
 final readonly class StatusProjectIssueTypeUsageDTO extends Dto

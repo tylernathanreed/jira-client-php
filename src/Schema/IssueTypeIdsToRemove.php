@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The list of issue type IDs to be removed from the field configuration scheme. */
 final readonly class IssueTypeIdsToRemove extends Dto

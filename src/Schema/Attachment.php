@@ -3,7 +3,7 @@
 namespace Jira\Client\Schema;
 
 use DateTimeImmutable;
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details about an attachment. */
 final readonly class Attachment extends Dto

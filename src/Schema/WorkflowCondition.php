@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\PolymorphicDto;
+use Reedware\OpenApi\Client\PolymorphicDto;
 
 /** The workflow transition rule conditions tree. */
 final readonly class WorkflowCondition extends PolymorphicDto

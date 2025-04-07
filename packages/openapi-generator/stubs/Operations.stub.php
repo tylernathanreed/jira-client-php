@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Operations;
 
-use Jira\Client\Schema;
-use Jira\Client\Client;
+use Reedware\OpenApi\Client\Client;
+use Reedware\OpenApi\Client\Schema;
 
 /** @phpstan-require-extends Client */
 trait DummyTrait

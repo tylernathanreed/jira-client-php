@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Mapping of issue priorities for changes in priority schemes. */
 final readonly class PriorityMapping extends Dto

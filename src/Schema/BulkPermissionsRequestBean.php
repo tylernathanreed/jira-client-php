@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of global permissions to look up and project permissions with associated projects and issues to look up. */
 final readonly class BulkPermissionsRequestBean extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of functions that can be used in advanced searches. */
 final readonly class FunctionReferenceData extends Dto

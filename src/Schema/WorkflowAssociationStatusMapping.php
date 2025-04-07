@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The list of status mappings. */
 final readonly class WorkflowAssociationStatusMapping extends Dto

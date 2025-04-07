@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details about the mapping from a status to a new status for an issue type. */
 final readonly class StatusMapping extends Dto

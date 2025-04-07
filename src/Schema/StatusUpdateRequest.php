@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The list of statuses that will be updated. */
 final readonly class StatusUpdateRequest extends Dto

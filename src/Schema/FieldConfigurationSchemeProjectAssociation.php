@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Associated field configuration scheme and project. */
 final readonly class FieldConfigurationSchemeProjectAssociation extends Dto

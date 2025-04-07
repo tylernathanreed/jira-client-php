@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of the contextual configuration for a custom field. */
 final readonly class ContextualConfiguration extends Dto

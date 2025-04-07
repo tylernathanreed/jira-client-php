@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The sanitized JQL queries for the given account IDs. */
 final readonly class SanitizedJqlQueries extends Dto

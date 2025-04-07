@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Issue Bulk Watch Or Unwatch Payload */
 final readonly class IssueBulkWatchOrUnwatchPayload extends Dto

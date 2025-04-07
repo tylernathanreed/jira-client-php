@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The hierarchy of issue types within a project. */
 final readonly class ProjectIssueTypeHierarchy extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details about the status mappings for publishing a draft workflow scheme. */
 final readonly class PublishDraftWorkflowScheme extends Dto

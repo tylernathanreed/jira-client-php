@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** An issue priority with sequence information. */
 final readonly class PriorityWithSequence extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The ID of a screen scheme. */
 final readonly class UpdateDefaultScreenScheme extends Dto

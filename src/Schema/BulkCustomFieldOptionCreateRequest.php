@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of the options to create for a custom field. */
 final readonly class BulkCustomFieldOptionCreateRequest extends Dto

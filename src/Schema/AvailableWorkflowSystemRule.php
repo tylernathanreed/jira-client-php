@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The Atlassian provided system rules available. */
 final readonly class AvailableWorkflowSystemRule extends Dto

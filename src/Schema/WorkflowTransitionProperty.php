@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details about the server Jira is running on. */
 final readonly class WorkflowTransitionProperty extends Dto

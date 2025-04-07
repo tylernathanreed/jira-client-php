@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Operations;
 
-use Jira\Client\Schema;
+use Reedware\OpenApi\Client\Schema;
 use Tests\OperationsTestCase;
 
 class ProjectClassificationLevelsTest extends OperationsTestCase

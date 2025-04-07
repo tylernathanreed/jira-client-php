@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Precomputation id and its new value. */
 final readonly class JqlFunctionPrecomputationUpdateBean extends Dto

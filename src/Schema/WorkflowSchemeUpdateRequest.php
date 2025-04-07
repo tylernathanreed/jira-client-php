@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The update workflow scheme payload. */
 final readonly class WorkflowSchemeUpdateRequest extends Dto

@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Operations;
 
+use Reedware\OpenApi\Client\Schema;
 use Tests\OperationsTestCase;
-use Jira\Client\Schema;
 
 class DummyClassTest extends OperationsTestCase
 {

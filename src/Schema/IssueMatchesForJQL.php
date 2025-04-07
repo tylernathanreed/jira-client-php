@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** A list of the issues matched to a JQL query or details of errors encountered during matching. */
 final readonly class IssueMatchesForJQL extends Dto

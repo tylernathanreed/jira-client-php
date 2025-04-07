@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of user or system associated with a issue history metadata item. */
 final readonly class HistoryMetadataParticipant extends Dto

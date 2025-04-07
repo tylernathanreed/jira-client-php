@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** A project and issueType ID pair that identifies a status mapping. */
 final readonly class ProjectAndIssueTypePair extends Dto

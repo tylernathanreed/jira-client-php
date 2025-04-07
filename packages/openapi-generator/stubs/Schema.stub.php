@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\DummyParent;
+use Reedware\OpenApi\Client\DummyParent;
 // DummyIncludes
 
 // DummyClassDoc

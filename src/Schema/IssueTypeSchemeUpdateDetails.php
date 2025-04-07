@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of the name, description, and default issue type for an issue type scheme. */
 final readonly class IssueTypeSchemeUpdateDetails extends Dto

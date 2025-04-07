@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The new default issue priority. */
 final readonly class SetDefaultPriorityRequest extends Dto

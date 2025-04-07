@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of the order-by JQL clause. */
 final readonly class JqlQueryOrderByClause extends Dto

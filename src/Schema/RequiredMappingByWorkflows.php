@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The list of required status mappings by workflow. */
 final readonly class RequiredMappingByWorkflows extends Dto

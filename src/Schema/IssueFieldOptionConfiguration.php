@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of the projects the option is available in. */
 final readonly class IssueFieldOptionConfiguration extends Dto

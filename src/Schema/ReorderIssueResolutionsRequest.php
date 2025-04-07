@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Change the order of issue resolutions. */
 final readonly class ReorderIssueResolutionsRequest extends Dto

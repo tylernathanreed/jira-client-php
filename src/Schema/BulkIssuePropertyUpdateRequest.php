@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Bulk issue property update request details. */
 final readonly class BulkIssuePropertyUpdateRequest extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of changes to a priority scheme's projects that require suggested priority mappings. */
 final readonly class SuggestedMappingsForProjectsRequestBean extends Dto

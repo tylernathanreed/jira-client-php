@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** List of issues and JQL queries. */
 final readonly class IssuesAndJQLQueries extends Dto

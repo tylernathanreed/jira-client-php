@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Details of any errors encountered while updating workflow transition rules. */
 final readonly class WorkflowTransitionRulesUpdateErrors extends Dto

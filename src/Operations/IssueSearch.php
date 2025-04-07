@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Operations;
 
-use Jira\Client\Client;
-use Jira\Client\Schema;
+use Reedware\OpenApi\Client\Client;
+use Reedware\OpenApi\Client\Schema;
 
 /** @phpstan-require-extends Client */
 trait IssueSearch
@@ -316,8 +316,7 @@ trait IssueSearch
      *                            The default is `false`.
      * @param ?bool $failFast Fail this request early if we can't retrieve all field data.
      * @param ?list<int> $reconcileIssues Strong consistency issue ids to be reconciled with search results.
-     *                                    Accepts max 50 ids.
-     *                                    All issues must exist.
+     *                                    Accepts max 50 ids
      */
     public function searchAndReconsileIssuesUsingJql(
         ?string $jql = null,

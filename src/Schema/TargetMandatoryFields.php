@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Field mapping for mandatory fields in target */
 final readonly class TargetMandatoryFields extends Dto

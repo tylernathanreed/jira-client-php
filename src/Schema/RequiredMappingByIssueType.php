@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The list of required status mappings by issue type. */
 final readonly class RequiredMappingByIssueType extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The explicit association between issue types and a workflow in a workflow scheme. */
 final readonly class WorkflowSchemeAssociation extends Dto

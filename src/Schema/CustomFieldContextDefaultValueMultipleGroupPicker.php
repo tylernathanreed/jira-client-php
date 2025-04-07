@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The default value for a multiple group picker custom field. */
 final readonly class CustomFieldContextDefaultValueMultipleGroupPicker extends Dto

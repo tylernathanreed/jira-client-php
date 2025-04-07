@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The default text for a Forge collection of strings custom field. */
 final readonly class CustomFieldContextDefaultValueForgeMultiStringField extends Dto

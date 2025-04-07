@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Metadata for an item in an attachment archive. */
 final readonly class AttachmentArchiveItemReadable extends Dto

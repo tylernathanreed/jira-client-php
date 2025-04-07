@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** Update projects in a scheme */
 final readonly class UpdateProjectsInSchemeRequestBean extends Dto

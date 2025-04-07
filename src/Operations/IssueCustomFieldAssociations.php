@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Operations;
 
-use Jira\Client\Client;
-use Jira\Client\Schema;
+use Reedware\OpenApi\Client\Client;
+use Reedware\OpenApi\Client\Schema;
 
 /** @phpstan-require-extends Client */
 trait IssueCustomFieldAssociations

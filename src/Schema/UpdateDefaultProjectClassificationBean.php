@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The request for updating the default project classification level. */
 final readonly class UpdateDefaultProjectClassificationBean extends Dto

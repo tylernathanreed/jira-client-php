@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The ID of an event that is being mapped to notifications. */
 final readonly class NotificationSchemeEventTypeId extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The starting point for the statuses in the workflow. */
 final readonly class WorkflowLayout extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The IDs of the screens for the screen types of the screen scheme. */
 final readonly class ScreenTypes extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Dto;
 
 /** The description of the page of issues loaded by the provided JQL query. */
 final readonly class IssuesJqlMetaDataBean extends Dto
