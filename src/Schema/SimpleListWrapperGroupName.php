@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Schema;
 
-use Jira\Client\Attributes\MapName;
 use Jira\Client\Dto;
+use Reedware\OpenApi\Client\Attributes\MapName;
 
 final readonly class SimpleListWrapperGroupName extends Dto
 {

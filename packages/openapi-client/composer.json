@@ -1,11 +1,11 @@
 {
-    "name": "jira/client",
-    "description": "Provides an HTTP Client to interact with the Jira Cloud REST API",
+    "name": "reedware/openapi-client",
+    "description": "Provides an HTTP Client to interact with the OpenAPI REST APIs",
     "keywords": [
-        "jira",
-        "jira-php",
-        "jira-cloud",
-        "jira-rest"
+        "open",
+        "api",
+        "openapi",
+        "http"
     ],
     "authors": [
         {
@@ -14,19 +14,10 @@
         }
     ],
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./packages/openapi-client"
-        },
-        {
-            "type": "path",
-            "url": "./packages/openapi-generator"
-        }
-    ],
     "require": {
         "php": "^8.3",
-        "reedware/openapi-client": "*"
+        "guzzlehttp/guzzle": "^7.8.2",
+        "guzzlehttp/uri-template": "^1.0"
     },
     "require-dev": {
         "laravel/pint": "^1.20",
@@ -34,14 +25,13 @@
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^12.0",
         "reedware/sail-lite": "^1.0",
-        "reedware/openapi-generator": "*",
         "symfony/console": "^7.0",
         "symfony/process": "^7.0",
         "symfony/var-dumper": "^7.0"
     },
     "autoload": {
         "psr-4": {
-            "Jira\\Client\\": "src/"
+            "Reedware\\OpenApi\\Client\\": "src/"
         }
     },
     "autoload-dev": {

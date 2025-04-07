@@ -1,0 +1,10 @@
+{
+    "specification": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
+    "namespace": "Jira\\Client",
+    "directories": {
+        "src": "src",
+        "docs": "docs",
+        "fixes": "fixes",
+        "tests": "tests"
+    }
+}

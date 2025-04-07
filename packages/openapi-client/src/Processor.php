@@ -1,0 +1,74 @@
+<?php
+
+namespace Reedware\OpenApi\Client;
+
+use Reedware\OpenApi\Client\Exceptions\InvalidBodyHttpException;
+use Reedware\OpenApi\Client\Exceptions\MethodNotAllowedHttpException;
+use Reedware\OpenApi\Client\Exceptions\NotFoundHttpException;
+use Reedware\OpenApi\Client\Exceptions\UnsupportedStatusCodeHttpException;
+use Psr\Http\Message\ResponseInterface;
+
+class Processor
+{
+    public function __construct(
+        protected Deserializer $deserializer
+    ) {
+    }
+
+    /**
+     * @param array{0:class-string<Dto>}|class-string<Dto>|true $schema
+     *
+     * @return ($schema is true ? true : ($schema is array ? list<Dto> : Dto))
+     */
+    public function process(
+        PendingOperation $operation,
+        ResponseInterface $response,
+        int $successCode,
+        array|string|bool $schema
+    ): array|Dto|true {
+        $status = $response->getStatusCode();
+
+        if ($status === 404) {
+            throw new NotFoundHttpException(sprintf(
+                '[404] Endpoint [%s] not found.',
+                $operation->getExpandedUri()
+            ), 404);
+        }
+
+        if ($status === 405) {
+            throw new MethodNotAllowedHttpException(sprintf(
+                '[405] Method [%s] against [%s] is not allowed.',
+                strtoupper($operation->method),
+                $operation->getExpandedUri(),
+            ), 405);
+        }
+
+        if ($status != $successCode) {
+            throw new UnsupportedStatusCodeHttpException(sprintf(
+                '[%s] Unexpected status code (Expected: %s).',
+                $status,
+                $successCode,
+            ), $status);
+        }
+
+        if ($schema === true) {
+            return true;
+        }
+
+        $body = (string) $response->getBody();
+
+        $data = json_decode($body, true);
+
+        if (! is_array($data)) {
+            throw new InvalidBodyHttpException('Unable to decode response body: ' . $body);
+        }
+
+        if (is_array($schema)) {
+            /** @var list<array<string,mixed>> $data */
+            return $this->deserializer->deserialize($data, $schema[0], array: true);
+        } else {
+            /** @var array<string,mixed> $data */
+            return $this->deserializer->deserialize($data, $schema);
+        }
+    }
+}

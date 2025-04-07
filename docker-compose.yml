@@ -1,14 +1,12 @@
-version: '3'
 services:
     dev:
         build:
-            context: ./docker/runtimes/8.3
+            context: ./vendor/reedware/sail-lite/runtimes/8.3
             dockerfile: Dockerfile
             args:
-                WWWGROUP: '${WWWGROUP:-1000}'
-        image: sail-8.3/app
+                WWWGROUP: '${WWWGROUP}'
+        image: sail-8.3/dev
         environment:
-            WWWUSER: '${WWWUSER:-1000}'
-            LARAVEL_SAIL: 1
+            WWWUSER: '${WWWUSER}'
         volumes:
             - '.:/var/www/html'
