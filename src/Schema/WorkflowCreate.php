@@ -28,6 +28,8 @@ final readonly class WorkflowCreate extends Dto
         /** The description of the workflow to create. */
         public ?string $description = null,
 
+        public ?WorkflowLayout $loopedTransitionContainerLayout = null,
+
         public ?WorkflowLayout $startPointLayout = null,
     ) {
     }

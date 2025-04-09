@@ -11,6 +11,7 @@ use Reedware\OpenApi\Generators\AbstractSchemaGenerator;
 use Reedware\OpenApi\Generators\Generator;
 use Reedware\OpenApi\Generators\RepositoryReadmeGenerator;
 use Override;
+use Reedware\OpenApi\Configuration;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Throwable;
@@ -25,6 +26,8 @@ class GenerateCommand extends Command
     #[Override]
     public function handle(): int
     {
+        $config = $this->readConfig();
+
         if ($this->argument('type') === 'readme') {
             $this->generateRepositoryReadmeFile();
 
@@ -33,9 +36,24 @@ class GenerateCommand extends Command
 
         [$type, $name] = $this->validated();
 
-        $this->generate($type, $name);
+        $this->generate($config, $type, $name);
 
         return 0;
+    }
+
+    protected function readConfig(): Configuration
+    {
+        $contents = file_get_contents($this->basePath . '/openapi.json');
+
+        if ($contents === false) {
+            throw new CommandFailedException('Unable to find openapi.json configuration');
+        }
+
+        $json = json_decode($contents);
+
+        return new Configuration(
+            namespace: $json->namespace
+        );
     }
 
     /** @return array{0:?GeneratorType,1:?string} */
@@ -93,27 +111,27 @@ class GenerateCommand extends Command
         return $name;
     }
 
-    protected function generate(?GeneratorType $type, ?string $name): void
+    protected function generate(Configuration $config, ?GeneratorType $type, ?string $name): void
     {
         if (! is_null($type) && ! is_null($name)) {
-            $this->generateAssets($type, $name);
+            $this->generateAssets($config, $type, $name);
         } elseif (! is_null($type)) {
-            $this->generateType($type);
+            $this->generateType($config, $type);
         } else {
-            $this->generateAll();
+            $this->generateAll($config);
         }
     }
 
-    protected function generateAssets(GeneratorType $type, string $name): void
+    protected function generateAssets(Configuration $config, GeneratorType $type, string $name): void
     {
-        $path = $this->generateSourceFile($type, $name);
+        $path = $this->generateSourceFile($config, $type, $name);
 
         if ($type->supportsTestGenerator()) {
-            $this->generateTestFile($type, $name);
+            $this->generateTestFile($config, $type, $name);
         }
 
         if ($type->supportsReadmeGenerator()) {
-            $this->generateReadmeFile($type, $name);
+            $this->generateReadmeFile($config, $type, $name);
         }
 
         $this->success(sprintf(
@@ -123,34 +141,34 @@ class GenerateCommand extends Command
         ));
     }
 
-    protected function generateSourceFile(GeneratorType $type, string $name): string
+    protected function generateSourceFile(Configuration $config, GeneratorType $type, string $name): string
     {
         $generator = $this->generator($type);
 
-        return $this->runGenerator($generator, $type, 'source', $name);
+        return $this->runGenerator($config, $generator, $type, 'source', $name);
     }
 
-    protected function generateTestFile(GeneratorType $type, string $name): string
+    protected function generateTestFile(Configuration $config, GeneratorType $type, string $name): string
     {
         /** @var Generator<*>&SupportsTestGenerator<*> */
         $sourceGenerator = $this->generator($type);
 
         $testGenerator = $sourceGenerator->getTestGenerator();
 
-        return $this->runGenerator($testGenerator, $type, 'test', $name);
+        return $this->runGenerator($config, $testGenerator, $type, 'test', $name);
     }
 
-    protected function generateReadmeFile(GeneratorType $type, string $name): string
+    protected function generateReadmeFile(Configuration $config, GeneratorType $type, string $name): string
     {
         /** @var Generator<*>&SupportsReadmeGenerator<*> */
         $sourceGenerator = $this->generator($type);
 
         $readmeGenerator = $sourceGenerator->getReadmeGenerator();
 
-        return $this->runGenerator($readmeGenerator, $type, 'readme', $name);
+        return $this->runGenerator($config, $readmeGenerator, $type, 'readme', $name);
     }
 
-    protected function generateType(GeneratorType $type): void
+    protected function generateType(Configuration $config, GeneratorType $type): void
     {
         $generator = $this->generator($type);
 
@@ -163,7 +181,7 @@ class GenerateCommand extends Command
                 continue;
             }
 
-            $this->generateAssets($type, $name);
+            $this->generateAssets($config, $type, $name);
 
             $generated[$name] = true;
             unset($missing[$name]);
@@ -182,16 +200,16 @@ class GenerateCommand extends Command
         $generator->afterAll();
     }
 
-    protected function generateAll(): void
+    protected function generateAll(Configuration $config): void
     {
         foreach (GeneratorType::cases() as $type) {
-            $this->generateType($type);
+            $this->generateType($config, $type);
         }
 
-        $this->generateRepositoryReadmeFile();
+        $this->generateRepositoryReadmeFile($config);
     }
 
-    protected function generateRepositoryReadmeFile(): void
+    protected function generateRepositoryReadmeFile(Configuration $config): void
     {
         (new RepositoryReadmeGenerator())->generate();
 
@@ -199,8 +217,21 @@ class GenerateCommand extends Command
     }
 
     /** @param AbstractSchemaGenerator<*> $generator */
-    protected function runGenerator(AbstractSchemaGenerator $generator, GeneratorType $type, string $asset, string $name): string
-    {
+    protected function runGenerator(
+        Configuration $config,
+        AbstractSchemaGenerator $generator,
+        GeneratorType $type,
+        string $asset,
+        string $name
+    ): string {
+        if (method_exists($generator, 'setConfiguration')) {
+            $generator->setConfiguration($config);
+        }
+
+        if (method_exists($generator, 'setBasePath')) {
+            $generator->setBasePath($this->basePath);
+        }
+
         try {
             return $generator->generate($name, force: true);
         } catch (ClassGenerationException $e) {
@@ -232,6 +263,10 @@ class GenerateCommand extends Command
     /** @return Generator<*> */
     protected function generator(GeneratorType $type): Generator
     {
+        if (isset($this->generators[$type->value])) {
+            return $this->generators[$type->value];
+        }
+
         return $this->generators[$type->value] ??= new ($type->generator());
     }
 

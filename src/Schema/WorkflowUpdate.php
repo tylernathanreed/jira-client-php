@@ -37,6 +37,8 @@ final readonly class WorkflowUpdate extends Dto
         /** The new description for this workflow. */
         public ?string $description = null,
 
+        public ?WorkflowLayout $loopedTransitionContainerLayout = null,
+
         public ?WorkflowLayout $startPointLayout = null,
 
         /**

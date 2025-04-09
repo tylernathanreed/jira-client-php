@@ -7,7 +7,7 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 
 $autoloader = require __DIR__ . '/../vendor/autoload.php';
 
-$kernel = new Kernel(__DIR__ . '/../');
+$kernel = new Kernel(realpath(__DIR__ . '/../../../'));
 
 $status = $kernel->handle($input = new ArgvInput, new ConsoleOutput);
 

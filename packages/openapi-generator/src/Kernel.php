@@ -43,7 +43,7 @@ class Kernel
 
     protected function getApplication(): Application
     {
-        $app = new Application('Jira Client', $this->version());
+        $app = new Application('OpenApi Client', $this->version());
 
         foreach ($app->all() as $command) {
             if ($command instanceof ListCommand) {
@@ -57,6 +57,8 @@ class Kernel
 
         foreach ($commands as $command) {
             $instance = new $command();
+
+            $instance->setBasePath($this->basePath);
 
             $app->add($instance);
         }

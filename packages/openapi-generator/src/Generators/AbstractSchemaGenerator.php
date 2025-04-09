@@ -2,6 +2,7 @@
 
 namespace Reedware\OpenApi\Generators;
 
+use Reedware\OpenApi\Configuration;
 use Reedware\OpenApi\Exceptions\ClassAlreadyExistsException;
 use Reedware\OpenApi\Exceptions\ReservedWordException;
 use Reedware\OpenApi\Replacers\Replacer;
@@ -104,6 +105,9 @@ abstract class AbstractSchemaGenerator
         '__TRAIT__',
     ];
 
+    protected Configuration $config;
+    protected string $basePath;
+
     public function generate(string $name, bool $force = false): string
     {
         if ($this->isReservedName($name)) {
@@ -127,6 +131,16 @@ abstract class AbstractSchemaGenerator
     public function afterAll(): void
     {
         //
+    }
+
+    public function setConfiguration(Configuration $config): void
+    {
+        $this->config = $config;
+    }
+
+    public function setBasePath(string $basePath): void
+    {
+        $this->basePath = $basePath;
     }
 
     /** @return TSchema */
@@ -153,7 +167,7 @@ abstract class AbstractSchemaGenerator
         $replacers[] = SortImportsReplacer::class;
 
         foreach ($replacers as $replacer) {
-            $stub = (new $replacer())->replace($schema, $stub);
+            $stub = (new $replacer($this->config))->replace($schema, $stub);
         }
 
         return $stub;

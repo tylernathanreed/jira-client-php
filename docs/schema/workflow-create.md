@@ -10,6 +10,7 @@ Source: [`Jira\Client\Schema\WorkflowCreate`](/src/Schema/WorkflowCreate.php)
 | `statuses` | [`list<StatusLayoutUpdate>`](/docs/schema/status-layout-update.md) | The statuses associated with this workflow. |
 | `transitions` | [`list<TransitionUpdateDTO>`](/docs/schema/transition-update-dto.md) | The transitions of this workflow. |
 | `description` | `string` | The description of the workflow to create. |
+| `loopedTransitionContainerLayout` | [`WorkflowLayout`](/docs/schema/workflow-layout.md) |  |
 | `startPointLayout` | [`WorkflowLayout`](/docs/schema/workflow-layout.md) |  |
 
 ## References

@@ -9,6 +9,7 @@ use Reedware\OpenApi\Replacers\DummyTraitReplacer;
 use Reedware\OpenApi\Schema\OperationGroup;
 use Reedware\OpenApi\Schema\Specification;
 use Override;
+use Reedware\OpenApi\Replacers\DummyNamespaceReplacer;
 
 /**
  * @extends Generator<OperationGroup>
@@ -19,6 +20,7 @@ class OperationsGenerator extends Generator implements SupportsTestGenerator, Su
 {
     /** {@inheritDoc} */
     protected $replacers = [
+        DummyNamespaceReplacer::class,
         DummyTraitReplacer::class,
         DummyMethodsReplacer::class,
     ];
@@ -51,7 +53,7 @@ class OperationsGenerator extends Generator implements SupportsTestGenerator, Su
 
     protected function updatePerformsOperationsTrait(): void
     {
-        $filepath = realpath(__DIR__ . '/../../../..') . '/src/PerformsOperations.php';
+        $filepath = $this->basePath . '/src/PerformsOperations.php';
 
         $stub = file_get_contents($filepath);
 
@@ -65,7 +67,7 @@ class OperationsGenerator extends Generator implements SupportsTestGenerator, Su
 
         $traits = array_map(
             fn ($filepath) => '    use Operations\\' . basename($filepath, '.php') . ';',
-            glob(realpath(__DIR__ . '/../../') . '/src/Operations/*.php') ?: []
+            glob($this->basePath . '/src/Operations/*.php') ?: []
         );
 
         $stub = str_replace(rtrim($match['imports']), implode("\n", $traits), $stub);

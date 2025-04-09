@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Operations;
 
-use Reedware\OpenApi\Client\Client;
-use Reedware\OpenApi\Client\Schema;
+use Jira\Client\Client;
+use Jira\Client\Schema;
 
 /** @phpstan-require-extends Client */
 trait IssueTypes
@@ -16,7 +16,9 @@ trait IssueTypes
      * **"Permissions" required:** Issue types are only returned as follows:
      * 
      *  - if the user has the *Administer Jira* "global permission", all issue types are returned
-     *  - if the user has the *Browse projects* "project permission" for one or more projects, the issue types associated with the projects the user has permission to browse are returned.
+     *  - if the user has the *Browse projects* "project permission" for one or more projects, the issue types associated with the projects the user has permission to browse are returned
+     *  - if the user is anonymous then they will be able to access projects with the *Browse projects* for anonymous users
+     *  - if the user authentication is incorrect they will fall back to anonymous
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      * @link https://confluence.atlassian.com/x/yodKLg

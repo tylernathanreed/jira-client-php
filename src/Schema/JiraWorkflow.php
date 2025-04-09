@@ -20,6 +20,8 @@ final readonly class JiraWorkflow extends Dto
         /** Indicates if the workflow can be edited. */
         public ?bool $isEditable = null,
 
+        public ?WorkflowLayout $loopedTransitionContainerLayout = null,
+
         /** The name of the workflow. */
         public ?string $name = null,
 

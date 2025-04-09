@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Operations;
 
-use Reedware\OpenApi\Client\Client;
-use Reedware\OpenApi\Client\Schema;
+use Jira\Client\Client;
+use Jira\Client\Schema;
 
 /** @phpstan-require-extends Client */
 trait IssueBulkOperations
@@ -277,7 +277,6 @@ trait IssueBulkOperations
      * **"Permissions" required:**
      * 
      *  - Global bulk change "permission"
-     *  - Administer Jira "global permission", or be the creator of the task
      * 
      * If the task is running, this resource will return:
      * 
@@ -289,7 +288,6 @@ trait IssueBulkOperations
      * 
      * **Note:** You can view task progress for up to 14 days from creation.
      * 
-     * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/
      * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/
      * 
      * @param string $taskId The ID of the task.

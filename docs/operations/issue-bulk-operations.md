@@ -567,7 +567,6 @@ Use this to get the progress state for the specified bulk operation `taskId`
 **"Permissions" required:**
 
  - Global bulk change "permission"
- - Administer Jira "global permission", or be the creator of the task
 
 If the task is running, this resource will return:
 
@@ -578,7 +577,6 @@ If the task has completed, then this resource will return:
     {"processedAccessibleIssues":[10001,10002],"created":1709189449954,"progressPercent":100,"started":1709189450154,"status":"COMPLETE","submittedBy":{"accountId":"5b10a2844c20165700ede21g"},"invalidOrInaccessibleIssueCount":0,"taskId":"10000","totalIssueCount":2,"updated":1709189450354}
 
 **Note:** You can view task progress for up to 14 days from creation.
-See: https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/
 See: https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/
 
 ### Example

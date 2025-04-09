@@ -1,0 +1,15 @@
+<?php
+
+namespace Jira\Client\Schema;
+
+use Reedware\OpenApi\Client\Dto;
+
+final readonly class NonWorkingDay extends Dto
+{
+    public function __construct(
+        public ?int $id = null,
+
+        public ?string $iso8601Date = null,
+    ) {
+    }
+}

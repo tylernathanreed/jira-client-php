@@ -10,6 +10,7 @@ Source: [`Jira\Client\Schema\JiraWorkflow`](/src/Schema/JiraWorkflow.php)
 | `description` | `string` | The description of the workflow. |
 | `id` | `string` | The ID of the workflow. |
 | `isEditable` | `bool` | Indicates if the workflow can be edited. |
+| `loopedTransitionContainerLayout` | [`WorkflowLayout`](/docs/schema/workflow-layout.md) |  |
 | `name` | `string` | The name of the workflow. |
 | `scope` | [`WorkflowScope`](/docs/schema/workflow-scope.md) |  |
 | `startPointLayout` | [`WorkflowLayout`](/docs/schema/workflow-layout.md) |  |

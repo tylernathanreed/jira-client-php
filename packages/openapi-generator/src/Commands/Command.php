@@ -14,6 +14,8 @@ class Command extends SymfonyCommand
     protected InputInterface $input;
     protected OutputInterface $output;
 
+    protected string $basePath;
+
     #[Override]
     public function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -76,6 +78,10 @@ class Command extends SymfonyCommand
         }
     }
 
+    public function setBasePath(string $basePath): void
+    {
+        $this->basePath = $basePath;
+    }
 
     /** @return list<array{0:string,1:int,2:string}> */
     protected function getArguments(): array
