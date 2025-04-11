@@ -1,11 +1,11 @@
 <?php
 
-namespace Reedware\OpenApi\Client;
+namespace Reedware\OpenApi\Client\Http;
 
-use Reedware\OpenApi\Client\Exceptions\InvalidBodyHttpException;
-use Reedware\OpenApi\Client\Exceptions\MethodNotAllowedHttpException;
-use Reedware\OpenApi\Client\Exceptions\NotFoundHttpException;
-use Reedware\OpenApi\Client\Exceptions\UnsupportedStatusCodeHttpException;
+use Reedware\OpenApi\Client\Http\Exceptions\InvalidBodyHttpException;
+use Reedware\OpenApi\Client\Http\Exceptions\MethodNotAllowedHttpException;
+use Reedware\OpenApi\Client\Http\Exceptions\NotFoundHttpException;
+use Reedware\OpenApi\Client\Http\Exceptions\UnsupportedStatusCodeHttpException;
 use Psr\Http\Message\ResponseInterface;
 
 class Processor

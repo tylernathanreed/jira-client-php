@@ -1,8 +1,8 @@
 <?php
 
-namespace Reedware\OpenApi\Client;
+namespace Reedware\OpenApi\Client\Http;
 
-use Reedware\OpenApi\Client\Exceptions\InvalidDiscriminatorException;
+use Reedware\OpenApi\Client\Http\Exceptions\InvalidDiscriminatorException;
 
 abstract readonly class PolymorphicDto extends Dto
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Reedware\OpenApi\Client\Exceptions;
+namespace Reedware\OpenApi\Client\Http\Exceptions;
 
 use InvalidArgumentException;
 

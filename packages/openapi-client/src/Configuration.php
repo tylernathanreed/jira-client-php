@@ -2,7 +2,7 @@
 
 namespace Reedware\OpenApi\Client;
 
-use Reedware\OpenApi\Client\Exceptions\InvalidConfigurationException;
+use Reedware\OpenApi\Client\Http\Exceptions\InvalidConfigurationException;
 
 class Configuration
 {

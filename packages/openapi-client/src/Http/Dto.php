@@ -1,6 +1,6 @@
 <?php
 
-namespace Reedware\OpenApi\Client;
+namespace Reedware\OpenApi\Client\Http;
 
 use DateTimeImmutable;
 use DateTimeInterface;

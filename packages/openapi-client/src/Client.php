@@ -2,10 +2,18 @@
 
 namespace Reedware\OpenApi\Client;
 
-use Reedware\OpenApi\Client\Contracts\Factory as FactoryContract;
+use Reedware\OpenApi\Client\Http\Contracts\Factory as FactoryContract;
+use Reedware\OpenApi\Client\Http\Deserializer;
+use Reedware\OpenApi\Client\Http\Dto;
+use Reedware\OpenApi\Client\Http\Factory;
+use Reedware\OpenApi\Client\Http\PendingOperation;
+use Reedware\OpenApi\Client\Http\PolymorphicDto;
+use Reedware\OpenApi\Client\Http\Processor;
 
 class Client
 {
+    use PerformsOperations;
+
     public readonly Configuration $configuration;
     public readonly FactoryContract $factory;
     public readonly Processor $processor;

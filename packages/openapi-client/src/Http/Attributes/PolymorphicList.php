@@ -1,9 +1,9 @@
 <?php
 
-namespace Reedware\OpenApi\Client\Attributes;
+namespace Reedware\OpenApi\Client\Http\Attributes;
 
 use Attribute;
-use Reedware\OpenApi\Client\PolymorphicDto;
+use Reedware\OpenApi\Client\Http\PolymorphicDto;
 
 #[Attribute(Attribute::TARGET_PROPERTY)]
 final readonly class PolymorphicList

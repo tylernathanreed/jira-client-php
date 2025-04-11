@@ -1,11 +1,11 @@
 <?php
 
-namespace Reedware\OpenApi\Client;
+namespace Reedware\OpenApi\Client\Http;
 
 use DateTimeImmutable;
-use Reedware\OpenApi\Client\Attributes\PolymorphicList;
-use Reedware\OpenApi\Client\Exceptions\DeserializationException;
-use Reedware\OpenApi\Client\PolymorphicDto;
+use Reedware\OpenApi\Client\Http\Attributes\PolymorphicList;
+use Reedware\OpenApi\Client\Http\Exceptions\DeserializationException;
+use Reedware\OpenApi\Client\Http\PolymorphicDto;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;

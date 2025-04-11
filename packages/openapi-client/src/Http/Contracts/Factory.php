@@ -1,11 +1,11 @@
 <?php
 
-namespace Reedware\OpenApi\Client\Contracts;
+namespace Reedware\OpenApi\Client\Http\Contracts;
 
 use Closure;
 use GuzzleHttp\Promise\PromiseInterface;
 use Reedware\OpenApi\Client\Configuration;
-use Reedware\OpenApi\Client\PendingOperation;
+use Reedware\OpenApi\Client\Http\PendingOperation;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

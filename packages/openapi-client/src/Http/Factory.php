@@ -1,17 +1,17 @@
 <?php
 
-namespace Reedware\OpenApi\Client;
+namespace Reedware\OpenApi\Client\Http;
 
 use Closure;
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\RequestOptions;
-use GuzzleHttp\UriTemplate\UriTemplate;
-use Reedware\OpenApi\Client\Contracts\Factory as FactoryContract;
-use Reedware\OpenApi\Client\Exceptions\StrayRequestException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use Reedware\OpenApi\Client\Configuration;
+use Reedware\OpenApi\Client\Http\Contracts\Factory as FactoryContract;
+use Reedware\OpenApi\Client\Http\Exceptions\StrayRequestException;
 
 /**
  * @phpstan-type TOptions array{

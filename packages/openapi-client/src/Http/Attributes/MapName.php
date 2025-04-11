@@ -1,6 +1,6 @@
 <?php
 
-namespace Reedware\OpenApi\Client\Attributes;
+namespace Reedware\OpenApi\Client\Http\Attributes;
 
 use Attribute;
 
