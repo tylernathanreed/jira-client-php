@@ -6,6 +6,7 @@ use Reedware\OpenApi\Enums\GeneratorType;
 use Reedware\OpenApi\Exceptions\ClassGenerationException;
 use Reedware\OpenApi\Exceptions\CommandFailedException;
 use Override;
+use Reedware\OpenApi\ClassMap;
 use Reedware\OpenApi\Configuration;
 use Reedware\OpenApi\Filesystem;
 use Reedware\OpenApi\Generators\OpenApiGenerator;
@@ -21,6 +22,8 @@ class GenerateCommand extends Command
     public function handle(): int
     {
         $config = $this->readConfig();
+
+        ClassMap::boot($config);
 
         $generator = new OpenApiGenerator(
             basePath: $this->basePath,

@@ -27,13 +27,13 @@ class OperationsSourceGenerator extends AbstractSourceGenerator
     {
         $filepath = $this->basePath . '/src/PerformsOperations.php';
 
-        $stub = file_get_contents($filepath);
+        $stub = $this->filesystem->get($filepath);
 
         if (! $stub) {
             return;
         }
 
-        if (! preg_match('/(?P<imports>(?:^ +use [^;{]+;$\n?)+)/m', $stub, $match)) {
+        if (! preg_match('/(?P<imports>(?:^[ \/]+use [^;{]+;$\n?)+)/m', $stub, $match)) {
             return;
         }
 

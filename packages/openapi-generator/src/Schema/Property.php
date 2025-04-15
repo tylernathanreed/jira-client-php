@@ -4,9 +4,10 @@ namespace Reedware\OpenApi\Schema;
 
 use Attribute;
 use Closure;
-use Reedware\OpenApi\Client\Attributes\MapName;
-use Reedware\OpenApi\Client\Attributes\PolymorphicList;
-use Reedware\OpenApi\Client\PolymorphicDto;
+use Reedware\OpenApi\ClassMap;
+use Reedware\OpenApi\Client\Http\Attributes\MapName;
+use Reedware\OpenApi\Client\Http\Attributes\PolymorphicList;
+use Reedware\OpenApi\Client\Http\PolymorphicDto;
 use RuntimeException;
 use Stringable;
 
@@ -207,12 +208,15 @@ final class Property extends AbstractSchema implements Stringable
 
         if ($this->isArray()) {
             $type = $this->listableType;
-            $class = 'Jira\Client\Schema\\' . $type;
 
-            if (class_exists($class) && is_subclass_of($class, PolymorphicDto::class)) {
-                $qualifiedMorphTypes = array_values($class::discriminatorMap());
-                $baseMorphTypes = array_map(fn ($c) => class_basename($c), $qualifiedMorphTypes);
-                $type = implode('|', $baseMorphTypes);
+            if ($this->listableTypeIsRef) {
+                $schema = Specification::getComponentSchema($this->listableType);
+                
+                if ($schema->isPolymorphic()) {
+                    $qualifiedMorphTypes = array_values($schema->discriminatorMap);
+                    $baseMorphTypes = array_map(fn ($c) => class_basename($c), $qualifiedMorphTypes);
+                    $type = implode('|', $baseMorphTypes);
+                }
             }
 
             return ($this->required ? '' : '?') . "list<{$type}>";
@@ -299,14 +303,14 @@ final class Property extends AbstractSchema implements Stringable
         $attributes = [];
 
         if ($this->requiresNameMapping()) {
-            $attributes[MapName::class] = [$this->getOriginalName()];
+            $attributes[ClassMap::resolve(MapName::class)] = [$this->getOriginalName()];
         }
 
-        if ($this->listableType) {
-            $class = 'Jira\Client\Schema\\' . $this->listableType;
+        if ($this->listableType && $this->listableTypeIsRef) {
+            $schema = Specification::getComponentSchema($this->listableType);
 
-            if (class_exists($class) && is_subclass_of($class, PolymorphicDto::class)) {
-                $attributes[PolymorphicList::class] = [$this->listableType . '::class'];
+            if ($schema->isPolymorphic()) {
+                $attributes[ClassMap::resolve(PolymorphicList::class)] = [$this->listableType . '::class'];
             }
         }
 

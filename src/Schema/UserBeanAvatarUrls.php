@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Schema;
 
+use Jira\Client\Http\Attributes\MapName;
 use Jira\Client\Http\Dto;
-use Reedware\OpenApi\Client\Attributes\MapName;
 
 final readonly class UserBeanAvatarUrls extends Dto
 {

@@ -6,7 +6,7 @@ Source: [`Jira\Client\Schema\CustomFieldContextDefaultValueUpdate`](/src/Schema/
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultValues` | [`?list<CustomFieldContextDefaultValue>`](/docs/schema/custom-field-context-default-value.md) |  |
+| `defaultValues` | [`?list<CustomFieldContextDefaultValueDate\|CustomFieldContextDefaultValueDateTime\|CustomFieldContextDefaultValueFloat\|CustomFieldContextDefaultValueForgeDateTimeField\|CustomFieldContextDefaultValueForgeGroupField\|CustomFieldContextDefaultValueForgeMultiGroupField\|CustomFieldContextDefaultValueForgeNumberField\|CustomFieldContextDefaultValueForgeObjectField\|CustomFieldContextDefaultValueForgeStringField\|CustomFieldContextDefaultValueForgeMultiStringField\|CustomFieldContextDefaultValueForgeUserField\|CustomFieldContextDefaultValueForgeMultiUserField\|CustomFieldContextDefaultValueMultipleGroupPicker\|CustomFieldContextDefaultValueSingleGroupPicker\|CustomFieldContextDefaultValueLabels\|CustomFieldContextDefaultValueMultiUserPicker\|CustomFieldContextDefaultValueCascadingOption\|CustomFieldContextDefaultValueMultipleOption\|CustomFieldContextDefaultValueSingleOption\|CustomFieldContextDefaultValueProject\|CustomFieldContextDefaultValueReadOnly\|CustomFieldContextSingleUserPickerDefaults\|CustomFieldContextDefaultValueTextArea\|CustomFieldContextDefaultValueTextField\|CustomFieldContextDefaultValueURL\|CustomFieldContextDefaultValueMultipleVersionPicker\|CustomFieldContextDefaultValueSingleVersionPicker>`](/docs/schema/custom-field-context-default-value.md) |  |
 
 ## References
 

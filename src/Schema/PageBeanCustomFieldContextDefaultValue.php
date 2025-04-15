@@ -2,6 +2,7 @@
 
 namespace Jira\Client\Schema;
 
+use Jira\Client\Http\Attributes\PolymorphicList;
 use Jira\Client\Http\Dto;
 
 /** A page of items. */
@@ -29,8 +30,9 @@ final readonly class PageBeanCustomFieldContextDefaultValue extends Dto
         /**
          * The list of items.
          * 
-         * @var ?list<CustomFieldContextDefaultValue>
+         * @var ?list<CustomFieldContextDefaultValueDate|CustomFieldContextDefaultValueDateTime|CustomFieldContextDefaultValueFloat|CustomFieldContextDefaultValueForgeDateTimeField|CustomFieldContextDefaultValueForgeGroupField|CustomFieldContextDefaultValueForgeMultiGroupField|CustomFieldContextDefaultValueForgeNumberField|CustomFieldContextDefaultValueForgeObjectField|CustomFieldContextDefaultValueForgeStringField|CustomFieldContextDefaultValueForgeMultiStringField|CustomFieldContextDefaultValueForgeUserField|CustomFieldContextDefaultValueForgeMultiUserField|CustomFieldContextDefaultValueMultipleGroupPicker|CustomFieldContextDefaultValueSingleGroupPicker|CustomFieldContextDefaultValueLabels|CustomFieldContextDefaultValueMultiUserPicker|CustomFieldContextDefaultValueCascadingOption|CustomFieldContextDefaultValueMultipleOption|CustomFieldContextDefaultValueSingleOption|CustomFieldContextDefaultValueProject|CustomFieldContextDefaultValueReadOnly|CustomFieldContextSingleUserPickerDefaults|CustomFieldContextDefaultValueTextArea|CustomFieldContextDefaultValueTextField|CustomFieldContextDefaultValueURL|CustomFieldContextDefaultValueMultipleVersionPicker|CustomFieldContextDefaultValueSingleVersionPicker>
          */
+        #[PolymorphicList(CustomFieldContextDefaultValue::class)]
         public ?array $values = null,
     ) {
     }
