@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The payload for creating a project */
 final readonly class ProjectPayload extends Dto

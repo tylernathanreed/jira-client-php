@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The conditions group associated with the transition. */
 final readonly class ConditionGroupUpdate extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details about the time tracking provider. */
 final readonly class TimeTrackingProvider extends Dto

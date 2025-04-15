@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details of a parsed JQL query. */
 final readonly class ParsedJqlQuery extends Dto
@@ -23,6 +23,13 @@ final readonly class ParsedJqlQuery extends Dto
          * Empty if the query was invalid.
          */
         public ?JqlQuery $structure = null,
+
+        /**
+         * The list of warning messages
+         * 
+         * @var ?list<string>
+         */
+        public ?array $warnings = null,
     ) {
     }
 }

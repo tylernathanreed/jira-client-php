@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** A list of JQL queries to parse. */
 final readonly class JqlQueriesToParse extends Dto

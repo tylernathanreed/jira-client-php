@@ -2,28 +2,17 @@
 
 namespace Reedware\OpenApi\Generators;
 
-use Reedware\OpenApi\Replacers\DummyOperationsListReplacer;
-use Reedware\OpenApi\Replacers\DummyOperationsReplacer;
-use Reedware\OpenApi\Replacers\DummySourceReplacer;
-use Reedware\OpenApi\Replacers\DummyTitleReplacer;
+use Reedware\OpenApi\Replacers;
 use Reedware\OpenApi\Schema\OperationGroup;
-use Reedware\OpenApi\Schema\Specification;
-use Override;
 
-/** @extends ReadmeGenerator<OperationGroup> */
-class OperationsReadmeGenerator extends ReadmeGenerator
+/** @extends AbstractReadmeGenerator<OperationGroup> */
+class OperationsReadmeGenerator extends AbstractReadmeGenerator
 {
     /** {@inheritDoc} */
     protected $replacers = [
-        DummyTitleReplacer::class,
-        DummySourceReplacer::class,
-        DummyOperationsListReplacer::class,
-        DummyOperationsReplacer::class,
+        Replacers\DummyTitleReplacer::class,
+        Replacers\Operations\Readme\DummyOperationsListReplacer::class,
+        Replacers\Operations\Readme\DummyOperationsReplacer::class,
+        Replacers\Readme\DummySourceReplacer::class,
     ];
-
-    #[Override]
-    public function schema(string $name): OperationGroup
-    {
-        return Specification::getOperationGroup($name);
-    }
 }

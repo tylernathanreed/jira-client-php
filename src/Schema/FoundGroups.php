@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The list of groups found in a search, including header text (Showing X of Y matching groups) and total of matched groups. */
 final readonly class FoundGroups extends Dto

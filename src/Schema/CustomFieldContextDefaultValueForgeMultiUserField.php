@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Defaults for a Forge collection of users custom field. */
 final readonly class CustomFieldContextDefaultValueForgeMultiUserField extends Dto

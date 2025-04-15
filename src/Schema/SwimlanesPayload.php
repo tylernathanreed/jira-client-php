@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The payload for customising a swimlanes on a board */
 final readonly class SwimlanesPayload extends Dto

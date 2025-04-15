@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** A field auto-complete suggestion. */
 final readonly class AutoCompleteSuggestion extends Dto

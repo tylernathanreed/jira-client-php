@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Defaults for a User Picker (single) custom field. */
 final readonly class CustomFieldContextSingleUserPickerDefaults extends Dto

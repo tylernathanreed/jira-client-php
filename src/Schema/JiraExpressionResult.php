@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The result of evaluating a Jira expression. */
 final readonly class JiraExpressionResult extends Dto

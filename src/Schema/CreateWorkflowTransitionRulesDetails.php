@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The details of a workflow transition rules. */
 final readonly class CreateWorkflowTransitionRulesDetails extends Dto

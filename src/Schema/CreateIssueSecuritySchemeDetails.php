@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Issue security scheme and it's details */
 final readonly class CreateIssueSecuritySchemeDetails extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** List of Issue Ids Or Keys that are to be archived or unarchived */
 final readonly class IssueArchivalSyncRequest extends Dto

@@ -3,7 +3,7 @@
 namespace Jira\Client\Schema;
 
 use DateTimeImmutable;
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** An audit record. */
 final readonly class AuditRecordBean extends Dto

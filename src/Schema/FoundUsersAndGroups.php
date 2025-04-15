@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** List of users and groups found in a search. */
 final readonly class FoundUsersAndGroups extends Dto

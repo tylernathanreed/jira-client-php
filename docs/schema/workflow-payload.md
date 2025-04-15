@@ -7,6 +7,7 @@ Source: [`Jira\Client\Schema\WorkflowPayload`](/src/Schema/WorkflowPayload.php)
 | Property | Type | Description |
 | --- | --- | --- |
 | `description` | `string` | The description of the workflow |
+| `loopedTransitionContainerLayout` | [`WorkflowStatusLayoutPayload`](/docs/schema/workflow-status-layout-payload.md) |  |
 | `name` | `string` | The name of the workflow |
 | `pcri` | [`ProjectCreateResourceIdentifier`](/docs/schema/project-create-resource-identifier.md) |  |
 | `startPointLayout` | [`WorkflowStatusLayoutPayload`](/docs/schema/workflow-status-layout-payload.md) |  |

@@ -477,7 +477,6 @@ $response = $client->submitBulkUnwatch(new Schema\IssueBulkWatchOrUnwatchPayload
                 '10001',
                 '10002',
             ],
-    sendBulkNotification: false,
 ));
 ```
 
@@ -492,7 +491,6 @@ Issue Bulk Watch Or Unwatch Payload
 | Property | Type | Description |
 | --- | --- | --- |
 | `selectedIssueIdsOrKeys` | `list<string>` | List of issue IDs or keys which are to be bulk watched or unwatched. These IDs or keys can be from different projects and issue types. |
-| `sendBulkNotification` | `bool` | A boolean value that indicates whether to send a bulk change notification when the issues are being watched or unwatched.<br/><br/>If `true`, dispatches a bulk notification email to users about the updates. |
 
 #### Response
 
@@ -531,7 +529,6 @@ $response = $client->submitBulkWatch(new Schema\IssueBulkWatchOrUnwatchPayload(
                 '10001',
                 '10002',
             ],
-    sendBulkNotification: false,
 ));
 ```
 
@@ -546,7 +543,6 @@ Issue Bulk Watch Or Unwatch Payload
 | Property | Type | Description |
 | --- | --- | --- |
 | `selectedIssueIdsOrKeys` | `list<string>` | List of issue IDs or keys which are to be bulk watched or unwatched. These IDs or keys can be from different projects and issue types. |
-| `sendBulkNotification` | `bool` | A boolean value that indicates whether to send a bulk change notification when the issues are being watched or unwatched.<br/><br/>If `true`, dispatches a bulk notification email to users about the updates. |
 
 #### Response
 

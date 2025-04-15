@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The field configuration for an issue type. */
 final readonly class FieldConfigurationIssueTypeItem extends Dto

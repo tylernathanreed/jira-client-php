@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** JQL queries that contained users that could not be found */
 final readonly class JQLQueryWithUnknownUsers extends Dto

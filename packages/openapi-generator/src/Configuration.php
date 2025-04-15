@@ -6,6 +6,7 @@ readonly class Configuration
 {
     public function __construct(
         public string $namespace,
+        public string $src,
     ) {
     }
 }

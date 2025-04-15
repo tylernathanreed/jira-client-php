@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details of the scope of the default sharing for new filters and dashboards. */
 final readonly class DefaultShareScope extends Dto

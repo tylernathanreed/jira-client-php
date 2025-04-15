@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The default value for a single select custom field. */
 final readonly class CustomFieldContextDefaultValueSingleOption extends Dto

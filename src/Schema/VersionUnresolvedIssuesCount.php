@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Count of a version's unresolved issues. */
 final readonly class VersionUnresolvedIssuesCount extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details about the complexity of the analysed Jira expression. */
 final readonly class JiraExpressionComplexity extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** A page of changelogs which is designed to handle multiple issues */
 final readonly class BulkChangelogResponseBean extends Dto

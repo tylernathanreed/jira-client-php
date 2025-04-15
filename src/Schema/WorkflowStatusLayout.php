@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The x and y location of the status in the workflow. */
 final readonly class WorkflowStatusLayout extends Dto

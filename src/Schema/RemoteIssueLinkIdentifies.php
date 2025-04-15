@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details of the identifiers for a created or updated remote issue link. */
 final readonly class RemoteIssueLinkIdentifies extends Dto

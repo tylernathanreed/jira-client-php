@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The Connect provided ecosystem rules available. */
 final readonly class AvailableWorkflowConnectRule extends Dto

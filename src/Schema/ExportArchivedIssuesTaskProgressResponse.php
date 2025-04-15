@@ -3,7 +3,7 @@
 namespace Jira\Client\Schema;
 
 use DateTimeImmutable;
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The response for status request for a running/completed export task. */
 final readonly class ExportArchivedIssuesTaskProgressResponse extends Dto

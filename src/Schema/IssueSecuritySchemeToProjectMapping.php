@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details about an project using security scheme mapping. */
 final readonly class IssueSecuritySchemeToProjectMapping extends Dto

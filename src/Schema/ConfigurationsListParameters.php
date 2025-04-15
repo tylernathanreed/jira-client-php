@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** List of custom fields identifiers which will be used to filter configurations */
 final readonly class ConfigurationsListParameters extends Dto

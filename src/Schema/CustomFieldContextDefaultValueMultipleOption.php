@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The default value for a multi-select custom field. */
 final readonly class CustomFieldContextDefaultValueMultipleOption extends Dto

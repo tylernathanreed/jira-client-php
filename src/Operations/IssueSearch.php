@@ -97,7 +97,7 @@ trait IssueSearch
      *                     @link https://confluence.atlassian.com/x/egORLQ
      * @param ?int $startAt The index of the first item to return in a page of results (page offset).
      * @param ?int $maxResults The maximum number of items to return per page.
-     *                         To manage page size, Jira may return fewer items per page where a large number of fields are requested.
+     *                         To manage page size, Jira may return fewer items per page where a large number of fields or properties are requested.
      *                         The greatest number of items returned per page is achieved when requesting `id` or `key` only.
      * @param 'strict'|'warn'|'none'|'true'|'false'|null $validateQuery
      *        Determines how to validate the JQL query and treat the validation results.
@@ -280,7 +280,7 @@ trait IssueSearch
      *                               Use the `nextPageToken` to fetch the next page of issues
      *                               Note: The `nextPageToken` field is **not included** in the response for the last page, indicating there is no next page.
      * @param ?int $maxResults The maximum number of items to return per page.
-     *                         To manage page size, API may return fewer items per page where a large number of fields are requested.
+     *                         To manage page size, API may return fewer items per page where a large number of fields or properties are requested.
      *                         The greatest number of items returned per page is achieved when requesting `id` or `key` only.
      *                         It returns max 5000 issues.
      * @param ?list<string> $fields A list of fields to return for each issue, use it to retrieve a subset of fields.

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Number of archived/unarchived issues and list of errors that occurred during the action, if any. */
 final readonly class IssueArchivalSyncResponse extends Dto

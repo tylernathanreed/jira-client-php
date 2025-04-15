@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The screen scheme for an issue type. */
 final readonly class IssueTypeScreenSchemeItem extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** An object representing the mapping of issues and data related to destination entities, like fields and statuses, that are required during a bulk move. */
 final readonly class TargetToSourcesMapping extends Dto

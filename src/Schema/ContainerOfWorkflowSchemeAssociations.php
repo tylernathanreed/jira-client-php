@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** A container for a list of workflow schemes together with the projects they are associated with. */
 final readonly class ContainerOfWorkflowSchemeAssociations extends Dto

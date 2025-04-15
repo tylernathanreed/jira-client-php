@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** A priority scheme with paginated priorities and projects. */
 final readonly class PrioritySchemeWithPaginatedPrioritiesAndProjects extends Dto

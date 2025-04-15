@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Field association for example PROJECT\_ID. */
 final readonly class AssociationContextObject extends Dto

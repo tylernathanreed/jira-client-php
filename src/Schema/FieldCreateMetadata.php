@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The metadata describing an issue field for createmeta. */
 final readonly class FieldCreateMetadata extends Dto

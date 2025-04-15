@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** A list of issues suggested for use in auto-completion. */
 final readonly class IssuePickerSuggestions extends Dto

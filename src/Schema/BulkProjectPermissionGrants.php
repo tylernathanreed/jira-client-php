@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** List of project permissions and the projects and issues those permissions grant access to. */
 final readonly class BulkProjectPermissionGrants extends Dto

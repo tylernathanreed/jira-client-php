@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details of how to filter and list search auto complete information. */
 final readonly class SearchAutoCompleteFilter extends Dto

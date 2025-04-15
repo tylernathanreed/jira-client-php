@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Meta data describing the `issues` context variable. */
 final readonly class IssuesMetaBean extends Dto

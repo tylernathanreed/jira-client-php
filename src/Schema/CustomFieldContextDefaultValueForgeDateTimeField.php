@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The default value for a Forge date time custom field. */
 final readonly class CustomFieldContextDefaultValueForgeDateTimeField extends Dto

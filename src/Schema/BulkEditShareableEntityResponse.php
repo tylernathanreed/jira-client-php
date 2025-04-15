@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details of a request to bulk edit shareable entity. */
 final readonly class BulkEditShareableEntityResponse extends Dto

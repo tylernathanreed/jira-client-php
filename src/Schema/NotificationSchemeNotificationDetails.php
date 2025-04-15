@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details of a notification within a notification scheme. */
 final readonly class NotificationSchemeNotificationDetails extends Dto

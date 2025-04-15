@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The payload for creating workflow, see https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/\#api-rest-api-3-workflows-create-post */
 final readonly class WorkflowPayload extends Dto
@@ -14,6 +14,8 @@ final readonly class WorkflowPayload extends Dto
          * @example 'a software workflow'
          */
         public ?string $description = null,
+
+        public ?WorkflowStatusLayoutPayload $loopedTransitionContainerLayout = null,
 
         /**
          * The name of the workflow

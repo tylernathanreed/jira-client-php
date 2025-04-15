@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Identifier for a field for example FIELD\_ID. */
 final readonly class FieldIdentifierObject extends Dto

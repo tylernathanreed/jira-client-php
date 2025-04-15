@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /**
  * Overrides, for the selected issue types, any status mappings provided in `statusMappingsByWorkflows`.

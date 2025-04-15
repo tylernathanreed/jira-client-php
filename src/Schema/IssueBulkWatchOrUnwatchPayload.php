@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Issue Bulk Watch Or Unwatch Payload */
 final readonly class IssueBulkWatchOrUnwatchPayload extends Dto
@@ -15,13 +15,6 @@ final readonly class IssueBulkWatchOrUnwatchPayload extends Dto
          * @var list<string>
          */
         public array $selectedIssueIdsOrKeys,
-
-        /**
-         * A boolean value that indicates whether to send a bulk change notification when the issues are being watched or unwatched
-         * 
-         * If `true`, dispatches a bulk notification email to users about the updates.
-         */
-        public ?bool $sendBulkNotification = true,
     ) {
     }
 }

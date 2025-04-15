@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The workflow metadata and issue type IDs which use this workflow. */
 final readonly class WorkflowMetadataAndIssueTypeRestModel extends Dto

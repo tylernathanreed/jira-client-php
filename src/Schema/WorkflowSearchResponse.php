@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Page of items, including workflows and related statuses. */
 final readonly class WorkflowSearchResponse extends Dto

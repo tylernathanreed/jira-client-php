@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Request to create a project using a custom template */
 final readonly class ProjectCustomTemplateCreateRequestDTO extends Dto

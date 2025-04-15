@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Get precomputations by ID response. */
 final readonly class JqlFunctionPrecomputationGetByIdResponse extends Dto

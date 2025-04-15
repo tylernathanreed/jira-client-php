@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Update priorities in a scheme */
 final readonly class UpdatePrioritiesInSchemeRequestBean extends Dto

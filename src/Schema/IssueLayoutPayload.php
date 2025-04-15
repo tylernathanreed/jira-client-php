@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Defines the payload to configure the issue layouts for a project. */
 final readonly class IssueLayoutPayload extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details for changing owners of shareable entities */
 final readonly class BulkChangeOwnerDetails extends Dto

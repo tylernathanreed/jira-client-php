@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Project list with assigned field configuration schema. */
 final readonly class FieldConfigurationSchemeProjects extends Dto

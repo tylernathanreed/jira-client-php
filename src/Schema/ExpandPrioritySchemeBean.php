@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** A priority scheme with less fields to be used in for an API expand response. */
 final readonly class ExpandPrioritySchemeBean extends Dto

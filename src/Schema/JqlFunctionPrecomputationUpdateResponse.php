@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Result of updating JQL Function precomputations. */
 final readonly class JqlFunctionPrecomputationUpdateResponse extends Dto

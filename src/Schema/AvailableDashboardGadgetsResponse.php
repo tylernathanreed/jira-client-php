@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The list of available gadgets. */
 final readonly class AvailableDashboardGadgetsResponse extends Dto

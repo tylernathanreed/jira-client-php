@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Bulk Transition Get Available Transitions Response. */
 final readonly class BulkTransitionGetAvailableTransitions extends Dto

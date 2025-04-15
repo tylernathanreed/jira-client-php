@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The ID and the name of the workflow scheme. */
 final readonly class WorkflowSchemeIdName extends Dto

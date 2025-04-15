@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The request payload to get the required mappings for updating a workflow scheme. */
 final readonly class WorkflowSchemeUpdateRequiredMappingsRequest extends Dto

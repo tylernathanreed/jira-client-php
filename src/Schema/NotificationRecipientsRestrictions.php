@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details of the group membership or permissions needed to receive the notification. */
 final readonly class NotificationRecipientsRestrictions extends Dto

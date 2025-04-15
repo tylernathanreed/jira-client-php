@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The project and issue type mappings. */
 final readonly class ProjectIssueTypeMappings extends Dto

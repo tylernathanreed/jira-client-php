@@ -2,8 +2,8 @@
 
 namespace Jira\Client\Schema;
 
+use Jira\Client\Http\Dto;
 use Reedware\OpenApi\Client\Attributes\MapName;
-use Reedware\OpenApi\Client\Dto;
 
 final readonly class SimpleListWrapperApplicationRole extends Dto
 {

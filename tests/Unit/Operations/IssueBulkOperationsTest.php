@@ -250,7 +250,6 @@ class IssueBulkOperationsTest extends OperationsTestCase
                 '10001',
                 '10002',
             ],
-            'sendBulkNotification' => false,
         ]);
 
         $this->assertCall(
@@ -276,7 +275,6 @@ class IssueBulkOperationsTest extends OperationsTestCase
                 '10001',
                 '10002',
             ],
-            'sendBulkNotification' => false,
         ]);
 
         $this->assertCall(

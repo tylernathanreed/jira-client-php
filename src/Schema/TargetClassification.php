@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Classification mapping for classifications in source issues to respective target classification. */
 final readonly class TargetClassification extends Dto

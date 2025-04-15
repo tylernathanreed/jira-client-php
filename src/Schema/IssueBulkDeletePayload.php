@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Issue Bulk Delete Payload */
 final readonly class IssueBulkDeletePayload extends Dto

@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Default values to update. */
 final readonly class CustomFieldContextDefaultValueUpdate extends Dto

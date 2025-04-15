@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** List issues archived within a specified date range. */
 final readonly class DateRangeFilterRequest extends Dto

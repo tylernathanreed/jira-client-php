@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Mapping of an issue type to a context. */
 final readonly class IssueTypeToContextMapping extends Dto

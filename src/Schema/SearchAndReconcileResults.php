@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The result of a JQL search with issues reconsilation. */
 final readonly class SearchAndReconcileResults extends Dto

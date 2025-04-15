@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Identifiers for a UI modification. */
 final readonly class UiModificationIdentifiers extends Dto

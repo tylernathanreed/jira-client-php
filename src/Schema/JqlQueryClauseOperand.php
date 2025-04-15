@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\UnionDto;
+use Jira\Client\Http\UnionDto;
 
 /** Details of an operand in a JQL clause. */
 final readonly class JqlQueryClauseOperand extends UnionDto

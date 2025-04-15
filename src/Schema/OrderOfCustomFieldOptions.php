@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** An ordered list of custom field option IDs and information on where to move them. */
 final readonly class OrderOfCustomFieldOptions extends Dto

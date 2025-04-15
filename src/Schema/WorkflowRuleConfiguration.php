@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** The configuration of the rule. */
 final readonly class WorkflowRuleConfiguration extends Dto

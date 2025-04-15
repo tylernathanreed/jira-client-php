@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Status mapping for statuses in source workflow to respective target status in target workflow. */
 final readonly class TargetStatus extends Dto

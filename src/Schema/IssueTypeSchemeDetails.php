@@ -2,7 +2,7 @@
 
 namespace Jira\Client\Schema;
 
-use Reedware\OpenApi\Client\Dto;
+use Jira\Client\Http\Dto;
 
 /** Details of an issue type scheme and its associated issue types. */
 final readonly class IssueTypeSchemeDetails extends Dto
