@@ -1,11 +1,11 @@
 <?php
 
-namespace Jira\Client\Schema;
+namespace DummyNamespace\Schema;
 
-use Reedware\OpenApi\Client\DummyParent;
+use DummyNamespace\Http\DummyParent;
 // DummyIncludes
 
-// DummyClassDoc
+// DummyDoc
 final readonly class DummyClass extends DummyParent
 {
     public function __construct(

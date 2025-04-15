@@ -5,26 +5,12 @@ namespace Reedware\OpenApi\Generators;
 use Reedware\OpenApi\Markdown\Link;
 use Reedware\OpenApi\Schema\Specification;
 use Reedware\OpenApi\Utils;
-use RuntimeException;
 
-class RepositoryReadmeGenerator
+class RepositoryReadmeGenerator extends AbstractStaticFileGenerator
 {
-    public function generate(): string
-    {
-        $path = $this->getPath();
-
-        $this->write($path, $this->build());
-
-        return $path;
-    }
-
     protected function build(): string
     {
         $stub = $this->stub();
-
-        if ($stub === false) {
-            throw new RuntimeException('Failed to open stub [' . $this->getStub() . '].');
-        }
 
         $stub = $this->replaceOperationsList($stub);
         $stub = $this->replaceSchemaList($stub);
@@ -92,15 +78,5 @@ class RepositoryReadmeGenerator
     protected function getStub(): string
     {
         return realpath(__DIR__ . '/../../') . '/stubs/README.stub.md';
-    }
-
-    protected function write(string $path, string $contents): int|false
-    {
-        return file_put_contents($path, $contents);
-    }
-
-    protected function stub(): string|false
-    {
-        return file_get_contents($this->getStub());
     }
 }
