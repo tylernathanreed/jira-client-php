@@ -233,7 +233,7 @@ A page of items.
 | `self` | `string` | The URL of the page. |
 | `startAt` | `int` | The index of the first item returned. |
 | `total` | `int` | The number of items returned. |
-| `values` | [`?list<CustomFieldContextDefaultValue>`](/docs/schema/custom-field-context-default-value.md) | The list of items. |
+| `values` | [`?list<CustomFieldContextDefaultValueDate\|CustomFieldContextDefaultValueDateTime\|CustomFieldContextDefaultValueFloat\|CustomFieldContextDefaultValueForgeDateTimeField\|CustomFieldContextDefaultValueForgeGroupField\|CustomFieldContextDefaultValueForgeMultiGroupField\|CustomFieldContextDefaultValueForgeNumberField\|CustomFieldContextDefaultValueForgeObjectField\|CustomFieldContextDefaultValueForgeStringField\|CustomFieldContextDefaultValueForgeMultiStringField\|CustomFieldContextDefaultValueForgeUserField\|CustomFieldContextDefaultValueForgeMultiUserField\|CustomFieldContextDefaultValueMultipleGroupPicker\|CustomFieldContextDefaultValueSingleGroupPicker\|CustomFieldContextDefaultValueLabels\|CustomFieldContextDefaultValueMultiUserPicker\|CustomFieldContextDefaultValueCascadingOption\|CustomFieldContextDefaultValueMultipleOption\|CustomFieldContextDefaultValueSingleOption\|CustomFieldContextDefaultValueProject\|CustomFieldContextDefaultValueReadOnly\|CustomFieldContextSingleUserPickerDefaults\|CustomFieldContextDefaultValueTextArea\|CustomFieldContextDefaultValueTextField\|CustomFieldContextDefaultValueURL\|CustomFieldContextDefaultValueMultipleVersionPicker\|CustomFieldContextDefaultValueSingleVersionPicker>`](/docs/schema/custom-field-context-default-value.md) | The list of items. |
 
 
 ## Set Custom Field Contexts Default Values
@@ -322,7 +322,7 @@ Default values to update.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `defaultValues` | [`?list<CustomFieldContextDefaultValue>`](/docs/schema/custom-field-context-default-value.md) |  |
+| `defaultValues` | [`?list<CustomFieldContextDefaultValueDate\|CustomFieldContextDefaultValueDateTime\|CustomFieldContextDefaultValueFloat\|CustomFieldContextDefaultValueForgeDateTimeField\|CustomFieldContextDefaultValueForgeGroupField\|CustomFieldContextDefaultValueForgeMultiGroupField\|CustomFieldContextDefaultValueForgeNumberField\|CustomFieldContextDefaultValueForgeObjectField\|CustomFieldContextDefaultValueForgeStringField\|CustomFieldContextDefaultValueForgeMultiStringField\|CustomFieldContextDefaultValueForgeUserField\|CustomFieldContextDefaultValueForgeMultiUserField\|CustomFieldContextDefaultValueMultipleGroupPicker\|CustomFieldContextDefaultValueSingleGroupPicker\|CustomFieldContextDefaultValueLabels\|CustomFieldContextDefaultValueMultiUserPicker\|CustomFieldContextDefaultValueCascadingOption\|CustomFieldContextDefaultValueMultipleOption\|CustomFieldContextDefaultValueSingleOption\|CustomFieldContextDefaultValueProject\|CustomFieldContextDefaultValueReadOnly\|CustomFieldContextSingleUserPickerDefaults\|CustomFieldContextDefaultValueTextArea\|CustomFieldContextDefaultValueTextField\|CustomFieldContextDefaultValueURL\|CustomFieldContextDefaultValueMultipleVersionPicker\|CustomFieldContextDefaultValueSingleVersionPicker>`](/docs/schema/custom-field-context-default-value.md) |  |
 
 #### Query Parameters
 

@@ -17,7 +17,7 @@ class DummySourceReplacer extends AbstractReplacer
         };
 
         $link = new Link(
-            "`Jira\Client\\{$namespace}\\{$schema->name}`",
+            "`{$this->config->namespace}\\{$namespace}\\{$schema->name}`",
             "/src/{$namespace}/{$schema->name}.php",
         );
 

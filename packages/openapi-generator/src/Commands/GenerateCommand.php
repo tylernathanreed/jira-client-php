@@ -10,6 +10,7 @@ use Reedware\OpenApi\ClassMap;
 use Reedware\OpenApi\Configuration;
 use Reedware\OpenApi\Filesystem;
 use Reedware\OpenApi\Generators\OpenApiGenerator;
+use Reedware\OpenApi\Schema\AbstractSchema;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Throwable;
@@ -21,9 +22,7 @@ class GenerateCommand extends Command
     #[Override]
     public function handle(): int
     {
-        $config = $this->readConfig();
-
-        ClassMap::boot($config);
+        $config = $this->bootConfig();
 
         $generator = new OpenApiGenerator(
             basePath: $this->basePath,
@@ -46,6 +45,17 @@ class GenerateCommand extends Command
         }
 
         return 0;
+    }
+
+    protected function bootConfig(): Configuration
+    {
+        $config = $this->readConfig();
+
+        ClassMap::boot($config);
+
+        AbstractSchema::$config = $config;
+
+        return $config;
     }
 
     protected function readConfig(): Configuration

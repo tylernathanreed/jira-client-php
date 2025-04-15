@@ -460,8 +460,10 @@ final class Operation extends AbstractSchema implements Stringable
         if (! empty($this->bodySchema)) {
             $markdown .= "#### Request Body\n\n";
 
+            $namespace = static::$config->namespace;
+
             $markdown .= 'Source: ' . new Link(
-                "`Jira\Client\Schema\\{$this->bodySchema}`",
+                "`{$namespace}\Schema\\{$this->bodySchema}`",
                 '/docs/schema/' . Utils::slug($this->bodySchema) . '.md',
             ) . "\n\n";
 
@@ -488,8 +490,10 @@ final class Operation extends AbstractSchema implements Stringable
             if ($this->successSchema === true) {
                 $markdown .= '`true`';
             } elseif (is_string($this->successSchema)) {
+                $namespace = static::$config->namespace;
+
                 $markdown .= 'Source: ' . new Link(
-                    "`Jira\Client\Schema\\{$this->successSchema}`",
+                    "`{$namespace}\Schema\\{$this->successSchema}`",
                     '/docs/schema/' . Utils::slug($this->successSchema) . '.md',
                 ) . "\n\n";
 
@@ -527,7 +531,9 @@ final class Operation extends AbstractSchema implements Stringable
                 ? "new Schema\\{$this->bodySchema}(\n"
                 : "\n    request: new Schema\\{$this->bodySchema}(\n";
 
-            $setupStr = "\nuse Jira\Client\Schema;\n";
+            $namespace = static::$config->namespace;
+
+            $setupStr = "\nuse {$namespace}\Schema;\n";
 
             $escape = function ($value) use (&$escape): string|array {
                 if (is_array($value)) {
