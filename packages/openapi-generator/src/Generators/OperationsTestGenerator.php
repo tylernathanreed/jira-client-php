@@ -11,6 +11,8 @@ class OperationsTestGenerator extends AbstractTestGenerator
     /** {@inheritDoc} */
     protected $replacers = [
         Replacers\DummyClassReplacer::class,
+        Replacers\DummyNamespaceReplacer::class,
+        Replacers\SortImportsReplacer::class,
         Replacers\Operations\Tests\DummyTestMethodsReplacer::class,
     ];
 }

@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Operations;
 
-use Reedware\OpenApi\Client\Schema;
+use Jira\Client\Schema;
 use Tests\OperationsTestCase;
 
 class IssueSearchTest extends OperationsTestCase

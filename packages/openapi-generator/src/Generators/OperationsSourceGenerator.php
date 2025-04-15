@@ -12,10 +12,10 @@ class OperationsSourceGenerator extends AbstractSourceGenerator
 {
     /** {@inheritDoc} */
     protected $replacers = [
+        Replacers\DummyNamespaceReplacer::class,
         Replacers\Operations\Source\DummyMethodsReplacer::class,
         Replacers\Operations\Source\DummyTraitReplacer::class,
-        Replacers\Source\DummyNamespaceReplacer::class,
-        Replacers\Source\SortImportsReplacer::class,
+        Replacers\SortImportsReplacer::class,
     ];
 
     public function afterAll(): void

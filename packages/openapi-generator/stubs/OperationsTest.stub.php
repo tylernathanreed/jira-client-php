@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Operations;
 
-use Reedware\OpenApi\Client\Schema;
+use DummyNamespace\Schema;
 use Tests\OperationsTestCase;
 
 class DummyClassTest extends OperationsTestCase

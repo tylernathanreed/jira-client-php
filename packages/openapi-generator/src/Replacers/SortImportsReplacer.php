@@ -1,8 +1,6 @@
 <?php
 
-namespace Reedware\OpenApi\Replacers\Source;
-
-use Reedware\OpenApi\Replacers\AbstractReplacer;
+namespace Reedware\OpenApi\Replacers;
 
 class SortImportsReplacer extends AbstractReplacer
 {
