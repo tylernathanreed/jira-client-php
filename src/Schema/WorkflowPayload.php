@@ -24,6 +24,13 @@ final readonly class WorkflowPayload extends Dto
          */
         public ?string $name = null,
 
+        /**
+         * The strategy to use if there is a conflict with another workflow
+         * 
+         * @var 'FAIL'|'USE'|'NEW'|null
+         */
+        public ?string $onConflict = 'NEW',
+
         public ?ProjectCreateResourceIdentifier $pcri = null,
 
         public ?WorkflowStatusLayoutPayload $startPointLayout = null,

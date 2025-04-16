@@ -9,6 +9,7 @@ Source: [`Jira\Client\Schema\WorkflowPayload`](/src/Schema/WorkflowPayload.php)
 | `description` | `string` | The description of the workflow |
 | `loopedTransitionContainerLayout` | [`WorkflowStatusLayoutPayload`](/docs/schema/workflow-status-layout-payload.md) |  |
 | `name` | `string` | The name of the workflow |
+| `onConflict` | `'FAIL'\|'USE'\|'NEW'\|null` | The strategy to use if there is a conflict with another workflow |
 | `pcri` | [`ProjectCreateResourceIdentifier`](/docs/schema/project-create-resource-identifier.md) |  |
 | `startPointLayout` | [`WorkflowStatusLayoutPayload`](/docs/schema/workflow-status-layout-payload.md) |  |
 | `statuses` | [`?list<WorkflowStatusPayload>`](/docs/schema/workflow-status-payload.md) | The statuses to be used in the workflow |

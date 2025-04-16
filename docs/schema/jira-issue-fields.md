@@ -25,6 +25,7 @@ Source: [`Jira\Client\Schema\JiraIssueFields`](/src/Schema/JiraIssueFields.php)
 | `singleSelectClearableUserPickerFields` | [`?list<JiraSingleSelectUserPickerField>`](/docs/schema/jira-single-select-user-picker-field.md) | Edit assignment for single select user picker fields like Assignee/Reporter:<br/><br/> *  To assign an issue, specify the user's `accountId`.<br/> *  To unassign an issue, set `user` to `null`.<br/> *  For automatic assignment, set `accountId` to `-1`. |
 | `singleSelectFields` | [`?list<JiraSingleSelectField>`](/docs/schema/jira-single-select-field.md) | Add or clear a single select field:<br/><br/> *  To add, specify the option with an `optionId`.<br/> *  To clear, pass an option with `optionId` as `-1`. |
 | `singleVersionPickerFields` | [`?list<JiraSingleVersionPickerField>`](/docs/schema/jira-single-version-picker-field.md) | Add or clear a single version picker field:<br/><br/> *  To add, specify the version with a `versionId`.<br/> *  To clear, set `versionId` to `-1`. |
+| `status` | [`JiraStatusInput`](/docs/schema/jira-status-input.md) |  |
 | `timeTrackingField` | [`JiraTimeTrackingField`](/docs/schema/jira-time-tracking-field.md) | Edit the time tracking field. |
 | `urlFields` | [`?list<JiraUrlField>`](/docs/schema/jira-url-field.md) | Add or clear a URL field:<br/><br/> *  To add, provide the `url` with the desired URL value.<br/> *  To clear, set `url` to an empty string. |
 

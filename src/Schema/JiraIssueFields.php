@@ -192,6 +192,8 @@ final readonly class JiraIssueFields extends Dto
          */
         public ?array $singleVersionPickerFields = null,
 
+        public ?JiraStatusInput $status = null,
+
         /** Edit the time tracking field. */
         public ?JiraTimeTrackingField $timeTrackingField = null,
 

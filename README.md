@@ -1406,6 +1406,7 @@ By following the OpenAPI specification, this package supports 100% of all operat
 - [JiraSingleSelectUserPickerField](/docs/schema/jira-single-select-user-picker-field.md)
 - [JiraSingleVersionPickerField](/docs/schema/jira-single-version-picker-field.md)
 - [JiraStatus](/docs/schema/jira-status.md)
+- [JiraStatusInput](/docs/schema/jira-status-input.md)
 - [JiraTimeTrackingField](/docs/schema/jira-time-tracking-field.md)
 - [JiraUrlField](/docs/schema/jira-url-field.md)
 - [JiraUserField](/docs/schema/jira-user-field.md)
