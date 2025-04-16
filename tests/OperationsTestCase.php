@@ -2,17 +2,16 @@
 
 namespace Tests;
 
-use GuzzleHttp\Promise\Create;
-use GuzzleHttp\Psr7\Response as Psr7Response;
 use Jira\Client\Client;
 use Jira\Client\Configuration;
-use Jira\Client\Http\Contracts\Factory as FactoryContract;
+use Jira\Client\Http\Contracts\Transporter;
 use Jira\Client\Http\Deserializer;
 use Jira\Client\Http\Dto;
-use Jira\Client\Http\Factory;
+use Jira\Client\Http\Request;
+use Jira\Client\Http\Response;
+use Jira\Client\Http\TransporterFactory;
 use Override;
 use PHPUnit\Framework\TestCase;
-use Psr\Http\Message\RequestInterface;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
@@ -21,14 +20,14 @@ abstract class OperationsTestCase extends TestCase
 {
     protected Configuration $config;
     protected Client $client;
-    protected FactoryContract $factory;
+    protected Transporter $transporter;
     protected Deserializer $deserializer;
 
     #[Override]
     protected function setUp(): void
     {
         $this->config = $this->newConfiguration();
-        $this->factory = $this->newFactory();
+        $this->transporter = $this->newTransporter();
         $this->client = $this->newClient();
         $this->deserializer = $this->newDeserializer();
     }
@@ -46,11 +45,11 @@ abstract class OperationsTestCase extends TestCase
 
     protected function mockCall(array $call, ?string $response, int $status): void
     {
-        $this->factory->fake(function (RequestInterface $request) use ($call, $response, $status) {
-            $host = 'testing.atlassian.net';
-            $url = 'https://' . $host . $call['uri'];
+        $this->client->fake(function (Request $request) use ($call, $response, $status) {
+            $host = 'https://testing.atlassian.net';
+            $url = $host . $call['uri'];
             $authorization = 'Basic ' . base64_encode('testing:password');
-            $accept = ['application/json'];
+            $accept = 'application/json';
 
             foreach ((array) ($call['path'] ?? []) as $key => $value) {
                 $url = str_replace("{{$key}}", $value, $url);
@@ -64,20 +63,20 @@ abstract class OperationsTestCase extends TestCase
                 }
             }
 
-            $this->assertEqualsIgnoringCase($call['method'], $request->getMethod());
-            $this->assertEquals($url, (string) $request->getUri());
-            $this->assertEquals($authorization, $request->getHeader('Authorization')[0]);
-            $this->assertEquals($host, $request->getHeader('Host')[0]);
-            $this->assertEquals($accept, $request->getHeader('Accept'));
+            $this->assertEqualsIgnoringCase($call['method'], $request->method);
+            $this->assertEquals($url, rtrim($request->uri, '?'));
+            $this->assertEquals($authorization, $request->headers['Authorization']);
+            $this->assertEquals($host, $request->headers['Host']);
+            $this->assertEquals($accept, $request->headers['Accept']);
 
             if (isset($call['body'])) {
                 $this->assertEqualsCanonicalizing(
                     expected: $call['body']->toArray(),
-                    actual: json_decode((string) $request->getBody(), true)
+                    actual: json_decode((string) $request->body, true)
                 );
             }
 
-            return Create::promiseFor(new Psr7Response($status, body: $response));
+            return new Response($status, $response);
         });
     }
 
@@ -140,7 +139,7 @@ abstract class OperationsTestCase extends TestCase
     {
         return new Client(
             configuration: $this->config,
-            factory: $this->factory,
+            transporter: $this->transporter,
             processor: null,
         );
     }
@@ -154,9 +153,9 @@ abstract class OperationsTestCase extends TestCase
         );
     }
 
-    protected function newFactory(): FactoryContract
+    protected function newTransporter(): Transporter
     {
-        return new Factory();
+        return TransporterFactory::make();
     }
 
     protected function newDeserializer(): Deserializer

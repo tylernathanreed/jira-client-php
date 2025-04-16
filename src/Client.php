@@ -2,28 +2,39 @@
 
 namespace Jira\Client;
 
-use Jira\Client\Http\Contracts\Factory as FactoryContract;
+use Closure;
+use Jira\Client\Http\Contracts\Transporter as TransporterContract;
 use Jira\Client\Http\Deserializer;
 use Jira\Client\Http\Dto;
-use Jira\Client\Http\Factory;
+use Jira\Client\Http\Exceptions\StrayRequestException;
 use Jira\Client\Http\PendingOperation;
 use Jira\Client\Http\PolymorphicDto;
 use Jira\Client\Http\Processor;
+use Jira\Client\Http\Request;
+use Jira\Client\Http\Response;
+use Jira\Client\Http\TransporterFactory;
 
 class Client
 {
     use PerformsOperations;
 
     public readonly Configuration $configuration;
-    public readonly FactoryContract $factory;
+    public readonly TransporterContract $transporter;
     public readonly Processor $processor;
 
-    public function __construct(Configuration $configuration, ?FactoryContract $factory = null, ?Processor $processor = null)
-    {
+    /** @var list<Closure(Request):?Response> */
+    protected array $stubCallbacks = [];
+
+    public function __construct(
+        Configuration $configuration,
+        ?TransporterContract $transporter = null,
+        ?Processor $processor = null
+    ) {
         $this->configuration = $configuration;
-        $this->factory = $factory ?: new Factory();
+        $this->transporter = $transporter ?: TransporterFactory::make();
         $this->processor = $processor ?: new Processor(new Deserializer());
     }
+
     /**
      * @phpstan-template TDto of Dto
      * 
@@ -59,8 +70,37 @@ class Client
             path: $path,
         );
 
-        $response = $this->factory->make($operation, $this->configuration);
+        $request = $this->transporter->newRequest($operation, $this->configuration);
+
+        $response = $this->handleStubCallbacks($request)
+            ?: $this->transporter->newResponse($request, $this->configuration);
 
         return $this->processor->process($operation, $response, $success, $schema);
+    }
+
+    /** @param Closure(Request):?Response $callback */
+    public function fake(Closure $callback): static
+    {
+        $this->stubCallbacks[] = $callback;
+
+        return $this;
+    }
+
+    protected function handleStubCallbacks(Request $request): ?Response
+    {
+        foreach ($this->stubCallbacks as $callback) {
+            if (! is_null($response = $callback($request))) {
+                return $response;
+            }
+        }
+
+        if (! empty($this->stubCallbacks)) {
+            throw new StrayRequestException(sprintf(
+                'Attempted request to [%s] without a matching fake.',
+                $request->uri,
+            ));
+        }
+
+        return null;
     }
 }

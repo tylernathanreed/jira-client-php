@@ -1,6 +1,6 @@
 <?php
 
-namespace Jira\Client\Http;
+namespace Reedware\OpenApi\Client\Http;
 
 class PendingOperation
 {

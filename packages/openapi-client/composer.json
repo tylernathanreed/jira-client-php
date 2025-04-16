@@ -15,8 +15,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.3",
-        "guzzlehttp/guzzle": "^7.8.2"
+        "php": "^8.3"
     },
     "require-dev": {
         "laravel/pint": "^1.20",
@@ -61,5 +60,8 @@
             "@test:static",
             "@test:coverage"
         ]
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "Use guzzle as the underlying HTTP transport (instead of raw cURL)"
     }
 }

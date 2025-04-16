@@ -6,7 +6,6 @@ use Jira\Client\Http\Exceptions\InvalidBodyHttpException;
 use Jira\Client\Http\Exceptions\MethodNotAllowedHttpException;
 use Jira\Client\Http\Exceptions\NotFoundHttpException;
 use Jira\Client\Http\Exceptions\UnsupportedStatusCodeHttpException;
-use Psr\Http\Message\ResponseInterface;
 
 class Processor
 {
@@ -22,11 +21,11 @@ class Processor
      */
     public function process(
         PendingOperation $operation,
-        ResponseInterface $response,
+        Response $response,
         int $successCode,
         array|string|bool $schema
     ): array|Dto|true {
-        $status = $response->getStatusCode();
+        $status = $response->status;
 
         if ($status === 404) {
             throw new NotFoundHttpException(sprintf(
@@ -55,7 +54,7 @@ class Processor
             return true;
         }
 
-        $body = (string) $response->getBody();
+        $body = (string) $response->body;
 
         $data = json_decode($body, true);
 
