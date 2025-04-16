@@ -171,7 +171,7 @@ class Deserializer
             return $this->deserialize($array, $polymorph, array: true);
         }
 
-        if (class_exists($subclass = 'Jira\\Client\\Schema\\' . $type) && is_subclass_of($subclass, Dto::class)) {
+        if (class_exists($subclass = 'Reedware\OpenApi\Client\Schema\\' . $type) && is_subclass_of($subclass, Dto::class)) {
             // @phpstan-ignore argument.type
             return $this->deserialize($array, $subclass, array: true);
         }
