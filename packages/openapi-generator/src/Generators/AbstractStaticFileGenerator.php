@@ -7,6 +7,8 @@ use Reedware\OpenApi\Replacers\Pipeline;
 
 abstract class AbstractStaticFileGenerator extends AbstractGenerator
 {
+    use Concerns\InteractsWithStubs;
+
     /** @var list<class-string<AbstractStaticReplacer> */
     protected $replacers = [];
 
@@ -21,13 +23,6 @@ abstract class AbstractStaticFileGenerator extends AbstractGenerator
 
     /** @param TComposable $composable */
     abstract protected function getPath(): string;
-
-    abstract protected function getStub(): string;
-
-    protected function stub(): string
-    {
-        return $this->filesystem->get($this->getStub());
-    }
 
     protected function build(): string
     {

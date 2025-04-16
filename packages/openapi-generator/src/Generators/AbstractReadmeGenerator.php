@@ -17,7 +17,7 @@ abstract class AbstractReadmeGenerator extends AbstractComposableFileGenerator
     protected function getPath(object $composable): string
     {
         return strtr('{basePath}/docs/{type}/{name}.md', [
-            '{basePath}' => realpath('./'),
+            '{basePath}' => $this->basePath,
             '{type}' => Utils::slug($this->type()),
             '{name}' => Utils::slug($this->name($composable)),
         ]);
@@ -26,8 +26,7 @@ abstract class AbstractReadmeGenerator extends AbstractComposableFileGenerator
     #[Override]
     protected function getStub(): string
     {
-        return strtr('{basePath}/stubs/{type}.stub.md', [
-            '{basePath}' => realpath(__DIR__ . '/../../'),
+        return strtr('{type}.stub.md', [
             '{type}' => Utils::slug($this->type()),
         ]);
     }

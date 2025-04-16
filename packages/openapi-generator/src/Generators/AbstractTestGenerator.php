@@ -16,7 +16,7 @@ abstract class AbstractTestGenerator extends AbstractComposableFileGenerator
     protected function getPath(object $composable): string
     {
         return strtr('{basePath}/tests/Unit/{type}/{name}Test.php', [
-            '{basePath}' => realpath('./'),
+            '{basePath}' => $this->basePath,
             '{type}' => $this->type(),
             '{name}' => ucfirst($this->name($composable)),
         ]);
@@ -25,8 +25,7 @@ abstract class AbstractTestGenerator extends AbstractComposableFileGenerator
     #[Override]
     protected function getStub(): string
     {
-        return strtr('{basePath}/stubs/{type}Test.stub.php', [
-            '{basePath}' => realpath(__DIR__ . '/../../'),
+        return strtr('{type}Test.stub.php', [
             '{type}' => $this->type(),
         ]);
     }

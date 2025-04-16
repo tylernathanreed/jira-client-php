@@ -32,7 +32,7 @@ abstract class AbstractSourceGenerator extends AbstractComposableFileGenerator
     protected function directory(): string
     {
         return strtr('{basePath}/src/{type}', [
-            '{basePath}' => realpath('./'),
+            '{basePath}' => $this->basePath,
             '{type}' => $this->type(),
         ]);
     }
@@ -40,8 +40,7 @@ abstract class AbstractSourceGenerator extends AbstractComposableFileGenerator
     #[Override]
     protected function getStub(): string
     {
-        return strtr('{basePath}/stubs/{type}.stub.php', [
-            '{basePath}' => realpath(__DIR__ . '/../../'),
+        return strtr('{type}.stub.php', [
             '{type}' => $this->type(),
         ]);
     }

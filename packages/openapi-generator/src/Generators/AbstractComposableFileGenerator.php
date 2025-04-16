@@ -10,6 +10,8 @@ use Reedware\OpenApi\Schema\Schema;
 /** @phpstan-template TComposable of Schema|OperationGroup */
 abstract class AbstractComposableFileGenerator extends AbstractGenerator
 {
+    use Concerns\InteractsWithStubs;
+
     /** @var list<class-string<AbstractComposableReplacer<TComposable>> */
     protected $replacers = [];
 
@@ -31,13 +33,6 @@ abstract class AbstractComposableFileGenerator extends AbstractGenerator
 
     /** @param TComposable $composable */
     abstract protected function getPath(object $composable): string;
-
-    abstract protected function getStub(): string;
-
-    protected function stub(): string
-    {
-        return $this->filesystem->get($this->getStub());
-    }
 
     /** @param TComposable $composable */
     protected function build(object $composable): string
