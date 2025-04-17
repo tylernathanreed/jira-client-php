@@ -13,6 +13,7 @@ This package provides an HTTP Client to interact with the [Jira Cloud REST API](
 - [Introduction](#introduction)
   - [1. Jira Cloud vs Jira Software Cloud](#jira-cloud-vs-jira-software-cloud)
 - [Installation](#installation)
+  - [1. Requirements](#requirements)
 - [Configuration](#configuration)
   - [1. Authentication](#authentication)
   - [2. Laravel](#laravel)
@@ -68,6 +69,16 @@ Install this package using [Composer](https://getcomposer.org/):
 ```bash
 composer require jira/client
 ```
+
+### 1. Requirements
+<a name="requirements"></a>
+
+| Version | PHP       | Guzzle            |
+| ------- | --------- | ----------------- |
+| 1.x     | 8.3 - 8.4 |               7.x |
+| 2.x     | 8.1 - 8.4 | None or 6.x - 7.x |
+
+When [Guzzle](https://github.com/guzzle/guzzle) is not installed, [cURL](https://www.php.net/manual/en/ref.curl.php) is used instead.
 
 ## Configuration
 <a name="configuration"></a>

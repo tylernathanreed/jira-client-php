@@ -13,10 +13,23 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        php: ['8.1', '8.2', '8.3', '8.4']
-        stability: [prefer-lowest, prefer-stable]
+        include:
+          - php: 8.1
+            guzzle: false
+          - php: 8.4
+            guzzle: false
+          - php: 8.1
+            guzzle: ^6.5
+          - php: 8.1
+            guzzle: ^7.5
+          - php: 8.2
+            guzzle: ^7.5
+          - php: 8.3
+            guzzle: ^7.5
+          - php: 8.4
+            guzzle: ^7.5
 
-    name: PHP ${{ matrix.php }} - ${{ matrix.stability }}
+    name: PHP ${{ matrix.php }}
 
     steps:
       - name: Checkout code
@@ -35,7 +48,14 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 2
-          command: composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress
+          command: composer update --prefer-stable --prefer-dist --no-interaction --no-progress
 
+      - name: Remove Guzzle
+        run: composer remove php-coveralls/php-coveralls
+
+      - name: Install Guzzle
+        if: ${{ matrix.guzzle != null }}
+        run: composer require guzzlehttp/guzzle ${{ matrix.guzzle }}
+          
       - name: Execute tests
         run: vendor/bin/phpunit --no-coverage
