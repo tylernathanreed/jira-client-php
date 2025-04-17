@@ -1,18 +1,17 @@
 <?php
 
-namespace Reedware\OpenApi\Client\Http;
+namespace Jira\Client\Http;
 
-use Reedware\OpenApi\Client\Http\Exceptions\InvalidBodyHttpException;
-use Reedware\OpenApi\Client\Http\Exceptions\MethodNotAllowedHttpException;
-use Reedware\OpenApi\Client\Http\Exceptions\NotFoundHttpException;
-use Reedware\OpenApi\Client\Http\Exceptions\UnsupportedStatusCodeHttpException;
+use Jira\Client\Http\Exceptions\InvalidBodyHttpException;
+use Jira\Client\Http\Exceptions\MethodNotAllowedHttpException;
+use Jira\Client\Http\Exceptions\NotFoundHttpException;
+use Jira\Client\Http\Exceptions\UnsupportedStatusCodeHttpException;
 
 class Processor
 {
     public function __construct(
         protected Deserializer $deserializer
-    ) {
-    }
+    ) {}
 
     /**
      * @param array{0:class-string<Dto>}|class-string<Dto>|true $schema
@@ -28,26 +27,22 @@ class Processor
         $status = $response->status;
 
         if ($status === 404) {
-            throw new NotFoundHttpException(sprintf(
-                '[404] Endpoint [%s] not found.',
-                $operation->getExpandedUri()
-            ), 404);
+            throw new NotFoundHttpException($response, $operation->getExpandedUri());
         }
 
         if ($status === 405) {
-            throw new MethodNotAllowedHttpException(sprintf(
-                '[405] Method [%s] against [%s] is not allowed.',
-                strtoupper($operation->method),
+            throw new MethodNotAllowedHttpException($response, sprintf(
+                '%s@%s',
                 $operation->getExpandedUri(),
-            ), 405);
+                strtoupper($operation->method),
+            ));
         }
 
         if ($status != $successCode) {
-            throw new UnsupportedStatusCodeHttpException(sprintf(
-                '[%s] Unexpected status code (Expected: %s).',
-                $status,
+            throw new UnsupportedStatusCodeHttpException($response, sprintf(
+                'Unsupported Status Code (Expected: %s).',
                 $successCode,
-            ), $status);
+            ));
         }
 
         if ($schema === true) {
@@ -59,7 +54,7 @@ class Processor
         $data = json_decode($body, true);
 
         if (! is_array($data)) {
-            throw new InvalidBodyHttpException('Unable to decode response body: ' . $body);
+            throw new InvalidBodyHttpException($response, 'Unable to decode response body: ' . $body);
         }
 
         if (is_array($schema)) {
