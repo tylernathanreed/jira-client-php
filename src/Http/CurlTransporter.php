@@ -12,7 +12,9 @@ class CurlTransporter extends Transporter
     {
         $handle = $this->newCurlHandle($request, $config);
 
-        $response = curl_exec($handle);
+        $response = curl_exec($handle) ?: null;
+
+        assert(is_string($response) || is_null($response));
 
         return new Response(
             status: curl_getinfo($handle, CURLINFO_HTTP_CODE),
@@ -26,7 +28,7 @@ class CurlTransporter extends Transporter
 
         curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, 10);
         curl_setopt($handle, CURLOPT_TIMEOUT, 30);
-        curl_setopt($handle, CURLOPT_VERBOSE, $config->debug);
+        curl_setopt($handle, CURLOPT_VERBOSE, (bool) $config->debug);
         curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($handle, CURLOPT_POST, true);
         curl_setopt($handle, CURLOPT_URL, $request->uri);

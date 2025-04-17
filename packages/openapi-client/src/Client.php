@@ -43,7 +43,7 @@ class Client
      * @param Dto|array<string,mixed> $body
      * @param array<string,mixed> $header
      * @param array<string,mixed> $query
-     * @param array<string,int|string|null> $path
+     * @param array<string,int|string> $path
      *
      * @return (
      *     $schema is array ? (TDto is PolymorphicDto ? list<Dto> : list<TDto>) : (

@@ -44,6 +44,7 @@ abstract class Transporter implements TransporterContract
     {
         $headers = [
             'Accept' => 'application/json',
+            'Host' => $config->host,
         ];
 
         if (! empty($config->accessToken)) {
