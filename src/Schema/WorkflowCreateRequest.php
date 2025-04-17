@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The create workflows payload. */
-final readonly class WorkflowCreateRequest extends Dto
+final class WorkflowCreateRequest extends Dto
 {
     public function __construct(
         public ?WorkflowScope $scope = null,

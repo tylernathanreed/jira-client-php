@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** An operand that is a user-provided value. */
-final readonly class ValueOperand extends Dto
+final class ValueOperand extends Dto
 {
     public function __construct(
         /** The operand value. */

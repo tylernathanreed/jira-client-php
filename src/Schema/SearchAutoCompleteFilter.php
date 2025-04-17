@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of how to filter and list search auto complete information. */
-final readonly class SearchAutoCompleteFilter extends Dto
+final class SearchAutoCompleteFilter extends Dto
 {
     public function __construct(
         /** Include collapsed fields for fields that have non-unique names. */

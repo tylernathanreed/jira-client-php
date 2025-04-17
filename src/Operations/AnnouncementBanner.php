@@ -34,7 +34,7 @@ trait AnnouncementBanner
      */
     public function setBanner(
         Schema\AnnouncementBannerConfigurationUpdate $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/announcementBanner',
             method: 'put',

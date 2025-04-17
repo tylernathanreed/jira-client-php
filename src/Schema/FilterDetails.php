@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Details of a filter. */
-final readonly class FilterDetails extends Dto
+final class FilterDetails extends Dto
 {
     public function __construct(
         /** The name of the filter. */

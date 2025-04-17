@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Attributes\PolymorphicList;
 use Jira\Client\Http\Dto;
 
-final readonly class JiraExpressionEvalContextBean extends Dto
+final class JiraExpressionEvalContextBean extends Dto
 {
     public function __construct(
         /** The ID of the board that is available under the `board` variable when evaluating the expression. */

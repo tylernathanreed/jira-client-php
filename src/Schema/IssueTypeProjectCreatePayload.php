@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for creating issue types in a project */
-final readonly class IssueTypeProjectCreatePayload extends Dto
+final class IssueTypeProjectCreatePayload extends Dto
 {
     public function __construct(
         /**

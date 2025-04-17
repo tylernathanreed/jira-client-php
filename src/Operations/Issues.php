@@ -150,7 +150,7 @@ trait Issues
      */
     public function archiveIssuesAsync(
         Schema\ArchiveIssueAsyncRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/archive',
             method: 'post',
@@ -530,7 +530,7 @@ trait Issues
         ?bool $overrideEditableFlag = false,
         ?bool $returnIssue = false,
         ?string $expand = '',
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}',
             method: 'put',
@@ -566,7 +566,7 @@ trait Issues
     public function deleteIssue(
         string $issueIdOrKey,
         ?string $deleteSubtasks = 'false',
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}',
             method: 'delete',
@@ -601,7 +601,7 @@ trait Issues
     public function assignIssue(
         Schema\User $request,
         string $issueIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/assignee',
             method: 'put',
@@ -775,7 +775,7 @@ trait Issues
     public function notify(
         Schema\Notification $request,
         string $issueIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/notify',
             method: 'post',
@@ -853,7 +853,7 @@ trait Issues
     public function doTransition(
         Schema\IssueUpdateDetails $request,
         string $issueIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/transitions',
             method: 'post',

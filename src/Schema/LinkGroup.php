@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details a link group, which defines issue operations. */
-final readonly class LinkGroup extends Dto
+final class LinkGroup extends Dto
 {
     public function __construct(
         /** @var ?list<LinkGroup> */

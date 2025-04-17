@@ -141,7 +141,7 @@ trait IssueTypeSchemes
      */
     public function assignIssueTypeSchemeToProject(
         Schema\IssueTypeSchemeProjectAssociation $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescheme/project',
             method: 'put',
@@ -163,7 +163,7 @@ trait IssueTypeSchemes
     public function updateIssueTypeScheme(
         Schema\IssueTypeSchemeUpdateDetails $request,
         int $issueTypeSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescheme/{issueTypeSchemeId}',
             method: 'put',
@@ -189,7 +189,7 @@ trait IssueTypeSchemes
      */
     public function deleteIssueTypeScheme(
         int $issueTypeSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescheme/{issueTypeSchemeId}',
             method: 'delete',
@@ -215,7 +215,7 @@ trait IssueTypeSchemes
     public function addIssueTypesToIssueTypeScheme(
         Schema\IssueTypeIds $request,
         int $issueTypeSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescheme/{issueTypeSchemeId}/issuetype',
             method: 'put',
@@ -244,7 +244,7 @@ trait IssueTypeSchemes
     public function reorderIssueTypesInIssueTypeScheme(
         Schema\OrderOfIssueTypes $request,
         int $issueTypeSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescheme/{issueTypeSchemeId}/issuetype/move',
             method: 'put',
@@ -274,7 +274,7 @@ trait IssueTypeSchemes
     public function removeIssueTypeFromIssueTypeScheme(
         int $issueTypeSchemeId,
         int $issueTypeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescheme/{issueTypeSchemeId}/issuetype/{issueTypeId}',
             method: 'delete',

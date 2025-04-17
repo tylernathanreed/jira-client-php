@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A container for the watch status of a list of issues. */
-final readonly class BulkIssueIsWatching extends Dto
+final class BulkIssueIsWatching extends Dto
 {
     public function __construct(
         /**

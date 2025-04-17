@@ -9,7 +9,7 @@ use Jira\Client\Http\Dto;
  * A compound workflow transition rule condition.
  * This object returns `nodeType` as `compound`.
  */
-final readonly class WorkflowCompoundCondition extends Dto
+final class WorkflowCompoundCondition extends Dto
 {
     public function __construct(
         /**

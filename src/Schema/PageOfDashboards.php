@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A page containing dashboard details. */
-final readonly class PageOfDashboards extends Dto
+final class PageOfDashboards extends Dto
 {
     public function __construct(
         /**

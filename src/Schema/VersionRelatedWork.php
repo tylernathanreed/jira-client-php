@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Associated related work to a version */
-final readonly class VersionRelatedWork extends Dto
+final class VersionRelatedWork extends Dto
 {
     public function __construct(
         /** The category of the related work */

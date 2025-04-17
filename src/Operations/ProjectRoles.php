@@ -26,7 +26,7 @@ trait ProjectRoles
      */
     public function getProjectRoles(
         string $projectIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/role',
             method: 'get',
@@ -256,7 +256,7 @@ trait ProjectRoles
     public function deleteProjectRole(
         int $id,
         ?int $swap = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/role/{id}',
             method: 'delete',

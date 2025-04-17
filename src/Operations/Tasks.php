@@ -55,7 +55,7 @@ trait Tasks
      */
     public function cancelTask(
         string $taskId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/task/{taskId}/cancel',
             method: 'post',

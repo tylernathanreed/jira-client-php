@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Projects using the workflow. */
-final readonly class WorkflowProjectUsageDTO extends Dto
+final class WorkflowProjectUsageDTO extends Dto
 {
     public function __construct(
         public ?ProjectUsagePage $projects = null,

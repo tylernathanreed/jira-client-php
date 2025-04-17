@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://confluence.atlassian.com/x/dAiiLQ
  */
-final readonly class JqlQueryField extends Dto
+final class JqlQueryField extends Dto
 {
     public function __construct(
         /** The name of the field. */

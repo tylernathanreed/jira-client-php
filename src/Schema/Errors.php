@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class Errors extends Dto
+final class Errors extends Dto
 {
     public function __construct(
         public ?Error $issueIsSubtask = null,

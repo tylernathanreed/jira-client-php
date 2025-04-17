@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://confluence.atlassian.com/x/loMyO
  */
-final readonly class Scope extends Dto
+final class Scope extends Dto
 {
     public function __construct(
         /** The project the item has scope in. */

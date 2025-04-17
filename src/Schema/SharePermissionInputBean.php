@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class SharePermissionInputBean extends Dto
+final class SharePermissionInputBean extends Dto
 {
     public function __construct(
         /**

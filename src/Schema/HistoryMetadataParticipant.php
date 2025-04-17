@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of user or system associated with a issue history metadata item. */
-final readonly class HistoryMetadataParticipant extends Dto
+final class HistoryMetadataParticipant extends Dto
 {
     public function __construct(
         /** The URL to an avatar for the user or system associated with a history record. */

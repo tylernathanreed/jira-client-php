@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about the issues created and the errors for requests that failed. */
-final readonly class CreatedIssues extends Dto
+final class CreatedIssues extends Dto
 {
     public function __construct(
         /**

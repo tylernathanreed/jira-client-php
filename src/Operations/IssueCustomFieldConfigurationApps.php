@@ -138,7 +138,7 @@ trait IssueCustomFieldConfigurationApps
     public function updateCustomFieldConfiguration(
         Schema\CustomFieldConfigurations $request,
         string $fieldIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/app/field/{fieldIdOrKey}/context/configuration',
             method: 'put',

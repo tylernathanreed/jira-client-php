@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A screen tab field. */
-final readonly class ScreenableField extends Dto
+final class ScreenableField extends Dto
 {
     public function __construct(
         /** The ID of the screen tab field. */

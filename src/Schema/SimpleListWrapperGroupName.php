@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Attributes\MapName;
 use Jira\Client\Http\Dto;
 
-final readonly class SimpleListWrapperGroupName extends Dto
+final class SimpleListWrapperGroupName extends Dto
 {
     public function __construct(
         public ?ListWrapperCallbackGroupName $callback = null,

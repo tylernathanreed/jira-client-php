@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A time predicate for a temporal JQL clause. */
-final readonly class JqlQueryClauseTimePredicate extends Dto
+final class JqlQueryClauseTimePredicate extends Dto
 {
     public function __construct(
         public JqlQueryClauseOperand $operand,

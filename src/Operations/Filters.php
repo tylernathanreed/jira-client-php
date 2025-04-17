@@ -331,7 +331,7 @@ trait Filters
      */
     public function deleteFilter(
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/filter/{id}',
             method: 'delete',
@@ -399,7 +399,7 @@ trait Filters
     public function setColumns(
         Schema\ColumnRequestBody $request,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/filter/{id}/columns',
             method: 'put',
@@ -427,7 +427,7 @@ trait Filters
      */
     public function resetColumns(
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/filter/{id}/columns',
             method: 'delete',
@@ -526,7 +526,7 @@ trait Filters
     public function changeFilterOwner(
         Schema\ChangeFilterOwner $request,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/filter/{id}/owner',
             method: 'put',

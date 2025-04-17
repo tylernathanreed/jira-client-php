@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Defines the payload for the field layout configuration.
  * See https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-field-configurations/\#api-rest-api-3-fieldconfiguration-post
  */
-final readonly class FieldLayoutConfiguration extends Dto
+final class FieldLayoutConfiguration extends Dto
 {
     public function __construct(
         /** Whether to show the field */

@@ -11,7 +11,7 @@ use Jira\Client\Http\Dto;
  * Find a list of issue link types with "Get issue link types"
  *  - In the " issueLinkType" resource it defines and reports on issue link types.
  */
-final readonly class IssueLinkType extends Dto
+final class IssueLinkType extends Dto
 {
     public function __construct(
         /**

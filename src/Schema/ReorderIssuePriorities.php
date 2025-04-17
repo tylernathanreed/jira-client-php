@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Change the order of issue priorities. */
-final readonly class ReorderIssuePriorities extends Dto
+final class ReorderIssuePriorities extends Dto
 {
     public function __construct(
         /**

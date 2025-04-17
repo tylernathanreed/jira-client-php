@@ -36,7 +36,7 @@ trait Myself
      */
     public function getPreference(
         string $key,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/mypreferences',
             method: 'get',
@@ -91,7 +91,7 @@ trait Myself
      */
     public function setPreference(
         string $key,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/mypreferences',
             method: 'put',
@@ -123,7 +123,7 @@ trait Myself
      */
     public function removePreference(
         string $key,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/mypreferences',
             method: 'delete',
@@ -166,7 +166,7 @@ trait Myself
      */
     public function setLocale(
         Schema\Locale $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/mypreferences/locale',
             method: 'put',
@@ -185,7 +185,7 @@ trait Myself
      * 
      * @link https://developer.atlassian.com/cloud/admin/user-management/rest/#api-users-account-id-manage-profile-patch
      */
-    public function deleteLocale(): true
+    public function deleteLocale(): bool
     {
         return $this->call(
             uri: '/rest/api/3/mypreferences/locale',

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a new priority scheme */
-final readonly class CreatePrioritySchemeDetails extends Dto
+final class CreatePrioritySchemeDetails extends Dto
 {
     public function __construct(
         /** The ID of the default priority for the priority scheme. */

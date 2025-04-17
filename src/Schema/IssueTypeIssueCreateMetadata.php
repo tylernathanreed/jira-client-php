@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the issue creation metadata for an issue type. */
-final readonly class IssueTypeIssueCreateMetadata extends Dto
+final class IssueTypeIssueCreateMetadata extends Dto
 {
     public function __construct(
         /** The ID of the issue type's avatar. */

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class ResolutionJsonBean extends Dto
+final class ResolutionJsonBean extends Dto
 {
     public function __construct(
         public ?bool $default = null,

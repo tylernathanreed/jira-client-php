@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** List of user account IDs. */
-final readonly class UserKey extends Dto
+final class UserKey extends Dto
 {
     public function __construct(
         /**

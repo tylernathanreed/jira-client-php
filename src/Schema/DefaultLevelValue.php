@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of scheme and new default level. */
-final readonly class DefaultLevelValue extends Dto
+final class DefaultLevelValue extends Dto
 {
     public function __construct(
         /**

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The description of the page of issues loaded by the provided JQL query. */
-final readonly class IssuesJqlMetaDataBean extends Dto
+final class IssuesJqlMetaDataBean extends Dto
 {
     public function __construct(
         /** The number of issues that were loaded in this evaluation. */

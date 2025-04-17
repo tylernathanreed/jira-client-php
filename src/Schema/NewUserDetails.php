@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The user details. */
-final readonly class NewUserDetails extends Dto
+final class NewUserDetails extends Dto
 {
     public function __construct(
         /** The email address for the user. */

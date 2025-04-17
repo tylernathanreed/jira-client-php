@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Announcement banner configuration. */
-final readonly class AnnouncementBannerConfiguration extends Dto
+final class AnnouncementBannerConfiguration extends Dto
 {
     public function __construct(
         /**

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The layout of the workflow status. */
-final readonly class WorkflowStatusLayoutPayload extends Dto
+final class WorkflowStatusLayoutPayload extends Dto
 {
     public function __construct(
         /**

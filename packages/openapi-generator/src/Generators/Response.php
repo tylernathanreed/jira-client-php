@@ -2,12 +2,12 @@
 
 namespace Reedware\OpenApi\Generators;
 
-readonly class Response
+class Response
 {
     public function __construct(
         /** @var 'info'|'success'|'warn'|'error' $type */
-        public string $type,
-        public string $message,
+        public readonly string $type,
+        public readonly string $message,
     ) {
     }
 

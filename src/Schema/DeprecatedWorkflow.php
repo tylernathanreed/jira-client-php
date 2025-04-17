@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a workflow. */
-final readonly class DeprecatedWorkflow extends Dto
+final class DeprecatedWorkflow extends Dto
 {
     public function __construct(
         public ?bool $default = null,

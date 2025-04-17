@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The payload for creating a security level.
  * See https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/
  */
-final readonly class SecurityLevelPayload extends Dto
+final class SecurityLevelPayload extends Dto
 {
     public function __construct(
         /**

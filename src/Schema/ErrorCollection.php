@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Error messages from an operation. */
-final readonly class ErrorCollection extends Dto
+final class ErrorCollection extends Dto
 {
     public function __construct(
         /**

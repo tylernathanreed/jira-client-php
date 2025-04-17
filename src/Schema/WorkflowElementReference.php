@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * A reference to the location of the error.
  * This will be null if the error does not refer to a specific element.
  */
-final readonly class WorkflowElementReference extends Dto
+final class WorkflowElementReference extends Dto
 {
     public function __construct(
         /** A property key. */

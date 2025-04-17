@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The Forge provided ecosystem rules available. */
-final readonly class AvailableWorkflowForgeRule extends Dto
+final class AvailableWorkflowForgeRule extends Dto
 {
     public function __construct(
         /** The rule description. */

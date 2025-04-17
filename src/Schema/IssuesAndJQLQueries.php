@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** List of issues and JQL queries. */
-final readonly class IssuesAndJQLQueries extends Dto
+final class IssuesAndJQLQueries extends Dto
 {
     public function __construct(
         /**

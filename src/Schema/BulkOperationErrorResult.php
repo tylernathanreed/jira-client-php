@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class BulkOperationErrorResult extends Dto
+final class BulkOperationErrorResult extends Dto
 {
     public function __construct(
         public ?ErrorCollection $elementErrors = null,

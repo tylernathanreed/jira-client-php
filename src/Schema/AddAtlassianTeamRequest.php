@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class AddAtlassianTeamRequest extends Dto
+final class AddAtlassianTeamRequest extends Dto
 {
     public function __construct(
         /** The Atlassian team ID. */

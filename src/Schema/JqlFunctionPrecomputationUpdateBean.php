@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Precomputation id and its new value. */
-final readonly class JqlFunctionPrecomputationUpdateBean extends Dto
+final class JqlFunctionPrecomputationUpdateBean extends Dto
 {
     public function __construct(
         /** The id of the precomputation to update. */

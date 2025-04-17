@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraDateTimeField extends Dto
+final class JiraDateTimeField extends Dto
 {
     public function __construct(
         public JiraDateTimeInput $dateTime,

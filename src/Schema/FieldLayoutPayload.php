@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Defines the payload for the field layouts.
  * See https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-field-configurations/\#api-group-issue-field-configurations" + fieldlayout is what users would see as "Field Configuration" in Jira's UI - https://support.atlassian.com/jira-cloud-administration/docs/manage-issue-field-configurations/
  */
-final readonly class FieldLayoutPayload extends Dto
+final class FieldLayoutPayload extends Dto
 {
     public function __construct(
         /**

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Default value for a float (number) custom field. */
-final readonly class CustomFieldContextDefaultValueFloat extends Dto
+final class CustomFieldContextDefaultValueFloat extends Dto
 {
     public function __construct(
         /** The default floating-point number. */

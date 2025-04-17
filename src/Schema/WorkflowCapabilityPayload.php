@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The payload for creating a workflows.
  * See https://www.atlassian.com/software/jira/guides/workflows/overview\#what-is-a-jira-workflow
  */
-final readonly class WorkflowCapabilityPayload extends Dto
+final class WorkflowCapabilityPayload extends Dto
 {
     public function __construct(
         /**

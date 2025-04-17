@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for creating a condition group in a workflow */
-final readonly class ConditionGroupPayload extends Dto
+final class ConditionGroupPayload extends Dto
 {
     public function __construct(
         /**

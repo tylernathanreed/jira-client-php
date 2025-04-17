@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of an issue transition. */
-final readonly class IssueTransition extends Dto
+final class IssueTransition extends Dto
 {
     public function __construct(
         /** Expand options that include additional transition details in the response. */

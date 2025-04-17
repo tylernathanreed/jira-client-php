@@ -66,7 +66,7 @@ trait Webhooks
      */
     public function deleteWebhookById(
         Schema\ContainerForWebhookIDs $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/webhook',
             method: 'delete',

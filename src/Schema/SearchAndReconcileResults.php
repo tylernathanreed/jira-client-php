@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The result of a JQL search with issues reconsilation. */
-final readonly class SearchAndReconcileResults extends Dto
+final class SearchAndReconcileResults extends Dto
 {
     public function __construct(
         /**

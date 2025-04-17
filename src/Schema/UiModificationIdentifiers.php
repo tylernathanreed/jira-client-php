@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Identifiers for a UI modification. */
-final readonly class UiModificationIdentifiers extends Dto
+final class UiModificationIdentifiers extends Dto
 {
     public function __construct(
         /** The ID of the UI modification. */

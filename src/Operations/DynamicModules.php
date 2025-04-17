@@ -30,7 +30,7 @@ trait DynamicModules
      */
     public function registerModules(
         Schema\ConnectModules $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/atlassian-connect/1/app/module/dynamic',
             method: 'post',
@@ -52,7 +52,7 @@ trait DynamicModules
      */
     public function removeModules(
         ?array $moduleKey = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/atlassian-connect/1/app/module/dynamic',
             method: 'delete',

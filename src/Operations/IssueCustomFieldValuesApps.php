@@ -27,7 +27,7 @@ trait IssueCustomFieldValuesApps
     public function updateMultipleCustomFieldValues(
         Schema\MultipleCustomFieldValuesUpdateDetails $request,
         ?bool $generateChangelog = true,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/app/field/value',
             method: 'post',
@@ -59,7 +59,7 @@ trait IssueCustomFieldValuesApps
         Schema\CustomFieldValueUpdateDetails $request,
         string $fieldIdOrKey,
         ?bool $generateChangelog = true,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/app/field/{fieldIdOrKey}/value',
             method: 'put',

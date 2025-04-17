@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about an issue event. */
-final readonly class IssueEvent extends Dto
+final class IssueEvent extends Dto
 {
     public function __construct(
         /** The ID of the event. */

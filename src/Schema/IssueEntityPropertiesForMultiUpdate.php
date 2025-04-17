@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
  */
-final readonly class IssueEntityPropertiesForMultiUpdate extends Dto
+final class IssueEntityPropertiesForMultiUpdate extends Dto
 {
     public function __construct(
         /** The ID of the issue. */

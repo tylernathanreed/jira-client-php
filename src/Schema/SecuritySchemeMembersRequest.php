@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of issue security scheme level new members. */
-final readonly class SecuritySchemeMembersRequest extends Dto
+final class SecuritySchemeMembersRequest extends Dto
 {
     public function __construct(
         /**

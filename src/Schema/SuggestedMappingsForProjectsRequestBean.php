@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of changes to a priority scheme's projects that require suggested priority mappings. */
-final readonly class SuggestedMappingsForProjectsRequestBean extends Dto
+final class SuggestedMappingsForProjectsRequestBean extends Dto
 {
     public function __construct(
         /**

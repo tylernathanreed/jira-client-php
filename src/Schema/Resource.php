@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class Resource extends Dto
+final class Resource extends Dto
 {
     public function __construct(
         public ?string $description = null,

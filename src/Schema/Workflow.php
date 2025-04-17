@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Details about a workflow. */
-final readonly class Workflow extends Dto
+final class Workflow extends Dto
 {
     public function __construct(
         /** The description of the workflow. */

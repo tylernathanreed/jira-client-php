@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The wrapper for the issue creation metadata for a list of projects. */
-final readonly class IssueCreateMetadata extends Dto
+final class IssueCreateMetadata extends Dto
 {
     public function __construct(
         /** Expand options that include additional project details in the response. */

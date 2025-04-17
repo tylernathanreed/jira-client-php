@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The payload for creating a workflow scheme.
  * See https://www.atlassian.com/software/jira/guides/workflows/overview\#what-is-a-jira-workflow-scheme
  */
-final readonly class WorkflowSchemePayload extends Dto
+final class WorkflowSchemePayload extends Dto
 {
     public function __construct(
         public ?ProjectCreateResourceIdentifier $defaultWorkflow = null,

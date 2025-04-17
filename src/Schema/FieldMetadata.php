@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The metadata describing an issue field. */
-final readonly class FieldMetadata extends Dto
+final class FieldMetadata extends Dto
 {
     public function __construct(
         /** The key of the field. */

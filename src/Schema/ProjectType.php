@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a project type. */
-final readonly class ProjectType extends Dto
+final class ProjectType extends Dto
 {
     public function __construct(
         /** The color of the project type. */

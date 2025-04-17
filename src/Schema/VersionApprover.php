@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Contains details about a version approver. */
-final readonly class VersionApprover extends Dto
+final class VersionApprover extends Dto
 {
     public function __construct(
         /** The Atlassian account ID of the approver. */

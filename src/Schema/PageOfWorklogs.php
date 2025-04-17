@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Paginated list of worklog details */
-final readonly class PageOfWorklogs extends Dto
+final class PageOfWorklogs extends Dto
 {
     public function __construct(
         /** The maximum number of results that could be on the page. */

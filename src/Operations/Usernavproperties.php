@@ -57,7 +57,7 @@ trait Usernavproperties
     public function setUserNavProperty(
         string $propertyKey,
         ?string $accountId = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/user/nav4-opt-property/{propertyKey}',
             method: 'put',

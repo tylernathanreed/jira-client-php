@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The payload for creating a transition in a workflow.
  * Can be DIRECTED, GLOBAL, SELF-LOOPED, GLOBAL LOOPED
  */
-final readonly class TransitionPayload extends Dto
+final class TransitionPayload extends Dto
 {
     public function __construct(
         /**

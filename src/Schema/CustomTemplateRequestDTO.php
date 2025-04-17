@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The specific request object for creating a project with template. */
-final readonly class CustomTemplateRequestDTO extends Dto
+final class CustomTemplateRequestDTO extends Dto
 {
     public function __construct(
         public ?BoardsPayload $boards = null,

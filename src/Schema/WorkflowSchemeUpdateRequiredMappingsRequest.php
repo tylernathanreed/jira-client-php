@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The request payload to get the required mappings for updating a workflow scheme. */
-final readonly class WorkflowSchemeUpdateRequiredMappingsRequest extends Dto
+final class WorkflowSchemeUpdateRequiredMappingsRequest extends Dto
 {
     public function __construct(
         /** The ID of the workflow scheme. */

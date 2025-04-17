@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class WorkflowSchemeUpdateRequiredMappingsResponse extends Dto
+final class WorkflowSchemeUpdateRequiredMappingsResponse extends Dto
 {
     public function __construct(
         /**

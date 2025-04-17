@@ -83,7 +83,7 @@ trait IssueFieldConfigurations
     public function updateFieldConfiguration(
         Schema\FieldConfigurationDetails $request,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/fieldconfiguration/{id}',
             method: 'put',
@@ -107,7 +107,7 @@ trait IssueFieldConfigurations
      */
     public function deleteFieldConfiguration(
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/fieldconfiguration/{id}',
             method: 'delete',
@@ -163,7 +163,7 @@ trait IssueFieldConfigurations
     public function updateFieldConfigurationItems(
         Schema\FieldConfigurationItemsDetails $request,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/fieldconfiguration/{id}/fields',
             method: 'put',
@@ -295,7 +295,7 @@ trait IssueFieldConfigurations
      */
     public function assignFieldConfigurationSchemeToProject(
         Schema\FieldConfigurationSchemeProjectAssociation $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/fieldconfigurationscheme/project',
             method: 'put',
@@ -319,7 +319,7 @@ trait IssueFieldConfigurations
     public function updateFieldConfigurationScheme(
         Schema\UpdateFieldConfigurationSchemeDetails $request,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/fieldconfigurationscheme/{id}',
             method: 'put',
@@ -343,7 +343,7 @@ trait IssueFieldConfigurations
      */
     public function deleteFieldConfigurationScheme(
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/fieldconfigurationscheme/{id}',
             method: 'delete',
@@ -367,7 +367,7 @@ trait IssueFieldConfigurations
     public function setFieldConfigurationSchemeMapping(
         Schema\AssociateFieldConfigurationsWithIssueTypesRequest $request,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/fieldconfigurationscheme/{id}/mapping',
             method: 'put',
@@ -392,7 +392,7 @@ trait IssueFieldConfigurations
     public function removeIssueTypesFromGlobalFieldConfigurationScheme(
         Schema\IssueTypeIdsToRemove $request,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/fieldconfigurationscheme/{id}/mapping/delete',
             method: 'post',

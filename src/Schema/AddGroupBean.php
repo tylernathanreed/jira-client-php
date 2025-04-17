@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class AddGroupBean extends Dto
+final class AddGroupBean extends Dto
 {
     public function __construct(
         /** The name of the group. */

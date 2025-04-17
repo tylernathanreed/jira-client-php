@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Metadata for an issue attachment. */
-final readonly class AttachmentMetadata extends Dto
+final class AttachmentMetadata extends Dto
 {
     public function __construct(
         /** Details of the user who attached the file. */

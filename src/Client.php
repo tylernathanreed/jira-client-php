@@ -55,12 +55,12 @@ class Client
         string $uri,
         string $method,
         int $success,
-        array|string|true $schema,
+        array|string|bool $schema,
         Dto|array $body = [],
         array $header = [],
         array $query = [],
         array $path = [],
-    ): array|Dto|true {
+    ): array|Dto|bool {
         $operation = new PendingOperation(
             uri: $uri,
             method: $method,

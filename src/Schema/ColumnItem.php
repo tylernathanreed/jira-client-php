@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of an issue navigator column item. */
-final readonly class ColumnItem extends Dto
+final class ColumnItem extends Dto
 {
     public function __construct(
         /** The issue navigator column label. */

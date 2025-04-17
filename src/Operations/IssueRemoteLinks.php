@@ -104,7 +104,7 @@ trait IssueRemoteLinks
     public function deleteRemoteIssueLinkByGlobalId(
         string $issueIdOrKey,
         string $globalId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/remotelink',
             method: 'delete',
@@ -172,7 +172,7 @@ trait IssueRemoteLinks
         Schema\RemoteIssueLinkRequest $request,
         string $issueIdOrKey,
         string $linkId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/remotelink/{linkId}',
             method: 'put',
@@ -205,7 +205,7 @@ trait IssueRemoteLinks
     public function deleteRemoteIssueLinkById(
         string $issueIdOrKey,
         string $linkId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/remotelink/{linkId}',
             method: 'delete',

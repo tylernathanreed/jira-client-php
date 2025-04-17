@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of an avatar. */
-final readonly class Avatar extends Dto
+final class Avatar extends Dto
 {
     public function __construct(
         /** The ID of the avatar. */

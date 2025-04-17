@@ -93,7 +93,7 @@ trait IssueWatchers
      */
     public function addWatcher(
         string $issueIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/watchers',
             method: 'post',
@@ -132,7 +132,7 @@ trait IssueWatchers
         string $issueIdOrKey,
         ?string $username = null,
         ?string $accountId = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/watchers',
             method: 'delete',

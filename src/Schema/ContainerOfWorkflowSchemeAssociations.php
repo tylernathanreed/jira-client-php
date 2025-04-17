@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A container for a list of workflow schemes together with the projects they are associated with. */
-final readonly class ContainerOfWorkflowSchemeAssociations extends Dto
+final class ContainerOfWorkflowSchemeAssociations extends Dto
 {
     public function __construct(
         /**

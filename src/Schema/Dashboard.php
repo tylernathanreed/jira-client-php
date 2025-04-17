@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a dashboard. */
-final readonly class Dashboard extends Dto
+final class Dashboard extends Dto
 {
     public function __construct(
         /** The automatic refresh interval for the dashboard in milliseconds. */

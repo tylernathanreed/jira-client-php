@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The result of evaluating a Jira expression.This bean will be replacing `JiraExpressionResultBean` bean as part of new evaluate endpoint */
-final readonly class JExpEvaluateJiraExpressionResultBean extends Dto
+final class JExpEvaluateJiraExpressionResultBean extends Dto
 {
     public function __construct(
         /**

@@ -1,11 +1,11 @@
 services:
     dev:
         build:
-            context: ./vendor/reedware/sail-lite/runtimes/8.3
+            context: ./vendor/reedware/sail-lite/runtimes/8.1
             dockerfile: Dockerfile
             args:
                 WWWGROUP: '${WWWGROUP}'
-        image: sail-8.3/dev
+        image: sail-8.1/dev
         environment:
             WWWUSER: '${WWWUSER}'
         volumes:

@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Container for a list of registered webhooks.
  * Webhook details are returned in the same order as the request.
  */
-final readonly class ContainerForRegisteredWebhooks extends Dto
+final class ContainerForRegisteredWebhooks extends Dto
 {
     public function __construct(
         /**

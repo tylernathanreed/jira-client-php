@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** List of changed worklogs. */
-final readonly class ChangedWorklogs extends Dto
+final class ChangedWorklogs extends Dto
 {
     public function __construct(
         public ?bool $lastPage = null,

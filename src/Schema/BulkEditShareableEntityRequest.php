@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a request to bulk edit shareable entity. */
-final readonly class BulkEditShareableEntityRequest extends Dto
+final class BulkEditShareableEntityRequest extends Dto
 {
     public function __construct(
         /**

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class GetExclusionRulesResponse extends Dto
+final class GetExclusionRulesResponse extends Dto
 {
     public function __construct(
         /** Issues completed this number of days ago are excluded from the plan. */

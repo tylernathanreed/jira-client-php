@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The projects using this status. */
-final readonly class StatusProjectUsageDTO extends Dto
+final class StatusProjectUsageDTO extends Dto
 {
     public function __construct(
         public ?StatusProjectUsagePage $projects = null,

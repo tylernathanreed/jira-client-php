@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The statuses associated with each workflow. */
-final readonly class StatusesPerWorkflow extends Dto
+final class StatusesPerWorkflow extends Dto
 {
     public function __construct(
         /** The ID of the initial status for the workflow. */

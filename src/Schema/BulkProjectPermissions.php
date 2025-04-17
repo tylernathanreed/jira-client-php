@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of project permissions and associated issues and projects to look up. */
-final readonly class BulkProjectPermissions extends Dto
+final class BulkProjectPermissions extends Dto
 {
     public function __construct(
         /**

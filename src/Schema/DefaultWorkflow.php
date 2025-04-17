@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about the default workflow. */
-final readonly class DefaultWorkflow extends Dto
+final class DefaultWorkflow extends Dto
 {
     public function __construct(
         /** The name of the workflow to set as the default workflow. */

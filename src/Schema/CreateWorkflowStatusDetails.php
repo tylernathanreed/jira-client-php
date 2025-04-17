@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The details of a transition status. */
-final readonly class CreateWorkflowStatusDetails extends Dto
+final class CreateWorkflowStatusDetails extends Dto
 {
     public function __construct(
         /** The ID of the status. */

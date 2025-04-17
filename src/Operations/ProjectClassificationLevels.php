@@ -24,7 +24,7 @@ trait ProjectClassificationLevels
      */
     public function getDefaultProjectClassification(
         string $projectIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/classification-level/default',
             method: 'get',
@@ -50,7 +50,7 @@ trait ProjectClassificationLevels
     public function updateDefaultProjectClassification(
         Schema\UpdateDefaultProjectClassificationBean $request,
         string $projectIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/classification-level/default',
             method: 'put',
@@ -76,7 +76,7 @@ trait ProjectClassificationLevels
      */
     public function removeDefaultProjectClassification(
         string $projectIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/classification-level/default',
             method: 'delete',

@@ -34,7 +34,7 @@ trait IssueAttachments
     public function getAttachmentContent(
         string $id,
         ?bool $redirect = true,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/attachment/content/{id}',
             method: 'get',
@@ -95,7 +95,7 @@ trait IssueAttachments
         ?bool $fallbackToDefault = true,
         ?int $width = null,
         ?int $height = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/attachment/thumbnail/{id}',
             method: 'get',
@@ -151,7 +151,7 @@ trait IssueAttachments
      */
     public function removeAttachment(
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/attachment/{id}',
             method: 'delete',

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Project ID details. */
-final readonly class ProjectId extends Dto
+final class ProjectId extends Dto
 {
     public function __construct(
         /** The ID of the project. */

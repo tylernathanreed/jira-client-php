@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\UnionDto;
 
 /** An operand that can be part of a list operand. */
-final readonly class JqlQueryUnitaryOperand extends UnionDto
+final class JqlQueryUnitaryOperand extends UnionDto
 {
     /** @inheritDoc */
     public function unionTypes(): array

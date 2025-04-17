@@ -96,7 +96,7 @@ trait Users
         string $accountId,
         ?string $username = null,
         ?string $key = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/user',
             method: 'delete',
@@ -230,7 +230,7 @@ trait Users
      */
     public function setUserColumns(
         ?string $accountId = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/user/columns',
             method: 'put',
@@ -261,7 +261,7 @@ trait Users
     public function resetUserColumns(
         ?string $accountId = null,
         ?string $username = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/user/columns',
             method: 'delete',

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A list of webhooks. */
-final readonly class WebhookDetails extends Dto
+final class WebhookDetails extends Dto
 {
     public function __construct(
         /**

@@ -63,7 +63,7 @@ trait IssueVotes
      */
     public function addVote(
         string $issueIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/votes',
             method: 'post',
@@ -94,7 +94,7 @@ trait IssueVotes
      */
     public function removeVote(
         string $issueIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/votes',
             method: 'delete',

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A list of issue IDs and the value to update a custom field to. */
-final readonly class CustomFieldValueUpdate extends Dto
+final class CustomFieldValueUpdate extends Dto
 {
     public function __construct(
         /**

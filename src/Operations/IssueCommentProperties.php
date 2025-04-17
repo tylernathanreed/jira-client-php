@@ -90,7 +90,7 @@ trait IssueCommentProperties
     public function setCommentProperty(
         string $commentId,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/comment/{commentId}/properties/{propertyKey}',
             method: 'put',
@@ -118,7 +118,7 @@ trait IssueCommentProperties
     public function deleteCommentProperty(
         string $commentId,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/comment/{commentId}/properties/{propertyKey}',
             method: 'delete',

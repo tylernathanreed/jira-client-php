@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class CreateDateFieldRequest extends Dto
+final class CreateDateFieldRequest extends Dto
 {
     public function __construct(
         /**

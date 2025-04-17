@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** A comment. */
-final readonly class Comment extends Dto
+final class Comment extends Dto
 {
     public function __construct(
         /** The ID of the user who created the comment. */

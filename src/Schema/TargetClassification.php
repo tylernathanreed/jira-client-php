@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Classification mapping for classifications in source issues to respective target classification. */
-final readonly class TargetClassification extends Dto
+final class TargetClassification extends Dto
 {
     public function __construct(
         /**

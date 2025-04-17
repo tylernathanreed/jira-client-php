@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A list of issues suggested for use in auto-completion. */
-final readonly class IssuePickerSuggestions extends Dto
+final class IssuePickerSuggestions extends Dto
 {
     public function __construct(
         /**

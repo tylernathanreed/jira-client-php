@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The update workflows payload. */
-final readonly class WorkflowUpdateRequest extends Dto
+final class WorkflowUpdateRequest extends Dto
 {
     public function __construct(
         /**

@@ -11,7 +11,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://confluence.atlassian.com/x/dgiiLQ#Advancedsearching-operatorsreference-WASWAS
  */
-final readonly class FieldWasClause extends Dto
+final class FieldWasClause extends Dto
 {
     public function __construct(
         public JqlQueryField $field,

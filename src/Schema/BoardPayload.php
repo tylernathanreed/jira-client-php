@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for creating a board */
-final readonly class BoardPayload extends Dto
+final class BoardPayload extends Dto
 {
     public function __construct(
         /**

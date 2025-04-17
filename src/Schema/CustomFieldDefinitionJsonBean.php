@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class CustomFieldDefinitionJsonBean extends Dto
+final class CustomFieldDefinitionJsonBean extends Dto
 {
     public function __construct(
         /**

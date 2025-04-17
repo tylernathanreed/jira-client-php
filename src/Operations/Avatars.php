@@ -139,7 +139,7 @@ trait Avatars
         string $type,
         string $owningObjectId,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/universal_avatar/type/{type}/owner/{owningObjectId}/avatar/{id}',
             method: 'delete',

@@ -16,7 +16,8 @@ Returns a list of all statuses associated with active workflows
 
 This operation can be accessed anonymously
 
-**"Permissions" required:** None.
+"Permissions" required: *Browse projects* "project permission" for the project.
+See: https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/
 
 ### Example
 
@@ -43,7 +44,8 @@ Therefore, identifying the status by its ID may be preferable
 
 This operation can be accessed anonymously
 
-"Permissions" required: None.
+"Permissions" required: *Browse projects* "project permission" for the project.
+See: https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/
 
 ### Example
 

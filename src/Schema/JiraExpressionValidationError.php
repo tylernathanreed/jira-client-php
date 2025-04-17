@@ -11,7 +11,7 @@ use Jira\Client\Http\Dto;
  *  - `line` and `column`
  *  - `expression`
  */
-final readonly class JiraExpressionValidationError extends Dto
+final class JiraExpressionValidationError extends Dto
 {
     public function __construct(
         /**

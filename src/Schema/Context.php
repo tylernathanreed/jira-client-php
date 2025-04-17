@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A context. */
-final readonly class Context extends Dto
+final class Context extends Dto
 {
     public function __construct(
         /** The ID of the context. */

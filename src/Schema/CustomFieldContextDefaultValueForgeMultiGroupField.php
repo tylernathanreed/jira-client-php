@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The default value for a Forge collection of groups custom field. */
-final readonly class CustomFieldContextDefaultValueForgeMultiGroupField extends Dto
+final class CustomFieldContextDefaultValueForgeMultiGroupField extends Dto
 {
     public function __construct(
         /** The ID of the context. */

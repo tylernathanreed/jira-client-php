@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the status being updated. */
-final readonly class StatusUpdate extends Dto
+final class StatusUpdate extends Dto
 {
     public function __construct(
         /** The ID of the status. */

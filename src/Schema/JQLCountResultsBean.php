@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JQLCountResultsBean extends Dto
+final class JQLCountResultsBean extends Dto
 {
     public function __construct(
         /** Number of issues matching JQL query. */

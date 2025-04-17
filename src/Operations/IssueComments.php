@@ -213,7 +213,7 @@ trait IssueComments
     public function deleteComment(
         string $issueIdOrKey,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/comment/{id}',
             method: 'delete',

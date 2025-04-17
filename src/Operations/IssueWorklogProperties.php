@@ -100,7 +100,7 @@ trait IssueWorklogProperties
         string $issueIdOrKey,
         string $worklogId,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/worklog/{worklogId}/properties/{propertyKey}',
             method: 'put',
@@ -132,7 +132,7 @@ trait IssueWorklogProperties
         string $issueIdOrKey,
         string $worklogId,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/worklog/{worklogId}/properties/{propertyKey}',
             method: 'delete',

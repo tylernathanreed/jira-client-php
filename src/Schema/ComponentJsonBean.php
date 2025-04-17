@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class ComponentJsonBean extends Dto
+final class ComponentJsonBean extends Dto
 {
     public function __construct(
         public ?string $ari = null,

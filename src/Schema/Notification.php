@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a notification. */
-final readonly class Notification extends Dto
+final class Notification extends Dto
 {
     public function __construct(
         /** The HTML body of the email notification for the issue. */

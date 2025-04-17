@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class CreateIssueSourceRequest extends Dto
+final class CreateIssueSourceRequest extends Dto
 {
     public function __construct(
         /**

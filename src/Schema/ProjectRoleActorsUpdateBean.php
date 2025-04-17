@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class ProjectRoleActorsUpdateBean extends Dto
+final class ProjectRoleActorsUpdateBean extends Dto
 {
     public function __construct(
         /**

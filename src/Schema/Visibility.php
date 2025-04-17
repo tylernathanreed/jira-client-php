@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The group or role to which this item is visible. */
-final readonly class Visibility extends Dto
+final class Visibility extends Dto
 {
     public function __construct(
         /** The ID of the group or the name of the role that visibility of this item is restricted to. */

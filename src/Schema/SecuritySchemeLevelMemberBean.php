@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class SecuritySchemeLevelMemberBean extends Dto
+final class SecuritySchemeLevelMemberBean extends Dto
 {
     public function __construct(
         /** The issue security level member type, e.g `reporter`, `group`, `user`, `projectrole`, `applicationRole`. */

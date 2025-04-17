@@ -34,7 +34,7 @@ trait IssueLinks
      */
     public function linkIssues(
         Schema\LinkIssueRequestJsonBean $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issueLink',
             method: 'post',
@@ -89,7 +89,7 @@ trait IssueLinks
      */
     public function deleteIssueLink(
         string $linkId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issueLink/{linkId}',
             method: 'delete',

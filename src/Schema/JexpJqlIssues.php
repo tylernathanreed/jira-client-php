@@ -9,7 +9,7 @@ use Jira\Client\Http\Dto;
  * Not all issues returned by the JQL query are loaded, only those described by the `startAt` and `maxResults` properties.
  * To determine whether it is necessary to iterate to ensure all the issues returned by the JQL query are evaluated, inspect `meta.issues.jql.count` in the response.
  */
-final readonly class JexpJqlIssues extends Dto
+final class JexpJqlIssues extends Dto
 {
     public function __construct(
         /**

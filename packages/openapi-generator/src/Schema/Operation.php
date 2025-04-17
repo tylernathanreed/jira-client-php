@@ -25,7 +25,7 @@ final class Operation extends AbstractSchema implements Stringable
         public readonly int $successCode,
 
         /** @var array{0:string}|string|true */
-        public readonly array|string|true $successSchema,
+        public readonly array|string|bool $successSchema,
         public readonly ?string $successExample = null,
         public readonly ?string $bodySchema = null,
 
@@ -144,7 +144,7 @@ final class Operation extends AbstractSchema implements Stringable
     public function getDefinition(): string
     {
         $returnType = $this->successSchema === true
-            ? 'true'
+            ? 'bool'
             : (
                 is_array($this->successSchema)
                     ? 'array'
@@ -152,7 +152,7 @@ final class Operation extends AbstractSchema implements Stringable
             );
 
         $schema = $this->successSchema === true
-            ? $returnType
+            ? 'true'
             : (
                 is_array($this->successSchema)
                     ? "[Schema\\{$this->successSchema[0]}::class]"

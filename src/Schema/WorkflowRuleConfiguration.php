@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The configuration of the rule. */
-final readonly class WorkflowRuleConfiguration extends Dto
+final class WorkflowRuleConfiguration extends Dto
 {
     public function __construct(
         /** The rule key of the rule. */

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a project role. */
-final readonly class ProjectRoleDetails extends Dto
+final class ProjectRoleDetails extends Dto
 {
     public function __construct(
         /** Whether this role is the admin role for the project. */

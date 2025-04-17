@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of Jira expressions for analysis. */
-final readonly class JiraExpressionForAnalysis extends Dto
+final class JiraExpressionForAnalysis extends Dto
 {
     public function __construct(
         /**

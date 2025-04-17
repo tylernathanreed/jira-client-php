@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a field. */
-final readonly class Field extends Dto
+final class Field extends Dto
 {
     public function __construct(
         /** The ID of the field. */

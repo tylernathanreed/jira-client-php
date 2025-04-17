@@ -32,7 +32,7 @@ trait ScreenTabs
         ?array $tabId = null,
         ?int $startAt = 0,
         ?int $maxResult = 100,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screens/tabs',
             method: 'get',
@@ -133,7 +133,7 @@ trait ScreenTabs
     public function deleteScreenTab(
         int $screenId,
         int $tabId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screens/{screenId}/tabs/{tabId}',
             method: 'delete',
@@ -159,7 +159,7 @@ trait ScreenTabs
         int $screenId,
         int $tabId,
         int $pos,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screens/{screenId}/tabs/{tabId}/move/{pos}',
             method: 'post',

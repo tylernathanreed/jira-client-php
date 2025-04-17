@@ -87,7 +87,7 @@ trait IssueTypeProperties
     public function setIssueTypeProperty(
         string $issueTypeId,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetype/{issueTypeId}/properties/{propertyKey}',
             method: 'put',
@@ -112,7 +112,7 @@ trait IssueTypeProperties
     public function deleteIssueTypeProperty(
         string $issueTypeId,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetype/{issueTypeId}/properties/{propertyKey}',
             method: 'delete',

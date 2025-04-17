@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The list of issue type IDs to be removed from the field configuration scheme. */
-final readonly class IssueTypeIdsToRemove extends Dto
+final class IssueTypeIdsToRemove extends Dto
 {
     public function __construct(
         /**

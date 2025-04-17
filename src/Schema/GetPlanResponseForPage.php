@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class GetPlanResponseForPage extends Dto
+final class GetPlanResponseForPage extends Dto
 {
     public function __construct(
         /** The plan ID. */

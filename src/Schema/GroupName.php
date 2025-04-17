@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a group. */
-final readonly class GroupName extends Dto
+final class GroupName extends Dto
 {
     public function __construct(
         /**

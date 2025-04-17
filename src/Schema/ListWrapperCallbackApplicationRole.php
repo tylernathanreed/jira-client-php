@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class ListWrapperCallbackApplicationRole extends Dto
+final class ListWrapperCallbackApplicationRole extends Dto
 {
     public function __construct(
 

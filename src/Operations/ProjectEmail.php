@@ -46,7 +46,7 @@ trait ProjectEmail
     public function updateProjectEmail(
         Schema\ProjectEmailAddress $request,
         int $projectId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectId}/email',
             method: 'put',

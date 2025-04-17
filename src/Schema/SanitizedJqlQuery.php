@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the sanitized JQL query. */
-final readonly class SanitizedJqlQuery extends Dto
+final class SanitizedJqlQuery extends Dto
 {
     public function __construct(
         /** The account ID of the user for whom sanitization was performed. */

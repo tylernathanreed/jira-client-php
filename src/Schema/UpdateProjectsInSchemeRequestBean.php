@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Update projects in a scheme */
-final readonly class UpdateProjectsInSchemeRequestBean extends Dto
+final class UpdateProjectsInSchemeRequestBean extends Dto
 {
     public function __construct(
         /** Projects to add to a scheme */

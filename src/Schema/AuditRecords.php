@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Container for a list of audit records. */
-final readonly class AuditRecords extends Dto
+final class AuditRecords extends Dto
 {
     public function __construct(
         /** The requested or default limit on the number of audit items to be returned. */

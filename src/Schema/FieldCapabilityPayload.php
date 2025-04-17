@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Defines the payload for the fields, screens, screen schemes, issue type screen schemes, field layouts, and field layout schemes */
-final readonly class FieldCapabilityPayload extends Dto
+final class FieldCapabilityPayload extends Dto
 {
     public function __construct(
         /**

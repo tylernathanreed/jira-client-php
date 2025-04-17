@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** List of custom fields identifiers which will be used to filter configurations */
-final readonly class ConfigurationsListParameters extends Dto
+final class ConfigurationsListParameters extends Dto
 {
     public function __construct(
         /**

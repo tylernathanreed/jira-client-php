@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of an item associated with the changed record. */
-final readonly class AssociatedItemBean extends Dto
+final class AssociatedItemBean extends Dto
 {
     public function __construct(
         /** The ID of the associated record. */

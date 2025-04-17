@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The result of a JQL search. */
-final readonly class SearchResults extends Dto
+final class SearchResults extends Dto
 {
     public function __construct(
         /** Expand options that include additional search result details in the response. */

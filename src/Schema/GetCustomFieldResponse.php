@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class GetCustomFieldResponse extends Dto
+final class GetCustomFieldResponse extends Dto
 {
     public function __construct(
         /** The custom field ID. */

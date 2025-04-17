@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class PageWithCursorGetTeamResponseForPage extends Dto
+final class PageWithCursorGetTeamResponseForPage extends Dto
 {
     public function __construct(
         public ?string $cursor = null,

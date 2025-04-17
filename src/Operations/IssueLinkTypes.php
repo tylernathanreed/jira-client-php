@@ -120,7 +120,7 @@ trait IssueLinkTypes
      */
     public function deleteIssueLinkType(
         string $issueLinkTypeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issueLinkType/{issueLinkTypeId}',
             method: 'delete',

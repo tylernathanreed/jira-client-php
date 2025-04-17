@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Errors of bulk edit action. */
-final readonly class BulkEditActionError extends Dto
+final class BulkEditActionError extends Dto
 {
     public function __construct(
         /**

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The details of the field configuration scheme. */
-final readonly class UpdateFieldConfigurationSchemeDetails extends Dto
+final class UpdateFieldConfigurationSchemeDetails extends Dto
 {
     public function __construct(
         /**

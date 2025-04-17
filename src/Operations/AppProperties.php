@@ -90,7 +90,7 @@ trait AppProperties
     public function deleteAddonProperty(
         string $addonKey,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/atlassian-connect/1/addons/{addonKey}/properties/{propertyKey}',
             method: 'delete',
@@ -148,7 +148,7 @@ trait AppProperties
      */
     public function deleteForgeAppProperty(
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/forge/1/app/properties/{propertyKey}',
             method: 'delete',

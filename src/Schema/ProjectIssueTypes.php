@@ -12,7 +12,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
  */
-final readonly class ProjectIssueTypes extends Dto
+final class ProjectIssueTypes extends Dto
 {
     public function __construct(
         /**

@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * A workflow transition rule condition.
  * This object returns `nodeType` as `simple`.
  */
-final readonly class WorkflowSimpleCondition extends Dto
+final class WorkflowSimpleCondition extends Dto
 {
     public function __construct(
         public string $nodeType,

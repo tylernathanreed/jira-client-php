@@ -161,7 +161,7 @@ trait IssueFields
     public function updateCustomField(
         Schema\UpdateCustomFieldDetails $request,
         string $fieldId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}',
             method: 'put',
@@ -239,7 +239,7 @@ trait IssueFields
      */
     public function restoreCustomField(
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{id}/restore',
             method: 'post',
@@ -262,7 +262,7 @@ trait IssueFields
      */
     public function trashCustomField(
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{id}/trash',
             method: 'post',

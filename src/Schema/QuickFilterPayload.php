@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for defining quick filters */
-final readonly class QuickFilterPayload extends Dto
+final class QuickFilterPayload extends Dto
 {
     public function __construct(
         /** The description of the quick filter */

@@ -9,7 +9,7 @@ use Jira\Client\Http\Dto;
  * Status mappings are required when the new workflow for an issue type doesn't contain all statuses that the old workflow has.
  * Status mappings can be provided by a combination of `statusMappingsByWorkflows` and `statusMappingsByIssueTypeOverride`.
  */
-final readonly class MappingsByWorkflow extends Dto
+final class MappingsByWorkflow extends Dto
 {
     public function __construct(
         /** The ID of the new workflow. */

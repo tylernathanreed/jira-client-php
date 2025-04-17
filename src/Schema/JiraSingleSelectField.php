@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  *  - To add, specify the option with an `optionId`
  *  - To clear, pass an option with `optionId` as `-1`.
  */
-final readonly class JiraSingleSelectField extends Dto
+final class JiraSingleSelectField extends Dto
 {
     public function __construct(
         public string $fieldId,

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class PaginatedResponseFieldCreateMetadata extends Dto
+final class PaginatedResponseFieldCreateMetadata extends Dto
 {
     public function __construct(
         public ?int $maxResults = null,

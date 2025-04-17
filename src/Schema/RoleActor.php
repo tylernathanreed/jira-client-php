@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a user assigned to a project role. */
-final readonly class RoleActor extends Dto
+final class RoleActor extends Dto
 {
     public function __construct(
         public ?ProjectRoleGroup $actorGroup = null,

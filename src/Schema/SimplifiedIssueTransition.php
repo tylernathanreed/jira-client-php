@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class SimplifiedIssueTransition extends Dto
+final class SimplifiedIssueTransition extends Dto
 {
     public function __construct(
         /** The issue status change of the transition. */

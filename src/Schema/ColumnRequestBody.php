@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class ColumnRequestBody extends Dto
+final class ColumnRequestBody extends Dto
 {
     public function __construct(
         /** @var ?list<string> */

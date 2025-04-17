@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a workflow. */
-final readonly class JiraWorkflow extends Dto
+final class JiraWorkflow extends Dto
 {
     public function __construct(
         /** The creation date of the workflow. */

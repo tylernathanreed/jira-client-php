@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class CreateCustomFieldRequest extends Dto
+final class CreateCustomFieldRequest extends Dto
 {
     public function __construct(
         /** The custom field ID. */

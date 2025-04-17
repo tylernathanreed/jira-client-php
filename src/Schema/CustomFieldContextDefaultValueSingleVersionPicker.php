@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The default value for a version picker custom field. */
-final readonly class CustomFieldContextDefaultValueSingleVersionPicker extends Dto
+final class CustomFieldContextDefaultValueSingleVersionPicker extends Dto
 {
     public function __construct(
         public string $type,

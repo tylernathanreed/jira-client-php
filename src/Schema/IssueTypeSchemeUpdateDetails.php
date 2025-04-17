@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the name, description, and default issue type for an issue type scheme. */
-final readonly class IssueTypeSchemeUpdateDetails extends Dto
+final class IssueTypeSchemeUpdateDetails extends Dto
 {
     public function __construct(
         /** The ID of the default issue type of the issue type scheme. */

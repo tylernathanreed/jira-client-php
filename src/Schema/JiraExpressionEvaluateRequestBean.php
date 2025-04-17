@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The request to evaluate a Jira expression.
  * This bean will be replacing `JiraExpressionEvaluateRequest` as part of new `evaluate` endpoint
  */
-final readonly class JiraExpressionEvaluateRequestBean extends Dto
+final class JiraExpressionEvaluateRequestBean extends Dto
 {
     public function __construct(
         /**

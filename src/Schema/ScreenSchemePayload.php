@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Defines the payload for the screen schemes.
  * See https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-screen-schemes/\#api-rest-api-3-screenscheme-post
  */
-final readonly class ScreenSchemePayload extends Dto
+final class ScreenSchemePayload extends Dto
 {
     public function __construct(
         public ?ProjectCreateResourceIdentifier $defaultScreen = null,

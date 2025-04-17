@@ -87,7 +87,7 @@ trait Groups
         ?string $groupId = null,
         ?string $swapGroup = null,
         ?string $swapGroupId = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/group',
             method: 'delete',
@@ -225,7 +225,7 @@ trait Groups
         ?string $groupname = null,
         ?string $groupId = null,
         ?string $username = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/group/user',
             method: 'delete',

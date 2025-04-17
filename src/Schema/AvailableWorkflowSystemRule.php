@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The Atlassian provided system rules available. */
-final readonly class AvailableWorkflowSystemRule extends Dto
+final class AvailableWorkflowSystemRule extends Dto
 {
     public function __construct(
         /** The rule description. */

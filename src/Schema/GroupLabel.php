@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A group label. */
-final readonly class GroupLabel extends Dto
+final class GroupLabel extends Dto
 {
     public function __construct(
         /** The group label name. */

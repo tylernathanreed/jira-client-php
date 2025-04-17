@@ -6,7 +6,7 @@ use Jira\Client\Http\Attributes\MapName;
 use Jira\Client\Http\Dto;
 
 /** A list of custom field details. */
-final readonly class ConnectCustomFieldValue extends Dto
+final class ConnectCustomFieldValue extends Dto
 {
     public function __construct(
         /**

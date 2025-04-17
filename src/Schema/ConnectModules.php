@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class ConnectModules extends Dto
+final class ConnectModules extends Dto
 {
     public function __construct(
         /**

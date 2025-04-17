@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Defines the payload for the custom field definitions.
  * See https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-fields/\#api-rest-api-3-field-post
  */
-final readonly class CustomFieldPayload extends Dto
+final class CustomFieldPayload extends Dto
 {
     public function __construct(
         /**

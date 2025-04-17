@@ -264,7 +264,7 @@ trait PermissionSchemes
      */
     public function deletePermissionScheme(
         int $schemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/permissionscheme/{schemeId}',
             method: 'delete',
@@ -388,7 +388,7 @@ trait PermissionSchemes
     public function deletePermissionSchemeEntity(
         int $schemeId,
         int $permissionId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/permissionscheme/{schemeId}/permission/{permissionId}',
             method: 'delete',

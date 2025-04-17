@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about the complexity of the analysed Jira expression. */
-final readonly class JiraExpressionComplexity extends Dto
+final class JiraExpressionComplexity extends Dto
 {
     public function __construct(
         /**

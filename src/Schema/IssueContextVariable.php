@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#issue
  */
-final readonly class IssueContextVariable extends Dto
+final class IssueContextVariable extends Dto
 {
     public function __construct(
         /** Type of custom context variable. */

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a link between issues. */
-final readonly class IssueLink extends Dto
+final class IssueLink extends Dto
 {
     public function __construct(
         /**

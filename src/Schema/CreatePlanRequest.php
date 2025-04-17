@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class CreatePlanRequest extends Dto
+final class CreatePlanRequest extends Dto
 {
     public function __construct(
         /**

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of an issue type. */
-final readonly class IssueTypeInfo extends Dto
+final class IssueTypeInfo extends Dto
 {
     public function __construct(
         /** The avatar of the issue type. */

@@ -9,7 +9,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference#user
  */
-final readonly class UserContextVariable extends Dto
+final class UserContextVariable extends Dto
 {
     public function __construct(
         /** The account ID of the user. */

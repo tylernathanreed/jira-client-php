@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Associated field configuration scheme and project. */
-final readonly class FieldConfigurationSchemeProjectAssociation extends Dto
+final class FieldConfigurationSchemeProjectAssociation extends Dto
 {
     public function __construct(
         /** The ID of the project. */

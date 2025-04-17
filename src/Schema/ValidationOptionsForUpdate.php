@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The level of validation to return from the API.
  * If no values are provided, the default would return `WARNING` and `ERROR` level validation results.
  */
-final readonly class ValidationOptionsForUpdate extends Dto
+final class ValidationOptionsForUpdate extends Dto
 {
     public function __construct(
         /** @var ?list<string> */

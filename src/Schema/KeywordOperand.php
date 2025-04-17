@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://confluence.atlassian.com/jiracorecloud/advanced-searching-keywords-reference-765593717.html#Advancedsearching-keywordsreference-EMPTYEMPTY
  */
-final readonly class KeywordOperand extends Dto
+final class KeywordOperand extends Dto
 {
     public function __construct(
         /**

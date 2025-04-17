@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A list of changelog IDs. */
-final readonly class IssueChangelogIds extends Dto
+final class IssueChangelogIds extends Dto
 {
     public function __construct(
         /**

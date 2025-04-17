@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about the operations available in this version. */
-final readonly class SimpleLink extends Dto
+final class SimpleLink extends Dto
 {
     public function __construct(
         public ?string $href = null,

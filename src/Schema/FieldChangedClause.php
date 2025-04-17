@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://confluence.atlassian.com/x/dgiiLQ#Advancedsearching-operatorsreference-CHANGEDCHANGED
  */
-final readonly class FieldChangedClause extends Dto
+final class FieldChangedClause extends Dto
 {
     public function __construct(
         public JqlQueryField $field,

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a failed webhook. */
-final readonly class FailedWebhook extends Dto
+final class FailedWebhook extends Dto
 {
     public function __construct(
         /** The time the webhook was added to the list of failed webhooks (that is, the time of the last failed retry). */

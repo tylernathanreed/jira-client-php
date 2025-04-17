@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about the replacement for a deleted version. */
-final readonly class CustomFieldReplacement extends Dto
+final class CustomFieldReplacement extends Dto
 {
     public function __construct(
         /** The ID of the custom field in which to replace the version number. */

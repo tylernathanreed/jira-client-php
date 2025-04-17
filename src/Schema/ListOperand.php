@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** An operand that is a list of values. */
-final readonly class ListOperand extends Dto
+final class ListOperand extends Dto
 {
     public function __construct(
         /**

@@ -2,20 +2,20 @@
 
 namespace Reedware\OpenApi\Client\Http;
 
-readonly class Request
+class Request
 {
     public function __construct(
         /** @var 'get'|'post'|'put'|'patch'|'delete' */
-        public string $method,
+        public readonly string $method,
 
         /** @var non-empty-string */
-        public string $uri,
+        public readonly string $uri,
 
         /** @var array<string,array<string>|string> */
-        public array $headers = [],
+        public readonly array $headers = [],
 
         /** @var non-empty-string|null */
-        public ?string $body = null,
+        public readonly ?string $body = null,
     ) {
     }
 }

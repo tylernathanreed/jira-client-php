@@ -91,7 +91,7 @@ trait UIModificationsApps
     public function updateUiModification(
         Schema\UpdateUiModificationDetails $request,
         string $uiModificationId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/uiModifications/{uiModificationId}',
             method: 'put',
@@ -116,7 +116,7 @@ trait UIModificationsApps
      */
     public function deleteUiModification(
         string $uiModificationId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/uiModifications/{uiModificationId}',
             method: 'delete',

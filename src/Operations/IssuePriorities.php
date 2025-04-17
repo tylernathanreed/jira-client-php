@@ -57,7 +57,7 @@ trait IssuePriorities
      */
     public function setDefaultPriority(
         Schema\SetDefaultPriorityRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/priority/default',
             method: 'put',
@@ -76,7 +76,7 @@ trait IssuePriorities
      */
     public function movePriorities(
         Schema\ReorderIssuePriorities $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/priority/move',
             method: 'put',
@@ -168,7 +168,7 @@ trait IssuePriorities
     public function updatePriority(
         Schema\UpdatePriorityDetails $request,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/priority/{id}',
             method: 'put',

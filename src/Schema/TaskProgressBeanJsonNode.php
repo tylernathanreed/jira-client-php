@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a task. */
-final readonly class TaskProgressBeanJsonNode extends Dto
+final class TaskProgressBeanJsonNode extends Dto
 {
     public function __construct(
         /** The execution time of the task, in milliseconds. */

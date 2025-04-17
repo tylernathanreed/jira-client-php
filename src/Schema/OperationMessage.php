@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class OperationMessage extends Dto
+final class OperationMessage extends Dto
 {
     public function __construct(
         /** The human-readable message that describes the result. */

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the time tracking configuration. */
-final readonly class TimeTrackingConfiguration extends Dto
+final class TimeTrackingConfiguration extends Dto
 {
     public function __construct(
         /**

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about an issue. */
-final readonly class IssueBean extends Dto
+final class IssueBean extends Dto
 {
     public function __construct(
         /** Details of changelogs associated with the issue. */

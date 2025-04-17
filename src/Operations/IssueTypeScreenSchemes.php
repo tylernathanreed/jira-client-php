@@ -133,7 +133,7 @@ trait IssueTypeScreenSchemes
      */
     public function assignIssueTypeScreenSchemeToProject(
         Schema\IssueTypeScreenSchemeProjectAssociation $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescreenscheme/project',
             method: 'put',
@@ -155,7 +155,7 @@ trait IssueTypeScreenSchemes
     public function updateIssueTypeScreenScheme(
         Schema\IssueTypeScreenSchemeUpdateDetails $request,
         string $issueTypeScreenSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescreenscheme/{issueTypeScreenSchemeId}',
             method: 'put',
@@ -177,7 +177,7 @@ trait IssueTypeScreenSchemes
      */
     public function deleteIssueTypeScreenScheme(
         string $issueTypeScreenSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescreenscheme/{issueTypeScreenSchemeId}',
             method: 'delete',
@@ -199,7 +199,7 @@ trait IssueTypeScreenSchemes
     public function appendMappingsForIssueTypeScreenScheme(
         Schema\IssueTypeScreenSchemeMappingDetails $request,
         string $issueTypeScreenSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescreenscheme/{issueTypeScreenSchemeId}/mapping',
             method: 'put',
@@ -223,7 +223,7 @@ trait IssueTypeScreenSchemes
     public function updateDefaultScreenScheme(
         Schema\UpdateDefaultScreenScheme $request,
         string $issueTypeScreenSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescreenscheme/{issueTypeScreenSchemeId}/mapping/default',
             method: 'put',
@@ -246,7 +246,7 @@ trait IssueTypeScreenSchemes
     public function removeMappingsFromIssueTypeScreenScheme(
         Schema\IssueTypeIds $request,
         string $issueTypeScreenSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetypescreenscheme/{issueTypeScreenSchemeId}/mapping/remove',
             method: 'post',

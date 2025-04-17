@@ -105,7 +105,7 @@ trait Screens
      */
     public function addFieldToDefaultScreen(
         string $fieldId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screens/addToDefault/{fieldId}',
             method: 'post',
@@ -149,7 +149,7 @@ trait Screens
      */
     public function deleteScreen(
         int $screenId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screens/{screenId}',
             method: 'delete',

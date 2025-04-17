@@ -58,7 +58,7 @@ trait Status
      */
     public function updateStatuses(
         Schema\StatusUpdateRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/statuses',
             method: 'put',
@@ -109,7 +109,7 @@ trait Status
      */
     public function deleteStatusesById(
         array $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/statuses',
             method: 'delete',

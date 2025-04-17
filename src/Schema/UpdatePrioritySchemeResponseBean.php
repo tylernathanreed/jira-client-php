@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the updated priority scheme. */
-final readonly class UpdatePrioritySchemeResponseBean extends Dto
+final class UpdatePrioritySchemeResponseBean extends Dto
 {
     public function __construct(
         public ?PrioritySchemeWithPaginatedPrioritiesAndProjects $priorityScheme = null,

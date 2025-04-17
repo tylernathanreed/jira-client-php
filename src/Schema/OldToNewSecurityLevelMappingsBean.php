@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class OldToNewSecurityLevelMappingsBean extends Dto
+final class OldToNewSecurityLevelMappingsBean extends Dto
 {
     public function __construct(
         /**

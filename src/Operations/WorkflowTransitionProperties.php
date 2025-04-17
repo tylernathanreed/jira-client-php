@@ -157,7 +157,7 @@ trait WorkflowTransitionProperties
         string $key,
         string $workflowName,
         ?string $workflowMode = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflow/transitions/{transitionId}/properties',
             method: 'delete',

@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link ../api-group-permission-schemes/#holder-object
  */
-final readonly class PermissionHolder extends Dto
+final class PermissionHolder extends Dto
 {
     public function __construct(
         /** The type of permission holder. */

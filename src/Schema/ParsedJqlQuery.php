@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a parsed JQL query. */
-final readonly class ParsedJqlQuery extends Dto
+final class ParsedJqlQuery extends Dto
 {
     public function __construct(
         /** The JQL query that was parsed and validated. */

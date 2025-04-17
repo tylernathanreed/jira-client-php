@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The details of a UI modification's context, which define where to activate the UI modification. */
-final readonly class UiModificationContextDetails extends Dto
+final class UiModificationContextDetails extends Dto
 {
     public function __construct(
         /** The ID of the UI modification context. */

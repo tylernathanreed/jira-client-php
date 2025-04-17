@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraExpressionEvaluationMetaDataBean extends Dto
+final class JiraExpressionEvaluationMetaDataBean extends Dto
 {
     public function __construct(
         /**

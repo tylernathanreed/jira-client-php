@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class ServiceManagementNavigationInfo extends Dto
+final class ServiceManagementNavigationInfo extends Dto
 {
     public function __construct(
         public ?string $queueCategory = null,

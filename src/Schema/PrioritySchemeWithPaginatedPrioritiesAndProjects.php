@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A priority scheme with paginated priorities and projects. */
-final readonly class PrioritySchemeWithPaginatedPrioritiesAndProjects extends Dto
+final class PrioritySchemeWithPaginatedPrioritiesAndProjects extends Dto
 {
     public function __construct(
         /** The ID of the priority scheme. */

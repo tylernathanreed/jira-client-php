@@ -48,7 +48,7 @@ trait WorkflowSchemeProjectAssociations
      */
     public function assignSchemeToProject(
         Schema\WorkflowSchemeProjectAssociation $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflowscheme/project',
             method: 'put',

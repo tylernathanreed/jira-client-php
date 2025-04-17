@@ -152,7 +152,7 @@ trait IssueCustomFieldOptions
         Schema\OrderOfCustomFieldOptions $request,
         string $fieldId,
         int $contextId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}/option/move',
             method: 'put',
@@ -183,7 +183,7 @@ trait IssueCustomFieldOptions
         string $fieldId,
         int $contextId,
         int $optionId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}/option/{optionId}',
             method: 'delete',

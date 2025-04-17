@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Workflow metadata and usage detail. */
-final readonly class WorkflowMetadataRestModel extends Dto
+final class WorkflowMetadataRestModel extends Dto
 {
     public function __construct(
         /** The description of the workflow. */

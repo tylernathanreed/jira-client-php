@@ -22,7 +22,7 @@ trait ProjectAvatars
     public function updateProjectAvatar(
         Schema\Avatar $request,
         string $projectIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/avatar',
             method: 'put',
@@ -47,7 +47,7 @@ trait ProjectAvatars
     public function deleteProjectAvatar(
         string $projectIdOrKey,
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/avatar/{id}',
             method: 'delete',

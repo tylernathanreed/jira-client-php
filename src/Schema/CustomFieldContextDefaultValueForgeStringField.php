@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The default text for a Forge string custom field. */
-final readonly class CustomFieldContextDefaultValueForgeStringField extends Dto
+final class CustomFieldContextDefaultValueForgeStringField extends Dto
 {
     public function __construct(
         /** The ID of the context. */

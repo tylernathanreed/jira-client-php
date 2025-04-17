@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the group associated with the role. */
-final readonly class ProjectRoleGroup extends Dto
+final class ProjectRoleGroup extends Dto
 {
     public function __construct(
         /** The display name of the group. */

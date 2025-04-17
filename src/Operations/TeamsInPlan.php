@@ -49,7 +49,7 @@ trait TeamsInPlan
     public function addAtlassianTeam(
         Schema\AddAtlassianTeamRequest $request,
         int $planId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/team/atlassian',
             method: 'post',
@@ -105,7 +105,7 @@ trait TeamsInPlan
     public function updateAtlassianTeam(
         int $planId,
         string $atlassianTeamId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/team/atlassian/{atlassianTeamId}',
             method: 'put',
@@ -128,7 +128,7 @@ trait TeamsInPlan
     public function removeAtlassianTeam(
         int $planId,
         string $atlassianTeamId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/team/atlassian/{atlassianTeamId}',
             method: 'delete',
@@ -150,7 +150,7 @@ trait TeamsInPlan
     public function createPlanOnlyTeam(
         Schema\CreatePlanOnlyTeamRequest $request,
         int $planId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/team/planonly',
             method: 'post',
@@ -208,7 +208,7 @@ trait TeamsInPlan
     public function updatePlanOnlyTeam(
         int $planId,
         int $planOnlyTeamId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/team/planonly/{planOnlyTeamId}',
             method: 'put',
@@ -231,7 +231,7 @@ trait TeamsInPlan
     public function deletePlanOnlyTeam(
         int $planId,
         int $planOnlyTeamId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/team/planonly/{planOnlyTeamId}',
             method: 'delete',

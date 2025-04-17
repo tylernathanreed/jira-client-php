@@ -33,7 +33,7 @@ trait IssueProperties
      */
     public function bulkSetIssuesPropertiesList(
         Schema\IssueEntityProperties $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/properties',
             method: 'post',
@@ -68,7 +68,7 @@ trait IssueProperties
      */
     public function bulkSetIssuePropertiesByIssue(
         Schema\MultiIssueEntityProperties $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/properties/multi',
             method: 'post',
@@ -127,7 +127,7 @@ trait IssueProperties
     public function bulkSetIssueProperty(
         Schema\BulkIssuePropertyUpdateRequest $request,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/properties/{propertyKey}',
             method: 'put',
@@ -172,7 +172,7 @@ trait IssueProperties
     public function bulkDeleteIssueProperty(
         Schema\IssueFilterForBulkPropertyDelete $request,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/properties/{propertyKey}',
             method: 'delete',
@@ -264,7 +264,7 @@ trait IssueProperties
     public function setIssueProperty(
         string $issueIdOrKey,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/properties/{propertyKey}',
             method: 'put',
@@ -293,7 +293,7 @@ trait IssueProperties
     public function deleteIssueProperty(
         string $issueIdOrKey,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/properties/{propertyKey}',
             method: 'delete',

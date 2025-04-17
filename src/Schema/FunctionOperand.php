@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://confluence.atlassian.com/x/dwiiLQ
  */
-final readonly class FunctionOperand extends Dto
+final class FunctionOperand extends Dto
 {
     public function __construct(
         /**

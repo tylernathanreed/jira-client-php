@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class PrioritySchemeChangesWithoutMappings extends Dto
+final class PrioritySchemeChangesWithoutMappings extends Dto
 {
     public function __construct(
         /**

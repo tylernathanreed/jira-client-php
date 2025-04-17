@@ -11,7 +11,7 @@ use ReflectionProperty;
 /**
  * @phpstan-type TNonArray Dto|DateTimeInterface|scalar|null
  */
-abstract readonly class Dto implements JsonSerializable
+abstract class Dto implements JsonSerializable
 {
     /** @return array<string,mixed> */
     public function toArray(): array

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for creating workflow, see https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/\#api-rest-api-3-workflows-create-post */
-final readonly class WorkflowPayload extends Dto
+final class WorkflowPayload extends Dto
 {
     public function __construct(
         /**

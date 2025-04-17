@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a permission and its availability to a user. */
-final readonly class UserPermission extends Dto
+final class UserPermission extends Dto
 {
     public function __construct(
         /**

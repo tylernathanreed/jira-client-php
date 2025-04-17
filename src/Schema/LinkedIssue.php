@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The ID or key of a linked issue. */
-final readonly class LinkedIssue extends Dto
+final class LinkedIssue extends Dto
 {
     public function __construct(
         /** The fields associated with the issue. */

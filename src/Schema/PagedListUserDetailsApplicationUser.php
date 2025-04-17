@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * To access additional details append `[start-index:end-index]` to the expand request.
  * For example, `?expand=sharedUsers[10:40]` returns a list starting at item 10 and finishing at item 40.
  */
-final readonly class PagedListUserDetailsApplicationUser extends Dto
+final class PagedListUserDetailsApplicationUser extends Dto
 {
     public function __construct(
         /** The index of the last item returned on the page. */

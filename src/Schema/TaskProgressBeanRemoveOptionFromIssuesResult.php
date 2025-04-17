@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a task. */
-final readonly class TaskProgressBeanRemoveOptionFromIssuesResult extends Dto
+final class TaskProgressBeanRemoveOptionFromIssuesResult extends Dto
 {
     public function __construct(
         /** The execution time of the task, in milliseconds. */

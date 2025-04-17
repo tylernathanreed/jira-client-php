@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details for changing owners of shareable entities */
-final readonly class BulkChangeOwnerDetails extends Dto
+final class BulkChangeOwnerDetails extends Dto
 {
     public function __construct(
         /** Whether the name is fixed automatically if it's duplicated after changing owner. */

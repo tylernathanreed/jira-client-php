@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of an operation to perform on a field. */
-final readonly class FieldUpdateOperation extends Dto
+final class FieldUpdateOperation extends Dto
 {
     public function __construct(
         /**

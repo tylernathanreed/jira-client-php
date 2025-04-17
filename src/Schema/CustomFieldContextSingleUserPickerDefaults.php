@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Defaults for a User Picker (single) custom field. */
-final readonly class CustomFieldContextSingleUserPickerDefaults extends Dto
+final class CustomFieldContextSingleUserPickerDefaults extends Dto
 {
     public function __construct(
         /** The ID of the default user. */

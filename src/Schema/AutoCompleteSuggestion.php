@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A field auto-complete suggestion. */
-final readonly class AutoCompleteSuggestion extends Dto
+final class AutoCompleteSuggestion extends Dto
 {
     public function __construct(
         /**

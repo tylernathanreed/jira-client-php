@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the settings for a dashboard gadget. */
-final readonly class DashboardGadgetSettings extends Dto
+final class DashboardGadgetSettings extends Dto
 {
     public function __construct(
         /**

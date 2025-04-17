@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Additional details about a project. */
-final readonly class ProjectInsight extends Dto
+final class ProjectInsight extends Dto
 {
     public function __construct(
         /** The last issue update time. */

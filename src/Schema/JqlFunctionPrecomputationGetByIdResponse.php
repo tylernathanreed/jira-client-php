@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Get precomputations by ID response. */
-final readonly class JqlFunctionPrecomputationGetByIdResponse extends Dto
+final class JqlFunctionPrecomputationGetByIdResponse extends Dto
 {
     public function __construct(
         /**

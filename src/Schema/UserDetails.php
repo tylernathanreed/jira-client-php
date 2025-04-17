@@ -15,7 +15,7 @@ use Jira\Client\Http\Dto;
  *  - User record unavailable: This usually occurs due to an internal service outage.
  * In this case, all parameters have fallback values.
  */
-final readonly class UserDetails extends Dto
+final class UserDetails extends Dto
 {
     public function __construct(
         /**

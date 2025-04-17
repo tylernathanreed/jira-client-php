@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A change item. */
-final readonly class ChangeDetails extends Dto
+final class ChangeDetails extends Dto
 {
     public function __construct(
         /** The name of the field changed. */

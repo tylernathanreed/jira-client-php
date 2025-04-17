@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraExpressionsComplexityBean extends Dto
+final class JiraExpressionsComplexityBean extends Dto
 {
     public function __construct(
         /** The number of Jira REST API beans returned in the response. */

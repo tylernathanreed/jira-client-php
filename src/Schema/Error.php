@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class Error extends Dto
+final class Error extends Dto
 {
     public function __construct(
         public ?int $count = null,

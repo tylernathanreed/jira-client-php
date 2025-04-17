@@ -45,7 +45,7 @@ trait IssueNavigatorSettings
      * 
      * @link https://confluence.atlassian.com/x/x4dKLg
      */
-    public function setIssueNavigatorDefaultColumns(): true
+    public function setIssueNavigatorDefaultColumns(): bool
     {
         return $this->call(
             uri: '/rest/api/3/settings/columns',

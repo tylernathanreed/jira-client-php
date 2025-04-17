@@ -332,7 +332,7 @@ trait Projects
     public function deleteProject(
         string $projectIdOrKey,
         ?bool $enableUndo = true,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}',
             method: 'delete',
@@ -357,7 +357,7 @@ trait Projects
      */
     public function archiveProject(
         string $projectIdOrKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/archive',
             method: 'post',

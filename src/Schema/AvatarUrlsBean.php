@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Attributes\MapName;
 use Jira\Client\Http\Dto;
 
-final readonly class AvatarUrlsBean extends Dto
+final class AvatarUrlsBean extends Dto
 {
     public function __construct(
         /** The URL of the item's 16x16 pixel avatar. */

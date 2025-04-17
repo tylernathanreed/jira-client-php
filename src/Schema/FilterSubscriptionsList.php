@@ -6,7 +6,7 @@ use Jira\Client\Http\Attributes\MapName;
 use Jira\Client\Http\Dto;
 
 /** A paginated list of subscriptions to a filter. */
-final readonly class FilterSubscriptionsList extends Dto
+final class FilterSubscriptionsList extends Dto
 {
     public function __construct(
         /** The index of the last item returned on the page. */

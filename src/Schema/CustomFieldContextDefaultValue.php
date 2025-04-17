@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\PolymorphicDto;
 
-final readonly class CustomFieldContextDefaultValue extends PolymorphicDto
+final class CustomFieldContextDefaultValue extends PolymorphicDto
 {
     public function __construct(
 

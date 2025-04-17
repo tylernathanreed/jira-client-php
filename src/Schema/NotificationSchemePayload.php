@@ -9,7 +9,7 @@ use Jira\Client\Http\Dto;
  * The user has to supply the ID for the default notification scheme.
  * For CMP this is provided in the project payload and should be left empty, for TMP it's provided using this payload
  */
-final readonly class NotificationSchemePayload extends Dto
+final class NotificationSchemePayload extends Dto
 {
     public function __construct(
         /** The description of the notification scheme */

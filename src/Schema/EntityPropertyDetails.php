@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class EntityPropertyDetails extends Dto
+final class EntityPropertyDetails extends Dto
 {
     public function __construct(
         /**

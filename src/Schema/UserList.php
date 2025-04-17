@@ -9,7 +9,7 @@ use Jira\Client\Http\Dto;
  * A paginated list of users sharing the filter.
  * This includes users that are members of the groups or can browse the projects that the filter is shared with.
  */
-final readonly class UserList extends Dto
+final class UserList extends Dto
 {
     public function __construct(
         /** The index of the last item returned on the page. */

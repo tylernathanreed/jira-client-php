@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Configuration of the announcement banner. */
-final readonly class AnnouncementBannerConfigurationUpdate extends Dto
+final class AnnouncementBannerConfigurationUpdate extends Dto
 {
     public function __construct(
         /** Flag indicating if the announcement banner can be dismissed by the user. */

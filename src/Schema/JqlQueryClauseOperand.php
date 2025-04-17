@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\UnionDto;
 
 /** Details of an operand in a JQL clause. */
-final readonly class JqlQueryClauseOperand extends UnionDto
+final class JqlQueryClauseOperand extends UnionDto
 {
     /** @inheritDoc */
     public function unionTypes(): array

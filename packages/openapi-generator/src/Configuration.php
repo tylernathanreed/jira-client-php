@@ -2,7 +2,7 @@
 
 namespace Reedware\OpenApi;
 
-readonly class Configuration
+class Configuration
 {
     public function __construct(
         public string $namespace,

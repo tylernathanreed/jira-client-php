@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class IssueBulkEditField extends Dto
+final class IssueBulkEditField extends Dto
 {
     public function __construct(
         /** Description of the field. */

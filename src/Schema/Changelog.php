@@ -9,7 +9,7 @@ use Jira\Client\Http\Dto;
  * A log of changes made to issue fields.
  * Changelogs related to workflow associations are currently being deprecated.
  */
-final readonly class Changelog extends Dto
+final class Changelog extends Dto
 {
     public function __construct(
         /** The user who made the change. */

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of names changed in the record event. */
-final readonly class ChangedValueBean extends Dto
+final class ChangedValueBean extends Dto
 {
     public function __construct(
         /** The value of the field before the change. */

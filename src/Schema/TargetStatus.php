@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Status mapping for statuses in source workflow to respective target status in target workflow. */
-final readonly class TargetStatus extends Dto
+final class TargetStatus extends Dto
 {
     public function __construct(
         /**

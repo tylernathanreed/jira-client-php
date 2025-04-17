@@ -6,10 +6,10 @@ use Attribute;
 use Jira\Client\Http\PolymorphicDto;
 
 #[Attribute(Attribute::TARGET_PROPERTY)]
-final readonly class PolymorphicList
+final class PolymorphicList
 {
     public function __construct(
         /** @var class-string<PolymorphicDto> */
-        public string $name,
+        public readonly string $name,
     ) {}
 }

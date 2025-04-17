@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Working days configuration */
-final readonly class WorkingDaysConfig extends Dto
+final class WorkingDaysConfig extends Dto
 {
     public function __construct(
         public ?bool $friday = null,

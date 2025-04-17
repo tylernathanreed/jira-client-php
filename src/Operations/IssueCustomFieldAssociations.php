@@ -27,7 +27,7 @@ trait IssueCustomFieldAssociations
      */
     public function createAssociations(
         Schema\FieldAssociationsRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/association',
             method: 'put',
@@ -54,7 +54,7 @@ trait IssueCustomFieldAssociations
      */
     public function removeAssociations(
         Schema\FieldAssociationsRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/association',
             method: 'delete',

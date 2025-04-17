@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** A webhook. */
-final readonly class Webhook extends Dto
+final class Webhook extends Dto
 {
     public function __construct(
         /**

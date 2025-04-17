@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class GetCrossProjectReleaseResponse extends Dto
+final class GetCrossProjectReleaseResponse extends Dto
 {
     public function __construct(
         /** The cross-project release name. */

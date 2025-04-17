@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** An audit record. */
-final readonly class AuditRecordBean extends Dto
+final class AuditRecordBean extends Dto
 {
     public function __construct(
         /**

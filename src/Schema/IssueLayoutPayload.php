@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Defines the payload to configure the issue layouts for a project. */
-final readonly class IssueLayoutPayload extends Dto
+final class IssueLayoutPayload extends Dto
 {
     public function __construct(
         public ?ProjectCreateResourceIdentifier $containerId = null,

@@ -97,7 +97,7 @@ trait ProjectCategories
      */
     public function removeProjectCategory(
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/projectCategory/{id}',
             method: 'delete',

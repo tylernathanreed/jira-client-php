@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class WorkflowReadRequest extends Dto
+final class WorkflowReadRequest extends Dto
 {
     public function __construct(
         /**

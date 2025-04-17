@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A status category. */
-final readonly class StatusCategory extends Dto
+final class StatusCategory extends Dto
 {
     public function __construct(
         /** The name of the color used to represent the status category. */

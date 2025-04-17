@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The worflow. */
-final readonly class StatusWorkflowUsageWorkflow extends Dto
+final class StatusWorkflowUsageWorkflow extends Dto
 {
     public function __construct(
         /** The workflow ID. */

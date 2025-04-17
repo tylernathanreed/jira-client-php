@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Status details for an issue type. */
-final readonly class IssueTypeWithStatus extends Dto
+final class IssueTypeWithStatus extends Dto
 {
     public function __construct(
         /** The ID of the issue type. */

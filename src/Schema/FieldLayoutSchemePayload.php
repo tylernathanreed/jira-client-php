@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Defines the payload for the field layout schemes.
  * See "Field Configuration Scheme" - https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-field-configurations/\#api-rest-api-3-fieldconfigurationscheme-post https://support.atlassian.com/jira-cloud-administration/docs/configure-a-field-configuration-scheme/
  */
-final readonly class FieldLayoutSchemePayload extends Dto
+final class FieldLayoutSchemePayload extends Dto
 {
     public function __construct(
         public ?ProjectCreateResourceIdentifier $defaultFieldLayout = null,

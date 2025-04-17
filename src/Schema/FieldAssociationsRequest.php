@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of field associations with projects. */
-final readonly class FieldAssociationsRequest extends Dto
+final class FieldAssociationsRequest extends Dto
 {
     public function __construct(
         /**

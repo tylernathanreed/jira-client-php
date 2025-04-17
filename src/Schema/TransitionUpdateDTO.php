@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The transition update data. */
-final readonly class TransitionUpdateDTO extends Dto
+final class TransitionUpdateDTO extends Dto
 {
     public function __construct(
         /**

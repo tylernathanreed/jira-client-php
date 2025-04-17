@@ -27,7 +27,7 @@ trait ProjectTemplates
      */
     public function createProjectWithCustomTemplate(
         Schema\ProjectCustomTemplateCreateRequestDTO $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project-template',
             method: 'post',

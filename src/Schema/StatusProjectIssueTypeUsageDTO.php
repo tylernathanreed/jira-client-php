@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The issue types using this status in a project. */
-final readonly class StatusProjectIssueTypeUsageDTO extends Dto
+final class StatusProjectIssueTypeUsageDTO extends Dto
 {
     public function __construct(
         public ?StatusProjectIssueTypeUsagePage $issueTypes = null,

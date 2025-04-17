@@ -13,7 +13,9 @@ trait WorkflowStatuses
      * 
      * This operation can be accessed anonymously
      * 
-     * **"Permissions" required:** None.
+     * "Permissions" required: *Browse projects* "project permission" for the project.
+     * 
+     * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/
      * 
      * @return list<Schema\StatusDetails>
      */
@@ -36,7 +38,9 @@ trait WorkflowStatuses
      * 
      * This operation can be accessed anonymously
      * 
-     * "Permissions" required: None.
+     * "Permissions" required: *Browse projects* "project permission" for the project.
+     * 
+     * @link https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/
      * 
      * @param string $idOrName The ID or name of the status.
      */

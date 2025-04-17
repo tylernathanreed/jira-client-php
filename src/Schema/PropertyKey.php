@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Property key details. */
-final readonly class PropertyKey extends Dto
+final class PropertyKey extends Dto
 {
     public function __construct(
         /** The key of the property. */

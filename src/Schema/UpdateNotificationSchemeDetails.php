@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a notification scheme. */
-final readonly class UpdateNotificationSchemeDetails extends Dto
+final class UpdateNotificationSchemeDetails extends Dto
 {
     public function __construct(
         /** The description of the notification scheme. */

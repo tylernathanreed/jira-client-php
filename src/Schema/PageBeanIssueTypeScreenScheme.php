@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A page of items. */
-final readonly class PageBeanIssueTypeScreenScheme extends Dto
+final class PageBeanIssueTypeScreenScheme extends Dto
 {
     public function __construct(
         /** Whether this is the last page. */

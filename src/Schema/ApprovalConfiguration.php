@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The approval configuration of a status within a workflow.
  * Applies only to Jira Service Management approvals.
  */
-final readonly class ApprovalConfiguration extends Dto
+final class ApprovalConfiguration extends Dto
 {
     public function __construct(
         /**

@@ -53,7 +53,7 @@ trait IssueResolutions
      */
     public function setDefaultResolution(
         Schema\SetDefaultResolutionRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/resolution/default',
             method: 'put',
@@ -72,7 +72,7 @@ trait IssueResolutions
      */
     public function moveResolutions(
         Schema\ReorderIssueResolutionsRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/resolution/move',
             method: 'put',
@@ -144,7 +144,7 @@ trait IssueResolutions
     public function updateResolution(
         Schema\UpdateResolutionDetails $request,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/resolution/{id}',
             method: 'put',

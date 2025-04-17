@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The statuses referenced in the workflow. */
-final readonly class WorkflowReferenceStatus extends Dto
+final class WorkflowReferenceStatus extends Dto
 {
     public function __construct(
         public ?ApprovalConfiguration $approvalConfiguration = null,

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraMultipleVersionPickerField extends Dto
+final class JiraMultipleVersionPickerField extends Dto
 {
     public function __construct(
         /** @var 'ADD'|'REMOVE'|'REPLACE'|'REMOVE_ALL' */

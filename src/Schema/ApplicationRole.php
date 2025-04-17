@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of an application role. */
-final readonly class ApplicationRole extends Dto
+final class ApplicationRole extends Dto
 {
     public function __construct(
         /**

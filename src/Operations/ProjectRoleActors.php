@@ -96,7 +96,7 @@ trait ProjectRoleActors
         ?string $user = null,
         ?string $group = null,
         ?string $groupId = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/role/{id}',
             method: 'delete',

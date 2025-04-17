@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Contains information about the expression evaluation.
  * This bean will be replacing `JiraExpressionEvaluationMetaDataBean` bean as part of new `evaluate` endpoint
  */
-final readonly class JExpEvaluateMetaDataBean extends Dto
+final class JExpEvaluateMetaDataBean extends Dto
 {
     public function __construct(
         /**

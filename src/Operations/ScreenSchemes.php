@@ -79,7 +79,7 @@ trait ScreenSchemes
     public function updateScreenScheme(
         Schema\UpdateScreenSchemeDetails $request,
         string $screenSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screenscheme/{screenSchemeId}',
             method: 'put',
@@ -104,7 +104,7 @@ trait ScreenSchemes
      */
     public function deleteScreenScheme(
         string $screenSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screenscheme/{screenSchemeId}',
             method: 'delete',

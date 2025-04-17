@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Result of your JQL search.
  * Returns a list of issue IDs and a token to fetch the next page if one exists.
  */
-final readonly class IdSearchResults extends Dto
+final class IdSearchResults extends Dto
 {
     public function __construct(
         /**

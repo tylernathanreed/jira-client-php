@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The payload for creating a scope.
  * Defines if a project is team-managed project or company-managed project
  */
-final readonly class ScopePayload extends Dto
+final class ScopePayload extends Dto
 {
     public function __construct(
         /**

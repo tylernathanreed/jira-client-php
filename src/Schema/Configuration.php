@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about the configuration of Jira. */
-final readonly class Configuration extends Dto
+final class Configuration extends Dto
 {
     public function __construct(
         /** Whether the ability to add attachments to issues is enabled. */

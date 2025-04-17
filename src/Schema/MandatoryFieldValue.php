@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** List of string of inputs */
-final readonly class MandatoryFieldValue extends Dto
+final class MandatoryFieldValue extends Dto
 {
     public function __construct(
         /**

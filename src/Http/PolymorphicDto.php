@@ -4,7 +4,7 @@ namespace Jira\Client\Http;
 
 use Jira\Client\Http\Exceptions\InvalidDiscriminatorException;
 
-abstract readonly class PolymorphicDto extends Dto
+abstract class PolymorphicDto extends Dto
 {
     abstract public static function discriminator(): string;
 

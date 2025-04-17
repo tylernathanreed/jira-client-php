@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class WorklogsMoveRequestBean extends Dto
+final class WorklogsMoveRequestBean extends Dto
 {
     public function __construct(
         /**

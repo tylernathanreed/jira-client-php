@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class PermissionsKeysBean extends Dto
+final class PermissionsKeysBean extends Dto
 {
     public function __construct(
         /**

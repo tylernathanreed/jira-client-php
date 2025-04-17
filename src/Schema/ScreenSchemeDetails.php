@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a screen scheme. */
-final readonly class ScreenSchemeDetails extends Dto
+final class ScreenSchemeDetails extends Dto
 {
     public function __construct(
         /**

@@ -51,7 +51,7 @@ trait Plans
     public function createPlan(
         Schema\CreatePlanRequest $request,
         ?bool $useGroupId = false,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan',
             method: 'post',
@@ -148,7 +148,7 @@ trait Plans
     public function updatePlan(
         int $planId,
         ?bool $useGroupId = false,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}',
             method: 'put',
@@ -170,7 +170,7 @@ trait Plans
      */
     public function archivePlan(
         int $planId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/archive',
             method: 'put',
@@ -192,7 +192,7 @@ trait Plans
     public function duplicatePlan(
         Schema\DuplicatePlanRequest $request,
         int $planId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/duplicate',
             method: 'post',
@@ -214,7 +214,7 @@ trait Plans
      */
     public function trashPlan(
         int $planId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/plans/plan/{planId}/trash',
             method: 'put',

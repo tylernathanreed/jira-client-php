@@ -82,7 +82,7 @@ trait ProjectProperties
     public function setProjectProperty(
         string $projectIdOrKey,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/properties/{propertyKey}',
             method: 'put',
@@ -110,7 +110,7 @@ trait ProjectProperties
     public function deleteProjectProperty(
         string $projectIdOrKey,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/project/{projectIdOrKey}/properties/{propertyKey}',
             method: 'delete',

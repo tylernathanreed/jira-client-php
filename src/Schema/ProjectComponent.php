@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a project component. */
-final readonly class ProjectComponent extends Dto
+final class ProjectComponent extends Dto
 {
     public function __construct(
         /**

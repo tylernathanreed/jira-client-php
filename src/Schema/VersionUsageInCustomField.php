@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** List of custom fields using the version. */
-final readonly class VersionUsageInCustomField extends Dto
+final class VersionUsageInCustomField extends Dto
 {
     public function __construct(
         /** The ID of the custom field. */

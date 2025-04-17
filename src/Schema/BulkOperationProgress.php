@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
-final readonly class BulkOperationProgress extends Dto
+final class BulkOperationProgress extends Dto
 {
     public function __construct(
         /** A timestamp of when the task was submitted. */

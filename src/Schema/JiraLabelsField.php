@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraLabelsField extends Dto
+final class JiraLabelsField extends Dto
 {
     public function __construct(
         /** @var 'ADD'|'REMOVE'|'REPLACE'|'REMOVE_ALL' */

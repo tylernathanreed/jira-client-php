@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a project. */
-final readonly class ProjectDetails extends Dto
+final class ProjectDetails extends Dto
 {
     public function __construct(
         /** The URLs of the project's avatars. */

@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Jql function precomputation. */
-final readonly class JqlFunctionPrecomputationBean extends Dto
+final class JqlFunctionPrecomputationBean extends Dto
 {
     public function __construct(
         /**

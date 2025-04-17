@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The ID of an issue priority. */
-final readonly class PriorityId extends Dto
+final class PriorityId extends Dto
 {
     public function __construct(
         /** The ID of the issue priority. */

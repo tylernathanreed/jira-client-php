@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for creating rules in a workflow */
-final readonly class RulePayload extends Dto
+final class RulePayload extends Dto
 {
     public function __construct(
         /**

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** An icon. */
-final readonly class IconBean extends Dto
+final class IconBean extends Dto
 {
     public function __construct(
         /** The URL of the tooltip, used only for a status icon. */

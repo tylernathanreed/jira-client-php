@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the status being created. */
-final readonly class StatusCreate extends Dto
+final class StatusCreate extends Dto
 {
     public function __construct(
         /** The name of the status. */

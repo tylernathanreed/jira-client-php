@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the contextual configuration for a custom field. */
-final readonly class BulkContextualConfiguration extends Dto
+final class BulkContextualConfiguration extends Dto
 {
     public function __construct(
         /** The ID of the custom field. */

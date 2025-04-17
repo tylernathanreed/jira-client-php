@@ -2,11 +2,11 @@
 
 namespace Reedware\OpenApi\Client\Http;
 
-readonly class Response
+class Response
 {
     public function __construct(
-        public int $status,
-        public ?string $body = null,
+        public readonly int $status,
+        public readonly ?string $body = null,
     ) {
     }
 }

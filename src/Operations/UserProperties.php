@@ -114,7 +114,7 @@ trait UserProperties
         ?string $accountId = null,
         ?string $userKey = null,
         ?string $username = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/user/properties/{propertyKey}',
             method: 'put',
@@ -153,7 +153,7 @@ trait UserProperties
         ?string $accountId = null,
         ?string $userKey = null,
         ?string $username = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/user/properties/{propertyKey}',
             method: 'delete',

@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Details about a project. */
-final readonly class Project extends Dto
+final class Project extends Dto
 {
     public function __construct(
         /** Whether the project is archived. */

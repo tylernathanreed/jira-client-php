@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the users and groups to receive the notification. */
-final readonly class NotificationRecipients extends Dto
+final class NotificationRecipients extends Dto
 {
     public function __construct(
         /** Whether the notification should be sent to the issue's assignees. */

@@ -24,7 +24,7 @@ class Processor
         Response $response,
         int $successCode,
         array|string|bool $schema
-    ): array|Dto|true {
+    ): array|Dto|bool {
         $status = $response->status;
 
         if ($status === 404) {

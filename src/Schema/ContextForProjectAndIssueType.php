@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The project and issue type mapping with a matching custom field context. */
-final readonly class ContextForProjectAndIssueType extends Dto
+final class ContextForProjectAndIssueType extends Dto
 {
     public function __construct(
         /** The ID of the issue type. */

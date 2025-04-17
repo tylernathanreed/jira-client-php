@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Information about the most recent use of a field. */
-final readonly class FieldLastUsed extends Dto
+final class FieldLastUsed extends Dto
 {
     public function __construct(
         /**

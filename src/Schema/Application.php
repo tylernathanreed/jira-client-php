@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The application the linked item is in. */
-final readonly class Application extends Dto
+final class Application extends Dto
 {
     public function __construct(
         /**

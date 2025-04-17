@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for the layout details for the start end of a transition */
-final readonly class FromLayoutPayload extends Dto
+final class FromLayoutPayload extends Dto
 {
     public function __construct(
         /** The port that the transition can be made from */

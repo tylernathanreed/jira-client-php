@@ -237,7 +237,7 @@ trait IssueCustomFieldOptionsApps
     public function deleteIssueFieldOption(
         string $fieldKey,
         int $optionId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldKey}/option/{optionId}',
             method: 'delete',

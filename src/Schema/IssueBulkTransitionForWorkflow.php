@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class IssueBulkTransitionForWorkflow extends Dto
+final class IssueBulkTransitionForWorkflow extends Dto
 {
     public function __construct(
         /** Indicates whether all the transitions of this workflow are available in the transitions list or not. */

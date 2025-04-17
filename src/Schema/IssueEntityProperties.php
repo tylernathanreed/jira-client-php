@@ -10,7 +10,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/
  */
-final readonly class IssueEntityProperties extends Dto
+final class IssueEntityProperties extends Dto
 {
     public function __construct(
         /**

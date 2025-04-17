@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The payload for creating a notification scheme event.
  * Defines which notifications should be sent for a specific event
  */
-final readonly class NotificationSchemeEventPayload extends Dto
+final class NotificationSchemeEventPayload extends Dto
 {
     public function __construct(
         public ?NotificationSchemeEventIDPayload $event = null,

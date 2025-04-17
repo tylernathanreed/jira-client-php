@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class ServiceRegistryTier extends Dto
+final class ServiceRegistryTier extends Dto
 {
     public function __construct(
         /** tier description */

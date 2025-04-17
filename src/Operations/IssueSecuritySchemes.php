@@ -92,7 +92,7 @@ trait IssueSecuritySchemes
      */
     public function setDefaultLevels(
         Schema\SetDefaultLevelsRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuesecurityschemes/level/default',
             method: 'put',
@@ -270,7 +270,7 @@ trait IssueSecuritySchemes
     public function updateIssueSecurityScheme(
         Schema\UpdateIssueSecuritySchemeRequestBean $request,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuesecurityschemes/{id}',
             method: 'put',
@@ -292,7 +292,7 @@ trait IssueSecuritySchemes
      */
     public function deleteSecurityScheme(
         string $schemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuesecurityschemes/{schemeId}',
             method: 'delete',
@@ -315,7 +315,7 @@ trait IssueSecuritySchemes
     public function addSecurityLevel(
         Schema\AddSecuritySchemeLevelsRequestBean $request,
         string $schemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuesecurityschemes/{schemeId}/level',
             method: 'put',
@@ -340,7 +340,7 @@ trait IssueSecuritySchemes
         Schema\UpdateIssueSecurityLevelDetails $request,
         string $schemeId,
         string $levelId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuesecurityschemes/{schemeId}/level/{levelId}',
             method: 'put',
@@ -395,7 +395,7 @@ trait IssueSecuritySchemes
         Schema\SecuritySchemeMembersRequest $request,
         string $schemeId,
         string $levelId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuesecurityschemes/{schemeId}/level/{levelId}/member',
             method: 'put',
@@ -421,7 +421,7 @@ trait IssueSecuritySchemes
         string $schemeId,
         string $levelId,
         string $memberId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuesecurityschemes/{schemeId}/level/{levelId}/member/{memberId}',
             method: 'delete',

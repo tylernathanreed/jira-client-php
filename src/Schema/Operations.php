@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the operations that can be performed on the issue. */
-final readonly class Operations extends Dto
+final class Operations extends Dto
 {
     public function __construct(
         /**

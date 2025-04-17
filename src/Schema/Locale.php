@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a locale. */
-final readonly class Locale extends Dto
+final class Locale extends Dto
 {
     public function __construct(
         /**

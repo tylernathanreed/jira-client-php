@@ -35,7 +35,7 @@ trait TimeTracking
      */
     public function selectTimeTrackingImplementation(
         Schema\TimeTrackingProvider $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/configuration/timetracking',
             method: 'put',

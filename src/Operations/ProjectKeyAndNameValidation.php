@@ -36,7 +36,7 @@ trait ProjectKeyAndNameValidation
      */
     public function getValidProjectKey(
         ?string $key = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/projectvalidate/validProjectKey',
             method: 'get',
@@ -58,7 +58,7 @@ trait ProjectKeyAndNameValidation
      */
     public function getValidProjectName(
         string $name,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/projectvalidate/validProjectName',
             method: 'get',

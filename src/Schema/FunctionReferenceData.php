@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of functions that can be used in advanced searches. */
-final readonly class FunctionReferenceData extends Dto
+final class FunctionReferenceData extends Dto
 {
     public function __construct(
         /** The display name of the function. */

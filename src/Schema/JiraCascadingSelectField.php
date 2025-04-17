@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraCascadingSelectField extends Dto
+final class JiraCascadingSelectField extends Dto
 {
     public function __construct(
         public string $fieldId,

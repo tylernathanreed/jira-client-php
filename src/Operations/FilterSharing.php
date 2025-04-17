@@ -145,7 +145,7 @@ trait FilterSharing
     public function deleteSharePermission(
         int $id,
         int $permissionId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/filter/{id}/permission/{permissionId}',
             method: 'delete',

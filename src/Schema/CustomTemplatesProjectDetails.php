@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Project Details */
-final readonly class CustomTemplatesProjectDetails extends Dto
+final class CustomTemplatesProjectDetails extends Dto
 {
     public function __construct(
         /**

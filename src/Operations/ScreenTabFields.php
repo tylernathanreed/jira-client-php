@@ -80,7 +80,7 @@ trait ScreenTabFields
         int $screenId,
         int $tabId,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screens/{screenId}/tabs/{tabId}/fields/{id}',
             method: 'delete',
@@ -108,7 +108,7 @@ trait ScreenTabFields
         int $screenId,
         int $tabId,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/screens/{screenId}/tabs/{tabId}/fields/{id}/move',
             method: 'post',

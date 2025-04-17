@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Issue Bulk Delete Payload */
-final readonly class IssueBulkDeletePayload extends Dto
+final class IssueBulkDeletePayload extends Dto
 {
     public function __construct(
         /**

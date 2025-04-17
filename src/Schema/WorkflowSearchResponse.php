@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Page of items, including workflows and related statuses. */
-final readonly class WorkflowSearchResponse extends Dto
+final class WorkflowSearchResponse extends Dto
 {
     public function __construct(
         /** Whether this is the last page. */

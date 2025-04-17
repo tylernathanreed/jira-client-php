@@ -5,10 +5,10 @@ namespace Reedware\OpenApi\Client\Http\Attributes;
 use Attribute;
 
 #[Attribute(Attribute::TARGET_PROPERTY)]
-final readonly class MapName
+final class MapName
 {
     public function __construct(
-        public string $name,
+        public readonly string $name,
     ) {
     }
 }

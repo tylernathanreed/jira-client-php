@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload to create a permission scheme */
-final readonly class PermissionPayloadDTO extends Dto
+final class PermissionPayloadDTO extends Dto
 {
     public function __construct(
         /**

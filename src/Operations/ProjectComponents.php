@@ -135,7 +135,7 @@ trait ProjectComponents
     public function deleteComponent(
         string $id,
         ?string $moveIssuesTo = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/component/{id}',
             method: 'delete',

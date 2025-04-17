@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class AddFieldBean extends Dto
+final class AddFieldBean extends Dto
 {
     public function __construct(
         /** The ID of the field to add. */

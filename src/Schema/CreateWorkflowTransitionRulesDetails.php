@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The details of a workflow transition rules. */
-final readonly class CreateWorkflowTransitionRulesDetails extends Dto
+final class CreateWorkflowTransitionRulesDetails extends Dto
 {
     public function __construct(
         /** The workflow conditions. */

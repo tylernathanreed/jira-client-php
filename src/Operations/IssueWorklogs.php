@@ -147,7 +147,7 @@ trait IssueWorklogs
         string $issueIdOrKey,
         ?string $adjustEstimate = 'auto',
         ?bool $overrideEditableFlag = false,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/worklog',
             method: 'delete',
@@ -199,7 +199,7 @@ trait IssueWorklogs
         string $issueIdOrKey,
         ?string $adjustEstimate = 'auto',
         ?bool $overrideEditableFlag = false,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/worklog/move',
             method: 'post',
@@ -356,7 +356,7 @@ trait IssueWorklogs
         ?string $newEstimate = null,
         ?string $increaseBy = null,
         ?bool $overrideEditableFlag = false,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issue/{issueIdOrKey}/worklog/{id}',
             method: 'delete',

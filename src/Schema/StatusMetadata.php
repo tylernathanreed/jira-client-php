@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The details of the statuses in the associated workflows. */
-final readonly class StatusMetadata extends Dto
+final class StatusMetadata extends Dto
 {
     public function __construct(
         /**

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of updates for a custom field. */
-final readonly class CustomFieldValueUpdateDetails extends Dto
+final class CustomFieldValueUpdateDetails extends Dto
 {
     public function __construct(
         /**

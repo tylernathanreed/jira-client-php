@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of a notification scheme event. */
-final readonly class NotificationSchemeEventDetails extends Dto
+final class NotificationSchemeEventDetails extends Dto
 {
     public function __construct(
         /** The ID of the event. */

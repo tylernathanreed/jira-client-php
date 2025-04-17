@@ -148,7 +148,7 @@ trait IssueNotificationSchemes
     public function updateNotificationScheme(
         Schema\UpdateNotificationSchemeDetails $request,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/notificationscheme/{id}',
             method: 'put',
@@ -176,7 +176,7 @@ trait IssueNotificationSchemes
     public function addNotifications(
         Schema\AddNotificationsDetails $request,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/notificationscheme/{id}/notification',
             method: 'put',
@@ -198,7 +198,7 @@ trait IssueNotificationSchemes
      */
     public function deleteNotificationScheme(
         string $notificationSchemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/notificationscheme/{notificationSchemeId}',
             method: 'delete',
@@ -221,7 +221,7 @@ trait IssueNotificationSchemes
     public function removeNotificationFromNotificationScheme(
         string $notificationSchemeId,
         string $notificationId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/notificationscheme/{notificationSchemeId}/notification/{notificationId}',
             method: 'delete',

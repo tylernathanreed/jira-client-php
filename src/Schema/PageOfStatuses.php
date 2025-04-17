@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class PageOfStatuses extends Dto
+final class PageOfStatuses extends Dto
 {
     public function __construct(
         /** Whether this is the last page. */

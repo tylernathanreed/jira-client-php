@@ -6,7 +6,7 @@ use DummyNamespace\Http\DummyParent;
 // DummyIncludes
 
 // DummyDoc
-final readonly class DummyClass extends DummyParent
+final class DummyClass extends DummyParent
 {
     public function __construct(
 {{ DummyProperties }}

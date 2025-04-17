@@ -249,7 +249,7 @@ trait Dashboards
         Schema\DashboardGadgetUpdateRequest $request,
         int $dashboardId,
         int $gadgetId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/dashboard/{dashboardId}/gadget/{gadgetId}',
             method: 'put',
@@ -273,7 +273,7 @@ trait Dashboards
     public function removeGadget(
         int $dashboardId,
         int $gadgetId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/dashboard/{dashboardId}/gadget/{gadgetId}',
             method: 'delete',
@@ -392,7 +392,7 @@ trait Dashboards
         string $dashboardId,
         string $itemId,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/dashboard/{dashboardId}/items/{itemId}/properties/{propertyKey}',
             method: 'put',
@@ -420,7 +420,7 @@ trait Dashboards
         string $dashboardId,
         string $itemId,
         string $propertyKey,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/dashboard/{dashboardId}/items/{itemId}/properties/{propertyKey}',
             method: 'delete',
@@ -496,7 +496,7 @@ trait Dashboards
      */
     public function deleteDashboard(
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/dashboard/{id}',
             method: 'delete',

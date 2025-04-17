@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for custom swimlanes */
-final readonly class SwimlanePayload extends Dto
+final class SwimlanePayload extends Dto
 {
     public function __construct(
         /** The description of the quick filter */

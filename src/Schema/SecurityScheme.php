@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details about a security scheme. */
-final readonly class SecurityScheme extends Dto
+final class SecurityScheme extends Dto
 {
     public function __construct(
         /** The ID of the default security level. */

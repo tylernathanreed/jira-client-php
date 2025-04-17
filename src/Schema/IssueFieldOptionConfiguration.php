@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the projects the option is available in. */
-final readonly class IssueFieldOptionConfiguration extends Dto
+final class IssueFieldOptionConfiguration extends Dto
 {
     public function __construct(
         /**

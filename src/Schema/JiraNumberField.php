@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraNumberField extends Dto
+final class JiraNumberField extends Dto
 {
     public function __construct(
         public string $fieldId,

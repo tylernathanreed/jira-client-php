@@ -187,7 +187,7 @@ trait IssueCustomFieldContexts
     public function setDefaultValues(
         Schema\CustomFieldContextDefaultValueUpdate $request,
         string $fieldId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/defaultValue',
             method: 'put',
@@ -313,7 +313,7 @@ trait IssueCustomFieldContexts
         Schema\CustomFieldContextUpdateDetails $request,
         string $fieldId,
         int $contextId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}',
             method: 'put',
@@ -338,7 +338,7 @@ trait IssueCustomFieldContexts
     public function deleteCustomFieldContext(
         string $fieldId,
         int $contextId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}',
             method: 'delete',
@@ -367,7 +367,7 @@ trait IssueCustomFieldContexts
         Schema\IssueTypeIds $request,
         string $fieldId,
         int $contextId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}/issuetype',
             method: 'put',
@@ -394,7 +394,7 @@ trait IssueCustomFieldContexts
         Schema\IssueTypeIds $request,
         string $fieldId,
         int $contextId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}/issuetype/remove',
             method: 'post',
@@ -421,7 +421,7 @@ trait IssueCustomFieldContexts
         Schema\ProjectIds $request,
         string $fieldId,
         int $contextId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}/project',
             method: 'put',
@@ -451,7 +451,7 @@ trait IssueCustomFieldContexts
         Schema\ProjectIds $request,
         string $fieldId,
         int $contextId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/field/{fieldId}/context/{contextId}/project/remove',
             method: 'post',

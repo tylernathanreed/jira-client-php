@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Details of a worklog. */
-final readonly class Worklog extends Dto
+final class Worklog extends Dto
 {
     public function __construct(
         /** Details of the user who created the worklog. */

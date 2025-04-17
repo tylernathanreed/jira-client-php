@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the custom field options for a context. */
-final readonly class CustomFieldContextOption extends Dto
+final class CustomFieldContextOption extends Dto
 {
     public function __construct(
         /** Whether the option is disabled. */

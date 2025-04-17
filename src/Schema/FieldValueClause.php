@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * A clause that asserts the current value of a field.
  * For example, `summary ~ test`.
  */
-final readonly class FieldValueClause extends Dto
+final class FieldValueClause extends Dto
 {
     public function __construct(
         public JqlQueryField $field,

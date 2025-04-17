@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class MoveFieldBean extends Dto
+final class MoveFieldBean extends Dto
 {
     public function __construct(
         /**

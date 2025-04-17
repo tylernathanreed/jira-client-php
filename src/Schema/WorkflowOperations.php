@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Operations allowed on a workflow */
-final readonly class WorkflowOperations extends Dto
+final class WorkflowOperations extends Dto
 {
     public function __construct(
         /** Whether the workflow can be deleted. */

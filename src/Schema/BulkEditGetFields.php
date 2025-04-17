@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Bulk Edit Get Fields Response. */
-final readonly class BulkEditGetFields extends Dto
+final class BulkEditGetFields extends Dto
 {
     public function __construct(
         /** The end cursor for use in pagination. */

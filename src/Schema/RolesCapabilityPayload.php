@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class RolesCapabilityPayload extends Dto
+final class RolesCapabilityPayload extends Dto
 {
     public function __construct(
         /**

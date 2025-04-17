@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Jira instance health check results.
  * Deprecated and no longer returned.
  */
-final readonly class HealthCheckResult extends Dto
+final class HealthCheckResult extends Dto
 {
     public function __construct(
         /** The description of the Jira health check item. */

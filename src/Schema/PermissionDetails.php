@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details for permissions of shareable entities */
-final readonly class PermissionDetails extends Dto
+final class PermissionDetails extends Dto
 {
     public function __construct(
         /**

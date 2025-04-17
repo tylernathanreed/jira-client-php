@@ -11,7 +11,7 @@ use Jira\Client\Http\Dto;
  * For example, "A OR B AND C" is parsed as "(A OR B) AND C".
  * See Setting the precedence of operators for more information about precedence in JQL queries.`
  */
-final readonly class CompoundClause extends Dto
+final class CompoundClause extends Dto
 {
     public function __construct(
         /**

@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraRichTextInput extends Dto
+final class JiraRichTextInput extends Dto
 {
     public function __construct(
         /** @var array<string,mixed> */

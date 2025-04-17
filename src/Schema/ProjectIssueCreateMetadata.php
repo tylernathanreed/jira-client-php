@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the issue creation metadata for a project. */
-final readonly class ProjectIssueCreateMetadata extends Dto
+final class ProjectIssueCreateMetadata extends Dto
 {
     public function __construct(
         /** List of the project's avatars, returning the avatar size and associated URL. */

@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Details about an attachment. */
-final readonly class Attachment extends Dto
+final class Attachment extends Dto
 {
     public function __construct(
         /** Details of the user who added the attachment. */

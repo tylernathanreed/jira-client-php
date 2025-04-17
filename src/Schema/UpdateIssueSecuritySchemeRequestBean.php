@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class UpdateIssueSecuritySchemeRequestBean extends Dto
+final class UpdateIssueSecuritySchemeRequestBean extends Dto
 {
     public function __construct(
         /** The description of the security scheme scheme. */

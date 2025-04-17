@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The new default issue priority. */
-final readonly class SetDefaultPriorityRequest extends Dto
+final class SetDefaultPriorityRequest extends Dto
 {
     public function __construct(
         /**

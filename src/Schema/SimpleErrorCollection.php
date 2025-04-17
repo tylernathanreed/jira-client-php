@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class SimpleErrorCollection extends Dto
+final class SimpleErrorCollection extends Dto
 {
     public function __construct(
         /**

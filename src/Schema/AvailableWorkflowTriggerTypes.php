@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The list of available trigger types. */
-final readonly class AvailableWorkflowTriggerTypes extends Dto
+final class AvailableWorkflowTriggerTypes extends Dto
 {
     public function __construct(
         /** The description of the trigger rule. */

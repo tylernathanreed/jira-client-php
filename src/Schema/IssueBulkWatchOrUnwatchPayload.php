@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Issue Bulk Watch Or Unwatch Payload */
-final readonly class IssueBulkWatchOrUnwatchPayload extends Dto
+final class IssueBulkWatchOrUnwatchPayload extends Dto
 {
     public function __construct(
         /**

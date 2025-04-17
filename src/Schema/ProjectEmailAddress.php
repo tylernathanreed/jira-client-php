@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A project's sender email address. */
-final readonly class ProjectEmailAddress extends Dto
+final class ProjectEmailAddress extends Dto
 {
     public function __construct(
         /** The email address. */

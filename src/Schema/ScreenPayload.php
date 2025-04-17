@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Defines the payload for the field screens.
  * See https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-screens/\#api-rest-api-3-screens-post
  */
-final readonly class ScreenPayload extends Dto
+final class ScreenPayload extends Dto
 {
     public function __construct(
         /**

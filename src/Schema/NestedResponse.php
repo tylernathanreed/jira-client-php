@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class NestedResponse extends Dto
+final class NestedResponse extends Dto
 {
     public function __construct(
         public ?ErrorCollection $errorCollection = null,

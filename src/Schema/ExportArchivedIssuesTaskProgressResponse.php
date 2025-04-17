@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** The response for status request for a running/completed export task. */
-final readonly class ExportArchivedIssuesTaskProgressResponse extends Dto
+final class ExportArchivedIssuesTaskProgressResponse extends Dto
 {
     public function __construct(
         public ?string $fileUrl = null,

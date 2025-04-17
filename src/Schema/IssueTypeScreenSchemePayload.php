@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * Defines the payload for the issue type screen schemes.
  * See https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-type-screen-schemes/\#api-rest-api-3-issuetypescreenscheme-post
  */
-final readonly class IssueTypeScreenSchemePayload extends Dto
+final class IssueTypeScreenSchemePayload extends Dto
 {
     public function __construct(
         public ?ProjectCreateResourceIdentifier $defaultScreenScheme = null,

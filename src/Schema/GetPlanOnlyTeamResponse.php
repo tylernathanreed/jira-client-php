@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class GetPlanOnlyTeamResponse extends Dto
+final class GetPlanOnlyTeamResponse extends Dto
 {
     public function __construct(
         /** The plan-only team ID. */

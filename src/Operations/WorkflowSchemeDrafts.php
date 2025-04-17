@@ -96,7 +96,7 @@ trait WorkflowSchemeDrafts
      */
     public function deleteWorkflowSchemeDraft(
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflowscheme/{id}/draft',
             method: 'delete',
@@ -264,7 +264,7 @@ trait WorkflowSchemeDrafts
         Schema\PublishDraftWorkflowScheme $request,
         int $id,
         ?bool $validateOnly = false,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflowscheme/{id}/draft/publish',
             method: 'post',
@@ -342,7 +342,7 @@ trait WorkflowSchemeDrafts
     public function deleteDraftWorkflowMapping(
         int $id,
         string $workflowName,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflowscheme/{id}/draft/workflow',
             method: 'delete',

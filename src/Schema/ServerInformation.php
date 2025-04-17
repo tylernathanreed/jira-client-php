@@ -6,7 +6,7 @@ use DateTimeImmutable;
 use Jira\Client\Http\Dto;
 
 /** Details about the Jira instance. */
-final readonly class ServerInformation extends Dto
+final class ServerInformation extends Dto
 {
     public function __construct(
         /** The base URL of the Jira instance. */

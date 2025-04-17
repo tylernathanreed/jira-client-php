@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The hierarchy of issue types within a project. */
-final readonly class ProjectIssueTypeHierarchy extends Dto
+final class ProjectIssueTypeHierarchy extends Dto
 {
     public function __construct(
         /**

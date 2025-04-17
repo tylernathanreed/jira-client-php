@@ -9,7 +9,7 @@ use Jira\Client\Http\Dto;
  * It is optional for CMP projects, as a default role actor will be provided.
  * TMP will add new role actors to the table.
  */
-final readonly class RolePayload extends Dto
+final class RolePayload extends Dto
 {
     public function __construct(
         /**

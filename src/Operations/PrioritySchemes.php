@@ -150,7 +150,7 @@ trait PrioritySchemes
      */
     public function deletePriorityScheme(
         int $schemeId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/priorityscheme/{schemeId}',
             method: 'delete',

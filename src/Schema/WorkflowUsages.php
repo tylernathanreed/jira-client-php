@@ -13,7 +13,7 @@ use Jira\Client\Http\Dto;
  * 
  * @link https://developer.atlassian.com/cloud/jira/platform/changelog/#CHANGE-2298
  */
-final readonly class WorkflowUsages extends Dto
+final class WorkflowUsages extends Dto
 {
     public function __construct(
         /** Workflow ID. */

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The linked item. */
-final readonly class RemoteObject extends Dto
+final class RemoteObject extends Dto
 {
     public function __construct(
         /** The title of the item. */

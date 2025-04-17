@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class GetTeamResponseForPage extends Dto
+final class GetTeamResponseForPage extends Dto
 {
     public function __construct(
         /** The team ID. */

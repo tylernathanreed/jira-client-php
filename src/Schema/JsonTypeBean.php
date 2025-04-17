@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The schema of a field. */
-final readonly class JsonTypeBean extends Dto
+final class JsonTypeBean extends Dto
 {
     public function __construct(
         /** The data type of the field. */

@@ -148,7 +148,7 @@ trait IssueTypes
     public function deleteIssueType(
         string $id,
         ?string $alternativeIssueTypeId = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/issuetype/{id}',
             method: 'delete',

@@ -94,7 +94,7 @@ trait WorkflowSchemes
      */
     public function updateSchemes(
         Schema\WorkflowSchemeUpdateRequest $request,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflowscheme/update',
             method: 'post',
@@ -196,7 +196,7 @@ trait WorkflowSchemes
      */
     public function deleteWorkflowScheme(
         int $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflowscheme/{id}',
             method: 'delete',
@@ -457,7 +457,7 @@ trait WorkflowSchemes
         int $id,
         string $workflowName,
         ?bool $updateDraftIfNeeded = false,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflowscheme/{id}/workflow',
             method: 'delete',

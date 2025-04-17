@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for customising a swimlanes on a board */
-final readonly class SwimlanesPayload extends Dto
+final class SwimlanesPayload extends Dto
 {
     public function __construct(
         /**

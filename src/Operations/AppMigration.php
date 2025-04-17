@@ -19,7 +19,7 @@ trait AppMigration
     public function updateIssueFields(
         Schema\ConnectCustomFieldValues $request,
         string $atlassianTransferId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/atlassian-connect/1/migration/field',
             method: 'put',
@@ -41,7 +41,7 @@ trait AppMigration
     public function updateEntityPropertiesValue(
         string $atlassianTransferId,
         string $entityType,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/atlassian-connect/1/migration/properties/{entityType}',
             method: 'put',

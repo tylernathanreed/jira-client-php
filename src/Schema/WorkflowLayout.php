@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The starting point for the statuses in the workflow. */
-final readonly class WorkflowLayout extends Dto
+final class WorkflowLayout extends Dto
 {
     public function __construct(
         /** The x axis location. */

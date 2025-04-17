@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraSelectedOptionField extends Dto
+final class JiraSelectedOptionField extends Dto
 {
     public function __construct(
         public ?int $optionId = null,

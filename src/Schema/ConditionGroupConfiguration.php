@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The conditions group associated with the transition. */
-final readonly class ConditionGroupConfiguration extends Dto
+final class ConditionGroupConfiguration extends Dto
 {
     public function __construct(
         /**

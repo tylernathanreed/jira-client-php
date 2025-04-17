@@ -904,7 +904,7 @@ trait Workflows
      */
     public function deleteInactiveWorkflow(
         string $entityId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/workflow/{entityId}',
             method: 'delete',

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A rule configuration. */
-final readonly class RuleConfiguration extends Dto
+final class RuleConfiguration extends Dto
 {
     public function __construct(
         /** Configuration of the rule, as it is stored by the Connect or the Forge app on the rule configuration page. */

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for creating an issue type hierarchy */
-final readonly class IssueTypeHierarchyPayload extends Dto
+final class IssueTypeHierarchyPayload extends Dto
 {
     public function __construct(
         /**

@@ -4,7 +4,7 @@ namespace Reedware\OpenApi\Client\Http;
 
 use Reedware\OpenApi\Client\Http\Exceptions\InvalidDiscriminatorException;
 
-abstract readonly class PolymorphicDto extends Dto
+abstract class PolymorphicDto extends Dto
 {
     abstract public static function discriminator(): string;
 

@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Details of the scope of the default sharing for new filters and dashboards. */
-final readonly class DefaultShareScope extends Dto
+final class DefaultShareScope extends Dto
 {
     public function __construct(
         /**

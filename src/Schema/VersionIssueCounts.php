@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Various counts of issues within a version. */
-final readonly class VersionIssueCounts extends Dto
+final class VersionIssueCounts extends Dto
 {
     public function __construct(
         /**

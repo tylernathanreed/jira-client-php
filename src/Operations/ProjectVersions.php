@@ -199,7 +199,7 @@ trait ProjectVersions
         string $id,
         ?string $moveFixIssuesTo = null,
         ?string $moveAffectedIssuesTo = null,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/version/{id}',
             method: 'delete',
@@ -230,7 +230,7 @@ trait ProjectVersions
     public function mergeVersions(
         string $id,
         string $moveIssuesTo,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/version/{id}/mergeto/{moveIssuesTo}',
             method: 'put',
@@ -387,7 +387,7 @@ trait ProjectVersions
     public function deleteAndReplaceVersion(
         Schema\DeleteAndReplaceVersionBean $request,
         string $id,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/version/{id}/removeAndSwap',
             method: 'post',
@@ -434,7 +434,7 @@ trait ProjectVersions
     public function deleteRelatedWork(
         string $versionId,
         string $relatedWorkId,
-    ): true {
+    ): bool {
         return $this->call(
             uri: '/rest/api/3/version/{versionId}/relatedwork/{relatedWorkId}',
             method: 'delete',

@@ -11,7 +11,7 @@ use Jira\Client\Http\Dto;
  *  - for a status icon, no status icon displays in Jira
  *  - for the remote object icon, the default link icon displays in Jira.
  */
-final readonly class Icon extends Dto
+final class Icon extends Dto
 {
     public function __construct(
         /**

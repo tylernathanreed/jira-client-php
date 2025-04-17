@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class JiraColorField extends Dto
+final class JiraColorField extends Dto
 {
     public function __construct(
         public JiraColorInput $color,

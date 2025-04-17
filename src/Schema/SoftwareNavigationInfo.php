@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class SoftwareNavigationInfo extends Dto
+final class SoftwareNavigationInfo extends Dto
 {
     public function __construct(
         public ?int $boardId = null,

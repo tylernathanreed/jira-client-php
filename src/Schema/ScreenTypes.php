@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The IDs of the screens for the screen types of the screen scheme. */
-final readonly class ScreenTypes extends Dto
+final class ScreenTypes extends Dto
 {
     public function __construct(
         /**

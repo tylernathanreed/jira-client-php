@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** A workflow transition rule. */
-final readonly class ConnectWorkflowTransitionRule extends Dto
+final class ConnectWorkflowTransitionRule extends Dto
 {
     public function __construct(
         public RuleConfiguration $configuration,

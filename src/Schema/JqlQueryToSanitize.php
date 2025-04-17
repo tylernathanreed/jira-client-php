@@ -8,7 +8,7 @@ use Jira\Client\Http\Dto;
  * The JQL query to sanitize for the account ID.
  * If the account ID is null, sanitizing is performed for an anonymous user.
  */
-final readonly class JqlQueryToSanitize extends Dto
+final class JqlQueryToSanitize extends Dto
 {
     public function __construct(
         /** The query to sanitize. */

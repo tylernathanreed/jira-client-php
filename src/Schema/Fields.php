@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** Key fields from the linked issue. */
-final readonly class Fields extends Dto
+final class Fields extends Dto
 {
     public function __construct(
         /** The assignee of the linked issue. */

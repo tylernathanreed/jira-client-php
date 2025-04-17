@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The details about a workflow validation error. */
-final readonly class WorkflowValidationError extends Dto
+final class WorkflowValidationError extends Dto
 {
     public function __construct(
         /** An error code. */

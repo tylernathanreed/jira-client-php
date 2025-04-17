@@ -5,7 +5,7 @@ namespace Jira\Client\Schema;
 use Jira\Client\Http\Dto;
 
 /** The payload for creating a project */
-final readonly class ProjectPayload extends Dto
+final class ProjectPayload extends Dto
 {
     public function __construct(
         public ?ProjectCreateResourceIdentifier $fieldLayoutSchemeId = null,

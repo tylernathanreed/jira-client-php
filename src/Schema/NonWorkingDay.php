@@ -4,7 +4,7 @@ namespace Jira\Client\Schema;
 
 use Jira\Client\Http\Dto;
 
-final readonly class NonWorkingDay extends Dto
+final class NonWorkingDay extends Dto
 {
     public function __construct(
         public ?int $id = null,
