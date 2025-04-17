@@ -29,7 +29,7 @@ jobs:
           - php: 8.4
             guzzle: ^7.5
 
-    name: PHP ${{ matrix.php }}
+    name: PHP ${{ matrix.php }} - ${{ matrix.guzzle == false && 'cURL' || matrix.guzzle }}
 
     steps:
       - name: Checkout code
