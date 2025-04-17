@@ -25,6 +25,7 @@ abstract class Transporter implements TransporterContract
         );
     }
 
+    /** @return non-empty-string */
     protected function getUri(PendingOperation $operation, Configuration $config): string
     {
         $host = trim($config->host, '/');
@@ -60,6 +61,7 @@ abstract class Transporter implements TransporterContract
         return $headers;
     }
 
+    /** @return non-empty-string|null */
     protected function getBody(PendingOperation $operation, Configuration $config): ?string
     {
         if (empty($operation->body)) {
@@ -72,7 +74,7 @@ abstract class Transporter implements TransporterContract
             throw new InvalidArgumentException('Unable to encode json: ' . json_last_error_msg());
         }
 
-        assert(is_string($json));
+        assert(is_string($json) && ! empty($json));
 
         return $json;
     }
