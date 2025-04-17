@@ -51,7 +51,7 @@ jobs:
           command: composer update --prefer-stable --prefer-dist --no-interaction --no-progress
 
       - name: Remove Guzzle
-        run: composer remove php-coveralls/php-coveralls
+        run: composer remove php-coveralls/php-coveralls --dev
 
       - name: Install Guzzle
         if: ${{ matrix.guzzle != null }}
