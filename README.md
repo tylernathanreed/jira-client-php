@@ -40,7 +40,8 @@ The [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/re
 
 The [Jira Software Cloud REST API](https://developer.atlassian.com/cloud/jira/software/rest) acts as an extension to the core API, allowing you to interact with **software Jira features** that are only **available in Jira Software Projects**. Some key features include: managing boards, sprints, backlogs, epics, and more.
 
-This package does not yet support the Jira Software Cloud REST API, and recommends [lesstif/jira-cloud-restapi](https://github.com/lesstif/php-JiraCloud-RESTAPI) if you need these specific features. Note that `lesstif/jira-cloud-restapi` does not support the Jira Cloud REST API (only the Jira Software Cloud REST API), but you may use both that package and this one without conflicts.
+> [!IMPORTANT]
+> This package does not yet support the Jira Software Cloud REST API, and recommends [lesstif/jira-cloud-restapi](https://github.com/lesstif/php-JiraCloud-RESTAPI) if you need these specific features. Note that `lesstif/jira-cloud-restapi` does not support the Jira Cloud REST API (only the Jira Software Cloud REST API), but you may use both that package and this one without conflicts.
 
 ## Installation
 <a name="installation"></a>
