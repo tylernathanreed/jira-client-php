@@ -10,8 +10,6 @@
 <a href="https://coveralls.io/github/tylernathanreed/jira-client-php?branch=master"><img src="https://coveralls.io/repos/github/tylernathanreed/jira-client-php/badge.svg?branch=master" alt="Code Coverage"></a>
 </p>
 
-This package provides an HTTP Client to interact with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest).
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -27,9 +25,7 @@ This package provides an HTTP Client to interact with the [Jira Cloud REST API](
 
 ## Introduction
 
-This package makes working with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest) simple and reliable, by providing a lightweight, well-tested PHP client generated from the official OpenAPI spec and designed for a seamless developer experience.
-
-There are other solutions that offer a client for the Jira Cloud REST API, but I found them to be incomplete or lacking of a strong testing foundation. This client is generated from the official [OpenAPI Specification of the Jira Cloud REST API](https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json), which means that all operations are supported. Additionally, the code generator is custom built to include tests to ensure that the examples provided by the OpenAPI specification actually work.
+This package provides a simple and reliable HTTP Client to interact with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest). The Client is generated from the official [OpenAPI Specification of the Jira Cloud REST API](https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json) and is designed for a seamless developer experience.
 
 ### 1. Jira Cloud vs Jira Software Cloud
 <a name="jira-cloud-vs-jira-software-cloud"></a>
