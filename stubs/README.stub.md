@@ -48,7 +48,7 @@ When [Guzzle](https://github.com/guzzle/guzzle) is not installed, [cURL](https:/
 
 ## Configuration
 
-The Jira Client must be constructed with a Configuration instance.
+The `Jira\Client\Client` instance must be constructed with a `Jira\Client\Configuration` instance.
 
 ### Authentication
 
@@ -89,7 +89,7 @@ $client = new Client(new Configuration(
 
 ### Laravel
 
-If you are using Laravel, you can bind the `Configuration` instance to the container in your `AppServiceProvider`:
+If you are using [Laravel](https://laravel.com/), you can bind the `Configuration` instance to the container in your `AppServiceProvider`:
 
 ```php
 use Illuminate\Support\ServiceProvider;
