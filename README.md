@@ -1,12 +1,12 @@
-![Logo](/img/logo.png)
-
-# Jira Client for Cloud REST API
+<p align="center">
+<img src="/img/logo.png" alt="Logo Jira Cloud REST API Client">
 
 [![PHP](https://img.shields.io/badge/PHP-8.1+-blue)](https://www.php.net/)
 [![Tests](https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml)
 [![Lint](https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml)
 [![Static Analysis](https://github.com/tylernathanreed/jira-client-php/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/static-analysis.yml)
 [![Code Coverage](https://coveralls.io/repos/github/tylernathanreed/jira-client-php/badge.svg?branch=master)](https://coveralls.io/github/tylernathanreed/jira-client-php?branch=master)
+</p>
 
 This package provides an HTTP Client to interact with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest).
 
