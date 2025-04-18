@@ -10,25 +10,11 @@
 <a href="https://coveralls.io/github/tylernathanreed/jira-client-php?branch=master"><img src="https://coveralls.io/repos/github/tylernathanreed/jira-client-php/badge.svg?branch=master" alt="Code Coverage"></a>
 </p>
 
-## Table of Contents
-
-- [Introduction](#introduction)
-  - [1. Jira Cloud vs Jira Software Cloud](#jira-cloud-vs-jira-software-cloud)
-- [Installation](#installation)
-  - [1. Requirements](#requirements)
-- [Configuration](#configuration)
-  - [1. Authentication](#authentication)
-  - [2. Laravel](#laravel)
-- [Usage](#usage)
-  - [1. Operations](#operations)
-  - [2. Schema](#schema)
-
 ## Introduction
 
 This package provides a simple and reliable HTTP Client to interact with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest). The Client is generated from the official [OpenAPI Specification of the Jira Cloud REST API](https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json) and is designed for a seamless developer experience.
 
-### 1. Jira Cloud vs Jira Software Cloud
-<a name="jira-cloud-vs-jira-software-cloud"></a>
+### Jira Cloud vs Jira Software Cloud
 
 The [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest) and [Jira Software Cloud REST API](https://developer.atlassian.com/cloud/jira/software/rest) are closely related, but they serve different scopes within the Atlassian ecosystem.
 
@@ -44,7 +30,6 @@ The [Jira Software Cloud REST API](https://developer.atlassian.com/cloud/jira/so
 > This package does not yet support the Jira Software Cloud REST API, and recommends [lesstif/jira-cloud-restapi](https://github.com/lesstif/php-JiraCloud-RESTAPI) if you need these specific features. Note that `lesstif/jira-cloud-restapi` does not support the Jira Cloud REST API (only the Jira Software Cloud REST API), but you may use both that package and this one without conflicts.
 
 ## Installation
-<a name="installation"></a>
 
 Install this package using [Composer](https://getcomposer.org/):
 
@@ -52,8 +37,7 @@ Install this package using [Composer](https://getcomposer.org/):
 composer require jira/client
 ```
 
-### 1. Requirements
-<a name="requirements"></a>
+### Requirements
 
 | Version | PHP       | Guzzle            |
 | ------- | --------- | ----------------- |
@@ -63,14 +47,12 @@ composer require jira/client
 When [Guzzle](https://github.com/guzzle/guzzle) is not installed, [cURL](https://www.php.net/manual/en/ref.curl.php) is used instead.
 
 ## Configuration
-<a name="configuration"></a>
 
 The Jira Client must be constructed with a Configuration instance.
 
-### 1. Authentication
-<a name="authentication"></a>
+### Authentication
 
-#### i. Basic Authentication
+#### a. Basic Authentication
 
 ```php
 use Jira\Client\Client;
@@ -89,7 +71,7 @@ $client = new Client(new Configuration(
 > [!TIP]
 > Atlassian recommends only using [Basic Auth for REST APIs](https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/) for simple scripts, bots, and ad-hoc execution of the REST APIs. The expectation is that you will configure a single "admin/server" user account, and make calls to the API on behalf of this system-configured entity. If you intend to make calls to the API on behalf of an actual user, it is recommended that you use [OAuth 2.0 (3LO) Apps](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/) instead.
 
-#### ii. OAuth 2.0 (3LO) App Authentication
+#### b. OAuth 2.0 (3LO) App Authentication
 
 ```php
 use Jira\Client\Client;
@@ -105,8 +87,7 @@ $client = new Client(new Configuration(
 > [!TIP]
 > Atlassian recommends using [OAuth 2.0 (3LO) Apps](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/) for apps created and managed in their [developer console](https://developer.atlassian.com/console/myapps/). The expectation is that you will be making API calls on behalf of an actual user. If you intend to make calls to the API on behalf of a system-configured admin-like entity, it is recommended that you use [Basic Authentication](https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/) instead.
 
-### 2. Laravel
-<a name="laravel"></a>
+### Laravel
 
 If you are using Laravel, you can bind the `Configuration` instance to the container in your `AppServiceProvider`:
 
@@ -146,7 +127,6 @@ return [
 ```
 
 ## Usage
-<a name="usage"></a>
 
 This package strictly follows the [OpenAPI Specification of the Jira Cloud REST API](https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json).
 
@@ -179,12 +159,10 @@ var_dump($response);
 
 By following the OpenAPI specification, this package supports 100% of all operations documented by Atlassian.
 
-### 1. Operations
-<a name="operations"></a>
+## Operations
 
 DummyOperationsList
 
-### 2. Schema
-<a name="schema"></a>
+## Schema
 
 DummySchemaList
