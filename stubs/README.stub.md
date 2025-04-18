@@ -1,6 +1,8 @@
 <p align="center">
 <img src="/img/logo.png" alt="Logo Jira Cloud REST API Client">
+</p>
 
+<p align="center">
 [![PHP](https://img.shields.io/badge/PHP-8.1+-blue)](https://www.php.net/)
 [![Tests](https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml)
 [![Lint](https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml)
