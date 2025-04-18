@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-[![PHP](https://img.shields.io/badge/PHP-8.1+-blue)](https://www.php.net/)
-[![Tests](https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml)
-[![Lint](https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml)
-[![Static Analysis](https://github.com/tylernathanreed/jira-client-php/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/tylernathanreed/jira-client-php/actions/workflows/static-analysis.yml)
-[![Code Coverage](https://coveralls.io/repos/github/tylernathanreed/jira-client-php/badge.svg?branch=master)](https://coveralls.io/github/tylernathanreed/jira-client-php?branch=master)
+<a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.1+-blue" alt="PHP"></a>
+<a href="https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml"><img src="https://github.com/tylernathanreed/jira-client-php/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+<a href="https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml"><img src="https://github.com/tylernathanreed/jira-client-php/actions/workflows/coding-standards.yml/badge.svg" alt="Lint"></a>
+<a href="https://github.com/tylernathanreed/jira-client-php/actions/workflows/static-analysis.yml"><img src="https://github.com/tylernathanreed/jira-client-php/actions/workflows/static-analysis.yml/badge.svg" alt="Static Analysis"></a>
+<a href="https://coveralls.io/github/tylernathanreed/jira-client-php?branch=master"><img src="https://coveralls.io/repos/github/tylernathanreed/jira-client-php/badge.svg?branch=master" alt="Code Coverage"></a>
 </p>
 
 This package provides an HTTP Client to interact with the [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest).
