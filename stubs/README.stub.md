@@ -32,32 +32,13 @@ This package provides a simple and reliable HTTP Client to interact with the [Ji
 
 The [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest) and [Jira Software Cloud REST API](https://developer.atlassian.com/cloud/jira/software/rest) are closely related, but they serve different scopes within the Atlassian ecosystem.
 
-#### i. Jira Cloud REST API
+<p align="center">
+<img src="/img/jira-software.png" alt="Jira Cloud vs Jira Software Cloud">
+</p>
 
-The [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#version) acts as the core API, allowing you to interact with **fundamental Jira features** that are available in **all** Jira Cloud products.
+The [Jira Cloud REST API](https://developer.atlassian.com/cloud/jira/platform/rest) is the core API, allowing you to interact with **fundamental Jira features** that are **available in all Jira projects**. Some key features include: managing users, projects, issues, custom fields, workflows, screens, and more.
 
-Examples of key features and use cases include:
-- Creating, editing, deleting issues
-- Managing users, groups, and permissions
-- Browsing projects
-- Working with custom fields, workflows, and screens
-- Querying issues with JQL (Jira Query Language)
-- Automating ticket creation or updates
-- Building dashboards
-- Managing users or project settings
-
-#### ii. Jira Software Cloud REST API
-
-The [Jira Software Cloud REST API](https://developer.atlassian.com/cloud/jira/software/rest) acts as an extension to the core API, allowing you to interact with **Jira Software-specificfeatures** that are only available if Jira Software is installed and enabled.
-
-Examples of key features and use cases include:
-- Agile and Scrum tools (boards, sprints, backlogs)
-- Working with epics, versions, and estimation
-- Managing board configurations
-- Sprint reports and velocity charts
-- Creating or modifying sprints
-- Querying sprint or board data for reporting
-- Automatically moving issues across boards
+The [Jira Software Cloud REST API](https://developer.atlassian.com/cloud/jira/software/rest) acts as an extension to the core API, allowing you to interact with **software Jira features** that are only **available in Jira Software Projects**. Some key features include: managing boards, sprints, backlogs, epics, and more.
 
 This package does not yet support the Jira Software Cloud REST API, and recommends [lesstif/jira-cloud-restapi](https://github.com/lesstif/php-JiraCloud-RESTAPI) if you need these specific features. Note that `lesstif/jira-cloud-restapi` does not support the Jira Cloud REST API (only the Jira Software Cloud REST API), but you may use both that package and this one without conflicts.
 
