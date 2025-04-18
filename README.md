@@ -1,3 +1,5 @@
+![Logo](/img/logo.png)
+
 # Jira Client for Cloud REST API
 
 [![PHP](https://img.shields.io/badge/PHP-8.1+-blue)](https://www.php.net/)
