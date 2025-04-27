@@ -14,16 +14,6 @@
         }
     ],
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./packages/openapi-client"
-        },
-        {
-            "type": "path",
-            "url": "./packages/openapi-generator"
-        }
-    ],
     "require": {
         "php": "^8.1"
     },
@@ -32,7 +22,7 @@
         "php-coveralls/php-coveralls": "^2.7",
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^10.5|^11.0|^12.0",
-        "reedware/openapi-generator": "*",
+        "reedware/openapi-client-generator": "dev-master",
         "reedware/sail-lite": "^1.0",
         "symfony/var-dumper": "^6.4.4|^7.2"
     },
